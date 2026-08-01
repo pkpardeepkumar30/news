@@ -40,6 +40,8 @@ The crawler output ChatGPT can read is always:
 - `prompts/process-news.md`
 - `schema/processed-news.schema.json`
 
+Repository-aware ChatGPT/Codex sessions also receive the same workflow from `AGENTS.md`. Because the repository is public, the latest compact input is directly readable at `https://raw.githubusercontent.com/pkpardeepkumar30/news/main/data/chatgpt-input/latest.json`.
+
 For a manual ChatGPT pass, ask it to produce JSON conforming to the schema and save the result as `data/processed/latest.json`, then run:
 
 ```powershell

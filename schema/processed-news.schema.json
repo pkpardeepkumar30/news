@@ -2,16 +2,18 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Nazar India processed news",
   "type": "object",
+  "additionalProperties": false,
   "required": ["stories"],
   "properties": {
     "stories": {
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": [
           "id", "category", "title", "summary", "why_it_matters", "location",
           "published_at", "updated_at", "underreported_score", "evidence_status",
-          "confidence", "image", "sources"
+          "confidence", "disagreements", "image", "sources"
         ],
         "properties": {
           "id": {"type": "string"},
@@ -32,6 +34,7 @@
           "evidence_status": {"type": "string"},
           "confidence": {
             "type": "object",
+            "additionalProperties": false,
             "required": ["level", "score", "rationale"],
             "properties": {
               "level": {"enum": ["High", "Medium", "Low"]},
@@ -42,6 +45,7 @@
           "disagreements": {"type": "array", "items": {"type": "string"}},
           "image": {
             "type": "object",
+            "additionalProperties": false,
             "required": ["url", "alt"],
             "properties": {"url": {"type": "string"}, "alt": {"type": "string"}}
           },
@@ -50,6 +54,7 @@
             "minItems": 1,
             "items": {
               "type": "object",
+              "additionalProperties": false,
               "required": ["name", "type", "role", "url"],
               "properties": {
                 "name": {"type": "string"},

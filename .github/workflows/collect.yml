@@ -1,24 +1,64 @@
-name: Collect news
+name: Crawl, distil and publish news
 on:
   workflow_dispatch:
   schedule:
     - cron: "17 */4 * * *"
 permissions:
   contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
 jobs:
-  collect:
+  publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-terra' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: python scripts/scrape.py
-      - run: python scripts/prepare_bundle.py
-      - name: Commit collected data
+      - run: python scripts/prepare_bundle.py --max-items 80
+      - name: Save crawler output for ChatGPT
         run: |
           git config user.name "nazar-news-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/inbox data/chatgpt-input
           git diff --cached --quiet || git commit -m "Collect news batch"
+          git pull --rebase origin main
           git push
+      - name: Distil crawler output with OpenAI
+        if: env.OPENAI_API_KEY != ''
+        run: python scripts/distill.py
+      - name: Explain missing OpenAI key
+        if: env.OPENAI_API_KEY == ''
+        run: echo "::warning::OPENAI_API_KEY is not configured; crawler output was saved, but the live feed was not changed."
+      - name: Publish distilled stories
+        if: env.OPENAI_API_KEY != ''
+        run: python scripts/publish.py
+      - run: python scripts/validate.py
+      - name: Save distilled live feed
+        if: env.OPENAI_API_KEY != ''
+        run: |
+          git add data/processed data/news.json data/archive
+          git diff --cached --quiet || git commit -m "Publish distilled news"
+          git pull --rebase origin main
+          git push
+      - run: python scripts/build_static.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4

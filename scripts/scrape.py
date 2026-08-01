@@ -13,7 +13,7 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-UA = "NazarIndiaResearchBot/0.1 (+replace-with-contact-email)"
+UA = "NazarIndiaResearchBot/0.2 (+https://github.com/pkpardeepkumar30/news)"
 
 def text(node, names):
     for name in names:

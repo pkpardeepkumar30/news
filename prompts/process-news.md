@@ -16,3 +16,7 @@ Rules:
 8. Write neutral summaries of 45–90 words and a separate `why_it_matters` paragraph of 25–60 words.
 9. Choose a relevant source image URL when one is provided. Otherwise use the category fallback under `assets/images/`.
 10. Exclude private personal data, graphic imagery, doxxing, unsupported accusations and content that cannot be responsibly contextualised.
+11. Use a stable, URL-derived lowercase story ID so later batches update the same event instead of creating duplicates.
+12. Return no more than 24 stories. Prefer public-interest value, geographic variety and evidence quality over filling a quota.
+13. Use ISO 8601 timestamps. When an RSS timestamp is ambiguous, preserve it conservatively and lower confidence rather than inventing precision.
+14. Return only the JSON object required by the schema; do not wrap it in Markdown.

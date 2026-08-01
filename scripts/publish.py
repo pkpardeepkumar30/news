@@ -62,6 +62,21 @@ def main():
         path.write_text(json.dumps({'month': month, 'stories': list(by_id.values())}, indent=2, ensure_ascii=False), encoding='utf-8')
     live['generated_at'] = now.isoformat()
     live['stories'] = sorted(active, key=lambda story: story['updated_at'], reverse=True)
+    source_config = json.loads((ROOT / 'config/sources.json').read_text(encoding='utf-8'))
+    treatment = {
+        'independent': 'Use as reporting; inspect cited evidence, attribution and corrections.',
+        'local': 'Prioritise first-hand regional reporting; corroborate consequential claims.',
+        'mainstream': 'Use for reporting, chronology and comparison; preserve original attribution.',
+        'government': 'Attribute as an official claim; seek independent confirmation.',
+        'social': 'Treat as a lead or eyewitness claim, not automatic confirmation.'
+    }
+    live['source_registry'] = [{
+        'id': source['id'],
+        'name': source['name'],
+        'type': source['type'],
+        'ownership': source.get('ownership', ''),
+        'treatment': treatment.get(source['type'], 'Assess the evidence and attribution in context.')
+    } for source in source_config['sources'] if source.get('enabled')]
     live_path.write_text(json.dumps(live, indent=2, ensure_ascii=False), encoding='utf-8')
     archive_entries = []
     archive_root = ROOT / 'data/archive'

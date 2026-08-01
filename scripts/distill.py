@@ -46,6 +46,8 @@ def main() -> None:
 
     bundle = json.loads((ROOT / args.input).read_text(encoding="utf-8"))
     schema = json.loads((ROOT / "schema/processed-news.schema.json").read_text(encoding="utf-8"))
+    schema.pop("$schema", None)
+    schema.pop("title", None)
     prompt = (ROOT / "prompts/process-news.md").read_text(encoding="utf-8")
 
     request_body = {

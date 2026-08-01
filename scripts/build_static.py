@@ -15,6 +15,7 @@ def main() -> None:
     DIST.mkdir()
     for name in ("index.html", "app.js", "styles.css"):
         shutil.copy2(ROOT / name, DIST / name)
+    shutil.copy2(ROOT / "cloudflare-worker.js", DIST / "_worker.js")
     shutil.copytree(ROOT / "assets", DIST / "assets")
     (DIST / "data/archive").mkdir(parents=True)
     shutil.copy2(ROOT / "data/news.json", DIST / "data/news.json")

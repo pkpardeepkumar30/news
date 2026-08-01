@@ -10,7 +10,7 @@ Nazar India is a dependency-free, source-transparent Indian news aggregator. It 
 - Date-based archive and source-methodology views.
 - Browser-based independent/social lead submission and JSON export.
 - RSS collector, ChatGPT bundle generator, processed-output validator, publisher and archive scripts.
-- Four-hour GitHub Actions crawl, distillation and GitHub Pages deployment workflow.
+- Four-hour GitHub Actions crawl, distillation and publishing workflow.
 - No JavaScript framework or package installation required.
 
 ## Run locally
@@ -54,13 +54,13 @@ The publisher merges by permanent story ID and moves stories older than 14 days 
 
 ## Scheduled collection and publishing
 
-`.github/workflows/collect.yml` runs at minute 17 every four hours and can also be started manually. It commits the raw inbox and `data/chatgpt-input/latest.json`, calls OpenAI with strict structured output, validates and publishes the live feed, commits the result, and redeploys the site.
+`.github/workflows/collect.yml` runs at minute 17 every four hours and can also be started manually. It commits the raw inbox and `data/chatgpt-input/latest.json`, calls OpenAI with strict structured output, validates and publishes the live feed, and commits the result. The Cloudflare site reads the public website files from `main`, so a successful content commit becomes live without a separate deployment credential.
 
 Add an Actions repository secret named `OPENAI_API_KEY` to enable automatic distillation. Without it, scheduled runs still save fresh crawler output for a manual ChatGPT pass but leave the last validated live feed online. An optional Actions variable named `OPENAI_MODEL` can override the default model.
 
 ## Deployment
 
-Push the repository's `main` branch. The Pages workflow validates and stages only public website files, enables GitHub Pages when permitted, and deploys on every push. The scheduled crawler workflow also deploys directly after a successful update.
+The production site is `https://nazar-india.pages.dev`. Its Cloudflare worker serves only the public website paths and refreshes content from the repository's `main` branch, while retaining the last deployed build as a fallback if GitHub is temporarily unavailable.
 
 ## Editorial controls
 

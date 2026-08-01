@@ -23,15 +23,16 @@ async function loadData(){
 function renderAll(){
   const stories = state.data.stories || [];
   el('demoBanner').hidden = !stories.some(s=>s.demo);
+  document.querySelector('main').setAttribute('aria-busy','false');
   el('lastBuild').textContent = `Data build: ${formatDate(state.data.generated_at)}`;
   renderStats(stories); renderFilters(); renderLatest(); renderArchive(); renderSources(); bindControls();
 }
 function renderStats(stories){
-  const independent = stories.filter(s=>s.sources.some(x=>['independent','local','social'].includes(x.type))).length;
-  const corroborated = stories.filter(s=>s.confidence.level==='High').length;
-  const officialOnly = stories.filter(s=>s.evidence_status==='Official claim').length;
+  const sourceCount = new Set(stories.flatMap(s=>s.sources.map(source=>source.name))).size;
+  const categoryCount = new Set(stories.map(s=>s.category)).size;
+  const sourceLinked = stories.length ? Math.round(stories.filter(s=>s.sources.some(source=>source.url)).length/stories.length*100) : 0;
   el('mastheadStats').innerHTML = [
-    [stories.length,'active stories'], [independent,'independent leads'], [corroborated,'high confidence'], [officialOnly,'official-only claims']
+    [stories.length,'current stories'], [sourceCount,'source desks'], [categoryCount,'coverage beats'], [sourceLinked+'%','source-linked']
   ].map(([n,l])=>`<div class="stat"><strong>${n}</strong><span>${l}</span></div>`).join('');
 }
 function renderFilters(){
@@ -60,7 +61,7 @@ function renderLatest(){
   const stories=filteredStories(); el('resultCount').textContent=`${stories.length} ${stories.length===1?'story':'stories'}`;
   if(!stories.length){ el('leadLayout').innerHTML='<div class="empty-state">No stories match the current filters.</div>'; el('categorySections').innerHTML=''; return; }
   const lead=stories[0], side=stories.slice(1,5);
-  el('leadLayout').innerHTML = `<article class="lead-card" data-story="${lead.id}">${image(lead)}<div class="lead-copy"><span class="kicker">${escapeHtml(lead.category)} · Underreported ${lead.underreported_score}/100</span><h3>${escapeHtml(lead.title)}</h3><p class="story-summary">${escapeHtml(lead.summary)}</p>${meta(lead)}</div></article><aside class="side-list"><div class="side-list-header"><strong>Latest developments</strong><span>${side.length}</span></div>${side.map(s=>`<article class="side-story" data-story="${s.id}"><img src="${escapeHtml(s.image.url)}" alt="" loading="lazy"><div><span class="kicker">${escapeHtml(s.category)}</span><h4>${escapeHtml(s.title)}</h4><p>${escapeHtml(s.location)} · ${shortDate(s.updated_at)}</p></div></article>`).join('')}</aside>`;
+  el('leadLayout').innerHTML = `<article class="lead-card" data-story="${lead.id}">${image(lead)}<div class="lead-copy"><span class="kicker">${escapeHtml(lead.category)} · Underreported ${lead.underreported_score}/100</span><h3>${escapeHtml(lead.title)}</h3><p class="story-summary">${escapeHtml(lead.summary)}</p>${meta(lead)}</div></article><aside class="side-list"><div class="side-list-header"><strong>Latest developments</strong><span>${side.length}</span></div>${side.map(s=>`<article class="side-story" data-story="${s.id}"><img src="${escapeHtml(s.image.url)}" alt="" loading="lazy" onerror="this.src='assets/images/fallback.svg'"><div><span class="kicker">${escapeHtml(s.category)}</span><h4>${escapeHtml(s.title)}</h4><p>${escapeHtml(s.location)} · ${shortDate(s.updated_at)}</p></div></article>`).join('')}</aside>`;
   const groups = state.data.categories.map(category=>({category,stories:stories.filter(s=>s.category===category)})).filter(g=>g.stories.length);
   el('categorySections').innerHTML = groups.map(g=>`<section class="category-block"><div class="category-header"><h3>${escapeHtml(g.category)}</h3><span>${g.stories.length} ${g.stories.length===1?'story':'stories'}</span></div><div class="news-grid">${g.stories.slice(0,8).map(storyCard).join('')}</div></section>`).join('');
   bindStoryClicks();
@@ -69,7 +70,7 @@ function storyCard(s){ return `<article class="news-card" data-story="${s.id}">$
 function bindStoryClicks(){ document.querySelectorAll('[data-story]').forEach(node=>node.addEventListener('click',()=>openStory(node.dataset.story))); }
 function openStory(id){
   const s=state.data.stories.find(x=>x.id===id); if(!s)return;
-  el('storyDialogContent').innerHTML = `<img class="dialog-story-image" src="${escapeHtml(s.image.url)}" alt="${escapeHtml(s.image.alt)}"><div class="dialog-story-body"><div class="dialog-header"><div><p class="eyebrow">${escapeHtml(s.category)} · ${escapeHtml(s.location)}</p><h2>${escapeHtml(s.title)}</h2></div><button class="close-button" onclick="document.getElementById('storyDialog').close()" aria-label="Close">×</button></div><p class="story-summary">${escapeHtml(s.summary)}</p><div class="dialog-columns"><div><h4>Why it matters</h4><p>${escapeHtml(s.why_it_matters)}</p><h4>Evidence assessment</h4><p><strong>${escapeHtml(s.evidence_status)} · ${escapeHtml(s.confidence.level)} confidence (${s.confidence.score}/100)</strong></p><p>${escapeHtml(s.confidence.rationale)}</p>${s.disagreements?.length?`<h4>Disagreements or gaps</h4><ul>${s.disagreements.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`:''}</div><aside><h4>Original sources</h4>${s.sources.map(x=>`<a class="source-link" href="${escapeHtml(x.url)}" target="_blank" rel="noopener"><strong>${escapeHtml(x.name)}</strong><br><small>${escapeHtml(x.type)} · ${escapeHtml(x.role)}</small></a>`).join('')}<h4>Story details</h4><p>Updated: ${formatDate(s.updated_at)}<br>Underreported score: ${s.underreported_score}/100<br>Story ID: ${escapeHtml(s.id)}</p></aside></div></div>`;
+  el('storyDialogContent').innerHTML = `<img class="dialog-story-image" src="${escapeHtml(s.image.url)}" alt="${escapeHtml(s.image.alt)}" onerror="this.src='assets/images/fallback.svg'"><div class="dialog-story-body"><div class="dialog-header"><div><p class="eyebrow">${escapeHtml(s.category)} · ${escapeHtml(s.location)}</p><h2>${escapeHtml(s.title)}</h2></div><button class="close-button" onclick="document.getElementById('storyDialog').close()" aria-label="Close">×</button></div><p class="story-summary">${escapeHtml(s.summary)}</p><div class="dialog-columns"><div><h4>Why it matters</h4><p>${escapeHtml(s.why_it_matters)}</p><h4>Evidence assessment</h4><p><strong>${escapeHtml(s.evidence_status)} · ${escapeHtml(s.confidence.level)} confidence (${s.confidence.score}/100)</strong></p><p>${escapeHtml(s.confidence.rationale)}</p>${s.disagreements?.length?`<h4>Disagreements or gaps</h4><ul>${s.disagreements.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>`:''}</div><aside><h4>Original sources</h4>${s.sources.map(x=>`<a class="source-link" href="${escapeHtml(x.url)}" target="_blank" rel="noopener"><strong>${escapeHtml(x.name)}</strong><br><small>${escapeHtml(x.type)} · ${escapeHtml(x.role)}</small></a>`).join('')}<h4>Story details</h4><p>Updated: ${formatDate(s.updated_at)}<br>Underreported score: ${s.underreported_score}/100<br>Story ID: ${escapeHtml(s.id)}</p></aside></div></div>`;
   el('storyDialog').showModal();
 }
 function groupBy(items,keyFn){ return items.reduce((acc,item)=>{const key=keyFn(item);(acc[key] ||= []).push(item);return acc;},{}); }
@@ -124,7 +125,8 @@ function setView(view){
   state.sort = view==='underreported' ? 'underreported' : 'latest';
   state.view=view==='underreported'?'latest':view;
   if(view==='underreported'){state.category='All';state.source='all';state.query='';renderFilters();renderLatest();}
-  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active-view')); el(state.view+'View').classList.add('active-view'); document.querySelectorAll('.nav-link').forEach(b=>b.classList.toggle('active',b.dataset.view===view)); window.scrollTo({top:0});
+  const target=state.view+'View';
+  document.querySelectorAll('.view').forEach(v=>{const active=v.id===target;v.classList.toggle('active-view',active);v.hidden=!active;}); document.querySelectorAll('.nav-link').forEach(b=>b.classList.toggle('active',b.dataset.view===view)); window.scrollTo({top:0});
 }
 function saveLead(e){
   e.preventDefault(); const fd=new FormData(e.target); const leads=JSON.parse(localStorage.getItem('nazar-leads')||'[]'); leads.push({id:crypto.randomUUID(),url:fd.get('url'),category:fd.get('category'),note:fd.get('note'),submitted_by:fd.get('submittedBy')||'Anonymous',submitted_at:new Date().toISOString()}); localStorage.setItem('nazar-leads',JSON.stringify(leads)); e.target.reset(); el('leadDialog').close(); toast('Lead saved locally');

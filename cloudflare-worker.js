@@ -1,23 +1,10 @@
 const REPOSITORY_ROOT = "https://raw.githubusercontent.com/pkpardeepkumar30/news/main";
 
-const CONTENT_TYPES = {
-  ".css": "text/css; charset=utf-8",
-  ".html": "text/html; charset=utf-8",
-  ".js": "text/javascript; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-  ".svg": "image/svg+xml",
-};
-
 function publicPath(pathname) {
   if (pathname === "/" || pathname === "/index.html") return "/index.html";
   if (pathname === "/app.js" || pathname === "/styles.css" || pathname === "/data/news.json") return pathname;
   if (pathname.startsWith("/assets/") || pathname.startsWith("/data/archive/")) return pathname;
   return null;
-}
-
-function contentType(pathname) {
-  const extension = Object.keys(CONTENT_TYPES).find((item) => pathname.endsWith(item));
-  return extension ? CONTENT_TYPES[extension] : "application/octet-stream";
 }
 
 export default {
@@ -35,8 +22,16 @@ export default {
       });
     }
 
+    const isLiveData = pathname === "/data/news.json" || pathname.startsWith("/data/archive/");
+    if (!isLiveData) {
+      const asset = await env.ASSETS.fetch(request);
+      const headers = new Headers(asset.headers);
+      headers.set("Cache-Control", pathname === "/index.html" ? "no-store" : "public, max-age=3600");
+      headers.set("X-Content-Type-Options", "nosniff");
+      return new Response(asset.body, {status: asset.status, statusText: asset.statusText, headers});
+    }
+
     try {
-      const isLiveData = pathname === "/data/news.json" || pathname.startsWith("/data/archive/");
       const upstream = await fetch(`${REPOSITORY_ROOT}${pathname}`, {
         method: request.method,
         cf: {cacheEverything: true, cacheTtl: isLiveData ? 60 : 300},
@@ -44,8 +39,8 @@ export default {
       if (!upstream.ok) return env.ASSETS.fetch(request);
 
       const headers = new Headers(upstream.headers);
-      headers.set("Content-Type", contentType(pathname));
-      headers.set("Cache-Control", isLiveData ? "public, max-age=30" : "public, max-age=300");
+      headers.set("Content-Type", "application/json; charset=utf-8");
+      headers.set("Cache-Control", "public, max-age=30");
       headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
       headers.set("X-Content-Type-Options", "nosniff");
       headers.delete("Set-Cookie");

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nazar India — source-transparent coverage of underreported Indian news." />
+  <title>Nazar India — Beyond the front page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="demo-banner" id="demoBanner">Demo content is shown. Replace it with processed scraper output.</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Nazar India home">
+      <span class="brand-mark" aria-hidden="true">न</span>
+      <span><strong>Nazar</strong><small>INDIA</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <button class="nav-link active" data-view="latest">Latest</button>
+      <button class="nav-link" data-view="underreported">Underreported</button>
+      <button class="nav-link" data-view="archive">Archive</button>
+      <button class="nav-link" data-view="sources">Sources</button>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="themeButton" aria-label="Toggle color theme">◐</button>
+      <button class="primary-button" id="submitLeadButton">Submit a lead</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="masthead">
+      <div>
+        <p class="eyebrow"><span class="live-dot"></span> Updated every four hours</p>
+        <h1>India, beyond<br>the front page.</h1>
+        <p class="masthead-copy">Important stories from local, independent, official and social sources—summarised with evidence, disagreements and transparent confidence labels.</p>
+      </div>
+      <div class="masthead-stats" id="mastheadStats"></div>
+    </section>
+
+    <section class="controls" aria-label="News filters">
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search stories, places or sources" aria-label="Search news" />
+      </div>
+      <div class="filter-row" id="categoryFilters"></div>
+      <select id="sourceFilter" aria-label="Filter by source type">
+        <option value="all">All source types</option>
+        <option value="independent">Independent media</option>
+        <option value="local">Local reporting</option>
+        <option value="social">Social / eyewitness</option>
+        <option value="government">Government / official</option>
+        <option value="mainstream">Mainstream comparison</option>
+      </select>
+    </section>
+
+    <section id="latestView" class="view active-view">
+      <div class="section-heading">
+        <div><p class="eyebrow">Current briefing</p><h2>What deserves attention</h2></div>
+        <p id="resultCount"></p>
+      </div>
+      <div class="lead-layout" id="leadLayout"></div>
+      <div class="category-sections" id="categorySections"></div>
+    </section>
+
+    <section id="archiveView" class="view">
+      <div class="section-heading"><div><p class="eyebrow">Persistent record</p><h2>News archive</h2></div></div>
+      <div class="archive-controls">
+        <select id="archiveMonth"></select>
+        <select id="archiveCategory"><option value="all">All categories</option></select>
+      </div>
+      <div id="archiveResults" class="archive-results"></div>
+    </section>
+
+    <section id="sourcesView" class="view">
+      <div class="section-heading"><div><p class="eyebrow">Methodology</p><h2>How sources are treated</h2></div></div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Collect broadly</h3><p>RSS, webpages, public documents and submitted social links enter one common inbox.</p></article>
+        <article><span>02</span><h3>Cluster claims</h3><p>Repeated reports are grouped into one evolving story instead of being counted as separate confirmation.</p></article>
+        <article><span>03</span><h3>Separate attribution</h3><p>Official statements, eyewitness accounts and independent corroboration remain visibly distinct.</p></article>
+        <article><span>04</span><h3>Show uncertainty</h3><p>Confidence describes the available evidence. It is not a declaration of absolute truth.</p></article>
+      </div>
+      <div id="sourceRegistry" class="source-table-wrap"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">न</span><span><strong>Nazar</strong><small>INDIA</small></span></div>
+    <p>Source-transparent news aggregation. Read original reporting before drawing conclusions.</p>
+    <p id="lastBuild"></p>
+  </footer>
+
+  <dialog id="storyDialog" class="story-dialog"><div id="storyDialogContent"></div></dialog>
+  <dialog id="leadDialog" class="lead-dialog">
+    <form id="leadForm" method="dialog">
+      <div class="dialog-header"><div><p class="eyebrow">Community input</p><h2>Submit an independent lead</h2></div><button class="close-button" value="cancel" aria-label="Close">×</button></div>
+      <label>Public URL<input required name="url" type="url" placeholder="https://…" /></label>
+      <label>Category<select name="category"><option>Politics & Governance</option><option>States & Local</option><option>Economy & Employment</option><option>Society, Rights & Justice</option><option>Environment, Health & Science</option><option>Sports</option></select></label>
+      <label>Why it matters<textarea required name="note" rows="4" placeholder="What is being missed, and what evidence is visible?"></textarea></label>
+      <label>Your name or handle <span>(optional)</span><input name="submittedBy" placeholder="Anonymous" /></label>
+      <div class="form-actions"><button type="button" class="secondary-button" id="exportLeadsButton">Export saved leads</button><button type="submit" class="primary-button">Save lead</button></div>
+      <p class="form-note">Saved locally in this browser. Export the JSON and add it to <code>data/social_submissions.json</code>.</p>
+    </form>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

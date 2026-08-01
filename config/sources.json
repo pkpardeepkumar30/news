@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "example-independent-rss",
+      "name": "Independent publication",
+      "type": "independent",
+      "format": "rss",
+      "url": "https://example.com/rss.xml",
+      "enabled": false,
+      "ownership": "Add verified ownership information"
+    },
+    {
+      "id": "example-local-rss",
+      "name": "Local publication",
+      "type": "local",
+      "format": "rss",
+      "url": "https://example.org/feed",
+      "enabled": false,
+      "ownership": "Add verified ownership information"
+    },
+    {
+      "id": "official-bulletin",
+      "name": "Official bulletin",
+      "type": "government",
+      "format": "rss",
+      "url": "https://example.gov.in/rss",
+      "enabled": false,
+      "ownership": "Government body"
+    }
+  ],
+  "notes": [
+    "Enable only sources whose terms permit automated collection.",
+    "Social posts should enter through data/social_submissions.json or an approved platform API.",
+    "Government sources are attributed as official claims, not treated as independent confirmation."
+  ]
+}

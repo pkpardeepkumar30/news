@@ -28,7 +28,12 @@ export default {
 
     const requestUrl = new URL(request.url);
     const pathname = publicPath(requestUrl.pathname);
-    if (!pathname) return env.ASSETS.fetch(request);
+    if (!pathname) {
+      return new Response("Not found", {
+        status: 404,
+        headers: {"Content-Type": "text/plain; charset=utf-8", "X-Content-Type-Options": "nosniff"},
+      });
+    }
 
     try {
       const isLiveData = pathname === "/data/news.json" || pathname.startsWith("/data/archive/");

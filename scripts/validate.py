@@ -9,12 +9,17 @@ root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--min-per-category', type=int, default=0)
 parser.add_argument('--require-independent-majority', action='store_true')
+parser.add_argument('--max-stories', type=int, default=0)
 args = parser.parse_args()
 try:
     data = json.loads((root / 'data/news.json').read_text(encoding='utf-8'))
     assert isinstance(data.get('stories'), list)
     ids = [story['id'] for story in data['stories']]
     assert len(ids) == len(set(ids)), 'Duplicate story IDs'
+    if args.max_stories:
+        assert len(ids) <= args.max_stories, (
+            f'Story maximum exceeded: {len(ids)}/{args.max_stories}'
+        )
     assert 'Protests' in data.get('categories', []), 'Missing Protests category'
     assert 'Governance & Administration' in data.get('categories', []), 'Missing governance category'
     for story in data['stories']:

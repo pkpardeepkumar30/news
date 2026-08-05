@@ -1,11 +1,11 @@
 {
-  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-05T14:02:14.136935+00:00",
-  "input_count": 1447,
+  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
+  "prepared_at": "2026-08-05T14:25:54.833235+00:00",
+  "input_count": 1449,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 126,
-    "established_or_other": 74,
+    "independent_social": 125,
+    "established_or_other": 75,
     "independent_social_majority_required": true
   },
   "part": 2,
@@ -1069,24 +1069,26 @@
       }
     },
     {
-      "raw_id": "bf95e5e3a7cb55c29a",
-      "title": "Amid Opposition protests, Rajya Sabha passes Registration of Births and Deaths Bill",
-      "url": "https://indianexpress.com/article/india/amid-opposition-protests-rajya-sabha-passes-registration-of-births-and-deaths-bill-10818219/",
+      "raw_id": "e27029fe46ad3ad980",
+      "title": "370 हटने के सात साल: जम्मू-कश्मीर में क्या बदला? नेशनल कॉन्फ्रेंस और पीडीपी ने किया विरोध प्रदर्शन",
+      "url": "https://www.jansatta.com/national/what-changed-after-seven-years-of-abrogation-of-article-370-in-jammu-kashmir/4649442/",
       "summary": "",
-      "published_at": "Tue, 04 Aug 2026 23:37:52 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/rajya-sabha-1_20260804233705.jpg",
+      "published_at": "2026-08-05T19:34:00+05:30",
+      "image_url": "https://images.jansatta.com/2026/08/Jammu-Kashmir-Article-370.jpg",
       "suggested_category": "",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "Indian Express Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -1094,28 +1096,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Protests": 4
+          "Protests": 8
         },
         "candidate_categories": [
-          "Governance & Administration",
           "Protests"
         ]
-      },
-      "related_reports": [
-        {
-          "title": "Rajya Sabha passes Registration of Births and Deaths Bill amid Opposition protests",
-          "url": "https://indianexpress.com/article/india/rajya-sabha-passes-registration-of-births-and-deaths-amendment-bill-2026-10817899/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+      }
     },
     {
       "raw_id": "2bab6870c3bc3b5c46",

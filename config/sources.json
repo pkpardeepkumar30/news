@@ -10,6 +10,46 @@
       "ownership": "The Hindu Group"
     },
     {
+      "id": "the-hindu-states",
+      "name": "The Hindu - States",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://www.thehindu.com/news/states/feeder/default.rss",
+      "enabled": true,
+      "ownership": "The Hindu Group",
+      "category_hint": "States & Local"
+    },
+    {
+      "id": "the-hindu-education",
+      "name": "The Hindu - Education",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://www.thehindu.com/education/feeder/default.rss",
+      "enabled": true,
+      "ownership": "The Hindu Group",
+      "category_hint": "Society, Rights & Justice"
+    },
+    {
+      "id": "the-hindu-international",
+      "name": "The Hindu - International",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://www.thehindu.com/news/international/feeder/default.rss",
+      "enabled": true,
+      "ownership": "The Hindu Group",
+      "category_hint": "International & Geopolitics"
+    },
+    {
+      "id": "the-hindu-sport",
+      "name": "The Hindu - Sport",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://www.thehindu.com/sport/feeder/default.rss",
+      "enabled": true,
+      "ownership": "The Hindu Group",
+      "category_hint": "Sports"
+    },
+    {
       "id": "indian-express-india",
       "name": "The Indian Express — India",
       "type": "mainstream",
@@ -19,6 +59,57 @@
       "ownership": "Indian Express Group"
     },
     {
+      "id": "indian-express-education",
+      "name": "The Indian Express - Education",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://indianexpress.com/section/education/feed/",
+      "enabled": true,
+      "ownership": "Indian Express Group",
+      "category_hint": "Society, Rights & Justice"
+    },
+    {
+      "id": "indian-express-world",
+      "name": "The Indian Express - World",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://indianexpress.com/section/world/feed/",
+      "enabled": true,
+      "ownership": "Indian Express Group",
+      "category_hint": "International & Geopolitics"
+    },
+    {
+      "id": "indian-express-sports",
+      "name": "The Indian Express - Sports",
+      "type": "mainstream",
+      "format": "rss",
+      "url": "https://indianexpress.com/section/sports/feed/",
+      "enabled": true,
+      "ownership": "Indian Express Group",
+      "category_hint": "Sports"
+    },
+    {
+      "id": "jansatta-hindi",
+      "name": "Jansatta (Hindi)",
+      "type": "mainstream",
+      "format": "news_sitemap",
+      "url": "https://www.jansatta.com/news-sitemap.xml",
+      "enabled": true,
+      "ownership": "The Indian Express Pvt. Limited",
+      "language": "Hindi",
+      "include_paths": [
+        "/national/", "/international/", "/rajya/", "/education/",
+        "/business/", "/sports/", "/khel/"
+      ],
+      "path_categories": {
+        "/international/": "International & Geopolitics",
+        "/education/": "Society, Rights & Justice",
+        "/business/": "Economy & Employment",
+        "/sports/": "Sports",
+        "/khel/": "Sports"
+      }
+    },
+    {
       "id": "eastmojo",
       "name": "EastMojo",
       "type": "local",
@@ -26,6 +117,15 @@
       "url": "https://www.eastmojo.com/feed/",
       "enabled": true,
       "ownership": "Independent regional digital publication"
+    },
+    {
+      "id": "the-rural-press",
+      "name": "The Rural Press",
+      "type": "local",
+      "format": "rss",
+      "url": "https://theruralpress.in/feed/",
+      "enabled": true,
+      "ownership": "SSB Media House"
     },
     {
       "id": "mongabay-india",
@@ -55,9 +155,20 @@
       "ownership": "Legal news publication"
     }
   ],
+  "social_signal_feeds": [
+    {
+      "id": "approved-social-signals",
+      "name": "Approved social signal provider",
+      "enabled": true,
+      "url_env": "SOCIAL_SIGNALS_URL",
+      "token_env": "SOCIAL_SIGNALS_TOKEN"
+    }
+  ],
   "notes": [
     "Enable only sources whose terms permit automated collection.",
-    "Social posts should enter through data/social_submissions.json or an approved platform API.",
-    "Government sources are attributed as official claims, not treated as independent confirmation."
+    "Social posts enter through data/social_submissions.json or the optional approved JSON signal provider configured through environment secrets.",
+    "Social engagement is an attention signal, not proof that a post or its claims are accurate.",
+    "Government sources are attributed as official claims, not treated as independent confirmation.",
+    "Jansatta is collected through its public Google News sitemap because its tested section URLs did not expose valid RSS or Atom feeds; sitemap-only entries are leads with limited text and require corroboration before publication."
   ]
 }

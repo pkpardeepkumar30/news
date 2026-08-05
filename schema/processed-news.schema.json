@@ -13,15 +13,17 @@
         "required": [
           "id", "category", "title", "summary", "why_it_matters", "location",
           "published_at", "updated_at", "underreported_score", "evidence_status",
-          "confidence", "disagreements", "image", "sources"
+          "confidence", "coverage", "disagreements", "image", "sources"
         ],
         "properties": {
           "id": {"type": "string"},
           "category": {
             "type": "string",
             "enum": [
-              "Politics & Governance", "States & Local", "Economy & Employment",
-              "Society, Rights & Justice", "Environment, Health & Science", "Sports"
+              "Politics & Elections", "Governance & Administration", "Protests",
+              "States & Local", "Economy & Employment",
+              "Society, Rights & Justice", "Environment, Health & Science", "Sports",
+              "International & Geopolitics"
             ]
           },
           "title": {"type": "string"},
@@ -39,6 +41,16 @@
             "properties": {
               "level": {"enum": ["High", "Medium", "Low"]},
               "score": {"type": "integer", "minimum": 0, "maximum": 100},
+              "rationale": {"type": "string"}
+            }
+          },
+          "coverage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "source_count", "rationale"],
+            "properties": {
+              "status": {"enum": ["underreported", "developing", "widely_covered", "unknown"]},
+              "source_count": {"type": "integer", "minimum": 1},
               "rationale": {"type": "string"}
             }
           },

@@ -19,6 +19,9 @@ API_URL = "https://api.openai.com/v1/responses"
 
 
 def extract_output_text(response: dict) -> str:
+    if response.get("status") == "incomplete":
+        reason = response.get("incomplete_details", {}).get("reason", "unknown reason")
+        raise RuntimeError(f"Model response was incomplete: {reason}")
     chunks = []
     for item in response.get("output", []):
         if item.get("type") != "message":
@@ -33,25 +36,11 @@ def extract_output_text(response: dict) -> str:
     return "".join(chunks)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", default="data/chatgpt-input/latest.json")
-    parser.add_argument("--output", default="data/processed/latest.json")
-    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.6-terra"))
-    args = parser.parse_args()
-
-    api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key:
-        raise SystemExit("OPENAI_API_KEY is required for automated distillation.")
-
-    bundle = json.loads((ROOT / args.input).read_text(encoding="utf-8"))
-    schema = json.loads((ROOT / "schema/processed-news.schema.json").read_text(encoding="utf-8"))
-    schema.pop("$schema", None)
-    schema.pop("title", None)
-    prompt = (ROOT / "prompts/process-news.md").read_text(encoding="utf-8")
-
+def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
+                 api_key: str, part_number: int, part_count: int,
+                 story_limit: int) -> dict:
     request_body = {
-        "model": args.model,
+        "model": model,
         "store": False,
         "reasoning": {"effort": "medium"},
         "instructions": prompt,
@@ -59,8 +48,11 @@ def main() -> None:
             "role": "user",
             "content": [{
                 "type": "input_text",
-                "text": "Distil this crawler batch into the required processed-news JSON:\n\n"
-                        + json.dumps(bundle, ensure_ascii=False),
+                "text": (
+                    f"Distil collection part {part_number} of {part_count}. Return no more than "
+                    f"{story_limit} strongest stories from this part; final merging happens after all parts.\n\n"
+                    + json.dumps(bundle, ensure_ascii=False)
+                ),
             }],
         }],
         "text": {
@@ -84,7 +76,6 @@ def main() -> None:
         },
         method="POST",
     )
-
     try:
         with urlopen(request, timeout=300) as result:
             response = json.loads(result.read().decode("utf-8"))
@@ -93,15 +84,55 @@ def main() -> None:
         raise SystemExit(f"OpenAI API returned HTTP {exc.code}: {detail}") from exc
     except URLError as exc:
         raise SystemExit(f"OpenAI API request failed: {exc.reason}") from exc
+    return json.loads(extract_output_text(response))
 
-    processed = json.loads(extract_output_text(response))
-    if not isinstance(processed.get("stories"), list) or not processed["stories"]:
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", default="data/chatgpt-input/latest.json")
+    parser.add_argument("--output", default="data/processed/latest.json")
+    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.6-terra"))
+    parser.add_argument("--chunk-size", type=int, default=40)
+    parser.add_argument("--max-stories", type=int, default=100)
+    args = parser.parse_args()
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise SystemExit("OPENAI_API_KEY is required for automated distillation.")
+
+    bundle = json.loads((ROOT / args.input).read_text(encoding="utf-8"))
+    schema = json.loads((ROOT / "schema/processed-news.schema.json").read_text(encoding="utf-8"))
+    schema.pop("$schema", None)
+    schema.pop("title", None)
+    prompt = (ROOT / "prompts/process-news.md").read_text(encoding="utf-8")
+
+    items = bundle.get("items", [])
+    if not items:
+        raise SystemExit("The prepared collection contains no items.")
+    chunks = [items[index:index + args.chunk_size] for index in range(0, len(items), args.chunk_size)]
+    per_chunk_limit = min(20, max(1, (args.max_stories + len(chunks) - 1) // len(chunks)))
+    stories_by_id = {}
+    for index, items_part in enumerate(chunks, start=1):
+        part_bundle = {key: value for key, value in bundle.items() if key not in {"items", "parts"}}
+        part_bundle.update({"part": index, "part_count": len(chunks), "items": items_part})
+        processed_part = distil_part(
+            bundle=part_bundle, schema=schema, prompt=prompt, model=args.model,
+            api_key=api_key, part_number=index, part_count=len(chunks),
+            story_limit=per_chunk_limit
+        )
+        for story in processed_part.get("stories", []):
+            if len(stories_by_id) >= args.max_stories:
+                break
+            stories_by_id[story["id"]] = story
+        print(f"Distilled part {index}/{len(chunks)}: {len(processed_part.get('stories', []))} stories")
+    processed = {"stories": list(stories_by_id.values())[:args.max_stories]}
+    if not processed["stories"]:
         raise SystemExit("Model output contained no stories; the live feed was not changed.")
 
     output = ROOT / args.output
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"Distilled {len(processed['stories'])} stories with {args.model}: {output}")
+    print(f"Distilled {len(processed['stories'])} stories from {len(chunks)} parts with {args.model}: {output}")
 
 
 if __name__ == "__main__":

@@ -6,8 +6,52 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = {'id','category','title','summary','why_it_matters','location','published_at','updated_at','underreported_score','evidence_status','confidence','image','sources'}
+CATEGORIES = [
+    'Politics & Elections', 'Governance & Administration', 'Protests',
+    'States & Local', 'Economy & Employment',
+    'Society, Rights & Justice', 'Environment, Health & Science', 'Sports',
+    'International & Geopolitics'
+]
+CATEGORY_ALIASES = {'Politics & Governance': 'Politics & Elections'}
+COVERAGE_STATUSES = {'underreported', 'developing', 'widely_covered', 'unknown'}
+MOJIBAKE_REPLACEMENTS = {
+    '\u00e2\u20ac\u2122': '\u2019',
+    '\u00e2\u20ac\u02dc': '\u2018',
+    '\u00e2\u20ac\u201d': '\u2014',
+    '\u00e2\u20ac\u201c': '\u2013',
+    '\u00e2\u201a\u00b9': '\u20b9',
+    '\u00c3\u00b1': '\u00f1'
+}
+
+def repair_text(value):
+    if isinstance(value, str):
+        for broken, repaired in MOJIBAKE_REPLACEMENTS.items():
+            value = value.replace(broken, repaired)
+        return value
+    if isinstance(value, list):
+        return [repair_text(item) for item in value]
+    if isinstance(value, dict):
+        return {key: repair_text(item) for key, item in value.items()}
+    return value
+
+def normalise_coverage(story):
+    coverage = story.get('coverage')
+    if not isinstance(coverage, dict):
+        coverage = {
+            'status': 'unknown',
+            'source_count': max(1, len({source.get('name', '') for source in story.get('sources', [])})),
+            'rationale': 'Cross-source prominence was not assessed when this story was processed.'
+        }
+        story['coverage'] = coverage
+    if coverage.get('status') not in COVERAGE_STATUSES:
+        raise ValueError(f"Invalid coverage status for {story.get('id', '<unknown>')}")
+    if int(coverage.get('source_count', 0)) < 1:
+        raise ValueError(f"Invalid coverage source count for {story.get('id', '<unknown>')}")
+    if not coverage.get('rationale'):
+        raise ValueError(f"Missing coverage rationale for {story.get('id', '<unknown>')}")
 
 def validate(story):
+    story['category'] = CATEGORY_ALIASES.get(story.get('category'), story.get('category'))
     missing = REQUIRED - set(story)
     if missing:
         raise ValueError(f"{story.get('id', '<unknown>')} missing: {sorted(missing)}")
@@ -19,6 +63,9 @@ def validate(story):
         raise ValueError(f"Invalid underreported score for {story['id']}")
     if not story['sources']:
         raise ValueError(f"No sources for {story['id']}")
+    if story['category'] not in CATEGORIES:
+        raise ValueError(f"Invalid category for {story['id']}")
+    normalise_coverage(story)
 
 def parse_dt(value):
     return datetime.fromisoformat(value.replace('Z', '+00:00'))
@@ -31,7 +78,7 @@ def main():
     processed_path = ROOT / args.input
     # Scheduled desktop tasks may save otherwise valid JSON with a UTF-8 BOM.
     # utf-8-sig accepts both forms; rewrite valid input as canonical BOM-free UTF-8.
-    processed = json.loads(processed_path.read_text(encoding='utf-8-sig'))
+    processed = repair_text(json.loads(processed_path.read_text(encoding='utf-8-sig')))
     incoming = processed.get('stories', processed if isinstance(processed, list) else [])
     if not incoming:
         raise ValueError('No processed stories found; refusing to replace the live feed with an empty result.')
@@ -39,11 +86,14 @@ def main():
         validate(story)
     processed_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding='utf-8')
     live_path = ROOT / 'data/news.json'
-    live = json.loads(live_path.read_text(encoding='utf-8'))
+    live = repair_text(json.loads(live_path.read_text(encoding='utf-8')))
     merged = {story['id']: story for story in live.get('stories', []) if not story.get('demo')}
     for story in incoming:
         story.pop('demo', None)
         merged[story['id']] = story
+    for story in merged.values():
+        story['category'] = CATEGORY_ALIASES.get(story.get('category'), story.get('category'))
+        normalise_coverage(story)
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=args.active_days)
     active, archive = [], {}
@@ -65,6 +115,7 @@ def main():
         by_id.update({story['id']: story for story in stories})
         path.write_text(json.dumps({'month': month, 'stories': list(by_id.values())}, indent=2, ensure_ascii=False), encoding='utf-8')
     live['generated_at'] = now.isoformat()
+    live['categories'] = CATEGORIES
     live['stories'] = sorted(active, key=lambda story: story['updated_at'], reverse=True)
     source_config = json.loads((ROOT / 'config/sources.json').read_text(encoding='utf-8'))
     treatment = {

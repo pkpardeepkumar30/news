@@ -8,6 +8,8 @@ Nazar India is a dependency-free, source-transparent Indian news aggregator. It 
 - Search, category and source-type filters.
 - Story details with original sources, evidence status, disagreements and confidence rationale.
 - Date-based archive and source-methodology views.
+- Permanent server-rendered HTML pages for current and archived stories, with canonical URLs and `NewsArticle` structured data.
+- Search-engine discovery through `robots.txt`, a generated XML sitemap, homepage canonical metadata and site/organization structured data.
 - Browser-based independent/social lead submission and JSON export.
 - RSS collector, ChatGPT bundle generator, processed-output validator, publisher and archive scripts.
 - Four-hour GitHub Actions collection, balanced 200-item preparation, chunked distillation and publishing workflow.
@@ -68,6 +70,10 @@ Add an Actions repository secret named `OPENAI_API_KEY` to enable automatic dist
 ## Deployment
 
 The production site is `https://nazar-india.pages.dev`. Its Cloudflare worker serves only the public website paths and refreshes content from the repository's `main` branch, while retaining the last deployed build as a fallback if GitHub is temporarily unavailable.
+
+`python scripts/build_static.py` writes the Cloudflare output to `dist/`. In addition to the application assets, the build creates `dist/sitemap.xml` and one stable page under `dist/stories/` for every current or archived story. Cloudflare Pages must use that command as its build command and `dist` as its output directory.
+
+To request Google indexing, add `https://nazar-india.pages.dev/` as a URL-prefix property in Google Search Console, complete Google's ownership verification, submit `https://nazar-india.pages.dev/sitemap.xml`, and use URL Inspection to request indexing for the homepage. Search Console verification requires access to the site's Google account and is not performed by the build.
 
 ## Editorial controls
 

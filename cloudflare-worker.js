@@ -2,7 +2,8 @@ const REPOSITORY_ROOT = "https://raw.githubusercontent.com/pkpardeepkumar30/news
 
 function publicPath(pathname) {
   if (pathname === "/" || pathname === "/index.html") return "/index.html";
-  if (pathname === "/app.js" || pathname === "/styles.css" || pathname === "/data/news.json") return pathname;
+  if (pathname === "/app.js" || pathname === "/styles.css" || pathname === "/robots.txt" || pathname === "/sitemap.xml" || pathname === "/data/news.json") return pathname;
+  if (/^\/stories\/[a-z0-9-]+\.html$/.test(pathname)) return pathname;
   if (pathname.startsWith("/assets/") || pathname.startsWith("/data/archive/")) return pathname;
   return null;
 }
@@ -26,7 +27,7 @@ export default {
     if (!isLiveData) {
       const asset = await env.ASSETS.fetch(request);
       const headers = new Headers(asset.headers);
-      headers.set("Cache-Control", pathname === "/index.html" ? "no-store" : "public, max-age=3600");
+      headers.set("Cache-Control", pathname === "/index.html" || pathname === "/sitemap.xml" ? "no-store" : "public, max-age=3600");
       headers.set("X-Content-Type-Options", "nosniff");
       return new Response(asset.body, {status: asset.status, statusText: asset.statusText, headers});
     }

@@ -3,7 +3,7 @@ const REPOSITORY_ROOT = "https://raw.githubusercontent.com/pkpardeepkumar30/news
 function publicPath(pathname) {
   if (pathname === "/" || pathname === "/index.html") return "/index.html";
   if (pathname === "/app.js" || pathname === "/styles.css" || pathname === "/robots.txt" || pathname === "/sitemap.xml" || pathname === "/data/news.json") return pathname;
-  if (/^\/stories\/[a-z0-9-]+\.html$/.test(pathname)) return pathname;
+  if (/^\/stories\/[a-z0-9-]+(?:\.html)?$/.test(pathname)) return pathname;
   if (pathname.startsWith("/assets/") || pathname.startsWith("/data/archive/")) return pathname;
   return null;
 }

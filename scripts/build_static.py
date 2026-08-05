@@ -29,7 +29,12 @@ def story_slug(story: dict) -> str:
 
 
 def story_path(story: dict) -> str:
-    return f"/stories/{story_slug(story)}.html"
+    return f"/stories/{story_slug(story)}"
+
+
+def story_output_path(story: dict) -> Path:
+    """Map a clean public story URL to Cloudflare Pages' backing HTML file."""
+    return Path("stories") / f"{story_slug(story)}.html"
 
 
 def clean_text(value: object, fallback: str = "") -> str:
@@ -239,7 +244,7 @@ def main() -> None:
         if path in seen_paths:
             raise ValueError(f"Duplicate permanent story path: {path}")
         seen_paths.add(path)
-        (DIST / path.lstrip("/")).write_text(render_story_page(story), encoding="utf-8")
+        (DIST / story_output_path(story)).write_text(render_story_page(story), encoding="utf-8")
     write_sitemap(stories, clean_text(current.get("generated_at")))
     print(f"Static site staged: {DIST} ({len(stories)} permanent story pages)")
 

@@ -4,7 +4,7 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'
 const formatDate = value => new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(value));
 const shortDate = value => new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(value));
 const headlineClass = title => title.length > 90 ? 'headline-long' : title.length > 58 ? 'headline-medium' : '';
-const storyPagePath = story => `/stories/${String(story.id ?? '').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,160)}.html`;
+const storyPagePath = story => `/stories/${String(story.id ?? '').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,160)}`;
 const storyLink = (story, label) => `<a class="story-title-link" href="${storyPagePath(story)}">${escapeHtml(label)}</a>`;
 
 async function loadData(){

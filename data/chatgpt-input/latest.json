@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-05T18:00:07.827036+00:00",
-  "input_count": 437,
+  "prepared_at": "2026-08-05T18:06:24.174242+00:00",
+  "input_count": 1430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 121,
-    "established_or_other": 79,
+    "independent_social": 119,
+    "established_or_other": 81,
     "independent_social_majority_required": true
   },
   "part_count": 5,
@@ -17,43 +17,6 @@
     "data/chatgpt-input/parts/part-05.json"
   ],
   "items": [
-    {
-      "raw_id": "03c28d6b2b06644bf9",
-      "title": "Shiv Sena dispute: Supreme Court bats for clear criteria to determine majority in political party",
-      "url": "https://www.barandbench.com/news/litigation/shiv-sena-dispute-supreme-court-bats-for-clear-criteria-to-determine-majority-in-political-party",
-      "summary": "The Supreme Court on Tuesday observed that there is a need for clearly defined criteria to determine what constitutes a majority within a political party. Such standards could help prevent recurring disputes over party splits and defections, particularly in cases where the legislature party splits (MLAs/ MPs within State assembly or parliament splitting or joining another party), the Court said. The observations were made by a bench of Chief Justice of India Surya Kant and Justices Joymalya Bagchi and Justice V Mohana during the hearing of the plea filed by the Uddhav Thackeray-led faction challenging the Election Commission of India's (ECI) February 2023 decision to recognise the Eknath Shinde-led faction as the real 'Shiv Sena'. The Shiv Sena political party split into two factions in 2022, one led by Thackeray and the other by Shinde. Shinde then petitioned the ECI staking a claim to the 'Shiv Sena' name and the bow and arrow symbol. The ECI relied on the strength of the legislative wing of the party to arrive at its decision rather than on the test of its organisational wing. The ECI explained that although it had attempted to apply the test of the organisational wing, it could",
-      "published_at": "Wed, 05 Aug 2026 19:26:17 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-11-09/k9zxc0wd/04.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 5,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
     {
       "raw_id": "7eddd7cad6a4072cde",
       "title": "Advocate ‘for Hindus’, celeb-commentary influencer: Meet the latest complainants against CJP",
@@ -141,6 +104,39 @@
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "5b78984f12512d88f3",
+      "title": "Bankipur byelection: Prashant Kishor’s electoral debut sees turnout lower than Assembly election",
+      "url": "https://indianexpress.com/article/india/bankipur-by-election-voting-begins-for-contest-in-bihar-prashant-kishor-jan-suraaj-neeraj-kumar-sinha-10809790/",
+      "summary": "",
+      "published_at": "Thu, 30 Jul 2026 02:50:32 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Jan-Suraaj-Party-Bankipur-Assembly-bypoll-candidate-Prashant-Kishor-greets-supporters-during-a-roadshow.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -370,109 +366,70 @@
       }
     },
     {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "f29e8285a712d4c2be",
-      "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
-      "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
-      "summary": "Elections in Karnataka have increasingly become bipolar, with 77% of the seats recording bipolar contests in 2018",
-      "published_at": "Thu, 27 Mar 2025 17:24:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3wl5pw/article66758476.ece/alternates/LANDSCAPE_1200/uj.png",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "31a6b0c03cc480efc4",
-      "title": "Will UPI transactions over ₹2,000 soon attract merchant fee?",
-      "url": "https://www.barandbench.com/news/will-upi-transactions-over-2000-soon-attract-merchant-fee",
-      "summary": "Unified Payments Interface (UPI) payments above ₹2,000 may soon attract a merchant fee as the government has introduced a new bill in the parliament to amend the the Payment and Settlement Systems Act, 2007, according to multiple news reports. Section 10A of the 2007 Act at present prevents banks from imposing any charge on a person making or receiving a payment through electronic modes of payment like UPI. Section 10A Union Minister for Finance and Corporate Affairs Nirmala Sitharaman on Tuesday introduced The Taxation and Other Laws (Amendment) Bill, 2026 (Bill No. 150 of 2026) in the Lok Sabha to make key amendments across Payment and Settlement Systems Act, 2007, the Income Tax Act, 2025, and the Finance Act, 2026. Under Clause 2 of the Bill, the government seeks to amend Section 10A of the Payment and Settlement Systems Act, 2007 to allow levy of charges on certain electronic modes of payment that the government may specify in a notification. Media reports state that the proposed provision lays the legal groundwork for reintroducing a Merchant Discount Rate (MDR) on high-value UPI transactions. Since January 2020, there had been no MDR on RuPay debit cards and UPI transactions",
-      "published_at": "Wed, 05 Aug 2026 19:14:03 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-10/72d929d1-470b-42a8-bf0d-3dfe273c6e44/59.jpg",
+      "raw_id": "731544535d4ebb5ab0",
+      "title": "Bankipur, Datia, Manjalpur By-Election Results Live Updates: Opposition hails Prashant Kishor’s win as BJP loses its stronghold",
+      "url": "https://indianexpress.com/article/india/assembky-bypoll-results-news-live-updates-counting-begins-in-bihar-gujarat-madhya-pradesh-spotlight-on-prashant-kishors-electoral-debut-10815249/",
+      "summary": "",
+      "published_at": "Mon, 03 Aug 2026 02:18:16 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/Prashant-Kishor-2.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Economy & Employment": 2
+          "Politics & Elections": 4
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration"
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "c545a4f0838b00d195",
+      "title": "IIM Calcutta to prepare management case study on BJP’s Bengal poll campaign",
+      "url": "https://indianexpress.com/article/education/iim-calcutta-develops-case-study-on-bjps-bengal-poll-win-2026-10797006/",
+      "summary": "",
+      "published_at": "Tue, 21 Jul 2026 14:54:11 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/iim-calcutta-makes-case-study-bjp-bengal-win.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -654,6 +611,141 @@
       }
     },
     {
+      "raw_id": "bf95e5e3a7cb55c29a",
+      "title": "Amid Opposition protests, Rajya Sabha passes Registration of Births and Deaths Bill",
+      "url": "https://indianexpress.com/article/india/amid-opposition-protests-rajya-sabha-passes-registration-of-births-and-deaths-bill-10818219/",
+      "summary": "",
+      "published_at": "Tue, 04 Aug 2026 23:37:52 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/rajya-sabha-1_20260804233705.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Rajya Sabha passes Registration of Births and Deaths Bill amid Opposition protests",
+          "url": "https://indianexpress.com/article/india/rajya-sabha-passes-registration-of-births-and-deaths-amendment-bill-2026-10817899/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e24de66f9088ce4df3",
+      "title": "Amid Opposition protests, House clears Bill criminalising insult to Vande Mataram",
+      "url": "https://indianexpress.com/article/india/vande-mataram-bill-lok-sabha-passed-10811272/",
+      "summary": "",
+      "published_at": "Thu, 30 Jul 2026 23:30:29 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Parliament_35a507_20260730224604.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Amid Opposition protest, Rajya Sabha passes Bill criminalising insult to Vande Mataram",
+          "url": "https://indianexpress.com/article/india/amid-opposition-protest-rajya-sabha-passes-bill-criminalising-insult-to-vande-mataram-10809694/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0f29dfc9f5713aa557",
+      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
+      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
+      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
+      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Governance & Administration": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "2103f323047a349fe2",
       "title": "Bill to provide statutory framework to Indian Statistical Institute up for introduction in Lok Sabha",
       "url": "https://www.thehindu.com/news/national/bill-to-provide-statutory-framework-to-indian-statistical-institute-up-for-introduction-in-lok-sabha/article71286511.ece",
@@ -790,886 +882,6 @@
         "candidate_categories": [
           "Governance & Administration",
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a9b5a3d2024be1585c",
-      "title": "Cabinet Secretary, Home Secretary get one-year extension in service",
-      "url": "https://www.thehindu.com/news/national/cabinet-secretary-home-secretary-get-one-year-extension-in-service/article71310569.ece",
-      "summary": "The Appointments Committee of the Cabinet led by Prime Minister Modi approved the extension in service of Somanathan as Cabinet Secretary for a further period of one year beyond August 30, 2026, says an order",
-      "published_at": "Wed, 05 Aug 2026 22:08:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mzxf3f/article71310756.ece/alternates/LANDSCAPE_1200/IMG_Hariharan_memorial_l_2_1_JBD4CB99.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "9568f098bdfe208285",
-      "title": "RBI has funds to pay for UPI platform without having to charge merchants, customers",
-      "url": "https://www.thehindu.com/news/national/rbi-has-funds-to-pay-for-upi-platform-without-having-to-charge-merchants-customers/article71310040.ece",
-      "summary": "The government has introduced a Bill in Parliament that will allow it to notify the kinds of transactions that can attract such a charge. So far, UPI has been free for merchants and customers",
-      "published_at": "Wed, 05 Aug 2026 21:56:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/heabrl/article71310711.ece/alternates/LANDSCAPE_1200/RBI-balance-sheG44G1SVLF.5.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "035c81be39942abed8",
-      "title": "India’s carbon market sets weak emissions targets, analysis finds",
-      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
-      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
-      "published_at": "31 Jul 2026 16:51:38 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "a1e74f2dfd561fa8f2",
-      "title": "UP News: यूपी डिजिटल लेबर चौक ऐप (UP Digital Labour Chowk) अब मोबाइल से बुक करें मिस्त्री और मजदूर, जानें पूरी जानकारी",
-      "url": "https://khabarlahariya.org/up-news-up-digital-labour-chowk-app-now-book-skilled-workers-and-laborers-via-mobile-get-full-details-here/",
-      "summary": "अगर आपको घर बनवाना हो, पुताई करानी हो…",
-      "published_at": "Sun, 26 Jul 2026 07:00:02 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "835675326855ec5e08",
-      "title": "Left Groups Protest Workers' Repression in North India",
-      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
-      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
-      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "9bcfe1ff8ff9d820cc",
-      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
-      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
-      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
-      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "2a25090f84e0207e53",
-      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
-      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
-      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
-      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "938336d973c9016b2a",
-      "title": "India’s ethanol push moves from the pump to the field, raising water and food questions",
-      "url": "https://india.mongabay.com/2026/07/indias-ethanol-push-moves-from-the-pump-to-the-field-raising-water-and-food-questions/",
-      "summary": "This is the third part in a series comparing India and Brazil’s ethanol transitions. This part examines how India’s ethanol model increasingly moving beyond sugarcane and molasses-based production to grains, raising questions about pressures on livestock feed and the food processing industry. The second part examined the challenges of procurement, storage, transport and quality control. […]",
-      "published_at": "28 Jul 2026 16:31:30 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28144133/signal-2026-07-28-12-24-18-195_003-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "514f7e7a56ae871a26",
-      "title": "Hot AI jobs await philosophy grads: Myth or reality?",
-      "url": "https://www.thehindu.com/education/hot-ai-jobs-await-philosophy-grads-myth-or-reality/article71290018.ece",
-      "summary": "",
-      "published_at": "Fri, 31 Jul 2026 22:09:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/thmjst/article71290178.ece/alternates/LANDSCAPE_1200/iStock-990107150.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e5ce6ceb1bddb02605",
-      "title": "China announces ‘countermeasures’ after U.S. trade sanctions",
-      "url": "https://www.thehindu.com/news/international/china-announces-countermeasures-after-us-trade-sanctions/article71309251.ece",
-      "summary": "Beijing’s measures include suspending factory follow-up inspections by Chinese certification bodies, blacklisting U.S. compliance testing companies, and launching national security investigations into imports of office printers and copiers, according to the Commerce Ministry",
-      "published_at": "Wed, 05 Aug 2026 17:37:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/or2bqp/article71309325.ece/alternates/LANDSCAPE_1200/iStock-919701318.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 4,
-          "International & Geopolitics": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "386ca2d56aa1cc5f89",
-      "title": "झारखंड: छात्रों का आंदोलन जारी, भूख हड़ताल खत्म करने की देवेंद्र नाथ महतो ने बताई पूरी सच्चाई",
-      "url": "https://hindi.newslaundry.com/2026/08/05/jharkhand-student-protest-leader-devendra-nath-mahto-on-hunger-strike-end-and-hemant-soren",
-      "summary": "झारखंड पब्लिक सर्विस कमीशन और झारखंड स्टाफ सेलेक्शन कमीशन की परीक्षा में कथित अनियमितताओं और पेपर लीक के खिलाफ झारखंड में छात्रों का आंदोलन तेज हो गया है. इस आंदोलन का नेतृत्व कर रहे देवेंद्र नाथ महतो ने उन खबरों को खारिज किया है जिनमें दावा किया गया कि उन्होंने अपनी भूख हड़ताल तोड़ दी है. बातचीत में देवेंद्र नाथ महतो बताते हैं कि उन्होंने केवल सोनम वांगचुक के आग्रह पर जल ग्रहण किया है, लेकिन उनका अनशन पहले की तरह जारी है. उनका कहना है कि जब तक छात्रों की सभी मांगें पूरी नहीं होतीं, वे पीछे नहीं हटेंगे. उन्होंने यह भी कहा कि सरकार की किसी समिति या आश्वासन पर उन्हें भरोसा नहीं है और वे केवल मुख्यमंत्री हेमंत सोरेन से सीधे बातचीत चाहते हैं. इंटरव्यू में उन्होंने 10 अगस्त को प्रस्तावित विधानसभा मार्च का भी आह्वान किया और चेतावनी दी कि यदि सरकार ने जल्द पहल नहीं की तो यह छात्र आंदोलन एक बड़े जन आंदोलन में बदल सकता है. देखिए देवेंद्र नाथ महतो से ये बातचीत. बारिश के बीच देहरादून में जुटे हजारों छात्र, राहुल गांधी का 'छात्रों की गूंज' कार्यक्रम कैसा रहा? रेलवे स्टेशन, बस अड्डे और घरों में नजरबंद करके सीजेपी के प्रदर्शन में लखनऊ जाने से रोके गए छात्र",
-      "published_at": "Wed, 05 Aug 2026 15:02:38 +0000",
-      "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-05/k01d7u84/AI.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 9
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "f33cf4f02a1ecd7a45",
-      "title": "FARMER PROTEST IN BHOPAL: मूंग की खरीद को लेकर मध्य प्रदेश सरकार ने किसानों की मांग मानी, किसानों का प्रदर्शन खत्म",
-      "url": "https://khabarlahariya.org/farmer-protest-in-bhopal-major-protest-by-farmers-in-bhopal-over-moong-procurement-farmers-broke-through-barricades-and-climbed-onto-a-bus/",
-      "summary": "मध्य प्रदेश सरकार ने किसानों की मांगों को मानते हुए मूंग खरीद को लेकर 29 जुलाई 2026 को बड़ा फैसला लिया है। अब सरकार किसानों से उनकी मूंग उपज का…",
-      "published_at": "Wed, 29 Jul 2026 10:34:22 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 8
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "23e68c94feb740adee",
-      "title": "UP/Varanasi: डॉक्टर पर लापरवाही का आरोप प्रसव के बाद महिला की मौत, NH-29 पर शव रखकर प्रदर्शन",
-      "url": "https://khabarlahariya.org/up-varanasi-doctor-accused-of-negligence-following-womans-death-after-childbirth-protest-held-on-nh-29-with-the-body/",
-      "summary": "वाराणसी के चौबेपुर थाना क्षेत्र के चिरईगांव स्थित रुस्तमपुर में प्रसव के बाद 24 वर्षीय महिला की मौत से हंगामा मच गया। परिजनों के अनुसार, कंचन कुमारी ने 2 अगस्त…",
-      "published_at": "Tue, 04 Aug 2026 13:00:30 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "2ba252f14f3eab8f4a",
-      "title": "जब महिलाएं उतरीं सड़क पर, NEET आंदोलन से किसान आंदोलन, केन बेतवा आंदोलन और शाहीन बाग तक की लड़ाई",
-      "url": "https://khabarlahariya.org/when-women-took-to-the-streets-the-struggle-spanning-from-the-neet-movement-to-the-farmers-protest-the-ken-betwa-movement-and-shaheen-bagh/",
-      "summary": "दिल्ली के जंतर-मंतर पर 6 जून से लेकर 26 जुलाई 2026 को NEET परीक्षा को लेकर छात्रों का बड़ा आंदोलन हुआ। इस आंदोलन को सिर्फ हजारों छात्रों की भीड़ के…",
-      "published_at": "Sat, 01 Aug 2026 04:30:03 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "62176c8efb56ac9cd2",
-      "title": "जौहर विश्वविद्यालय : 18 जुलाई से धरना, अब 38 इमारतों के ध्वस्तीकरण पर लगी रोक",
-      "url": "https://khabarlahariya.org/jauhar-university-sit-in-protest-since-july-18-stay-now-granted-on-the-demolition-of-38-buildings/",
-      "summary": "रामपुर स्थित मौलाना मोहम्मद अली जौहर विश्वविद्यालय में छात्र-छात्राएं 18 जुलाई से ध्वस्तीकरण आदेश वापस लेने की मांग को लेकर लगातार धरने पर बैठे थे। छात्रों का विरोध विश्वविद्यालय की…",
-      "published_at": "Tue, 28 Jul 2026 09:00:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "0bf1c48f9dc5a0828e",
-      "title": "CJP: जंतर-मंतर पर प्रदर्शन के बीच शिवानी गौतम का अनोखा स्टॉल",
-      "url": "https://khabarlahariya.org/cjp-shivani-gautams-unique-stall-amidst-the-protest-at-jantar-mantar/",
-      "summary": "दिल्ली के जंतर-मंतर पर चल रहे प्रदर्शन के दौरान एक अलग ही तस्वीर देखने को मिली। अलीगढ़ की शिवानी गौतम डॉ. भीमराव अंबेडकर से जुड़े पोस्टर, झंडे और अन्य सामग्री…",
-      "published_at": "Mon, 27 Jul 2026 05:00:42 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "a66410507b5f415455",
-      "title": "Commonwealth Games 2026: भारत ने जीते 39 मेडल, 2030 में मेजबानी करेगा भारत",
-      "url": "https://khabarlahariya.org/commonwealth-games-2026-india-won-39-medals-india-to-host-in-2030/",
-      "summary": "कॉमनवेल्थ गेम्स 2026 भारत के लिए गौरवपूर्ण और यादगार रहा। कल 2 अगस्त 2026 को इसका समापन कार्यक्रम हुआ। भारतीय खिलाड़ियों ने शानदार प्रदर्शन करते हुए 39 मेडल भारत के…",
-      "published_at": "Mon, 03 Aug 2026 08:17:16 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "280ad28765d2e3d318",
-      "title": "द कविता शो: सोशल मीडिया पर अचानक क्यों ट्रेंड करने लगा ‘आरक्षण हटाओ’ अभियान?",
-      "url": "https://khabarlahariya.org/the-kavita-show-why-did-the-remove-reservation-campaign-suddenly-start-trending-on-social-media/",
-      "summary": "जंतर-मंतर पर छात्र पेपर लीक और शिक्षा व्यवस्था के खिलाफ प्रदर्शन कर रहे थे। इसी दौरान सोशल मीडिया पर “आरक्षण हटाओ” की बहस तेज़ हो गई। क्या यह सिर्फ़ एक…",
-      "published_at": "Thu, 30 Jul 2026 14:30:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "206dd24f91d484d326",
-      "title": "Commonwealth Games 2026: कॉमनवेल्थ गेम्स में भारत ने जीते 4 मेडल, मीराबाई चानू (Mirabai Chanu) ने भारत को दिलाया पहला गोल्ड मेडल",
-      "url": "https://khabarlahariya.org/commonwealth-games-2026-india-wins-4-medals-at-the-commonwealth-games-mirabai-chanu-secures-indias-first-gold-medal/",
-      "summary": "स्कॉटलैंड के ग्लासगो में चल रहे कॉमनवेल्थ गेम्स में भारत के खिलाड़ियों ने एक बार फिर देश को गर्व महसूस करवाया है। खासकर वेटलिफ्टिंग (Weightlifting) में भारत का शानदार प्रदर्शन…",
-      "published_at": "Mon, 27 Jul 2026 08:28:29 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "5fb97b29f24e2289f6",
-      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
-      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
-      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
-      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "d5798b688ca3d72080",
-      "title": "Govt. is open to talks, Jharkhand CM tells protesting students",
-      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-job-aspirants-protest-intensifies-as-five-more-sit-on-hunger-strike-in-ranchi/article71308396.ece",
-      "summary": "Hundreds of students have gathered at a stadium in Ranchi to demand a CBI inquiry into alleged irregularities in competitive exams; the protesters have also called for the cancellation of the Preliminary Test of the 14th JPSC Civil Services Examination, and a review of exams conducted through agencies",
-      "published_at": "Wed, 05 Aug 2026 20:47:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ht0par/article71308419.ece/alternates/LANDSCAPE_1200/20260804528L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "44f578446cf417af5c",
-      "title": "AIDSO protest prompts VSKU to reduce admission fee by ₹1,100",
-      "url": "https://www.thehindu.com/news/national/karnataka/aidso-protest-prompts-vsku-to-reduce-admission-fee-by-1100/article71310176.ece",
-      "summary": "Vice-Chancellor promises refund of excess amount collected after ‘University Chalo’ agitation",
-      "published_at": "Wed, 05 Aug 2026 20:46:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uw3n39/article71310412.ece/alternates/LANDSCAPE_1200/10258_5_8_2026_20_12_50_2_AIDSO_2.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
         ]
       }
     },
@@ -2076,6 +1288,420 @@
       }
     },
     {
+      "raw_id": "035c81be39942abed8",
+      "title": "India’s carbon market sets weak emissions targets, analysis finds",
+      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
+      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
+      "published_at": "31 Jul 2026 16:51:38 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "a1e74f2dfd561fa8f2",
+      "title": "UP News: यूपी डिजिटल लेबर चौक ऐप (UP Digital Labour Chowk) अब मोबाइल से बुक करें मिस्त्री और मजदूर, जानें पूरी जानकारी",
+      "url": "https://khabarlahariya.org/up-news-up-digital-labour-chowk-app-now-book-skilled-workers-and-laborers-via-mobile-get-full-details-here/",
+      "summary": "अगर आपको घर बनवाना हो, पुताई करानी हो…",
+      "published_at": "Sun, 26 Jul 2026 07:00:02 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "835675326855ec5e08",
+      "title": "Left Groups Protest Workers' Repression in North India",
+      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
+      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
+      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "9bcfe1ff8ff9d820cc",
+      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
+      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
+      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
+      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2a25090f84e0207e53",
+      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
+      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
+      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
+      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "938336d973c9016b2a",
+      "title": "India’s ethanol push moves from the pump to the field, raising water and food questions",
+      "url": "https://india.mongabay.com/2026/07/indias-ethanol-push-moves-from-the-pump-to-the-field-raising-water-and-food-questions/",
+      "summary": "This is the third part in a series comparing India and Brazil’s ethanol transitions. This part examines how India’s ethanol model increasingly moving beyond sugarcane and molasses-based production to grains, raising questions about pressures on livestock feed and the food processing industry. The second part examined the challenges of procurement, storage, transport and quality control. […]",
+      "published_at": "28 Jul 2026 16:31:30 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28144133/signal-2026-07-28-12-24-18-195_003-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "36b62f162c28a0bdf0",
+      "title": "Stock Market Today : शेयर बाजार में तेजी के साथ शुरुआत, सेंसेक्स में 480 अंकों का उछाल, निफ्टी 24600 के पार",
+      "url": "https://www.jansatta.com/business/stock-market-today-sensex-nifty-open-in-green-crude-oil-rbi-meeting-news-in-hindi/4648361/",
+      "summary": "",
+      "published_at": "2026-08-05T09:41:39+05:30",
+      "image_url": "https://images.jansatta.com/2026/05/brokerages-are-bullish-on-these-stocks.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 12
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "d5dcdd0dec764ee0ef",
+      "title": "Explained: सरकार ने Windfall Tax की दरें फिर क्यों बदलीं? जानिए क्या होता है यह टैक्स और कब बढ़ता-घटता है",
+      "url": "https://www.jansatta.com/business/explained-why-did-the-government-revise-windfall-tax-rates-again-find-out-what-this-tax-is-and-when-it-goes-up-or-down/4647544/",
+      "summary": "",
+      "published_at": "2026-08-04T16:14:32+05:30",
+      "image_url": "https://images.jansatta.com/2026/08/TAX-4.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 12
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "1812dff7e3eb267b4c",
+      "title": "Visakhapatnam emerges as India’s fastest-growing non-metropolitan job market: LinkedIn Cities on the Rise 2026",
+      "url": "https://indianexpress.com/article/education/visakhapatnam-emerges-as-indias-fastest-growing-non-metropolitan-job-market-linkedin-cities-on-the-rise-2026-10798284/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 12:15:33 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/LinkedIn-Cities-on-the-Rise-2026-Visakhapatnam-emerges-as-Indias-fastest-growing-non-metropolitan-job-market.png",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 8,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "df9d1802d4f01143f2",
+      "title": "Explained: बंदरगाह, रेल और सड़क को एक साथ जोड़ने का सरकार का प्लान क्या है? National Logistics Policy को समझिए",
+      "url": "https://www.jansatta.com/business/explained-what-is-the-government-plan-to-integrate-ports-rail-and-road-networks-understanding-national-logistics-policy/4649364/",
+      "summary": "",
+      "published_at": "2026-08-05T18:58:39+05:30",
+      "image_url": "https://images.jansatta.com/2026/08/Explained-27.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "d7e8fcc0084a2f5596",
+      "title": "टाटा ग्रुप की Air India ने नए CEO-MD का किया ऐलान, Tewolde Gebremariam को मिली जिम्मेदारी",
+      "url": "https://www.jansatta.com/business/tata-groups-air-india-announces-new-ceo-md-tewolde-gebremariam-appointed-to-the-role/4649401/",
+      "summary": "",
+      "published_at": "2026-08-05T18:43:56+05:30",
+      "image_url": "https://images.jansatta.com/2026/08/Tewolde-Gebremariam.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
       "raw_id": "cdf3a44208d11dc555",
       "title": "Tamil Nadu goes to polls",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
@@ -2205,6 +1831,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
           "States & Local"
         ]
       }
@@ -2381,6 +2042,41 @@
       }
     },
     {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "8b065506f64b24a1ec",
       "title": "Odisha government to provide assistance to Durga Puja committees up to ₹ 1.10 lakh each",
       "url": "https://www.thehindu.com/news/national/odisha/odisha-government-to-provide-assistance-to-durga-puja-committees-up-to-110-lakh-each/article70127424.ece",
@@ -2414,50 +2110,382 @@
       }
     },
     {
-      "raw_id": "108276a53e4b6ea646",
-      "title": "Two drown during idol immersion in Agra, CM Yogi expresses grief",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/two-drown-during-idol-immersion-in-agra-cm-yogi-expresses-grief/article70120130.ece",
-      "summary": "Six others are still missing and teams of local divers, police personnel and the State Disaster Response Force (SDRF) have been pressed into service, officials said",
-      "published_at": "Fri, 03 Oct 2025 12:11:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/85968x/article70120223.ece/alternates/LANDSCAPE_1200/PTI10_02_2025_000630B.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "386ca2d56aa1cc5f89",
+      "title": "झारखंड: छात्रों का आंदोलन जारी, भूख हड़ताल खत्म करने की देवेंद्र नाथ महतो ने बताई पूरी सच्चाई",
+      "url": "https://hindi.newslaundry.com/2026/08/05/jharkhand-student-protest-leader-devendra-nath-mahto-on-hunger-strike-end-and-hemant-soren",
+      "summary": "झारखंड पब्लिक सर्विस कमीशन और झारखंड स्टाफ सेलेक्शन कमीशन की परीक्षा में कथित अनियमितताओं और पेपर लीक के खिलाफ झारखंड में छात्रों का आंदोलन तेज हो गया है. इस आंदोलन का नेतृत्व कर रहे देवेंद्र नाथ महतो ने उन खबरों को खारिज किया है जिनमें दावा किया गया कि उन्होंने अपनी भूख हड़ताल तोड़ दी है. बातचीत में देवेंद्र नाथ महतो बताते हैं कि उन्होंने केवल सोनम वांगचुक के आग्रह पर जल ग्रहण किया है, लेकिन उनका अनशन पहले की तरह जारी है. उनका कहना है कि जब तक छात्रों की सभी मांगें पूरी नहीं होतीं, वे पीछे नहीं हटेंगे. उन्होंने यह भी कहा कि सरकार की किसी समिति या आश्वासन पर उन्हें भरोसा नहीं है और वे केवल मुख्यमंत्री हेमंत सोरेन से सीधे बातचीत चाहते हैं. इंटरव्यू में उन्होंने 10 अगस्त को प्रस्तावित विधानसभा मार्च का भी आह्वान किया और चेतावनी दी कि यदि सरकार ने जल्द पहल नहीं की तो यह छात्र आंदोलन एक बड़े जन आंदोलन में बदल सकता है. देखिए देवेंद्र नाथ महतो से ये बातचीत. बारिश के बीच देहरादून में जुटे हजारों छात्र, राहुल गांधी का 'छात्रों की गूंज' कार्यक्रम कैसा रहा? रेलवे स्टेशन, बस अड्डे और घरों में नजरबंद करके सीजेपी के प्रदर्शन में लखनऊ जाने से रोके गए छात्र",
+      "published_at": "Wed, 05 Aug 2026 15:02:38 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-05/k01d7u84/AI.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "States & Local": 8
+          "Protests": 9
         },
         "candidate_categories": [
-          "States & Local"
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "74005d24725e081452",
-      "title": "75 years of Vishnuvardhan: Dream roles and unfulfilled projects of the Kannada actor",
-      "url": "https://www.thehindu.com/entertainment/movies/vishnuvardhan-75th-birth-anniversary-vishnuvardhan-memorial-kannada-actor-sandalwood-dream-roles-projects/article70062572.ece",
-      "summary": "Remembering versatile Kannada actor Vishnuvardhan on his 75th birth anniversary, young filmmakers talk about his untapped potential in the industry",
-      "published_at": "Thu, 18 Sep 2025 19:20:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kg2dtn/article70064297.ece/alternates/LANDSCAPE_1200/Vishnuvardhan_04.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "f33cf4f02a1ecd7a45",
+      "title": "FARMER PROTEST IN BHOPAL: मूंग की खरीद को लेकर मध्य प्रदेश सरकार ने किसानों की मांग मानी, किसानों का प्रदर्शन खत्म",
+      "url": "https://khabarlahariya.org/farmer-protest-in-bhopal-major-protest-by-farmers-in-bhopal-over-moong-procurement-farmers-broke-through-barricades-and-climbed-onto-a-bus/",
+      "summary": "मध्य प्रदेश सरकार ने किसानों की मांगों को मानते हुए मूंग खरीद को लेकर 29 जुलाई 2026 को बड़ा फैसला लिया है। अब सरकार किसानों से उनकी मूंग उपज का…",
+      "published_at": "Wed, 29 Jul 2026 10:34:22 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "23e68c94feb740adee",
+      "title": "UP/Varanasi: डॉक्टर पर लापरवाही का आरोप प्रसव के बाद महिला की मौत, NH-29 पर शव रखकर प्रदर्शन",
+      "url": "https://khabarlahariya.org/up-varanasi-doctor-accused-of-negligence-following-womans-death-after-childbirth-protest-held-on-nh-29-with-the-body/",
+      "summary": "वाराणसी के चौबेपुर थाना क्षेत्र के चिरईगांव स्थित रुस्तमपुर में प्रसव के बाद 24 वर्षीय महिला की मौत से हंगामा मच गया। परिजनों के अनुसार, कंचन कुमारी ने 2 अगस्त…",
+      "published_at": "Tue, 04 Aug 2026 13:00:30 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2ba252f14f3eab8f4a",
+      "title": "जब महिलाएं उतरीं सड़क पर, NEET आंदोलन से किसान आंदोलन, केन बेतवा आंदोलन और शाहीन बाग तक की लड़ाई",
+      "url": "https://khabarlahariya.org/when-women-took-to-the-streets-the-struggle-spanning-from-the-neet-movement-to-the-farmers-protest-the-ken-betwa-movement-and-shaheen-bagh/",
+      "summary": "दिल्ली के जंतर-मंतर पर 6 जून से लेकर 26 जुलाई 2026 को NEET परीक्षा को लेकर छात्रों का बड़ा आंदोलन हुआ। इस आंदोलन को सिर्फ हजारों छात्रों की भीड़ के…",
+      "published_at": "Sat, 01 Aug 2026 04:30:03 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "62176c8efb56ac9cd2",
+      "title": "जौहर विश्वविद्यालय : 18 जुलाई से धरना, अब 38 इमारतों के ध्वस्तीकरण पर लगी रोक",
+      "url": "https://khabarlahariya.org/jauhar-university-sit-in-protest-since-july-18-stay-now-granted-on-the-demolition-of-38-buildings/",
+      "summary": "रामपुर स्थित मौलाना मोहम्मद अली जौहर विश्वविद्यालय में छात्र-छात्राएं 18 जुलाई से ध्वस्तीकरण आदेश वापस लेने की मांग को लेकर लगातार धरने पर बैठे थे। छात्रों का विरोध विश्वविद्यालय की…",
+      "published_at": "Tue, 28 Jul 2026 09:00:47 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "0bf1c48f9dc5a0828e",
+      "title": "CJP: जंतर-मंतर पर प्रदर्शन के बीच शिवानी गौतम का अनोखा स्टॉल",
+      "url": "https://khabarlahariya.org/cjp-shivani-gautams-unique-stall-amidst-the-protest-at-jantar-mantar/",
+      "summary": "दिल्ली के जंतर-मंतर पर चल रहे प्रदर्शन के दौरान एक अलग ही तस्वीर देखने को मिली। अलीगढ़ की शिवानी गौतम डॉ. भीमराव अंबेडकर से जुड़े पोस्टर, झंडे और अन्य सामग्री…",
+      "published_at": "Mon, 27 Jul 2026 05:00:42 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "a66410507b5f415455",
+      "title": "Commonwealth Games 2026: भारत ने जीते 39 मेडल, 2030 में मेजबानी करेगा भारत",
+      "url": "https://khabarlahariya.org/commonwealth-games-2026-india-won-39-medals-india-to-host-in-2030/",
+      "summary": "कॉमनवेल्थ गेम्स 2026 भारत के लिए गौरवपूर्ण और यादगार रहा। कल 2 अगस्त 2026 को इसका समापन कार्यक्रम हुआ। भारतीय खिलाड़ियों ने शानदार प्रदर्शन करते हुए 39 मेडल भारत के…",
+      "published_at": "Mon, 03 Aug 2026 08:17:16 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "280ad28765d2e3d318",
+      "title": "द कविता शो: सोशल मीडिया पर अचानक क्यों ट्रेंड करने लगा ‘आरक्षण हटाओ’ अभियान?",
+      "url": "https://khabarlahariya.org/the-kavita-show-why-did-the-remove-reservation-campaign-suddenly-start-trending-on-social-media/",
+      "summary": "जंतर-मंतर पर छात्र पेपर लीक और शिक्षा व्यवस्था के खिलाफ प्रदर्शन कर रहे थे। इसी दौरान सोशल मीडिया पर “आरक्षण हटाओ” की बहस तेज़ हो गई। क्या यह सिर्फ़ एक…",
+      "published_at": "Thu, 30 Jul 2026 14:30:09 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "206dd24f91d484d326",
+      "title": "Commonwealth Games 2026: कॉमनवेल्थ गेम्स में भारत ने जीते 4 मेडल, मीराबाई चानू (Mirabai Chanu) ने भारत को दिलाया पहला गोल्ड मेडल",
+      "url": "https://khabarlahariya.org/commonwealth-games-2026-india-wins-4-medals-at-the-commonwealth-games-mirabai-chanu-secures-indias-first-gold-medal/",
+      "summary": "स्कॉटलैंड के ग्लासगो में चल रहे कॉमनवेल्थ गेम्स में भारत के खिलाड़ियों ने एक बार फिर देश को गर्व महसूस करवाया है। खासकर वेटलिफ्टिंग (Weightlifting) में भारत का शानदार प्रदर्शन…",
+      "published_at": "Mon, 27 Jul 2026 08:28:29 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "5fb97b29f24e2289f6",
+      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
+      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
+      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
+      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2ecdd748ef70dc7ce4",
+      "title": "370 हटाने के सात साल: जम्मू-कश्मीर में क्या बदला? नेशनल कॉन्फ्रेंस और पीडीपी ने किया विरोध प्रदर्शन",
+      "url": "https://www.jansatta.com/national/what-changed-after-seven-years-of-abrogation-of-article-370-in-jammu-kashmir/4649442/",
+      "summary": "",
+      "published_at": "2026-08-05T19:34:00+05:30",
+      "image_url": "https://images.jansatta.com/2026/08/Jammu-Kashmir-Article-370.jpg",
+      "suggested_category": "",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "d5798b688ca3d72080",
+      "title": "Govt. is open to talks, Jharkhand CM tells protesting students",
+      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-job-aspirants-protest-intensifies-as-five-more-sit-on-hunger-strike-in-ranchi/article71308396.ece",
+      "summary": "Hundreds of students have gathered at a stadium in Ranchi to demand a CBI inquiry into alleged irregularities in competitive exams; the protesters have also called for the cancellation of the Preliminary Test of the 14th JPSC Civil Services Examination, and a review of exams conducted through agencies",
+      "published_at": "Wed, 05 Aug 2026 20:47:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ht0par/article71308419.ece/alternates/LANDSCAPE_1200/20260804528L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -2472,12 +2500,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
+          "Protests": 5,
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -2562,6 +2590,177 @@
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "e5ce6ceb1bddb02605",
+      "title": "China announces ‘countermeasures’ after U.S. trade sanctions",
+      "url": "https://www.thehindu.com/news/international/china-announces-countermeasures-after-us-trade-sanctions/article71309251.ece",
+      "summary": "Beijing’s measures include suspending factory follow-up inspections by Chinese certification bodies, blacklisting U.S. compliance testing companies, and launching national security investigations into imports of office printers and copiers, according to the Commerce Ministry",
+      "published_at": "Wed, 05 Aug 2026 17:37:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/or2bqp/article71309325.ece/alternates/LANDSCAPE_1200/iStock-919701318.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Economy & Employment": 4,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "3b561c1c6012d4fbd5",
+      "title": "Why India-based firm skiez travels among entities facing US sanctions over Iran’s Mahan Air",
+      "url": "https://indianexpress.com/article/world/why-india-based-firm-skiez-travels-among-entities-facing-us-sanctions-over-irans-mahan-air-10811515/",
+      "summary": "",
+      "published_at": "Fri, 31 Jul 2026 05:27:57 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/US-7-10.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "154d63c73d136ab0df",
+      "title": "Ship with 13 Indians stuck in Black Sea, embassy says ‘in touch with authorities’",
+      "url": "https://indianexpress.com/article/world/13-indian-seafarers-trapped-mv-amir1-ukraine-chornomorsk-port-attack-10808638/",
+      "summary": "",
+      "published_at": "Wed, 29 Jul 2026 10:09:01 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/ukraine-ship.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "22f42966dca010716b",
+      "title": "US Senate clears Russia sanctions bill: India among top countries facing 100% tariffs",
+      "url": "https://indianexpress.com/article/world/us-senate-clears-russia-sanctions-bill-100-tariffs-lindsey-graham-india-among-countries-at-risk-10808287/",
+      "summary": "",
+      "published_at": "Wed, 29 Jul 2026 03:15:35 +0000",
+      "image_url": "https://images.indianexpress.com/2026/06/US_7d2450.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "d4a62e0fe55cbf2ed5",
+      "title": "Why Pakistan is asking the US for a $10-billion lifeline after its Iran diplomacy",
+      "url": "https://indianexpress.com/article/world/pakistan-seeks-10-billion-us-fund-iran-talks-10797931/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 07:40:19 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/US-12-3.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -2713,149 +2912,116 @@
       }
     },
     {
-      "raw_id": "de031ebe74c07b7d77",
-      "title": "Indian-flagged vessel comes under attack in Red Sea",
-      "url": "https://www.thehindu.com/news/international/indian-flagged-vessel-comes-under-attack-in-red-sea/article71306885.ece",
-      "summary": "All 13 Indian nationals have been rescued. Our Embassy in Riyadh is closely monitoring the situation and proactively coordinating with the Yemeni authorities, the MEA said",
-      "published_at": "Wed, 05 Aug 2026 09:29:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1ieh5e/article71306896.ece/alternates/LANDSCAPE_1200/2026-07-23T181801Z_1910885437_RC2TJMA9472R_RTRMADP_3_YEMEN-SHIPPING-ADEN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a0b3b5cc860db83c9f",
-      "title": "West Asia war updates: Iran not seeking a wider war, President says",
-      "url": "https://www.thehindu.com/news/international/west-asia-war-us-iran-strikes-tehran-washington-talks-donald-trump-peace-deal-live-updates-august-4-2026/article71303715.ece",
-      "summary": "Iran’s Foreign Ministry denied that negotiations with Washington were taking place, but Donald Trump insisted they were; \"We are talking right now,\" he said.",
-      "published_at": "Wed, 05 Aug 2026 08:54:54 +0530",
+      "raw_id": "a42a6eaee9fe92c115",
+      "title": "Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan",
+      "url": "https://eastmojo.com/nagaland/2026/08/05/nagaland-uni-students-complete-hiroshima-orizuru-fellowship-in-japan/",
+      "summary": "Kohima: Two students from Nagaland University have successfully completed the prestigious Hiroshima Orizuru Fellowship Summer Course on Peace and Sustainability, a programme supported by the Sasakawa Peace Foundation (SPF), Japan. The participants, Repakaba Tzüdir, a PhD scholar from the Department of Sociology, and Impolong Changkiri, a postgraduate student from the Department of Psychology, were selected […] The post Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 13:30:03 +0000",
       "image_url": "",
-      "suggested_category": "International & Geopolitics",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Society, Rights & Justice": 5
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "bf1b1cdce1d0b35d9f",
-      "title": "Cape Town airport runway closed after plane's tyres fail, passengers safe",
-      "url": "https://www.thehindu.com/news/international/cape-town-airport-runway-closed-after-planes-tyres-fail-passengers-safe/article71307006.ece",
-      "summary": "All arriving flights are being diverted to other ‌airports. Domestic departures are operating ​but not international departures",
-      "published_at": "Wed, 05 Aug 2026 01:47:40 +0530",
+      "raw_id": "9e1c56d675ef1cfc38",
+      "title": "Nagaland MP Jamir pushes upgrade of Jalukie veterinary college",
+      "url": "https://eastmojo.com/nagaland/2026/08/04/nagaland-mp-jamir-pushes-upgrade-of-jalukie-veterinary-college/",
+      "summary": "Kohima: Nagaland Lok Sabha Member of Parliament S. Supongmeren Jamir on Tuesday urged the Centre to strengthen infrastructure and academic facilities at the College of Veterinary Sciences and Animal Husbandry in Jalukie, Peren district, a constituent college of the Central Agricultural University. Raising the issue during Zero Hour in Parliament, Jamir appealed to the Union […] The post Nagaland MP Jamir pushes upgrade of Jalukie veterinary college appeared first on EastMojo .",
+      "published_at": "Tue, 04 Aug 2026 14:57:08 +0000",
       "image_url": "",
-      "suggested_category": "International & Geopolitics",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "a173d343695acdc003",
-      "title": "Pakistan invites Iranian FM Araghchi for talks amid renewed U.S.-Iran tensions",
-      "url": "https://www.thehindu.com/news/international/pakistan-invites-iranian-fm-araghchi-for-talks-amid-renewed-us-iran-tensions/article71304954.ece",
-      "summary": "The invitation, according to top officials familiar with the outreach, signals Islamabad’s determination to remain a key diplomatic bridge between Tehran and Washington",
-      "published_at": "Tue, 04 Aug 2026 17:23:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yij6rw/article71305034.ece/alternates/LANDSCAPE_1200/PTI05_15_2026_000155B.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "432badb4f55a31e9fc",
+      "title": "“उत्कृष्टता की ओर यात्रा यहां से शुरू होती है!”.. कलिंगा विश्वविद्यालय में इंडक्शन प्रोग्राम 2026 का भव्य आयोजन, ढोल-नगाड़ों और सांस्कृतिक प्रस्तुतियों के बीच हुआ नव प्रवेशी छात्रों का स्वागत",
+      "url": "https://theruralpress.in/2026/08/05/kalinga-university-induction-program-2026-new-students-welcomed/",
+      "summary": "Kalinga University Raipur: रायपुर। कलिंगा विश्वविद्यालय में आज ‘इंडक्शन प्रोग्राम 2026’ का सफलतापूर्वक आयोजन किया, जिसके साथ ही नव-प्रवेशित छात्रों के नए बैच का आधिकारिक स्वागत किया गया। इस कार्यक्रम का उद्देश्य छात्रों को विश्वविद्यालय के संकायों, विभागों और शैक्षणिक वातावरण से परिचित कराना तथा विश्वविद्यालय के नेतृत्व से बातचीत करने का अवसर प्रदान करना […]",
+      "published_at": "Wed, 05 Aug 2026 15:25:39 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "0ed87cd1f61257abc1",
-      "title": "Bangladesh turns ousted Hasina’s official residence into museum; observes ‘July Mass Uprising Day’",
-      "url": "https://www.thehindu.com/news/international/bangladesh-turns-ousted-hasinas-official-residence-into-museum-observes-july-mass-uprising-day/article71310797.ece",
-      "summary": "Prime Minister Tarique Rahman inaugurated the ‘July Mass Uprising Memorial Museum’ at Ganabhaban, prime minister’s official residence during Hasina’s regime, coinciding with the day she fled to India",
-      "published_at": "Wed, 05 Aug 2026 22:44:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rcoz8p/article71310829.ece/alternates/LANDSCAPE_1200/AP08_05_2026_000265B.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "60d809ac33302d24c7",
+      "title": "Rural students can excel with quality education: Union Minister",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/rural-students-can-excel-with-quality-education-union-minister/article71165855.ece",
+      "summary": "",
+      "published_at": "Wed, 29 Jul 2026 09:50:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/olexxu/article71166698.ece/alternates/LANDSCAPE_1200/20260630407L.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -2870,10 +3036,280 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "b61ae2344bada9f052",
+      "title": "Today News Headlines for School Assembly, July 29, 2026: Rahul Gandhi praises students who protested over exam paper leak",
+      "url": "https://indianexpress.com/article/education/today-news-headlines-for-school-assembly-29-july-2026-several-dead-after-7-1-earthquake-in-japan-opposition-raises-brutality-on-protesting-students-rbi-plans-plastic-currency-notes-10807497/",
+      "summary": "",
+      "published_at": "Tue, 28 Jul 2026 12:39:02 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/rahul_47ef50.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "2c7a491384f23f6133",
+      "title": "Kashmir schools reopen after 20-day closure; Jammu asks authorities to lock rain-damaged school buildings",
+      "url": "https://indianexpress.com/article/education/jammu-and-kashmir-schools-reopen-20-day-closure-jammu-asks-authorities-lock-rain-damaged-school-buildings-repair-10805221/",
+      "summary": "",
+      "published_at": "Mon, 27 Jul 2026 05:31:04 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/JnK-classrooms.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "291aa074f66382ce60",
+      "title": "IIT Kharagpur signs MoU with Leeds University, opens new horizons in research and education",
+      "url": "https://indianexpress.com/article/education/iit-kharagpur-signs-mou-leeds-university-opens-new-horizons-research-education-100-thousand-usd-fund-10804357/",
+      "summary": "",
+      "published_at": "Sun, 26 Jul 2026 09:36:38 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/IIT-Kharagpur-Leeds-University.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16,
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9bd23c45f24977eeca",
+      "title": "Students from 31 countries join Baroda’s MS University, Bangladesh tops international enrolments",
+      "url": "https://indianexpress.com/article/education/students-from-31-countries-join-barodas-ms-university-bangladesh-tops-international-enrolments-10802169/",
+      "summary": "",
+      "published_at": "Fri, 24 Jul 2026 14:51:32 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/msu-baroda-univ.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16,
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "09b4853ddd0885203e",
+      "title": "Today News Headlines for School Assembly, July 23, 2026: Modi has announced fast-track courts to ensure justice in paper leak cases",
+      "url": "https://indianexpress.com/article/education/today-news-headlines-for-school-assembly-23-july-2026-union-ministers-have-fresh-round-of-talks-with-cjp-jantar-mantar-regrouping-crowd-10798704/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 13:23:27 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/school-assembly-news-headlines-july-22.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "43a1780755eecb021d",
+      "title": "School Holidays: Jammu-Kashmir, Himachal, Uttarakhand shut schools as IMD predicts heavy rainfall",
+      "url": "https://indianexpress.com/article/education/heavy-rain-prevails-srinagar-jammu-kashmir-government-extends-school-holidays-till-july-26-10797870/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 07:26:22 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Heavy-Rain-Prevails-Over-Srinagar-JK-Govt-Shut-Extents-School-Holidays-Till-July-26.png",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "cb34c8f2e5cb81c8b1",
+      "title": "Bar Council asks law schools to enforce social media rules; students to sign compliance undertakings",
+      "url": "https://indianexpress.com/article/education/bar-council-of-india-bci-social-media-rules-for-advocates-law-schools-compliance-admission-reel-ban-barcouncilofindia-org-10792292/",
+      "summary": "",
+      "published_at": "Sat, 18 Jul 2026 07:27:39 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Bar-Council-of-India-BCI-Campus.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "eb4a2bf036bd8a07e6",
+      "title": "Why are government schools shutting down? | Explained",
+      "url": "https://www.thehindu.com/education/why-are-government-schools-shutting-down-explained/article71297685.ece",
+      "summary": "Which States have witnessed the highest number of closures? How has school rationalisation affected children’s access to education? Who bears the biggest burden of government school closures? Can the Centre step in to reverse the trend? Why has the Right to Education Act fallen short?",
+      "published_at": "Tue, 04 Aug 2026 17:52:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ba23ux/article71298761.ece/alternates/LANDSCAPE_1200/girl_students_03.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 14
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -2944,6 +3380,122 @@
           "Sports"
         ]
       }
+    },
+    {
+      "raw_id": "6098bee1bbe6c64006",
+      "title": "Geneva to host Gukesh vs Sindarov World Chess Championship match in Nov-Dec 2026",
+      "url": "https://indianexpress.com/article/sports/chess/gukesh-vs-sindarov-worldchampionship-host-geneva-host-switzerland-10807591/",
+      "summary": "",
+      "published_at": "Tue, 28 Jul 2026 12:35:36 +0000",
+      "image_url": "https://images.indianexpress.com/2026/04/gukesh-vs-sindarov.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 16
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "29951e743a24951acc",
+      "title": "India at CWG 2026 Day 10 Schedule: Full list of Indian athletes in action on Saturday",
+      "url": "https://indianexpress.com/article/sports/india-cwg-day-10-schedule-full-list-of-indian-athletes-in-action-10812379/",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 01:30:41 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Jaismine-CWG.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 26,
+        "observed_report_count": 5,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "India at CWG 2026 Day 7 Schedule: Full list of Indian athletes in action on Wednesday",
+          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-7-schedule-full-list-of-indian-athletes-in-action-on-wednesday-10807928/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "India at CWG 2026 Day 8 Schedule: Full list of Indian athletes in action on Thursday",
+          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-8-schedule-full-list-of-athletes-in-action-10809654/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "India at CWG 2026 Day 9 Schedule: Full list of Indian athletes in action on Friday",
+          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-9-schedule-full-list-of-indian-athletes-10811246/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "India at CWG 2026 Day 6 Schedule: Full list of Indian athletes in action on Tuesday",
+          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-6-schedule-full-list-athletes-in-action-10806340/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "01f7fa1a5153b085a6",
@@ -3206,486 +3758,6 @@
         },
         "candidate_categories": [
           "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "aea3c057bbf6e247be",
-      "title": "Sachin Siwach, Preeti Pawar eye Asian Games gold after record-breaking Boxing medal haul at CWG 2026",
-      "url": "https://www.thehindu.com/sport/other-sports/sachin-siwach-preeti-pawar-eye-asian-games-gold-after-record-breaking-boxing-medal-haul-at-cwg-2026/article71306998.ece",
-      "summary": "Speaking to ANI, Sachin, who secured a gold medal in the men's 60 kg final, said that seeing the national flag hoisted after the gold medal win is a \"different kind of happiness\" and a reason why they all play sport",
-      "published_at": "Wed, 05 Aug 2026 01:30:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/b3p2mz/article71307001.ece/alternates/LANDSCAPE_1200/PTI08_04_2026_000213B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "bccd826ceb33ee653f",
-      "title": "JFC's ISL exit is a long-planned strategic move, not linked to anything else: Tata Steel V-P",
-      "url": "https://www.thehindu.com/sport/football/jfcs-isl-exit-is-a-long-planned-strategic-move-not-linked-to-anything-else-tata-steel-v-p/article71306976.ece",
-      "summary": "The VP said Tata Steel had begun reviewing its football strategy last year before deciding that the company should return to its traditional role of identifying and nurturing young talent",
-      "published_at": "Wed, 05 Aug 2026 01:01:03 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "a42a6eaee9fe92c115",
-      "title": "Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan",
-      "url": "https://eastmojo.com/nagaland/2026/08/05/nagaland-uni-students-complete-hiroshima-orizuru-fellowship-in-japan/",
-      "summary": "Kohima: Two students from Nagaland University have successfully completed the prestigious Hiroshima Orizuru Fellowship Summer Course on Peace and Sustainability, a programme supported by the Sasakawa Peace Foundation (SPF), Japan. The participants, Repakaba Tzüdir, a PhD scholar from the Department of Sociology, and Impolong Changkiri, a postgraduate student from the Department of Psychology, were selected […] The post Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan appeared first on EastMojo .",
-      "published_at": "Wed, 05 Aug 2026 13:30:03 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 5
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9e1c56d675ef1cfc38",
-      "title": "Nagaland MP Jamir pushes upgrade of Jalukie veterinary college",
-      "url": "https://eastmojo.com/nagaland/2026/08/04/nagaland-mp-jamir-pushes-upgrade-of-jalukie-veterinary-college/",
-      "summary": "Kohima: Nagaland Lok Sabha Member of Parliament S. Supongmeren Jamir on Tuesday urged the Centre to strengthen infrastructure and academic facilities at the College of Veterinary Sciences and Animal Husbandry in Jalukie, Peren district, a constituent college of the Central Agricultural University. Raising the issue during Zero Hour in Parliament, Jamir appealed to the Union […] The post Nagaland MP Jamir pushes upgrade of Jalukie veterinary college appeared first on EastMojo .",
-      "published_at": "Tue, 04 Aug 2026 14:57:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "432badb4f55a31e9fc",
-      "title": "“उत्कृष्टता की ओर यात्रा यहां से शुरू होती है!”.. कलिंगा विश्वविद्यालय में इंडक्शन प्रोग्राम 2026 का भव्य आयोजन, ढोल-नगाड़ों और सांस्कृतिक प्रस्तुतियों के बीच हुआ नव प्रवेशी छात्रों का स्वागत",
-      "url": "https://theruralpress.in/2026/08/05/kalinga-university-induction-program-2026-new-students-welcomed/",
-      "summary": "Kalinga University Raipur: रायपुर। कलिंगा विश्वविद्यालय में आज ‘इंडक्शन प्रोग्राम 2026’ का सफलतापूर्वक आयोजन किया, जिसके साथ ही नव-प्रवेशित छात्रों के नए बैच का आधिकारिक स्वागत किया गया। इस कार्यक्रम का उद्देश्य छात्रों को विश्वविद्यालय के संकायों, विभागों और शैक्षणिक वातावरण से परिचित कराना तथा विश्वविद्यालय के नेतृत्व से बातचीत करने का अवसर प्रदान करना […]",
-      "published_at": "Wed, 05 Aug 2026 15:25:39 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "60d809ac33302d24c7",
-      "title": "Rural students can excel with quality education: Union Minister",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/rural-students-can-excel-with-quality-education-union-minister/article71165855.ece",
-      "summary": "",
-      "published_at": "Wed, 29 Jul 2026 09:50:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/olexxu/article71166698.ece/alternates/LANDSCAPE_1200/20260630407L.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 16
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "eb4a2bf036bd8a07e6",
-      "title": "Why are government schools shutting down? | Explained",
-      "url": "https://www.thehindu.com/education/why-are-government-schools-shutting-down-explained/article71297685.ece",
-      "summary": "Which States have witnessed the highest number of closures? How has school rationalisation affected children’s access to education? Who bears the biggest burden of government school closures? Can the Centre step in to reverse the trend? Why has the Right to Education Act fallen short?",
-      "published_at": "Tue, 04 Aug 2026 17:52:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ba23ux/article71298761.ece/alternates/LANDSCAPE_1200/girl_students_03.JPG",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 14
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d2eec9d5189908443b",
-      "title": "Kerala govt’s FYUGP review panel calls for Inter-University Board of Studies Committees, assessment review bodies in varsities",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-govts-fyugp-review-panel-calls-for-inter-university-board-of-studies-committees-assessment-review-bodies-in-varsities/article71304234.ece",
-      "summary": "Recommendations are part of interim report of committee formed by Kerala State Higher Education Council to evaluate implementation of FYUGP in universities and colleges",
-      "published_at": "Tue, 04 Aug 2026 14:09:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/l1ocsj/article71304466.ece/alternates/LANDSCAPE_1200/fyup.jpeg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d8f121439e4dd2678a",
-      "title": "Drug testing college students: IITs, IIMs begin with voluntary urine tests at admission",
-      "url": "https://www.thehindu.com/news/national/drug-testing-college-students-iits-iims-begin-with-voluntary-urine-tests-at-admission/article71294518.ece",
-      "summary": "Part of government mission to screen 10 lakh students at 170 central higher education institutes by 2029; under a framework provided by National Drug Dependence Treatment Centre, the test is meant to be confidential, cannot result in any ‘negative repercussions on the students taking it whatsoever’, and should be kept for counselling purposes only",
-      "published_at": "Sat, 01 Aug 2026 20:40:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/syjks/article71295377.ece/alternates/LANDSCAPE_1200/CIC-directs-IITGL7G98LA8.5.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "feb5d3052ed4457992",
-      "title": "News from the world of Education: July 29, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-july-29-2026/article71280231.ece",
-      "summary": "Information on admissions, scholarships, competitions for students, events for educators and more",
-      "published_at": "Wed, 29 Jul 2026 22:44:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/6r8zy8/article71280220.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "13c3bd2fb092b5b964",
-      "title": "Kerala school Onam exams from August 13 to 20",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-school-onam-exams-from-august-13-to-20/article71280678.ece",
-      "summary": "August 21 to be a working day that can be used by schools for organising Onam celebrations",
-      "published_at": "Wed, 29 Jul 2026 15:04:58 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/dpl7p3/article71280908.ece/alternates/LANDSCAPE_1200/exam.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "c30058c91ccbdd0d45",
-      "title": "After Jantar Mantar, what needs to change in education?",
-      "url": "https://www.thehindu.com/videos/webinars/after-jantar-mantar-what-needs-to-change-in-education/article71308826.ece",
-      "summary": "In light of the Jantar Mantar protest, the government has assured to fix paper leaks, but more needs to change in education for sustainable careers for the youth. The Hindu hosted a webinar, ‘After Jantar Mantar, what needs to change in education?’, on August 1, 2026.",
-      "published_at": "Wed, 05 Aug 2026 14:41:24 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/qcu3by/article71308831.ece/alternates/LANDSCAPE_1200/image%206.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "After Jantar Mantar, what needs to change in education?",
-          "url": "https://www.thehindu.com/education/after-jantar-mantar-what-needs-to-change-in-education/article71281155.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "44a2bb64769d2a7bdf",
-      "title": "Why students need to be taught to recognise and reject abusive speech",
-      "url": "https://www.thehindu.com/education/why-students-need-to-be-taught-to-recognise-and-reject-abusive-speech/article71308358.ece",
-      "summary": "There is a increasing need to teach students where expression ends and abuse or profanity begin",
-      "published_at": "Wed, 05 Aug 2026 15:42:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/q98043/article71308781.ece/alternates/LANDSCAPE_1200/balaji.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "8e92c33048cd43886f",
-      "title": "Central University of Rajasthan establishes first learner support centre in Jaipur",
-      "url": "https://www.thehindu.com/news/national/rajasthan/central-university-of-rajasthan-establishes-first-learner-support-centre-in-jaipur/article71305540.ece",
-      "summary": "The university, headquartered at Bandar Sindri in Ajmer district, has recently secured 79th position in the Nature Index 2026 Research Leaders ranking, having been included among India’s top 100 institutions.",
-      "published_at": "Wed, 05 Aug 2026 11:06:58 +0530",
-      "image_url": "",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
         ]
       }
     },
@@ -5427,53 +5499,6 @@
       }
     },
     {
-      "raw_id": "4a4025e966f659dfa7",
-      "title": "What does ‘mercurial’ mean?",
-      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
-      "summary": "",
-      "published_at": "Sun, 02 Aug 2026 23:30:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/702eqn/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "What does ‘unputdownable’ mean?",
-          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "52349777cc94b31467",
       "title": "स्कूल जाने के लिए पुल बना सबसे बड़ा रुकावट",
       "url": "https://khabarlahariya.org/the-bridge-became-the-biggest-obstacle-to-going-to-school/",
@@ -5530,6 +5555,639 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "52dbae526d20dfa6e1",
+      "title": "Six NEET-UG candidates move Supreme Court over alleged discrepancies in OMR sheets",
+      "url": "https://www.thehindu.com/news/national/six-neet-ug-candidates-move-supreme-court-over-alleged-discrepancies-in-omr-sheets/article71304967.ece",
+      "summary": "The lawyer told the court that the students had emailed the NTA and also visited its office, but received no response.",
+      "published_at": "Tue, 04 Aug 2026 17:33:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lk0hbu/article71304991.ece/alternates/LANDSCAPE_1200/IMG_iStock-1136591548_2_1_HKG50VFR.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "NEET-UG 2026 candidates move SC over alleged discrepancies in OMR sheets",
+          "url": "https://indianexpress.com/article/education/neet-ug-2026-candidates-move-sc-over-alleged-discrepancies-in-omr-sheets-10817326/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e6cccd1277571cd28e",
+      "title": "Last 10 months tested me in ways I never expected: Neeraj Chopra",
+      "url": "https://www.thehindu.com/sport/last-10-months-tested-me-in-ways-i-never-expected-neeraj-chopra/article71308283.ece",
+      "summary": "Recovering from multiple injuries, rebuilding my body, finding my rhythm again, and learning to be patient when all I wanted was to compete. I was training every day without knowing if I will even have a season to compete this year, says Neeraj Chopra",
+      "published_at": "Wed, 05 Aug 2026 11:27:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r7v4ei/article71308285.ece/alternates/LANDSCAPE_1200/PTI08_01_2026_000204A.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "‘Past 10 months have tested me in ways I never expected’: Neeraj Chopra on injury comeback",
+          "url": "https://indianexpress.com/article/sports/neeraj-chopra-emotional-message-injury-comeback-cwg-silver-10818421/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "9d597bc1f651bc15a8",
+      "title": "Gold Rate Today, August 5: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "url": "https://indianexpress.com/article/india/gold-rate-today-august-5-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10818459/",
+      "summary": "",
+      "published_at": "Wed, 05 Aug 2026 05:00:18 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/gold-rate-1.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 24,
+        "observed_report_count": 4,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      },
+      "related_reports": [
+        {
+          "title": "Gold Rate Today, August 1: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-1-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10813143/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, August 4: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-4-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10816914/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, July 31: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-july-31-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10811526/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "c30058c91ccbdd0d45",
+      "title": "After Jantar Mantar, what needs to change in education?",
+      "url": "https://www.thehindu.com/videos/webinars/after-jantar-mantar-what-needs-to-change-in-education/article71308826.ece",
+      "summary": "In light of the Jantar Mantar protest, the government has assured to fix paper leaks, but more needs to change in education for sustainable careers for the youth. The Hindu hosted a webinar, ‘After Jantar Mantar, what needs to change in education?’, on August 1, 2026.",
+      "published_at": "Wed, 05 Aug 2026 14:41:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/qcu3by/article71308831.ece/alternates/LANDSCAPE_1200/image%206.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "After Jantar Mantar, what needs to change in education?",
+          "url": "https://www.thehindu.com/education/after-jantar-mantar-what-needs-to-change-in-education/article71281155.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4a4025e966f659dfa7",
+      "title": "What does ‘mercurial’ mean?",
+      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
+      "summary": "",
+      "published_at": "Sun, 02 Aug 2026 23:30:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/702eqn/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "What does ‘unputdownable’ mean?",
+          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "c25f5b36aea3f8ecc8",
+      "title": "Amit Shah ‘culpable or incompetent’, sack him for crackdown on students: Rahul Gandhi",
+      "url": "https://indianexpress.com/article/india/rahul-gandhi-amit-shah-chalo-sansad-cjp-protests-anti-paper-leak-bill-10809224/",
+      "summary": "",
+      "published_at": "Wed, 29 Jul 2026 14:36:33 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Rahul-Gandhi-3.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Parliament Monsoon Session Highlights, Day 8 Updates: Amit Shah ‘culpable or incompetent’, sack him for crackdown on students: Rahul Gandhi",
+          "url": "https://indianexpress.com/article/india/parliament-monsoon-session-2026-day-8-live-updates-anti-exam-paper-leak-law-to-be-presented-today-10808239/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4c2b3d80f820db6f07",
+      "title": "IGNOU extends July 2026 admission, re-registration deadline till August 16",
+      "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-reregistration-deadline-fee-details-important-dates-official-website-to-apply-10818477/",
+      "summary": "",
+      "published_at": "Wed, 05 Aug 2026 04:56:20 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/IGNOU.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "IGNOU extends July 2026 admission deadline till August 16 for ODL, online programmes",
+          "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-deadline-august-16-open-distance-learnin-odl-online-programmes-ignouadmission-samarth-edu-in-10813315/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "c6f0407b4a316d4dd0",
+      "title": "Kerala DHSE Plus One (+1) Result 2026 Out: Websites to check scorecards",
+      "url": "https://indianexpress.com/article/education/kerala-dhse-plus-one-1-result-2026-websites-to-check-vhse-results-hse-kerala-gov-in-keralaresults-nic-in-10790858/",
+      "summary": "",
+      "published_at": "Fri, 17 Jul 2026 08:45:22 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/dhse-plus-one-3.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Kerala Plus One Result 2026 (Out): How to check +1 DHSE, VHSE scorecard?",
+          "url": "https://indianexpress.com/article/education/dhse-kerala-plus-1-results-2026-how-to-check-scorecard-results-hse-kerala-gov-in-saphalam-prdlive-10737058/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0bfb0dc6fc98c886ca",
+      "title": "Broad Peak avalanche: Rescue briefly paused after 3 bodies recovered, Nirmal Purja among missing",
+      "url": "https://indianexpress.com/article/world/broad-peak-avalanche-rescue-briefly-paused-after-3-bodies-recovered-nirmal-purja-among-missing-10813055/",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 04:13:40 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/Broad-peak.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Broad Peak avalanche: Nepal’s Nirmal Purja among six missing, four bodies recovered",
+          "url": "https://indianexpress.com/article/world/south-asia-nirmal-purja-broad-peak-avalanche-pakistan-missing-10812573/",
+          "source": {
+            "id": "indian-express-world",
+            "name": "The Indian Express - World",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0a87c32bf51b57e3da",
+      "title": "FIFA abandons World Cup stake sale plan after UEFA boycott threat & widespread backlash",
+      "url": "https://indianexpress.com/article/sports/football/fifa-abandons-world-cup-investment-plan-infantino-backlash-10813000/",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 03:12:28 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/fifa-wc-fial_20260801030807.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "CONCACAF rejects FIFA World Cup stake sale plan as UEFA’s World Cup boycott threat looms",
+          "url": "https://indianexpress.com/article/sports/football/concacaf-rejects-fifa-world-cup-stake-sale-uefa-boycott-2026-10811476/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e078af567151bdc005",
+      "title": "Commonwealth Games Medal Tally: India’s Standings & Full Winners List at CWG 2026",
+      "url": "https://indianexpress.com/article/sports/commonwealth-games-medal-tally-live-india-full-winners-list-10810961/",
+      "summary": "",
+      "published_at": "Thu, 30 Jul 2026 15:31:33 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Neeraj-CWG-Silver.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Commonwealth Games Medal Tally LIVE Day 7: India’s Standings & Full Winners List at CWG 2026",
+          "url": "https://indianexpress.com/article/sports/commonwealth-games-medal-tally-live-india-update-glasgow-cwg-2026-10807055/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "892404547bcd5392bf",
+      "title": "Stephen Fleming appointed England Test coach, Joe Root captain",
+      "url": "https://indianexpress.com/article/sports/cricket/stephen-fleming-england-test-coach-joe-root-captain-10810431/",
+      "summary": "",
+      "published_at": "Thu, 30 Jul 2026 10:10:48 +0000",
+      "image_url": "https://images.indianexpress.com/2026/04/Fleming.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Stephen Fleming to be appointed England’s Test coach",
+          "url": "https://indianexpress.com/article/sports/cricket/stephen-fleming-to-be-appointed-englands-test-coach-10809859/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "aa64eece681e2eb7a1",
+      "title": "Harjinder Kaur wins silver, India’s 7th weightlifting medal at 2026 CWG",
+      "url": "https://indianexpress.com/article/sports/harjinder-kaur-wins-silver-indias-7th-weightlifting-medal-at-2026-cwg-10807996/",
+      "summary": "",
+      "published_at": "Tue, 28 Jul 2026 19:29:31 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/harjinder-kaur-sony-liv-screenshot.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Ajaya Babu wins silver, India’s 6th weightlifting medal at 2026 CWG",
+          "url": "https://indianexpress.com/article/sports/ajaya-babu-weightlifting-silver-medal-commonwealth-games-2026-cwg-10806415/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "7d264fd28a8e564d65",
@@ -6049,374 +6707,6 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6d094ff65a5188b6f8",
-      "title": "DGMA warns of cyber threats as ports automate operations",
-      "url": "https://www.thehindu.com/news/national/dgma-warns-of-cyber-threats-as-ports-automate-operations/article71309200.ece",
-      "summary": "Dependence of ports on interconnected systems has created new vulnerabilities that can adversely affect the safety, security and functioning of port facilities, DGMA said in an advisory",
-      "published_at": "Wed, 05 Aug 2026 23:16:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/z8ctxs/article71310886.ece/alternates/LANDSCAPE_1200/2026-07-28T033055Z_1342252794_RC2RMMACJZYJ_RTRMADP_3_INDIA-ECONOMY-POLL.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ecd008677725bc6552",
-      "title": "Appraiser of private bank among three held for ₹1.5 crore gold loan fraud",
-      "url": "https://www.thehindu.com/news/national/karnataka/appraiser-of-private-bank-among-three-held-for-15-crore-gold-loan-fraud/article71309992.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 23:06:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sxxdzw/article71310880.ece/alternates/LANDSCAPE_1200/iStock-157619625%202.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "3b3e96339ade02bc23",
-      "title": "Top official reviews Independence Day arrangements at Parade Grounds in Amaravati",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/top-official-reviews-independence-day-arrangements-at-parade-grounds-in-amaravati/article71309131.ece",
-      "summary": "Emphasising inter-departmental coordination, Syamala Rao says that all agencies should work in close coordination to ensure smooth and successful conduct of the celebrations",
-      "published_at": "Wed, 05 Aug 2026 23:02:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1nhg2f/article71310872.ece/alternates/LANDSCAPE_1200/10745_5_8_2026_16_26_52_1_IMG_20260805_WA0036.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2c454d9d37b74fc960",
-      "title": "Mark Zuckerberg sends apologies for ‘errors in operating the platform’, government sources say",
-      "url": "https://www.thehindu.com/news/national/meta-ceo-mark-zuckerberg-apologises-for-csam-deepfake-content-errors-in-operating-platform/article71309386.ece",
-      "summary": "“I apologised to the Minister on behalf of Meta for the error restricting PM Modi’s post,” Meta’s global head of public policy Joel Kaplan said in a statement shared by a Meta spokesperson.",
-      "published_at": "Wed, 05 Aug 2026 22:57:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qxdbyo/article71309389.ece/alternates/LANDSCAPE_1200/2026-07-09T212757Z_1706285672_RC2KAMAHYRD8_RTRMADP_3_MEDIA-SUNVALLEY.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "7ef8d96a061aabed57",
-      "title": "IBM Consulting FutureNow Centre now in Visakhapatnam",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ibms-consulting-futurenow-centre-now-in-visakhapatnam/article71309129.ece",
-      "summary": "IT and HRD Minister Nara Lokesh inaugurates the new facility that delivers high-end consulting and technology services to international clients",
-      "published_at": "Wed, 05 Aug 2026 22:51:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/w8vgg5/article71309727.ece/alternates/LANDSCAPE_1200/PTI08_05_2026_000284B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "27fcd177c1f8a8a0ad",
-      "title": "Amit Shah responsible for action against students, lacks courage to answer in Parliament: Rahul Gandhi",
-      "url": "https://www.thehindu.com/news/national/opposition-mps-take-out-protest-march-in-parliament-complex-seek-amit-shahs-statement-on-police-excesses/article71308299.ece",
-      "summary": "The Leader of the Opposition hails students for speaking publicly despite facing harassment, says they had shown greater courage than the country’s top leadership by standing before the media",
-      "published_at": "Wed, 05 Aug 2026 22:50:24 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/3ri5gf/article71308316.ece/alternates/LANDSCAPE_1200/1b9e6e2f-1bcb-4c06-aa6c-115bd84d5bbd.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "15564d3871a0ce2e0e",
-      "title": "Bengaluru Traffic Police introduce trial diversions at Madiwala to ease peak-hour congestion",
-      "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-traffic-police-introduce-trial-diversions-at-madiwala-to-ease-peak-hour-congestion/article71310430.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 22:48:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6jfiba/article71310848.ece/alternates/LANDSCAPE_1200/Madiwala_market_37.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "03076aa69e03e3e6c1",
-      "title": "Dr. NTRUHS invites applications for \nadmissions to MBBS, dental courses",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/dr-ntruhs-invites-applications-for-admissions-to-mbbs-dental-courses/article71310488.ece",
-      "summary": "Students can fill in their forms on https://drntr.uhsap.in until 9 p.m. on August 12",
-      "published_at": "Wed, 05 Aug 2026 22:42:37 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d148bda323a2501488",
-      "title": "CM seeks simplification of H-1B visa processing, renewal and stamping procedures",
-      "url": "https://www.thehindu.com/news/national/telangana/cm-seeks-simplification-of-h-1b-visa-processing-renewal-and-stamping-procedures/article71310805.ece",
-      "summary": "Mr. Revanth Reddy seeks more visas to Telangana students",
-      "published_at": "Wed, 05 Aug 2026 22:42:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/20jip4/article71310820.ece/alternates/LANDSCAPE_1200/20260805544L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "50e0aa9a277ca708f7",
-      "title": "Hippo calf born at Bannerughatta Biological Park",
-      "url": "https://www.thehindu.com/news/national/karnataka/hippo-calf-born-at-bannerughatta-biological-park/article71309344.ece",
-      "summary": "The mother and calf are now open for public viewing.",
-      "published_at": "Wed, 05 Aug 2026 22:41:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wsv1tf/article71310833.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-05%20at%2017.38.20.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "823f9450b59db733af",
-      "title": "Death of student triggers protest at BU’s Jnanabharathi campus demanding ban on public vehicles",
-      "url": "https://www.thehindu.com/news/national/karnataka/death-of-student-triggers-protest-at-bus-jnanabharathi-campus-demanding-ban-on-public-vehicles/article71310435.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 22:37:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/z207l/article71310822.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-05%20at%2020.54.21%201.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "1f4029a73b15ad355b",
-      "title": "Sudden showers hit parts of Hyderabad on August 5 after sunny morning",
-      "url": "https://www.thehindu.com/news/cities/Hyderabad/sudden-showers-hit-parts-of-hyderabad-on-august-5-after-sunny-morning/article71309132.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 22:37:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Hyderabad/3ti3dc/article71309157.ece/alternates/LANDSCAPE_1200/Image%203.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

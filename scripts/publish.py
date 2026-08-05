@@ -3,7 +3,7 @@
 from __future__ import annotations
 import argparse, json, re, unicodedata
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,6 +91,29 @@ def source_material_by_url(bundle):
                 }
     return material
 
+def reconcile_sources(story, source_material):
+    """Keep evidence links present in the prepared collection.
+
+    Story IDs are editorial identifiers, not foreign keys to crawler raw IDs.
+    URL membership is the authoritative evidence check.
+    """
+    sources = story.get('sources', [])
+    retained = [
+        source for source in sources
+        if source.get('url', '') in source_material
+    ]
+    removed = len(sources) - len(retained)
+    if not retained:
+        raise ValueError(
+            f"No supplied source URL remains for {story.get('id', '<unknown>')}"
+        )
+    story['sources'] = retained
+    if isinstance(story.get('coverage'), dict):
+        story['coverage']['source_count'] = len({
+            source.get('url') for source in retained if source.get('url')
+        })
+    return removed
+
 def validate_editorial_text(story, source_material=None):
     for field, value in reader_text_fields(story):
         if contains_non_latin_letters(str(value)):
@@ -164,6 +187,23 @@ def validate(story, source_material=None):
                 f"Social-origin story lacks independent non-social corroboration: {story['id']}"
             )
 
+def reconcile_and_validate_stories(stories, source_material, maximum_stories):
+    accepted, rejected = [], []
+    for story in stories:
+        try:
+            removed_sources = reconcile_sources(story, source_material)
+            validate(story, source_material)
+            accepted.append(story)
+            if removed_sources:
+                print(
+                    f"Reconciled {story.get('id', '<unknown>')}: "
+                    f"removed {removed_sources} unsupported source link(s)"
+                )
+        except (AssertionError, KeyError, TypeError, ValueError) as exc:
+            rejected.append((story.get('id', '<unknown>'), str(exc)))
+            print(f"Skipping invalid story {story.get('id', '<unknown>')}: {exc}")
+    return accepted[:maximum_stories], rejected
+
 def validate_portfolio(stories, minimum_per_category):
     if minimum_per_category > 0:
         counts = Counter(story['category'] for story in stories)
@@ -197,14 +237,11 @@ def validate_portfolio(stories, minimum_per_category):
             f'found {established} of {len(stories)} stories.'
         )
 
-def parse_dt(value):
-    return datetime.fromisoformat(value.replace('Z', '+00:00'))
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', default='data/processed/latest.json')
-    parser.add_argument('--active-days', type=int, default=14)
     parser.add_argument('--min-per-category', type=int, default=5)
+    parser.add_argument('--max-stories', type=int, default=150)
     args = parser.parse_args()
     processed_path = ROOT / args.input
     # Scheduled desktop tasks may save otherwise valid JSON with a UTF-8 BOM.
@@ -216,30 +253,37 @@ def main():
     incoming = processed.get('stories', processed if isinstance(processed, list) else [])
     if not incoming:
         raise ValueError('No processed stories found; refusing to replace the live feed with an empty result.')
-    for story in incoming:
-        validate(story, source_material)
+    incoming, rejected = reconcile_and_validate_stories(
+        incoming, source_material, args.max_stories
+    )
+    if not incoming:
+        raise ValueError('No valid processed stories remain after evidence reconciliation.')
     validate_portfolio(incoming, args.min_per_category)
+    if isinstance(processed, dict):
+        processed['stories'] = incoming
+    else:
+        processed = incoming
     processed_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding='utf-8')
     live_path = ROOT / 'data/news.json'
     live = repair_text(json.loads(live_path.read_text(encoding='utf-8')))
-    merged = {story['id']: story for story in live.get('stories', []) if not story.get('demo')}
+    previous = {
+        story['id']: story
+        for story in live.get('stories', [])
+        if not story.get('demo')
+    }
     for story in incoming:
         story.pop('demo', None)
-        merged[story['id']] = story
-    for story in merged.values():
         story['category'] = CATEGORY_ALIASES.get(story.get('category'), story.get('category'))
         normalise_coverage(story)
     now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=args.active_days)
-    active, archive = [], {}
-    for story in merged.values():
-        try:
-            is_active = parse_dt(story['updated_at']).astimezone(timezone.utc) >= cutoff
-        except Exception:
-            is_active = True
-        if is_active:
-            active.append(story)
-        else:
+    active = list(incoming)
+    incoming_ids = {story['id'] for story in incoming}
+    archive = {}
+    # The latest validated portfolio is the complete live basket. Older live
+    # stories not selected this time are archived instead of silently lingering
+    # and pushing the public feed beyond its configured maximum.
+    for story_id, story in previous.items():
+        if story_id not in incoming_ids:
             archive.setdefault(story['published_at'][:7], []).append(story)
     for month, stories in archive.items():
         year, mon = month.split('-')
@@ -276,7 +320,10 @@ def main():
         relative = path.relative_to(ROOT).as_posix()
         archive_entries.append({'month': payload.get('month', f'{path.parent.name}-{path.stem}'), 'path': relative, 'count': len(payload.get('stories', []))})
     (archive_root / 'index.json').write_text(json.dumps({'generated_at': now.isoformat(), 'months': archive_entries}, indent=2), encoding='utf-8')
-    print(f"Published {len(incoming)} incoming; {len(active)} active; {sum(map(len, archive.values()))} archived")
+    print(
+        f"Published {len(incoming)} incoming; skipped {len(rejected)} invalid; "
+        f"{len(active)} active; {sum(map(len, archive.values()))} archived"
+    )
 
 if __name__ == '__main__':
     main()

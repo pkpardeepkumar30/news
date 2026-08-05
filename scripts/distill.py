@@ -73,7 +73,7 @@ def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
                 "schema": schema,
             },
         },
-        "max_output_tokens": 20000,
+        "max_output_tokens": 30000,
     }
     request = Request(
         API_URL,
@@ -156,13 +156,43 @@ def select_balanced_portfolio(stories: list[dict], categories: list[str],
     return selected
 
 
+def reconcile_candidates(stories: list[dict], bundle: dict) -> tuple[list[dict], int]:
+    """Remove unsupported model output before portfolio selection.
+
+    Generated story IDs need not equal raw report IDs. Source URLs, including
+    related-report URLs, determine whether a candidate is grounded in the input.
+    """
+    allowed_urls = {
+        row.get("url")
+        for item in bundle.get("items", [])
+        for row in [item, *item.get("related_reports", [])]
+        if row.get("url")
+    }
+    accepted, rejected = [], 0
+    for story in stories:
+        sources = [
+            source for source in story.get("sources", [])
+            if source.get("url") in allowed_urls
+        ]
+        if not sources:
+            rejected += 1
+            continue
+        story["sources"] = sources
+        if isinstance(story.get("coverage"), dict):
+            story["coverage"]["source_count"] = len({
+                source.get("url") for source in sources if source.get("url")
+            })
+        accepted.append(story)
+    return accepted, rejected
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/chatgpt-input/latest.json")
     parser.add_argument("--output", default="data/processed/latest.json")
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.6-terra"))
     parser.add_argument("--chunk-size", type=int, default=40)
-    parser.add_argument("--max-stories", type=int, default=100)
+    parser.add_argument("--max-stories", type=int, default=150)
     parser.add_argument("--min-per-category", type=int, default=5)
     args = parser.parse_args()
 
@@ -182,7 +212,7 @@ def main() -> None:
         raise SystemExit("The prepared collection contains no items.")
     chunks = [items[index:index + args.chunk_size] for index in range(0, len(items), args.chunk_size)]
     per_chunk_limit = min(
-        28,
+        40,
         max(1, (args.max_stories + len(chunks) - 1) // len(chunks) + 8)
     )
     stories_by_id = {}
@@ -199,8 +229,13 @@ def main() -> None:
             stories_by_id[story["id"]] = story
         print(f"Distilled part {index}/{len(chunks)}: {len(processed_part.get('stories', []))} stories")
     try:
+        candidates, rejected = reconcile_candidates(
+            list(stories_by_id.values()), bundle
+        )
+        if rejected:
+            print(f"Discarded {rejected} candidates whose source URLs were not supplied")
         portfolio = select_balanced_portfolio(
-            list(stories_by_id.values()), categories,
+            candidates, categories,
             args.min_per_category, args.max_stories
         )
     except ValueError as exc:

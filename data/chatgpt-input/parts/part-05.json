@@ -1,11 +1,11 @@
 {
-  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-05T14:02:14.136935+00:00",
-  "input_count": 1447,
+  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
+  "prepared_at": "2026-08-05T14:25:54.833235+00:00",
+  "input_count": 1449,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 126,
-    "established_or_other": 74,
+    "independent_social": 125,
+    "established_or_other": 75,
     "independent_social_majority_required": true
   },
   "part": 5,
@@ -53,6 +53,55 @@
             "type": "mainstream",
             "selection_group": "established",
             "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "bf95e5e3a7cb55c29a",
+      "title": "Amid Opposition protests, Rajya Sabha passes Registration of Births and Deaths Bill",
+      "url": "https://indianexpress.com/article/india/amid-opposition-protests-rajya-sabha-passes-registration-of-births-and-deaths-bill-10818219/",
+      "summary": "",
+      "published_at": "Tue, 04 Aug 2026 23:37:52 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/rajya-sabha-1_20260804233705.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Rajya Sabha passes Registration of Births and Deaths Bill amid Opposition protests",
+          "url": "https://indianexpress.com/article/india/rajya-sabha-passes-registration-of-births-and-deaths-amendment-bill-2026-10817899/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
           },
           "social_attention": null
         }
@@ -1180,41 +1229,12 @@
       }
     },
     {
-      "raw_id": "bf49b75babe8295610",
-      "title": "देश में वर्ष 2025-26 में 112 हाथियों और 23 बाघों की मौत, संसद में आकंडे आया सामने",
-      "url": "https://khabarlahariya.org/data-revealed-in-parliament-112-elephants-and-23-tigers-died-in-the-country-during-2025-26/",
-      "summary": "हालही में संसद में साझा किए गए नए आँकड़ों के मुताबिक देश में वर्ष 2025-26 में बिजली के झठके (करंट), शिकार और दुर्घटनाओं के कारण 112 हाथियों और 23 बाघों…",
-      "published_at": "Tue, 28 Jul 2026 08:26:23 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c798b5f4853e53715d",
-      "title": "KUDA adopts transparent lottery system for Hagaraga housing site allotment",
-      "url": "https://www.thehindu.com/news/national/karnataka/kuda-adopts-transparent-lottery-system-for-hagaraga-housing-site-allotment/article71309341.ece",
-      "summary": "KUDA chairman Mazhar Alam Khan says the dream project of late Qamar-ul-Islam is taking shape with Home Minister Priyank Kharge’s support and asserted that infrastructure works will begin within a month",
-      "published_at": "Wed, 05 Aug 2026 19:25:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/b9r8md/article71309872.ece/alternates/LANDSCAPE_1200/10258_5_8_2026_17_36_22_1_KUDA_SITE_ALLOTMENT_1.JPEG",
+      "raw_id": "42f4c462a29a12633e",
+      "title": "CIIL Director calls for scientific analysis of Kannada inscriptions",
+      "url": "https://www.thehindu.com/news/national/karnataka/ciil-director-calls-for-scientific-analysis-of-kannada-inscriptions/article71309281.ece",
+      "summary": "Kannada inscriptions reveal scientific grammar, says Prof. Basavaraja Kodagunti",
+      "published_at": "Wed, 05 Aug 2026 19:30:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/skhg0y/article71309942.ece/alternates/LANDSCAPE_1200/10258_5_11_2025_17_49_5_1_BASAVARAJA_KODAGUNTI_1.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1337,12 +1357,12 @@
       }
     },
     {
-      "raw_id": "86c0b9f8980385496a",
-      "title": "Eminent Gold impresses",
-      "url": "https://www.thehindu.com/sport/races/eminent-gold-impresses/article71309875.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 19:21:11 +0530",
-      "image_url": "",
+      "raw_id": "95c5466192245d2385",
+      "title": "Nirankar’s dream debut helps Dindigul Dragons overcome Ashwin-Varun absence in TNPL 10 opener",
+      "url": "https://www.thehindu.com/sport/cricket/nirankars-dream-debut-helps-dindigul-dragons-overcome-ashwin-varun-absence-in-tnpl-10-opener/article71309863.ece",
+      "summary": "While Ashwin is in the dugout as a mentor and not on the field, Varun Chakaravarthy is yet to recover from a hamstring injury",
+      "published_at": "Wed, 05 Aug 2026 19:31:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tyigkb/article71309899.ece/alternates/LANDSCAPE_1200/10216_4_8_2026_21_22_35_2_04_08_2026_NIRANKAR_4.JPG",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {

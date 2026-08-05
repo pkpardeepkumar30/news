@@ -45,7 +45,7 @@ jobs:
         run: python scripts/publish.py
       - name: Validate newly published category balance
         if: env.OPENAI_API_KEY != ''
-        run: python scripts/validate.py --min-per-category 5 --require-independent-majority
+        run: python scripts/validate.py --min-per-category 5 --require-independent-majority --max-stories 150
       - name: Validate existing feed when distillation is disabled
         if: env.OPENAI_API_KEY == ''
         run: python scripts/validate.py

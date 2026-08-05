@@ -214,8 +214,9 @@ def main():
         'Review every supplied part, discover the most consequential events from '
         'the supplied evidence, cluster related reports, assign the best-fit broad '
         'news category dynamically and produce up to 100 processed stories using '
-        'schema/processed-news.schema.json. Treat social attention as a discovery '
-        'signal rather than verification.'
+        'schema/processed-news.schema.json. The final portfolio must contain at '
+        'least five well-supported stories in every category. Treat social attention '
+        'as a discovery signal rather than verification.'
     )
     output = ROOT / args.output
     parts_dir = output.parent / 'parts'

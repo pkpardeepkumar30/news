@@ -10,6 +10,7 @@ import argparse
 import json
 import os
 import sys
+from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -38,7 +39,8 @@ def extract_output_text(response: dict) -> str:
 
 def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
                  api_key: str, part_number: int, part_count: int,
-                 story_limit: int) -> dict:
+                 story_limit: int, categories: list[str],
+                 minimum_per_category: int) -> dict:
     request_body = {
         "model": model,
         "store": False,
@@ -50,7 +52,11 @@ def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
                 "type": "input_text",
                 "text": (
                     f"Distil collection part {part_number} of {part_count}. Return no more than "
-                    f"{story_limit} strongest stories from this part; final merging happens after all parts.\n\n"
+                    f"{story_limit} strongest stories from this part; final merging happens after all parts. "
+                    f"The final portfolio must contain at least {minimum_per_category} stories in every "
+                    f"category: {', '.join(categories)}. Include strong candidates for every category "
+                    "represented by this part, especially categories that might otherwise be missed. "
+                    "Do not weaken evidence standards to satisfy the minimum.\n\n"
                     + json.dumps(bundle, ensure_ascii=False)
                 ),
             }],
@@ -87,6 +93,44 @@ def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
     return json.loads(extract_output_text(response))
 
 
+def select_balanced_portfolio(stories: list[dict], categories: list[str],
+                              minimum_per_category: int,
+                              maximum_stories: int) -> list[dict]:
+    required = minimum_per_category * len(categories)
+    if required > maximum_stories:
+        raise ValueError(
+            f"Category minimum requires {required} stories but the maximum is {maximum_stories}."
+        )
+    grouped = defaultdict(list)
+    for story in stories:
+        grouped[story.get("category", "")].append(story)
+    counts = Counter({category: len(grouped[category]) for category in categories})
+    shortfalls = {
+        category: counts[category]
+        for category in categories
+        if counts[category] < minimum_per_category
+    }
+    if shortfalls:
+        detail = ", ".join(f"{category}: {count}" for category, count in shortfalls.items())
+        raise ValueError(
+            f"Refusing to publish an imbalanced collection; fewer than "
+            f"{minimum_per_category} candidates were found for {detail}."
+        )
+
+    selected, selected_ids = [], set()
+    for category in categories:
+        for story in grouped[category][:minimum_per_category]:
+            selected.append(story)
+            selected_ids.add(story["id"])
+    for story in stories:
+        if len(selected) >= maximum_stories:
+            break
+        if story["id"] not in selected_ids:
+            selected.append(story)
+            selected_ids.add(story["id"])
+    return selected
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", default="data/chatgpt-input/latest.json")
@@ -94,6 +138,7 @@ def main() -> None:
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.6-terra"))
     parser.add_argument("--chunk-size", type=int, default=40)
     parser.add_argument("--max-stories", type=int, default=100)
+    parser.add_argument("--min-per-category", type=int, default=5)
     args = parser.parse_args()
 
     api_key = os.environ.get("OPENAI_API_KEY")
@@ -104,13 +149,17 @@ def main() -> None:
     schema = json.loads((ROOT / "schema/processed-news.schema.json").read_text(encoding="utf-8"))
     schema.pop("$schema", None)
     schema.pop("title", None)
+    categories = schema["properties"]["stories"]["items"]["properties"]["category"]["enum"]
     prompt = (ROOT / "prompts/process-news.md").read_text(encoding="utf-8")
 
     items = bundle.get("items", [])
     if not items:
         raise SystemExit("The prepared collection contains no items.")
     chunks = [items[index:index + args.chunk_size] for index in range(0, len(items), args.chunk_size)]
-    per_chunk_limit = min(20, max(1, (args.max_stories + len(chunks) - 1) // len(chunks)))
+    per_chunk_limit = min(
+        28,
+        max(1, (args.max_stories + len(chunks) - 1) // len(chunks) + 8)
+    )
     stories_by_id = {}
     for index, items_part in enumerate(chunks, start=1):
         part_bundle = {key: value for key, value in bundle.items() if key not in {"items", "parts"}}
@@ -118,14 +167,20 @@ def main() -> None:
         processed_part = distil_part(
             bundle=part_bundle, schema=schema, prompt=prompt, model=args.model,
             api_key=api_key, part_number=index, part_count=len(chunks),
-            story_limit=per_chunk_limit
+            story_limit=per_chunk_limit, categories=categories,
+            minimum_per_category=args.min_per_category
         )
         for story in processed_part.get("stories", []):
-            if len(stories_by_id) >= args.max_stories:
-                break
             stories_by_id[story["id"]] = story
         print(f"Distilled part {index}/{len(chunks)}: {len(processed_part.get('stories', []))} stories")
-    processed = {"stories": list(stories_by_id.values())[:args.max_stories]}
+    try:
+        portfolio = select_balanced_portfolio(
+            list(stories_by_id.values()), categories,
+            args.min_per_category, args.max_stories
+        )
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
+    processed = {"stories": portfolio}
     if not processed["stories"]:
         raise SystemExit("Model output contained no stories; the live feed was not changed.")
 

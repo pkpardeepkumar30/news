@@ -2,6 +2,7 @@
 """Validate processed output, merge it into the live feed and archive older stories."""
 from __future__ import annotations
 import argparse, json
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,6 +68,21 @@ def validate(story):
         raise ValueError(f"Invalid category for {story['id']}")
     normalise_coverage(story)
 
+def validate_portfolio(stories, minimum_per_category):
+    if minimum_per_category <= 0:
+        return
+    counts = Counter(story['category'] for story in stories)
+    shortfalls = {
+        category: counts[category]
+        for category in CATEGORIES
+        if counts[category] < minimum_per_category
+    }
+    if shortfalls:
+        detail = ', '.join(f'{category}: {count}' for category, count in shortfalls.items())
+        raise ValueError(
+            f'Refusing to publish fewer than {minimum_per_category} stories per category; {detail}'
+        )
+
 def parse_dt(value):
     return datetime.fromisoformat(value.replace('Z', '+00:00'))
 
@@ -74,6 +90,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', default='data/processed/latest.json')
     parser.add_argument('--active-days', type=int, default=14)
+    parser.add_argument('--min-per-category', type=int, default=5)
     args = parser.parse_args()
     processed_path = ROOT / args.input
     # Scheduled desktop tasks may save otherwise valid JSON with a UTF-8 BOM.
@@ -84,6 +101,7 @@ def main():
         raise ValueError('No processed stories found; refusing to replace the live feed with an empty result.')
     for story in incoming:
         validate(story)
+    validate_portfolio(incoming, args.min_per_category)
     processed_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding='utf-8')
     live_path = ROOT / 'data/news.json'
     live = repair_text(json.loads(live_path.read_text(encoding='utf-8')))

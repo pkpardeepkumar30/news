@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
-import json, sys
+import argparse, json, sys
+from collections import Counter
 from pathlib import Path
 root = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser()
+parser.add_argument('--min-per-category', type=int, default=0)
+args = parser.parse_args()
 try:
     data = json.loads((root / 'data/news.json').read_text(encoding='utf-8'))
     assert isinstance(data.get('stories'), list)
@@ -17,6 +21,14 @@ try:
         assert story['coverage']['status'] in {'underreported','developing','widely_covered','unknown'}
         assert int(story['coverage']['source_count']) >= 1
         assert story['coverage']['rationale']
+    if args.min_per_category:
+        counts = Counter(story['category'] for story in data['stories'])
+        shortfalls = {
+            category: counts[category]
+            for category in data['categories']
+            if counts[category] < args.min_per_category
+        }
+        assert not shortfalls, f'Category minimum not met: {shortfalls}'
     print(f"OK: {len(ids)} stories")
 except Exception as exc:
     print(f"Validation failed: {exc}", file=sys.stderr)

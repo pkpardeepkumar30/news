@@ -43,7 +43,12 @@ jobs:
       - name: Publish distilled stories
         if: env.OPENAI_API_KEY != ''
         run: python scripts/publish.py
-      - run: python scripts/validate.py
+      - name: Validate newly published category balance
+        if: env.OPENAI_API_KEY != ''
+        run: python scripts/validate.py --min-per-category 5
+      - name: Validate existing feed when distillation is disabled
+        if: env.OPENAI_API_KEY == ''
+        run: python scripts/validate.py
       - name: Save distilled live feed
         if: env.OPENAI_API_KEY != ''
         run: |

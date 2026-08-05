@@ -1,11 +1,53 @@
 {
-  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification.",
-  "prepared_at": "2026-08-05T13:05:19.166508+00:00",
-  "input_count": 1350,
+  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
+  "prepared_at": "2026-08-05T14:02:14.136935+00:00",
+  "input_count": 1447,
   "supplied_count": 200,
+  "source_mix": {
+    "independent_social": 126,
+    "established_or_other": 74,
+    "independent_social_majority_required": true
+  },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "661369ba133db38991",
+      "title": "Rs 2.3 crore a day, 8 years: Yogi outspends Modi when it comes to ads",
+      "url": "https://www.newslaundry.com/2026/08/05/rs-23-crore-a-day-8-years-yogi-outspends-modi-when-it-comes-to-ads",
+      "summary": "Eight years, and more than Rs 2.32 crore a day. That is what the Yogi Adityanath government in Uttar Pradesh has spent, on average, publicising itself since coming to power. Between financial years 2017-18 and 2024-25, the state spent Rs 6,811.94 crore on advertising and publicity – a daily average of Rs 2.32 crore. The figure outpaces even the Narendra Modi government at the Centre, which has spent roughly Rs 1.5 crore a day on advertising over 11 years. The spending is routed through the state’s Information and Public Relations Department, and it has grown steadily through Adityanath’s tenure, dipping only in the first year of the pandemic before more than doubling. Over 83 percent of it has gone to a single budget head – advertising and visual publicity, the money that flows to newspapers, television channels and, increasingly, digital platforms. Who receives that money is a question the government has repeatedly declined to answer in RTI queries. Newslaundry obtained these expenditure figures from the state government’s own budget documents . The BJP won the 2017 assembly election, and Adityanath was sworn in as chief minister on March 17, 2017. Rising year after year In 2017-1",
+      "published_at": "Wed, 05 Aug 2026 12:18:57 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-05/xrxa8cc9/Yogi-ads-over-modi.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "5b78984f12512d88f3",
       "title": "Bankipur byelection: Prashant Kishor’s electoral debut sees turnout lower than Assembly election",
@@ -14,10 +56,12 @@
       "published_at": "Thu, 30 Jul 2026 02:50:32 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/Jan-Suraaj-Party-Bankipur-Assembly-bypoll-candidate-Prashant-Kishor-greets-supporters-during-a-roadshow.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-india",
         "name": "The Indian Express — India",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -45,10 +89,12 @@
       "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
       "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-states",
         "name": "The Hindu - States",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -78,10 +124,12 @@
       "published_at": "Mon, 03 Aug 2026 08:15:04 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/rt89vu/article71299722.ece/alternates/LANDSCAPE_1200/2026-07-11T021519Z_1716374544_RC2CBMA66TBD_RTRMADP_3_USA-CONGRESS.JPG",
       "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-international",
         "name": "The Hindu - International",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -111,10 +159,12 @@
       "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
       "image_url": "",
       "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-states",
         "name": "The Hindu - States",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -144,10 +194,12 @@
       "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
       "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
       "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-states",
         "name": "The Hindu - States",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -177,10 +229,12 @@
       "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
       "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
       "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-states",
         "name": "The Hindu - States",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -210,10 +264,12 @@
       "published_at": "Fri, 27 Sep 2024 18:57:32 +0530",
       "image_url": "https://th-i.thgim.com/public/elections/jammu-and-kashmir-assembly/52j9e4/article68687550.ece/alternates/LANDSCAPE_1200/PTI09_25_2024_000335B.jpg",
       "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-states",
         "name": "The Hindu - States",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -243,10 +299,12 @@
       "published_at": "Mon, 03 Aug 2026 02:18:16 +0000",
       "image_url": "https://images.indianexpress.com/2026/08/Prashant-Kishor-2.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-india",
         "name": "The Indian Express — India",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -274,10 +332,12 @@
       "published_at": "Tue, 21 Jul 2026 14:54:11 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/iim-calcutta-makes-case-study-bjp-bengal-win.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -307,10 +367,12 @@
       "published_at": "Fri, 31 Jul 2026 07:44:32 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/Pakistan_Militant_Attack_28519-5873c.jpg",
       "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-world",
         "name": "The Indian Express - World",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -340,10 +402,12 @@
       "published_at": "Fri, 31 Jul 2026 13:26:19 +0000",
       "image_url": "https://images.indianexpress.com/2026/05/Esports-World-Cup.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-sports",
         "name": "The Indian Express - Sports",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -362,435 +426,6 @@
         "candidate_categories": [
           "Politics & Elections",
           "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ef2ce58fe5b9c4e134",
-      "title": "Vishy Anand to run with Timur Turlov as Deputy President in FIDE elections",
-      "url": "https://indianexpress.com/article/sports/chess/viswanathan-anand-timur-turlov-deputy-president-fide-elections-10804655/",
-      "summary": "",
-      "published_at": "Sun, 26 Jul 2026 15:22:30 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/Viswanathan-Anand-fide.jpg",
-      "suggested_category": "Sports",
-      "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "36b62f162c28a0bdf0",
-      "title": "Stock Market Today : शेयर बाजार में तेजी के साथ शुरुआत, सेंसेक्स में 480 अंकों का उछाल, निफ्टी 24600 के पार",
-      "url": "https://www.jansatta.com/business/stock-market-today-sensex-nifty-open-in-green-crude-oil-rbi-meeting-news-in-hindi/4648361/",
-      "summary": "",
-      "published_at": "2026-08-05T09:41:39+05:30",
-      "image_url": "https://images.jansatta.com/2026/05/brokerages-are-bullish-on-these-stocks.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "d5dcdd0dec764ee0ef",
-      "title": "Explained: सरकार ने Windfall Tax की दरें फिर क्यों बदलीं? जानिए क्या होता है यह टैक्स और कब बढ़ता-घटता है",
-      "url": "https://www.jansatta.com/business/explained-why-did-the-government-revise-windfall-tax-rates-again-find-out-what-this-tax-is-and-when-it-goes-up-or-down/4647544/",
-      "summary": "",
-      "published_at": "2026-08-04T16:14:32+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/TAX-4.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "1812dff7e3eb267b4c",
-      "title": "Visakhapatnam emerges as India’s fastest-growing non-metropolitan job market: LinkedIn Cities on the Rise 2026",
-      "url": "https://indianexpress.com/article/education/visakhapatnam-emerges-as-indias-fastest-growing-non-metropolitan-job-market-linkedin-cities-on-the-rise-2026-10798284/",
-      "summary": "",
-      "published_at": "Wed, 22 Jul 2026 12:15:33 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/LinkedIn-Cities-on-the-Rise-2026-Visakhapatnam-emerges-as-Indias-fastest-growing-non-metropolitan-job-market.png",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "a1b508dd6bb7e8b6de",
-      "title": "2000 रुपये से ज्यादा के UPI पेमेंट पर लग सकता है शुल्क? सरकार का नया प्रस्ताव समझिए",
-      "url": "https://www.jansatta.com/business/could-the-rule-for-free-upi-payments-change-governments-new-proposal-for-large-businesses-ie/4649130/",
-      "summary": "",
-      "published_at": "2026-08-05T17:28:11+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/Explained-25.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "0e5b60c3585153779d",
-      "title": "8th Pay Commission: जयपुर में होने जा रही अहम बैठक, मीटिंग में शामिल होना है? आवेदन से पहले जान लें पात्रता",
-      "url": "https://www.jansatta.com/business/8th-pay-commission-meeting-scheduled-in-jaipur-want-to-attend-check-eligibility-before-applying/4649095/",
-      "summary": "",
-      "published_at": "2026-08-05T16:12:10+05:30",
-      "image_url": "https://images.jansatta.com/2026/02/8th-Pay-Commission-23.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "f887df3b2cd1f33216",
-      "title": "RBI का बड़ा फैसला! भारत में जल्द शुरू होगा प्लास्टिक के नोटों का दौर, गवर्नर ने बताया कब आएंगे",
-      "url": "https://www.jansatta.com/business/rbi-polymer-plastic-notes-launch-next-financial-year-news-in-hindi/4648925/",
-      "summary": "",
-      "published_at": "2026-08-05T15:13:10+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/plastic-currency-note.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "3d2ac220f16087b3bc",
-      "title": "ITR Refund 2026: प्रोसेस होने के बाद भी अटका है रिफंड? जानिए कितना समय लगता है और क्यों होती है देरी",
-      "url": "https://www.jansatta.com/business/itr-refund-stuck-even-after-processing-know-how-long-it-takes-and-why-delays-occur/4648688/",
-      "summary": "",
-      "published_at": "2026-08-05T13:18:48+05:30",
-      "image_url": "https://images.jansatta.com/2026/04/Income-tax-refunds.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "e2707d18ed388c8086",
-      "title": "RBI MPC Meeting 2026: रेपो रेट 5.25% पर बरकरार, ब्याज दरों में बदलाव नहीं",
-      "url": "https://www.jansatta.com/business/rbi-mpc-meeting-2026-no-immediate-relief-on-emis-rbi-keeps-repo-rate-steady-at-5-25-percent/4648387/",
-      "summary": "",
-      "published_at": "2026-08-05T10:05:03+05:30",
-      "image_url": "https://images.jansatta.com/2026/02/RBI-Governor-Sanjay-Malhotra-6-Feb-2026-PTI.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "cc77866465090fe7d8",
-      "title": "मुंबई से दानापुर के लिए चलेगी स्पेशल ट्रेन, सेंट्रल रेलवे ने जारी किया शेड्यूल; जानें स्टॉपेज और टाइमिंग",
-      "url": "https://www.jansatta.com/business/special-train-to-run-from-mumbai-to-danapur-central-railway-releases-schedule-check-stops-and-timings/4647885/",
-      "summary": "",
-      "published_at": "2026-08-04T18:21:53+05:30",
-      "image_url": "https://images.jansatta.com/2026/07/Special-Train-2.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "4360604e19bed6b2b4",
-      "title": "LIC में सरकार बेच रही 6.5% हिस्सेदारी, निवेशकों में मची हलचल; 8% तक टूटा शेयर",
-      "url": "https://www.jansatta.com/business/government-selling-6-5-percent-stake-in-lic-investors-stirred-shares-tumble-up-to-8-percent/4647339/",
-      "summary": "",
-      "published_at": "2026-08-04T13:26:27+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/LIC.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "6c32d9b7f8f5388945",
-      "title": "Gold Silver Price Today LIVE: 2100 रुपये महंगा हुआ सोना, चांदी की कीमत में भी उछाल; जानें दिल्ली-नोएडा से लेकर चेन्नई तक का ताजा भाव",
-      "url": "https://www.jansatta.com/business/gold-rate-today-24k-22k-18-carat-silver-price-1kg-live-updates-mcx-sone-chandi-ka-bhav-city-wise-rates/4647018/",
-      "summary": "",
-      "published_at": "2026-08-04T10:18:12+05:30",
-      "image_url": "https://images.jansatta.com/2026/02/Gold-Silver-Rate-Today-LIVE.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "b5dc97fc96fc56d639",
-      "title": "शेयर बाजार में आज उठापटक का दौर, सेंसेक्स 160 अंक उछला, निफ्टी में 172 अंक की गिरावट",
-      "url": "https://www.jansatta.com/business/share-market-open-sensex-160-points-up-nifty-172-points-down-news-in-hindi/4646981/",
-      "summary": "",
-      "published_at": "2026-08-04T09:44:40+05:30",
-      "image_url": "https://images.jansatta.com/2026/02/Stock-Market-Today-8.jpg",
-      "suggested_category": "Economy & Employment",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     },
@@ -802,10 +437,12 @@
       "published_at": "04 Aug 2026 12:15:07 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/04130134/A_drona_holotype_image_male-1-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -828,37 +465,6 @@
       }
     },
     {
-      "raw_id": "281e63711c24e1cb57",
-      "title": "CM for speedy forest and environment clearances to PRLIS and other projects",
-      "url": "https://www.thehindu.com/news/national/telangana/cm-for-speedy-forest-and-environment-clearances-to-prlis-and-other-projects/article71309262.ece",
-      "summary": "Mr. Revanth Reddy presents the State’s case to Union Minister Bhupendra Yadav",
-      "published_at": "Wed, 05 Aug 2026 18:30:16 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 8
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
       "raw_id": "e9bd9724a540a7bb36",
       "title": "Bihar’s green budget expands, but environmental indicators show little progress",
       "url": "https://india.mongabay.com/2026/07/bihars-green-budget-expands-but-environmental-indicators-show-little-progress/",
@@ -866,10 +472,12 @@
       "published_at": "31 Jul 2026 14:22:25 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31125413/NTPC_Kantin_Muzaffarpur-1-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -897,10 +505,12 @@
       "published_at": "29 Jul 2026 14:45:20 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/29114606/Outer_area_of_Howrah_Junction_railway_station_India-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -928,10 +538,12 @@
       "published_at": "28 Jul 2026 11:30:21 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28094856/0E3A1302-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -952,39 +564,6 @@
       }
     },
     {
-      "raw_id": "dcf78b9d8a7a1690d7",
-      "title": "Mizoram health minister addresses students at Presidency Uni Bengaluru",
-      "url": "https://eastmojo.com/mizoram/2026/08/04/mizoram-health-minister-addresses-students-at-presidency-uni-bengaluru/",
-      "summary": "Aizawl: Marking the start of the new academic session, Mizoram Health and Family Welfare Minister Lalrinpuii visited Presidency University Bengaluru, where she interacted with students and encouraged them to pursue their education with dedication, integrity and a strong sense of social responsibility. She was received by Chancellor Dr Nissar Ahmed, Vice Chairperson Dr Nafeesa Ahmed, […] The post Mizoram health minister addresses students at Presidency Uni Bengaluru appeared first on EastMojo .",
-      "published_at": "Tue, 04 Aug 2026 11:49:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 7,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "eb9c09d5166f98212a",
       "title": "Call for Papers: NLUO CPAJ Newsletter, Volume IV",
       "url": "https://www.barandbench.com/Law-School/call-for-papers-nluo-cpaj-newsletter-volume-iv",
@@ -992,10 +571,12 @@
       "published_at": "Wed, 05 Aug 2026 15:37:44 +0530",
       "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/rf0grijq/WhatsApp-Image-2026-08-05-at-3.33.19-PM.jpeg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "bar-and-bench",
         "name": "Bar & Bench",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Legal news publication"
       },
       "selection_signals": {
@@ -1022,30 +603,32 @@
       }
     },
     {
-      "raw_id": "b42e9c57f710989fb9",
-      "title": "Experts at The Hindu’s wellness webinar stress the need to safeguard vascular health",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/experts-at-the-hindus-wellness-webinar-stress-the-need-to-safeguard-vascular-health/article71309060.ece",
-      "summary": "The doctors underscored the need to keep moving – as ‘sitting is the new smoking’ – and for patients with diabetes to regularly check and take care of their feet",
-      "published_at": "Wed, 05 Aug 2026 17:34:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/chennai/60jmaw/article71309094.ece/alternates/LANDSCAPE_1200/Logo%204%201.jpg.jpeg",
+      "raw_id": "d65da25a242a3fd09e",
+      "title": "Roads a risk to the world’s smallest wild cat",
+      "url": "https://india.mongabay.com/2026/07/roads-a-risk-to-the-worlds-smallest-wild-cat/",
+      "summary": "Scientists at the Wildlife Institute of India (WII) have reported two roadkill incidents of the rusty-spotted cat (Prionailurus rubiginosus) at the National Chambal Sanctuary in Etawah, Uttar Pradesh. The two records are the first documented occurrence of the small carnivore in southern Uttar Pradesh, according to the research paper published in the Journal of Threatened […]",
+      "published_at": "27 Jul 2026 15:16:45 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/27131148/Rusty_spotted_cat_1-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Environment, Health & Science": 3
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -1053,130 +636,206 @@
       }
     },
     {
-      "raw_id": "c871b2a636c4fdce3c",
-      "title": "Why climate education must begin with real-world challenges like rising AC demand",
-      "url": "https://www.thehindu.com/education/why-climate-education-must-begin-with-real-world-challenges-like-rising-ac-demand/article71271464.ece",
-      "summary": "As the most important design problems of the coming decades play out today, climate literacy is becoming more urgent",
-      "published_at": "Mon, 03 Aug 2026 10:50:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yy2lxu/article71272702.ece/alternates/LANDSCAPE_1200/AC.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "31a50caf4dd4dc5ee7",
+      "title": "Why India’s plan to conserve the clouded leopard centres on the Northeast",
+      "url": "https://eastmojo.com/premium/2026/08/05/why-indias-plan-to-conserve-the-clouded-leopard-centres-on-the-northeast/",
+      "summary": "Guwahati: India’s conservation roadmap for the clouded leopard has placed the Northeast at the heart of efforts to save one of Asia’s most elusive big cats, identifying 14 priority landscapes across the region that stretch from the Himalayan foothills to the forests bordering Bangladesh and Myanmar. The 2026 Conservation Action Plan for Caracal, Fishing Cat […] The post Why India’s plan to conserve the clouded leopard centres on the Northeast appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 10:47:35 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 12,
-          "Environment, Health & Science": 4
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "c8f337a724fa2086a1",
+      "title": "Flies are overlooked pollinators and farmers’ friends",
+      "url": "https://india.mongabay.com/2026/08/flies-are-overlooked-pollinators-and-farmers-friends/",
+      "summary": "Say flies, and one instantly thinks about dirt and disease. But in truth they are among the cleanest of insects. They are a grossly misunderstood order of insects. They are excellent pollinators, aid in criminal investigation, composting, pest control and increasing soil fertility, and of course in scientific research. They are the true flies. Why […]",
+      "published_at": "03 Aug 2026 13:24:32 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/03095032/Syrphid-fly-from-Ladakh-e1785731238147-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "2625d891d23cb02d62",
+      "title": "A newly-described fish sheds light on a biodiversity blind spot",
+      "url": "https://india.mongabay.com/2026/07/a-newly-described-fish-sheds-light-on-a-biodiversity-blind-spot/",
+      "summary": "A new catfish species, Pseudecheneis likimroensis, has been described from India’s north-eastern state of Nagaland. The species, named after the fast-flowing Likimro river, from which specimens have been collected so far, was described in the Journal of Ichthyology. The discovery took place unexpectedly when a research team was in the region to survey fish fauna […]",
+      "published_at": "31 Jul 2026 10:42:59 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31003452/Image-2-768x512.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "565d41d9a928431ca2",
+      "title": "Study warns of growing landslide threat",
+      "url": "https://india.mongabay.com/short-article/2026/07/study-warns-of-growing-landslide-threat/",
+      "summary": "Climate change and land use changes could significantly increase landslide susceptibility and risk across Karnataka’s Western Ghats by 2050, according to a new study published in Scientific Reports. The modelling study evaluates future landslide susceptibility and risk by incorporating projected changes in land use/land cover (LULC) and rainfall patterns under different climate scenarios. The research […]",
+      "published_at": "30 Jul 2026 14:29:16 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/30131231/DSC4457-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "48e920c033beda02d4",
+      "title": "The wild cat with a unique stripe pattern",
+      "url": "https://india.mongabay.com/short-article/2026/07/the-wild-cat-with-a-unique-stripe-pattern/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Tiger stripes are unique, like human fingerprints. No two tigers have the same stripes, a trait that helps researchers monitor the species’ population. In India — home to 75% of the world’s wild tigers — such monitoring plays a crucial role in conservation efforts. Tigers […]",
+      "published_at": "29 Jul 2026 15:38:48 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/29151106/tiger-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "e2d1763673da89ad8e",
+      "title": "Nagaland: JP Nadda visits disaster-hit Mon, assures Centre’s support",
+      "url": "https://eastmojo.com/nagaland/2026/08/05/nagaland-jp-nadda-visits-disaster-hit-mon-assures-centres-support/",
+      "summary": "Kohima: Union Minister for Health & Family Welfare and Minister of Chemicals & Fertilizers Jagat Prakash Nadda on Wednesday visited Mon district and interacted with families affected by the recent landslides and flash floods at the Konyak Union Office. Expressing solidarity with the affected families, Nadda said the incident was “very disheartening and painful” and […] The post Nagaland: JP Nadda visits disaster-hit Mon, assures Centre’s support appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 12:53:44 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
           "Environment, Health & Science",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9037ec034a1706e377",
-      "title": "Why five years of research for Ph.D. should be considered work experience",
-      "url": "https://www.thehindu.com/education/why-five-years-of-research-for-phd-should-be-considered-work-experience/article71277928.ece",
-      "summary": "",
-      "published_at": "Tue, 28 Jul 2026 21:32:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/6fi8vx/article71277996.ece/alternates/LANDSCAPE_1200/iStock-1226138765.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9b34668a6ec38f17e1",
-      "title": "India’s medical regulator seeks inquiry into Bihar MBBS exam ‘leak’",
-      "url": "https://indianexpress.com/article/india/bihar-igims-mbbs-exam-leak-national-medical-commission-probe-10811180/",
-      "summary": "",
-      "published_at": "Thu, 30 Jul 2026 23:27:03 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/doctor_600_getty-5_20260730204739.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "d8e4418a013cd6cfac",
-      "title": "ISRO & Japanese scientists review mission Chandrayaan-5 preparation",
-      "url": "https://indianexpress.com/article/india/isro-japanese-scientists-review-mission-chandrayaan-5-preparation-10811283/",
-      "summary": "",
-      "published_at": "Thu, 30 Jul 2026 22:41:04 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/JAXA-H3_20260730224055.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
         ]
       }
     },
@@ -1188,10 +847,12 @@
       "published_at": "Wed, 05 Aug 2026 18:18:08 +0530",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "bar-and-bench",
         "name": "Bar & Bench",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Legal news publication"
       },
       "selection_signals": {
@@ -1216,61 +877,30 @@
       }
     },
     {
-      "raw_id": "4f5085d5dff9dc683c",
-      "title": "TASMAC shops must issue bills for every bottle of liquor they sell: Madras High Court",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tasmac-shops-must-issue-bills-for-every-bottle-of-liquor-they-sell-madras-high-court/article71308691.ece",
-      "summary": "Justice G.K. Ilanthiraiyan also insists that every retail liquor shop in the State maintain a bill book",
-      "published_at": "Wed, 05 Aug 2026 15:36:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kkn2o6/article71308981.ece/alternates/LANDSCAPE_1200/9868_12_5_2026_14_22_17_2_TASMAC_NEWBUSSTAND_2.JPG",
+      "raw_id": "cbe9bd7b0500f64359",
+      "title": "Did police need to arrest Udhayanidhi? Here's what the law says",
+      "url": "https://www.thenewsminute.com/videos/did-police-need-to-arrest-udhayanidhi-heres-what-the-law-says-2",
+      "summary": "Udhayanidhi Stalin was arrested over remarks made during a Cauvery water-sharing protest. While the remarks have been widely criticised, this video examines two legal questions: Were all the sections invoked in the FIR justified? And more importantly, was his arrest legally necessary? Drawing on Supreme Court judgments including Joginder Kumar, DK Basu, Arnesh Kumar, Siddharth and Satender Kumar Antil, our latest explainer looks at the principles governing arrest, personal liberty under Article 21, and why the power to arrest is not the same as the necessity to arrest.",
+      "published_at": "Wed, 05 Aug 2026 11:14:18 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-05/izjgaqhq/udhayanidhiarrestweb.jpg.jpeg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
+        "dynamic_rank_score": 24,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 5,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "32eac5087e358ec252",
-      "title": "Parliament Monsoon Session Day 13 highlights: Rajya Sabha clears SC Judges' Bill; Lok Sabha adjourned for the day",
-      "url": "https://www.thehindu.com/news/national/parliament-monsoon-session-lok-sabha-rajya-sabha-day-13-live-updates-bankers-books-evidence-bill-taxation-amendment-bill-august-5-2026/article71307974.ece",
-      "summary": "Lok Sabha passes the Bankers’ Books Evidence Bill without debate; Kiren Rijiju hits out at Opposition protests over Ram Temple donations 'scam'",
-      "published_at": "Wed, 05 Aug 2026 17:10:49 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Governance & Administration": 4,
           "Protests": 1
@@ -1282,63 +912,510 @@
       },
       "related_reports": [
         {
-          "title": "Parliament Monsoon Session Day 13 Live: Rajya Sabha adjourned for day after passing Bill to increase SC judges",
-          "url": "https://indianexpress.com/article/india/parliament-monsoon-session-live-updates-lok-sabha-to-take-up-bankers-books-evidence-bill-taxation-amendment-bill-fcra-10818340/",
+          "title": "Did police need to arrest Udhayanidhi? Here's what the law says",
+          "url": "https://www.thenewsminute.com/videos/did-police-need-to-arrest-udhayanidhi-heres-what-the-law-says",
           "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
+            "id": "the-news-minute",
+            "name": "The News Minute",
+            "type": "local",
+            "selection_group": "independent_social",
+            "ownership": "Independent regional digital newsroom"
           },
           "social_attention": null
         }
       ]
     },
     {
-      "raw_id": "bf95e5e3a7cb55c29a",
-      "title": "Amid Opposition protests, Rajya Sabha passes Registration of Births and Deaths Bill",
-      "url": "https://indianexpress.com/article/india/amid-opposition-protests-rajya-sabha-passes-registration-of-births-and-deaths-bill-10818219/",
-      "summary": "",
-      "published_at": "Tue, 04 Aug 2026 23:37:52 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/rajya-sabha-1_20260804233705.jpg",
+      "raw_id": "2fbd933b610ca5d171",
+      "title": "Income Tax notice to dead invalid; tax laws meant to tax the living: Allahabad HC",
+      "url": "https://www.barandbench.com/news/litigation/income-tax-notice-to-dead-invalid-tax-laws-meant-to-tax-the-living-allahabad-hc",
+      "summary": "The Allahabad High Court recently quashed an income tax reassessment case against a man after noting that the proceedings were initiated more than a year after his death [ Smt Asha Dubey v. Union of India and Others ]. A Bench of Justices Shekhar B Saraf and Abdhesh Kumar Chaudhary held that a reassessment notice issued to a deceased person is void from its inception and cannot be validated by subsequently substituting the deceased with a legal representative. “ To tax the dead is a contradiction in terms. Tax laws are made by the living to tax the living. What survives the dead person is what is left behind in the form of such a person's property ,” the Court said. Justices Shekhar B Saraf and Abdhesh Kumar Chaudhary Allahabad High Court To tax the dead is a contradiction in terms. Tax laws are made by the living to tax the living. The ruling came on a petition filed by Asha Dubey whose husband Sanjay Dubey died on January 7, 2024. The Income Tax Department issued a reassessment notice in his name on March 28, 2025. The proceedings arose from a search conducted against the Omaxe group in April 2021. The Department alleged that Dubey had made an unaccounted cash payment of ₹27.44 l",
+      "published_at": "Fri, 24 Jul 2026 09:42:20 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/01/allahabad-hc-1.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Governance & Administration": 4,
-          "Protests": 4
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "fb6fdf606a208f7b82",
+      "title": "ECIR can be challenged under Article 226: Karnataka High Court in Gameskraft vs ED case",
+      "url": "https://www.barandbench.com/news/litigation/ecir-can-be-challenged-under-article-226-karnataka-high-court-in-gameskraft-vs-ed-case",
+      "summary": "The Karnataka High Court on Wednesday rejected objections made by the Enforcement Directorate (ED) to the maintainability of two Gameskraft writ petitions seeking to quash the Enforcement Case Information Report (ECIR) and search and seizure conducted by the agency on allegations of money laundering [Gameskraft v. Directorate of Enforcement] Rejecting the ED's contention that the ECIR was an administrative document and did not fall under the ambit of the Code of Criminal Procedure (CrPC) and, therefore, could not be challenged before a High Court, Justice M Nagaprasanna held, \"The power of judicial review is part of the basic structure of the Constitution. It cannot be rendered illusory merely because the foundational document is nomenclatured as an ECIR, instead of an FIR. If the consequences are coercive, the scrutiny must be constitutional. If liberty, property and reputation stand imperilled, judicial review cannot be denied at the threshold on a plea of semantics...The contention that a criminal petition becomes non-maintainable merely because the ECIR is projected to be an internal document of the Directorate of Enforcement stands unequivocally repelled. The form of the docum",
+      "published_at": "Wed, 05 Aug 2026 16:51:13 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-05-14/yi4n0q9y/e3ec50c3-e6b2-4edd-a57e-e171ec3fa10a.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 3,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "31a6b0c03cc480efc4",
+      "title": "Will UPI transactions over ₹2,000 soon attract merchant fee?",
+      "url": "https://www.barandbench.com/news/will-upi-transactions-over-2000-soon-attract-merchant-fee",
+      "summary": "Unified Payments Interface (UPI) payments above ₹2,000 may soon attract a merchant fee as the government has introduced a new bill in the parliament to amend the the Payment and Settlement Systems Act, 2007, according to multiple news reports. Section 10A of the 2007 Act at present prevents banks from imposing any charge on a person making or receiving a payment through electronic modes of payment like UPI. Section 10A Union Minister for Finance and Corporate Affairs Nirmala Sitharaman on Tuesday introduced The Taxation and Other Laws (Amendment) Bill, 2026 (Bill No. 150 of 2026) in the Lok Sabha to make key amendments across Payment and Settlement Systems Act, 2007, the Income Tax Act, 2025, and the Finance Act, 2026. Under Clause 2 of the Bill, the government seeks to amend Section 10A of the Payment and Settlement Systems Act, 2007 to allow levy of charges on certain electronic modes of payment that the government may specify in a notification. Media reports state that the proposed provision lays the legal groundwork for reintroducing a Merchant Discount Rate (MDR) on high-value UPI transactions. Since January 2020, there had been no MDR on RuPay debit cards and UPI transactions",
+      "published_at": "Wed, 05 Aug 2026 19:14:03 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2023-10/72d929d1-470b-42a8-bf0d-3dfe273c6e44/59.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Economy & Employment": 2
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "f64ba98c193c575459",
+      "title": "Bail for the powerful, bars for the poor",
+      "url": "https://www.barandbench.com/columns/bail-for-the-powerful-bars-for-the-poor",
+      "summary": "On July 8, 2026, within a fortnight of a first information report (FIR) naming him in a ₹35 crore horse-trading conspiracy, former Minister V Senthil Balaji and his brother RV Ashok Kumar walked into the Madras High Court and walked out with anticipatory bail . The prosecution spoke of hawala trails, a fleeing accused, deleted footage. The High Court, weighing submissions from a Senior Advocate, granted relief with light conditions - appear twice daily, cooperate with the investigation. No handcuffs, no lock-up, no waiting. Compare this with the undertrial in a district sub-jail, arrested for stealing a mobile phone worth ₹8,000, who has spent four months in custody because he cannot furnish a surety, cannot afford counsel beyond the harried legal-aid lawyer appearing in 50 matters a day and whose bail plea is number 47 on a crowded list. Justice VR Krishna Iyer wrote, in State of Rajasthan v. Balchand (1977) , that “bail is the rule and jail is the exception.” Half a century later, the rule serves the man with a Senior Advocate on retainer; the exception swallows the man without one. Senthil Balaji’s case is not an aberration; it is a data point in a pattern. Ministers accused of ",
+      "published_at": "Wed, 05 Aug 2026 18:49:53 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 2
         },
         "candidate_categories": [
           "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "2d0186f9e400c69552",
+      "title": "The Architecture of Trust: The Supreme Court’s Interpretation of India’s Mutual Fund Framework",
+      "url": "https://www.barandbench.com/view-point/the-architecture-of-trust-the-supreme-courts-interpretation-of-indias-mutual-fund-framework",
+      "summary": "Every day, millions of Indians entrust their savings to mutual funds. While investors receive fortnightly scheme portfolio disclosures, statement of account and statutory reports, they have little visibility into the day-to-day investment decisions made on their behalf. Instead, they rely on a carefully engineered regulatory architecture established under the Securities and Exchange Board of India (Mutual Funds) Regulations, 1996. This architecture deliberately separates responsibilities between the Asset Management Company (AMC), the Trustee, and SEBI. The AMC manages investments, the Trustee oversees the AMC and safeguards the interests of unitholders and SEBI regulates the entire ecosystem. These institutional checks and balances are designed to ensure that investor protection does not depend solely on commercial judgment but is also ring fenced by fiduciary responsibilities of Trustees and regulatory controls. The Supreme Court’s recent decision in Nilesh Shah & Ors. v. SEBI presented an interesting issue: Can commercial prudence justify a departure from the Mutual Fund Regulations? The facts The dispute concerned six close-ended Fixed Maturity Plans (FMPs) launched by Kotak Mu",
+      "published_at": "Wed, 05 Aug 2026 17:23:00 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/1dgmniap/1000605025.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "ed8da595c5a6933f10",
+      "title": "Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe",
+      "url": "https://eastmojo.com/mizoram/2026/08/05/mizoram-missing-minor-girl-found-dead-mhip-mzp-demand-swift-probe/",
+      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/01/dead.jpg?fit=780%2C439&ssl=1\" /> Aizawl: A 15-year-old girl, who had been reported missing since the night of August 3, was found dead behind Mualthuam ‘N’ Middle School on Wednesday morning, prompting Mizoram’s apex women’s body and leading student organisation to demand a thorough investigation and strict action against those responsible. The deceased has been identified as H. Ramdinpuii, a […] The post Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 13:52:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "732fa9bb82bee04b5e",
+      "title": "The Figure in the Fog by Manini Brar: An evening of legal storytelling",
+      "url": "https://www.barandbench.com/news/the-figure-in-the-fog-by-manini-brar-an-evening-of-legal-storytelling",
+      "summary": "On a recent Friday evening, a stage full of busy practising lawyers in Delhi traded the courtroom for a book club, discussing The Figure in the Fog: Malti Jakhar Case Files by Manini Brar, a practicing lawyer. The event turned into a candid conversation about why a full-time commercial lawyer spent 5 years writing a murder mystery on the side and what she actually wanted the book to say. Manini Brar Book Launch The panel was almost entirely drawn from the bar: Sherbir Panag , founder of white-collar crime and corporate law firm Panag, Babu & Sarangi; Mishika Singh , founder of charitable trust Neev which provides pro bono legal aid; Sumant Batra , an insolvency lawyer and author across several genres; Pragya Parijat , a Supreme Court advocate-on-record; Satyajit Sarna , a Delhi High Court advocate and published author in his own right; and Mumtaz Bhalla , Equity Partner at ELP, who anchored the audience Q&A. Also on the panel was Mansi Shetty, who is the head of marketing at the publishing house Juggernaut Books. How to kill a djinn and get away with it: The Figure in the Fog by Manini Brar For the uninitiated, The Figure in the Fog follows Malti Jakhar, a struggling lawyer with 10",
+      "published_at": "Wed, 05 Aug 2026 19:01:30 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-25/vz52lp73/184097.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "c051e3378acdb65175",
+      "title": "Bapsy Dastur joins DSK Legal UAE as a Partner",
+      "url": "https://www.barandbench.com/news/corporate/bapsy-dastur-joins-dsk-legal-uae-as-a-partner",
+      "summary": "DSK Legal UAE has announced the appointment of Bapsy Dastur as a Partner in its Abu Dhabi office. Dastur has over two decades of C-suite and board-level experience advising multinational corporations, family-owned enterprises, and governing bodies across complex, multi-jurisdictional environments. Her core expertise spans corporate governance, cross-border restructuring, M&A, regulatory strategy, and enterprise-wide risk and compliance frameworks, with a distinctive focus on governance transformation, shareholder alignment, and succession planning. She has been instrumental in designing and implementing corporate and family ownership structures, family constitutions, and governance frameworks that enable long-term value preservation across generations. Dastur has held senior leadership roles as General Counsel and Chief Legal Officer across global and family-owned conglomerates operating in Energy, Oil & Gas, Maritime & Logistics, Infrastructure, Financial Services, Hospitality, Retail, and Technology. Her experience includes advising on high-value, cross-border transactions and leading complex organisational transformations, while embedding robust governance and risk management pr",
+      "published_at": "Wed, 05 Aug 2026 17:50:17 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/atnh7l3v/ViewPoint-MIddle-Single-Image-copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "be97f1dcad579b2a48",
+      "title": "Khaitan & Co, Shardul Amarchand Mangaldas act on BNP Paribas Cardif acquiring stake in IndiaFirst Life Insurance",
+      "url": "https://www.barandbench.com/dealstreet/khaitan-co-advises-bnp-paribas-cardif-on-stake-acquisition-in-indiafirst-life-insurance",
+      "summary": "BNP Paribas Cardif has acquired approximately 26% stake in IndiaFirst Life Insurance Company Limited from Carmel Point Investments Ltd (Warburg Pincus holding company), subject to requisite approvals from the IRDAI and the Competition Commission of India. The transaction involved a unique pre-closing restructuring exercise, wherein Carmel Point India Investments underwent voluntary liquidation, followed by an in specie distribution of its assets, including its shareholding in IndiaFirst Life Insurance Company, to its parent entity as a condition precedent to the proposed acquisition. Khaitan & Co advised BNP Paribas Cardif on this stake acquisition. The Firm provided end-to-end legal representation to BNP Paribas Cardif with respect to the deal including drafting, reviewing, commenting, marking-up and negotiating the Share Purchase Agreement and the Shareholders' Agreement; conducting the legal due-diligence exercise on the Target; and advising on regulatory related aspects. The transaction team consisted of K Aishwarya (Partner), Shishir Jose Vayttaden (Partner), Niyati Dholakia (Principal Associate) and Ambreen Rahman (Associate). The following provided assistance: Insurance law ",
+      "published_at": "Wed, 05 Aug 2026 11:32:09 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/5dt84418/WhatsApp-Image-2026-08-05-at-3.43.32-PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Economy & Employment": 1,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "e97d5fee71a49dd9d8",
+      "title": "Mark Zuckerberg should apologise, Parliamentary panel chairperson on PM video row",
+      "url": "https://www.thenewsminute.com/news/mark-zuckerberg-should-apologise-parliamentary-panel-chairperson-on-pm-video-row",
+      "summary": "The Parliamentary Standing Committee on Communications and Information Technology chairperson and Bharatiya Janata Party MP Nishikant Dubey has demanded an apology from Mark Zukerberg, founder of Meta, the parent company of Facebook, Instagram etc. The demand came in connection with the removal of Prime Minister Narendra Modi’s video related to the NEET paper leak from its platform on July 23. The panel chairperson and other NDA MPs on the panel warned social media company representatives that it would recommend removing safe harbour, a legal provision which protects social media platforms from the liability of third party content. However, members of the panel belonging to the Opposition parties insisted the government could regulate technology, not democracy. A video posted from the official social media handles of Prime Minister Narendra Modi on July 23, addressing the issue of question paper leak during the protest organised by Cockroach Janata Party, was briefly removed from Facebook, which according to Meta happened due to a technical error as they used an AI tool to remove certain content. Safe harbour is a legal concept which protects internet intermediaries, including soci",
+      "published_at": "Wed, 05 Aug 2026 11:01:14 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-05/nhhu136g/nishikant-dubeymark-zuckerberg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "035c81be39942abed8",
+      "title": "India’s carbon market sets weak emissions targets, analysis finds",
+      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
+      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
+      "published_at": "31 Jul 2026 16:51:38 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "a1e74f2dfd561fa8f2",
+      "title": "UP News: यूपी डिजिटल लेबर चौक ऐप (UP Digital Labour Chowk) अब मोबाइल से बुक करें मिस्त्री और मजदूर, जानें पूरी जानकारी",
+      "url": "https://khabarlahariya.org/up-news-up-digital-labour-chowk-app-now-book-skilled-workers-and-laborers-via-mobile-get-full-details-here/",
+      "summary": "अगर आपको घर बनवाना हो, पुताई करानी हो…",
+      "published_at": "Sun, 26 Jul 2026 07:00:02 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "835675326855ec5e08",
+      "title": "Left Groups Protest Workers' Repression in North India",
+      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
+      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
+      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
           "Protests"
         ]
+      }
+    },
+    {
+      "raw_id": "9bcfe1ff8ff9d820cc",
+      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
+      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
+      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
+      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
-      "related_reports": [
-        {
-          "title": "Rajya Sabha passes Registration of Births and Deaths Bill amid Opposition protests",
-          "url": "https://indianexpress.com/article/india/rajya-sabha-passes-registration-of-births-and-deaths-amendment-bill-2026-10817899/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
     }
   ]
 }

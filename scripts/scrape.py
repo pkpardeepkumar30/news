@@ -5,7 +5,7 @@ Dependency-free by design. This collector does not bypass logins, paywalls,
 robots rules, or platform restrictions. Use approved APIs where required.
 """
 from __future__ import annotations
-import argparse, hashlib, html, json, math, os, re
+import argparse, hashlib, html, json, math, os, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -58,6 +58,31 @@ def social_attention(lead):
         'score': score
     }
 
+def source_metadata(source):
+    return {
+        'id': source['id'],
+        'name': source['name'],
+        'type': source['type'],
+        'selection_group': source.get(
+            'selection_group',
+            'independent_social' if source['type'] in {'independent', 'local', 'social'} else 'established'
+        ),
+        'ownership': source.get('ownership', '')
+    }
+
+def priority_social_profile(lead, profiles):
+    account = str(lead.get('account', lead.get('submitted_by', ''))).casefold().lstrip('@')
+    url = str(lead.get('url', '')).casefold().rstrip('/')
+    for profile in profiles:
+        profile_name = str(profile.get('name', '')).casefold()
+        profile_url = str(profile.get('url', '')).casefold().rstrip('/')
+        handle = urlparse(profile_url).path.strip('/').casefold()
+        if (profile_url and url.startswith(profile_url)) or (handle and handle in account) or (
+            profile_name and profile_name in account
+        ):
+            return profile
+    return None
+
 def parse_feed(content, source):
     root = ET.fromstring(content)
     items = root.findall('.//item')
@@ -94,10 +119,8 @@ def parse_feed(content, source):
                 'summary': description[:2500], 'published_at': published_at,
                 'image_url': image_url,
                 'suggested_category': source.get('category_hint', ''),
-                'source': {
-                    'id': source['id'], 'name': source['name'],
-                    'type': source['type'], 'ownership': source.get('ownership', '')
-                }
+                'priority_discovery': bool(source.get('priority_discovery')),
+                'source': source_metadata(source)
             })
     return rows
 
@@ -127,9 +150,9 @@ def parse_news_sitemap(content, source):
                 'image_url': image_url,
                 'suggested_category': suggested_category,
                 'requires_verification': True,
+                'priority_discovery': bool(source.get('priority_discovery')),
                 'source': {
-                    'id': source['id'], 'name': source['name'],
-                    'type': source['type'], 'ownership': source.get('ownership', ''),
+                    **source_metadata(source),
                     'language': source.get('language', '')
                 }
             })
@@ -146,13 +169,15 @@ def fetch(source):
             return parse_news_sitemap(content, source)
         return parse_feed(content, source)
 
-def social_row(lead, provider=None):
+def social_row(lead, provider=None, priority_profiles=None):
     provider = provider or {}
+    priority_profiles = priority_profiles or []
     url = lead.get('url', '')
     if not url:
         return None
     title = lead.get('title') or f"Submitted social lead from {urlparse(url).netloc}"
     attention = social_attention(lead)
+    priority_profile = priority_social_profile(lead, priority_profiles)
     return {
         'raw_id': stable_id(url, title), 'title': title, 'url': url,
         'summary': lead.get('note', lead.get('summary', '')),
@@ -160,25 +185,30 @@ def social_row(lead, provider=None):
         'image_url': lead.get('image_url', ''),
         'suggested_category': lead.get('category', ''),
         'social_attention': attention,
+        'priority_discovery': bool(priority_profile),
+        'priority_profile': priority_profile.get('name', '') if priority_profile else '',
         'source': {
             'id': lead.get('source_id', f"social-{attention['platform'].lower().replace(' ', '-') }"),
             'name': lead.get('account', lead.get('submitted_by', provider.get('name', 'Public social post'))),
             'type': 'social',
+            'selection_group': 'independent_social',
             'ownership': f"Public account on {attention['platform']}"
         },
         'requires_verification': True
     }
 
-def local_social_rows():
+def local_social_rows(config):
     path = ROOT / 'data/social_submissions.json'
     if not path.exists():
         return []
     payload = json.loads(path.read_text(encoding='utf-8'))
     leads = payload.get('items', []) if isinstance(payload, dict) else payload
-    return [row for lead in leads if (row := social_row(lead))]
+    profiles = config.get('priority_discovery_profiles', [])
+    return [row for lead in leads if (row := social_row(lead, priority_profiles=profiles))]
 
 def remote_social_rows(config):
     rows, errors = [], []
+    profiles = config.get('priority_discovery_profiles', [])
     for provider in config.get('social_signal_feeds', []):
         if not provider.get('enabled'):
             continue
@@ -193,27 +223,57 @@ def remote_social_rows(config):
             with urlopen(Request(url, headers=headers), timeout=25) as response:
                 payload = json.loads(response.read().decode('utf-8-sig'))
             leads = payload.get('items', []) if isinstance(payload, dict) else payload
-            rows.extend(row for lead in leads if (row := social_row(lead, provider)))
+            rows.extend(
+                row for lead in leads
+                if (row := social_row(lead, provider, profiles))
+            )
         except Exception as exc:
             errors.append({'source': provider['id'], 'error': str(exc)})
     return rows, errors
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--strict', action='store_true')
-    args = parser.parse_args()
-    config = json.loads((ROOT / 'config/sources.json').read_text(encoding='utf-8'))
-    all_rows, errors = [], []
-    for source in config['sources']:
+def collect_source_rows(sources, retry_delay_seconds=0, strict=False):
+    all_rows, failed = [], []
+    for source in sources:
         if not source.get('enabled'):
             continue
         try:
             all_rows.extend(fetch(source))
         except Exception as exc:
-            errors.append({'source': source['id'], 'error': str(exc)})
-            if args.strict:
-                raise
-    all_rows.extend(local_social_rows())
+            failed.append((source, exc))
+    retry_log, errors = [], []
+    if failed and retry_delay_seconds > 0:
+        print(f"Retrying {len(failed)} failed sources in {retry_delay_seconds} seconds")
+        time.sleep(retry_delay_seconds)
+    for source, first_error in failed:
+        if retry_delay_seconds <= 0:
+            errors.append({'source': source['id'], 'error': str(first_error)})
+            continue
+        try:
+            rows = fetch(source)
+            all_rows.extend(rows)
+            retry_log.append({'source': source['id'], 'status': 'recovered', 'items': len(rows)})
+        except Exception as retry_error:
+            errors.append({
+                'source': source['id'],
+                'error': str(retry_error),
+                'first_error': str(first_error),
+                'retried_after_seconds': retry_delay_seconds
+            })
+            retry_log.append({'source': source['id'], 'status': 'failed'})
+    if strict and errors:
+        raise RuntimeError(f"Source collection failed after retry: {errors}")
+    return all_rows, errors, retry_log
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--strict', action='store_true')
+    parser.add_argument('--retry-delay-seconds', type=int, default=0)
+    args = parser.parse_args()
+    config = json.loads((ROOT / 'config/sources.json').read_text(encoding='utf-8'))
+    all_rows, errors, retry_log = collect_source_rows(
+        config['sources'], args.retry_delay_seconds, args.strict
+    )
+    all_rows.extend(local_social_rows(config))
     remote_rows, remote_errors = remote_social_rows(config)
     all_rows.extend(remote_rows)
     errors.extend(remote_errors)
@@ -221,7 +281,8 @@ def main():
     now = datetime.now(timezone.utc)
     payload = {
         'collected_at': now.isoformat(), 'count': len(unique),
-        'items': list(unique.values()), 'errors': errors
+        'items': list(unique.values()), 'errors': errors,
+        'retries': retry_log
     }
     inbox = ROOT / 'data/inbox'
     inbox.mkdir(parents=True, exist_ok=True)

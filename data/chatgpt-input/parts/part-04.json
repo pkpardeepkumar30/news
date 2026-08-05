@@ -1,100 +1,88 @@
 {
-  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification.",
-  "prepared_at": "2026-08-05T13:05:19.166508+00:00",
-  "input_count": 1350,
+  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
+  "prepared_at": "2026-08-05T14:02:14.136935+00:00",
+  "input_count": 1447,
   "supplied_count": 200,
+  "source_mix": {
+    "independent_social": 126,
+    "established_or_other": 74,
+    "independent_social_majority_required": true
+  },
   "part": 4,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "aa64eece681e2eb7a1",
-      "title": "Harjinder Kaur wins silver, India’s 7th weightlifting medal at 2026 CWG",
-      "url": "https://indianexpress.com/article/sports/harjinder-kaur-wins-silver-indias-7th-weightlifting-medal-at-2026-cwg-10807996/",
+      "raw_id": "208d3bb23c09386472",
+      "title": "Bihar is not for beginners",
+      "url": "https://www.youtube.com/shorts/WrI57iRnNQw",
       "summary": "",
-      "published_at": "Tue, 28 Jul 2026 19:29:31 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/harjinder-kaur-sony-liv-screenshot.jpg",
-      "suggested_category": "Sports",
-      "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Ajaya Babu wins silver, India’s 6th weightlifting medal at 2026 CWG",
-          "url": "https://indianexpress.com/article/sports/ajaya-babu-weightlifting-silver-medal-commonwealth-games-2026-cwg-10806415/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "e2d1763673da89ad8e",
-      "title": "Nagaland: JP Nadda visits disaster-hit Mon, assures Centre’s support",
-      "url": "https://eastmojo.com/nagaland/2026/08/05/nagaland-jp-nadda-visits-disaster-hit-mon-assures-centres-support/",
-      "summary": "Kohima: Union Minister for Health & Family Welfare and Minister of Chemicals & Fertilizers Jagat Prakash Nadda on Wednesday visited Mon district and interacted with families affected by the recent landslides and flash floods at the Konyak Union Office. Expressing solidarity with the affected families, Nadda said the incident was “very disheartening and painful” and […] The post Nagaland: JP Nadda visits disaster-hit Mon, assures Centre’s support appeared first on EastMojo .",
-      "published_at": "Wed, 05 Aug 2026 12:53:44 +0000",
+      "published_at": "2026-07-26T12:28:08+00:00",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "ownership": "Independent regional digital publication"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
-      "raw_id": "6fd87c5dfdcc24b966",
-      "title": "Flash floods hit Manipur hill districts after heavy rain; paddy fields submerged",
-      "url": "https://eastmojo.com/manipur/2026/08/05/flash-floods-hit-manipur-hill-districts-after-heavy-rain-paddy-fields-submerged/",
-      "summary": "Screenshot \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/08/IMG_5366.jpeg?fit=780%2C431&ssl=1\" /> Imphal: Heavy rainfall over the last two days has triggered flash flood-like conditions across several hill districts of Manipur, causing panic among residents and widespread damage to agricultural land. According to the Meteorological Centre, Imphal, Ukhrul district was the worst affected, recording 91.6 mm of rainfall, followed by Tamenglong district with 60.3 mm. Several villages […] The post Flash floods hit Manipur hill districts after heavy rain; paddy fields submerged appeared first on EastMojo .",
-      "published_at": "Wed, 05 Aug 2026 12:46:59 +0000",
+      "raw_id": "8095d7210d0e1f94cb",
+      "title": "Saurav the OG Kuchi Puchi",
+      "url": "https://www.youtube.com/shorts/4vjDOp-7Gjs",
+      "summary": "",
+      "published_at": "2026-07-26T10:27:47+00:00",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7097a8faeb8ed18a36",
+      "title": "Manipur CM meets Commonwealth silver medalist Jadumani Singh",
+      "url": "https://eastmojo.com/manipur/2026/08/05/manipur-cm-meets-commonwealth-silver-medalist-jadumani-singh/",
+      "summary": "Imphal: Chief Minister of Manipur Yumnam Khemchand Singh on Wednesday met Commonwealth Games Silver Medallist Jadumani Singh Mandengbam along with his parents at the Chief Minster’s Secretariat in Imphal. During the meeting, the Chief Minister extended his heartfelt congratulations to pugilist Jadumani Singh for his outstanding achievement, which has brought laurels to both the State and […] The post Manipur CM meets Commonwealth silver medalist Jadumani Singh appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 13:45:40 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "eastmojo",
         "name": "EastMojo",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
@@ -111,17 +99,19 @@
       }
     },
     {
-      "raw_id": "31a50caf4dd4dc5ee7",
-      "title": "Why India’s plan to conserve the clouded leopard centres on the Northeast",
-      "url": "https://eastmojo.com/premium/2026/08/05/why-indias-plan-to-conserve-the-clouded-leopard-centres-on-the-northeast/",
-      "summary": "Guwahati: India’s conservation roadmap for the clouded leopard has placed the Northeast at the heart of efforts to save one of Asia’s most elusive big cats, identifying 14 priority landscapes across the region that stretch from the Himalayan foothills to the forests bordering Bangladesh and Myanmar. The 2026 Conservation Action Plan for Caracal, Fishing Cat […] The post Why India’s plan to conserve the clouded leopard centres on the Northeast appeared first on EastMojo .",
-      "published_at": "Wed, 05 Aug 2026 10:47:35 +0000",
+      "raw_id": "6fd87c5dfdcc24b966",
+      "title": "Flash floods hit Manipur hill districts after heavy rain; paddy fields submerged",
+      "url": "https://eastmojo.com/manipur/2026/08/05/flash-floods-hit-manipur-hill-districts-after-heavy-rain-paddy-fields-submerged/",
+      "summary": "Screenshot \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/08/IMG_5366.jpeg?fit=780%2C431&ssl=1\" /> Imphal: Heavy rainfall over the last two days has triggered flash flood-like conditions across several hill districts of Manipur, causing panic among residents and widespread damage to agricultural land. According to the Meteorological Centre, Imphal, Ukhrul district was the worst affected, recording 91.6 mm of rainfall, followed by Tamenglong district with 60.3 mm. Several villages […] The post Flash floods hit Manipur hill districts after heavy rain; paddy fields submerged appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 12:46:59 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "eastmojo",
         "name": "EastMojo",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
@@ -133,12 +123,8 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
@@ -149,10 +135,12 @@
       "published_at": "Wed, 05 Aug 2026 09:12:44 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "eastmojo",
         "name": "EastMojo",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
@@ -176,10 +164,12 @@
       "published_at": "Wed, 05 Aug 2026 07:29:28 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "eastmojo",
         "name": "EastMojo",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
@@ -207,10 +197,12 @@
       "published_at": "Wed, 05 Aug 2026 07:05:33 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "eastmojo",
         "name": "EastMojo",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
@@ -224,95 +216,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "9e1c56d675ef1cfc38",
-      "title": "Nagaland MP Jamir pushes upgrade of Jalukie veterinary college",
-      "url": "https://eastmojo.com/nagaland/2026/08/04/nagaland-mp-jamir-pushes-upgrade-of-jalukie-veterinary-college/",
-      "summary": "Kohima: Nagaland Lok Sabha Member of Parliament S. Supongmeren Jamir on Tuesday urged the Centre to strengthen infrastructure and academic facilities at the College of Veterinary Sciences and Animal Husbandry in Jalukie, Peren district, a constituent college of the Central Agricultural University. Raising the issue during Zero Hour in Parliament, Jamir appealed to the Union […] The post Nagaland MP Jamir pushes upgrade of Jalukie veterinary college appeared first on EastMojo .",
-      "published_at": "Tue, 04 Aug 2026 14:57:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "7b40d963d22b1d2b45",
-      "title": "Mizoram: Student body steps in as recruitment complaints grow",
-      "url": "https://eastmojo.com/mizoram/2026/08/04/mizoram-student-body-steps-in-as-recruitment-complaints-grow/",
-      "summary": "Aizawl: The Mizo Zirlai Pawl (MZP) has invited candidates who have faced difficulties in the Mizoram Public Service Commission (MPSC) recruitment process to attend a meeting on Wednesday to discuss their grievances and chart a way forward. The decision was taken at an emergency meeting of the MZP General Headquarters Executive Committee held in Aizawl […] The post Mizoram: Student body steps in as recruitment complaints grow appeared first on EastMojo .",
-      "published_at": "Tue, 04 Aug 2026 14:33:22 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "87329fa315caca4589",
-      "title": "Nagaland opens registration for ex-gratia scheme for students outside state",
-      "url": "https://eastmojo.com/nagaland/2026/08/04/nagaland-opens-registration-for-ex-gratia-scheme-for-students-outside-state/",
-      "summary": "Kohima: The Department of Higher Education, Nagaland, has invited applications for the Nagaland Government Ex-Gratia Scheme for Students Studying Outside Nagaland (NGESSO) for the 2026-27 academic session. The scheme provides an ex-gratia assistance of ₹5 lakh to the family of an indigenous Naga student from Nagaland in the event of the student’s unfortunate death while […] The post Nagaland opens registration for ex-gratia scheme for students outside state appeared first on EastMojo .",
-      "published_at": "Tue, 04 Aug 2026 14:16:19 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 5
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
       }
     },
     {
@@ -323,10 +226,12 @@
       "published_at": "Wed, 05 Aug 2026 12:05:28 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -350,10 +255,12 @@
       "published_at": "Wed, 05 Aug 2026 11:22:04 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -377,10 +284,12 @@
       "published_at": "Wed, 05 Aug 2026 11:19:55 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -404,10 +313,12 @@
       "published_at": "Wed, 05 Aug 2026 11:15:02 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -431,10 +342,12 @@
       "published_at": "Wed, 05 Aug 2026 10:15:52 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -458,10 +371,12 @@
       "published_at": "Wed, 05 Aug 2026 10:04:55 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -485,10 +400,12 @@
       "published_at": "Wed, 05 Aug 2026 09:52:12 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -512,10 +429,12 @@
       "published_at": "Wed, 05 Aug 2026 09:34:24 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -539,10 +458,12 @@
       "published_at": "Wed, 05 Aug 2026 09:25:27 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -566,10 +487,12 @@
       "published_at": "Wed, 05 Aug 2026 09:18:14 +0000",
       "image_url": "",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "the-rural-press",
         "name": "The Rural Press",
         "type": "local",
+        "selection_group": "independent_social",
         "ownership": "SSB Media House"
       },
       "selection_signals": {
@@ -593,10 +516,12 @@
       "published_at": "05 Aug 2026 15:52:50 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/05001731/AP24180699138683-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -620,10 +545,12 @@
       "published_at": "05 Aug 2026 14:27:08 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/05133829/otter-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -651,10 +578,12 @@
       "published_at": "04 Aug 2026 15:20:02 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/04131014/Eurasian-lynx-1-Sikkim-Forest-Dept-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -682,10 +611,12 @@
       "published_at": "03 Aug 2026 15:47:18 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/03125249/4670487709_c95df8f47d_4k-scaled-e1785742237892-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -699,438 +630,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c8f337a724fa2086a1",
-      "title": "Flies are overlooked pollinators and farmers’ friends",
-      "url": "https://india.mongabay.com/2026/08/flies-are-overlooked-pollinators-and-farmers-friends/",
-      "summary": "Say flies, and one instantly thinks about dirt and disease. But in truth they are among the cleanest of insects. They are a grossly misunderstood order of insects. They are excellent pollinators, aid in criminal investigation, composting, pest control and increasing soil fertility, and of course in scientific research. They are the true flies. Why […]",
-      "published_at": "03 Aug 2026 13:24:32 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/03095032/Syrphid-fly-from-Ladakh-e1785731238147-768x512.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "035c81be39942abed8",
-      "title": "India’s carbon market sets weak emissions targets, analysis finds",
-      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
-      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
-      "published_at": "31 Jul 2026 16:51:38 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "2625d891d23cb02d62",
-      "title": "A newly-described fish sheds light on a biodiversity blind spot",
-      "url": "https://india.mongabay.com/2026/07/a-newly-described-fish-sheds-light-on-a-biodiversity-blind-spot/",
-      "summary": "A new catfish species, Pseudecheneis likimroensis, has been described from India’s north-eastern state of Nagaland. The species, named after the fast-flowing Likimro river, from which specimens have been collected so far, was described in the Journal of Ichthyology. The discovery took place unexpectedly when a research team was in the region to survey fish fauna […]",
-      "published_at": "31 Jul 2026 10:42:59 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31003452/Image-2-768x512.jpeg",
-      "suggested_category": "",
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2,
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "565d41d9a928431ca2",
-      "title": "Study warns of growing landslide threat",
-      "url": "https://india.mongabay.com/short-article/2026/07/study-warns-of-growing-landslide-threat/",
-      "summary": "Climate change and land use changes could significantly increase landslide susceptibility and risk across Karnataka’s Western Ghats by 2050, according to a new study published in Scientific Reports. The modelling study evaluates future landslide susceptibility and risk by incorporating projected changes in land use/land cover (LULC) and rainfall patterns under different climate scenarios. The research […]",
-      "published_at": "30 Jul 2026 14:29:16 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/30131231/DSC4457-768x512.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "07ecbecc9f9f081591",
-      "title": "Scores of junior colleges submit fake Fire NOCs to Intermediate Board; eight booked for allegedly forging HYDRAA chief’s signature",
-      "url": "https://www.thehindu.com/news/cities/Hyderabad/eight-junior-colleges-in-hyderabad-submit-fake-fire-nocs-booked-for-allegedly-forging-hydraa-chiefs-signature/article71308499.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 18:28:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wgkq1o/article71308525.ece/alternates/LANDSCAPE_1200/04hyngg_Numaish%2004.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "108276a53e4b6ea646",
-      "title": "Two drown during idol immersion in Agra, CM Yogi expresses grief",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/two-drown-during-idol-immersion-in-agra-cm-yogi-expresses-grief/article70120130.ece",
-      "summary": "Six others are still missing and teams of local divers, police personnel and the State Disaster Response Force (SDRF) have been pressed into service, officials said",
-      "published_at": "Fri, 03 Oct 2025 12:11:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/85968x/article70120223.ece/alternates/LANDSCAPE_1200/PTI10_02_2025_000630B.jpg",
-      "suggested_category": "States & Local",
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "3abce3be25e4cc4478",
-      "title": "Social media ban: Will the Aussie model work for India?",
-      "url": "https://www.thehindu.com/education/social-media-ban-will-the-aussie-model-work-for-india/article71309206.ece",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 16:54:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/vfzh34/article71309209.ece/alternates/LANDSCAPE_1200/iStock-1395154757.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "5d6a6ccc7096be3974",
-      "title": "Hand grenade explosion kills three in northwest Pakistan",
-      "url": "https://www.thehindu.com/news/international/several-killed-hand-grenade-explosion-linked-to-a-family-dispute-in-northwest-pakistan-updates/article71308757.ece",
-      "summary": "According to the police, a family dispute triggered the hand grenade explosion.",
-      "published_at": "Wed, 05 Aug 2026 14:33:02 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/uw9u50/article71308760.ece/alternates/LANDSCAPE_1200/IMG_Pakistan_Muharram_2_1_PND79E9M.jpg",
-      "suggested_category": "International & Geopolitics",
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a3ad748b01f50966e9",
-      "title": "​Top spot: On the new phase of the Khelo India Scheme",
-      "url": "https://www.thehindu.com/opinion/editorial/top-spot-on-the-new-phase-of-the-khelo-india-scheme/article71305508.ece",
-      "summary": "India needs to upgrade infrastructure, train coaches",
-      "published_at": "Wed, 05 Aug 2026 12:03:36 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "5357fa2e79e588767d",
-      "title": "CJP’s Saurav Das says YouTubers broke into his home to target him, family",
-      "url": "https://indianexpress.com/article/india/saurav-das-cjp-privacy-breach-allegation-youtubers-house-media-visuals-10819351/",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 12:20:17 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/saurav-das-IE-screenshot.jpg",
-      "suggested_category": "",
-      "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "f71309405f561bac7b",
-      "title": "Today News Headlines for School Assembly, August 6, 2026: Meta apologises over PM Modi video block, RBI to launch plastic notes early next year",
-      "url": "https://indianexpress.com/article/education/today-news-headlines-for-school-assembly-6-august-2026-mark-zuckerberg-apoligises-pm-modi-video-blocked-rbi-plastic-notes-from-next-year-trump-opens-hormuz-10819327/",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 11:58:07 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/school-assembly-news-headlines-august-6.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b894e506f1d6d52135",
-      "title": "Russia’s ‘black widows’: Wartime marriages, a soldier’s death, and a payout",
-      "url": "https://indianexpress.com/article/world/russia-war-casualties-black-widow-scam-10819030/",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 09:49:15 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/black-widows.jpg",
-      "suggested_category": "International & Geopolitics",
-      "source": {
-        "id": "indian-express-world",
-        "name": "The Indian Express - World",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "fc555180f1a1f1899c",
-      "title": "Mohamed Salah set to sign for Turkish outfit Trabzonspor",
-      "url": "https://indianexpress.com/article/sports/football/mohamed-salah-to-sign-for-turkish-outfit-trabzonspor-liverpool-10819346/",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 12:13:34 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/Salah-21.jpg",
-      "suggested_category": "Sports",
-      "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "4703b6b26292ccb666",
-      "title": "वैभव-अभिमन्यु ओपनर, इशान नंबर 5, विराट को भी मौका; दलीप ट्रॉफी के लिए ईस्ट जोन के संभावित टॉप-7 बैटर",
-      "url": "https://www.jansatta.com/khel/vaibhav-sooryavanshi-abhimanyu-easwaran-opener-ishan-kishan-number-5-virat-singh-east-zone-top-7-batter-for-duleep-trophy-2026/4649369/",
-      "summary": "",
-      "published_at": "2026-08-05T18:22:51+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/VaibhavAbhimanuIshan.jpg",
-      "suggested_category": "Sports",
-      "requires_verification": true,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
       }
     },
     {
@@ -1141,10 +640,132 @@
       "published_at": "30 Jul 2026 13:56:36 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/30132302/Bellary_ZillaGreat_Famine_of_1876%E2%80%9378-768x512.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "mongabay-india",
         "name": "Mongabay India",
         "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "812a8cffcd173d634f",
+      "title": "Insects may be guiding seasonal bird movements in the eastern Himalayas, study finds",
+      "url": "https://india.mongabay.com/2026/07/insects-may-be-guiding-seasonal-bird-movements-in-the-eastern-himalayas-study-finds/",
+      "summary": "Every winter, in the Himalayas of Arunachal Pradesh, certain birds like babblers, laughing thrushes, yuhinas and other small mountain birds, that spent the warm months at the top of the mountains, begin making their way down. Many of them don’t really fly at all, they just hop, branch by branch, tree by tree, descending hundreds […]",
+      "published_at": "28 Jul 2026 10:45:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28092911/image-1-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ca04b6344a8b288897",
+      "title": "Beyond the Hype",
+      "url": "https://india.mongabay.com/specials/2026/07/beyond-the-hype/",
+      "summary": "From cloud seeding to carbon capture, there are several technologies and interventions increasingly being promoted as silver bullet solutions to environmental challenges. Through evidence-based reporting, we look beyond the headlines to assess the scientific evidence, practical challenges and the scale of the potential impact of some of these solutions.",
+      "published_at": "27 Jul 2026 14:05:43 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/27135230/AP18156273631906-e1776075312665-768x510-1.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "0a97752cb14930b32c",
+      "title": "Low rainfall delays paddy farming signalling El Niño-induced drought",
+      "url": "https://india.mongabay.com/2026/07/signs-of-el-nino-induced-drought-as-paddy-farming-delays/",
+      "summary": "Barun Kumar Yadav from Jharkhand works in Bhilai city in the neighbouring state of Chhattisgarh as a carpenter. At the end of June he went to his village Pathalgada in Chatra district for the sowing season. This is when farmers sow paddy in Jharkhand. Rainfall is extremely crucial for this season. Yadav waited for weeks, […]",
+      "published_at": "27 Jul 2026 13:30:51 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/27104503/144-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7634591888c7cf6797",
+      "title": "Rethinking irrigation through farm ponds [Commentary]",
+      "url": "https://india.mongabay.com/2026/07/rethinking-irrigation-through-farm-ponds-commentary/",
+      "summary": "In the sandy fields of Jamal, a village in the Sirsa district of Haryana, water for irrigation does not arrive through a single source. It is mixed, stored, lifted, diluted, timed, subsidised and improvised. Jamal’s landscape first appears dry and exposed: mustard and wheat fields stretch across a semi-arid plain, field channels cutting through farms, […]",
+      "published_at": "27 Jul 2026 11:06:14 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/27094551/1_Jamal-scaled-e1785125772499-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
@@ -1168,10 +789,12 @@
       "published_at": "Wed, 05 Aug 2026 12:21:47 +0000",
       "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-05/44h1ezxo/Yogi-ads-over-modi.jpg",
       "suggested_category": "",
+      "priority_discovery": false,
       "source": {
         "id": "newslaundry",
         "name": "Newslaundry",
         "type": "independent",
+        "selection_group": "independent_social",
         "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
@@ -1186,6 +809,509 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "5b4b8e286b804c67a1",
+      "title": "यूपी में 15,613 आंगनबाड़ी सरकारी स्कूलों में शिफ्ट होंगे, 15 अगस्त तक पूरा किया जाएगा अभियान",
+      "url": "https://khabarlahariya.org/in-up-15613-anganwadis-will-be-shifted-to-government-schools-the-campaign-will-be-completed-by-august-15/",
+      "summary": "यूपी में आंगनबाड़ी को लेकर एक अपडेट आया है। सरकारी स्कूलों के पास चल रहे…",
+      "published_at": "Wed, 05 Aug 2026 09:57:32 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "52dcd6973298dc0007",
+      "title": "2306 पदों पर सरकारी भर्ती का ऐलान, पटवारी के 200 पद, 18 अगस्त तक कर सकते हैं आवेदन",
+      "url": "https://khabarlahariya.org/government-recruitment-announced-for-2306-posts-including-200-patwari-positions-applications-open-until-august-18/",
+      "summary": "मध्य प्रदेश में सरकारी नौकरी की तैयारी कर रहे उनके लिए एक बड़ी खबर आई है। मध्य प्रदेश कर्मचारी चयन मंडल (MPESB) द्वारा ग्रुप- 2 उपसमूह-4 संयुक्त भर्ती परीक्षा 2026…",
+      "published_at": "Wed, 05 Aug 2026 08:30:26 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "c7369465bab752d4cd",
+      "title": "Bihar News: मसौढ़ी के वार्ड-1 में तीन साल से नल का कनेक्शन, लेकिन एक बूंद पानी नहीं",
+      "url": "https://khabarlahariya.org/bihar-news-tap-connection-in-masaurhis-ward-1-for-three-years-but-not-a-single-drop-of-water/",
+      "summary": "पटना जिले के मसौढ़ी नगर परिषद के वार्ड संख्या-1 में वर्ष 2023 में हर घर नल जल योजना के तहत घर-घर कनेक्शन दिया गया था। लेकिन तीन साल बीत जाने…",
+      "published_at": "Wed, 05 Aug 2026 07:38:25 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2d2e9ba0d69a4435a4",
+      "title": "Patna News: 20 साल से अधूरी पड़ी सड़क, आज भी कीचड़ में जीने को मजबूर गांव",
+      "url": "https://khabarlahariya.org/patna-news-road-project-incomplete-for-20-years-village-still-forced-to-live-amidst-mud/",
+      "summary": "लगभग एक हज़ार की आबादी वाले पटना के बुधगवान गाँव में पिछले बीस साल से सड़क निर्माण का काम अधूरा है. यहां के निवासियों का कहना है की पंचायत मुखिया…",
+      "published_at": "Wed, 05 Aug 2026 05:00:41 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4e7949156acd04b381",
+      "title": "Ground Report: सदर चुनाव छतरपुर, जिस चुनाव में महिलाओं को वोट देने का अधिकार नहीं",
+      "url": "https://khabarlahariya.org/ground-report-chhatarpur-sadar-election-an-election-where-women-do-not-have-the-right-to-vote/",
+      "summary": "मध्य प्रदेश के छतरपुर में मुस्लिम समाज के सदर चुनाव को लेकर लैंगिक समानता और महिलाओं के लोकतांत्रिक अधिकारों पर एक बार फिर से बहस तेज हो गई है। 4…",
+      "published_at": "Tue, 04 Aug 2026 14:50:05 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "91edc3695f0bf2b751",
+      "title": "India vs Sri Lanka Test series: श्रीलंका टेस्ट सीरीज से बाहर हुए जसप्रीत बुमराह (Jasprit Bumrah), जम्मू-कश्मीर के औकिब नबी (Auqib Nabi) को पहली बार मिला टीम इंडिया में मौका",
+      "url": "https://khabarlahariya.org/india-vs-sri-lanka-test-series-jasprit-bumrah-ruled-out-of-the-sri-lanka-test-series-jammu-kashmirs-auqib-nabi-gets-his-maiden-call-up-to-team-india/",
+      "summary": "भारतीय क्रिकेट टीम को श्रीलंका के खिलाफ 15 अगस्त से शुरू होने वाली टेस्ट सीरीज से पहले बड़ा झटका लगा है। तेज़ गेंदबाज़ जसप्रीत बुमराह चोट के कारण पूरी तरह…",
+      "published_at": "Tue, 04 Aug 2026 09:01:09 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e4eec062bd7a76580b",
+      "title": "वाराणसी: बिजली के खंभे में दौड़ा करंट, 60 वर्षीय महिला की मौके पर मौत",
+      "url": "https://khabarlahariya.org/varanasi-electrocuted-by-live-power-pole-60-year-old-woman-dies-on-the-spot/",
+      "summary": "वाराणसी जिले के चौबेपुर थाना क्षेत्र के बहरामपुर गांव में एक दर्दनाक हादसा सामने आया। परिवार के अनुसार 60 वर्षीय मुन्नी देवी सुबह करीब 8 बजे बच्चों को लेकर जा…",
+      "published_at": "Tue, 04 Aug 2026 05:00:51 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3e48537de82bb36d15",
+      "title": "बांदा: अपहरण से शुरू हुआ मामला, बयान और मेडिकल के बाद जुड़ी सामूहिक दुष्कर्म और पॉक्सो की धाराएं",
+      "url": "https://khabarlahariya.org/banda-case-began-as-a-kidnapping-charges-of-gang-rape-and-under-the-pocso-act-were-added-following-statements-and-medical-examination/",
+      "summary": "बांदा जिले में 16 वर्षीय किशोरी के अपहरण और सामूहिक दुष्कर्म के मामले में 26 जुलाई को गिरफ्तार किए गए दोनों आरोपी न्यायिक हिरासत में हैं। पुलिस के अनुसार, गिरफ्तारी…",
+      "published_at": "Mon, 03 Aug 2026 12:30:59 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "32eac5087e358ec252",
+      "title": "Parliament Monsoon Session Day 13 highlights: Rajya Sabha clears SC Judges' Bill; Lok Sabha adjourned for the day",
+      "url": "https://www.thehindu.com/news/national/parliament-monsoon-session-lok-sabha-rajya-sabha-day-13-live-updates-bankers-books-evidence-bill-taxation-amendment-bill-august-5-2026/article71307974.ece",
+      "summary": "Lok Sabha passes the Bankers’ Books Evidence Bill without debate; Kiren Rijiju hits out at Opposition protests over Ram Temple donations 'scam'",
+      "published_at": "Wed, 05 Aug 2026 17:10:49 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Parliament Monsoon Session Day 13 Live: Rajya Sabha adjourned for day after passing Bill to increase SC judges",
+          "url": "https://indianexpress.com/article/india/parliament-monsoon-session-live-updates-lok-sabha-to-take-up-bankers-books-evidence-bill-taxation-amendment-bill-fcra-10818340/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "52dbae526d20dfa6e1",
+      "title": "Six NEET-UG candidates move Supreme Court over alleged discrepancies in OMR sheets",
+      "url": "https://www.thehindu.com/news/national/six-neet-ug-candidates-move-supreme-court-over-alleged-discrepancies-in-omr-sheets/article71304967.ece",
+      "summary": "The lawyer told the court that the students had emailed the NTA and also visited its office, but received no response.",
+      "published_at": "Tue, 04 Aug 2026 17:33:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lk0hbu/article71304991.ece/alternates/LANDSCAPE_1200/IMG_iStock-1136591548_2_1_HKG50VFR.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "NEET-UG 2026 candidates move SC over alleged discrepancies in OMR sheets",
+          "url": "https://indianexpress.com/article/education/neet-ug-2026-candidates-move-sc-over-alleged-discrepancies-in-omr-sheets-10817326/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e6cccd1277571cd28e",
+      "title": "Last 10 months tested me in ways I never expected: Neeraj Chopra",
+      "url": "https://www.thehindu.com/sport/last-10-months-tested-me-in-ways-i-never-expected-neeraj-chopra/article71308283.ece",
+      "summary": "Recovering from multiple injuries, rebuilding my body, finding my rhythm again, and learning to be patient when all I wanted was to compete. I was training every day without knowing if I will even have a season to compete this year, says Neeraj Chopra",
+      "published_at": "Wed, 05 Aug 2026 11:27:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r7v4ei/article71308285.ece/alternates/LANDSCAPE_1200/PTI08_01_2026_000204A.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "‘Past 10 months have tested me in ways I never expected’: Neeraj Chopra on injury comeback",
+          "url": "https://indianexpress.com/article/sports/neeraj-chopra-emotional-message-injury-comeback-cwg-silver-10818421/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "9d597bc1f651bc15a8",
+      "title": "Gold Rate Today, August 5: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "url": "https://indianexpress.com/article/india/gold-rate-today-august-5-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10818459/",
+      "summary": "",
+      "published_at": "Wed, 05 Aug 2026 05:00:18 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/gold-rate-1.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 26,
+        "observed_report_count": 5,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      },
+      "related_reports": [
+        {
+          "title": "Gold Rate Today, August 1: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-1-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10813143/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, July 31: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-july-31-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10811526/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, August 4: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-4-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10816914/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, July 29: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-july-29-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10808293/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "c30058c91ccbdd0d45",
+      "title": "After Jantar Mantar, what needs to change in education?",
+      "url": "https://www.thehindu.com/videos/webinars/after-jantar-mantar-what-needs-to-change-in-education/article71308826.ece",
+      "summary": "In light of the Jantar Mantar protest, the government has assured to fix paper leaks, but more needs to change in education for sustainable careers for the youth. The Hindu hosted a webinar, ‘After Jantar Mantar, what needs to change in education?’, on August 1, 2026.",
+      "published_at": "Wed, 05 Aug 2026 14:41:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/qcu3by/article71308831.ece/alternates/LANDSCAPE_1200/image%206.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "After Jantar Mantar, what needs to change in education?",
+          "url": "https://www.thehindu.com/education/after-jantar-mantar-what-needs-to-change-in-education/article71281155.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     }
   ]
 }

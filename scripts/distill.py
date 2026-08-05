@@ -17,6 +17,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 API_URL = "https://api.openai.com/v1/responses"
+INDEPENDENT_SOCIAL_TYPES = {"independent", "local", "social"}
 
 
 def extract_output_text(response: dict) -> str:
@@ -56,7 +57,9 @@ def distil_part(*, bundle: dict, schema: dict, prompt: str, model: str,
                     f"The final portfolio must contain at least {minimum_per_category} stories in every "
                     f"category: {', '.join(categories)}. Include strong candidates for every category "
                     "represented by this part, especially categories that might otherwise be missed. "
-                    "Do not weaken evidence standards to satisfy the minimum.\n\n"
+                    "Prefer well-supported independent, local and social-origin candidates so they can "
+                    "form a strict majority of the final portfolio. The first source must be the discovery "
+                    "source. Do not weaken evidence standards to satisfy either requirement.\n\n"
                     + json.dumps(bundle, ensure_ascii=False)
                 ),
             }],
@@ -117,9 +120,25 @@ def select_balanced_portfolio(stories: list[dict], categories: list[str],
             f"{minimum_per_category} candidates were found for {detail}."
         )
 
+    def independent_social_origin(story):
+        sources = story.get("sources", [])
+        return bool(sources) and sources[0].get("type") in INDEPENDENT_SOCIAL_TYPES
+
     selected, selected_ids = [], set()
     for category in categories:
-        for story in grouped[category][:minimum_per_category]:
+        category_rows = sorted(
+            grouped[category], key=independent_social_origin, reverse=True
+        )
+        for story in category_rows[:minimum_per_category]:
+            selected.append(story)
+            selected_ids.add(story["id"])
+    independent_target = maximum_stories // 2 + 1
+    for story in stories:
+        if len(selected) >= maximum_stories or sum(
+            independent_social_origin(row) for row in selected
+        ) >= independent_target:
+            break
+        if story["id"] not in selected_ids and independent_social_origin(story):
             selected.append(story)
             selected_ids.add(story["id"])
     for story in stories:
@@ -128,6 +147,12 @@ def select_balanced_portfolio(stories: list[dict], categories: list[str],
         if story["id"] not in selected_ids:
             selected.append(story)
             selected_ids.add(story["id"])
+    independent_count = sum(independent_social_origin(story) for story in selected)
+    if independent_count * 2 <= len(selected):
+        raise ValueError(
+            "Refusing to publish without a strict independent/local/social discovery "
+            f"majority; found {independent_count} of {len(selected)} candidates."
+        )
     return selected
 
 

@@ -23,6 +23,7 @@ CATEGORIES = [
     'Society, Rights & Justice', 'Environment, Health & Science', 'Sports',
     'International & Geopolitics'
 ]
+INDEPENDENT_SOCIAL_TYPES = {'independent', 'local', 'social'}
 CATEGORY_TERMS = {
     'Politics & Elections': (
         'election', 'elections', 'electoral', 'campaign', 'campaigning',
@@ -96,6 +97,14 @@ def contains_phrase(text, phrase):
     return f' {norm(phrase)} ' in f' {text} '
 
 
+def is_independent_social(item):
+    source = item.get('source', {})
+    group = source.get('selection_group', '')
+    if group:
+        return group == 'independent_social'
+    return source.get('type') in INDEPENDENT_SOCIAL_TYPES
+
+
 def category_candidate_scores(item):
     """Return broad discovery signals; the editorial model makes the final label."""
     title = norm(item.get('title', ''))
@@ -166,6 +175,7 @@ def build_event_signals(items):
             + min(34, social_score * .34)
             + min(8, max(0, len(source_types) - 1) * 4)
             + (4 if {'local', 'independent'} & source_types else 0)
+            + (8 if items[index].get('priority_discovery') else 0)
         ))
         reasons = []
         if len(source_ids) > 1:
@@ -174,6 +184,8 @@ def build_event_signals(items):
             reasons.append(f'observed social-attention score {social_score}/100')
         if {'local', 'independent'} & source_types:
             reasons.append('includes local or independent reporting')
+        if items[index].get('priority_discovery'):
+            reasons.append('comes from a configured priority discovery profile')
         if not reasons:
             reasons.append('retained through source-balanced review')
         signals.append({
@@ -197,6 +209,14 @@ def main():
     args = parser.parse_args()
     payload = json.loads((ROOT / args.input).read_text(encoding='utf-8-sig'))
     items = payload.get('items', [])
+    available_independent_social = sum(is_independent_social(item) for item in items)
+    selection_cap = min(
+        args.max_items,
+        max(0, available_independent_social * 2 - 1)
+    )
+    if selection_cap == 0:
+        raise ValueError('No independent, local or social discovery material was collected.')
+    independent_social_target = selection_cap // 2 + 1
     signals, related = build_event_signals(items)
     category_scores = [category_candidate_scores(item) for item in items]
     for index, scores in enumerate(category_scores):
@@ -272,16 +292,41 @@ def main():
         )
         for category in CATEGORIES
     }
-    reserve = min(args.category_reserve, max(1, args.max_items // len(CATEGORIES)))
+    reserve = min(args.category_reserve, max(1, selection_cap // len(CATEGORIES)))
     for category in sorted(CATEGORIES, key=lambda value: len(category_candidates[value])):
         added_for_category = 0
-        for index in category_candidates[category]:
+        candidates = sorted(
+            category_candidates[category],
+            key=lambda index: (
+                is_independent_social(items[index]),
+                bool(items[index].get('priority_discovery')),
+                category_scores[index][category],
+                signals[index]['dynamic_rank_score']
+            ),
+            reverse=True
+        )
+        for index in candidates:
             before = len(kept)
             add_item(index)
             if len(kept) > before:
                 added_for_category += 1
-            if added_for_category >= reserve or len(kept) >= args.max_items:
+            if added_for_category >= reserve or len(kept) >= selection_cap:
                 break
+
+    # Guarantee that independent, local and social discovery has a strict
+    # majority before established-source candidates can fill remaining slots.
+    independent_ranked = sorted(
+        (index for index in range(len(items)) if is_independent_social(items[index])),
+        key=lambda index: (
+            bool(items[index].get('priority_discovery')),
+            signals[index]['dynamic_rank_score']
+        ),
+        reverse=True
+    )
+    for index in independent_ranked:
+        if sum(is_independent_social(item) for item in kept) >= independent_social_target:
+            break
+        add_item(index)
 
     # Add events with observable cross-source or social momentum. The remaining
     # places are filled across every source desk so a consequential single-source
@@ -291,7 +336,7 @@ def main():
         key=lambda index: signals[index]['dynamic_rank_score'],
         reverse=True
     )
-    signal_limit = min(args.max_items, len(kept) + min(40, max(1, args.max_items // 5)))
+    signal_limit = min(selection_cap, len(kept) + min(40, max(1, selection_cap // 5)))
     for index in ranked:
         add_item(index)
         if len(kept) >= signal_limit:
@@ -299,7 +344,7 @@ def main():
 
     positions = {source_id: 0 for source_id in grouped}
     source_ids = list(grouped)
-    while len(kept) < args.max_items:
+    while len(kept) < selection_cap:
         added = False
         for source_id in source_ids:
             rows = grouped[source_id]
@@ -310,10 +355,18 @@ def main():
                     added = True
                     add_item(index)
                     break
-            if len(kept) >= args.max_items:
+            if len(kept) >= selection_cap:
                 break
         if not added:
             break
+
+    independent_social_count = sum(is_independent_social(item) for item in kept)
+    if independent_social_count * 2 <= len(kept):
+        raise ValueError(
+            'Unable to prepare a strict independent/social discovery majority: '
+            f'{independent_social_count} of {len(kept)} selected candidates.'
+        )
+    established_count = len(kept) - independent_social_count
 
     prepared_at = datetime.now(timezone.utc).isoformat()
     task = (
@@ -322,7 +375,10 @@ def main():
         'news category dynamically and produce up to 100 processed stories using '
         'schema/processed-news.schema.json. The final portfolio must contain at '
         'least five well-supported stories in every category. Treat social attention '
-        'as a discovery signal rather than verification.'
+        'as a discovery signal rather than verification. More than half of the final '
+        'stories must originate with independent, local or social discovery, using the '
+        'first source in each story as the discovery source; established outlets may '
+        'account for no more than half.'
     )
     output = ROOT / args.output
     parts_dir = output.parent / 'parts'
@@ -339,6 +395,11 @@ def main():
             'prepared_at': prepared_at,
             'input_count': len(items),
             'supplied_count': len(kept),
+            'source_mix': {
+                'independent_social': independent_social_count,
+                'established_or_other': established_count,
+                'independent_social_majority_required': True
+            },
             'part': index,
             'part_count': len(chunks),
             'items': part_items
@@ -350,6 +411,11 @@ def main():
         'prepared_at': prepared_at,
         'input_count': len(items),
         'supplied_count': len(kept),
+        'source_mix': {
+            'independent_social': independent_social_count,
+            'established_or_other': established_count,
+            'independent_social_majority_required': True
+        },
         'part_count': len(chunks),
         'parts': part_paths,
         'items': kept

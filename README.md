@@ -29,6 +29,8 @@ Instagram and similar platforms are not scraped through login bypasses or unstab
 
 The social endpoint may return an array, or an object with an `items` array. Each entry accepts `url`, `title`, `note`, `published_at`, `image_url`, `platform`, `account`, and a `metrics` object containing `views`, `likes`, `comments`, `shares` and `reposts`. Engagement affects discovery priority but never counts as factual corroboration.
 
+Scheduled collection retries failed publication feeds once after five minutes. Only failures that remain after the retry are recorded in the final collection error list; successful recoveries are recorded in its retry log. Other enabled sources continue to provide coverage while a particular publisher is unavailable.
+
 ## Manual or local processing
 
 ```powershell
@@ -73,6 +75,11 @@ The production site is `https://nazar-india.pages.dev`. Its Cloudflare worker se
 - Attribute official claims and political statements.
 - Distinguish eyewitness material from independent corroboration.
 - Treat social engagement as evidence of attention, not evidence that a claim is true.
+- Publish reader-facing text entirely in English and reject output that retains non-Latin-script copy.
+- Keep a strict majority of published stories rooted in independent, local or social discovery; established-media-origin stories may never exceed half of the portfolio.
+- Treat the first listed story source as its discovery source. Social-origin stories require at least one distinct non-social corroborating source before publication.
+- Use named independent reporters and public-interest creators as discovery leads, not trusted authorities or a fixed editorial checklist.
+- Synthesize and rephrase source material; reject copied headlines and long verbatim passages.
 - Do not publish unsupported criminal accusations, private personal data, graphic imagery or unverifiable identifying claims.
 - Preserve source links and corrections.
 - Treat repeated high-reach coverage as a prominence signal, not independent corroboration. Routine saturated stories may be excluded; retained stories are visibly flagged as widely covered.

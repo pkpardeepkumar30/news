@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Validate processed output, merge it into the live feed and archive older stories."""
 from __future__ import annotations
-import argparse, json
+import argparse, json, re, unicodedata
 from collections import Counter
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = {'id','category','title','summary','why_it_matters','location','published_at','updated_at','underreported_score','evidence_status','confidence','image','sources'}
@@ -15,6 +16,7 @@ CATEGORIES = [
 ]
 CATEGORY_ALIASES = {'Politics & Governance': 'Politics & Elections'}
 COVERAGE_STATUSES = {'underreported', 'developing', 'widely_covered', 'unknown'}
+INDEPENDENT_SOCIAL_TYPES = {'independent', 'local', 'social'}
 MOJIBAKE_REPLACEMENTS = {
     '\u00e2\u20ac\u2122': '\u2019',
     '\u00e2\u20ac\u02dc': '\u2018',
@@ -35,6 +37,88 @@ def repair_text(value):
         return {key: repair_text(item) for key, item in value.items()}
     return value
 
+def reader_text_fields(story):
+    yield 'title', story.get('title', '')
+    yield 'summary', story.get('summary', '')
+    yield 'why_it_matters', story.get('why_it_matters', '')
+    yield 'location', story.get('location', '')
+    yield 'evidence_status', story.get('evidence_status', '')
+    yield 'confidence.rationale', story.get('confidence', {}).get('rationale', '')
+    yield 'coverage.rationale', story.get('coverage', {}).get('rationale', '')
+    yield 'image.alt', story.get('image', {}).get('alt', '')
+    for index, disagreement in enumerate(story.get('disagreements', [])):
+        yield f'disagreements[{index}]', disagreement
+    for index, source in enumerate(story.get('sources', [])):
+        yield f'sources[{index}].role', source.get('role', '')
+
+def contains_non_latin_letters(value):
+    for character in value:
+        if not unicodedata.category(character).startswith('L'):
+            continue
+        if 'LATIN' not in unicodedata.name(character, ''):
+            return True
+    return False
+
+def normalised_words(value):
+    return re.findall(r'[a-z0-9]+', value.casefold())
+
+def has_long_verbatim_overlap(first, second, length=12):
+    first_words, second_words = normalised_words(first), normalised_words(second)
+    if len(first_words) < length or len(second_words) < length:
+        return False
+    phrases = {
+        tuple(first_words[index:index + length])
+        for index in range(len(first_words) - length + 1)
+    }
+    return any(
+        tuple(second_words[index:index + length]) in phrases
+        for index in range(len(second_words) - length + 1)
+    )
+
+def source_material_by_url(bundle):
+    material = {}
+    for item in bundle.get('items', []):
+        if item.get('url'):
+            material[item['url']] = {
+                'title': item.get('title', ''),
+                'summary': item.get('summary', '')
+            }
+        for related in item.get('related_reports', []):
+            if related.get('url'):
+                material[related['url']] = {
+                    'title': related.get('title', ''),
+                    'summary': related.get('summary', '')
+                }
+    return material
+
+def validate_editorial_text(story, source_material=None):
+    for field, value in reader_text_fields(story):
+        if contains_non_latin_letters(str(value)):
+            raise ValueError(
+                f"Reader-facing field {field} is not fully English for {story.get('id', '<unknown>')}"
+            )
+    if not source_material:
+        return
+    for source in story.get('sources', []):
+        raw = source_material.get(source.get('url', ''))
+        if not raw:
+            continue
+        story_title = ' '.join(normalised_words(story.get('title', '')))
+        raw_title = ' '.join(normalised_words(raw.get('title', '')))
+        if len(story_title) >= 30 and len(raw_title) >= 30:
+            similarity = SequenceMatcher(None, story_title, raw_title).ratio()
+            if similarity >= .90:
+                raise ValueError(
+                    f"Headline is too similar to source wording for {story.get('id', '<unknown>')}"
+                )
+        raw_text = f"{raw.get('title', '')} {raw.get('summary', '')}"
+        for field in ('summary', 'why_it_matters'):
+            if has_long_verbatim_overlap(raw_text, story.get(field, '')):
+                raise ValueError(
+                    f"Reader-facing field {field} copies a long source phrase for "
+                    f"{story.get('id', '<unknown>')}"
+                )
+
 def normalise_coverage(story):
     coverage = story.get('coverage')
     if not isinstance(coverage, dict):
@@ -51,7 +135,7 @@ def normalise_coverage(story):
     if not coverage.get('rationale'):
         raise ValueError(f"Missing coverage rationale for {story.get('id', '<unknown>')}")
 
-def validate(story):
+def validate(story, source_material=None):
     story['category'] = CATEGORY_ALIASES.get(story.get('category'), story.get('category'))
     missing = REQUIRED - set(story)
     if missing:
@@ -67,20 +151,50 @@ def validate(story):
     if story['category'] not in CATEGORIES:
         raise ValueError(f"Invalid category for {story['id']}")
     normalise_coverage(story)
+    validate_editorial_text(story, source_material)
+    discovery_source = story['sources'][0]
+    if discovery_source.get('type') == 'social':
+        corroborating_sources = {
+            source.get('url', '')
+            for source in story['sources'][1:]
+            if source.get('type') != 'social' and source.get('url')
+        }
+        if not corroborating_sources or int(story['coverage'].get('source_count', 0)) < 2:
+            raise ValueError(
+                f"Social-origin story lacks independent non-social corroboration: {story['id']}"
+            )
 
 def validate_portfolio(stories, minimum_per_category):
-    if minimum_per_category <= 0:
-        return
-    counts = Counter(story['category'] for story in stories)
-    shortfalls = {
-        category: counts[category]
-        for category in CATEGORIES
-        if counts[category] < minimum_per_category
-    }
-    if shortfalls:
-        detail = ', '.join(f'{category}: {count}' for category, count in shortfalls.items())
+    if minimum_per_category > 0:
+        counts = Counter(story['category'] for story in stories)
+        shortfalls = {
+            category: counts[category]
+            for category in CATEGORIES
+            if counts[category] < minimum_per_category
+        }
+        if shortfalls:
+            detail = ', '.join(f'{category}: {count}' for category, count in shortfalls.items())
+            raise ValueError(
+                f'Refusing to publish fewer than {minimum_per_category} stories per category; {detail}'
+            )
+    independent_social = sum(
+        bool(story.get('sources'))
+        and story['sources'][0].get('type') in INDEPENDENT_SOCIAL_TYPES
+        for story in stories
+    )
+    established = sum(
+        bool(story.get('sources')) and story['sources'][0].get('type') == 'mainstream'
+        for story in stories
+    )
+    if independent_social * 2 <= len(stories):
         raise ValueError(
-            f'Refusing to publish fewer than {minimum_per_category} stories per category; {detail}'
+            'Refusing to publish without a strict independent/local/social discovery '
+            f'majority; found {independent_social} of {len(stories)} stories.'
+        )
+    if established * 2 > len(stories):
+        raise ValueError(
+            'Refusing to publish more than 50% established-media-origin stories; '
+            f'found {established} of {len(stories)} stories.'
         )
 
 def parse_dt(value):
@@ -96,11 +210,14 @@ def main():
     # Scheduled desktop tasks may save otherwise valid JSON with a UTF-8 BOM.
     # utf-8-sig accepts both forms; rewrite valid input as canonical BOM-free UTF-8.
     processed = repair_text(json.loads(processed_path.read_text(encoding='utf-8-sig')))
+    collection_path = ROOT / 'data/chatgpt-input/latest.json'
+    collection = json.loads(collection_path.read_text(encoding='utf-8-sig')) if collection_path.exists() else {}
+    source_material = source_material_by_url(collection)
     incoming = processed.get('stories', processed if isinstance(processed, list) else [])
     if not incoming:
         raise ValueError('No processed stories found; refusing to replace the live feed with an empty result.')
     for story in incoming:
-        validate(story)
+        validate(story, source_material)
     validate_portfolio(incoming, args.min_per_category)
     processed_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding='utf-8')
     live_path = ROOT / 'data/news.json'
@@ -147,6 +264,7 @@ def main():
         'id': source['id'],
         'name': source['name'],
         'type': source['type'],
+        'selection_group': source.get('selection_group', ''),
         'ownership': source.get('ownership', ''),
         'treatment': treatment.get(source['type'], 'Assess the evidence and attribution in context.')
     } for source in source_config['sources'] if source.get('enabled')]

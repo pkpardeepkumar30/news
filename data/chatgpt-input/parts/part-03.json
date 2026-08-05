@@ -1,11 +1,82 @@
 {
-  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification.",
-  "prepared_at": "2026-08-05T13:05:19.166508+00:00",
-  "input_count": 1350,
+  "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 100 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
+  "prepared_at": "2026-08-05T14:02:14.136935+00:00",
+  "input_count": 1447,
   "supplied_count": 200,
+  "source_mix": {
+    "independent_social": 126,
+    "established_or_other": 74,
+    "independent_social_majority_required": true
+  },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "d4a62e0fe55cbf2ed5",
+      "title": "Why Pakistan is asking the US for a $10-billion lifeline after its Iran diplomacy",
+      "url": "https://indianexpress.com/article/world/pakistan-seeks-10-billion-us-fund-iran-talks-10797931/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 07:40:19 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/US-12-3.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "c4b2d29de17b553c7d",
+      "title": "Iran denies negotiating with U.S. after Trump announces talks",
+      "url": "https://www.thehindu.com/news/international/trump-claims-iran-talks-will-start-august-3-and-other-developments-in-west-asia/article71302731.ece",
+      "summary": "The rebuttal by the Iranian Foreign Ministry follows Mr. Trump saying he had held off launching new strikes on the Islamic republic to allow for further diplomatic efforts, a familiar pattern in the conflict",
+      "published_at": "Tue, 04 Aug 2026 10:17:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5xlsn3/article71302742.ece/alternates/LANDSCAPE_1200/Trump_44139.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 10
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
     {
       "raw_id": "6104c9710b7557f6fe",
       "title": "U.S., Pakistan resolve to confront terror and strengthen border security",
@@ -14,10 +85,12 @@
       "published_at": "Wed, 05 Aug 2026 13:41:40 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/r7oy8q/article71308356.ece/alternates/LANDSCAPE_1200/HNxRcOcbYAAtwwJ.jpg",
       "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-international",
         "name": "The Hindu - International",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -45,10 +118,12 @@
       "published_at": "Wed, 05 Aug 2026 10:37:00 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/dr1o35/article71307183.ece/alternates/LANDSCAPE_1200/AFP_C3Y38MX.jpg",
       "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-international",
         "name": "The Hindu - International",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -69,64 +144,169 @@
       }
     },
     {
-      "raw_id": "de031ebe74c07b7d77",
-      "title": "Indian-flagged vessel comes under attack in Red Sea",
-      "url": "https://www.thehindu.com/news/international/indian-flagged-vessel-comes-under-attack-in-red-sea/article71306885.ece",
-      "summary": "All 13 Indian nationals have been rescued. Our Embassy in Riyadh is closely monitoring the situation and proactively coordinating with the Yemeni authorities, the MEA said",
-      "published_at": "Wed, 05 Aug 2026 09:29:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1ieh5e/article71306896.ece/alternates/LANDSCAPE_1200/2026-07-23T181801Z_1910885437_RC2TJMA9472R_RTRMADP_3_YEMEN-SHIPPING-ADEN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a0b3b5cc860db83c9f",
-      "title": "West Asia war updates: Iran not seeking a wider war, President says",
-      "url": "https://www.thehindu.com/news/international/west-asia-war-us-iran-strikes-tehran-washington-talks-donald-trump-peace-deal-live-updates-august-4-2026/article71303715.ece",
-      "summary": "Iran’s Foreign Ministry denied that negotiations with Washington were taking place, but Donald Trump insisted they were; \"We are talking right now,\" he said.",
-      "published_at": "Wed, 05 Aug 2026 08:54:54 +0530",
+      "raw_id": "a42a6eaee9fe92c115",
+      "title": "Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan",
+      "url": "https://eastmojo.com/nagaland/2026/08/05/nagaland-uni-students-complete-hiroshima-orizuru-fellowship-in-japan/",
+      "summary": "Kohima: Two students from Nagaland University have successfully completed the prestigious Hiroshima Orizuru Fellowship Summer Course on Peace and Sustainability, a programme supported by the Sasakawa Peace Foundation (SPF), Japan. The participants, Repakaba Tzüdir, a PhD scholar from the Department of Sociology, and Impolong Changkiri, a postgraduate student from the Department of Psychology, were selected […] The post Nagaland Uni students complete Hiroshima Orizuru Fellowship in Japan appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 13:30:03 +0000",
       "image_url": "",
-      "suggested_category": "International & Geopolitics",
+      "suggested_category": "",
+      "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Society, Rights & Justice": 5
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "55b689f5057599ac83",
+      "title": "Tamil Nadu Budget: TVK govt extends breakfast scheme up to Class 8",
+      "url": "https://www.thenewsminute.com/tamil-nadu/tamil-nadu-budget-tvk-govt-extends-breakfast-scheme-up-to-class-8",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. The Tamil Nadu government on Wednesday, August 5, announced the extension of the Perunthalaivar Kamarajar Breakfast scheme from Class 6 to Class 8 students. The announcement was made in the Assembly by state finance minister Dr N Marie Wilson as part of the Tamilaga Vettri Kazhagam’s (TVK) maiden budget for 2026-2027. The scheme intends to benefit 15.14 lakh students enrolled across 15,414 schools in the state at a total cost of Rs 710 crore. The scheme was first introduced under the previous Dravida Munnetra Kazhagam (DMK) government in May 2022 on a pilot basis under the banner of the Chief Minister’s Breakfast scheme. In March 2023, then Finance Minister Palanivel Thiyagarajan announced that the scheme would be extended to all 30,122 government primary schools across the state at a budget of Rs 500 crore for the year to serve students studying between Classes 1 and 5. The TVK government has extended the scheme for government school students studying up to Class 8. The expanded rollout is scheduled for September 17, the birth anniversary of social reformer Periyar EV Ramasamy. After assuming power in May 2026, the TV",
+      "published_at": "Wed, 05 Aug 2026 12:53:04 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 3
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "dd8e771674b1573c0a",
+      "title": "Construct women's washrooms, install sanitary pad vending machines in police stations: Delhi High Court",
+      "url": "https://www.barandbench.com/news/construct-womens-washrooms-install-sanitary-pad-vending-machines-in-police-stations-delhi-high-court",
+      "summary": "The Delhi High Court on Wednesday ordered the Commissioner of Delhi Police to conduct a survey of all police stations in the national capital and construct women's washrooms with sanitary pad vending machines for women police personnel in stations lacking such facilities. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia said that the survey must be conducted in six weeks and based on its findings, steps must be taken to provide \"each police station with the facility of sanitary pad vending machines and washrooms for exclusive use of women personnel\". \"By the next date of listing, an affidavit shall be filed by respondent No 2 (Delhi Police) detailing the steps which might be taken during this period to ensure compliance of this order,\" the Court added. Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia The Bench passed the order while hearing a public interest litigation (PIL) petition filed by NGO Justice for Rights Foundation through its Women Cell representative Muskan Singh Bankura. According to the petition, data obtained through Right to Information Act (RTI Act) revealed an almost complete absence of functional sanitary pad vendi",
+      "published_at": "Wed, 05 Aug 2026 16:39:29 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/06/femmina.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 2,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9e1c56d675ef1cfc38",
+      "title": "Nagaland MP Jamir pushes upgrade of Jalukie veterinary college",
+      "url": "https://eastmojo.com/nagaland/2026/08/04/nagaland-mp-jamir-pushes-upgrade-of-jalukie-veterinary-college/",
+      "summary": "Kohima: Nagaland Lok Sabha Member of Parliament S. Supongmeren Jamir on Tuesday urged the Centre to strengthen infrastructure and academic facilities at the College of Veterinary Sciences and Animal Husbandry in Jalukie, Peren district, a constituent college of the Central Agricultural University. Raising the issue during Zero Hour in Parliament, Jamir appealed to the Union […] The post Nagaland MP Jamir pushes upgrade of Jalukie veterinary college appeared first on EastMojo .",
+      "published_at": "Tue, 04 Aug 2026 14:57:08 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "6782ea4176729e15f8",
+      "title": "Facing serious trouble due to right to be forgotten judgment: Indian Kanoon tells Delhi High Court",
+      "url": "https://www.barandbench.com/news/facing-serious-trouble-due-to-right-to-be-forgotten-judgment-indian-kanoon-tells-delhi-high-court",
+      "summary": "Online legal judgment database Indian Kanoon told the Delhi High Court on Wednesday that it is facing serious issues due to the recent right to be forgotten judgment of High Court which directed the platform to de-index and disable name-based search functionality for a batch of judgments and orders. Senior Advocate Arvind Datar appeared for the platform and made the submission before a Division Bench of Justices C Hari Shankar and Vinod Kumar. The Court was hearing a batch of appeals filed by Indian Kanoon against the right to be forgotten verdict delivered by a single-judge on June 1. Datar stated that Indian Kanoon is the only legal website against which the order is passed. “My difficulty is this. I am the only legal website. Now there is this thing that I should completely remove the name-based facility. Now, all legal websites have full search facility, free search facility,” Datar said. The Court was informed that IndianKanoon had filed other appeals against the judgement as well, but no notices have been issued in the matters, and the cases are listed for hearing in October. The Bench pointed out that the matters were adjourned to October as the counsel appearing for IndianK",
+      "published_at": "Wed, 05 Aug 2026 10:56:51 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/747tjh31/JJ-dealstreet-WEB-SITE-C-copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -138,10 +318,12 @@
       "published_at": "Wed, 29 Jul 2026 09:50:34 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/olexxu/article71166698.ece/alternates/LANDSCAPE_1200/20260630407L.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-education",
         "name": "The Hindu - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -169,10 +351,12 @@
       "published_at": "Tue, 28 Jul 2026 12:39:02 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/rahul_47ef50.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -200,10 +384,12 @@
       "published_at": "Mon, 27 Jul 2026 05:31:04 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/JnK-classrooms.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -231,10 +417,12 @@
       "published_at": "Sun, 26 Jul 2026 09:36:38 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/IIT-Kharagpur-Leeds-University.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -264,10 +452,12 @@
       "published_at": "Fri, 24 Jul 2026 14:51:32 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/msu-baroda-univ.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -297,10 +487,12 @@
       "published_at": "Wed, 22 Jul 2026 13:23:27 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/school-assembly-news-headlines-july-22.jpg",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -328,10 +520,12 @@
       "published_at": "Wed, 22 Jul 2026 07:26:22 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/Heavy-Rain-Prevails-Over-Srinagar-JK-Govt-Shut-Extents-School-Holidays-Till-July-26.png",
       "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-education",
         "name": "The Indian Express - Education",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -345,163 +539,6 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Society, Rights & Justice": 16
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "cb34c8f2e5cb81c8b1",
-      "title": "Bar Council asks law schools to enforce social media rules; students to sign compliance undertakings",
-      "url": "https://indianexpress.com/article/education/bar-council-of-india-bci-social-media-rules-for-advocates-law-schools-compliance-admission-reel-ban-barcouncilofindia-org-10792292/",
-      "summary": "",
-      "published_at": "Sat, 18 Jul 2026 07:27:39 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/Bar-Council-of-India-BCI-Campus.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 16
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "eb4a2bf036bd8a07e6",
-      "title": "Why are government schools shutting down? | Explained",
-      "url": "https://www.thehindu.com/education/why-are-government-schools-shutting-down-explained/article71297685.ece",
-      "summary": "Which States have witnessed the highest number of closures? How has school rationalisation affected children’s access to education? Who bears the biggest burden of government school closures? Can the Centre step in to reverse the trend? Why has the Right to Education Act fallen short?",
-      "published_at": "Tue, 04 Aug 2026 17:52:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ba23ux/article71298761.ece/alternates/LANDSCAPE_1200/girl_students_03.JPG",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 14
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d2eec9d5189908443b",
-      "title": "Kerala govt’s FYUGP review panel calls for Inter-University Board of Studies Committees, assessment review bodies in varsities",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-govts-fyugp-review-panel-calls-for-inter-university-board-of-studies-committees-assessment-review-bodies-in-varsities/article71304234.ece",
-      "summary": "Recommendations are part of interim report of committee formed by Kerala State Higher Education Council to evaluate implementation of FYUGP in universities and colleges",
-      "published_at": "Tue, 04 Aug 2026 14:09:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/l1ocsj/article71304466.ece/alternates/LANDSCAPE_1200/fyup.jpeg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d8f121439e4dd2678a",
-      "title": "Drug testing college students: IITs, IIMs begin with voluntary urine tests at admission",
-      "url": "https://www.thehindu.com/news/national/drug-testing-college-students-iits-iims-begin-with-voluntary-urine-tests-at-admission/article71294518.ece",
-      "summary": "Part of government mission to screen 10 lakh students at 170 central higher education institutes by 2029; under a framework provided by National Drug Dependence Treatment Centre, the test is meant to be confidential, cannot result in any ‘negative repercussions on the students taking it whatsoever’, and should be kept for counselling purposes only",
-      "published_at": "Sat, 01 Aug 2026 20:40:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/syjks/article71295377.ece/alternates/LANDSCAPE_1200/CIC-directs-IITGL7G98LA8.5.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "feb5d3052ed4457992",
-      "title": "News from the world of Education: July 29, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-july-29-2026/article71280231.ece",
-      "summary": "Information on admissions, scholarships, competitions for students, events for educators and more",
-      "published_at": "Wed, 29 Jul 2026 22:44:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/6r8zy8/article71280220.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -516,10 +553,12 @@
       "published_at": "Wed, 05 Aug 2026 16:58:06 +0530",
       "image_url": "https://th-i.thgim.com/public/news/national/f4mbd1/article71309211.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-05%20at%2016.51.31.jpeg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -547,10 +586,12 @@
       "published_at": "Mon, 03 Aug 2026 19:11:25 +0530",
       "image_url": "",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -580,10 +621,12 @@
       "published_at": "Tue, 28 Jul 2026 12:35:36 +0000",
       "image_url": "https://images.indianexpress.com/2026/04/gukesh-vs-sindarov.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-sports",
         "name": "The Indian Express - Sports",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -611,10 +654,12 @@
       "published_at": "Mon, 03 Aug 2026 03:17:50 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/6gzgmc/article71299135.ece/alternates/LANDSCAPE_1200/COMMONWEALTH%20TABLE%20TENNIS%20CHAMPIONSHIP%20NEW%20DELHI%20100.JPG",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -642,10 +687,12 @@
       "published_at": "Sat, 01 Aug 2026 01:30:41 +0000",
       "image_url": "https://images.indianexpress.com/2026/07/Jaismine-CWG.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "indian-express-sports",
         "name": "The Indian Express - Sports",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "Indian Express Group"
       },
       "selection_signals": {
@@ -666,12 +713,25 @@
       },
       "related_reports": [
         {
+          "title": "India at CWG 2026 Day 8 Schedule: Full list of Indian athletes in action on Thursday",
+          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-8-schedule-full-list-of-athletes-in-action-10809654/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
           "title": "India at CWG 2026 Day 5 Schedule: Full list of Indian athletes in action on Monday",
           "url": "https://indianexpress.com/article/sports/india-cwg-2026-day-5-schedule-commonwealth-games-full-list-indian-athletes-athletics-100m-long-jump-high-jump-10804747/",
           "source": {
             "id": "indian-express-sports",
             "name": "The Indian Express - Sports",
             "type": "mainstream",
+            "selection_group": "established",
             "ownership": "Indian Express Group"
           },
           "social_attention": null
@@ -683,6 +743,7 @@
             "id": "indian-express-sports",
             "name": "The Indian Express - Sports",
             "type": "mainstream",
+            "selection_group": "established",
             "ownership": "Indian Express Group"
           },
           "social_attention": null
@@ -694,6 +755,7 @@
             "id": "indian-express-sports",
             "name": "The Indian Express - Sports",
             "type": "mainstream",
+            "selection_group": "established",
             "ownership": "Indian Express Group"
           },
           "social_attention": null
@@ -705,17 +767,7 @@
             "id": "indian-express-sports",
             "name": "The Indian Express - Sports",
             "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        },
-        {
-          "title": "India at CWG 2026 Day 8 Schedule: Full list of Indian athletes in action on Thursday",
-          "url": "https://indianexpress.com/article/sports/india-at-cwg-2026-day-8-schedule-full-list-of-athletes-in-action-10809654/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
+            "selection_group": "established",
             "ownership": "Indian Express Group"
           },
           "social_attention": null
@@ -730,10 +782,12 @@
       "published_at": "Wed, 05 Aug 2026 09:45:24 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/4trl3j/article71306897.ece/alternates/LANDSCAPE_1200/2026-07-28T104900Z_1975321359_UP1EM7S0U1NIE_RTRMADP_3_SOCCER-FRANCE.JPG",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -761,10 +815,12 @@
       "published_at": "Wed, 05 Aug 2026 01:14:23 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/dkr43v/article71306990.ece/alternates/LANDSCAPE_1200/2026-07-03T033451Z_397174144_UP1EM7309Y163_RTRMADP_3_SOCCER-WORLDCUP-SWI-DZA.JPG",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -792,10 +848,12 @@
       "published_at": "Wed, 05 Aug 2026 00:49:49 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/4pxs6m/article71306970.ece/alternates/LANDSCAPE_1200/PTI08_01_2026_000161A.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -823,10 +881,12 @@
       "published_at": "Wed, 05 Aug 2026 00:43:16 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/q64a4e/article71306961.ece/alternates/LANDSCAPE_1200/PTI07_27_2024_000589A.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -854,10 +914,12 @@
       "published_at": "Tue, 04 Aug 2026 22:43:19 +0530",
       "image_url": "",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -885,10 +947,12 @@
       "published_at": "Tue, 04 Aug 2026 00:23:14 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/rzr5nd/article71302796.ece/alternates/LANDSCAPE_1200/20260803085L.jpg",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -916,10 +980,12 @@
       "published_at": "Mon, 03 Aug 2026 20:46:54 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/gzvada/article71302199.ece/alternates/LANDSCAPE_1200/6744_31_8_2025_17_25_28_1_01_RVM_8215.JPG",
       "suggested_category": "Sports",
+      "priority_discovery": false,
       "source": {
         "id": "the-hindu-sport",
         "name": "The Hindu - Sport",
         "type": "mainstream",
+        "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
@@ -940,563 +1006,366 @@
       }
     },
     {
-      "raw_id": "52dbae526d20dfa6e1",
-      "title": "Six NEET-UG candidates move Supreme Court over alleged discrepancies in OMR sheets",
-      "url": "https://www.thehindu.com/news/national/six-neet-ug-candidates-move-supreme-court-over-alleged-discrepancies-in-omr-sheets/article71304967.ece",
-      "summary": "The lawyer told the court that the students had emailed the NTA and also visited its office, but received no response.",
-      "published_at": "Tue, 04 Aug 2026 17:33:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lk0hbu/article71304991.ece/alternates/LANDSCAPE_1200/IMG_iStock-1136591548_2_1_HKG50VFR.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "NEET-UG 2026 candidates move SC over alleged discrepancies in OMR sheets",
-          "url": "https://indianexpress.com/article/education/neet-ug-2026-candidates-move-sc-over-alleged-discrepancies-in-omr-sheets-10817326/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "e6cccd1277571cd28e",
-      "title": "Last 10 months tested me in ways I never expected: Neeraj Chopra",
-      "url": "https://www.thehindu.com/sport/last-10-months-tested-me-in-ways-i-never-expected-neeraj-chopra/article71308283.ece",
-      "summary": "Recovering from multiple injuries, rebuilding my body, finding my rhythm again, and learning to be patient when all I wanted was to compete. I was training every day without knowing if I will even have a season to compete this year, says Neeraj Chopra",
-      "published_at": "Wed, 05 Aug 2026 11:27:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r7v4ei/article71308285.ece/alternates/LANDSCAPE_1200/PTI08_01_2026_000204A.jpg",
-      "suggested_category": "Sports",
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "‘Past 10 months have tested me in ways I never expected’: Neeraj Chopra on injury comeback",
-          "url": "https://indianexpress.com/article/sports/neeraj-chopra-emotional-message-injury-comeback-cwg-silver-10818421/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "9d597bc1f651bc15a8",
-      "title": "Gold Rate Today, August 5: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-      "url": "https://indianexpress.com/article/india/gold-rate-today-august-5-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10818459/",
+      "raw_id": "4e6ed25054eca8b2df",
+      "title": "Genz’s are unstoppable 🤣",
+      "url": "https://www.youtube.com/shorts/kIg7Mm5cHPY",
       "summary": "",
-      "published_at": "Wed, 05 Aug 2026 05:00:18 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/gold-rate-1.png",
+      "published_at": "2026-07-27T09:16:26+00:00",
+      "image_url": "",
       "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 26,
-        "observed_report_count": 5,
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       },
       "related_reports": [
         {
-          "title": "Gold Rate Today, August 1: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-august-1-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10813143/",
+          "title": "Unstoppable Genz💯",
+          "url": "https://www.youtube.com/shorts/tjdE2ShtWck",
           "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        },
-        {
-          "title": "Gold Rate Today, July 31: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-july-31-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10811526/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        },
-        {
-          "title": "Gold Rate Today, August 4: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-august-4-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10816914/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        },
-        {
-          "title": "Gold Rate Today, July 29: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-july-29-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10808293/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
+            "id": "sarthak-goswami-youtube",
+            "name": "Sarthak Goswami",
+            "type": "independent",
+            "selection_group": "independent_social",
+            "ownership": "Independent journalist and digital video publisher"
           },
           "social_attention": null
         }
       ]
     },
     {
-      "raw_id": "c30058c91ccbdd0d45",
-      "title": "After Jantar Mantar, what needs to change in education?",
-      "url": "https://www.thehindu.com/videos/webinars/after-jantar-mantar-what-needs-to-change-in-education/article71308826.ece",
-      "summary": "In light of the Jantar Mantar protest, the government has assured to fix paper leaks, but more needs to change in education for sustainable careers for the youth. The Hindu hosted a webinar, ‘After Jantar Mantar, what needs to change in education?’, on August 1, 2026.",
-      "published_at": "Wed, 05 Aug 2026 14:41:24 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/qcu3by/article71308831.ece/alternates/LANDSCAPE_1200/image%206.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "After Jantar Mantar, what needs to change in education?",
-          "url": "https://www.thehindu.com/education/after-jantar-mantar-what-needs-to-change-in-education/article71281155.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4a4025e966f659dfa7",
-      "title": "What does ‘mercurial’ mean?",
-      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
+      "raw_id": "ff90364268a8e7347c",
+      "title": "Peak Raja Logic 🤣",
+      "url": "https://www.youtube.com/shorts/ovJFntujzok",
       "summary": "",
-      "published_at": "Sun, 02 Aug 2026 23:30:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/702eqn/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "What does ‘unputdownable’ mean?",
-          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "c25f5b36aea3f8ecc8",
-      "title": "Amit Shah ‘culpable or incompetent’, sack him for crackdown on students: Rahul Gandhi",
-      "url": "https://indianexpress.com/article/india/rahul-gandhi-amit-shah-chalo-sansad-cjp-protests-anti-paper-leak-bill-10809224/",
-      "summary": "",
-      "published_at": "Wed, 29 Jul 2026 14:36:33 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/Rahul-Gandhi-3.jpg",
+      "published_at": "2026-08-05T09:54:06+00:00",
+      "image_url": "",
       "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Parliament Monsoon Session Highlights, Day 8 Updates: Amit Shah ‘culpable or incompetent’, sack him for crackdown on students: Rahul Gandhi",
-          "url": "https://indianexpress.com/article/india/parliament-monsoon-session-2026-day-8-live-updates-anti-exam-paper-leak-law-to-be-presented-today-10808239/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "4c2b3d80f820db6f07",
-      "title": "IGNOU extends July 2026 admission, re-registration deadline till August 16",
-      "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-reregistration-deadline-fee-details-important-dates-official-website-to-apply-10818477/",
+      "raw_id": "75a9c56768abc160b6",
+      "title": "Don’t miss the ending 🤣",
+      "url": "https://www.youtube.com/shorts/79SdQrIk0Io",
       "summary": "",
-      "published_at": "Wed, 05 Aug 2026 04:56:20 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/IGNOU.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "published_at": "2026-08-05T06:46:31+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "IGNOU extends July 2026 admission deadline till August 16 for ODL, online programmes",
-          "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-deadline-august-16-open-distance-learnin-odl-online-programmes-ignouadmission-samarth-edu-in-10813315/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "c6f0407b4a316d4dd0",
-      "title": "Kerala DHSE Plus One (+1) Result 2026 Out: Websites to check scorecards",
-      "url": "https://indianexpress.com/article/education/kerala-dhse-plus-one-1-result-2026-websites-to-check-vhse-results-hse-kerala-gov-in-keralaresults-nic-in-10790858/",
+      "raw_id": "255378e5f4d5a9aa97",
+      "title": "Raja Mentality 👑",
+      "url": "https://www.youtube.com/shorts/oC4Um3XcTzc",
       "summary": "",
-      "published_at": "Fri, 17 Jul 2026 08:45:22 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/dhse-plus-one-3.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "published_at": "2026-08-02T07:00:14+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Kerala Plus One Result 2026 (Out): How to check +1 DHSE, VHSE scorecard?",
-          "url": "https://indianexpress.com/article/education/dhse-kerala-plus-1-results-2026-how-to-check-scorecard-results-hse-kerala-gov-in-saphalam-prdlive-10737058/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "0bfb0dc6fc98c886ca",
-      "title": "Broad Peak avalanche: Rescue briefly paused after 3 bodies recovered, Nirmal Purja among missing",
-      "url": "https://indianexpress.com/article/world/broad-peak-avalanche-rescue-briefly-paused-after-3-bodies-recovered-nirmal-purja-among-missing-10813055/",
+      "raw_id": "aa784f5e00829c1383",
+      "title": "Real Focus 🤣",
+      "url": "https://www.youtube.com/shorts/7g9KMpB3n30",
       "summary": "",
-      "published_at": "Sat, 01 Aug 2026 04:13:40 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/Broad-peak.jpg",
-      "suggested_category": "International & Geopolitics",
+      "published_at": "2026-08-01T13:33:41+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-world",
-        "name": "The Indian Express - World",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Broad Peak avalanche: Nepal’s Nirmal Purja among six missing, four bodies recovered",
-          "url": "https://indianexpress.com/article/world/south-asia-nirmal-purja-broad-peak-avalanche-pakistan-missing-10812573/",
-          "source": {
-            "id": "indian-express-world",
-            "name": "The Indian Express - World",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "0a87c32bf51b57e3da",
-      "title": "FIFA abandons World Cup stake sale plan after UEFA boycott threat & widespread backlash",
-      "url": "https://indianexpress.com/article/sports/football/fifa-abandons-world-cup-investment-plan-infantino-backlash-10813000/",
+      "raw_id": "c93a7c000083243315",
+      "title": "Testing?🤣",
+      "url": "https://www.youtube.com/shorts/1oR7e9QQwG8",
       "summary": "",
-      "published_at": "Sat, 01 Aug 2026 03:12:28 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/fifa-wc-fial_20260801030807.jpg",
-      "suggested_category": "Sports",
+      "published_at": "2026-08-01T11:56:34+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "CONCACAF rejects FIFA World Cup stake sale plan as UEFA’s World Cup boycott threat looms",
-          "url": "https://indianexpress.com/article/sports/football/concacaf-rejects-fifa-world-cup-stake-sale-uefa-boycott-2026-10811476/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "e078af567151bdc005",
-      "title": "Commonwealth Games Medal Tally: India’s Standings & Full Winners List at CWG 2026",
-      "url": "https://indianexpress.com/article/sports/commonwealth-games-medal-tally-live-india-full-winners-list-10810961/",
+      "raw_id": "6adfedc016f52c1d7e",
+      "title": "You are not ready for this! 🤣",
+      "url": "https://www.youtube.com/shorts/3rCPSW00b_I",
       "summary": "",
-      "published_at": "Thu, 30 Jul 2026 15:31:33 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/Neeraj-CWG-Silver.jpg",
-      "suggested_category": "Sports",
+      "published_at": "2026-07-31T13:14:47+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Commonwealth Games Medal Tally LIVE Day 7: India’s Standings & Full Winners List at CWG 2026",
-          "url": "https://indianexpress.com/article/sports/commonwealth-games-medal-tally-live-india-update-glasgow-cwg-2026-10807055/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
-      "raw_id": "892404547bcd5392bf",
-      "title": "Stephen Fleming appointed England Test coach, Joe Root captain",
-      "url": "https://indianexpress.com/article/sports/cricket/stephen-fleming-england-test-coach-joe-root-captain-10810431/",
+      "raw_id": "39fd45893329c2550a",
+      "title": "\"America Kya Kehta Tha?\" 😭 ft. @pulkitmanistandup & @America-kya-kehta-ha | Meme Review",
+      "url": "https://www.youtube.com/watch?v=pEj-FKSOWrk",
       "summary": "",
-      "published_at": "Thu, 30 Jul 2026 10:10:48 +0000",
-      "image_url": "https://images.indianexpress.com/2026/04/Fleming.jpg",
-      "suggested_category": "Sports",
+      "published_at": "2026-07-31T13:09:36+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
       "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "ownership": "Indian Express Group"
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e7bde7b5a626319441",
+      "title": "Naya Mandir? 🤣",
+      "url": "https://www.youtube.com/shorts/pCt_DrYPfGI",
+      "summary": "",
+      "published_at": "2026-07-31T10:00:14+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
       },
-      "related_reports": [
-        {
-          "title": "Stephen Fleming to be appointed England’s Test coach",
-          "url": "https://indianexpress.com/article/sports/cricket/stephen-fleming-to-be-appointed-englands-test-coach-10809859/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "d878f95d210b29c079",
+      "title": "Just GenZ Thing 😂",
+      "url": "https://www.youtube.com/shorts/cR92tf4kz-k",
+      "summary": "",
+      "published_at": "2026-07-29T08:48:43+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "489111e6189d5cd60e",
+      "title": "Tag your Gujrati friend 🤪",
+      "url": "https://www.youtube.com/shorts/OGyDIMTBbGA",
+      "summary": "",
+      "published_at": "2026-07-27T05:37:15+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "41826906270a93a462",
+      "title": "Subway Surfer IRL 😭",
+      "url": "https://www.youtube.com/shorts/FQizJOR2ZJs",
+      "summary": "",
+      "published_at": "2026-07-26T14:31:31+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     }
   ]
 }

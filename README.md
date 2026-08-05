@@ -79,6 +79,7 @@ The production site is `https://nazar-india.pages.dev`. Its Cloudflare worker se
 - Keep a strict majority of published stories rooted in independent, local or social discovery; established-media-origin stories may never exceed half of the portfolio.
 - Treat the first listed story source as its discovery source. Social-origin stories require at least one distinct non-social corroborating source before publication.
 - Use named independent reporters and public-interest creators as discovery leads, not trusted authorities or a fixed editorial checklist.
+- Reject portfolios built from repeated headline, summary, significance or evidence templates; each story must use fact-specific editorial language.
 - Synthesize and rephrase source material; reject copied headlines and long verbatim passages.
 - Do not publish unsupported criminal accusations, private personal data, graphic imagery or unverifiable identifying claims.
 - Preserve source links and corrections.

@@ -3,13 +3,15 @@ import argparse, json, sys
 from collections import Counter
 from pathlib import Path
 from publish import (
-    INDEPENDENT_SOCIAL_TYPES, contains_non_latin_letters, reader_text_fields
+    INDEPENDENT_SOCIAL_TYPES, contains_non_latin_letters, reader_text_fields,
+    validate_portfolio_language
 )
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument('--min-per-category', type=int, default=0)
 parser.add_argument('--require-independent-majority', action='store_true')
 parser.add_argument('--max-stories', type=int, default=0)
+parser.add_argument('--reject-repeated-language', action='store_true')
 args = parser.parse_args()
 try:
     data = json.loads((root / 'data/news.json').read_text(encoding='utf-8'))
@@ -56,6 +58,8 @@ try:
         assert established * 2 <= len(data['stories']), (
             f'Established-media discovery exceeds 50%: {established}/{len(data["stories"])}'
         )
+    if args.reject_repeated_language:
+        validate_portfolio_language(data['stories'])
     print(f"OK: {len(ids)} stories")
 except Exception as exc:
     print(f"Validation failed: {exc}", file=sys.stderr)

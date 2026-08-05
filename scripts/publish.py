@@ -62,6 +62,41 @@ def contains_non_latin_letters(value):
 def normalised_words(value):
     return re.findall(r'[a-z0-9]+', value.casefold())
 
+def repeated_field_prefixes(stories, field, word_count, maximum_repetitions=3):
+    groups = {}
+    for story in stories:
+        words = normalised_words(story.get(field, ''))
+        if len(words) < word_count:
+            continue
+        prefix = ' '.join(words[:word_count])
+        groups.setdefault(prefix, []).append(story.get('id', '<unknown>'))
+    return {
+        prefix: story_ids
+        for prefix, story_ids in groups.items()
+        if len(story_ids) > maximum_repetitions
+    }
+
+def validate_portfolio_language(stories):
+    checks = {
+        'title': 4,
+        'summary': 6,
+        'why_it_matters': 6,
+        'evidence_status': 6
+    }
+    failures = []
+    for field, word_count in checks.items():
+        repeated = repeated_field_prefixes(stories, field, word_count)
+        for prefix, story_ids in repeated.items():
+            examples = ', '.join(story_ids[:3])
+            failures.append(
+                f'{field} prefix repeated {len(story_ids)} times '
+                f'("{prefix}"): {examples}'
+            )
+    if failures:
+        raise ValueError(
+            'Refusing templated portfolio language; ' + '; '.join(failures[:12])
+        )
+
 def has_long_verbatim_overlap(first, second, length=12):
     first_words, second_words = normalised_words(first), normalised_words(second)
     if len(first_words) < length or len(second_words) < length:
@@ -205,6 +240,7 @@ def reconcile_and_validate_stories(stories, source_material, maximum_stories):
     return accepted[:maximum_stories], rejected
 
 def validate_portfolio(stories, minimum_per_category):
+    validate_portfolio_language(stories)
     if minimum_per_category > 0:
         counts = Counter(story['category'] for story in stories)
         shortfalls = {

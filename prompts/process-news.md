@@ -19,5 +19,5 @@ Rules:
 11. Use a stable, URL-derived lowercase story ID so later batches update the same event instead of creating duplicates.
 12. Return no more than 24 stories. Prefer public-interest value, geographic variety and evidence quality over filling a quota.
 13. Use ISO 8601 timestamps. When an RSS timestamp is ambiguous, preserve it conservatively and lower confidence rather than inventing precision.
-14. Return only the JSON object required by the schema; do not wrap it in Markdown.
+14. Return only the JSON object required by the schema; do not wrap it in Markdown. Save the file as UTF-8 without a byte-order mark (BOM).
 15. Write all reader-facing fields in plain editorial language. Refer to "available source material", "available reporting" or the specific evidence; never expose internal terms such as crawler, crawl batch, bundle, prompt, schema, model or processing pipeline.

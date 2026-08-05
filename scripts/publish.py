@@ -28,12 +28,16 @@ def main():
     parser.add_argument('--input', default='data/processed/latest.json')
     parser.add_argument('--active-days', type=int, default=14)
     args = parser.parse_args()
-    processed = json.loads((ROOT / args.input).read_text(encoding='utf-8'))
+    processed_path = ROOT / args.input
+    # Scheduled desktop tasks may save otherwise valid JSON with a UTF-8 BOM.
+    # utf-8-sig accepts both forms; rewrite valid input as canonical BOM-free UTF-8.
+    processed = json.loads(processed_path.read_text(encoding='utf-8-sig'))
     incoming = processed.get('stories', processed if isinstance(processed, list) else [])
     if not incoming:
         raise ValueError('No processed stories found; refusing to replace the live feed with an empty result.')
     for story in incoming:
         validate(story)
+    processed_path.write_text(json.dumps(processed, indent=2, ensure_ascii=False), encoding='utf-8')
     live_path = ROOT / 'data/news.json'
     live = json.loads(live_path.read_text(encoding='utf-8'))
     merged = {story['id']: story for story in live.get('stories', []) if not story.get('demo')}

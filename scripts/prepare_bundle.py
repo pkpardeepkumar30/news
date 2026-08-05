@@ -47,6 +47,7 @@ def main():
         'task': 'Cluster related reports, extract claims, assess evidence, assign category and produce processed stories using schema/processed-news.schema.json. Do not treat repeated copies as independent corroboration. Attribute official and social claims explicitly.',
         'prepared_at': datetime.now(timezone.utc).isoformat(),
         'input_count': len(payload.get('items', [])),
+        'supplied_count': len(kept),
         'items': kept
     }
     output = ROOT / 'data/chatgpt-input/latest.json'

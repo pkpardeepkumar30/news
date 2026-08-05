@@ -17,6 +17,61 @@ STOP_WORDS = {
     'about', 'after', 'against', 'amid', 'from', 'have', 'india', 'into',
     'latest', 'news', 'over', 'says', 'that', 'their', 'this', 'with'
 }
+CATEGORIES = [
+    'Politics & Elections', 'Governance & Administration', 'Protests',
+    'States & Local', 'Economy & Employment',
+    'Society, Rights & Justice', 'Environment, Health & Science', 'Sports',
+    'International & Geopolitics'
+]
+CATEGORY_TERMS = {
+    'Politics & Elections': (
+        'election', 'elections', 'electoral', 'campaign', 'campaigning',
+        'political party', 'opposition party', 'ruling party', 'ballot', 'voters'
+    ),
+    'Governance & Administration': (
+        'bill', 'bills', 'legislation', 'law', 'laws', 'regulation', 'regulations',
+        'policy decision', 'cabinet decision', 'appointment', 'appointments',
+        'bureaucrat', 'bureaucrats', 'civil servant', 'transfer order', 'audit',
+        'audits', 'investigation', 'investigations', 'raid', 'raids', 'enforcement',
+        'administration', 'administrative action', 'public authority'
+    ),
+    'Protests': (
+        'protest', 'protests', 'protester', 'protesters', 'protesting',
+        'demonstration', 'demonstrations', 'demonstrator', 'demonstrators',
+        'sit in', 'hunger strike', 'on strike', 'workers strike', 'worker strike',
+        'walkout', 'blockade', 'agitation', 'dharna', 'mass rally', 'protest march',
+        'आंदोलन', 'धरना', 'प्रदर्शन', 'हड़ताल', 'विरोध प्रदर्शन'
+    ),
+    'States & Local': (
+        'district administration', 'district collector', 'municipal', 'municipality',
+        'panchayat', 'gram sabha', 'village council', 'local body', 'civic body',
+        'state government', 'state assembly'
+    ),
+    'Economy & Employment': (
+        'economy', 'economic', 'employment', 'unemployment', 'jobs', 'job market',
+        'workers', 'labour', 'labor', 'industry', 'industries', 'business', 'trade',
+        'tax', 'taxation', 'inflation', 'gdp', 'market', 'markets', 'banking'
+    ),
+    'Society, Rights & Justice': (
+        'rights', 'justice', 'education', 'school', 'schools', 'university',
+        'students', 'discrimination', 'caste', 'gender', 'disability', 'welfare',
+        'legal aid', 'civil liberties', 'human rights', 'social justice'
+    ),
+    'Environment, Health & Science': (
+        'environment', 'environmental', 'climate', 'forest', 'forests', 'wildlife',
+        'pollution', 'health', 'hospital', 'disease', 'medicine', 'medical',
+        'science', 'scientists', 'research', 'species', 'conservation'
+    ),
+    'Sports': (
+        'sport', 'sports', 'tournament', 'championship', 'match', 'league', 'team',
+        'athlete', 'athletes', 'football', 'cricket', 'hockey', 'badminton', 'tennis'
+    ),
+    'International & Geopolitics': (
+        'international', 'geopolitics', 'geopolitical', 'diplomatic', 'diplomacy',
+        'foreign ministry', 'foreign minister', 'ceasefire', 'cross border',
+        'peace talks', 'sanctions', 'embassy', 'ambassador'
+    )
+}
 
 
 def norm(value):
@@ -35,6 +90,28 @@ def title_tokens(value):
         token for token in norm(value).split()
         if len(token) > 2 and token not in STOP_WORDS
     }
+
+
+def contains_phrase(text, phrase):
+    return f' {norm(phrase)} ' in f' {text} '
+
+
+def category_candidate_scores(item):
+    """Return broad discovery signals; the editorial model makes the final label."""
+    title = norm(item.get('title', ''))
+    summary = norm(item.get('summary', ''))
+    hint = item.get('suggested_category', '')
+    scores = {}
+    for category in CATEGORIES:
+        score = 8 if hint == category else 0
+        for phrase in CATEGORY_TERMS[category]:
+            if contains_phrase(title, phrase):
+                score += 4
+            elif contains_phrase(summary, phrase):
+                score += 1
+        if score:
+            scores[category] = score
+    return scores
 
 
 def build_event_signals(items):
@@ -116,10 +193,15 @@ def main():
     parser.add_argument('--output', default='data/chatgpt-input/latest.json')
     parser.add_argument('--max-items', type=int, default=200)
     parser.add_argument('--chunk-size', type=int, default=40)
+    parser.add_argument('--category-reserve', type=int, default=12)
     args = parser.parse_args()
     payload = json.loads((ROOT / args.input).read_text(encoding='utf-8-sig'))
     items = payload.get('items', [])
     signals, related = build_event_signals(items)
+    category_scores = [category_candidate_scores(item) for item in items]
+    for index, scores in enumerate(category_scores):
+        signals[index]['category_candidate_scores'] = scores
+        signals[index]['candidate_categories'] = sorted(scores)
 
     grouped = defaultdict(list)
     for index, item in enumerate(items):
@@ -177,15 +259,39 @@ def main():
         selected_ids.add(raw_id)
         return True
 
-    # Reserve the first portion for events with observable cross-source or social
-    # momentum. The remaining places are filled across every source desk so a
-    # consequential single-source local report can still reach editorial review.
+    # Reserve a buffer of distinct candidates for every broad beat before the
+    # collection cap is applied. These are discovery signals, not final labels.
+    category_candidates = {
+        category: sorted(
+            (index for index in range(len(items)) if category_scores[index].get(category)),
+            key=lambda index: (
+                category_scores[index][category],
+                signals[index]['dynamic_rank_score']
+            ),
+            reverse=True
+        )
+        for category in CATEGORIES
+    }
+    reserve = min(args.category_reserve, max(1, args.max_items // len(CATEGORIES)))
+    for category in sorted(CATEGORIES, key=lambda value: len(category_candidates[value])):
+        added_for_category = 0
+        for index in category_candidates[category]:
+            before = len(kept)
+            add_item(index)
+            if len(kept) > before:
+                added_for_category += 1
+            if added_for_category >= reserve or len(kept) >= args.max_items:
+                break
+
+    # Add events with observable cross-source or social momentum. The remaining
+    # places are filled across every source desk so a consequential single-source
+    # local report can still reach editorial review.
     ranked = sorted(
         range(len(items)),
         key=lambda index: signals[index]['dynamic_rank_score'],
         reverse=True
     )
-    signal_limit = min(60, max(1, args.max_items * 3 // 10))
+    signal_limit = min(args.max_items, len(kept) + min(40, max(1, args.max_items // 5)))
     for index in ranked:
         add_item(index)
         if len(kept) >= signal_limit:

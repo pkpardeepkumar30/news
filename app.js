@@ -41,8 +41,14 @@ function renderStats(stories){
 function renderFilters(){
   const categories = ['All', ...state.data.categories];
   el('categoryFilters').innerHTML = categories.map(c=>`<button class="filter-chip ${state.category===c?'active':''}" data-category="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('');
+  el('selectedCategory').textContent = state.category;
   el('archiveCategory').innerHTML = `<option value="all">All categories</option>` + state.data.categories.map(c=>`<option>${escapeHtml(c)}</option>`).join('');
-  document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.category;renderFilters();renderLatest();}));
+  document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{state.category=b.dataset.category;renderFilters();renderLatest();setFilterDrawer(false);}));
+}
+function setFilterDrawer(open){
+  const controls=document.querySelector('.controls'), toggle=el('filterToggle');
+  controls.classList.toggle('filters-open',open);
+  toggle.setAttribute('aria-expanded',String(open));
 }
 function filteredStories(){
   const q = state.query.trim().toLowerCase();
@@ -119,9 +125,11 @@ function renderSources(){
 function bindControls(){
   el('searchInput').addEventListener('input',e=>{state.query=e.target.value;renderLatest();});
   el('sourceFilter').addEventListener('change',e=>{state.source=e.target.value;renderLatest();});
+  el('filterToggle').addEventListener('click',()=>setFilterDrawer(!document.querySelector('.controls').classList.contains('filters-open')));
   document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>setView(btn.dataset.view)));
   el('themeButton').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('nazar-theme',document.body.classList.contains('dark')?'dark':'light');};
   if(localStorage.getItem('nazar-theme')==='dark')document.body.classList.add('dark');
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')setFilterDrawer(false);});
 }
 function setView(view){
   state.sort = view==='underreported' ? 'underreported' : 'latest';

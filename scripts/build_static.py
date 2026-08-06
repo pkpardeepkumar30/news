@@ -149,7 +149,7 @@ def render_story_page(story: dict) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260806-1">
+  <link rel="stylesheet" href="/styles.css?v=20260806-2">
   <script type="application/ld+json">{json_ld(structured)}</script>
 </head>
 <body class="story-page-body">

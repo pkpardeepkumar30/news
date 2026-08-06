@@ -1,46 +1,176 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-06T03:47:16.720713+00:00",
-  "input_count": 432,
+  "prepared_at": "2026-08-06T06:53:13.219406+00:00",
+  "input_count": 416,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 117,
+    "established_or_other": 83,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "9a7387090026ac6f01",
-      "title": "SIR excludes 1.8 lakh voters from Meghalaya's draft electoral roll",
-      "url": "https://www.thehindu.com/news/national/meghalaya/sir-excludes-18-lakh-voters-from-meghalayas-draft-electoral-roll/article71310937.ece",
-      "summary": "They have been identified as deceased, shifted, untraceable or duplicate, say officials",
-      "published_at": "Thu, 06 Aug 2026 00:45:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ug50f0/article71310984.ece/alternates/LANDSCAPE_1200/PTI07_28_2026_000256A.jpg",
+      "raw_id": "25bdbaeed545d6d871",
+      "title": "Nearly half of Bengaluru's 1.03 crore voters may be dropped from draft electoral roll",
+      "url": "https://www.thenewsminute.com/karnataka/nearly-half-of-bengalurus-103-crore-voters-may-be-dropped-from-draft-electoral-roll",
+      "summary": "Nearly half of Bengaluru's registered voters have been marked for exclusion from the draft electoral roll as part of Karnataka's ongoing Special Intensive Revision (SIR) of electoral rolls, raising the prospect of large-scale corrections before the final list is published. Data released by Chief Electoral Officer (CEO) V Anbukumar, on August 5 shows that 49.42 lakh of Bengaluru's 1.03 crore registered voters have been classified under the Absent, Shifted, Dead, Duplicate or Other (ASDDO) category during the enumeration phase. Statewide, 1.11 crore voters, around one-fifth of Karnataka's 5.54 crore electors, have been similarly flagged. The draft electoral roll is scheduled to be published on August 17. The highest proportion of flagged voters is in Bommanahalli, where 57.08% of the electorate mapped during the revision, or about 2.76 lakh voters, has been placed under the ASDDO category. Bommanahalli is one of 10 Assembly constituencies in Bengaluru where more than half the mapped electorate has been marked for exclusion. Other constituencies with deletion rates above 50% include Vijayanagar (53.66%), Dasarahalli (53.55%), BTM Layout (53.43%), and C V Raman Nagar (53.25%). Bangalor",
+      "published_at": "Thu, 06 Aug 2026 04:31:22 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/voting_indelibleinkphoto_polling_vote_PTI.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 8
+          "Politics & Elections": 10
         },
         "candidate_categories": [
           "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "d29d6edf385080036c",
+      "title": "Calcutta High Court dismisses Abhishek Banerjee's plea to travel abroad for eye treatment",
+      "url": "https://www.barandbench.com/news/litigation/calcutta-high-court-dismisses-abhishek-banerjees-plea-to-travel-abroad-for-eye-treatment",
+      "summary": "The Calcutta High Court on Wednesday dismissed Trinamool Congress (TMC) Member of Parliament (MP) Abhishek Banerjee's plea seeking permission to travel abroad for eye treatment. Justice Saugata Bhattacharya had initially proposed having Banerjee's eye condition assessed by a medical board at SSKM hospital to examine whether eye treatment could be availed in India. The Court noted that Banerjee's choice of treatment has to be assessed against the fact that he is facing several criminal cases in which investigation is ongoing. In this context, the Court indicated that it is not inclined to allow Banerjee's travel abroad without first getting his eye condition assessed in India to see if foreign travel is necessary. Since Banerjee was not willing to get such an assessment done in India, the Court decided to dismiss his plea. \"In view of submission by the counsel for the applicant (on instructions) that he will not appear before the medical board as indicated by this court, this court finds the issue which is agitated by filing the application ought not to be kept pending further. Hence, present application is dismissed, \" the Court said. Justice Saugata Bhattacharyya Banerjee's plea f",
+      "published_at": "Wed, 05 Aug 2026 11:53:59 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-05/6f9ded1d-a15b-4cf8-b43c-e73291f73661/12.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 40,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "independent",
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event; includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Governance & Administration",
+          "Politics & Elections",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Calcutta High Court dismisses Abhishek Banerjee's plea to visit abroad for eye treatment",
+          "url": "https://www.thehindu.com/news/cities/kolkata/calcutta-high-court-dismisses-abhishek-banerjees-plea-to-visit-abroad-for-eye-treatment/article71308485.ece",
+          "source": {
+            "id": "the-hindu-national",
+            "name": "The Hindu — National",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "c9233de374a0e3d821",
+      "title": "Women's groups slam Karnataka's all-male Cabinet, seek women ministers",
+      "url": "https://www.thenewsminute.com/karnataka/womens-groups-slam-karnatakas-all-male-cabinet-seek-women-ministers",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. Women's rights organisations and feminist collectives have strongly criticised the exclusion of women from Karnataka's newly expanded Council of Ministers, describing the all-male Cabinet as a setback to gender equality and demanding that the State government immediately induct qualified women ministers. In an open letter to Chief Minister DK Shivakumar dated August 5, the network of feminists and women's organisations, Naveddu Nilladiddare, Karnataka, said the Cabinet expansion had \"entrenched the exclusion of women\" instead of correcting the omission in the first Council of Ministers. \"An all-male Cabinet is not an oversight. It is a political choice. It sends an unmistakable message that women and women's leadership remain dispensable when it comes to the exercise of State power,\" the letter said. The coalition argued that women constitute nearly half of Karnataka's electorate and played a significant role in the Congress' electoral performance in the 2023 Assembly elections. Despite this, it said, \"not a single woman has been entrusted with ministerial responsibility.\" The organisations said the decision contradict",
+      "published_at": "Thu, 06 Aug 2026 04:03:56 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-06/iayn29bh/Screenshot-2026-08-06-9.17.55-AM.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "States & Local": 1,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Politics & Elections",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "cf80f679a558c8922c",
+      "title": "Saurav Das files police complaint after YouTuber enters his house",
+      "url": "https://www.thenewsminute.com/news/saurav-das-files-police-complaint-after-youtuber-enters-his-house",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. Cockroach Janta Party (CJP) chief spokesperson Saurav Das has sought registration of an FIR with the Delhi Police, alleging that several YouTubers, media personnel and other unidentified individuals unlawfully entered his residence. He also alleged that they filmed its interiors without consent, disclosed his residential address on social media and carried out a coordinated campaign of intimidation, defamation and invasion of privacy. According to the police complaint filed by Saurav on August 5, the alleged acts disclose cognisable offences under the Bharatiya Nyaya Sanhita (BNS), including house-trespass, criminal intimidation, defamation, criminal conspiracy and other applicable provisions of law. Saurav alleged that around 15 to 20 people gathered outside his residence on the morning of August 5, with some individuals having camped outside since the previous night. He described the incident as \"a serious invasion of privacy\" and a grave security threat to him and his family while stating that he was in Maharashtra to attend a two-day meeting of Citizens for Justice and Peace. In his complaint, he alleged that over ",
+      "published_at": "Thu, 06 Aug 2026 03:50:19 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-06/z93o7fzm/Screenshot-2026-08-06-9.09.16-AM.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -286,12 +416,12 @@
       }
     },
     {
-      "raw_id": "0d629ddd4dbaf4b44a",
-      "title": "Bihar Cabinet gives nod to run 16 Medical Colleges and Hospitals under PPP Model",
-      "url": "https://www.thehindu.com/news/national/bihar/bihar-cabinet-gives-nod-to-run-16-medical-colleges-and-hospitals-under-ppp-model/article71310437.ece",
-      "summary": "It also gave the nod for a Sports Science Centre at Rajgir. Rs 6.12 crore sanctioned for “Har Ghar Tiranga” campaign in 2026. A total of 17 decisions were taken at the Cabinet meeting.",
-      "published_at": "Thu, 06 Aug 2026 09:09:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ewedas/article71312004.ece/alternates/LANDSCAPE_1200/PTI07_21_2026_000222B.jpg",
+      "raw_id": "5849ce258c2d653e21",
+      "title": "For the BJP, the result in Bankipur goes beyond just a poll loss",
+      "url": "https://www.thehindu.com/news/national/for-the-bjp-the-result-in-bankipur-goes-beyond-just-a-poll-loss/article71300897.ece",
+      "summary": "A new cohort of Gen Z voters, and discontentment over centralised control of the party’s federal units has handed the BJP a loss in its stronghold",
+      "published_at": "Thu, 06 Aug 2026 10:39:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g52jst/article71302678.ece/alternates/LANDSCAPE_1200/PTI07_21_2026_000194B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -311,166 +441,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Environment, Health & Science": 5,
-          "Sports": 1
+          "Politics & Elections": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Politics & Elections",
-          "Sports"
+          "Politics & Elections"
         ]
       }
     },
     {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "f29e8285a712d4c2be",
-      "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
-      "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
-      "summary": "Elections in Karnataka have increasingly become bipolar, with 77% of the seats recording bipolar contests in 2018",
-      "published_at": "Thu, 27 Mar 2025 17:24:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3wl5pw/article66758476.ece/alternates/LANDSCAPE_1200/uj.png",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "ed8da595c5a6933f10",
-      "title": "Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe",
-      "url": "https://eastmojo.com/mizoram/2026/08/05/mizoram-missing-minor-girl-found-dead-mhip-mzp-demand-swift-probe/",
-      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/01/dead.jpg?fit=780%2C439&ssl=1\" /> Aizawl: A 15-year-old girl, who had been reported missing since the night of August 3, was found dead behind Mualthuam ‘N’ Middle School on Wednesday morning, prompting Mizoram’s apex women’s body and leading student organisation to demand a thorough investigation and strict action against those responsible. The deceased has been identified as H. Ramdinpuii, a […] The post Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe appeared first on EastMojo .",
-      "published_at": "Wed, 05 Aug 2026 13:52:07 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "c8f337a724fa2086a1",
-      "title": "Flies are overlooked pollinators and farmers’ friends",
-      "url": "https://india.mongabay.com/2026/08/flies-are-overlooked-pollinators-and-farmers-friends/",
-      "summary": "Say flies, and one instantly thinks about dirt and disease. But in truth they are among the cleanest of insects. They are a grossly misunderstood order of insects. They are excellent pollinators, aid in criminal investigation, composting, pest control and increasing soil fertility, and of course in scientific research. They are the true flies. Why […]",
-      "published_at": "03 Aug 2026 13:24:32 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/03095032/Syrphid-fly-from-Ladakh-e1785731238147-768x512.jpg",
+      "raw_id": "035c81be39942abed8",
+      "title": "India’s carbon market sets weak emissions targets, analysis finds",
+      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
+      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
+      "published_at": "31 Jul 2026 16:51:38 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -490,261 +474,298 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 2
+          "Economy & Employment": 5
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "e321a412756e892bf6",
-      "title": "Rajya Sabha clears Bill to increase number of Supreme Court judges",
-      "url": "https://www.thehindu.com/news/national/parliament-clears-bill-to-increase-number-of-judges-in-supreme-court/article71310523.ece",
-      "summary": "Parliamentary Affairs Minister says there is no proposal to hold Special Session to push through women’s quota and delimitation Bills; Congress presses for Amit Shah’s statement, debate on donation row",
-      "published_at": "Thu, 06 Aug 2026 01:58:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gpq5s1/article71310819.ece/alternates/LANDSCAPE_1200/20260805461L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 5
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "813d79e7fccbc932eb",
-      "title": "Maharashtra Food and Drug Administration places one-year ban on analogue, non-dairy paneer",
-      "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-food-and-drug-administration-places-one-year-ban-on-analogue-non-dairy-paneer/article71309700.ece",
-      "summary": "The ban includes the manufacture, processing, storage, transport, distribution and sale of analogue/non-dairy paneer",
-      "published_at": "Thu, 06 Aug 2026 08:15:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qy2iil/article71311207.ece/alternates/LANDSCAPE_1200/iStock-1175414571.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "83f25a5ed04eef2276",
-      "title": "A.P. govt. issues draft regulations for private AYUSH facilities",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-govt-issues-draft-regulations-for-private-ayush-facilities/article71310246.ece",
-      "summary": "The regulations classify private AYUSH facilties into seven categories based on bed strength and services, ranging from single-doctor clinics to hospitals with over 200 beds; mandatory registration proposed",
-      "published_at": "Thu, 06 Aug 2026 05:15:59 +0530",
+      "raw_id": "a1e74f2dfd561fa8f2",
+      "title": "UP News: यूपी डिजिटल लेबर चौक ऐप (UP Digital Labour Chowk) अब मोबाइल से बुक करें मिस्त्री और मजदूर, जानें पूरी जानकारी",
+      "url": "https://khabarlahariya.org/up-news-up-digital-labour-chowk-app-now-book-skilled-workers-and-laborers-via-mobile-get-full-details-here/",
+      "summary": "अगर आपको घर बनवाना हो, पुताई करानी हो…",
+      "published_at": "Sun, 26 Jul 2026 07:00:02 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "2103f323047a349fe2",
-      "title": "Bill to provide statutory framework to Indian Statistical Institute up for introduction in Lok Sabha",
-      "url": "https://www.thehindu.com/news/national/bill-to-provide-statutory-framework-to-indian-statistical-institute-up-for-introduction-in-lok-sabha/article71286511.ece",
-      "summary": "All full-time professors and full-time faculty will be members of the Academic Councilwhich will act as its principal academic body and will be headed by the institute's director.",
-      "published_at": "Thu, 30 Jul 2026 19:29:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/86un2r/article71286548.ece/alternates/LANDSCAPE_1200/Academics-proteGLVF8LD92.3.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "835675326855ec5e08",
+      "title": "Left Groups Protest Workers' Repression in North India",
+      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
+      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
+      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 8
+          "Protests": 5,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "1b1a851ba0d5eef8ed",
-      "title": "Is VBSA Bill perfect now?",
-      "url": "https://www.thehindu.com/videos/webinars/is-vbsa-bill-perfect-now/article71280838.ece",
-      "summary": "The Hindu hosted a webinar titled, ‘Is VBSA Bill perfect now?’, on July 25, 2026.",
-      "published_at": "Wed, 29 Jul 2026 14:50:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/vg9uqg/article71280863.ece/alternates/LANDSCAPE_1200/image.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "9bcfe1ff8ff9d820cc",
+      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
+      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
+      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
+      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 8
+          "Protests": 4,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "4baace49198b576a59",
-      "title": "Pvt. schools must form fee regulation panels by July 15: Delhi govt.",
-      "url": "https://www.thehindu.com/news/cities/Delhi/pvt-schools-must-form-fee-regulation-panels-by-july-15-delhi-govt/article71174825.ece",
-      "summary": "",
-      "published_at": "Wed, 29 Jul 2026 09:54:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5wx1ip/article71175896.ece/alternates/LANDSCAPE_1200/dps-dwarka_GAJFGM0FPQMQV.3.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "2a25090f84e0207e53",
+      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
+      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
+      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
+      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 12
+          "Protests": 4,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "a4dcbc2cb86693e09d",
-      "title": "Trump administration revokes visa of Brazil's Ambassador to U.S. in spat with Lula",
-      "url": "https://www.thehindu.com/news/international/trump-administration-revokes-visa-of-brazils-ambassador-to-us-in-spat-with-lula/article71307922.ece",
-      "summary": "The State Department said the decision was a reciprocal response to Brazil's actions",
-      "published_at": "Wed, 05 Aug 2026 08:32:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2q63ox/article71307925.ece/alternates/LANDSCAPE_1200/AFP_C3YD3WE.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "938336d973c9016b2a",
+      "title": "India’s ethanol push moves from the pump to the field, raising water and food questions",
+      "url": "https://india.mongabay.com/2026/07/indias-ethanol-push-moves-from-the-pump-to-the-field-raising-water-and-food-questions/",
+      "summary": "This is the third part in a series comparing India and Brazil’s ethanol transitions. This part examines how India’s ethanol model increasingly moving beyond sugarcane and molasses-based production to grains, raising questions about pressures on livestock feed and the food processing industry. The second part examined the challenges of procurement, storage, transport and quality control. […]",
+      "published_at": "28 Jul 2026 16:31:30 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28144133/signal-2026-07-28-12-24-18-195_003-768x512.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "International & Geopolitics": 12
+          "Economy & Employment": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "e1c4e137888af5dc29",
+      "title": "Cyril Amarchand Mangaldas, Trilegal, A&O Shearman act on Adani Energy Solutions ₹3,500 crore QIP",
+      "url": "https://www.barandbench.com/dealstreet/cyril-amarchand-mangaldas-trilegal-ao-shearman-act-on-adani-energy-solutions-3500-crore-qip",
+      "summary": "Adani Energy Solutions Limited has raised ₹3,500 crore from a qualified institutions placement. Cyril Amarchand Mangaldas advised Adani Energy Solutions on this QIP. The transaction was led by Devaki Mankad (Partner, Regional Co-Head – Capital Markets – West), with support from Rishav Buxi (Principal Associate), Anuj Gupta (Senior Associate), and Associates Archit Jain, Arikta Shetty, Aditya Maheshwari, Akshat Sharma and Aria Sheth. Devaki Mankad Trilegal advised the placement agents, which included SBI Capital Markets Limited, ICICI Securities Limited, IIFL Capital Services Limited and Jefferies India Private Limited. The transaction was led by Richa Choudhary (Partner) and Maitreya Rajurkar (Partner), with support from Avanti Kale (Counsel), Sanya Chaudhari (Senior Associate) and Associates, Samruddhi Varma, Harsh Handa, and Shreyansh Gupta. Richa Choudhary, Maitreya Rajurkar A&O Shearman acted as the international legal counsel to the placement agents. The transaction was led by Pallavi Gopinath Aney (Partner) and Kyungwon (Won) Lee (Partner), with support from Nabil Shadab (Senior Associate) and Shinjan Alok (Associate). Pallavi Gopinath Aney, Kyungwon (Won) Lee Adani Energy So",
+      "published_at": "Wed, 05 Aug 2026 12:46:33 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-05/upl7re9m/1000604966.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
           "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "db922ee199d5829d95",
-      "title": "Rijiju meets Rahul in bid to end Parliament logjam",
-      "url": "https://www.thehindu.com/news/national/rijiju-meets-rahul-in-bid-to-end-parliament-logjam/article71310184.ece",
-      "summary": "Parliamentary Affairs Minister says there is no proposal to hold Special Session to push through women’s quota and delimitation Bills; Cong. presses for Shah’s statement, debate on donation row",
-      "published_at": "Thu, 06 Aug 2026 00:22:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/azwe4h/article71310977.ece/alternates/LANDSCAPE_1200/PTI08_05_2026_RPT317A.jpg",
+      "raw_id": "e97af0782fcb004ab0",
+      "title": "Amaravati to deliver 4,000 homes by December, says Andhra Home Minister",
+      "url": "https://www.thenewsminute.com/andhra-pradesh/amaravati-to-deliver-4000-homes-by-december-says-andhra-home-minister",
+      "summary": "Andhra Pradesh Home Minister Vangalapudi Anitha, on Wednesday, August 5, said nearly 4,000 houses in Amaravati would be handed over to the government by December as the State government pressed ahead with infrastructure works in the capital city under the leadership of Chief Minister N Chandrababu Naidu. Anitha made the announcement after inspecting ongoing capital city projects along with Municipal Administration and Urban Development Minister P Narayana and MSME Minister Kondapalli Srinivas. The ministers visited the Ministers' Bungalows, Iconic Towers, and the MLA and MLC residential quarters, where Narayana briefed them on the progress of various projects. Anitha said Amaravati embodied the self-respect and aspirations of the people of Andhra Pradesh and was emerging as a symbol of the State's future, with large-scale infrastructure works progressing rapidly. She said Narayana had informed her that nearly 4,000 houses would be handed over to the government by December. She also said Amaravati continued to share an emotional bond with farmers, government employees and workers, and urged people from across Andhra Pradesh to visit the capital to witness the pace of development. Sh",
+      "published_at": "Thu, 06 Aug 2026 03:59:29 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-06/8jrehj9b/HO931UtasAAvqVr.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 2,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "9c1a969216212295f5",
+      "title": "A.P. CM tells officials to draw micro-level development plans for Visakhapatnam Economic Region",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-cm-tells-officials-to-draw-micro-level-development-plans-for-visakhapatnam-economic-region/article71309098.ece",
+      "summary": "The region will be developed with a focus on balanced growth, infrastructure expansion, industrial development, tourism, and employment generation, says Chandrababu Naidu",
+      "published_at": "Thu, 06 Aug 2026 05:14:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1xe35i/article71310069.ece/alternates/LANDSCAPE_1200/2.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -764,20 +785,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1
+          "Economy & Employment": 5
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "0aad0a7e24eddf94d9",
-      "title": "A Fundamental Right",
-      "url": "https://www.thehindu.com/features/education/a-fundamental-right/article60647223.ece",
-      "summary": "With its new law that makes education a fundamental right with effect from April 1, 2010, India joins a small group of countries with such a statutory provision. All children in the 6 to 14 age group can exercise the right under the Right of Children to Free and Compulsory Education Act, 2009. An estimated one crore children who do not go to school now are expected to benefit.",
-      "published_at": "Fri, 15 Nov 2024 16:35:57 +0530",
-      "image_url": "",
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
       "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
@@ -797,29 +818,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
           "States & Local": 8,
-          "Society, Rights & Justice": 2
+          "Economy & Employment": 5
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
+          "Economy & Employment",
           "States & Local"
         ]
       }
     },
     {
-      "raw_id": "19453a8e709547ab38",
-      "title": "Amid calls for education reforms, NTA Chairman caught in political crosshairs",
-      "url": "https://www.thehindu.com/education/amid-calls-for-education-reforms-nta-chairman-caught-in-political-crosshairs/article71305929.ece",
-      "summary": "Pradeep Kumar Joshi was appointed Chairman of the NTA in August 2023, after stints heading the Madhya Pradesh Public Service Commission (MPPSC), the Chhattisgarh Public Service Commission (CGPSC), and the Union Public Service Commission. However, Opposition leaders, former government officials, and activists, have questioned his actions as the Chairman of the State bodies and have alleged political recommendations for his appointments",
-      "published_at": "Tue, 04 Aug 2026 22:20:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tn7g4q/article71306721.ece/alternates/LANDSCAPE_1200/TH26-Sandeep-ThGB8GAA19J.3.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "2eb06ce7e60651f940",
+      "title": "₹47-crore wholesale fish market planned in Hyderabad under ₹353-crore fisheries push",
+      "url": "https://www.thehindu.com/news/national/telangana/47-crore-wholesale-fish-market-planned-in-hyderabad-under-353-crore-fisheries-push/article71310121.ece",
+      "summary": "",
+      "published_at": "Thu, 06 Aug 2026 11:26:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8d6zb9/article71312292.ece/alternates/LANDSCAPE_1200/PTI01_30_2026_000408B.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -834,12 +853,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 12
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Economy & Employment"
         ]
       }
     },
@@ -877,36 +894,36 @@
       }
     },
     {
-      "raw_id": "835675326855ec5e08",
-      "title": "Left Groups Protest Workers' Repression in North India",
-      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
-      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
-      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
-      "image_url": "",
+      "raw_id": "f5130522997877c331",
+      "title": "A walk through India’s protest sites: Understanding regulations in major cities",
+      "url": "https://www.thenewsminute.com/news/a-walk-through-indias-protest-sites-understanding-regulations-in-major-cities",
+      "summary": "Over the summer of 2026, protests have increasingly gained media coverage with the emergence of the Cockroach Janata Party and Gen Z's outrage over the paper leaks in the National Eligibility cum Entrance Test (NEET). The Constitution of India guarantees the right to protest through Article 19, Sections 1(a) (right to freedom of expression) and 1(b) (right to assemble peacefully). Across the country, protest organisers are expected to get permission from the local police before holding public demonstrations. In the interest of public order and security, the police may impose reasonable restrictions. One common restriction imposed across Indian states is the allocation of specific protest sites in each city. Protest sites in India are often picked to avoid public nuisance and, at times, to restrict the size of protests through the location, venue, or legislation. That, along with the emergency provisions (Section 163 of the Bharatiya Nyaya Sanhita) used by the police, allows the State to control protests. It is notable that the courts have expressed concern over the use of such provisions, as the ambiguous language of Section 163 could mean it is exploited to impose blanket bans aga",
+      "published_at": "Thu, 06 Aug 2026 05:41:35 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-04/ucmgasny/jantarmantarstudentprotest040826.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 5,
-          "Economy & Employment": 4
+          "Governance & Administration": 5,
+          "Protests": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
+          "Governance & Administration",
           "Protests"
         ]
       }
@@ -1044,20 +1061,20 @@
       }
     },
     {
-      "raw_id": "9bcfe1ff8ff9d820cc",
-      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
-      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
-      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
-      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
-      "image_url": "",
+      "raw_id": "25a3a1347aafadc81c",
+      "title": "Lakhimpur Kheri Violence: Supreme Court refuses to relax Ashish Mishra's bail terms",
+      "url": "https://www.barandbench.com/news/lakhimpur-kheri-violence-supreme-court-refuses-to-relax-ashish-mishras-bail-terms",
+      "summary": "The Supreme Court on Thursday refused to further relax the bail conditions imposed on Ashish Mishra, the prime accused in the 2021 Lakhimpur Kheri violence case [ Ashish Mishra Alias Monu vs State of UP ]. Mishra's counsel today told the Court that the bail terms imposed on him, which included travel restrictions, prevented him from attending family functions, including his daughter's birthday celebrations. A Bench of Chief Justice of India Surya Kant , Justice Joymalya Bagchi and Justice V Mohana , however, found no ground to entertain the prayer to further relax Mishra's bail conditions for the present. \"There is no ground to entertain this prayer at this stage,\" the Court said in its order dismissing Mishra's application. Justice Joymalya Bagchi, CJI Surya Kant and Justice V Mohana Ashish Mishra, son of former Union Minister of State for Home Affairs Ajay Kumar Mishra (Teni), is the main accused in the 2021 Lakhimpur Kheri violence case. The case concerns the events of October 3, 2021 at Lakhimpur Kheri, where eight people, including four farmers and a journalist, were killed after vehicles that were linked to Ashish Mishra drove into a crowd protesting the since-revoked farm la",
+      "published_at": "Thu, 06 Aug 2026 12:00:30 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/547c24a1-0ed2-4fe3-b904-365b014feb54/WhatsApp_Image_2021_10_09_at_11_35_58_PM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1069,47 +1086,14 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
+          "Governance & Administration": 1,
+          "Protests": 1,
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "2a25090f84e0207e53",
-      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
-      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
-      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
-      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -1246,20 +1230,53 @@
       }
     },
     {
-      "raw_id": "035c81be39942abed8",
-      "title": "India’s carbon market sets weak emissions targets, analysis finds",
-      "url": "https://india.mongabay.com/2026/07/indias-carbon-market-sets-weak-emissions-targets-analysis-finds/",
-      "summary": "A critical evaluation of emissions reduction targets set under the country’s carbon market framework has deemed the targets “modest and unambitious” — unlikely to drive changes in operations that would reduce emissions substantially. Between October 2025 and January 2026 India notified greenhouse gas reduction targets for nine industries. Under the framework, industries can earn carbon […]",
-      "published_at": "31 Jul 2026 16:51:38 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/31160627/pexels-yajna-s-r-55953015-20591230-768x512.jpg",
+      "raw_id": "2eb88e2304d8ede3ff",
+      "title": "Wangchuk urges Jharkhand exam protester on hunger strike to drink water; five more join fast",
+      "url": "https://www.thehindu.com/news/national/sonam-wangchuk-jharkhand-hunger-striker-exam-irregularities/article71308896.ece",
+      "summary": "Heeding Sonam Wangchuk’s request, student leader Devendra Nath Mahato had water on the fourth day of his fast",
+      "published_at": "Thu, 06 Aug 2026 11:10:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/asq5ut/article71308932.ece/alternates/LANDSCAPE_1200/PTI08_05_2026_000172B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "459a6ed79682a5f3d3",
+      "title": "Karnataka High Court transfers Malur judge after road rage controversy",
+      "url": "https://www.barandbench.com/news/litigation/karnataka-high-court-transfers-malur-judge-after-road-rage-controversy",
+      "summary": "The Karnataka High Court has transferred Malur Principal Civil Judge and JMFC Gayatri for her involvement in a road rage incident which was caught on CCTV. A notification issued by the Karnataka High Court Registrar General M Chandrashekar Reddy on August 5 (Wednesday) said that judge Gayatri has been transferred from Malur in Kolar district to Humnabad in Bidar district. As per the the notice, the transfer has been effected for administrative reasons and in the interest of public service. Karnataka High Court orders action against judge for road rage; slams police for acting against victims The transfer follows a July 28 order of the Karnataka High Court which directed action against the civil judge for the road rage incident. After examining CCTV footage and other material, Justice M Nagaprasanna of High Court found that the judge had engaged in an altercation with two persons riding a motorcycle after they allegedly overtook her private vehicle. She had subsequently used the police machinery to initiate criminal proceedings against the two-wheeler riders. Referring to the CCTV footage and the videos circulating on social media, the High Court had held that the conduct of the jud",
+      "published_at": "Thu, 06 Aug 2026 11:26:39 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-29/xdt8n0ap/173f703d-7731-457a-8bb5-4315c4d4f555.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1271,28 +1288,30 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 5
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Governance & Administration",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "a1e74f2dfd561fa8f2",
-      "title": "UP News: यूपी डिजिटल लेबर चौक ऐप (UP Digital Labour Chowk) अब मोबाइल से बुक करें मिस्त्री और मजदूर, जानें पूरी जानकारी",
-      "url": "https://khabarlahariya.org/up-news-up-digital-labour-chowk-app-now-book-skilled-workers-and-laborers-via-mobile-get-full-details-here/",
-      "summary": "अगर आपको घर बनवाना हो, पुताई करानी हो…",
-      "published_at": "Sun, 26 Jul 2026 07:00:02 +0000",
+      "raw_id": "93a03776e3d3c87c40",
+      "title": "Bombay HC overturns Tarun Tejpal's acquittal, convicts him of rape",
+      "url": "https://www.thenewsminute.com/news/bombay-hc-overturns-tarun-tejpals-acquittal-convicts-him-of-rape",
+      "summary": "In a landmark win for workplace rights against sexual harassment, Tarun Tejpal, founder and former editor-in-chief of investigative news magazine Tehelka, was convicted by the Bombay High Court. The Goa Bench of the court on Thursday, August 6, convicted him for sexually assaulting a junior colleague in 2013, setting aside his acquittal by a Goa sessions court in, 2021. His acquittal by the sessions court was heavily criticised for its sexist language and scrutiny of the survivor’s “behaviour”. The reversal of that order is seen as a strong message from the judiciary for women’s workplace rights. The Bombay High Court’s Division Bench, comprising Justice Neela Gokhale and Justice Amit Jamsandekar, found Tejpal guilty of rape and sexual harassment under Sections 376(2)(f), 376(2)(k), 354A and 354B of the Indian Penal Code. Tejpal, who was present in court, pleaded for leniency, stating that he is a “victim”. “I am 62, and I believe I am a victim. I have a wife, and that's not much else to say. All that I can say is we can go and appeal. Please be lenient with me. The rest of the facts are placed on record,” he told the court, according to Live Law. Opposing the plea, Solicitor Gener",
+      "published_at": "Thu, 06 Aug 2026 06:42:19 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
+        "id": "the-news-minute",
+        "name": "The News Minute",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1304,20 +1323,57 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Governance & Administration",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "938336d973c9016b2a",
-      "title": "India’s ethanol push moves from the pump to the field, raising water and food questions",
-      "url": "https://india.mongabay.com/2026/07/indias-ethanol-push-moves-from-the-pump-to-the-field-raising-water-and-food-questions/",
-      "summary": "This is the third part in a series comparing India and Brazil’s ethanol transitions. This part examines how India’s ethanol model increasingly moving beyond sugarcane and molasses-based production to grains, raising questions about pressures on livestock feed and the food processing industry. The second part examined the challenges of procurement, storage, transport and quality control. […]",
-      "published_at": "28 Jul 2026 16:31:30 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28144133/signal-2026-07-28-12-24-18-195_003-768x512.jpg",
+      "raw_id": "ed8da595c5a6933f10",
+      "title": "Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe",
+      "url": "https://eastmojo.com/mizoram/2026/08/05/mizoram-missing-minor-girl-found-dead-mhip-mzp-demand-swift-probe/",
+      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/01/dead.jpg?fit=780%2C439&ssl=1\" /> Aizawl: A 15-year-old girl, who had been reported missing since the night of August 3, was found dead behind Mualthuam ‘N’ Middle School on Wednesday morning, prompting Mizoram’s apex women’s body and leading student organisation to demand a thorough investigation and strict action against those responsible. The deceased has been identified as H. Ramdinpuii, a […] The post Mizoram: Missing minor girl found dead; MHIP, MZP demand swift probe appeared first on EastMojo .",
+      "published_at": "Wed, 05 Aug 2026 13:52:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "c8f337a724fa2086a1",
+      "title": "Flies are overlooked pollinators and farmers’ friends",
+      "url": "https://india.mongabay.com/2026/08/flies-are-overlooked-pollinators-and-farmers-friends/",
+      "summary": "Say flies, and one instantly thinks about dirt and disease. But in truth they are among the cleanest of insects. They are a grossly misunderstood order of insects. They are excellent pollinators, aid in criminal investigation, composting, pest control and increasing soil fertility, and of course in scientific research. They are the true flies. Why […]",
+      "published_at": "03 Aug 2026 13:24:32 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/03095032/Syrphid-fly-from-Ladakh-e1785731238147-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1337,45 +1393,12 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Governance & Administration": 1,
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
+          "Environment, Health & Science",
+          "Governance & Administration"
         ]
       }
     }

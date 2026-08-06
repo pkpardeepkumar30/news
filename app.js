@@ -122,8 +122,6 @@ function bindControls(){
   document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>setView(btn.dataset.view)));
   el('themeButton').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('nazar-theme',document.body.classList.contains('dark')?'dark':'light');};
   if(localStorage.getItem('nazar-theme')==='dark')document.body.classList.add('dark');
-  el('submitLeadButton').onclick=()=>el('leadDialog').showModal();
-  el('leadForm').addEventListener('submit',saveLead); el('exportLeadsButton').onclick=exportLeads;
 }
 function setView(view){
   state.sort = view==='underreported' ? 'underreported' : 'latest';
@@ -132,11 +130,4 @@ function setView(view){
   const target=state.view+'View';
   document.querySelectorAll('.view').forEach(v=>{const active=v.id===target;v.classList.toggle('active-view',active);v.hidden=!active;}); document.querySelectorAll('.nav-link').forEach(b=>b.classList.toggle('active',b.dataset.view===view)); window.scrollTo({top:0});
 }
-function saveLead(e){
-  e.preventDefault(); const fd=new FormData(e.target); const leads=JSON.parse(localStorage.getItem('nazar-leads')||'[]'); const observedAt=new Date().toISOString(); leads.push({id:crypto.randomUUID(),url:fd.get('url'),category:fd.get('category'),note:fd.get('note'),platform:fd.get('platform'),metrics:{views:Number(fd.get('views')||0),likes:Number(fd.get('likes')||0),comments:Number(fd.get('comments')||0),shares:Number(fd.get('shares')||0)},submitted_by:fd.get('submittedBy')||'Anonymous',submitted_at:observedAt,observed_at:observedAt}); localStorage.setItem('nazar-leads',JSON.stringify(leads)); e.target.reset(); el('leadDialog').close(); toast('Lead saved locally');
-}
-function exportLeads(){
-  const leads=localStorage.getItem('nazar-leads')||'[]'; const blob=new Blob([leads],{type:'application/json'}); const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='social_submissions.json';a.click();URL.revokeObjectURL(a.href);toast('Lead file exported');
-}
-function toast(message){el('toast').textContent=message;el('toast').classList.add('show');setTimeout(()=>el('toast').classList.remove('show'),1800);}
 loadData();

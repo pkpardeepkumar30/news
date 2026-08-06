@@ -10,7 +10,6 @@ Nazar India is a dependency-free, source-transparent Indian news aggregator. It 
 - Date-based archive and source-methodology views.
 - Permanent server-rendered HTML pages for current and archived stories, with canonical URLs and `NewsArticle` structured data.
 - Search-engine discovery through `robots.txt`, a generated XML sitemap, homepage canonical metadata and site/organization structured data.
-- Browser-based independent/social lead submission and JSON export.
 - RSS collector, ChatGPT bundle generator, processed-output validator, publisher and archive scripts.
 - Four-hour GitHub Actions collection, balanced 200-item preparation, chunked distillation and publishing workflow.
 - No JavaScript framework or package installation required.
@@ -27,7 +26,7 @@ Open `http://localhost:8080`.
 
 Edit `config/sources.json` to add, disable or update public RSS sources. Only enable feeds intended for automated consumption, and continue to respect each publisher's terms, robots policy and applicable law.
 
-Instagram and similar platforms are not scraped through login bypasses or unstable HTML automation. Public URLs can enter through the website's **Submit a lead** form or an approved monitoring/API provider. The optional provider is enabled by setting GitHub Actions secrets named `SOCIAL_SIGNALS_URL` and, when required, `SOCIAL_SIGNALS_TOKEN`.
+Instagram and similar platforms are not scraped through login bypasses or unstable HTML automation. Social discovery can enter through the repository-managed input file or an approved monitoring/API provider; there is no public submission form. The optional provider is enabled by setting GitHub Actions secrets named `SOCIAL_SIGNALS_URL` and, when required, `SOCIAL_SIGNALS_TOKEN`.
 
 The social endpoint may return an array, or an object with an `items` array. Each entry accepts `url`, `title`, `note`, `published_at`, `image_url`, `platform`, `account`, and a `metrics` object containing `views`, `likes`, `comments`, `shares` and `reposts`. Engagement affects discovery priority but never counts as factual corroboration.
 

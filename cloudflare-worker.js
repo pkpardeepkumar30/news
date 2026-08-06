@@ -27,7 +27,13 @@ export default {
     if (!isLiveData) {
       const asset = await env.ASSETS.fetch(request);
       const headers = new Headers(asset.headers);
-      headers.set("Cache-Control", pathname === "/index.html" || pathname === "/sitemap.xml" ? "no-store" : "public, max-age=3600");
+      if (pathname === "/index.html" || pathname === "/sitemap.xml") {
+        headers.set("Cache-Control", "no-store");
+      } else if (pathname === "/app.js" || pathname === "/styles.css") {
+        headers.set("Cache-Control", "no-cache, must-revalidate");
+      } else {
+        headers.set("Cache-Control", "public, max-age=3600");
+      }
       headers.set("X-Content-Type-Options", "nosniff");
       return new Response(asset.body, {status: asset.status, statusText: asset.statusText, headers});
     }

@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-07T09:22:02.901230+00:00",
-  "input_count": 463,
+  "prepared_at": "2026-08-07T13:46:44.252898+00:00",
+  "input_count": 488,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 144,
-    "established_or_other": 56,
+    "independent_social": 146,
+    "established_or_other": 54,
     "independent_social_majority_required": true
   },
   "part": 4,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "d878f95d210b29c079",
+      "title": "Just GenZ Thing 😂",
+      "url": "https://www.youtube.com/shorts/cR92tf4kz-k",
+      "summary": "",
+      "published_at": "2026-07-29T08:48:43+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "4e6ed25054eca8b2df",
       "title": "Genz’s are unstoppable 🤣",
@@ -70,32 +99,98 @@
       }
     },
     {
-      "raw_id": "41826906270a93a462",
-      "title": "Subway Surfer IRL 😭",
-      "url": "https://www.youtube.com/shorts/FQizJOR2ZJs",
-      "summary": "",
-      "published_at": "2026-07-26T14:31:31+00:00",
+      "raw_id": "b5976a0013b0f8826e",
+      "title": "Manipur: Unexploded bomb recovered near NH-202 in Ukhrul",
+      "url": "https://eastmojo.com/meghalaya/2026/08/07/manipur-unexploded-bomb-recovered-near-nh-202-in-ukhrul/",
+      "summary": "Ukhrul: An unexploded bomb was recovered by villagers in Sharkaphung village in Manipur’s Ukhrul district on Friday, according to police sources. The villagers reportedly discovered the device while foraging in a forest near the hanging bridge connecting to National Highway 202. After being alerted, personnel from Litan Police Station, accompanied by a BSF bomb disposal […] The post Manipur: Unexploded bomb recovered near NH-202 in Ukhrul appeared first on EastMojo .",
+      "published_at": "Fri, 07 Aug 2026 11:10:47 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "a3c4d85c9b1726737c",
+      "title": "Three Cachar men held over assault of two minor girls from Mizoram",
+      "url": "https://eastmojo.com/mizoram/2026/08/07/three-cachar-men-held-over-assault-of-two-minor-girls-from-mizoram/",
+      "summary": "Representational Image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/03/handcuffs-3655288_1920.jpg?fit=780%2C429&ssl=1\" /> Three men from Assam’s Cachar district have been arrested for allegedly abducting two minor girls from Mizoram and sexually assaulting them inside a moving vehicle, police said. The accused were identified as Amjad Hussain Laskar, 20, of Rajnagar; Saddam Hussain Laskar, 23, of Bhaga Bazar; and Rinku Das, 25, of Khaspur. They were arrested after […] The post Three Cachar men held over assault of two minor girls from Mizoram appeared first on EastMojo .",
+      "published_at": "Fri, 07 Aug 2026 09:39:31 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b46f2d51e99ea6945a",
+      "title": "What six months in Dzongu taught me about craft, community and time",
+      "url": "https://eastmojo.com/premium/2026/08/07/what-six-months-in-dzongu-taught-me-about-craft-community-and-time/",
+      "summary": "I joined the Sustainable Nettle Fibre Livelihoods Project (now Mutanchi) in early February. These six months have woven together so many moments on forest paths, at the weaving centre, and in conversation that my job has become much more than documentation. Some days, sudden tremors gave us unexpected breaks and led to long talks; other […] The post What six months in Dzongu taught me about craft, community and time appeared first on EastMojo .",
+      "published_at": "Fri, 07 Aug 2026 09:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -157,98 +252,11 @@
       }
     },
     {
-      "raw_id": "c7cb87670fa9895905",
-      "title": "Mizoram: Zoramthanga accuses CM of misrepresenting special status",
-      "url": "https://eastmojo.com/mizoram/2026/08/06/mizoram-zoramthanga-accuses-cm-of-misrepresenting-special-status/",
-      "summary": "Aizawl: Mizo National Front (MNF) president Zoramthanga on Wednesday demanded that Chief Minister Lalduhoma apologise to the people of Mizoram and withdraw remarks he made on the Inner Line Permit (ILP) and the 1986 Mizoram Peace Accord, alleging that the Chief Minister had distorted historical facts and undermined the state’s constitutional safeguards. Speaking to mediapersons, […] The post Mizoram: Zoramthanga accuses CM of misrepresenting special status appeared first on EastMojo .",
-      "published_at": "Thu, 06 Aug 2026 12:35:30 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b44a9c842f49826aaa",
-      "title": "Mizoram woman gets 12 years in jail for trafficking minor daughter",
-      "url": "https://eastmojo.com/mizoram/2026/08/06/mizoram-woman-gets-12-years-in-jail-for-trafficking-minor-daughter/",
-      "summary": "Representational Image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/03/handcuffs-3655288_1920.jpg?fit=780%2C429&ssl=1\" /> Aizawl: A Fast Track Court in Kolasib has sentenced a 42-year-old woman to 12 years’ imprisonment for repeatedly trafficking her minor daughter for sexual exploitation in exchange for money and alcohol. According to a report by Zalen, the judgment was delivered by Fast Track Court Judge R. Vanlalena, who found the woman, identified as Lalbiakengi […] The post Mizoram woman gets 12 years in jail for trafficking minor daughter appeared first on EastMojo .",
-      "published_at": "Thu, 06 Aug 2026 11:47:36 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a7cab8beac9a1eb07f",
-      "title": "VPP rallies in Shillong, accuses MDA government of ignoring public concerns",
-      "url": "https://eastmojo.com/meghalaya/2026/08/06/vpp-rallies-in-shillong-accuses-mda-government-of-ignoring-public-concerns/",
-      "summary": "Shillong: Thousands of supporters of the Voice of the People Party (VPP) took to the streets of Shillong on Wednesday, accusing the National People’s Party (NPP)-led Meghalaya Democratic Alliance (MDA) government of failing to address public concerns and pursuing policies that are against the interests of indigenous communities. The rally, which reportedly drew around 3,000 […] The post VPP rallies in Shillong, accuses MDA government of ignoring public concerns appeared first on EastMojo .",
-      "published_at": "Thu, 06 Aug 2026 11:01:24 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "66a477921c8c91e316",
-      "title": "PF Balance Check Online: घर बैठे मिनटों में चेक करें अपना पीएफ बैलेंस, ये हैं 4 सबसे आसान और त्वरित तरीके",
-      "url": "https://theruralpress.in/2026/08/07/pf-balance-check-online-epfo-passbook-status-guide/",
-      "summary": "PF Balance Check : नौकरीपेशा लोगों के लिए प्रोविडेंट फंड (EPF) भविष्य का सबसे बड़ा और सुरक्षित सहारा होता है। हर महीने आपकी सैलरी से कटने वाला यह पैसा न केवल रिटायरमेंट के बाद काम आता है, बल्कि जरूरत के समय इमरजेंसी फंड के रूप में भी मददगार साबित होता है। हालांकि, अक्सर कई कर्मचारियों […]",
-      "published_at": "Fri, 07 Aug 2026 08:21:59 +0000",
+      "raw_id": "6132450e08844eea43",
+      "title": "Parliament Monsoon Session: संसद में घमासान के आसार, कांग्रेस ने अपने सांसदों को जारी किया तीन लाइन का व्हिप, जानें 10 से 12 अगस्त का पूरा प्लान",
+      "url": "https://theruralpress.in/2026/08/07/parliament-monsoon-session-congress-issues-three-line-whip-to-mp/",
+      "summary": "Congress Whip: संसद के मानसून सत्र के दौरान राजनीतिक सरगर्मियां अचानक बेहद तेज हो गई हैं। 10 से 12 अगस्त के बीच संसद के दोनों सदनों में भारी गहमागहमी रहने के आसार हैं। कांग्रेस ने तीन लाइन का व्हिप (Three-line Whip) जारी किया है। अपने और सहयोगी दलों के सभी सांसदों को सदन में अनिवार्य […]",
+      "published_at": "Fri, 07 Aug 2026 13:09:54 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -273,11 +281,11 @@
       }
     },
     {
-      "raw_id": "562608fa784995d7bd",
-      "title": "Cobra Meat Viral Video: चिकन-मटन नहीं, यहां लोग खाते हैं कोबरा के समोसे और पकौड़े! वायरल वीडियो ने चौंकाया",
-      "url": "https://theruralpress.in/2026/08/07/cobra-meat-viral-video-jakarta/",
-      "summary": "सोशल मीडिया पर इंडोनेशिया के एक स्ट्रीट फूड मार्केट का वीडियो तेजी से वायरल हो रहा है। इसमें कोबरा के मांस से बनी अलग-अलग डिशेज बिकती नजर आ रही हैं चिकन और मटन तो आपने कई बार खाया या सुना होगा, लेकिन क्या कभी कोबरा के पकौड़े, समोसे या सूप के बारे में सुना है? […]",
-      "published_at": "Fri, 07 Aug 2026 07:56:45 +0000",
+      "raw_id": "c7db42c3c04100b2f9",
+      "title": "CG News:’हर घर तिरंगा’ और ‘तिरंगा यात्रा’ से गूंजेगा छत्तीसगढ़, बस्तर के 500 से अधिक स्थानों का नामकरण शहीदों के नाम पर होगा",
+      "url": "https://theruralpress.in/2026/08/07/har-ghar-tiranga-chhattisgarh-bastar-martyrs-renaming-deputy-cms-press-conference/",
+      "summary": "Har Ghar Tiranga: छत्तीसगढ़ में स्वतंत्रता दिवस के अवसर पर देशभक्ति का माहौल निर्मित करने और राष्ट्र निर्माताओं के प्रति कृतज्ञता प्रकट करने के लिए भारतीय जनता पार्टी द्वारा प्रदेशव्यापी ‘हर घर तिरंगा’ अभियान और ‘तिरंगा यात्रा’ का आयोजन किया जा रहा है। एकात्म परिसर स्थित भाजपा कार्यालय में आयोजित एक महती पत्रकार वार्ता को […]",
+      "published_at": "Fri, 07 Aug 2026 12:23:06 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -302,11 +310,11 @@
       }
     },
     {
-      "raw_id": "88a8bb44c77ecce5c8",
-      "title": "Animal Husbandry: 30 लीटर तक दूध, लाखों में कीमत, आखिर क्यों ब्लैक गोल्ड कहलाती है Murrah Buffalo?",
-      "url": "https://theruralpress.in/2026/08/07/murrah-buffalo-price-milk-yield-identification/",
-      "summary": "Murrah Buffalo: मुर्रा भैंस भारत की सबसे लोकप्रिय और सबसे अधिक दूध देने वाली भैंसों की नस्लों में शामिल है। डेयरी उद्योग में इसे ब्लैक गोल्ड (काला सोना) कहा जाता है, क्योंकि यह अधिक दूध उत्पादन, उच्च फैट वाले दूध और बेहतर बाजार मूल्य के कारण पशुपालकों के लिए सबसे लाभदायक नस्ल मानी जाती है। […]",
-      "published_at": "Fri, 07 Aug 2026 07:34:43 +0000",
+      "raw_id": "2cacf57649c6bb1c8c",
+      "title": "NEET Counseling 2026: प्रथम चरण के लिए ऑनलाइन आवेदन शुरू, जानें महत्वपूर्ण तिथियां और प्रक्रिया",
+      "url": "https://theruralpress.in/2026/08/07/chhattisgarh-neet-ug-mbbs-bds-counseling-2026-online-application-process/",
+      "summary": "NEET Counseling: छत्तीसगढ़ के शासकीय एवं निजी चिकित्सा (MBBS) तथा दंत चिकित्सा (BDS) महाविद्यालयों में सत्र 2026-27 के लिए प्रवेश प्रक्रिया शुरू हो गई है। कार्यालय आयुक्त चिकित्सा शिक्षा, नवा रायपुर द्वारा स्नातक पाठ्यक्रमों में प्रवेश हेतु प्रथम चरण की ऑनलाइन काउंसलिंग के लिए सूचना जारी कर दी गई है। राज्य के मेडिकल कॉलेजों में […]",
+      "published_at": "Fri, 07 Aug 2026 12:04:36 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -331,11 +339,11 @@
       }
     },
     {
-      "raw_id": "6af4210f7c09d98569",
-      "title": "Railway: कतार से क्लिक तक, भारतीय रेलवे में यात्री आरक्षण प्रणाली के चार दशक और डिजिटल क्रांति",
-      "url": "https://theruralpress.in/2026/08/07/indian-railways-prs-4-decades-digital-transformation/",
-      "summary": "Railway: दुनिया की सबसे बड़ी सार्वजनिक परिवहन प्रणालियों में से एक, भारतीय रेलवे (IR) ने यात्री आरक्षण व्यवस्था को पूरी तरह से बदलकर रख दिया है। कभी लंबी-लंबी कतारों और मैन्युअल रजिस्टरों पर निर्भर रहने वाली रेलवे टिकटिंग व्यवस्था आज अत्याधुनिक डिजिटल तकनीक और क्लाउड इंफ्रास्ट्रक्चर के दम पर रफ्तार भर रही है। प्रत्येक आरक्षित […]",
-      "published_at": "Fri, 07 Aug 2026 07:24:57 +0000",
+      "raw_id": "4da365f329ac9f94c6",
+      "title": "Mahtari Vandan Yojana: छत्तीसगढ़ की महिलाओं के खाते में आए 630 करोड़, जानिए कब और कैसे मिलेगी अगली राशि",
+      "url": "https://theruralpress.in/2026/08/07/mahtari-vandan-yojana-30th-installment-chhattisgarh/",
+      "summary": "Mahtari Vandan Yojana: छत्तीसगढ़ सरकार ने महतारी वंदन योजना की 30वीं किस्त जारी कर दी है। मुख्यमंत्री विष्णु देव साय ने मुख्यमंत्री निवास से योजना की राशि जारी करते हुए 67 लाख 20 हजार 125 महिलाओं के बैंक खातों में डायरेक्ट बेनिफिट ट्रांसफर (DBT) के माध्यम से 630.55 करोड़ रुपये हस्तांतरित किए। मुख्यमंत्री ने कहा […]",
+      "published_at": "Fri, 07 Aug 2026 11:37:23 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -360,11 +368,11 @@
       }
     },
     {
-      "raw_id": "2ee75913a4b2cf9e5f",
-      "title": "Bilaspur: बिलासा एयरपोर्ट के नए टर्मिनल का रास्ता साफ, 6.50 करोड़ से बनेगा 22 हजार वर्गफुट डिपार्चर हॉल, टेंडर जारी",
-      "url": "https://theruralpress.in/2026/08/07/bilaspur-bilasa-airport-new-terminal-expansion-tender-6-crore/",
-      "summary": "New Terminal Built at Bilasa Airport: बिलासा देवी केवट एयरपोर्ट के विस्तार की मांग आखिरकार रंग लाई। लोक निर्माण विभाग ने टर्मिनल विस्तार के लिए 6.50 करोड़ रुपये की लागत का टेंडर जारी कर दिया है। ‘हवाई सुविधा जन संघर्ष समिति’ के अनुसार यह बिलासपुर की जनता के लंबे संघर्ष का नतीजा है। प्रस्तावित परियोजना […]",
-      "published_at": "Fri, 07 Aug 2026 06:34:35 +0000",
+      "raw_id": "bbedb463740f1f6fdd",
+      "title": "Monsoon Beauty Tips: मानसून से पहले ऐसे रखें स्किन और बालों का ख्याल, अपनाएं ये आसान टिप्स",
+      "url": "https://theruralpress.in/2026/08/07/monsoon-skin-hair-care-tips/",
+      "summary": "Monsoon Beauty Tips: मानसून का मौसम गर्मी से राहत देता है, लेकिन बढ़ती नमी, पसीने और गंदगी के कारण त्वचा और बालों से जुड़ी परेशानियां बढ़ सकती हैं। इस मौसम में पिंपल्स, ऑयली स्किन और फंगल इंफेक्शन की समस्या देखने को मिल सकती है। वहीं बालों में डैंड्रफ, हेयर फॉल और स्कैल्प इंफेक्शन भी परेशान […]",
+      "published_at": "Fri, 07 Aug 2026 11:20:04 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -389,11 +397,11 @@
       }
     },
     {
-      "raw_id": "81b4e1306056d07156",
-      "title": "Chhattisgarh Weather Alert: 16 जिलों में तेज आंधी और बिजली गिरने की चेतावनी, 40-60 किमी/घंटा की रफ्तार से चल सकती है हवा",
-      "url": "https://theruralpress.in/2026/08/07/chhattisgarh-weather-alert-rain-thunderstorm-lightning-warning/",
-      "summary": "Chhattisgarh Weather Alert: छत्तीसगढ़ में शुक्रवार दोपहर मौसम बदलने के संकेत मिले हैं। अगले 3 घंटे के लिए प्रदेश के कई जिलों में गरज-चमक, आकाशीय बिजली, तेज हवा और बारिश की संभावना जताई है। कुछ इलाकों में हवा की रफ्तार 40 से 60 किलोमीटर प्रति घंटा तक पहुंच सकती है। मौसम विभाग ने लोगों को […]",
-      "published_at": "Fri, 07 Aug 2026 06:21:57 +0000",
+      "raw_id": "5d76c072e8d2021cde",
+      "title": "Raipur News: VIP रोड पर मलबा फेंकने पर कारोबारी पर 25 हजार का जुर्माना",
+      "url": "https://theruralpress.in/2026/08/07/raipur-vip-road-debris-fine-municipal-corporation/",
+      "summary": "Raipur News: राजधानी रायपुर में सार्वजनिक स्थान पर निर्माण मलबा फेंकने के मामले में नगर निगम ने सख्त कार्रवाई की है। वीआईपी रोड स्थित बेबीलान टावर के पास मुख्य सड़क किनारे मलबा फेंके जाने की शिकायत सही पाए जाने पर नगर निगम के स्वास्थ्य विभाग ने कारोबारी जसवीर सिंह खनूजा पर 25 हजार रुपये का […]",
+      "published_at": "Fri, 07 Aug 2026 11:06:27 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -418,11 +426,11 @@
       }
     },
     {
-      "raw_id": "eccd4bf2e7cdc2fb9d",
-      "title": "Bofors Case: 40 साल तक चला बोफोर्स केस, सुप्रीम कोर्ट के एक फैसले से हमेशा के लिए खत्म हुआ मामला",
-      "url": "https://theruralpress.in/2026/08/07/bofors-case-supreme-court-final-verdict-2026/",
-      "summary": "Bofors Case: करीब 40 साल पुराने बोफोर्स घोटाले से जुड़े मामले में सुप्रीम कोर्ट ने गुरुवार को आखिरी लंबित याचिका भी खारिज कर दी। इसके साथ ही यह मामला पूरी तरह समाप्त हो गया। जस्टिस जेबी पारदीवाला और जस्टिस के. विनोद चंद्रन की बेंच ने कहा कि अब इस केस में आगे सुनवाई की आवश्यकता […]",
-      "published_at": "Fri, 07 Aug 2026 06:07:28 +0000",
+      "raw_id": "bba305f131e8cf9a71",
+      "title": "IAS Transfer 2026: सरकार ने किए 17 आईएएस और 7 एचसीएस अफसरों के तबादले",
+      "url": "https://theruralpress.in/2026/08/07/ias-hcs-transfer-2026-17-ias-7-hcs-officers/",
+      "summary": "IAS Transfer 2026: हरियाणा सरकार ने शुक्रवार को प्रशासनिक स्तर पर बड़ा बदलाव किया है। राज्य में 17 आईएएस और 7 एचसीएस अधिकारियों के तबादले किए गए हैं। इस संबंध में प्रशासन की ओर से आदेश जारी कर दिए गए हैं। तबादला सूची में कई वरिष्ठ अधिकारियों के नाम शामिल हैं। इनमें रजनी कांथन और […]",
+      "published_at": "Fri, 07 Aug 2026 10:44:56 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -447,11 +455,156 @@
       }
     },
     {
-      "raw_id": "da80b70c117a9563f5",
-      "title": "Durg: सिम लेते समय सावधान, आधार-बायोमेट्रिक का दुरुपयोग कर जारी हो रहा फर्जी सिम, युवती गिरफ्तार",
-      "url": "https://theruralpress.in/2026/08/07/durg-sim-card-fraud-aadhaar-biometric-misuse-nisha-sand-arrested/",
-      "summary": "Fraud Involving SIM Card: मोबाइल सिम खरीदते समय जरा सी लापरवाही आपको फ्रॉड में फंसा सकती है। दुर्ग पुलिस ने ऐसे ही एक मामले में कार्रवाई करते हुए भिलाई नगर की एक सिम विक्रेता युवती को गिरफ्तार किया है। आरोपी पर आधार कार्ड और बायोमेट्रिक का दुरुपयोग कर फर्जी सिम जारी करने का आरोप है। […]",
-      "published_at": "Fri, 07 Aug 2026 06:01:25 +0000",
+      "raw_id": "c30058c91ccbdd0d45",
+      "title": "After Jantar Mantar, what needs to change in education?",
+      "url": "https://www.thehindu.com/videos/webinars/after-jantar-mantar-what-needs-to-change-in-education/article71308826.ece",
+      "summary": "In light of the Jantar Mantar protest, the government has assured to fix paper leaks, but more needs to change in education for sustainable careers for the youth. The Hindu hosted a webinar, ‘After Jantar Mantar, what needs to change in education?’, on August 1, 2026.",
+      "published_at": "Wed, 05 Aug 2026 14:41:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/qcu3by/article71308831.ece/alternates/LANDSCAPE_1200/image%206.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "After Jantar Mantar, what needs to change in education?",
+          "url": "https://www.thehindu.com/education/after-jantar-mantar-what-needs-to-change-in-education/article71281155.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4a4025e966f659dfa7",
+      "title": "What does ‘mercurial’ mean?",
+      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
+      "summary": "",
+      "published_at": "Sun, 02 Aug 2026 23:30:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/702eqn/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "What does ‘unputdownable’ mean?",
+          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0953b37383d43b0616",
+      "title": "Thailand school shooting LIVE: At least 8 dead, including teen suspect’s grandparents",
+      "url": "https://www.thehindu.com/news/international/thailand-school-shooting-bang-kruai-district-nonthaburi-province-live-updates-august-7-2026/article71316225.ece",
+      "summary": "Thailand’s PM Anutin Charnvirakul offered his condolences and said he had ordered relevant officials to take care of the victims",
+      "published_at": "Fri, 07 Aug 2026 17:10:49 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Thailand shooting incident: Eight dead, including teen suspect’s grandparents",
+          "url": "https://www.thehindu.com/news/international/shooting-at-a-school-in-thailand-august-7-2026/article71316169.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "f514cb38b09a091d65",
+      "title": "Insurance Claim: जॉइंट बैंक अकाउंट वालों के लिए बड़ी राहत! एक खाताधारक की मौत पर मिलेगा पूरा बीमा क्लेम",
+      "url": "https://theruralpress.in/2026/08/07/insurance-claim-joint-bank-account-ncdrc-verdict/",
+      "summary": "Joint Bank Account Insurance Claim: राष्ट्रीय उपभोक्ता विवाद निवारण आयोग (NCDRC) ने संयुक्त बैंक खाते से जुड़े दुर्घटना बीमा दावों को लेकर अहम फैसला सुनाया है। आयोग ने कहा है कि यदि जॉइंट बैंक अकाउंट से दुर्घटना बीमा का प्रीमियम जमा किया गया है तो दुर्घटना में किसी भी एक खाताधारक की मृत्यु होने पर […]",
+      "published_at": "Fri, 07 Aug 2026 10:39:35 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -468,6 +621,126 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "da9b13667e10234f11",
+      "title": "Umar Ali’s parole : अतीक के बेटों को कोर्ट से बड़ी राहत, छोटे भाई के जनाजे में शामिल होने की मिली इजाजत",
+      "url": "https://theruralpress.in/2026/08/07/atiq-ahmed-sons-umar-ali-parole-allahabad-high-court/",
+      "summary": "Umar Ali’s parole: माफिया अतीक अहमद के बेटे मोहम्मद उमर और अली अहमद को इलाहाबाद हाईकोर्ट से बड़ी राहत मिली है। कोर्ट ने दोनों की पैरोल अर्जी मंजूर कर ली है। अब उमर और अली अपने छोटे भाई आबान के जनाजे और अंतिम संस्कार में शामिल हो सकेंगे। इलाहाबाद हाईकोर्ट ने पैरोल देते हुए कुछ […]",
+      "published_at": "Fri, 07 Aug 2026 10:33:26 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bf765af0f1723c58b8",
+      "title": "BOI Credit Officer Admit Card 2026 जारी, परीक्षा से पहले ये 5 चीजें जरूर जांच लें",
+      "url": "https://theruralpress.in/2026/08/07/boi-credit-officer-admit-card-2026-download-exam-date/",
+      "summary": "BOI Credit Officer Admit Card 2026: बैंक ऑफ इंडिया (BOI) ने Credit Officer Recruitment 2026 परीक्षा के लिए एडमिट कार्ड जारी कर दिया है। जिन उम्मीदवारों ने 779 क्रेडिट ऑफिसर पदों के लिए आवेदन किया था, वे अब बैंक की आधिकारिक वेबसाइट पर जाकर अपना हॉल टिकट डाउनलोड कर सकते हैं। एडमिट कार्ड डाउनलोड करने […]",
+      "published_at": "Fri, 07 Aug 2026 10:13:21 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "49b9d6da2ce950f0e5",
+      "title": "Supreme court upholds centre’s power to notify post-facto clearance",
+      "url": "https://india.mongabay.com/2026/08/supreme-court-upholds-centres-power-to-notify-post-facto-clearance/",
+      "summary": "The Supreme Court has struck down the centre’s 2021 Office Memorandum (OM) that created a mechanism for granting post facto environmental clearances to projects that violated prior environmental clearance norms. At the same time, it stated that the central government has the power to frame statutory amnesty schemes for specified categories of such violations under […]",
+      "published_at": "07 Aug 2026 16:28:40 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07135307/AP22207426732440-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "8497427b840bf4ebbb",
+      "title": "Heatwaves and lightning notified as national disasters, government says",
+      "url": "https://india.mongabay.com/short-article/2026/08/heatwaves-and-lightning-notified-as-national-disasters-government-says/",
+      "summary": "Heatwaves and lightning have officially been recognised as natural calamities eligible for relief under the State and National Disaster Response Funds, Union Minister of State in the Ministry of Home Affairs, Nityanand Rai, told Parliament on August 4. The decision to notify heatwaves and lightning as disasters follows the recommendations of the 16th Finance Commission, […]",
+      "published_at": "07 Aug 2026 16:16:18 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07152230/AP26196538423127-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -691,12 +964,12 @@
       }
     },
     {
-      "raw_id": "812a8cffcd173d634f",
-      "title": "Insects may be guiding seasonal bird movements in the eastern Himalayas, study finds",
-      "url": "https://india.mongabay.com/2026/07/insects-may-be-guiding-seasonal-bird-movements-in-the-eastern-himalayas-study-finds/",
-      "summary": "Every winter, in the Himalayas of Arunachal Pradesh, certain birds like babblers, laughing thrushes, yuhinas and other small mountain birds, that spent the warm months at the top of the mountains, begin making their way down. Many of them don’t really fly at all, they just hop, branch by branch, tree by tree, descending hundreds […]",
-      "published_at": "28 Jul 2026 10:45:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/28092911/image-1-768x512.jpg",
+      "raw_id": "48e920c033beda02d4",
+      "title": "The wild cat with a unique stripe pattern",
+      "url": "https://india.mongabay.com/short-article/2026/07/the-wild-cat-with-a-unique-stripe-pattern/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Tiger stripes are unique, like human fingerprints. No two tigers have the same stripes, a trait that helps researchers monitor the species’ population. In India — home to 75% of the world’s wild tigers — such monitoring plays a crucial role in conservation efforts. Tigers […]",
+      "published_at": "29 Jul 2026 15:38:48 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/29151106/tiger-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -715,72 +988,29 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
-      "raw_id": "4a4025e966f659dfa7",
-      "title": "What does ‘mercurial’ mean?",
-      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
-      "summary": "",
-      "published_at": "Sun, 02 Aug 2026 23:30:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/702eqn/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "What does ‘unputdownable’ mean?",
-          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "5713a527469a923a2e",
-      "title": "जांच आयोग की रिपोर्ट, संभल हिंसा साजिश, सांसद बर्क साजिशकर्ता",
-      "url": "https://hindi.newslaundry.com/2026/08/07/inquiry-commission-report-says-sambhal-violence-was-a-conspiracy-hatched-by-mp-barq-and-others",
-      "summary": "संभल हिंसा पर उत्तर प्रदेश सरकार के न्यायिक आयोग ने अपनी रिपोर्ट विधानसभा में पेश कर दी है. आयोग का सबसे बड़ा निष्कर्ष है कि 24 नवंबर 2024 की हिंसा अचानक नहीं भड़की बल्कि यह एक सुनियोजित साजिश और उकसावे का परिणाम थी. रिपोर्ट में सांसद जिया-उर-रहमान बर्क, स्थानीय विधायक इकबाल महमूद के पुत्र सुहेल इकबाल और जामा मस्जिद के सदर एडवोकेट जफर अली को कथित साजिश का हिस्सा बताया गया है. वहीं, आयोग ने जिला प्रशासन और पुलिस को लगभग पूरी तरह क्लीन चिट देते हुए कहा है कि उनके संयम और समय पर कार्रवाई से न सिर्फ शहर को सांप्रदायिक हिंसा से बचाया गया बल्कि मस्जिद का सर्वे करने आई टीम को भी सुरक्षित निकाला गया. आयोग का कहना है कि सांसद आदि राजनीतिक लोगों ने कथित तौर पर अदालत के आदेश पर हो रहे सर्वे की वास्तविक प्रकृति मुस्लिम समुदाय से छिपाई और भीड़ को उकसाया. आयोग ने हिंसा की वजह बताते हुए कहा कि 19 नवंबर को पहला सर्वे हुआ था. 19 से 24 नवंबर के बीच कथित तौर पर भीड़ जुटाने की तैयारी की गई. स्थानीय राजनीतिक तत्व, आपराधिक प्रवृत्ति के लोग और इंतजामिया कमेटी के सदस्यों ने मिलकर भीड़ को संगठित किया. आयोग का कहना है कि इसका उद्देश्य सांप्रदायिक माहौल बनाना और सरकार व प्रशासन को राष्ट्रीय और अंतरराष्ट्रीय स्तर पर बदनाम करना था. पुलिस और प्रशासन को क्लीन चिट रिपोर्ट में आयोग ने कहा कि जिला प्रशासन और पुलिस ",
-      "published_at": "Fri, 07 Aug 2026 08:55:00 +0000",
-      "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-07/flf3mvw5/AI-Sambhal-report.jpg",
+      "raw_id": "5badc8e60674f2cfb5",
+      "title": "Tamil Nadu CM Vijay's wife withdraws  divorce plea",
+      "url": "https://www.barandbench.com/news/tamil-nadu-cm-vijays-wife-withdraws-divorce-plea",
+      "summary": "Tamil Nadu Chief Minister C Joseph Vijay's wife Sangeetha Vijay has withdrawn the divorce plea filed by her before a Chengalpattu court earlier this year. The petition had been filed before the District Court at Chengalpattu under the Special Marriage Act, 1954, seeking divorce and maintenance alimony. Sangeetha had alleged the actor-turned-politician was involved in extra-marital relationship with an actress. However, she withdrew the petition on Friday. The couple had registered their marriage in the United Kingdom on July 10, 1998 and later also solemnised it in Chennai on August 25, 1999, in accordance with Hindu rites. Apart from dissolution of marriage, Sangeetha had sought the right to reside in the matrimonial home until final disposal of the case or provision of alternate accommodation and permanent alimony commensurate with Vijay’s income",
+      "published_at": "Fri, 07 Aug 2026 18:21:58 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-02-28/dldotir0/ViewPoint-MIddle-Single-Image-dfcopy.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -796,20 +1026,20 @@
       }
     },
     {
-      "raw_id": "984ad0fb43f0c8ff05",
-      "title": "Letter To Ms Tehelka-Assault-Victim",
-      "url": "https://www.newslaundry.com/2014/02/14/letter-toms-tehelka-assault-victim",
-      "summary": "Read Revati Laul’s response to this piece: A friend of the victim of alleged sexual assault by Tarun Tejpal responds . Dear Ms Tehelka-Assault-Victim, Now that the melee around your case has cooled, and our rabidly reactionary media has chosen other issues to target, this may be the right time to open up the case again to some questions – this time directed at you. To begin with, I would like to establish quite clearly that I do not see you as a victim, unless it is of bubblegum feminism which I will speak in detail of later. Neither is my heart bleeding for Tarun Tejpal. After all, he in all his wisdom chose to hire you – and chose to travel with you in that lift. Yet, in all fairness, in the one-way fury that had been unleashed on him in response to this incident he has become the victim, not you. But my concern for Tejpal’s victimisation is not personal, it has much wider ramifications. You may agree that there are plenty of really nice guys around in our cities who do not enjoy taking advantage of women.Who, like Tejpal, do not hail from pedigreed families, and like him cannot, through traditional political clout or monetary brawn, buy immunity from our wag the dog media or the",
-      "published_at": "Fri, 14 Feb 2014 14:01:31 +0000",
-      "image_url": "https://cf-images.assettype.com/newslaundry/import/2014/02/article-img_-5.jpg",
+      "raw_id": "2fd8e2074ec5bcce6e",
+      "title": "Renukaswamy murder: Actor Darshan’s aides seek pardon to turn approvers before trial court",
+      "url": "https://www.barandbench.com/news/litigation/renukaswamy-murder-actor-darshans-aides-seek-pardon-to-turn-approvers-before-trial-court",
+      "summary": "Two men accused in the Renukaswamy murder case have moved applications before a Bengaluru sessions court seeking pardon under the law so that they can turn approvers and support the prosecution. The applications have been moved by Vinay V (accused no.10) and Pradosh S Rao @ Pradosh (accused no.14), both considered close associates of Kannada actor Darshan, the prime accused in the case. The applications were filed on August 5 before the Court of the 58th Additional City Civil and Sessions Court presided over by Judge Sujata Madivalappa Sambrani. The court has reserved its orders on the applicants' right of audience and posted the matter for orders on August 10, 2026. Sujata Madiwalappa Sambrani In their applications, the accused state that they are willing to make a \"full and true disclosure\" of all facts within their knowledge concerning the offence and the role of every person involved. They contend that their testimony would substantially assist the prosecution in establishing the case. In his application, Pradosh has claimed that he repeatedly tried to stop Darshan and others accused in the Renukaswamy murder case. 33-year-old Renukaswamy's dead body was found on June 9, 2024. ",
+      "published_at": "Fri, 07 Aug 2026 16:45:46 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-11/c05a7322-48d6-4b3c-ae9e-9abd8b4a436c/06.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -817,6 +1047,200 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "8c88e9d4d4f0a4710b",
+      "title": "Bombay High Court sentences Tarun Tejpal to 10 years in jail in 2013 rape case",
+      "url": "https://www.barandbench.com/news/bombay-high-court-sentences-tarun-tejpal-to-10-years-in-jail-in-2013-rape-case",
+      "summary": "The Bombay High Court on Thursday sentenced former Tehelka editor Tarun Tejpal to ten years in jail in a 2013 rape case [State of Goa v. Tarunjit Tejpal & Anr]. A division bench of Justices Neela Gokhale and Amit Jamsandekar also imposed a fine of more than ₹10 lakh on Tejpal. \"The court should consider the fact that there was no remorse and offence was repeated despite a no from the victim,\" the Bench recorded the State's submission. It also took into account the mitigating factors before handing down the 10-year-jail sentence. \"The incident took place 13 yrs ago. There is no report of misconduct or allegation. Both parties must have moved on in life,\" the Court said. He was granted two weeks to surrender before jail authorities. The Court pronounced the sentence on an appeal filed by State of Goa in 2022. The High Court had earlier overturned his acquittal by the trial court and found him guilty of rape and sexual harassment under the Indian Penal Code (IPC). It then heard him on sentencing before pronouncing its verdict at 2.30 pm on Thursday. The following are the sentences imposed on him for various offences: - for Section 376(2)(f) - rigorous imprisonment of 10 years and ₹5 l",
+      "published_at": "Thu, 06 Aug 2026 14:42:59 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-05/020e35b3-a1be-49ad-8e09-70ad0cbd1f32/WhatsApp_Image_2021_05_19_at_10_02_12_AM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "8c4db72955b21197ed",
+      "title": "Lakhimpur Kheri violence: Supreme Court refuses to relax Ashish Mishra's bail terms",
+      "url": "https://www.barandbench.com/news/lakhimpur-kheri-violence-supreme-court-refuses-to-relax-ashish-mishras-bail-terms",
+      "summary": "The Supreme Court on Thursday refused to further relax the bail conditions imposed on Ashish Mishra, the prime accused in the 2021 Lakhimpur Kheri violence case [ Ashish Mishra Alias Monu vs State of UP ]. Mishra's counsel today told the Court that the bail terms imposed on him, which included travel restrictions, prevented him from attending family functions, including his daughter's birthday celebrations. A Bench of Chief Justice of India Surya Kant , Justice Joymalya Bagchi and Justice V Mohana , however, found no ground to entertain the prayer to further relax Mishra's bail conditions for the present. \"There is no ground to entertain this prayer at this stage,\" the Court said in its order dismissing Mishra's application. Justice Joymalya Bagchi, CJI Surya Kant and Justice V Mohana Ashish Mishra, son of former Union Minister of State for Home Affairs Ajay Kumar Mishra (Teni), is the main accused in the 2021 Lakhimpur Kheri violence case. The case concerns the events of October 3, 2021 at Lakhimpur Kheri, where eight people, including four farmers and a journalist, were killed after vehicles that were linked to Ashish Mishra drove into a crowd protesting the since-revoked farm la",
+      "published_at": "Thu, 06 Aug 2026 12:00:30 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/547c24a1-0ed2-4fe3-b904-365b014feb54/WhatsApp_Image_2021_10_09_at_11_35_58_PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "a95c5913b710df9b17",
+      "title": "Bombay High Court overturns Tarun Tejpal acquittal in sexual assault case; convicts him for rape",
+      "url": "https://www.barandbench.com/news/litigation/bombay-high-court-overturns-tarun-tejpal-acquittal-in-sexual-assault-case-convicts-him-for-rape",
+      "summary": "The Bombay High Court on August 6 reversed the acquittal of former Tehelka editor Tarun Tejpal in the 2013 sexual assault case and declared him guilty. [State of Goa v. Tarunjit Tejpal & Anr]. A division bench of Justices Neela Gokhale and Amit Jamsandekar pronounced the verdict on the appeal filed by State of Goa in 2022. \"We have set aside the judgment and order and convicted Tejpal. We have convicted him under sections 376(2)(f) and (k), 354A, 354B of Indian Penal Code (IPC), \" the Bench said. He was also convicted for offences under Section 354, 341 and 342 of IPC. Section 376(2)(f) criminalises rape by a relative, guardian or teacher or a person in a position of trust or authority towards the woman. Section 376(2)(k) criminalises rape by a man in a position of control or dominance over a woman. Section 341 criminalises wrongful restraint while Section 342 criminalises wrongful confinement. Section 354 criminalises assault or criminal force to woman with intent to outrage her modesty. Section 354A criminalises sexual harassment which could be physical contact and advances involving unwelcome and explicit sexual overtures or a demand or request for sexual favours. Section 354B c",
+      "published_at": "Thu, 06 Aug 2026 10:59:39 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-06/9f1ztzl0/WhatsApp-Image-2026-08-05-at-20.51.21.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "e4163aa14c0b380872",
+      "title": "हरि शंकरी अभियान: महोबा में एक साथ लगाए गए पीपल, बरगद और पाकड़ के पौधे",
+      "url": "https://khabarlahariya.org/hari-shankari-campaign-peepal-banyan-and-pakad-saplings-planted-simultaneously-in-mahoba/",
+      "summary": "महानगरों से लेकर गांवों तक बढ़ते प्रदूषण और घटती हरियाली के बीच उत्तर प्रदेश के महोबा जिले के कुलपहाड़ में हरि शंकरी अभियान के तहत पीपल, बरगद और पाकड़ के…",
+      "published_at": "Fri, 07 Aug 2026 12:00:06 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "a33b3895e024055b4c",
+      "title": "मुद्दे की बात: पूर्व विधायक RD प्रजापति ने कहा “मैं आरक्षण का विरोधी हूँ मगर वन एजुकेशन लाया जाए”",
+      "url": "https://khabarlahariya.org/the-bottom-line-former-mla-rd-prajapati-said-i-am-opposed-to-reservation-but-a-one-education-system-should-be-introduced/",
+      "summary": "चंदला (मध्य प्रदेश) के पूर्व विधायक और भाजपा के पूर्व नेता आर.डी. प्रजापति आज भाजपा से इतने नाराज़ क्यों हैं? कभी समाजवादी पार्टी से जुड़े रहे प्रजापति अब संपूर्ण बुंदेलखंड…",
+      "published_at": "Fri, 07 Aug 2026 10:00:31 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9ef8f24b7a6fd18e29",
+      "title": "Atiq Ahmed: अतीक अहमद के बेटे आबान की मौत कैसे हुई, कौन हैं अतीक अहमद और क्या है पूरा मामला",
+      "url": "https://khabarlahariya.org/atiq-ahmed-how-did-atiq-ahmeds-son-aban-die-who-is-atiq-ahmed-and-what-is-the-entire-case-about/",
+      "summary": "उत्तर प्रदेश के चर्चित नाम अतीक अहमद के सबसे छोटे बेटे अबान (21 वर्ष) की सड़क हादसे में मौत हो गई है। जानकारी के मुताबिक यह हादसा कानपुर-झांसी हाइवे पर…",
+      "published_at": "Fri, 07 Aug 2026 09:27:12 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -830,354 +1254,6 @@
       "url": "https://khabarlahariya.org/womens-asia-cup-2026-schedule-schedule-announced-for-the-womens-asia-cup-2026-find-out-when-and-where-the-matches-will-take-place/",
       "summary": "अक्सर क्रिकेट फैंस को भारत-पाकिस्तान (India vs Pakistan) के बीच होने वाले मैच का इंतजार रहता है। चाहे पुरुष क्रिकेट हो या महिला क्रिकेट, दोनों टीमों के मुकाबले को देखने…",
       "published_at": "Fri, 07 Aug 2026 08:35:41 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b2aac1500543894616",
-      "title": "India vs Sri Lanka Test Series: 15 अगस्त की भारत बनाम श्रीलंका टेस्ट सीरीज से पहले कैसी है टीम इंडिया की तैयारी?",
-      "url": "https://khabarlahariya.org/india-vs-sri-lanka-test-series-how-is-team-india-preparing-ahead-of-the-india-vs-sri-lanka-test-series-starting-on-august-15/",
-      "summary": "आज शुक्रवार, 7 अगस्त 2026 को भारत और श्रीलंका इलेवन के बीच तीन दिवसीय प्रैक्टिस मैच की शुरुआत कोलंबो में हुई। यह मुकाबला 15 अगस्त से शुरू होने वाली भारत-श्रीलंका…",
-      "published_at": "Fri, 07 Aug 2026 07:38:56 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "345dd3cc7396805fbc",
-      "title": "UP/Chitrakoot: निशुल्क स्वास्थ्य शिविर, सैकड़ों लोगों ने कराई जांच",
-      "url": "https://khabarlahariya.org/up-chitrakoot-free-health-camp-hundreds-underwent-check-ups/",
-      "summary": "जिला चित्रकूट के कर्वी ब्लॉक के लोढ़वारा में सेवा भारती उत्तर प्रदेश द्वारा नि:शुल्क स्वास्थ्य जांच एवं उपचार शिविर का आयोजन किया गया। शिविर में बड़ी संख्या में ग्रामीण पहुंचे…",
-      "published_at": "Fri, 07 Aug 2026 05:00:58 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "45a8dda1f608bf57b5",
-      "title": "Weather Update: दिल्ली, उत्तर प्रदेश, बिहार, मध्य प्रदेश समेत करीब 12 राज्यों में भारी बारिश, जानें कब तक रहेगा ऐसा मौसम",
-      "url": "https://khabarlahariya.org/weather-update-heavy-rain-in-around-12-states-including-delhi-uttar-pradesh-bihar-and-madhya-pradesh-find-out-how-long-these-weather-conditions-will-persist/",
-      "summary": "देश के कई हिस्सों में मानसून ने तेजी पकड़ ली है। दिल्ली, उत्तर प्रदेश, बिहार, एमपी समेत करीब 12 राज्यों में आज 6 अगस्त को भारी बारिश हो रही है।…",
-      "published_at": "Thu, 06 Aug 2026 08:54:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ab26c80654b1698b15",
-      "title": "MP में ITI निजीकरण का विरोध जारी, झारखंड से लेकर राजस्थान तक शिक्षा के लिए सड़कों पर उतरे छात्र",
-      "url": "https://khabarlahariya.org/opposition-to-iti-privatization-continues-in-mp-students-from-jharkhand-to-rajasthan-take-to-the-streets-for-the-cause-of-education/",
-      "summary": "मध्य प्रदेश सरकार द्वारा प्रदेश के 16 शासकीय औद्यिगिक प्रशिक्षण संस्थानों आईटीआई (ITI) को निजी संस्थाओं को सौंपने या पीपीपी (पब्लिक-प्राइवेट पार्टनरशिप) मोड़ पर संचालित करने की प्रक्रिया व योजना…",
-      "published_at": "Thu, 06 Aug 2026 08:23:45 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "3e6dd3e8647a2dfe06",
-      "title": "UP/Mahoba: हाथ-पैर बांध किशोरी से जंगल में सामूहिक दुष्कर्म का आरोप, एक गिरफ्तार",
-      "url": "https://khabarlahariya.org/up-mahoba-allegation-of-gang-rape-of-a-teenage-girl-in-the-forest-after-tying-her-hands-and-feet-one-arrested/",
-      "summary": "उत्तर प्रदेश के महोबा जिले के कुलपहाड़ कोतवाली क्षेत्र से एक गंभीर मामला सामने आया है। लड़की का आरोप है कि उसे शादी का झांसा देकर बुलाया गया और जंगल…",
-      "published_at": "Thu, 06 Aug 2026 05:00:20 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5b4b8e286b804c67a1",
-      "title": "यूपी में 15,613 आंगनबाड़ी सरकारी स्कूलों में शिफ्ट होंगे, 15 अगस्त तक पूरा किया जाएगा अभियान",
-      "url": "https://khabarlahariya.org/in-up-15613-anganwadis-will-be-shifted-to-government-schools-the-campaign-will-be-completed-by-august-15/",
-      "summary": "यूपी में आंगनबाड़ी को लेकर एक अपडेट आया है। सरकारी स्कूलों के पास चल रहे…",
-      "published_at": "Wed, 05 Aug 2026 09:57:32 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "52dcd6973298dc0007",
-      "title": "2306 पदों पर सरकारी भर्ती का ऐलान, पटवारी के 200 पद, 18 अगस्त तक कर सकते हैं आवेदन",
-      "url": "https://khabarlahariya.org/government-recruitment-announced-for-2306-posts-including-200-patwari-positions-applications-open-until-august-18/",
-      "summary": "मध्य प्रदेश में सरकारी नौकरी की तैयारी कर रहे उनके लिए एक बड़ी खबर आई है। मध्य प्रदेश कर्मचारी चयन मंडल (MPESB) द्वारा ग्रुप- 2 उपसमूह-4 संयुक्त भर्ती परीक्षा 2026…",
-      "published_at": "Wed, 05 Aug 2026 08:30:26 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c7369465bab752d4cd",
-      "title": "Bihar News: मसौढ़ी के वार्ड-1 में तीन साल से नल का कनेक्शन, लेकिन एक बूंद पानी नहीं",
-      "url": "https://khabarlahariya.org/bihar-news-tap-connection-in-masaurhis-ward-1-for-three-years-but-not-a-single-drop-of-water/",
-      "summary": "पटना जिले के मसौढ़ी नगर परिषद के वार्ड संख्या-1 में वर्ष 2023 में हर घर नल जल योजना के तहत घर-घर कनेक्शन दिया गया था। लेकिन तीन साल बीत जाने…",
-      "published_at": "Wed, 05 Aug 2026 07:38:25 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2d2e9ba0d69a4435a4",
-      "title": "Patna News: 20 साल से अधूरी पड़ी सड़क, आज भी कीचड़ में जीने को मजबूर गांव",
-      "url": "https://khabarlahariya.org/patna-news-road-project-incomplete-for-20-years-village-still-forced-to-live-amidst-mud/",
-      "summary": "लगभग एक हज़ार की आबादी वाले पटना के बुधगवान गाँव में पिछले बीस साल से सड़क निर्माण का काम अधूरा है. यहां के निवासियों का कहना है की पंचायत मुखिया…",
-      "published_at": "Wed, 05 Aug 2026 05:00:41 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "4e7949156acd04b381",
-      "title": "Ground Report: सदर चुनाव छतरपुर, जिस चुनाव में महिलाओं को वोट देने का अधिकार नहीं",
-      "url": "https://khabarlahariya.org/ground-report-chhatarpur-sadar-election-an-election-where-women-do-not-have-the-right-to-vote/",
-      "summary": "मध्य प्रदेश के छतरपुर में मुस्लिम समाज के सदर चुनाव को लेकर लैंगिक समानता और महिलाओं के लोकतांत्रिक अधिकारों पर एक बार फिर से बहस तेज हो गई है। 4…",
-      "published_at": "Tue, 04 Aug 2026 14:50:05 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "91edc3695f0bf2b751",
-      "title": "India vs Sri Lanka Test series: श्रीलंका टेस्ट सीरीज से बाहर हुए जसप्रीत बुमराह (Jasprit Bumrah), जम्मू-कश्मीर के औकिब नबी (Auqib Nabi) को पहली बार मिला टीम इंडिया में मौका",
-      "url": "https://khabarlahariya.org/india-vs-sri-lanka-test-series-jasprit-bumrah-ruled-out-of-the-sri-lanka-test-series-jammu-kashmirs-auqib-nabi-gets-his-maiden-call-up-to-team-india/",
-      "summary": "भारतीय क्रिकेट टीम को श्रीलंका के खिलाफ 15 अगस्त से शुरू होने वाली टेस्ट सीरीज से पहले बड़ा झटका लगा है। तेज़ गेंदबाज़ जसप्रीत बुमराह चोट के कारण पूरी तरह…",
-      "published_at": "Tue, 04 Aug 2026 09:01:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e4eec062bd7a76580b",
-      "title": "वाराणसी: बिजली के खंभे में दौड़ा करंट, 60 वर्षीय महिला की मौके पर मौत",
-      "url": "https://khabarlahariya.org/varanasi-electrocuted-by-live-power-pole-60-year-old-woman-dies-on-the-spot/",
-      "summary": "वाराणसी जिले के चौबेपुर थाना क्षेत्र के बहरामपुर गांव में एक दर्दनाक हादसा सामने आया। परिवार के अनुसार 60 वर्षीय मुन्नी देवी सुबह करीब 8 बजे बच्चों को लेकर जा…",
-      "published_at": "Tue, 04 Aug 2026 05:00:51 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

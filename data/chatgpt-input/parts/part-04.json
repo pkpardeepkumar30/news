@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-08T09:08:10.714627+00:00",
-  "input_count": 446,
+  "prepared_at": "2026-08-08T13:19:18.113765+00:00",
+  "input_count": 437,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 130,
-    "established_or_other": 70,
+    "independent_social": 121,
+    "established_or_other": 79,
     "independent_social_majority_required": true
   },
   "part": 4,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "e7bde7b5a626319441",
+      "title": "Naya Mandir? 🤣",
+      "url": "https://www.youtube.com/shorts/pCt_DrYPfGI",
+      "summary": "",
+      "published_at": "2026-07-31T10:00:14+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "d878f95d210b29c079",
       "title": "Just GenZ Thing 😂",
@@ -41,30 +70,59 @@
       }
     },
     {
-      "raw_id": "4e6ed25054eca8b2df",
-      "title": "Genz’s are unstoppable 🤣",
-      "url": "https://www.youtube.com/shorts/kIg7Mm5cHPY",
-      "summary": "",
-      "published_at": "2026-07-27T09:16:26+00:00",
+      "raw_id": "41d3fc3c08e4f16dfb",
+      "title": "545 trees felled for Shillong Peak Ropeway; water sources safe: Govt",
+      "url": "https://eastmojo.com/meghalaya/2026/08/08/545-trees-felled-for-shillong-peak-ropeway-water-sources-safe-govt/",
+      "summary": "Shillong: As many as 545 trees have been felled for the construction of the Shillong Peak Ropeway Project, with the Meghalaya government maintaining that the project alignment has been kept away from key catchment areas and will not affect the Patakhana and Wahingdoh water sources. The disclosure was made during a meeting and site inspection held on […] The post 545 trees felled for Shillong Peak Ropeway; water sources safe: Govt appeared first on EastMojo .",
+      "published_at": "Sat, 08 Aug 2026 11:42:29 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "a8c4c1cd6791d081b7",
+      "title": "Manipur’s Ariha Pangambam wins India’s first Gold at Asian Aerobic Gymnastics",
+      "url": "https://eastmojo.com/manipur/2026/08/08/manipurs-ariha-pangambam-wins-indias-first-gold-at-asian-aerobic-gymnastics/",
+      "summary": "Imphal: Ariha Pangambam from Manipur has etched history by becoming the first-ever Indian to win an individual Gold medal at the 2026 Senior Women’s Aerobic Gymnastics Asian Championships in Tagaytay City, Philippines. The 22-year-old Indian gymnast delivered a brilliant performance, scoring 19.10 points to clinch the historic title. Her landmark achievement adds another milestone to Manipur’s […] The post Manipur’s Ariha Pangambam wins India’s first Gold at Asian Aerobic Gymnastics appeared first on EastMojo .",
+      "published_at": "Sat, 08 Aug 2026 11:22:05 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
@@ -157,11 +215,11 @@
       }
     },
     {
-      "raw_id": "facfc32e08f8b64d66",
-      "title": "पहले Hello, फिर 28 हजार रुपये की मांग, पूर्व विधायक का WhatsApp हैक",
-      "url": "https://theruralpress.in/2026/08/08/first-a-hello-then-a-demand-for-%e2%82%b928000-former-mlas-whatsapp-hacked/",
-      "summary": "Brihaspati Singh WhatsApp Hack: कांग्रेस के पूर्व विधायक बृहस्पति सिंह का व्हाट्सएप अकाउंट हैक होने का मामला सामने आया है। हैकर उनके नाम और नंबर से परिचितों व समर्थकों को मैसेज भेजकर UPI के जरिए 28 हजार रुपये मांग रहा है। रकम रात 8 बजे तक वापस करने का भरोसा भी दिया जा रहा है। […]",
-      "published_at": "Sat, 08 Aug 2026 06:34:13 +0000",
+      "raw_id": "a27429a2ebd2b7a761",
+      "title": "CG News: सर्वाइकल कैंसर के खिलाफ HPV टीकाकरण अभियान, कितने लाख युवतियों को लगा टीका जानें",
+      "url": "https://theruralpress.in/2026/08/08/chhattisgarh-hpv-vaccination-campaign-cervical-cancer-prevention-korea-balrampur/",
+      "summary": "HPV Vaccination: प्रदेश में 14 वर्षीय बालिकाओं को सर्वाइकल कैंसर जैसी जानलेवा बीमारी से सुरक्षित रखने के लिए संचालित एचपीवी (ह्यूमन पैपिलोमा वायरस) टीकाकरण अभियान तेजी से सफलता की ओर बढ़ रहा है। राज्य सरकार और स्वास्थ्य विभाग के समन्वय से अब तक 1.66 लाख से अधिक पात्र बालिकाओं को एचपीवी की खुराक दी जा […]",
+      "published_at": "Sat, 08 Aug 2026 11:13:02 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -186,11 +244,11 @@
       }
     },
     {
-      "raw_id": "ca9401b02c866cef1c",
-      "title": "CSPGCL Recruitment: छत्तीसगढ़ में बिजली विभाग में निकली सबसे बड़ी भर्ती! 1235 पदों का विज्ञापन जारी, देखें पूरी डिटेल",
-      "url": "https://theruralpress.in/2026/08/08/chhattisgarh-power-company-recruitment-1235-posts/",
-      "summary": "CSPGCL Recruitment: छत्तीसगढ़ में बिजली कंपनियों में बड़े पैमाने पर भर्ती का रास्ता साफ हो गया है। मुख्यमंत्री विष्णुदेव साय के निर्देश पर स्टेट पावर कंपनी की जनरेशन, ट्रांसमिशन और डिस्ट्रीब्यूशन कंपनियों में कुल 1235 पदों पर भर्ती के लिए आधिकारिक विज्ञापन जारी कर दिया गया है। इसे राज्य गठन के बाद बिजली कंपनियों में […]",
-      "published_at": "Sat, 08 Aug 2026 06:11:54 +0000",
+      "raw_id": "cd1a2129eb2d53ded9",
+      "title": "PM Modi: मैं तो बाबा बागेश्वर नहीं हूं, IIT दिल्ली के दीक्षांत समारोह में बोले PM मोदी, लगे ठहाके",
+      "url": "https://theruralpress.in/2026/08/08/pm-modi-iit-delhi-convocation-baba-bageshwar-remark-ai-initiatives/",
+      "summary": "PM Modi : प्रधानमंत्री नरेंद्र मोदी ने आईआईटी (IIT) दिल्ली के 57वें दीक्षांत समारोह में शिरकत की और डिग्री हासिल करने वाले सभी छात्र-छात्राओं को उनकी नई शुरुआत के लिए बधाई दी। अपने संबोधन के दौरान पीएम मोदी ने न केवल छात्रों के सुनहरे भविष्य की कामना की, बल्कि अपने हल्के-फुल्के अंदाज से पूरे सभागार […]",
+      "published_at": "Sat, 08 Aug 2026 10:49:15 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -215,11 +273,11 @@
       }
     },
     {
-      "raw_id": "777e657a1ae547812f",
-      "title": "Painkiller Side Effects: दर्द होते ही पेनकिलर लेते हैं? ये 5 गलतियां शरीर पर पड़ सकती हैं भारी",
-      "url": "https://theruralpress.in/2026/08/08/painkiller-mistakes-side-effects-over-the-counter-medicine/",
-      "summary": "Painkiller Side Effects: सिरदर्द, गर्दन, पेट या पैर में हल्का दर्द होते ही कई लोग तुरंत पेनकिलर ले लेते हैं। ओवर द काउंटर मिलने वाली दवाओं ने यह काम और आसान कर दिया है। लेकिन दर्द के लिए बार-बार या गलत तरीके से पेनकिलर लेना परेशानी बढ़ा सकता है। खासकर तब, जब दवा का चुनाव, […]",
-      "published_at": "Sat, 08 Aug 2026 06:09:45 +0000",
+      "raw_id": "740e2cd96c4db45ff4",
+      "title": "Agriculture Tips: एक खेत में उगाई इतनी फसलें कि सालभर हुई कमाई, जशपुर के किसान की कहानी",
+      "url": "https://theruralpress.in/2026/08/08/agriculture-tips-jashpur-farmer-anarnath-say-horticulture-success/",
+      "summary": "Agriculture Tips: जशपुर जिले के ग्राम पतराटोली के किसान अनारथ साय ने संरक्षित खेती, उद्यानिकी और फसल विविधीकरण को अपनाकर खेती को आत्मनिर्भरता का आधार बनाया है। वे शेडनेट हाउस में ग्राफ्टेड टमाटर की खेती के साथ ऑयल पाम, आम, लीची, स्ट्रॉबेरी और फूलगोभी का उत्पादन कर रहे हैं। राष्ट्रीय बागवानी मिशन के तहत उन्हें […]",
+      "published_at": "Sat, 08 Aug 2026 10:43:42 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -244,11 +302,11 @@
       }
     },
     {
-      "raw_id": "8d75a680528eb18519",
-      "title": "Bastar Development: CAMPA मद से बदलेगी बस्तर की तस्वीर, नक्सल प्रभावित गांवों में बनेंगी सड़कें और पुल",
-      "url": "https://theruralpress.in/2026/08/08/chhattisgarh-bastar-development-naxal-areas-roads-bridges-713-crore-campa/",
-      "summary": "Bastar Development: बस्तर के नक्सल प्रभावित इलाकों में अब विकास की रफ्तार तेज करने की तैयारी है। जंगलों में बसे जिन गांवों तक नक्सलियों की मौजूदगी और उनके खौफ के कारण सड़कें, पुल-पुलिया और सरकारी भवन नहीं बन पाते थे, वहां अब बुनियादी सुविधाओं से जुड़े काम शुरू हो रहे हैं। मुख्य सचिव विकासशील की […]",
-      "published_at": "Sat, 08 Aug 2026 05:59:33 +0000",
+      "raw_id": "4eab9aa5935263d0e5",
+      "title": "MP News: Instagram पर थाईलैंड ट्रिप का ऑफर पड़ा भारी, युवती से हजारों रुपये की ठगी",
+      "url": "https://theruralpress.in/2026/08/08/mp-indore-instagram-thailand-trip-fraud-43-thousand/",
+      "summary": "Indore Cyber Fraud: एरोड्रम क्षेत्र की एक युवती को Instagram पर थाईलैंड ट्रिप का विज्ञापन देखकर बुकिंग करना महंगा पड़ गया। आरोप है कि साइबर ठगों ने कम कीमत में फुकेट ट्रिप और IndiGo के साथ कथित कोलैबोरेशन का भरोसा देकर युवती से करीब 43 हजार रुपये ट्रांसफर करा लिए। 6 जुलाई को जब युवती […]",
+      "published_at": "Sat, 08 Aug 2026 10:42:42 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -273,11 +331,11 @@
       }
     },
     {
-      "raw_id": "9579d6cbc25b594625",
-      "title": "Meta Fine: बच्चों को सोशल मीडिया की लत लगाना मेटा को पड़ा भारी, कोर्ट ने ठोका 5400 करोड़ का जुर्माना",
-      "url": "https://theruralpress.in/2026/08/08/meta-fine-social-media-addiction-children-mental-health/",
-      "summary": "Meta Fine: बच्चों और किशोरों की मानसिक सेहत पर सोशल मीडिया के असर को लेकर मेटा पर बड़ी कार्रवाई हुई है। न्यू मैक्सिको की एक अदालत ने मेटा पर 5400 करोड़ रुपये का जुर्माना लगाया है। कोर्ट ने कहा कि मेटा ने ऐसे फीचर विकसित किए, जो बच्चों और किशोरों को लंबे समय तक सोशल […]",
-      "published_at": "Sat, 08 Aug 2026 05:52:04 +0000",
+      "raw_id": "6577fdeabdd56016f6",
+      "title": "Laughing Buddha Vastu: लाफिंग बुद्धा घर में कहां रखें? दिशा से जुड़ी ये बातें जानें",
+      "url": "https://theruralpress.in/2026/08/08/laughing-buddha-vastu-right-placement-at-home/",
+      "summary": "Laughing Buddha Vastu: लाफिंग बुद्धा की मूर्ति को फेंगशुई और वास्तु की मान्यताओं में सुख, शांति, समृद्धि और सकारात्मक ऊर्जा का प्रतीक माना जाता है। घर, ऑफिस और दुकान में इसे रखने को लेकर अलग-अलग मान्यताएं हैं। मूर्ति का स्वरूप और उसे रखने की जगह भी इसके अर्थ से जोड़ी जाती है। हालांकि, ये बातें […]",
+      "published_at": "Sat, 08 Aug 2026 09:57:20 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -302,11 +360,11 @@
       }
     },
     {
-      "raw_id": "09d02c0054562ab98e",
-      "title": "Gold Silver Price Today: सोना-चांदी खरीदने वालों के लिए बड़ा अपडेट, एक दिन में इतना बढ़ गया भाव",
-      "url": "https://theruralpress.in/2026/08/08/gold-silver-price-today-mcx-gold-silver-rate-august-7-2026/",
-      "summary": "Gold Silver Price Today: सोने-चांदी की कीमतों में शुक्रवार, 7 अगस्त को जोरदार तेजी देखने को मिली। अंतरराष्ट्रीय बाजार में सोना 4,400 डॉलर प्रति औंस और चांदी 65 डॉलर प्रति औंस के पार पहुंच गई। इसका असर भारतीय बाजार पर भी दिखा। मल्टी कमोडिटी एक्सचेंज (MCX) पर सोना 3,722 रुपये और चांदी 9,644 रुपये तक […]",
-      "published_at": "Sat, 08 Aug 2026 05:03:14 +0000",
+      "raw_id": "505bef9f3140c83707",
+      "title": "RBI New Rules: EMI नहीं भरी तो मोबाइल कब होगा लॉक? RBI के नए नियम जानकर चौंक जाएंगे",
+      "url": "https://theruralpress.in/2026/08/08/rbi-new-rules-emi-default-mobile-laptop-device-lock/",
+      "summary": "RBI Loan Recovery Rules: भारतीय रिजर्व बैंक (RBI) ने लोन पर खरीदे गए मोबाइल, लैपटॉप और टैबलेट जैसे गैजेट्स की रिकवरी को लेकर सख्त दिशा-निर्देश तय किए हैं। नए नियमों के तहत EMI चूकते ही बैंक या फाइनेंस कंपनी डिवाइस को तुरंत रिमोटली लॉक नहीं कर सकेगी। डिवाइस पर पाबंदी लगाने से पहले ग्राहक को […]",
+      "published_at": "Sat, 08 Aug 2026 09:49:39 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -331,11 +389,11 @@
       }
     },
     {
-      "raw_id": "2e87e04ea8d45df8cf",
-      "title": "Chamba Bus Accident: सुबह-सुबह दर्दनाक हादसा, बस के ड्राइवर-कंडक्टर समेत 8 की मौत",
-      "url": "https://theruralpress.in/2026/08/08/chamba-bus-accident-bairagarh-chamba-road-8-dead-7-injured/",
-      "summary": "Chamba Bus Accident: हिमाचल प्रदेश के चंबा जिले के चुराह उपमंडल में शनिवार सुबह बड़ा सड़क हादसा हो गया। बैरागढ़-चंबा मार्ग पर देवीकोठी के पास चालुज मोड़ पर शर्मा ट्रैवलर्स की निजी बस अनियंत्रित होकर सड़क से नीचे दूसरी सड़क पर जा गिरी। प्रारंभिक जानकारी के अनुसार हादसे में ड्राइवर और कंडक्टर समेत 8 लोगों […]",
-      "published_at": "Sat, 08 Aug 2026 04:39:31 +0000",
+      "raw_id": "b80db4c07ad903739d",
+      "title": "CG News: उदंती-सीतानदी टाइगर रिजर्व में AI तकनीक से 24X7 होगी वन और वन्यजीवों की निगरानी",
+      "url": "https://theruralpress.in/2026/08/08/udanti-sitanadi-tiger-reserve-ai-smart-surveillance-system-chhattisgarh/",
+      "summary": "Udanti Sitanadi Tiger Reserve : राज्य सरकार वन और वन्यजीव संरक्षण के लिए आधुनिक तकनीकों को अपनाने में देश में मिसाल कायम कर रही है। मुख्यमंत्री विष्णु देव साय के नेतृत्व और वन एवं जलवायु परिवर्तन मंत्री केदार कश्यप के मार्गदर्शन में उदंती-सीतानदी टाइगर रिजर्व में आर्टिफिशियल इंटेलिजेंस (AI), इंटरनेट ऑफ थिंग्स (IoT) और क्लाउड […]",
+      "published_at": "Sat, 08 Aug 2026 09:46:36 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -360,36 +418,90 @@
       }
     },
     {
-      "raw_id": "49b9d6da2ce950f0e5",
-      "title": "Supreme court upholds centre’s power to notify post-facto clearance",
-      "url": "https://india.mongabay.com/2026/08/supreme-court-upholds-centres-power-to-notify-post-facto-clearance/",
-      "summary": "The Supreme Court has struck down the centre’s 2021 Office Memorandum (OM) that created a mechanism for granting post facto environmental clearances to projects that violated prior environmental clearance norms. At the same time, it stated that the central government has the power to frame statutory amnesty schemes for specified categories of such violations under […]",
-      "published_at": "07 Aug 2026 16:28:40 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07135307/AP22207426732440-768x512.jpg",
+      "raw_id": "07c27921a2ca9713b0",
+      "title": "CG Breaking News: छत्तीसगढ़ वन विभाग में प्रशासनिक फेरबदल, 24 IFS अधिकारियों को मिली नवीन पदस्थापना, देखें लिस्ट",
+      "url": "https://theruralpress.in/2026/08/08/chhattisgarh-raipur-forest-department-ifs-officers-transfer-list-2026/",
+      "summary": "CG IFS News: छत्तीसगढ़ शासन के वन एवं जलवायु परिवर्तन विभाग ने भारतीय वन सेवा (IFS) के 24 अधिकारियों को नवीन पदस्थापना दी गई हैं। जारी आदेश में कई जिलों के जिला वन अधिकारियों (DFO) और उच्च स्तर के संरक्षकों की जिम्मेदारियों में बदलाव किया गया है। जारी आदेश के अनुसार बलौदाबाजार के वन उप […]",
+      "published_at": "Sat, 08 Aug 2026 09:35:18 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ac080488dfcfd71883",
+      "title": "Chhattisgarh Teacher Transfer: 700 शिक्षकों का हुआ तबादला, 400 के नाम रुके, देखें पूरी लिस्ट",
+      "url": "https://theruralpress.in/2026/08/08/chhattisgarh-teacher-transfer-2026-700-transfer-400-names/",
+      "summary": "Chhattisgarh Teacher Transfer: छत्तीसगढ़ में शिक्षकों के लंबे समय से प्रतीक्षित तबादलों को लेकर शिक्षा विभाग ने आखिरकार आदेश जारी कर दिए हैं। विभागीय स्तर पर कई चरणों की जांच और छंटनी के बाद करीब 700 शिक्षकों के स्थानांतरण आदेश जारी किए गए हैं। वहीं निर्धारित मापदंडों पर खरे नहीं उतरने वाले करीब 400 शिक्षकों […]",
+      "published_at": "Sat, 08 Aug 2026 09:24:42 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9122152c378fa12c91",
+      "title": "CG News: नक्सल हिंसा प्रभावित 15 परिवारों को मिली 2.25 करोड़ रुपए की आर्थिक सहायता",
+      "url": "https://theruralpress.in/2026/08/08/cg-naxal-affected-families-financial-assistance-vishnu-deo-sai/",
+      "summary": "CG News: राज्य सरकार ने नक्सल हिंसा से प्रभावित परिवारों को राहत देने की दिशा में बड़ा कदम उठाया है। मुख्यमंत्री विष्णु देव साय की पहल और ‘छत्तीसगढ़ नक्सलवाद पुनर्वास नीति’ के प्रभावी क्रियान्वयन के तहत नक्सल हिंसा के शिकार 15 परिवारों के लिए कुल 2 करोड़ 25 लाख रुपए की आर्थिक सहायता राशि स्वीकृत […]",
+      "published_at": "Sat, 08 Aug 2026 08:53:34 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
@@ -419,39 +531,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "373913486faed87e93",
-      "title": "New clues into how animals evolved an internal compass to navigate Earth",
-      "url": "https://india.mongabay.com/2026/08/new-clues-into-how-animals-evolved-an-internal-compass-to-navigate-earth/",
-      "summary": "Magnetoreception is like an internal compass that animals use in their journeys, using the Earth’s magnetic field. It helps migratory birds navigate across the central Asian flyway, for example, or turtles, fish and other animals travel across vast distances. Recent research raises new questions about the evolutionary origins of magnetoreception and suggests that it may […]",
-      "published_at": "07 Aug 2026 14:44:33 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07121707/A_Pair_of_Bar-Headed_Geese_in_Flight_50900564713-scaled-e1786085253791-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
       }
     },
     {
@@ -629,6 +708,35 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "768332016b57669bd7",
+      "title": "Prayagraj News: अन्ना-जानवर ने कर रखा है किसानों की नाक में दम!",
+      "url": "https://khabarlahariya.org/prayagraj-news-stray-cattle-have-made-life-miserable-for-farmers/",
+      "summary": "जिला प्रयागराज, ब्लाक जसरा‌, गांव सेहुँड़ा में गौवशाला‌ नहीं है, इस कारण किसान खेती नहीं कर पते हैं। बारिश के मौसम में धान-बेहन‌ की रखवाली दिन-रात करते है। इस गांव…",
+      "published_at": "Sat, 08 Aug 2026 10:30:28 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -1048,122 +1156,6 @@
       "url": "https://khabarlahariya.org/patna-news-road-project-incomplete-for-20-years-village-still-forced-to-live-amidst-mud/",
       "summary": "लगभग एक हज़ार की आबादी वाले पटना के बुधगवान गाँव में पिछले बीस साल से सड़क निर्माण का काम अधूरा है. यहां के निवासियों का कहना है की पंचायत मुखिया…",
       "published_at": "Wed, 05 Aug 2026 05:00:41 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "4e7949156acd04b381",
-      "title": "Ground Report: सदर चुनाव छतरपुर, जिस चुनाव में महिलाओं को वोट देने का अधिकार नहीं",
-      "url": "https://khabarlahariya.org/ground-report-chhatarpur-sadar-election-an-election-where-women-do-not-have-the-right-to-vote/",
-      "summary": "मध्य प्रदेश के छतरपुर में मुस्लिम समाज के सदर चुनाव को लेकर लैंगिक समानता और महिलाओं के लोकतांत्रिक अधिकारों पर एक बार फिर से बहस तेज हो गई है। 4…",
-      "published_at": "Tue, 04 Aug 2026 14:50:05 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "91edc3695f0bf2b751",
-      "title": "India vs Sri Lanka Test series: श्रीलंका टेस्ट सीरीज से बाहर हुए जसप्रीत बुमराह (Jasprit Bumrah), जम्मू-कश्मीर के औकिब नबी (Auqib Nabi) को पहली बार मिला टीम इंडिया में मौका",
-      "url": "https://khabarlahariya.org/india-vs-sri-lanka-test-series-jasprit-bumrah-ruled-out-of-the-sri-lanka-test-series-jammu-kashmirs-auqib-nabi-gets-his-maiden-call-up-to-team-india/",
-      "summary": "भारतीय क्रिकेट टीम को श्रीलंका के खिलाफ 15 अगस्त से शुरू होने वाली टेस्ट सीरीज से पहले बड़ा झटका लगा है। तेज़ गेंदबाज़ जसप्रीत बुमराह चोट के कारण पूरी तरह…",
-      "published_at": "Tue, 04 Aug 2026 09:01:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e4eec062bd7a76580b",
-      "title": "वाराणसी: बिजली के खंभे में दौड़ा करंट, 60 वर्षीय महिला की मौके पर मौत",
-      "url": "https://khabarlahariya.org/varanasi-electrocuted-by-live-power-pole-60-year-old-woman-dies-on-the-spot/",
-      "summary": "वाराणसी जिले के चौबेपुर थाना क्षेत्र के बहरामपुर गांव में एक दर्दनाक हादसा सामने आया। परिवार के अनुसार 60 वर्षीय मुन्नी देवी सुबह करीब 8 बजे बच्चों को लेकर जा…",
-      "published_at": "Tue, 04 Aug 2026 05:00:51 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "3e48537de82bb36d15",
-      "title": "बांदा: अपहरण से शुरू हुआ मामला, बयान और मेडिकल के बाद जुड़ी सामूहिक दुष्कर्म और पॉक्सो की धाराएं",
-      "url": "https://khabarlahariya.org/banda-case-began-as-a-kidnapping-charges-of-gang-rape-and-under-the-pocso-act-were-added-following-statements-and-medical-examination/",
-      "summary": "बांदा जिले में 16 वर्षीय किशोरी के अपहरण और सामूहिक दुष्कर्म के मामले में 26 जुलाई को गिरफ्तार किए गए दोनों आरोपी न्यायिक हिरासत में हैं। पुलिस के अनुसार, गिरफ्तारी…",
-      "published_at": "Mon, 03 Aug 2026 12:30:59 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

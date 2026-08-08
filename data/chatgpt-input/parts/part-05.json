@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-07T21:06:36.343803+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-08-08T02:28:28.517810+00:00",
+  "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 114,
+    "established_or_other": 86,
     "independent_social_majority_required": true
   },
   "part": 5,
@@ -389,6 +389,35 @@
       }
     },
     {
+      "raw_id": "42be0212f1694f70d9",
+      "title": "Chitrakoot/आरोप: गर्भवती महिला को 3 इंजेक्शन लगने के बाद मौत, परिजनों ने नर्स पर लगाए गंभीर आरोप",
+      "url": "https://khabarlahariya.org/chitrakoot-allegation-pregnant-woman-dies-after-receiving-three-injections-family-levels-serious-allegations-against-the-nurse/",
+      "summary": "चित्रकूट जिले के मऊ नगर पंचायत स्थित सामुदायिक स्वास्थ्य केंद्र में इलाज के दौरान 25 वर्षीय गर्भवती महिला सुनीता की मौत के बाद परिजनों ने अस्पताल प्रशासन पर गंभीर लापरवाही…",
+      "published_at": "Thu, 30 Jul 2026 13:00:27 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "4a4025e966f659dfa7",
       "title": "What does ‘mercurial’ mean?",
       "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
@@ -436,33 +465,51 @@
       ]
     },
     {
-      "raw_id": "42be0212f1694f70d9",
-      "title": "Chitrakoot/आरोप: गर्भवती महिला को 3 इंजेक्शन लगने के बाद मौत, परिजनों ने नर्स पर लगाए गंभीर आरोप",
-      "url": "https://khabarlahariya.org/chitrakoot-allegation-pregnant-woman-dies-after-receiving-three-injections-family-levels-serious-allegations-against-the-nurse/",
-      "summary": "चित्रकूट जिले के मऊ नगर पंचायत स्थित सामुदायिक स्वास्थ्य केंद्र में इलाज के दौरान 25 वर्षीय गर्भवती महिला सुनीता की मौत के बाद परिजनों ने अस्पताल प्रशासन पर गंभीर लापरवाही…",
-      "published_at": "Thu, 30 Jul 2026 13:00:27 +0000",
+      "raw_id": "e4d5c9ed0933476b29",
+      "title": "Final Call impresses",
+      "url": "https://www.thehindu.com/sport/races/final-call-impresses/article71281987.ece",
+      "summary": "",
+      "published_at": "Sat, 08 Aug 2026 05:31:38 +0530",
       "image_url": "",
-      "suggested_category": "",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
-        "observed_report_count": 1,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Final Call impresses",
+          "url": "https://www.thehindu.com/sport/races/horse-racing/article71281714.ece",
+          "source": {
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "52349777cc94b31467",
@@ -842,12 +889,12 @@
       }
     },
     {
-      "raw_id": "59ba30349e9bb840f6",
-      "title": "Edappally-Aroor elevated highway project in Kochi put on hold",
-      "url": "https://www.thehindu.com/news/national/kerala/edappally-aroor-elevated-highway-project-in-kochi-put-on-hold/article71319176.ece",
-      "summary": "Union Minister for Road Transport and Highways Nithin Gadkari informs Hibi Eden, MP, that the current priority is to widen the rest of the Thiruvananthapuram-Kasaragod NH 66",
-      "published_at": "Sat, 08 Aug 2026 02:08:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/w5b5sh/article71319334.ece/alternates/LANDSCAPE_1200/Bypass02.jpg",
+      "raw_id": "b244f269bfeb9a4265",
+      "title": "One held after vehicle jumps police checkpoint in J&K’s Ramban",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/one-held-after-vehicle-jumps-police-checkpoint-in-jks-ramban/article71318606.ece",
+      "summary": "The police said the abandoned car was later spotted and one accused, identified as Altaf Muhammad, a resident of Udhampur, was arrested",
+      "published_at": "Sat, 08 Aug 2026 07:41:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yzmuin/article71320442.ece/alternates/LANDSCAPE_1200/20260807375L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -871,41 +918,12 @@
       }
     },
     {
-      "raw_id": "d1dc2a35beba034a61",
-      "title": "Relief camps shut in Kerala’s Ernakulam as rain situation eases",
-      "url": "https://www.thehindu.com/news/national/kerala/relief-camps-shut-in-keralas-ernakulam-as-rain-situation-eases/article71318829.ece",
-      "summary": "The eastern parts of Ernakulam district received only light spells of rain on Friday",
-      "published_at": "Sat, 08 Aug 2026 02:03:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/w8cryr/article71319332.ece/alternates/LANDSCAPE_1200/Rain01.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "daad455323a0ddf994",
-      "title": "DACL Fine Chem to set up ₹500 crore chemical unit in KSEZ",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/dacl-fine-chem-to-set-up-500-crore-chemical-unit-in-ksez/article71161627.ece",
+      "raw_id": "e09c772d8bf75e0201",
+      "title": "Telangana’s Warangal to map protected monument lands to prevent encroachments",
+      "url": "https://www.thehindu.com/news/national/telangana/telanganas-warangal-to-map-protected-monument-lands-to-prevent-encroachments/article71284586.ece",
       "summary": "",
-      "published_at": "Sat, 08 Aug 2026 02:02:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bsogcg/article71162494.ece/alternates/LANDSCAPE_1200/10237_29_6_2026_18_48_12_1_WHATSAPPIMAGE2026_06_29AT33714PM1.JPEG",
+      "published_at": "Sat, 08 Aug 2026 07:40:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c5eaqj/article71284572.ece/alternates/LANDSCAPE_1200/Katakshapur%20temple.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -929,11 +947,11 @@
       }
     },
     {
-      "raw_id": "baf745936567143c69",
-      "title": "32 fall ill after eating snacks in Kakinada",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/32-fall-ill-after-eating-snacks-in-kakinada/article71161791.ece",
+      "raw_id": "4ed42a92a17ba76cb3",
+      "title": "Case registered over alleged piracy of Patriot",
+      "url": "https://www.thehindu.com/news/national/kerala/case-registered-over-alleged-piracy-of-patriot/article70947951.ece",
       "summary": "",
-      "published_at": "Sat, 08 Aug 2026 02:02:26 +0530",
+      "published_at": "Sat, 08 Aug 2026 07:39:51 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -958,70 +976,12 @@
       }
     },
     {
-      "raw_id": "f5acccac872fc6705d",
-      "title": "Indian Army contingent to participate in Seychelles’ 50th Independence Day celebrations",
-      "url": "https://www.thehindu.com/news/national/indian-army-contingent-to-participate-in-seychelles-50th-independence-day-celebrations/article71157794.ece",
-      "summary": "Prime Minister Narendra Modi to attend Golden Jubilee celebrations as Guest of Honour; Indian Army and Navy contingents to join ceremonial parade",
-      "published_at": "Sat, 08 Aug 2026 02:01:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/yq4o2/article71157827.ece/alternates/LANDSCAPE_1200/7ce23d12-5efa-415b-9f02-3d05b3e72657.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c55cf2ee0a9ee46ffa",
-      "title": "Bengaluru is part of Mercedes-Benz’s 140-year global anniversary tour",
-      "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-is-part-of-mercedes-benzs-140-year-global-anniversary-tour/article71277636.ece",
-      "summary": "The German luxury automotive brand marked its transcontinental tour, which will touch 140 places across 23 countries and five continents, with celebrations across its Bengaluru campuses",
-      "published_at": "Sat, 08 Aug 2026 02:00:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jtcipb/article71278456.ece/alternates/LANDSCAPE_1200/IMG_8077.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "283a3c4c64965c97b8",
-      "title": "Biren Singh’s audio clip altered, says Centre; SC allows Manipur civil society group to access report",
-      "url": "https://www.thehindu.com/news/national/manipur/biren-singhs-audio-clip-altered-says-centre-sc-allows-manipur-civil-society-group-to-access-report/article71317929.ece",
-      "summary": "Petitioner-NGO says earlier tests had shown a 93% match linking the audio clips to the former Chief Minister; plea alleges the leader was involved in the ethnic violence in which over 250 people were killed",
-      "published_at": "Sat, 08 Aug 2026 01:59:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4fs95m/article71318467.ece/alternates/LANDSCAPE_1200/20251014227L.jpg",
+      "raw_id": "d60466c4c60dac24e5",
+      "title": "BJP alleges Rahul Gandhi spread misinformation on police action, demands apology",
+      "url": "https://www.thehindu.com/news/national/bjp-alleges-rahul-gandhi-spread-misinformation-on-police-action-demands-apology/article71282758.ece",
+      "summary": "Sambit Patra accuses the Congress leader of insulting students by dividing the protesters at Jantar Mantar into three categories — ‘students’, ‘idiots’ and ‘andhbhakt’ (blind devotees), and of repeatedly using the unparliamentary word ‘idiot’ in the Lok Sabha",
+      "published_at": "Sat, 08 Aug 2026 07:38:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/uzh3mw/article71282956.ece/alternates/LANDSCAPE_1200/PTI07_29_2026_000395B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1041,20 +1001,22 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 1
+          "Protests": 1,
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Sports"
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "e8076bb987a7ad0e39",
-      "title": "Woman auto driver, allegedly denied right to work, reinstated in Kerala’s Kochi",
-      "url": "https://www.thehindu.com/news/national/kerala/woman-auto-driver-in-keralas-kochi-alleges-denial-of-right-to-work-by-union/article71319254.ece",
-      "summary": "The 52-year-old, who was reportedly not allowed to work for over four months after her expulsion from the CITU, was reinstated after her plight caught public attention through media reports",
-      "published_at": "Sat, 08 Aug 2026 01:57:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/i85fzw/article71319330.ece/alternates/LANDSCAPE_1200/CCI_UDHindu_KSL_UL36LSE2I_R1572877553_3_694c5c87-3db8-4e54-bdba-d200f5ad20c2.jpg",
+      "raw_id": "1d6aa59bd1ae695e14",
+      "title": "Parliament Committee calls for upgrading washery infrastructure to spur domestic higher-quality coal production",
+      "url": "https://www.thehindu.com/business/Industry/parliament-committee-calls-for-upgrading-washery-infrastructure-to-spur-domestic-higher-quality-coal-production/article71282865.ece",
+      "summary": "The Standing Committee on Coal, Mines and Steel noted in their latest report that many washeries of Coal India have outlived their designed operational life and are constrained by legacy technology.",
+      "published_at": "Sat, 08 Aug 2026 07:38:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hguj2s/article71283390.ece/alternates/LANDSCAPE_1200/2026-07-27T125150Z_607291167_RC2TA6AW6OKM_RTRMADP_3_COAL-INDIA-RESULTS.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1078,12 +1040,12 @@
       }
     },
     {
-      "raw_id": "f24b5a306f6a8aab21",
-      "title": "Residents of old age home steal the scene at fashion show for senior citizens in Kerala’s Thrissur",
-      "url": "https://www.thehindu.com/news/national/kerala/residents-of-old-age-home-steal-the-scene-at-fashion-show-for-senior-citizens-in-keralas-thrissur/article71277038.ece",
-      "summary": "Residents of Thrissur Government Old Age Home win four honours at ‘Niram 2026’, proving confidence and creativity only grow with the years",
-      "published_at": "Sat, 08 Aug 2026 01:55:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dmfsg4/article71277643.ece/alternates/LANDSCAPE_1200/80688_28_7_2026_19_43_51_3_NIRAM_KKN.JPG",
+      "raw_id": "b538624fda50a57ec0",
+      "title": "Punarjani scheme promoters Manappat Foundation faces legal scrutiny in Kerala over alleged FCRA violations",
+      "url": "https://www.thehindu.com/news/national/kerala/punarjani-scheme-promoters-manappat-foundation-faces-legal-scrutiny-in-kerala-over-alleged-fcra-violations/article70473425.ece",
+      "summary": "Officials say Kerala government is legally examining VACB report to Home department in 2025 which stated that the NGO violated Rule 19 of FCRA by allegedly failing to maintain records of foreign donations for Punarjani project and of utilisation of endowments from abroad",
+      "published_at": "Sat, 08 Aug 2026 07:35:48 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1107,41 +1069,12 @@
       }
     },
     {
-      "raw_id": "eee816585390ffca74",
-      "title": "Volunteers extend support to Giri Pradakshina pilgrims",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/volunteers-extend-support-to-giri-pradakshina-pilgrims/article71278118.ece",
+      "raw_id": "3633cee2c442e4abe5",
+      "title": "Holiday declared for schools in Telangana’s Nirmal on July 30",
+      "url": "https://www.thehindu.com/news/national/telangana/holiday-declared-for-schools-in-telanganas-nirmal-on-july-30/article71284640.ece",
       "summary": "",
-      "published_at": "Sat, 08 Aug 2026 01:54:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/k4c3q4/article71278532.ece/alternates/LANDSCAPE_1200/019Giri.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6d7c4bf259b63aa5d4",
-      "title": "Latur municipal authorities visit Ambedkar memorial as part of study tour",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/latur-municipal-authorities-explore-ambedkar-memorial-on-study-tour/article71277473.ece",
-      "summary": "",
-      "published_at": "Sat, 08 Aug 2026 01:54:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/phpehx/article71278573.ece/alternates/LANDSCAPE_1200/10745_28_7_2026_19_58_10_1_IMG_20260728_WA0054.JPG",
+      "published_at": "Sat, 08 Aug 2026 07:35:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Hyderabad/y82wly/article71284644.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-07-30%20at%208.06.07%20AM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1161,20 +1094,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 4
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
-          "States & Local"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "e9be6010640f39e1cd",
-      "title": "Naidu directs comprehensive support for farmers in A.P. amid El Niño threat",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/naidu-directs-comprehensive-support-for-farmers-in-ap-amid-el-nino-threat/article71277756.ece",
-      "summary": "Chief Minister tells officials to establish a dedicated El Niño Control Room for continuous monitoring and scientific advisories through Rythu Seva Kendras; says every cultivated crop must be covered under crop insurance, for which Collectors have to take responsibility",
-      "published_at": "Sat, 08 Aug 2026 01:54:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hr6doh/article71278183.ece/alternates/LANDSCAPE_1200/27NearbyOng1_GIGQHGAFCLO.3.jpg.jpg",
+      "raw_id": "45cf4d2b1b8a3b2280",
+      "title": "Govt. simplifies NEET-UG 2026 counselling process",
+      "url": "https://www.thehindu.com/news/national/nadda-reviews-neet-ug-counselling-2026-preparedness/article71282356.ece",
+      "summary": "Centre introduces one-time physical reporting framework and online seat resignation",
+      "published_at": "Sat, 08 Aug 2026 07:31:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/f4i7lz/article71282826.ece/alternates/LANDSCAPE_1200/PTI07_24_2026_000197B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1195,6 +1128,97 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b139ce6f597db97e23",
+      "title": "Kerala HC to consider plea challenging ACS order restructuring police associations and dissolving KPOA",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-hc-to-consider-plea-challenging-acs-order-restructuring-police-associations-and-dissolving-kpoa/article71284272.ece",
+      "summary": "KPA challenged the reorganisation order, citing that it violated its fundamental right to form associations under the Constitution of India",
+      "published_at": "Sat, 08 Aug 2026 07:31:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/kerala/vbpfpb/article71284335.ece/alternates/LANDSCAPE_1200/Kerala%20HC%20%20%20-%20R%20K%20Nithin.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2b0bd8637df7299006",
+      "title": "Centre’s assurance cannot override statutory processes governing withdrawal of FIRs, experts say",
+      "url": "https://www.thehindu.com/news/national/centres-assurance-cannot-override-statutory-processes-governing-withdrawal-of-firs-experts-say/article71280825.ece",
+      "summary": "‘Once an FIR has been registered, it cannot simply be cancelled; police can file a closure report if it finds no material to proceed or the public prosecutor may seek withdrawal from prosecution; however, court can reject them and still order a fresh probe'",
+      "published_at": "Sat, 08 Aug 2026 07:30:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e5albd/article71283042.ece/alternates/LANDSCAPE_1200/PTI07_27_2026_000372B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2fb0bbca6d5f5f358f",
+      "title": "Indian Psychiatric Society urges mental health policy revamp in Kerala",
+      "url": "https://www.thehindu.com/news/national/kerala/indian-psychiatric-society-urges-mental-health-policy-revamp/article71282179.ece",
+      "summary": "A delegation of psychiatrists met Chief Minister V.D. Satheesan at Thiruvananthapuram and submitted a memorandum seeking reforms in mental healthcare delivery, infrastructure and governance",
+      "published_at": "Sat, 08 Aug 2026 07:30:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/kerala/gfqdjr/article71282189.ece/alternates/LANDSCAPE_1200/IPS.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     }
   ]

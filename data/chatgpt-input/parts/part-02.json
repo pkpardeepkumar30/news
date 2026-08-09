@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-09T05:25:01.254292+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-08-09T09:09:52.616888+00:00",
+  "input_count": 441,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 127,
+    "established_or_other": 73,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "2ba252f14f3eab8f4a",
+      "title": "जब महिलाएं उतरीं सड़क पर, NEET आंदोलन से किसान आंदोलन, केन बेतवा आंदोलन और शाहीन बाग तक की लड़ाई",
+      "url": "https://khabarlahariya.org/when-women-took-to-the-streets-the-struggle-spanning-from-the-neet-movement-to-the-farmers-protest-the-ken-betwa-movement-and-shaheen-bagh/",
+      "summary": "दिल्ली के जंतर-मंतर पर 6 जून से लेकर 26 जुलाई 2026 को NEET परीक्षा को लेकर छात्रों का बड़ा आंदोलन हुआ। इस आंदोलन को सिर्फ हजारों छात्रों की भीड़ के…",
+      "published_at": "Sat, 01 Aug 2026 04:30:03 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
     {
       "raw_id": "9a34da9c24691b0d95",
       "title": "Assam activist’s detention draws widespread condemnation",
@@ -148,11 +181,11 @@
       }
     },
     {
-      "raw_id": "b983a17ac20b587af0",
-      "title": "Jharkhand students protest LIVE updates: Govt announces fresh talks; student body alleges 'political manoeuvring'",
+      "raw_id": "18a691c0f93209d41e",
+      "title": "Jharkhand students protest LIVE updates: Sixth round of talks between State govt. and students begins",
       "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-student-protest-jpsc-jssc-aspirants-demonstration-jmm-hemant-soren-ranchi-live-updates-august-9-2026/article71323953.ece",
-      "summary": "A series of meetings with student groups throughout Saturday (August 8, 2026) culminated in the Jharkhand government announcing fresh talks with aspirants",
-      "published_at": "Sun, 09 Aug 2026 10:34:22 +0530",
+      "summary": "Student leader Ravindra Paswan accused the State government of attempting to fragment the movement and warned of a massive 'Vidhan Sabha Gherao' march on August 10 if demands were not met",
+      "published_at": "Sun, 09 Aug 2026 14:11:27 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -174,11 +207,13 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Protests": 4,
+          "States & Local": 1,
           "Society, Rights & Justice": 4
         },
         "candidate_categories": [
           "Protests",
-          "Society, Rights & Justice"
+          "Society, Rights & Justice",
+          "States & Local"
         ]
       }
     },
@@ -189,39 +224,6 @@
       "summary": "The Shiv Sena (UBT) president was referring to a meeting between Modi and the rival Shiv Sena chief Eknath Shinde",
       "published_at": "Sun, 09 Aug 2026 09:37:37 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/mfkd50/article71322514.ece/alternates/LANDSCAPE_1200/20260808182L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "7fd012840d277c366d",
-      "title": "Protest against delay in implementing women’s reservation",
-      "url": "https://www.thehindu.com/news/national/karnataka/protest-against-delay-in-implementing-womens-reservation/article71322137.ece",
-      "summary": "",
-      "published_at": "Sun, 09 Aug 2026 08:52:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nh2k2l/article71322165.ece/alternates/LANDSCAPE_1200/5964_8_8_2026_19_57_39_1_AIDWAPROTEST.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -319,6 +321,39 @@
       }
     },
     {
+      "raw_id": "929b65c505297aba7e",
+      "title": "No separate environmental clearance framework for AI data centres: Union govt",
+      "url": "https://www.thenewsminute.com/news/no-separate-environmental-clearance-framework-for-ai-data-centres-union-govt",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. The Union government has indicated that it does not plan to introduce a separate environmental clearance framework for AI data centres, according to a reply in the Rajya Sabha on Thursday, August 6. Minister of State for the Union Ministry of Environment, Forest and Climate Change (MoEFCC), Kirti Vardhan Singh, was responding to questions from Rajya Sabha MP Sudha Murty, who asked whether the Ministry had assessed the environmental impact of the high freshwater consumption by AI data centres in water-stressed regions. She also asked whether standalone environmental clearance parameters under the Environmental Impact Assessment (EIA) framework would be introduced for data centres, including mechanisms to track water-use efficiency. The MP further asked whether the Central Pollution Control Board (CPCB) was considering issuing specific guidelines on closed-loop recycling or the use of treated greywater for cooling in AI data centres. Her fourth and final question was whether an inter-ministerial mechanism exists between the MoEFCC, the Ministry of Jal Shakti and the Ministry of Electronics and Information Technology (Mei",
+      "published_at": "Sun, 09 Aug 2026 08:23:28 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-09/elfgvmfy/waterscarcityptichennai08072017.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
       "raw_id": "e9bd9724a540a7bb36",
       "title": "Bihar’s green budget expands, but environmental indicators show little progress",
       "url": "https://india.mongabay.com/2026/07/bihars-green-budget-expands-but-environmental-indicators-show-little-progress/",
@@ -378,6 +413,72 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "586974db7d4325b3d0",
+      "title": "Health Tips: हाई बीपी में कितना नमक खाएं? ये मात्रा जानना जरूरी",
+      "url": "https://theruralpress.in/2026/08/09/high-bp-me-kitna-namak-khana-chahiye/",
+      "summary": "Health Tips: हाई ब्लड प्रेशर एक आम स्वास्थ्य समस्या है। इसमें खानपान का विशेष महत्व होता है। खासतौर पर ज्यादा नमक खाने से परेशानी बढ़ सकती है। नमक में मौजूद सोडियम शरीर में पानी रोक सकता है। इससे रक्त की मात्रा बढ़ सकती है। रक्तचाप बढ़ने का खतरा रहता है। इसलिए हाई बीपी में नमक […]",
+      "published_at": "Sun, 09 Aug 2026 07:33:04 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "55989925ad0e982e07",
+      "title": "Health Tips: रील्स और शॉर्ट्स देखने में बीता रहे ज्यादा समय, तो जान लीजिये इसके नुकसान",
+      "url": "https://theruralpress.in/2026/08/09/short-video-addiction-research-night-scrolling-risks-health-tips/",
+      "summary": "Health Tips: सोशल मीडिया के दौर में रील्स और शॉर्ट वीडियो देखना लोगों की दिनचर्या का अहम हिस्सा बन चुका है। हाल ही में जारी हुई एक नई वैश्विक स्टडी में वैज्ञानिकों ने दावा किया है कि लगातार कई घंटों तक रील्स देखना और रात में स्क्रीन स्क्रॉल करना गंभीर लत का रूप ले रहा […]",
+      "published_at": "Sun, 09 Aug 2026 07:32:44 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -585,142 +686,6 @@
       }
     },
     {
-      "raw_id": "b5976a0013b0f8826e",
-      "title": "Manipur: Unexploded bomb recovered near NH-202 in Ukhrul",
-      "url": "https://eastmojo.com/meghalaya/2026/08/07/manipur-unexploded-bomb-recovered-near-nh-202-in-ukhrul/",
-      "summary": "Ukhrul: An unexploded bomb was recovered by villagers in Sharkaphung village in Manipur’s Ukhrul district on Friday, according to police sources. The villagers reportedly discovered the device while foraging in a forest near the hanging bridge connecting to National Highway 202. After being alerted, personnel from Litan Police Station, accompanied by a BSF bomb disposal […] The post Manipur: Unexploded bomb recovered near NH-202 in Ukhrul appeared first on EastMojo .",
-      "published_at": "Fri, 07 Aug 2026 11:10:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "49b9d6da2ce950f0e5",
-      "title": "Supreme court upholds centre’s power to notify post-facto clearance",
-      "url": "https://india.mongabay.com/2026/08/supreme-court-upholds-centres-power-to-notify-post-facto-clearance/",
-      "summary": "The Supreme Court has struck down the centre’s 2021 Office Memorandum (OM) that created a mechanism for granting post facto environmental clearances to projects that violated prior environmental clearance norms. At the same time, it stated that the central government has the power to frame statutory amnesty schemes for specified categories of such violations under […]",
-      "published_at": "07 Aug 2026 16:28:40 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07135307/AP22207426732440-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "373913486faed87e93",
-      "title": "New clues into how animals evolved an internal compass to navigate Earth",
-      "url": "https://india.mongabay.com/2026/08/new-clues-into-how-animals-evolved-an-internal-compass-to-navigate-earth/",
-      "summary": "Magnetoreception is like an internal compass that animals use in their journeys, using the Earth’s magnetic field. It helps migratory birds navigate across the central Asian flyway, for example, or turtles, fish and other animals travel across vast distances. Recent research raises new questions about the evolutionary origins of magnetoreception and suggests that it may […]",
-      "published_at": "07 Aug 2026 14:44:33 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07121707/A_Pair_of_Bar-Headed_Geese_in_Flight_50900564713-scaled-e1786085253791-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "688fe81703432da153",
-      "title": "Karnataka forms ex-Chief Justice-led panel to review Bidadi Township",
-      "url": "https://www.thenewsminute.com/karnataka/karnataka-forms-ex-chief-justice-led-panel-to-review-bidadi-township",
-      "summary": "The Karnataka government has constituted a four-member high-level committee headed by retired High Court judge Justice Guhanathan Narendar to review concerns over the proposed Bidadi Greater Bengaluru Integrated Township project. The committee has been asked to examine various aspects of the project and submit a comprehensive report to the state government within 30 days. The panel also includes retired Chief Secretary SV Ranganath, retired Additional Chief Secretary S R Umashankar and retired IAS officer Prasanna Kumar. The decision comes amid growing opposition from farmers and landowners in villages that are likely to be affected by the proposed township. The government has reiterated that land acquisition for the project will be entirely voluntary and that no landowner will be forced to give up land. The Bidadi township project, located around 40 km from Bengaluru, was first proposed in 2006 but remained stalled for years. The Congress government revived the project with a modified plan, citing growing demand for industrial investment and development around Bengaluru. The proposed township is spread across around 7,481 acres between Bidadi and Harohalli in Bengaluru South distr",
-      "published_at": "Sun, 09 Aug 2026 04:30:40 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-09/98iykwwv/DKS.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1,
-          "Society, Rights & Justice": 4,
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "Sports",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "d90e759a3f3b1c487b",
       "title": "MCD starts demolition drive in Bhalswa colony in north-west Delhi",
       "url": "https://www.thehindu.com/news/cities/Delhi/mcd-starts-demolition-drive-in-bhalswa-colony-in-north-west-delhi/article68519463.ece",
@@ -815,6 +780,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
           "States & Local"
         ]
       }
@@ -991,6 +991,41 @@
       }
     },
     {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "8b065506f64b24a1ec",
       "title": "Odisha government to provide assistance to Durga Puja committees up to ₹ 1.10 lakh each",
       "url": "https://www.thehindu.com/news/national/odisha/odisha-government-to-provide-assistance-to-durga-puja-committees-up-to-110-lakh-each/article70127424.ece",
@@ -1052,41 +1087,6 @@
           "States & Local": 8
         },
         "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "74005d24725e081452",
-      "title": "75 years of Vishnuvardhan: Dream roles and unfulfilled projects of the Kannada actor",
-      "url": "https://www.thehindu.com/entertainment/movies/vishnuvardhan-75th-birth-anniversary-vishnuvardhan-memorial-kannada-actor-sandalwood-dream-roles-projects/article70062572.ece",
-      "summary": "Remembering versatile Kannada actor Vishnuvardhan on his 75th birth anniversary, young filmmakers talk about his untapped potential in the industry",
-      "published_at": "Thu, 18 Sep 2025 19:20:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kg2dtn/article70064297.ece/alternates/LANDSCAPE_1200/Vishnuvardhan_04.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
           "States & Local"
         ]
       }
@@ -1285,12 +1285,12 @@
       ]
     },
     {
-      "raw_id": "013961abc15ae5bd9b",
-      "title": "Shanghai cancels 1,300 flights as China prepares for Typhoon Dolphin",
-      "url": "https://www.thehindu.com/news/international/shanghai-flight-cancels-as-china-prepares-for-typhoon-dolphin/article71324067.ece",
-      "summary": "Shanghai's Hongqiao and Pudong airports respectively also cancelled about 60% of Sunday's (August 9, 2026) expected flights",
-      "published_at": "Sun, 09 Aug 2026 10:32:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gqbkd7/article71324079.ece/alternates/LANDSCAPE_1200/China_Asia_Storms_54_49.jpg",
+      "raw_id": "9e0f9b657e2205f1b8",
+      "title": "Nagasaki marks 81st atomic bomb anniversary as Mayor says nuclear deterrence only increases risk",
+      "url": "https://www.thehindu.com/news/international/nagasaki-marks-81st-atomic-bomb-anniversary/article71324359.ece",
+      "summary": "The anniversary coincided with Japanese Prime Minister Sanae Takaichi’s government revising the country’s defence policy to further bolster the military’s offensive capability",
+      "published_at": "Sun, 09 Aug 2026 14:26:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/h4apn1/article71324377.ece/alternates/LANDSCAPE_1200/2026-08-09T080934Z_624392667_RC2RUMA6R2UO_RTRMADP_3_WW2-ANNIVERSARY-NAGASAKI.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1318,12 +1318,12 @@
       }
     },
     {
-      "raw_id": "86b48bf3e20d58eb87",
-      "title": "Drone enters Bulgaria, explodes near pipeline at Romanian border",
-      "url": "https://www.thehindu.com/news/international/drone-enters-bulgaria-explodes-near-pipeline-at-romanian-border/article71322596.ece",
-      "summary": "Turkish officials said a drone attack the previous day on two civilian vessels in the Black Sea left crew members injured.",
-      "published_at": "Sun, 09 Aug 2026 09:57:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cb8sq7/article71322599.ece/alternates/LANDSCAPE_1200/2026-07-08T054646Z_371579239_RC2H9MAFTBW2_RTRMADP_3_NATO-SUMMIT.JPG",
+      "raw_id": "62b4b66230fe3fb807",
+      "title": "Dangerous wildfire keeps crews from reaching helicopter crash in Utah",
+      "url": "https://www.thehindu.com/news/international/dangerous-wildfire-keeps-crews-from-reaching-helicopter-crash-in-utah/article71323030.ece",
+      "summary": "Pilot and crewmember were fatally injured in the crash",
+      "published_at": "Sun, 09 Aug 2026 14:22:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p1b3xm/article71323033.ece/alternates/LANDSCAPE_1200/Western_Wildfires_Helicopter_Crash_54_32.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1351,12 +1351,12 @@
       }
     },
     {
-      "raw_id": "059dede77a96157554",
-      "title": "Zelenskyy visits Russian ally Serbia as Moscow pounds Kyiv",
-      "url": "https://www.thehindu.com/news/international/zelenskyy-visits-russian-ally-serbia-as-moscow-pounds-kyiv/article71322503.ece",
-      "summary": "Moscow has significantly upped its attacks on the Ukrainian capital in recent months, typically firing salvos of hard-to-intercept ballistic missiles in short blitzes, with Ukraine pleading for more U.S.-made Patriot interceptors.",
-      "published_at": "Sun, 09 Aug 2026 09:34:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1l7mc6/article71322535.ece/alternates/LANDSCAPE_1200/Serbia_Ukraine_9261_.jpg",
+      "raw_id": "d77a61b08fb7cd6675",
+      "title": "Four killed in helicopter crash in Rio de Janeiro",
+      "url": "https://www.thehindu.com/news/international/brazil-helicopter-crash-death-toll/article71323031.ece",
+      "summary": "The helicopter went down in Tijuca National Park, a mountainside forest with very dense vegetation",
+      "published_at": "Sun, 09 Aug 2026 14:21:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9rslsf/article71323032.ece/alternates/LANDSCAPE_1200/Brazil_Helicopter_Crash_48654.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1376,9 +1376,11 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
+          "Environment, Health & Science": 1,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
+          "Environment, Health & Science",
           "International & Geopolitics"
         ]
       }

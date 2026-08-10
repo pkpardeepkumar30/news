@@ -1,28 +1,63 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-10T17:16:22.348046+00:00",
-  "input_count": 445,
+  "prepared_at": "2026-08-10T19:04:18.975505+00:00",
+  "input_count": 1381,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 130,
-    "established_or_other": 70,
+    "independent_social": 116,
+    "established_or_other": 84,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "c31cb46924ed3cc2f0",
-      "title": "Congress asks why PM didn’t pay tribute to Garg during Assam visit",
-      "url": "https://www.thehindu.com/news/cities/Delhi/congress-asks-why-pm-didnt-pay-tribute-togargduring-assam-visit/article70427314.ece",
+      "raw_id": "22f42966dca010716b",
+      "title": "US Senate clears Russia sanctions bill: India among top countries facing 100% tariffs",
+      "url": "https://indianexpress.com/article/world/us-senate-clears-russia-sanctions-bill-100-tariffs-lindsey-graham-india-among-countries-at-risk-10808287/",
       "summary": "",
-      "published_at": "Mon, 22 Dec 2025 22:46:19 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
+      "published_at": "Wed, 29 Jul 2026 03:15:35 +0000",
+      "image_url": "https://images.indianexpress.com/2026/06/US_7d2450.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "8fd40c9cc2825e5825",
+      "title": "Taiwan representative in Japan boycotts Nagasaki bombing anniversary ceremony over seating",
+      "url": "https://www.thehindu.com/news/international/taiwan-representative-in-japan-boycotts-nagasaki-bombing-anniversary-ceremony-over-seating/article71328391.ece",
+      "summary": "Mr. Lee said he and two deputies boycotted because their designated seats as representatives of Taiwan were not among those reserved for diplomatic missions. Mr. Lee instead sent a lower-ranked official from Fukuoka",
+      "published_at": "Mon, 10 Aug 2026 19:11:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rl3kfk/article71328573.ece/alternates/LANDSCAPE_1200/2026-08-09T080351Z_694343833_RC2QUMAAGUG0_RTRMADP_3_WW2-ANNIVERSARY-NAGASAKI.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -37,25 +72,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "1063ea0a88c22b17bc",
-      "title": "Mob vandalises prayer hall over burial dispute in Bastar",
-      "url": "https://www.thehindu.com/news/national/chhattisgarh/mob-vandalises-prayer-hall-over-burial-dispute-in-bastar/article70412766.ece",
-      "summary": "Clashes in Kanker village follow opposition to Christian burial rites; police personnel among those injured in mob fury",
-      "published_at": "Thu, 18 Dec 2025 22:34:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/im4icd/article70412944.ece/alternates/LANDSCAPE_1200/03_Bastar_Story.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "febf934b511128b460",
+      "title": "Fire at Saudi factory kills 16 Bangladeshi migrant workers",
+      "url": "https://www.thehindu.com/news/international/fire-at-saudi-factory-kills-many-bangladeshi-migrant-workers/article71327608.ece",
+      "summary": "Bangladesh’s ⁠Ministry of Foreign Affairs is monitoring the situation, while officials ​from the ‌Bangladesh Embassy in Riyadh are working with Saudi authorities to complete ‌the repatriation formalities",
+      "published_at": "Mon, 10 Aug 2026 14:45:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/a62kz8/article71327651.ece/alternates/LANDSCAPE_1200/iStock-595759102.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -70,25 +105,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "Economy & Employment": 4,
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "States & Local"
+          "Economy & Employment",
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "04cea012cb47a26e4e",
-      "title": "Almost 60% of India’s elephants are in Karnataka, Assam, T.N.",
-      "url": "https://www.thehindu.com/news/states/almost-60-of-indias-elephants-are-in-karnataka-assam-tn/article70164209.ece",
-      "summary": "The Wildlife Institute of India released the first-ever DNA-based synchronous estimation of elephants across the country",
-      "published_at": "Wed, 15 Oct 2025 01:40:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ancn3j/article70164201.ece/alternates/LANDSCAPE_1200/IMG_WhatsApp_Image_2025-_2_1_06F05FLE.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "857859635d9bec0843",
+      "title": "Syria says reached deal with Moscow on fate of Russian bases",
+      "url": "https://www.thehindu.com/news/international/syria-says-reached-deal-with-moscow-on-fate-of-russian-bases/article71325596.ece",
+      "summary": "Syria's official SANA news agency quoted the Foreign Ministry as saying that the Hmeimim airbase and Tartus naval base would be turned into \"joint training and capacity-building centres, within new arrangements that preserve mutual interests\".",
+      "published_at": "Sun, 09 Aug 2026 21:10:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dftscg/article71325604.ece/alternates/LANDSCAPE_1200/2026-08-09T130436Z_699510682_RC2AMBABI4JU_RTRMADP_3_SYRIA-RUSSIA.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -103,30 +140,28 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "8b065506f64b24a1ec",
-      "title": "Odisha government to provide assistance to Durga Puja committees up to ₹ 1.10 lakh each",
-      "url": "https://www.thehindu.com/news/national/odisha/odisha-government-to-provide-assistance-to-durga-puja-committees-up-to-110-lakh-each/article70127424.ece",
+      "raw_id": "0a1d21ff479c2465a4",
+      "title": "Cricket South Africa adds three match T20I series against Indian Women’s cricket team",
+      "url": "https://indianexpress.com/article/sports/cricket/cricket-south-africa-adds-three-match-t20i-series-against-indian-womens-cricket-team-10821000/",
       "summary": "",
-      "published_at": "Sun, 05 Oct 2025 11:56:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/acxzda/article70112167.ece/alternates/LANDSCAPE_1200/PTI09_29_2025_000384B.jpg",
-      "suggested_category": "States & Local",
+      "published_at": "Thu, 06 Aug 2026 12:16:25 +0000",
+      "image_url": "https://images.indianexpress.com/2025/01/india-cricket-team-womens.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -138,10 +173,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "Sports": 20
         },
         "candidate_categories": [
-          "States & Local"
+          "Sports"
         ]
       }
     },
@@ -172,6 +207,121 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Sports": 16
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "66923a2b6d78fcab45",
+      "title": "How a 21-year-old tennis star is making Philippines fall in love with the racquet sport",
+      "url": "https://indianexpress.com/article/sports/tennis/how-a-21-year-old-tennis-star-is-making-philippines-fall-in-love-with-the-racquet-sport-10820447/",
+      "summary": "",
+      "published_at": "Thu, 06 Aug 2026 07:14:10 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/eala.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 16
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "e6b120f6f3624a5173",
+      "title": "Premier League champions Arsenal land Newcastle's Guimaraes",
+      "url": "https://www.thehindu.com/sport/football/premier-league-champions-arsenal-land-newcastles-guimaraes/article71321517.ece",
+      "summary": "The North London club have agreed a deal reported by British media to be worth ‌around 75 million pounds ($101.16 million) for the Brazil international, adding one of ​the Premier League's most influential midfielders to Mikel Arteta's squad",
+      "published_at": "Sun, 09 Aug 2026 06:58:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/7ra4t9/article71321522.ece/alternates/LANDSCAPE_1200/Arsenal_Guimaraes_Soccer_41666.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Sports": 12,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Premier League champions Arsenal sign Bruno Guimaraes from Newcastle",
+          "url": "https://indianexpress.com/article/sports/football/arsenal-sign-bruno-guimaraes-from-newcastle-epl-champions-10823890/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "2c9bfc6c4346b7c2fb",
+      "title": "New hockey World Cup format presents an arduous path",
+      "url": "https://www.thehindu.com/sport/hockey/new-hockey-world-cup-format-presents-an-arduous-path/article71329827.ece",
+      "summary": "The top two sides from each pool will progress to the second stage, which will be split into two groups of four. The top two there will qualify for the semifinals",
+      "published_at": "Mon, 10 Aug 2026 23:13:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/txnnfp/article71329824.ece/alternates/LANDSCAPE_1200/DSC_9255.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
         },
         "candidate_categories": [
           "Sports"
@@ -311,55 +461,20 @@
       }
     },
     {
-      "raw_id": "e6b120f6f3624a5173",
-      "title": "Premier League champions Arsenal land Newcastle's Guimaraes",
-      "url": "https://www.thehindu.com/sport/football/premier-league-champions-arsenal-land-newcastles-guimaraes/article71321517.ece",
-      "summary": "The North London club have agreed a deal reported by British media to be worth ‌around 75 million pounds ($101.16 million) for the Brazil international, adding one of ​the Premier League's most influential midfielders to Mikel Arteta's squad",
-      "published_at": "Sun, 09 Aug 2026 06:58:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7ra4t9/article71321522.ece/alternates/LANDSCAPE_1200/Arsenal_Guimaraes_Soccer_41666.jpg",
+      "raw_id": "d8860d5861fa26b5ba",
+      "title": "Langur mimicry artists employed for badminton Worlds",
+      "url": "https://indianexpress.com/article/sports/badminton/langur-mimicry-artists-employed-for-badminton-worlds-10826959/",
+      "summary": "",
+      "published_at": "Mon, 10 Aug 2026 16:14:21 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/BWF-Delhi.jpg",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ddd670facceaf289fb",
-      "title": "Baskaran hopeful of India’s prospects at Hockey World Cup",
-      "url": "https://www.thehindu.com/sport/hockey/baskaran-hopeful-of-indias-prospects-in-the-world-cup/article71318776.ece",
-      "summary": "The 75-year-old hockey gold medal-winning captain has backed the side coached by Craig Fulton",
-      "published_at": "Sun, 09 Aug 2026 06:05:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/l0gmw0/article71318759.ece/alternates/LANDSCAPE_1200/0J3A1353.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -379,20 +494,20 @@
       }
     },
     {
-      "raw_id": "b7a52afb31ba80fd2e",
-      "title": "Manav Krishna trying to make his mark in KCL",
-      "url": "https://www.thehindu.com/sport/cricket/manav-krishna-trying-to-make-his-mark-in-kcl/article71328609.ece",
-      "summary": "The Thrissur Titans player heads into the third season of the Kerala Cricket League high on confidence after scoring a century against Sri Lanka in the second youth Test in July",
-      "published_at": "Mon, 10 Aug 2026 20:10:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/sport/l4n4kl/article71328586.ece/alternates/LANDSCAPE_1200/Manav.jpg",
+      "raw_id": "3f1f4c95bb550667ff",
+      "title": "Post-Guardiola era beckons in Premier League with churn not seen since World War II",
+      "url": "https://indianexpress.com/article/sports/football/post-pep-guardiola-premier-league-mikel-arteta-xabi-alonso-enzo-maresca-chelsea-manchester-city-liverpool-10825782/",
+      "summary": "",
+      "published_at": "Mon, 10 Aug 2026 04:48:33 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/premier-league-manages-overlay.jpg",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -404,7 +519,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 10
+          "Sports": 12
         },
         "candidate_categories": [
           "Sports"
@@ -412,20 +527,20 @@
       }
     },
     {
-      "raw_id": "933c786c1ae9df168b",
-      "title": "Sarfaraz Khan replaces injured Sai Sudharsan, back in Test squad",
-      "url": "https://www.thehindu.com/sport/cricket/sarfaraz-khan-replaces-injured-sai-sudharsan-back-in-test-squad/article71325195.ece",
-      "summary": "Mumbai batter included in India’s team for two-match series in Sri Lanka",
-      "published_at": "Sun, 09 Aug 2026 21:39:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1jrwbv/article71325494.ece/alternates/LANDSCAPE_1200/11908_2_11_2024_12_38_17_1_DSC_5589.JPG",
+      "raw_id": "2c1f741acd7e8079b6",
+      "title": "Gill and Jaiswal fluent; bowlers rediscover sharpness on final day of warm-up match in Sri Lanka",
+      "url": "https://indianexpress.com/article/sports/cricket/shubman-gill-yashasvi-jaiswal-india-sri-lanka-warm-up-match-day-of-positives-10825228/",
+      "summary": "",
+      "published_at": "Sun, 09 Aug 2026 13:36:54 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/gill-jaiswal-reuters.jpg",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -437,106 +552,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 10
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "0150f9ae48e1df2ed9",
-      "title": "Australia head coach McDonald flags tough calls on players' IPL participation ahead of packed 2027 schedule",
-      "url": "https://www.thehindu.com/sport/cricket/australia-head-coach-mcdonald-flags-tough-calls-on-players-ipl-participation-ahead-of-packed-2027-schedule/article71322891.ece",
-      "summary": "The IPL window in 2027 is expected to fall between Australia’s five-Test tour of India and a possible World Test Championship final, making it the only substantial period available for the team’s senior fast bowlers to rest and undergo conditioning ahead of the Ashes",
-      "published_at": "Sun, 09 Aug 2026 14:02:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4b1s4c/article71322900.ece/alternates/LANDSCAPE_1200/2188465996.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 10
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "d203287641971add47",
-      "title": "Sachin wants to do well for TN in all three formats",
-      "url": "https://www.thehindu.com/sport/cricket/sachin-wants-to-do-well-for-tn-in-all-three-formats/article71327692.ece",
-      "summary": "The left-hander has been on a roll in the TNCA First Division League and TNPL",
-      "published_at": "Mon, 10 Aug 2026 18:43:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mxwex1/article71328504.ece/alternates/LANDSCAPE_1200/10216_6_8_2026_21_8_6_2_06_08_2026_SACHIN_5.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "58c60e1806a3682f1d",
-      "title": "Pant — an enigma at the crossroads",
-      "url": "https://www.thehindu.com/sport/pant-an-enigma-at-the-crossroads/article71325824.ece",
-      "summary": "Having been replaced as India’s Test vice-captain, he can focus on his primary disciplines without having to attend lengthy team discussions or the distraction of being pulled in different directions; the team needs the most potent version of the player to come to the fore",
-      "published_at": "Mon, 10 Aug 2026 06:02:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gob26o/article71325829.ece/alternates/LANDSCAPE_1200/2223672910.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
+          "Sports": 12
         },
         "candidate_categories": [
           "Sports"
@@ -610,32 +626,32 @@
       }
     },
     {
-      "raw_id": "efdaafd08146188286",
-      "title": "Bombay HC refuses immediate relief to UB, Mohan Meakin over FSSAI liquor ban",
-      "url": "https://www.barandbench.com/news/litigation/bombay-hc-refuses-immediate-relief-to-ub-mohan-meakin-over-fssai-liquor-ban",
-      "summary": "The Bombay High Court on Monday declined to grant immediate relief to liquor manufacturers in their petition challenging prohibitory orders passed against them by the Food Safety and Standards Authority of India (FSSAI). [United Spirits and Anr v. FSSAI & ORs.] Companies including United Spirits and Mohan Meakin, which own liquor brands like McDowell’s No.1 and Old Monk respectively, approached the High Court after FSSAI took regulatory action which effectively halted the sale of their Indian-Made Foreign Liquor (IMFL) since June. The FSSAI took the action citing misleading labelling and unauthorised flavour additions. The manufacturers then approached the High Court. Additional Solicitor General Anil Singh , appearing for FSSAI, sought time to file a short reply in the matter before any order is passed by the Court. Senior Advocate Anil Singh The lawyers for the liquor manufacturers prayed for stay on the prohibitory orders. They argued that the orders effectively stopped the sale of their existing stock unless they relabel their products as ‘rum-flavoured spirits’. However, a bench of acting Chief Justice Ravindra Ghuge and Justice Gautam Ankhad deemed it fit to have a reply from",
-      "published_at": "Mon, 10 Aug 2026 20:05:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "9f43647774031e1549",
+      "title": "Young civil servants to visit UP schools monthly to mentor students on careers, exams",
+      "url": "https://indianexpress.com/article/education/young-civil-servants-to-visit-up-schools-monthly-to-mentor-students-on-careers-exams-10823971/",
+      "summary": "",
+      "published_at": "Sat, 08 Aug 2026 12:49:38 +0000",
+      "image_url": "https://images.indianexpress.com/2026/06/Empty-Classroom.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -643,32 +659,32 @@
       }
     },
     {
-      "raw_id": "07b51a955fd4404065",
-      "title": "Skit on Ram Temple donation theft: Pappu Yadav moves Delhi HC for enhanced security after attack at residence",
-      "url": "https://www.barandbench.com/news/skit-on-ram-temple-donation-theft-pappu-yadav-moves-delhi-hc-for-enhanced-security-after-attack-at-residence",
-      "summary": "Pappu Yadav, an Independent Member of Parliament (MP) from Bihar's Purnia, has approached the Delhi High Court seeking enhancement of security across India. The matter will be heard on August 11 by Justice Manoj Jain . Justice Manoj Jain Yadav has argued that he has been receiving death threats since he performed a skit outside parliament over irregularities in the Ram Mandir donations. Notably, Yadav was attacked at his residence in Delhi on August 2, 2026, when a man allegedly threw a slipper at him during a press conference. The assailant was allegedly carrying a knife. In his plea, Yadav has sought a fresh and comprehensive threat assessment and interim security measures across India. He currently has ‘Y+’ security cover in Bihar. Yadav said that his threat perception escalated after he participated in the Ram Temple donation theft skit. The plea states that death threats were issued against him on August 1, including a public reward of ₹51 lakh for his beheading. It also alleges that a mob gathered outside the residence of his wife, who is also a sitting MP, and threatened to kill him. According to the petition, Yadav submitted a complaint to the Delhi Police on August 2 along",
-      "published_at": "Mon, 10 Aug 2026 19:57:58 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "b61ae2344bada9f052",
+      "title": "Today News Headlines for School Assembly, July 29, 2026: Rahul Gandhi praises students who protested over exam paper leak",
+      "url": "https://indianexpress.com/article/education/today-news-headlines-for-school-assembly-29-july-2026-several-dead-after-7-1-earthquake-in-japan-opposition-raises-brutality-on-protesting-students-rbi-plans-plastic-currency-notes-10807497/",
+      "summary": "",
+      "published_at": "Tue, 28 Jul 2026 12:39:02 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/rahul_47ef50.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -676,32 +692,168 @@
       }
     },
     {
-      "raw_id": "b346e043ee2652d2d9",
-      "title": "Immediate FIR mandatory for missing adults too: Supreme Court clarifies order, warns States of contempt",
-      "url": "https://www.barandbench.com/news/litigation/immediate-fir-mandatory-for-missing-adults-too-supreme-court-clarifies-order-warns-states-of-contempt",
-      "summary": "The Supreme Court has clarified that its direction requiring immediate registration of first information reports (FIRs) on receiving information about a missing person applies to adults as well as children, irrespective of age or gender. [G Ganesh v. State of Tamil Nadu & Ors] In an order passed on August 5, a Bench of Justices Ahsanuddin Amanullah and R Mahadevan expressed shock that some States had understood the expression \"person\" in its earlier order to refer only to children. \" We find this to be a deliberate and mala fide bogey raised by such States. The language of our earlier order is clear and unambiguous. The expression 'person' means every person, irrespective of age or gender, \" the Court said. Justices Ahsanuddin Amanullah and R Mahadevan The Bench was referring to its May 22 order directing States to register an FIR upon receiving information regarding any missing person. It warned that if any State or Union Territory (UT) has failed to comply with the direction in its true letter and spirit, a contempt notice would be issued to the concerned Chief Secretary and Director General of Police (DGP). The Court said that the officials would also be required to remain perso",
-      "published_at": "Mon, 10 Aug 2026 18:09:08 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/04/supreme-court-cars.jpg",
-      "suggested_category": "",
+      "raw_id": "2c7a491384f23f6133",
+      "title": "Kashmir schools reopen after 20-day closure; Jammu asks authorities to lock rain-damaged school buildings",
+      "url": "https://indianexpress.com/article/education/jammu-and-kashmir-schools-reopen-20-day-closure-jammu-asks-authorities-lock-rain-damaged-school-buildings-repair-10805221/",
+      "summary": "",
+      "published_at": "Mon, 27 Jul 2026 05:31:04 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/JnK-classrooms.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "291aa074f66382ce60",
+      "title": "IIT Kharagpur signs MoU with Leeds University, opens new horizons in research and education",
+      "url": "https://indianexpress.com/article/education/iit-kharagpur-signs-mou-leeds-university-opens-new-horizons-research-education-100-thousand-usd-fund-10804357/",
+      "summary": "",
+      "published_at": "Sun, 26 Jul 2026 09:36:38 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/IIT-Kharagpur-Leeds-University.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16,
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9bd23c45f24977eeca",
+      "title": "Students from 31 countries join Baroda’s MS University, Bangladesh tops international enrolments",
+      "url": "https://indianexpress.com/article/education/students-from-31-countries-join-barodas-ms-university-bangladesh-tops-international-enrolments-10802169/",
+      "summary": "",
+      "published_at": "Fri, 24 Jul 2026 14:51:32 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/msu-baroda-univ.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16,
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "09b4853ddd0885203e",
+      "title": "Today News Headlines for School Assembly, July 23, 2026: Modi has announced fast-track courts to ensure justice in paper leak cases",
+      "url": "https://indianexpress.com/article/education/today-news-headlines-for-school-assembly-23-july-2026-union-ministers-have-fresh-round-of-talks-with-cjp-jantar-mantar-regrouping-crowd-10798704/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 13:23:27 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/school-assembly-news-headlines-july-22.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "43a1780755eecb021d",
+      "title": "School Holidays: Jammu-Kashmir, Himachal, Uttarakhand shut schools as IMD predicts heavy rainfall",
+      "url": "https://indianexpress.com/article/education/heavy-rain-prevails-srinagar-jammu-kashmir-government-extends-school-holidays-till-july-26-10797870/",
+      "summary": "",
+      "published_at": "Wed, 22 Jul 2026 07:26:22 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/Heavy-Rain-Prevails-Over-Srinagar-JK-Govt-Shut-Extents-School-Holidays-Till-July-26.png",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -808,140 +960,6 @@
       }
     },
     {
-      "raw_id": "d8f121439e4dd2678a",
-      "title": "Drug testing college students: IITs, IIMs begin with voluntary urine tests at admission",
-      "url": "https://www.thehindu.com/news/national/drug-testing-college-students-iits-iims-begin-with-voluntary-urine-tests-at-admission/article71294518.ece",
-      "summary": "Part of government mission to screen 10 lakh students at 170 central higher education institutes by 2029; under a framework provided by National Drug Dependence Treatment Centre, the test is meant to be confidential, cannot result in any ‘negative repercussions on the students taking it whatsoever’, and should be kept for counselling purposes only",
-      "published_at": "Sat, 08 Aug 2026 17:40:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/syjks/article71295377.ece/alternates/LANDSCAPE_1200/CIC-directs-IITGL7G98LA8.5.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "61fe855948257e84a9",
-      "title": "Why attention should be listed as a competency in higher education",
-      "url": "https://www.thehindu.com/education/colleges/why-attention-should-be-listed-as-a-competency-in-higher-education/article71299929.ece",
-      "summary": "The fix for our shortening attention is not more willpower, but less noise",
-      "published_at": "Sun, 09 Aug 2026 06:32:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2rvbs6/article71299932.ece/alternates/LANDSCAPE_1200/knowledge%20gap.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "a5517239f06d013847",
-      "title": "Three crucial skills that Civil Engineering students must develop",
-      "url": "https://www.thehindu.com/education/colleges/three-crucial-skills-that-civil-engineering-students-must-develop/article71299903.ece",
-      "summary": "Understanding policy matters, keeping updated with technological advances, and developing project management abilities is crucial for engineering projects of today",
-      "published_at": "Sun, 09 Aug 2026 06:32:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5otxd0/article71299904.ece/alternates/LANDSCAPE_1200/Civil%20engineering.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "070bbe8188867a7d76",
-      "title": "Reimagining Tourism Education in the AI age",
-      "url": "https://www.thehindu.com/education/reimagining-tourism-education-in-the-ai-age/article71289210.ece",
-      "summary": "As the tourism industry shifts toward automation, predictive intelligence, and hyper-personalised experiences, education has to adapt to technology-integrated and data-driven learning frameworks",
-      "published_at": "Sun, 09 Aug 2026 05:58:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bwmo01/article71300101.ece/alternates/LANDSCAPE_1200/Tourism.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "e044dbf20c4671cfd8",
       "title": "Don’t Miss the Ending 🤣",
       "url": "https://www.youtube.com/shorts/4yqfyQnBvL0",
@@ -983,6 +1001,35 @@
           "social_attention": null
         }
       ]
+    },
+    {
+      "raw_id": "25be99c3f5d1b1b1e3",
+      "title": "@ArvindKejriwal is Diet Coke paglu 🥰",
+      "url": "https://www.youtube.com/shorts/kWFZZyrh65c",
+      "summary": "",
+      "published_at": "2026-08-10T18:12:53+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
       "raw_id": "96be3ecf65e86b752f",
@@ -1251,35 +1298,6 @@
       "url": "https://www.youtube.com/shorts/DSZVVCNpOkA",
       "summary": "",
       "published_at": "2026-08-08T12:30:26+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 28,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5e54f5f1f4bf32b028",
-      "title": "GOAT MEME🗣️",
-      "url": "https://www.youtube.com/shorts/xvZXecCGJTE",
-      "summary": "",
-      "published_at": "2026-08-07T10:54:30+00:00",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": true,

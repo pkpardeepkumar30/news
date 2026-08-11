@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-11T02:34:51.301928+00:00",
-  "input_count": 401,
+  "prepared_at": "2026-08-11T05:35:03.242998+00:00",
+  "input_count": 409,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 102,
-    "established_or_other": 98,
+    "independent_social": 112,
+    "established_or_other": 88,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "5a028dd4e36d4e75f5",
+      "title": "Ayodhya Special Report: क्या जातिवाद पर आज भी निर्भर है अयोध्या में रोज़गार?",
+      "url": "https://khabarlahariya.org/ayodhya-special-report-does-employment-in-ayodhya-still-depend-on-the-caste-system/",
+      "summary": "अयोध्या: राम मंदिर के निर्माण के बाद अयोध्या की तस्वीर तेजी से बदली है। हर दिन लाखों श्रद्धालु यहां पहुंच रहे हैं। होटल, धर्मशालाएं, रेस्टोरेंट,दुकानें और परिवहन से जुड़े कारोबार…",
+      "published_at": "Sat, 01 Aug 2026 05:30:44 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "7d2d9e2861cbdabf8c",
       "title": "सरकारी अस्पताल में मरीज तड़पती रही, डॉक्टर नहीं आए? वायरल VIDEO पर सवाल",
@@ -97,6 +126,100 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "e2e0bd073ac31e37a3",
+      "title": "Scholarships: August 8, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sun, 09 Aug 2026 05:57:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/67a3c7/article71280249.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: August 1, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-august-1-2026/article71265217.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4a4025e966f659dfa7",
+      "title": "What does ‘mercurial’ mean?",
+      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
+      "summary": "",
+      "published_at": "Sat, 08 Aug 2026 20:06:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/yxo6ph/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "What does ‘unputdownable’ mean?",
+          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "bf193d9403ba5da51e",
@@ -331,35 +454,6 @@
       }
     },
     {
-      "raw_id": "4b85c09b78e607a084",
-      "title": "Ground Report: नाबालिग लड़की के साथ छेड़छाड़, रिपोर्ट नहीं दर्ज करने का आरोप",
-      "url": "https://khabarlahariya.org/ground-report-minor-girl-molested-accused-of-not-filing-report/",
-      "summary": "मध्य प्रदेश के…",
-      "published_at": "Wed, 29 Jul 2026 13:34:20 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "5fb97b29f24e2289f6",
       "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
       "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
@@ -422,100 +516,6 @@
       }
     },
     {
-      "raw_id": "e2e0bd073ac31e37a3",
-      "title": "Scholarships: August 8, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sun, 09 Aug 2026 05:57:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/67a3c7/article71280249.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: August 1, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-august-1-2026/article71265217.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4a4025e966f659dfa7",
-      "title": "What does ‘mercurial’ mean?",
-      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
-      "summary": "",
-      "published_at": "Sat, 08 Aug 2026 20:06:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/yxo6ph/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "What does ‘unputdownable’ mean?",
-          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "308bffeae6934aee55",
       "title": "Iran: Why Ground Attack is a Tough Call for Trump",
       "url": "https://www.newsclick.in/iran-why-ground-attack-tough-call-trump",
@@ -540,6 +540,605 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "18282afd66d0708388",
+      "title": "Treat Urdu and Sanskrit with equality and respect, Tejashwi Yadav tells Bihar CM",
+      "url": "https://www.thehindu.com/news/national/bihar/treat-urdu-and-sanskrit-with-equality-and-respect-tejashwi-yadav-tells-bihar-cm/article71331075.ece",
+      "summary": "In a two-page letter to the CM, the Leader of Opposition demanded that the government must take concrete steps to ensure the availability of teachers for both Urdu and Sanskrit in every government school",
+      "published_at": "Tue, 11 Aug 2026 10:51:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qzpvif/article71331107.ece/alternates/LANDSCAPE_1200/PTI08_04_2026_000337B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "07afb1a3d17471f43c",
+      "title": "Buckets placed to check seepage at Ajanta Caves; ASI says paintings safe",
+      "url": "https://www.thehindu.com/news/national/maharashtra/buckets-placed-to-check-seepage-at-ajanta-caves-asi-says-paintings-safe/article71331124.ece",
+      "summary": "ASI Deputy Superintendent told reporters that the issue crops up during heavy rains.",
+      "published_at": "Tue, 11 Aug 2026 10:49:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/n1wtjt/article71331139.ece/alternates/LANDSCAPE_1200/How-Benoy-BehlG1JG6K6FJ.4.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7c5e7cf12a9cbd680a",
+      "title": "Congress alleges BJP Yuva Morcha members being sent from West Bengal to Jharkhand to join student protest",
+      "url": "https://www.thehindu.com/news/national/congress-alleges-bjp-yuva-morcha-members-being-sent-from-west-bengal-to-jharkhand-to-join-student-protest/article71331120.ece",
+      "summary": "Congress general secretary K.C. Venugopal shared a video clip purportedly showing youth allegedly being sent by the BJP to participate in the Jharkhand student protest against exam irregularities",
+      "published_at": "Tue, 11 Aug 2026 10:46:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/afvquc/article71331136.ece/alternates/LANDSCAPE_1200/20260810565L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "29d56949eb42fc5cd1",
+      "title": "Raise tiger base camps to 125 within a month, panel tells Andhra Pradesh",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/raise-tiger-base-camps-to-125-within-a-month-panel-tells-andhra-pradesh/article71330896.ece",
+      "summary": "The committee, set up after a tiger was killed in the Giddalur division of the NSTR in July, has recommended four field staff at every camp, drone surveillance down to the Forest Section Officer level, and training for field staff every 15 days",
+      "published_at": "Tue, 11 Aug 2026 10:46:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/dy335v/article71331125.ece/alternates/LANDSCAPE_1200/AP%20forest.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "5c2bc017994895ee8e",
+      "title": "Jharkhand students' protests LIVE: Normal life hit in parts of State as BJP enforces bandh",
+      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-protest-live-updates-august-11-2026/article71330994.ece",
+      "summary": "Most schools and business establishments remained closed, while vehicular movement was very low in the state capital Ranchi and several other cities",
+      "published_at": "Tue, 11 Aug 2026 10:37:26 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "b814b3ffd0edce14cb",
+      "title": "Search operation launched in J&K's Poonch forests after suspicious movement",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/security-forces-search-operation-jammu-kashmir-poonch-underway-updates/article71331101.ece",
+      "summary": "A security guard, who was on duty at the construction site, noticed the suspicious movement and fired three to four rounds of fire as a precautionary measure",
+      "published_at": "Tue, 11 Aug 2026 10:35:28 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/co3fh0/article71331109.ece/alternates/LANDSCAPE_1200/PTI08_30_2025_000463B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "266e9e592b08aa3916",
+      "title": "Protectors turn predators: how son preference fuels female foeticide rackets in Maharashtra",
+      "url": "https://www.thehindu.com/news/national/maharashtra/protectors-turn-predators-how-son-preference-fuels-female-foeticide-rackets-in-maharashtra/article71329924.ece",
+      "summary": "The arrest of a retired government doctor by the Kolhapur police on July 31 for allegedly orchestrating a sophisticated female foeticide ring shows that illegal abortion networks continue to operate in secret across the State",
+      "published_at": "Tue, 11 Aug 2026 10:25:31 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/5a7u2j/article71329925.ece/alternates/LANDSCAPE_1200/10_BM_Chandrakant%20Gaikwad.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bed19d0a757878f98e",
+      "title": "Kerala plans multi-agency mechanism for faster response to sea accidents",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-plans-multi-agency-mechanism-for-faster-response-to-sea-accidents/article71331043.ece",
+      "summary": "Since fishing community is best equipped to gauge conditions at sea, including wind speed and currents, and take decisions based on them during the ‘golden hour,’ a local rapid response team of fishers will be formed to support search operations",
+      "published_at": "Tue, 11 Aug 2026 10:23:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c0oij/article71331074.ece/alternates/LANDSCAPE_1200/rain_04.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "3a525d11d986db1021",
+      "title": "Display boards offering arbitrary discount on drugs to face action in Kerala",
+      "url": "https://www.thehindu.com/news/national/kerala/display-boards-offering-arbitrary-discount-on-drugs-to-face-action-in-kerala/article71328378.ece",
+      "summary": "Drug inspectors and assistant drugs controllers authorised to check if shops are putting up misleading advertisements that can influence the purchasing decisions of consumers",
+      "published_at": "Tue, 11 Aug 2026 10:14:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4w8xh4/article71328591.ece/alternates/LANDSCAPE_1200/80692_10_8_2026_18_17_6_1_11TVKZSHOP.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b1796729313f688ad7",
+      "title": "Early initiation of breastfeeding not enough; mothers need sustained support, say experts",
+      "url": "https://www.thehindu.com/news/national/karnataka/early-initiation-of-breastfeeding-not-enough-mothers-need-sustained-support-say-experts/article71328015.ece",
+      "summary": "NFHS-6 findings suggest that the challenge increasingly lies in helping mothers continue breastfeeding after they leave healthcare facilities",
+      "published_at": "Tue, 11 Aug 2026 10:10:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/o0pjpc/article71329302.ece/alternates/LANDSCAPE_1200/7col_Lead_StoryGEPG76LOG.3.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "c006c51deb1472d5eb",
+      "title": "Kerala faces deadly landslides amid intensifying monsoon rains | Explained",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-hit-by-monsoon-landslides-explained/article71304274.ece",
+      "summary": "Kerala receives around 3,000 mm of annual rainfall, often in uneven, high-intensity spells that are becoming more frequent and extreme, exacerbated by global warming and climate change",
+      "published_at": "Tue, 11 Aug 2026 09:53:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8r4ind/article71304285.ece/alternates/LANDSCAPE_1200/80689_3_8_2026_19_21_21_1_PSX_20260803_191644.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "c00f1dff768a96f14d",
+      "title": "Protesters march to Jharkhand Assembly; 5 injured in clashes",
+      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-assembly-march-student-protest-jpsc-examination-jssc-cgl-exam-updates-on-august-10/article71327529.ece",
+      "summary": "Students, aspirants continue sit-in in Ranchi seeking cancellation of JSSC-CGL exam and CBI probe into irregularities; police deny use of force; former JPSC Chairman arrested; march comes day after State government agreed to cancel three exams",
+      "published_at": "Tue, 11 Aug 2026 09:49:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/976iwa/article71329928.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000504B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "States & Local": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "a2f02709ba324e69fe",
+      "title": "Water security is seventh guarantee, says Karnataka CM, promising Yettinahole water to Kolar and Chickballapur by 2027-end",
+      "url": "https://www.thehindu.com/news/national/karnataka/water-security-is-seventh-guarantee-says-karnataka-cm-promising-yettinahole-water-to-kolar-and-chickballapur-by-2027-end/article71328622.ece",
+      "summary": "Speaking after inaugurating various development projects in Malur taluk of Kolar district, the Chief Minister sought to allay fears about the feasibility of the Yettinahole project",
+      "published_at": "Tue, 11 Aug 2026 09:35:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5vn485/article71328917.ece/alternates/LANDSCAPE_1200/DK-Shivakumar_GG13GC8I4F.4.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e71b59ea8ed2f5892a",
+      "title": "For Jharkhand’s job aspirants, it was a march for lost years",
+      "url": "https://www.thehindu.com/news/national/for-jharkhands-job-aspirants-it-was-a-march-for-lost-years/article71329576.ece",
+      "summary": "Protesters say State has been battling paper leaks, exam cancellations since its formation; job aspirants say they want a CBI probe into recruitment anomalies as they do not trust State authorities; they question police for putting up barbed barricades like ‘on border’ and warn that youth will give an answer through votes",
+      "published_at": "Tue, 11 Aug 2026 09:14:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9vysxy/article71329942.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000506B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "82b4daddafabaf6253",
+      "title": "Number of ‘nil refills’ of LPG cylinders by PMUY beneficiaries per year in Karnataka sees a 107% increase between 2021 and 2026",
+      "url": "https://www.thehindu.com/news/national/karnataka/over-34-lakh-pmuj-beneficiaries-in-karnataka-took-no-lpg-refill-in-2025-26/article71328623.ece",
+      "summary": "The focus now must move from the number of connections distributed to sustained LPG usage and affordability among low-income households: MP",
+      "published_at": "Tue, 11 Aug 2026 09:02:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nx7x69/article71328823.ece/alternates/LANDSCAPE_1200/_JAI9836.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "282da96884507e3a50",
+      "title": "Activists question Tamil Nadu Speaker J.C.D. Prabhakar’s participation in ‘pro-life’ rally",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/activists-question-speaker-jcd-prabhakars-participation-in-pro-life-rally/article71329041.ece",
+      "summary": "They contend that a constitutional office-holder taking part in such an event could set a wrong precedent on women’s reproductive autonomy",
+      "published_at": "Tue, 11 Aug 2026 08:58:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ti74to/article71329592.ece/alternates/LANDSCAPE_1200/BVR_8951.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ba5031fa5c42768d05",
+      "title": "At least 10 people injured by pellets on July 20, shows RTI response",
+      "url": "https://www.thehindu.com/news/national/at-least-10-people-injured-by-pellets-on-july-20-shows-rti-response/article71329189.ece",
+      "summary": "According to RTI responses by two hospitals to Trinamool Congress spokesperson Saket Gokhale, 10 people were brought in to hospital with pellet injuries during Jantar Mantar stir; hospital sources confirmed the authenticity of the response",
+      "published_at": "Tue, 11 Aug 2026 08:50:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tij1el/article71330935.ece/alternates/LANDSCAPE_1200/In-a-first-PelGD6G9IN29.3.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "af595555988e3ce1d3",
+      "title": "RSS to hold all-India coordination meeting in Andhra Pradesh",
+      "url": "https://www.thehindu.com/news/national/rss-to-hold-all-india-coordination-meeting-in-andhra-pradesh/article71329671.ece",
+      "summary": "RSS chief Mohan Bhagwat, general secretary Dattatreya Hosabale and other senior office bearers of the organisation are expected to attend the meeting",
+      "published_at": "Tue, 11 Aug 2026 08:18:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c75tzt/article71330852.ece/alternates/LANDSCAPE_1200/Sunil%20Ambekar%20RSS%204.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b679d87f24ecf512d4",
+      "title": "History will indeed remember Manmohan Singh kindly as most consequential PM: Sonia Gandhi",
+      "url": "https://www.thehindu.com/news/national/history-will-indeed-remember-manmohan-singh-kindly-as-most-consequential-pm-sonia-gandhi/article71330884.ece",
+      "summary": "July 29, 2026, was an important but unacknowledged day in our political history as the Supreme Court upheld CBI's clean chit to Dr. Manmohan Singh in the alleged coal block allocation scam, said Sonia Gandhi",
+      "published_at": "Tue, 11 Aug 2026 08:11:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/d51d3u/article71330891.ece/alternates/LANDSCAPE_1200/PTI12_05_2025_000495B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
@@ -603,35 +1202,6 @@
       }
     },
     {
-      "raw_id": "af595555988e3ce1d3",
-      "title": "RSS to hold all-India coordination meeting in Andhra Pradesh",
-      "url": "https://www.thehindu.com/news/national/rss-to-hold-all-india-coordination-meeting-in-andhra-pradesh/article71329671.ece",
-      "summary": "RSS chief Mohan Bhagwat, general secretary Dattatreya Hosabale and other senior office bearers of the organisation are expected to attend the meeting",
-      "published_at": "Tue, 11 Aug 2026 07:08:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/c75tzt/article71330852.ece/alternates/LANDSCAPE_1200/Sunil%20Ambekar%20RSS%204.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "ba96a0831a0f58e779",
       "title": "Swell waves likely along coast of Thiruvananthapuram on Tuesday",
       "url": "https://www.thehindu.com/news/national/kerala/swell-waves-likely-along-coast-of-thiruvananthapuram-on-tuesday/article71328839.ece",
@@ -671,558 +1241,6 @@
       "summary": "Nine technical snags in a minute, including an autopilot disconnect, hydraulic failures and faults affecting the systems that control the aircraft’s nose-up and nose-down movement; Air India writes to Airbus",
       "published_at": "Tue, 11 Aug 2026 06:56:19 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/j8s5wc/article71327690.ece/alternates/LANDSCAPE_1200/20260804163L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ee6ea1ab6744517a81",
-      "title": "‘Govt. will have to listen to us’: Devendra Nath Mahato joins ‘Vidhan Sabha gherao’ march",
-      "url": "https://www.thehindu.com/news/national/jharkhand/devendra-nath-mahato-vidhan-sabha-gherao-march-jharkhand/article71327344.ece",
-      "summary": "“Today it's CM Hemant Soren's birthday, and he should not take such a step where some unfortunate events like at the Jantar Mantar take place here. Do not do anything that causes someone to bleed or get injured,” said Devendra Nath Mahato",
-      "published_at": "Tue, 11 Aug 2026 06:44:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/y433fs/article71327391.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-10%20at%2011.50.40%20AM.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c00f1dff768a96f14d",
-      "title": "Protesters march to Jharkhand Assembly; 5 injured in clashes",
-      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-assembly-march-student-protest-jpsc-examination-jssc-cgl-exam-updates-on-august-10/article71327529.ece",
-      "summary": "Students, aspirants continue sit-in in Ranchi seeking cancellation of JSSC-CGL exam and CBI probe into irregularities; police deny use of force; former JPSC Chairman arrested; march comes day after State government agreed to cancel three exams",
-      "published_at": "Tue, 11 Aug 2026 06:42:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/976iwa/article71329928.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000504B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "ba5031fa5c42768d05",
-      "title": "At least 10 people injured by pellets on July 20, shows RTI response",
-      "url": "https://www.thehindu.com/news/national/at-least-10-people-injured-by-pellets-on-july-20-shows-rti-response/article71329189.ece",
-      "summary": "According to RTI responses by two hospitals to Trinamool Congress spokesperson Saket Gokhale, 10 people were brought in to hospital with pellet injuries during Jantar Mantar stir; hospital sources confirmed the authenticity of the response",
-      "published_at": "Tue, 11 Aug 2026 06:39:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/g2z1x4/article71329571.ece/alternates/LANDSCAPE_1200/TH22-Ashna-AnotGHVG9OQKL.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "16a83fd1b2fd30008f",
-      "title": "Pellet gun usage: Major incidents that shaped the crowd-control debate",
-      "url": "https://www.thehindu.com/news/national/pellet-gun-usage-major-incidents-in-jammu-kashmir-delhi-protest-that-shaped-the-crowd-control-debate-in-india/article71293763.ece",
-      "summary": "The alleged use of a pellet gun in the Sansad march organised by the CJP has revived questions about a weapon that has been repeatedly criticised for causing severe injuries. Here’s a timeline of India’s major incidents",
-      "published_at": "Tue, 11 Aug 2026 06:39:37 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "4b1b71354eee9850e4",
-      "title": "Delhi Police authorised pellet gun use against protestors on July 20: RAF general diary entry",
-      "url": "https://www.thehindu.com/news/national/raf-fired-pellet-gun-at-protesters-on-the-directions-of-a-delhi-police-officer-document-shows/article71275391.ece",
-      "summary": "The RAF registered the diary entry at Parliament Street police station in the early hours of July 22, soon after The Hindu’s report on pellet gun injuries; following the incident, the RAF withdrew pump action guns, electric shields, anti-riot guns, shock batons from personnel deployed at Jantar Mantar",
-      "published_at": "Tue, 11 Aug 2026 06:36:31 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/wacleu/article71275389.ece/alternates/LANDSCAPE_1200/IMG_3251.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a4ad255c13d9502658",
-      "title": "Delhi High Court seeks The Caravan’s stand in defamation case by Nitin Gadkari’s son",
-      "url": "https://www.thehindu.com/news/cities/Delhi/delhi-high-court-seeks-the-caravans-stand-in-defamation-case-by-nitin-gadkaris-son/article71329352.ece",
-      "summary": "The application, which forms part of a lawsuit by Mr. Nikhil Gadkari and his company Cian Agro Industries and Infrastructure Ltd, seeks directions to take down articles linking him and his company to the sale of beef or bovine meat products",
-      "published_at": "Tue, 11 Aug 2026 04:48:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/t1gmn3/article71330093.ece/alternates/LANDSCAPE_1200/DHC.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "97226d5ed448da7997",
-      "title": "‘Nothing wrong’, says Fadnavis on  NCP(SP) MPs meeting PM Modi",
-      "url": "https://www.thehindu.com/news/national/maharashtra/nothing-wrong-says-fadnavis-on-ncpsp-mps-meeting-pm-modi/article71329177.ece",
-      "summary": "“At the meeting Maharashtra related issues were discussed,” said NCP(SP) leader Supriya Sule, adding that PM Modi assured of positive and concrete measures on all these issues",
-      "published_at": "Tue, 11 Aug 2026 04:18:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rqshqz/article71330092.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000449B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b4cb2207aabfd1a59b",
-      "title": "Tiranga is a symbol of India’s honour, pride and glory, says Yogi",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/tiranga-is-a-symbol-of-indias-honour-pride-and-glory-says-yogi/article71328815.ece",
-      "summary": "",
-      "published_at": "Tue, 11 Aug 2026 04:07:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/avlk4h/article71330090.ece/alternates/LANDSCAPE_1200/20260810283L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "85216df89f4bb9fa0c",
-      "title": "Driver dies days after assault by group of kanwariyas in Uttar Pradesh; FIRs give conflicting accounts",
-      "url": "https://www.thehindu.com/news/national/driver-dies-days-after-assault-by-group-of-kanwariyas-in-uttar-pradesh-firs-give-conflicting-accounts/article71328753.ece",
-      "summary": "Azeem was beaten up allegedly by an auto driver and kanwariyas; auto driver’s family blames Azeem",
-      "published_at": "Tue, 11 Aug 2026 03:19:44 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e71b59ea8ed2f5892a",
-      "title": "For Jharkhand’s job aspirants, it was a march for lost years",
-      "url": "https://www.thehindu.com/news/national/for-jharkhands-job-aspirants-it-was-a-march-for-lost-years/article71329576.ece",
-      "summary": "Protesters say State has been battling paper leaks, exam cancellations since its formation; job aspirants say they want a CBI probe into recruitment anomalies as they do not trust State authorities; they question police for putting up barbed barricades like ‘on border’ and warn that youth will give an answer through votes",
-      "published_at": "Tue, 11 Aug 2026 02:41:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9vysxy/article71329942.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000506B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "8b0ee4b2e0d174774b",
-      "title": "Three students die of snakebite at Maharashtra school",
-      "url": "https://www.thehindu.com/news/national/maharashtra/snake-bites-tribal-girls-at-school-in-maharashtras-gadchiroli-some-dead-probe-ordered/article71327311.ece",
-      "summary": "The incident took place in the early hours of Monday when the snake, a krait, is suspected to have entered the hostel of the Japatlai Residential Ashram School in Dhanora taluka, Gadchiroli",
-      "published_at": "Tue, 11 Aug 2026 02:31:54 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "4e1698e86e9d125afd",
-      "title": "Panel reaches Jammu to study demographic changes near border",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/panel-reaches-jammu-to-study-demographic-changes-near-border/article71329746.ece",
-      "summary": "The committee is likely to meet civil society members on Tuesday and visit settlements along the Pakistan border in Kathua and Samba districts over the next two days",
-      "published_at": "Tue, 11 Aug 2026 02:29:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tiig7o/article71329940.ece/alternates/LANDSCAPE_1200/TH01-Vijaita-DeGFQG6LI47.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "8f4534a576e71cbf04",
-      "title": "BJP asks Congress to withdraw support to hemant Soren govt; Rahul Gandhi slams police action",
-      "url": "https://www.thehindu.com/news/national/jharkhand/withdraw-support-to-hemant-soren-government-if-students-demands-not-met-bjp-tells-rahul/article71328511.ece",
-      "summary": "Jharkhand BJP leaders stage protest outside Chief Minister Hemant Soren’s residence, say lathi charge on students is the “final nail in the coffin” of the JMM-Congress government in the State",
-      "published_at": "Tue, 11 Aug 2026 02:01:24 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/y4x0ba/article71329384.ece/alternates/LANDSCAPE_1200/PTI08_10_2026_000444B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "266e9e592b08aa3916",
-      "title": "Protectors turn predators: how son preference fuels female foeticide rackets in Maharashtra",
-      "url": "https://www.thehindu.com/news/national/maharashtra/protectors-turn-predators-how-son-preference-fuels-female-foeticide-rackets-in-maharashtra/article71329924.ece",
-      "summary": "The arrest of a retired government doctor by the Kolhapur police on July 31 for allegedly orchestrating a sophisticated female foeticide ring shows that illegal abortion networks continue to operate in secret across the State",
-      "published_at": "Tue, 11 Aug 2026 01:29:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/5a7u2j/article71329925.ece/alternates/LANDSCAPE_1200/10_BM_Chandrakant%20Gaikwad.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "f358ff4f75944e52a2",
-      "title": "Suvendu admits police negligence in custodial death of TMC worker",
-      "url": "https://www.thehindu.com/news/national/west-bengal/wb-cm-admits-police-negligence-in-custodial-death-announces-compensation-for-family/article71329387.ece",
-      "summary": "Day after Mamata Banerjee’s vehicle was attacked, CM visits family of Birju Keot; he orders probe by a magistrate, offers ₹10 lakh compensation to victim’s wife; IO suspended, station in-charge transferred",
-      "published_at": "Tue, 11 Aug 2026 01:08:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/k2gqx8/article71329792.ece/alternates/LANDSCAPE_1200/80717_24_6_2026_18_21_29_3_SUVENDUADHIKARI3.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "edaad618d91dee0736",
-      "title": "Haryana power employees defer strike by two months after government assurances",
-      "url": "https://www.thehindu.com/news/national/haryana/power-employees-defer-strike-by-two-months-after-government-assurances/article71328920.ece",
-      "summary": "",
-      "published_at": "Tue, 11 Aug 2026 01:06:15 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "56d0e2e2547ae99799",
-      "title": "Cauvery Committee, Authority to meet on Tuesday to review water situation",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/cauvery-committee-authority-to-meet-on-tuesday-to-review-water-situation/article71329276.ece",
-      "summary": "As on date, the combined storage of four reservoirs in Karnataka was around 88 tmc ft. against the total capacity of 114.57 tmc ft.",
-      "published_at": "Tue, 11 Aug 2026 00:47:05 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5d8440aaeb8e5c01b1",
-      "title": "T.N. Committee constituted to shortlist candidates for posts of non-hereditary trustees in temples",
-      "url": "https://www.thehindu.com/news/cities/chennai/tn-committee-constituted-to-shortlist-candidates-for-posts-of-non-hereditary-trustees-in-temples/article71329450.ece",
-      "summary": "",
-      "published_at": "Tue, 11 Aug 2026 00:46:17 +0530",
-      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

@@ -1,45 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-12T05:07:54.156293+00:00",
-  "input_count": 1376,
+  "prepared_at": "2026-08-12T05:53:27.384434+00:00",
+  "input_count": 405,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 102,
-    "established_or_other": 98,
+    "independent_social": 108,
+    "established_or_other": 92,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "2935d9e2d1d73efd2d",
-      "title": "पशु शवदाहगृह बना लेकिन शुरू नहीं हुआ",
-      "url": "https://khabarlahariya.org/animal-crematorium-built-but-not-operational/",
-      "summary": "वाराणसी जिले में वर्ष 2022 में पशुओं के अंतिम संस्कार के लिए बनाया गया पशु शवदाहगृह आज तक शुरू नहीं हो सका। स्थानीय लोगों का कहना है कि इसके बनने…",
-      "published_at": "Sat, 01 Aug 2026 10:00:25 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "d60ac668a63773df04",
       "title": "Varanasi: 2 साल से नहीं मिला महिला कर्मचारियों को मानदेय! डिप्टी कलेक्टर को दिया ज्ञापन",
@@ -155,6 +126,100 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "e2e0bd073ac31e37a3",
+      "title": "Scholarships: August 8, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sun, 09 Aug 2026 05:57:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/67a3c7/article71280249.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: August 1, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-august-1-2026/article71265217.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4a4025e966f659dfa7",
+      "title": "What does ‘mercurial’ mean?",
+      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
+      "summary": "",
+      "published_at": "Sat, 08 Aug 2026 20:06:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/yxo6ph/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "What does ‘unputdownable’ mean?",
+          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "88bd9f7613afa9e833",
@@ -331,536 +396,6 @@
       }
     },
     {
-      "raw_id": "f338a80cc44e62a371",
-      "title": "NASA invites ISRO to join Moon Base programme",
-      "url": "https://www.thehindu.com/sci-tech/science/nasa-invites-isro-to-join-moon-base-programme/article71332292.ece",
-      "summary": "NASA has officially invited the Indian Space Research Organisation (ISRO) to collaborate on its ambitious Moon Base programme, as announced during the recent ninth meeting of the India-U.S. Civil Space Joint Working Group in Bengaluru.",
-      "published_at": "Wed, 12 Aug 2026 02:53:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nxaoix/article71332449.ece/alternates/LANDSCAPE_1200/2026-06-30T210438Z_1786015746_RC2BQLA8NKLC_RTRMADP_3_SPACE-NASA-LANDERS.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "NASA invites ISRO to join its Moon base programme",
-          "url": "https://indianexpress.com/article/india/nasa-invites-isro-to-join-its-moon-base-programme-10828892/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "5aca5f56b8fdf0d3d6",
-      "title": "Kerala child rights panel, SGOU to launch certificate, diploma courses",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-child-rights-panel-sgou-to-launch-certificate-diploma-courses/article71333354.ece",
-      "summary": "Commission chairperson K.V. Manoj Kumar and SGOU Vice Chancellor Jagathy Raj V.P. sign MoU for courses for child rights and related laws.",
-      "published_at": "Wed, 12 Aug 2026 00:38:32 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Kerala Child Rights Commission to launch certificate, diploma courses on child rights",
-          "url": "https://indianexpress.com/article/education/kerala-child-rights-commission-to-launch-certificate-diploma-courses-on-child-rights-10827488/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "de37b8ac603ca413a7",
-      "title": "Trump says would be 'terrible mistake' to replace FIFA's Infantino",
-      "url": "https://www.thehindu.com/sport/trump-says-would-be-terrible-mistake-to-replace-fifas-infantino/article71331007.ece",
-      "summary": "Mr. Trump's backing of Mr. Infantino contrasts with the response of U.S. Soccer, which issued a statement critiquing the FIFA leader alongside Canada Soccer and football organizations in Central America and the Caribbean",
-      "published_at": "Tue, 11 Aug 2026 09:47:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tezb5p/article71331009.ece/alternates/LANDSCAPE_1200/2026-08-03T123935Z_1514791293_RC2AHMAOODUA_RTRMADP_3_SOCCER-FIFA-STAKE.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Trump says ousting Infantino as FIFA president would be ‘terrible mistake’",
-          "url": "https://indianexpress.com/article/sports/football/us-president-donald-trump-ousting-fifa-president-gianni-infantino-terrible-mistake-10828035/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "b5b6cd7ba2e2fc1bc2",
-      "title": "Scotland, Netherlands criticise ICC’s World Cup format changes",
-      "url": "https://www.thehindu.com/sport/cricket/scotland-netherlands-criticise-iccs-world-cup-format-changes/article71329872.ece",
-      "summary": "The two ‌Associate Member boards described the lack of communication as “disappointing and disrespectful”",
-      "published_at": "Tue, 11 Aug 2026 00:03:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/bhrncm/article71329877.ece/alternates/LANDSCAPE_1200/ICC%20Cricket%20World%20Cup%202027.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scotland, Netherlands boards criticise ICC for ODI World Cup format changes",
-          "url": "https://indianexpress.com/article/sports/cricket/scotland-netherlands-criticise-icc-odi-world-cup-format-changes-10826618/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "0f05494e27e56c1abc",
-      "title": "Gold Rate Today, August 11: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-      "url": "https://indianexpress.com/article/india/gold-rate-today-august-11-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10827428/",
-      "summary": "",
-      "published_at": "Tue, 11 Aug 2026 05:14:30 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/Gold-rate-1-1.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 22,
-        "observed_report_count": 3,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      },
-      "related_reports": [
-        {
-          "title": "Gold Rate Today, August 7: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-august-7-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10821763/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        },
-        {
-          "title": "Gold Rate Today, August 8: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-august-8-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10823419/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "e2e0bd073ac31e37a3",
-      "title": "Scholarships: August 8, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sun, 09 Aug 2026 05:57:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/67a3c7/article71280249.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: August 1, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-august-1-2026/article71265217.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4a4025e966f659dfa7",
-      "title": "What does ‘mercurial’ mean?",
-      "url": "https://www.thehindu.com/education/what-does-mercurial-mean/article71298811.ece",
-      "summary": "",
-      "published_at": "Sat, 08 Aug 2026 20:06:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/yxo6ph/article71298807.ece/alternates/LANDSCAPE_1200/iStock-1405700197.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "What does ‘unputdownable’ mean?",
-          "url": "https://www.thehindu.com/education/what-does-unputdownable-mean/article70827678.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "10b7be93a4703c060b",
-      "title": "NEET PG 2026 City Intimation Slip Out at nbe.edu.in: How to download",
-      "url": "https://indianexpress.com/article/education/neet-pg-2026-city-intimation-slip-out-at-nbe-edu-in-how-to-download-10827387/",
-      "summary": "",
-      "published_at": "Wed, 12 Aug 2026 03:38:09 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/NEET-PG-2026-City-Intimation-Slip.png",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "NEET PG 2026 City Intimation Slip (OUT) Live Updates: Exam-city slip out, download at nbe.edu.in",
-          "url": "https://indianexpress.com/article/education/neet-pg-2026-admit-card-date-exam-city-intimation-slip-released-direct-download-link-nbems-nmc-10825882/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4c2b3d80f820db6f07",
-      "title": "IGNOU extends July 2026 admission, re-registration deadline till August 16",
-      "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-reregistration-deadline-fee-details-important-dates-official-website-to-apply-10818477/",
-      "summary": "",
-      "published_at": "Wed, 05 Aug 2026 04:56:20 +0000",
-      "image_url": "https://images.indianexpress.com/2026/07/IGNOU.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "IGNOU extends July 2026 admission deadline till August 16 for ODL, online programmes",
-          "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-deadline-august-16-open-distance-learnin-odl-online-programmes-ignouadmission-samarth-edu-in-10813315/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "0bfb0dc6fc98c886ca",
-      "title": "Broad Peak avalanche: Rescue briefly paused after 3 bodies recovered, Nirmal Purja among missing",
-      "url": "https://indianexpress.com/article/world/broad-peak-avalanche-rescue-briefly-paused-after-3-bodies-recovered-nirmal-purja-among-missing-10813055/",
-      "summary": "",
-      "published_at": "Sat, 01 Aug 2026 04:13:40 +0000",
-      "image_url": "https://images.indianexpress.com/2026/08/Broad-peak.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-world",
-        "name": "The Indian Express - World",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Broad Peak avalanche: Nepal’s Nirmal Purja among six missing, four bodies recovered",
-          "url": "https://indianexpress.com/article/world/south-asia-nirmal-purja-broad-peak-avalanche-pakistan-missing-10812573/",
-          "source": {
-            "id": "indian-express-world",
-            "name": "The Indian Express - World",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "0e9e7edd7823ca66cf",
-      "title": "NEET PG 2026 City Slip OUT: नीट पीजी सिटी इंटिमेशन स्लिप जारी, Direct Link एक्टिव, nbe.edu.in से ऐसे करें डाउनलोड, जानें कब आएगा एडमिट कार्ड",
-      "url": "https://www.jansatta.com/education/neet-pg-2026-city-slip-released-direct-link-active-know-how-to-download-from-nbe-edu-in-check-admit-card-date/4657942/",
-      "summary": "",
-      "published_at": "2026-08-12T10:17:49+05:30",
-      "image_url": "https://images.jansatta.com/2026/08/NEET-PG-2026-City-Intimation-Slip-Direct-Link.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "requires_verification": true,
-      "priority_discovery": false,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "NEET PG 2026 City Intimation Slip: नीट पीजी सिटी इंटिमेशन स्लिप nbe.edu.in पर जारी, Direct Link से ऐसे करें डाउनलोड",
-          "url": "https://www.jansatta.com/education/nbems-neet-pg-2026-city-intimation-slip-live-updates-exam-centre-allocation-status-at-nbe-edu-in/4656427/",
-          "source": {
-            "id": "jansatta-hindi",
-            "name": "Jansatta (Hindi)",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Indian Express Pvt. Limited",
-            "language": "Hindi"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "308bffeae6934aee55",
       "title": "Iran: Why Ground Attack is a Tough Call for Trump",
       "url": "https://www.newsclick.in/iran-why-ground-attack-tough-call-trump",
@@ -890,11 +425,131 @@
       }
     },
     {
+      "raw_id": "8852510124f613c408",
+      "title": "Mumbai landslip LIVE: At least 2 dead, several feared trapped; rescue operations underway",
+      "url": "https://www.thehindu.com/news/cities/mumbai/kurla-mumbai-landslide-live-updates-ndrf-bmc-rescue-work-updates-mayor-ritu-tawade-bjp-ncp-congress-shivsena/article71334994.ece",
+      "summary": "Debris fell on nearby rooms of the chawl structure; as per witnesses, six to eight persons were trapped under the debris, a BMC official said",
+      "published_at": "Wed, 12 Aug 2026 11:12:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e669af521e277120fa",
+      "title": "‘Compromised PM forced to sell India’s interest’: Rahul as U.S. court dismisses Adani case",
+      "url": "https://www.thehindu.com/news/national/compromised-pm-forced-to-sell-indias-interest-rahul-as-us-court-dismisses-adani-case/article71335036.ece",
+      "summary": "A compromised PM was forced to sell India's interest; India is paying a huge price; there is much more to this than meets the eye, said Rahul Gandhi in a post on X",
+      "published_at": "Wed, 12 Aug 2026 11:08:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/m84htc/article71335087.ece/alternates/LANDSCAPE_1200/20260810429L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9cf001ce2246aaad06",
+      "title": "Mobile phone found in former MP Prajwal Revanna’s prison cell in Bengaluru, assistant superintendent suspended",
+      "url": "https://www.thehindu.com/news/national/karnataka/mobile-phone-found-in-former-mp-prajwal-revannas-prison-cell-assistant-superintendent-suspended/article71334967.ece",
+      "summary": "The discovery has raised questions over how a prohibited electronic device reached the possession of a high-profile convict inside the high-security prison",
+      "published_at": "Wed, 12 Aug 2026 11:07:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dz6r5n/article71335173.ece/alternates/LANDSCAPE_1200/IMG_FILE_PHOTO__Prajwal__2_1_NKCTOFNT.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "684c6db1d4bbeaec7f",
+      "title": "Parliament monsoon session Day 18 LIVE: Inquiry committee report on Justice Varma to be tabled in Lok Sabha today",
+      "url": "https://www.thehindu.com/news/national/parliament-monsoon-session-day-18-lok-sabha-rajya-sabha-live-updates-august-12-2026/article71334977.ece",
+      "summary": "Congress MP sought clarification from the government on the extent of reported theft and misappropriation of temple donations and valuables and the steps being taken to investigate those responsible.",
+      "published_at": "Wed, 12 Aug 2026 11:06:16 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "92818ac53fcb110a63",
       "title": "527 rescued as Madhya Pradesh hit by incessant rain; CM reviews situation",
       "url": "https://www.thehindu.com/news/national/madhya-pradesh/madhya-pradesh-hit-by-incessant-rain-rescue-operations/article71333065.ece",
       "summary": "Among the worst affected districts are Rajgarh, Shivpuri, Raisen, Bhopal, Sehore, Ujjain, Mandla and Mauganj",
-      "published_at": "Wed, 12 Aug 2026 10:27:15 +0530",
+      "published_at": "Wed, 12 Aug 2026 11:05:41 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/dvlwki/article71335088.ece/alternates/LANDSCAPE_1200/20260810527L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
@@ -919,11 +574,73 @@
       }
     },
     {
+      "raw_id": "aaf26d47267b650405",
+      "title": "Body of missing youth recovered from Chaliyar river in Kerala",
+      "url": "https://www.thehindu.com/news/national/kerala/search-on-for-youth-missing-after-boat-capsizes-in-chaliyar-river-in-kerala/article71335052.ece",
+      "summary": "23-year-old went missing after a country boat capsized",
+      "published_at": "Wed, 12 Aug 2026 11:03:32 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "40ef498be8d559b4c6",
+      "title": "AI heart disease prediction tools show promise but are not ready for clinical use: review",
+      "url": "https://www.thehindu.com/news/national/karnataka//article71332372.ece",
+      "summary": "The findings are particularly relevant for India, where cardiovascular disease accounts for nearly one-third of all deaths and often affects people at younger ages than in many other countries",
+      "published_at": "Wed, 12 Aug 2026 10:59:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4b3qp3/article71332959.ece/alternates/LANDSCAPE_1200/iStock-1482415045.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
       "raw_id": "25f7443d47dd32cabd",
       "title": "Warangal woman rescued from alleged confinement in Muscat after BRS intervention",
       "url": "https://www.thehindu.com/news/national/telangana/warangal-woman-rescued-from-alleged-confinement-in-muscat-after-brs-intervention/article71334985.ece",
       "summary": "Mohammed Mahamuda travelled to Oman on July 16 on a tourist visa after being promised domestic work; she was allegedly handed over to a sub-agent, who seized her passport and mobile phone and confined her to a room",
-      "published_at": "Wed, 12 Aug 2026 10:17:36 +0530",
+      "published_at": "Wed, 12 Aug 2026 10:49:22 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/hnl8c8/article71334981.ece/alternates/LANDSCAPE_1200/Victim.jpg",
       "suggested_category": "",
       "priority_discovery": false,
@@ -945,6 +662,101 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "be593c270e5417989f",
+      "title": "Maharashtra to waive stamp duty on internal land transfers for renewable energy projects",
+      "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-to-waive-stamp-duty-on-internal-land-transfers-for-renewable-energy-projects/article71332448.ece",
+      "summary": "This means the State Renewable Energy and Energy Storage Policy-2025 to 2035-36 will include a 25% transfer duty exemption as per the provisions of the Maharashtra Family Administration and Agricultural Land Acts",
+      "published_at": "Wed, 12 Aug 2026 10:39:56 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "d6dbf80b4c61f1e697",
+      "title": "Nagpur woman human trafficked on the pretext of a job in Portugal",
+      "url": "https://www.thehindu.com/news/national/maharashtra/nagpur-woman-human-trafficked-on-the-pretext-of-a-job-in-portugal/article71332333.ece",
+      "summary": "According to the survivor’s account, she came across the job opportunity on the Instagram page of the WE MIGRATE company in November 2025",
+      "published_at": "Wed, 12 Aug 2026 10:36:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2rka47/article70952064.ece/alternates/LANDSCAPE_1200/iStock-1334623338.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "04a48290a87064d71c",
+      "title": "Supreme Court asks 19 States, UTs to declare cancer 'notifiable disease' for early detection",
+      "url": "https://www.thehindu.com/news/national/supreme-court-asks-19-states-uts-to-declare-cancer-notifiable-disease-for-early-detection/article71332544.ece",
+      "summary": "The Supreme Court's direction came after it was informed that 17 of the 36 States and UTs have so far notified cancer as a \"notified disease\"",
+      "published_at": "Wed, 12 Aug 2026 10:30:28 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/lxrt66/article66353937.ece/alternates/LANDSCAPE_1200/IMG_thvli-supreme-court-_2_1_7IA6L7U0.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -1392,6 +1204,39 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "688dc95c52a5580690",
+      "title": "Congress will corner Haryana government over rising crime, tax burden in Assembly session",
+      "url": "https://www.thehindu.com/news/national/haryana/congress-will-corner-haryana-government-over-rising-crime-tax-burden-in-assembly-session/article71332645.ece",
+      "summary": "",
+      "published_at": "Wed, 12 Aug 2026 04:42:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/other-states/arb498/article71332634.ece/alternates/LANDSCAPE_1200/IMG-20260811-WA0007.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
       }
     }
   ]

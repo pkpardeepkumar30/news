@@ -5,6 +5,7 @@ import argparse, json, re, unicodedata
 from collections import Counter
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = {'id','category','title','summary','why_it_matters','location','published_at','updated_at','underreported_score','evidence_status','confidence','image','sources'}
@@ -25,6 +26,21 @@ MOJIBAKE_REPLACEMENTS = {
     '\u00e2\u201a\u00b9': '\u20b9',
     '\u00c3\u00b1': '\u00f1'
 }
+
+def normalise_timestamp(value, field='timestamp', story_id='<unknown>'):
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f"Missing {field} for {story_id}")
+    candidate = value.strip()
+    try:
+        parsed = datetime.fromisoformat(candidate.replace('Z', '+00:00'))
+    except ValueError:
+        try:
+            parsed = parsedate_to_datetime(candidate)
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"Invalid {field} for {story_id}: {value!r}") from exc
+    if parsed.tzinfo is None:
+        raise ValueError(f"Timezone missing from {field} for {story_id}: {value!r}")
+    return parsed.isoformat()
 
 def repair_text(value):
     if isinstance(value, str):
@@ -198,6 +214,8 @@ def validate(story, source_material=None):
     missing = REQUIRED - set(story)
     if missing:
         raise ValueError(f"{story.get('id', '<unknown>')} missing: {sorted(missing)}")
+    for field in ('published_at', 'updated_at'):
+        story[field] = normalise_timestamp(story[field], field, story['id'])
     if story['confidence'].get('level') not in {'High','Medium','Low'}:
         raise ValueError(f"Invalid confidence level for {story['id']}")
     if not 0 <= int(story['confidence'].get('score', -1)) <= 100:

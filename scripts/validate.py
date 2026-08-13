@@ -4,7 +4,7 @@ from collections import Counter
 from pathlib import Path
 from publish import (
     INDEPENDENT_SOCIAL_TYPES, contains_non_latin_letters, reader_text_fields,
-    validate_portfolio_language
+    normalise_timestamp, validate_portfolio_language
 )
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -26,6 +26,10 @@ try:
     assert 'Governance & Administration' in data.get('categories', []), 'Missing governance category'
     for story in data['stories']:
         assert story['category'] in data['categories'], f"Unknown category: {story['id']}"
+        for field in ('published_at', 'updated_at'):
+            assert story[field] == normalise_timestamp(story[field], field, story['id']), (
+                f"Non-canonical {field}: {story['id']}"
+            )
         for field, value in reader_text_fields(story):
             assert not contains_non_latin_letters(str(value)), f"Non-English reader text in {field}: {story['id']}"
         assert story['image']['url'], f"Missing image: {story['id']}"

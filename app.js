@@ -1,8 +1,13 @@
 const state = { data: null, archiveIndex: { months: [] }, category: 'All', source: 'all', query: '', view: 'latest', sort: 'latest' };
 const el = id => document.getElementById(id);
 const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-const formatDate = value => new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(value));
-const shortDate = value => new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(new Date(value));
+const parseDate = value => { const date=new Date(value); return Number.isNaN(date.getTime()) ? null : date; };
+const formatDate = value => { const date=parseDate(value); return date ? new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(date) : 'Date unavailable'; };
+const shortDate = value => { const date=parseDate(value); return date ? new Intl.DateTimeFormat('en-IN',{day:'numeric',month:'short'}).format(date) : 'Date unavailable'; };
+const monthLabel = value => { const date=parseDate(value); return date ? new Intl.DateTimeFormat('en-IN',{month:'long',year:'numeric'}).format(date) : 'Unknown month'; };
+const longDate = value => { const date=parseDate(value); return date ? new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(date) : 'Date unavailable'; };
+const dateKey = (value, includeDay=false) => { const date=parseDate(value); if(!date)return ''; const year=date.getUTCFullYear(), month=String(date.getUTCMonth()+1).padStart(2,'0'), day=String(date.getUTCDate()).padStart(2,'0'); return includeDay ? `${year}-${month}-${day}` : `${year}-${month}`; };
+const dateTimestamp = value => parseDate(value)?.getTime() ?? 0;
 const headlineClass = title => title.length > 90 ? 'headline-long' : title.length > 58 ? 'headline-medium' : '';
 const storyPagePath = story => `/stories/${String(story.id ?? '').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,160)}`;
 const storyLink = (story, label) => `<a class="story-title-link" href="${storyPagePath(story)}">${escapeHtml(label)}</a>`;
@@ -58,7 +63,7 @@ function filteredStories(){
     const haystack = [s.title,s.summary,s.location,s.category,...s.sources.map(x=>x.name)].join(' ').toLowerCase();
     return categoryOk && sourceOk && (!q || haystack.includes(q));
   });
-  return rows.sort((a,b)=>state.sort==='underreported' ? b.underreported_score-a.underreported_score : new Date(b.updated_at)-new Date(a.updated_at));
+  return rows.sort((a,b)=>state.sort==='underreported' ? b.underreported_score-a.underreported_score : dateTimestamp(b.updated_at)-dateTimestamp(a.updated_at));
 }
 function badges(story){
   const sourceTypes = new Set(story.sources.map(s=>s.type));
@@ -85,13 +90,13 @@ function openStory(id){
 }
 function groupBy(items,keyFn){ return items.reduce((acc,item)=>{const key=keyFn(item);(acc[key] ||= []).push(item);return acc;},{}); }
 function renderArchive(){
-  const activeMonths = state.data.stories.map(s=>s.published_at.slice(0,7));
+  const activeMonths = state.data.stories.map(s=>dateKey(s.published_at)).filter(Boolean);
   const archivedMonths = (state.archiveIndex.months || []).map(entry=>entry.month);
   const months=[...new Set([...activeMonths,...archivedMonths])].sort().reverse();
-  el('archiveMonth').innerHTML=months.map(m=>`<option value="${m}">${new Intl.DateTimeFormat('en-IN',{month:'long',year:'numeric'}).format(new Date(m+'-01'))}</option>`).join('');
+  el('archiveMonth').innerHTML=months.map(m=>`<option value="${m}">${monthLabel(m+'-01T00:00:00Z')}</option>`).join('');
   const update=async()=>{
     const month=el('archiveMonth').value, cat=el('archiveCategory').value;
-    let rows=state.data.stories.filter(s=>s.published_at.startsWith(month));
+    let rows=state.data.stories.filter(s=>dateKey(s.published_at)===month);
     const entry=(state.archiveIndex.months||[]).find(item=>item.month===month);
     if(entry){
       try{
@@ -105,8 +110,8 @@ function renderArchive(){
       }catch(_){ /* Keep active stories visible if an archive file is unavailable. */ }
     }
     if(cat!=='all') rows=rows.filter(s=>s.category===cat);
-    const days=groupBy(rows,s=>s.published_at.slice(0,10));
-    el('archiveResults').innerHTML=Object.entries(days).sort((a,b)=>b[0].localeCompare(a[0])).map(([day,items])=>`<section class="archive-day"><h3>${new Intl.DateTimeFormat('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(new Date(day))}</h3>${items.map(s=>`<article class="archive-item" data-story="${escapeHtml(s.id)}"><img src="${escapeHtml(s.image.url)}" alt=""><div><h4>${storyLink(s,s.title)}</h4><p>${escapeHtml(s.category)} · ${escapeHtml(s.location)} · ${escapeHtml(s.evidence_status)}</p></div><span class="confidence ${s.confidence.level.toLowerCase()}">${s.confidence.level}</span></article>`).join('')}</section>`).join('')||'<div class="empty-state">No stories in this archive selection.</div>';
+    const days=groupBy(rows,s=>dateKey(s.published_at,true)||'unknown');
+    el('archiveResults').innerHTML=Object.entries(days).sort((a,b)=>b[0].localeCompare(a[0])).map(([day,items])=>`<section class="archive-day"><h3>${longDate(day+'T00:00:00Z')}</h3>${items.map(s=>`<article class="archive-item" data-story="${escapeHtml(s.id)}"><img src="${escapeHtml(s.image.url)}" alt=""><div><h4>${storyLink(s,s.title)}</h4><p>${escapeHtml(s.category)} · ${escapeHtml(s.location)} · ${escapeHtml(s.evidence_status)}</p></div><span class="confidence ${s.confidence.level.toLowerCase()}">${s.confidence.level}</span></article>`).join('')}</section>`).join('')||'<div class="empty-state">No stories in this archive selection.</div>';
     document.querySelectorAll('.archive-item').forEach(node=>node.addEventListener('click',()=>openArchiveStory(node.dataset.story,rows)));
   };
   el('archiveMonth').onchange=update; el('archiveCategory').onchange=update;

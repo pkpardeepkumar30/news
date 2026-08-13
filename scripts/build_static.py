@@ -6,6 +6,8 @@ import html
 import json
 import re
 import shutil
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -39,6 +41,20 @@ def story_output_path(story: dict) -> Path:
 
 def clean_text(value: object, fallback: str = "") -> str:
     return " ".join(str(value or fallback).split())
+
+
+def canonical_timestamp(value: object, fallback: object = "") -> str:
+    candidate = clean_text(value, str(fallback or ""))
+    try:
+        parsed = datetime.fromisoformat(candidate.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = parsedate_to_datetime(candidate)
+        except (TypeError, ValueError):
+            parsed = datetime.now(timezone.utc)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.isoformat()
 
 
 def description_for(story: dict) -> str:
@@ -80,8 +96,8 @@ def render_story_page(story: dict) -> str:
     evidence_text = clean_text(story.get("evidence_status"))
     category_text = clean_text(story.get("category"), "News")
     location_text = clean_text(story.get("location"), "India")
-    published = clean_text(story.get("published_at"), story.get("updated_at"))
-    modified = clean_text(story.get("updated_at"), published)
+    published = canonical_timestamp(story.get("published_at"), story.get("updated_at"))
+    modified = canonical_timestamp(story.get("updated_at"), published)
     canonical = SITE_URL + story_path(story)
     image_url = public_image(story)
     image_alt = clean_text((story.get("image") or {}).get("alt"), title_text)
@@ -202,7 +218,7 @@ def write_sitemap(stories: list[dict], generated_at: str) -> None:
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
         "  <url>",
         f"    <loc>{SITE_URL}/</loc>",
-        f"    <lastmod>{html.escape(generated_at)}</lastmod>",
+        f"    <lastmod>{html.escape(canonical_timestamp(generated_at))}</lastmod>",
         "  </url>",
     ]
     for story in sorted(stories, key=lambda item: clean_text(item.get("updated_at")), reverse=True):
@@ -210,7 +226,7 @@ def write_sitemap(stories: list[dict], generated_at: str) -> None:
             [
                 "  <url>",
                 f"    <loc>{SITE_URL}{story_path(story)}</loc>",
-                f"    <lastmod>{html.escape(clean_text(story.get('updated_at'), story.get('published_at')))}</lastmod>",
+                f"    <lastmod>{html.escape(canonical_timestamp(story.get('updated_at'), story.get('published_at')))}</lastmod>",
                 "  </url>",
             ]
         )

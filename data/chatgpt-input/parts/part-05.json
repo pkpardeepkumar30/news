@@ -1,45 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-13T17:19:58.880288+00:00",
-  "input_count": 445,
+  "prepared_at": "2026-08-13T21:10:35.863762+00:00",
+  "input_count": 431,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 129,
-    "established_or_other": 71,
+    "independent_social": 118,
+    "established_or_other": 82,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "768332016b57669bd7",
-      "title": "Prayagraj News: अन्ना-जानवर ने कर रखा है किसानों की नाक में दम!",
-      "url": "https://khabarlahariya.org/prayagraj-news-stray-cattle-have-made-life-miserable-for-farmers/",
-      "summary": "जिला प्रयागराज, ब्लाक जसरा‌, गांव सेहुँड़ा में गौवशाला‌ नहीं है, इस कारण किसान खेती नहीं कर पते हैं। बारिश के मौसम में धान-बेहन‌ की रखवाली दिन-रात करते है। इस गांव…",
-      "published_at": "Sat, 08 Aug 2026 10:30:28 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "d05ce2231ee19e502a",
       "title": "Banda News: करीब 400 सरकारी जमीनी पट्टे निरस्त किए गए,लेखपाल",
@@ -68,53 +39,6 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
-    },
-    {
-      "raw_id": "7970179f441e03c1c5",
-      "title": "Social media ban: Will the Aussie model work for India?",
-      "url": "https://www.thehindu.com/videos/webinars/social-media-ban-will-the-aussie-model-work-for-india/article71335993.ece",
-      "summary": "The Hindu hosted a webinar titled, ‘Social media ban: Will the Aussie model work for India?’, on August 10, 2026, Monday, at 5:00 p.m.",
-      "published_at": "Wed, 12 Aug 2026 15:37:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/1kn9ku/article71335998.ece/alternates/LANDSCAPE_1200/iStock-1392114572.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Social media ban: Will the Aussie model work for India?",
-          "url": "https://www.thehindu.com/education/social-media-ban-will-the-aussie-model-work-for-india/article71309206.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
     },
     {
       "raw_id": "54cd7cdcc6ee1c093d",
@@ -434,6 +358,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "7970179f441e03c1c5",
+      "title": "Social media ban: Will the Aussie model work for India?",
+      "url": "https://www.thehindu.com/videos/webinars/social-media-ban-will-the-aussie-model-work-for-india/article71335993.ece",
+      "summary": "The Hindu hosted a webinar titled, ‘Social media ban: Will the Aussie model work for India?’, on August 10, 2026, Monday, at 5:00 p.m.",
+      "published_at": "Wed, 12 Aug 2026 15:37:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/1kn9ku/article71335998.ece/alternates/LANDSCAPE_1200/iStock-1392114572.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Social media ban: Will the Aussie model work for India?",
+          "url": "https://www.thehindu.com/education/social-media-ban-will-the-aussie-model-work-for-india/article71309206.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "52dcd6973298dc0007",
@@ -929,12 +900,45 @@
       }
     },
     {
-      "raw_id": "e6bb3e0299a0911d79",
-      "title": "Kochi Corporation to recommend Vigilance probe into G Memorial, P&T complex construction",
-      "url": "https://www.thehindu.com/news/national/kerala/kochi-corporation-to-recommend-vigilance-probe-into-g-memorial-pt-complex-construction/article71342299.ece",
-      "summary": "Alleged construction lapses blamed for poor condition of two facilities; UDF councillors raise corruption allegations over G Memorial",
-      "published_at": "Thu, 13 Aug 2026 22:41:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/iog697/article71342552.ece/alternates/LANDSCAPE_1200/10018_21_2_2026_14_58_55_1_PANDT_01.JPG",
+      "raw_id": "421d267b1188a0a066",
+      "title": "Kerala High Court denies bail to accused in organ trafficking case",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-high-court-denies-bail-to-accused-in-organ-trafficking/article71342428.ece",
+      "summary": "Organ trafficking exploits vulnerable populations, fuels transnational crime networks, and undermines public trust in legitimate medical systems, says court",
+      "published_at": "Fri, 14 Aug 2026 01:47:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/uf453t/article71342757.ece/alternates/LANDSCAPE_1200/IMG_iStock-1125111981_2_1_1JGBV6D7.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "62c34823c14616a492",
+      "title": "How family legacy translates into political leadership",
+      "url": "https://www.thehindu.com/opinion/op-ed/how-family-legacy-translates-into-political-leadership/article71342556.ece",
+      "summary": "Reporters sometimes get a chance to see how family reputation and standing translate to political capital over generations",
+      "published_at": "Fri, 14 Aug 2026 01:43:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/74io8b/article71342755.ece/alternates/LANDSCAPE_1200/DSC_0335.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -958,12 +962,41 @@
       }
     },
     {
-      "raw_id": "6fbb74670eeea0c5a0",
-      "title": "Event to promote tourism to Malaysia held in Chennai",
-      "url": "https://www.thehindu.com/news/cities/chennai/event-to-promote-tourism-to-malaysia-held-in-chennai/article71342430.ece",
-      "summary": "The programme also served as a platform for business-to-business engagements and networking",
-      "published_at": "Thu, 13 Aug 2026 22:36:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/chennai/139xpp/article71342543.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-13%20at%209.51.49%20PM.jpeg",
+      "raw_id": "faccce42eac15c0b73",
+      "title": "Ernakulam-Bengaluru Vande Bharat Express to get 16 coaches",
+      "url": "https://www.thehindu.com/news/national/kerala/ernakulam-bengaluru-vande-bharat-express-to-get-16-coaches/article71342594.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 01:42:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e0tovj/article71342759.ece/alternates/LANDSCAPE_1200/80968_31_7_2024_19_42_35_1_NIT_6320.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4bc01a4ec162bbf543",
+      "title": "Protect farmers’ rights before cement project, Meghalaya tribal body tells govt.",
+      "url": "https://www.thehindu.com/news/national/meghalaya/protect-farmers-rights-before-cement-project-meghalaya-tribal-body-tells-govt/article71341990.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 01:16:32 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -983,19 +1016,19 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "cdb420c18ed5cba9e7",
-      "title": "AP Congress condemns alleged ‘purification’ of venues visited by Kharge",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-congress-condemns-alleged-purification-of-venues-visited-by-kharge/article71342201.ece",
+      "raw_id": "c4776d24cf0e6f552f",
+      "title": "Minerals belong to Jharkhand, land belongs to Jharkhand: CM",
+      "url": "https://www.thehindu.com/news/national/jharkhand/minerals-belong-to-jharkhand-land-belongs-to-jharkhand-cm/article71342477.ece",
       "summary": "",
-      "published_at": "Thu, 13 Aug 2026 22:34:56 +0530",
+      "published_at": "Fri, 14 Aug 2026 01:14:12 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1020,99 +1053,12 @@
       }
     },
     {
-      "raw_id": "4c2c773a0b16ab2376",
-      "title": "Sukhbir Singh Badal injured in knife attack inside Nanded gurdwara",
-      "url": "https://www.thehindu.com/videos/sukhbir-singh-badal-injured-in-knife-attack-inside-nanded-gurdwara/article71342565.ece",
-      "summary": "Shiromani Akali Dal president and former Punjab Deputy Chief Minister Sukhbir Singh Badal was injured in a knife attack inside a gurdwara in Maharashtra’s Nanded district. The incident occurred at Gurdwara Mata Sahib Devan Ji Mugat when an attacker allegedly dressed in Nihang attire struck him with a kirpan, causing an injury to his hand.",
-      "published_at": "Thu, 13 Aug 2026 22:34:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3clh9z/article71342548.ece/alternates/LANDSCAPE_1200/_colombia%20.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "40d852ab94bc370cb2",
-      "title": "Bengaluru, parking car outside your house? Pay up to ₹25,000 based on car you own",
-      "url": "https://www.thehindu.com/news/cities/bangalore/parking-car-outside-your-house-pay-up-to-25000-based-on-car-you-own/article71342060.ece",
+      "raw_id": "104bdf65c41e4c7762",
+      "title": "Ministerial team to visit Aralam farm to review human-wildlife conflict mitigation measures",
+      "url": "https://www.thehindu.com/news/national/kerala/ministerial-team-to-visit-aralam-farm-to-review-human-wildlife-conflict-mitigation-measures/article71342061.ece",
       "summary": "",
-      "published_at": "Thu, 13 Aug 2026 22:33:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fd2i5r/article71342246.ece/alternates/LANDSCAPE_1200/carpark.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a335d2b62d40d717f5",
-      "title": "Supreme Court slams FSSAI for not introducing front-of-pack warning labels on packaged food products",
-      "url": "https://www.thehindu.com/news/national/supreme-court-slams-fssai-for-not-introducing-front-of-pack-warning-labels-on-packaged-food-products/article71342214.ece",
-      "summary": "The Bench asks the country’s food regulator whether it does not want children to grow up healthy",
-      "published_at": "Thu, 13 Aug 2026 22:32:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bbuqbx/article70621377.ece/alternates/LANDSCAPE_1200/INDEX_SUPREME_COURT_02_08_7.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a173b0daa966ca3f23",
-      "title": "Kharge alleges caste discrimination over Haldwani ‘shuddhikaran’ incident",
-      "url": "https://www.thehindu.com/videos/kharge-alleges-caste-discrimination-over-haldwani-shuddhikaran-incident/article71342546.ece",
-      "summary": "Congress president and Leader of Opposition in the Rajya Sabha Mallikarjun Kharge raised the issue of the reported ‘shuddhikaran’ (purification ceremony) conducted at Haldwani’s Ramlila Ground after his public rally on August 8. Speaking in Parliament, Kharge said he had only spoken about public issues and questioned whether such actions were compatible with constitutional values, democracy and social justice.",
-      "published_at": "Thu, 13 Aug 2026 22:26:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uvzt9g/article71342545.ece/alternates/LANDSCAPE_1200/Screenshot%202026-08-13%20at%2010.26.11%E2%80%AFPM.png",
+      "published_at": "Fri, 14 Aug 2026 01:02:03 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/knmqav/article71342736.ece/alternates/LANDSCAPE_1200/IMG_29tvaralam_2_1_LMAB7Q0R.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1132,19 +1078,21 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 10
+          "Environment, Health & Science": 4,
+          "Sports": 4
         },
         "candidate_categories": [
-          "Society, Rights & Justice"
+          "Environment, Health & Science",
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "4c0c3d6c8cccce4481",
-      "title": "Mosquitoes, stray dogs and waste trigger heated exchanges in Kochi Corporation Council",
-      "url": "https://www.thehindu.com/news/national/kerala/mosquitoes-stray-dogs-and-waste-trigger-heated-exchanges-in-kochi-corporation-council/article71342045.ece",
-      "summary": "Opposition cites failure of 50-day action plan and Animal Birth Control programme; UDF questions credibility of data on soaring dengue cases; ₹24-crore annual burden of waste management systems comes under scrutiny",
-      "published_at": "Thu, 13 Aug 2026 22:23:02 +0530",
+      "raw_id": "de05ad2a97f374878d",
+      "title": "Tahsildar held on bribery charge in Kochi",
+      "url": "https://www.thehindu.com/news/national/kerala/tahsildar-held-on-bribery-charge-in-kochi/article71342732.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 00:54:03 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1169,12 +1117,12 @@
       }
     },
     {
-      "raw_id": "32ca3e27a9b6374d0a",
-      "title": "BCI withdraws NALSAR enrolment freeze within hours, says all 2026 graduates can enrol",
-      "url": "https://www.thehindu.com/news/national/bci-withdraws-nalsar-enrolment-freeze-within-hours-says-all-2026-graduates-can-enrol/article71341536.ece",
-      "summary": "NALSAR students had recently opposed the proposed participation of CJI Surya Kant as the chief guest at their convocation, citing his remarks during proceedings on alleged police excesses against NEET protesters in Delhi",
-      "published_at": "Thu, 13 Aug 2026 22:19:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/shtjq7/article71342503.ece/alternates/LANDSCAPE_1200/Screenshot%202026-08-13%20220912.jpg",
+      "raw_id": "a56500e26711e1ede0",
+      "title": "New parking rules seek four-way expansion of paid parking in Bengaluru",
+      "url": "https://www.thehindu.com/news/cities/bangalore/new-parking-rules-seek-four-way-expansion-of-paid-parking-in-bengaluru/article71342654.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 00:45:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/74cdzv/article71342729.ece/alternates/LANDSCAPE_1200/TH04-Aaratrika-GT1GBMSBH.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1193,14 +1141,66 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "47b3338656a2850259",
+      "title": "Collector, officials inspect Amirthi Zoo in Vellore",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/collector-officials-inspect-amirthi-zoo-in-vellore/article71341168.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 00:44:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/zhzr19/article71342025.ece/alternates/LANDSCAPE_1200/zoo-9.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "901467446107c67f96",
+      "title": "TNSTC conductor suspended in Tirupattur for smoking inside bus",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tnstc-conductor-suspended-in-tirupattur-for-smoking-inside-bus/article71341442.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 00:42:22 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     }
   ]

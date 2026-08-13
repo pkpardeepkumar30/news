@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-13T02:54:39.852555+00:00",
-  "input_count": 397,
-  "supplied_count": 199,
+  "prepared_at": "2026-08-13T05:55:26.048094+00:00",
+  "input_count": 404,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 109,
+    "established_or_other": 91,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -149,6 +149,35 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "96dab4b9dfad87a6d7",
+      "title": "MP/Chhatarpur: स्कूली बच्चे और महिलाओं ने दी चेतावनी-बिजली नहीं लगी तो चक्का जाम करेंगे!",
+      "url": "https://khabarlahariya.org/mp-chhatarpur-school-children-and-women-issue-a-warning-they-will-stage-a-road-blockade-if-electricity-is-not-restored/",
+      "summary": "छतरपुर जिले के महाराजपुर थाना क्षेत्र के तत्सम गांव में ग्रामीणों का आरोप है कि पिछले करीब 1 साल से बिजली की व्यवस्था नहीं है। बिजली न होने का सबसे…",
+      "published_at": "Thu, 13 Aug 2026 05:00:02 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -1119,35 +1148,6 @@
       "url": "https://khabarlahariya.org/banda-case-began-as-a-kidnapping-charges-of-gang-rape-and-under-the-pocso-act-were-added-following-statements-and-medical-examination/",
       "summary": "बांदा जिले में 16 वर्षीय किशोरी के अपहरण और सामूहिक दुष्कर्म के मामले में 26 जुलाई को गिरफ्तार किए गए दोनों आरोपी न्यायिक हिरासत में हैं। पुलिस के अनुसार, गिरफ्तारी…",
       "published_at": "Mon, 03 Aug 2026 12:30:59 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "37aa6eb3275063659b",
-      "title": "बिहार पुलिस विभाग में ‘दीदी की रसोई’ सेवा बंद, जानिए क्यों लिया सरकार ने यह फैसला",
-      "url": "https://khabarlahariya.org/didi-ki-rasoi-service-discontinued-in-bihar-police-department-find-out-why-the-government-took-this-decision/",
-      "summary": "बिहार पुलिस के कार्यालयों, प्रशिक्षण केंद्रो और पुलिस लाइनों में चल रही है ‘जीविका दीदी की रसोई’ सेवा को राज्य स्तर पर बंद करने का फैसला लिया गया है।…",
-      "published_at": "Mon, 03 Aug 2026 07:14:30 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

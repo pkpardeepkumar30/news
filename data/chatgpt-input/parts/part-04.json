@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-13T21:10:35.863762+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-08-14T02:53:32.475345+00:00",
+  "input_count": 429,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 118,
-    "established_or_other": 82,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -142,6 +142,35 @@
         "type": "local",
         "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "5717f6d9ef53565c75",
+      "title": "Aaj Ka Rashifal: जानिए क्या कहता है आपका दैनिक राशिफल?",
+      "url": "https://theruralpress.in/2026/08/14/aaj-ka-rashifal-14-august-2026-friday-horoscope-mesh-meen-makar/",
+      "summary": "Aaj Ka Rashifal 14 August 2026: आज 14 अगस्त 2026, शुक्रवार है। हिंदू धर्म में शुक्रवार का दिन मां लक्ष्मी को समर्पित माना जाता है। इस दिन कई लोग सुख-समृद्धि और आर्थिक खुशहाली की कामना के साथ मां लक्ष्मी की पूजा करते हैं। ज्योतिष के अनुसार ग्रहों और नक्षत्रों की स्थिति का प्रभाव सभी 12 […]",
+      "published_at": "Fri, 14 Aug 2026 01:00:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -418,35 +447,6 @@
       }
     },
     {
-      "raw_id": "0314d70b93f9a9bf6d",
-      "title": "Raipur Nagar Nigam: सीलबंदी शुरू होते ही चुकाए लाखों रुपये, रायपुर निगम ने 8 परिसरों पर जड़ा ताला",
-      "url": "https://theruralpress.in/2026/08/13/raipur-nagar-nigam-action-8-commercial-properties-sealed/",
-      "summary": "Raipur Nagar Nigam Action: नगर पालिक निगम रायपुर के जोन क्रमांक 8 के राजस्व विभाग ने लंबे समय से बकाया राशि जमा नहीं करने वाले बड़े बकायादारों के खिलाफ कार्रवाई की है। वार्ड क्रमांक 1, 2 और 21 में 8 व्यावसायिक परिसरों को सीलबंद किया गया। कार्रवाई के दौरान कुछ बकायादारों ने मौके पर ही […]",
-      "published_at": "Thu, 13 Aug 2026 11:29:40 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "f991d19c7df3e95b66",
       "title": "Genetic study of the Arunachali mithun flags declining breeding population",
       "url": "https://india.mongabay.com/2026/08/genetic-study-of-the-arunachali-mithun-flags-declining-breeding-population/",
@@ -618,6 +618,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "c001b518c2413858a6",
+      "title": "Rare lynx photo puts spotlight on high-altitude rangelands",
+      "url": "https://india.mongabay.com/2026/08/rare-lynx-photo-puts-spotlight-on-high-altitude-rangelands/",
+      "summary": "A Eurasian lynx has been recorded in a camera-trap image from the Tso Lhamo plateau in Sikkim. This encounter marks the first confirmed photographic evidence of the species in the state. It is also the second such record from the Eastern Himalayas. The image, captured in January 2026 at an altitude of 5,250 metres in […]",
+      "published_at": "04 Aug 2026 15:20:02 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/04131014/Eurasian-lynx-1-Sikkim-Forest-Dept-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -1119,35 +1152,6 @@
       "url": "https://khabarlahariya.org/sbi-asha-scholarship-2026-who-is-eligible-what-is-the-scholarship-amount-and-how-to-apply/",
       "summary": "आप ने एसबीआई (स्टेट बैंक ऑफ इंडिया) का नाम तो सुना ही होगा, वही बैंक जिसमें आपका या आपके परिवार के किसी सदस्य का एसबीआई (स्टेट बैंक ऑफ इंडिया) का…",
       "published_at": "Sun, 09 Aug 2026 04:30:39 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "768332016b57669bd7",
-      "title": "Prayagraj News: अन्ना-जानवर ने कर रखा है किसानों की नाक में दम!",
-      "url": "https://khabarlahariya.org/prayagraj-news-stray-cattle-have-made-life-miserable-for-farmers/",
-      "summary": "जिला प्रयागराज, ब्लाक जसरा‌, गांव सेहुँड़ा में गौवशाला‌ नहीं है, इस कारण किसान खेती नहीं कर पते हैं। बारिश के मौसम में धान-बेहन‌ की रखवाली दिन-रात करते है। इस गांव…",
-      "published_at": "Sat, 08 Aug 2026 10:30:28 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-14T02:53:32.475345+00:00",
-  "input_count": 429,
+  "prepared_at": "2026-08-14T03:07:15.927774+00:00",
+  "input_count": 1415,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 116,
+    "established_or_other": 84,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -142,6 +142,35 @@
         "type": "local",
         "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "62794e6b9ce2882f4a",
+      "title": "Koriya: शासकीय राशि के गबन के मामले में सरपंच, सचिव एवं पंच पति के खिलाफ चालान पेश, जानिए किस तरह किया घोटाला",
+      "url": "https://theruralpress.in/2026/08/14/korea-tengani-panchayat-scam-1-5-lakh-embezzlement-chargesheet/",
+      "summary": "embezzlement of government funds: जनपद पंचायत बैकुण्ठपुर अंतर्गत ग्राम पंचायत टेंगनी के मूलभूत मद की शासकीय राशि के गबन के मामले में सरपंच, सचिव एवं पंचपति के खिलाफ चालान पेश किया गया है। शेड निर्माण के लिए सामग्री आपूर्ति के नाम पर पंच के पति के निजी बैंक खाते में 1.50 लाख रुपये का भुगतान […]",
+      "published_at": "Fri, 14 Aug 2026 02:23:05 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -418,35 +447,6 @@
       }
     },
     {
-      "raw_id": "5a4596dc1a5e0fd4fb",
-      "title": "Vande Bharat vs Tejas Express: वंदे भारत और तेजस में कौन है ज्यादा तेज? जानिए स्पीड से लेकर सफर तक का पूरा अंतर",
-      "url": "https://theruralpress.in/2026/08/13/vande-bharat-vs-tejas-express-speed-difference-new-delhi/",
-      "summary": "Vande Bharat vs Tejas Express: बेंगलुरु और मुंबई के बीच जल्द ही स्लीपर वंदे भारत ट्रेन शुरू करने की तैयारी है। इसके शुरू होने से दोनों शहरों के बीच करीब 24 घंटे का सफर घटकर लगभग 16 घंटे हो सकता है। ऐसे में रेल यात्रियों को तेज और आरामदायक यात्रा का नया विकल्प मिलने की […]",
-      "published_at": "Thu, 13 Aug 2026 11:55:10 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "f991d19c7df3e95b66",
       "title": "Genetic study of the Arunachali mithun flags declining breeding population",
       "url": "https://india.mongabay.com/2026/08/genetic-study-of-the-arunachali-mithun-flags-declining-breeding-population/",
@@ -618,6 +618,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2f9208c60ac5fbf874",
+      "title": "Whiskered swimmers with webbed feet",
+      "url": "https://india.mongabay.com/short-article/2026/08/whiskered-swimmers-with-webbed-feet/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. A recent survey has found evidence of a significant smooth coated-otter population in Mettur dam and Kaveri river stretches of Salem district in Tamil Nadu. Local fishers and residents reported the presence of more than 1,000 otters in the region. Otters are semi-aqautic mammals found […]",
+      "published_at": "05 Aug 2026 14:27:08 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/07/05133829/otter-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -1123,35 +1156,6 @@
       "url": "https://khabarlahariya.org/bolenge-bulvayenge-show-why-are-dolls-beaten-in-the-name-of-tradition/",
       "summary": "बुंदेलखंड में नाग पंचमी के मौके पर मनाया जाता है गुड़िया का त्योहार। इस दिन गुड़िया को डंडों से पीटने की परंपरा है। लोग इसे सदियों पुरानी रस्म बताते हैं।…",
       "published_at": "Sun, 09 Aug 2026 10:00:49 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "387e3b90d58e97c8ad",
-      "title": "SBI Asha Scholarship 2026: कौन कर सकता है आवेदन, कितनी मिलेगी राशि और कैसे करें अप्लाई?",
-      "url": "https://khabarlahariya.org/sbi-asha-scholarship-2026-who-is-eligible-what-is-the-scholarship-amount-and-how-to-apply/",
-      "summary": "आप ने एसबीआई (स्टेट बैंक ऑफ इंडिया) का नाम तो सुना ही होगा, वही बैंक जिसमें आपका या आपके परिवार के किसी सदस्य का एसबीआई (स्टेट बैंक ऑफ इंडिया) का…",
-      "published_at": "Sun, 09 Aug 2026 04:30:39 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

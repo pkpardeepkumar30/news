@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-16T02:04:03.929791+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-08-16T04:57:04.221344+00:00",
+  "input_count": 429,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 114,
-    "established_or_other": 86,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part_count": 5,
@@ -18,11 +18,46 @@
   ],
   "items": [
     {
+      "raw_id": "ad0ca104af01207685",
+      "title": "Drugs Control Administration issues notices to 43 medical shops in Telangana over sale of weight loss drugs without prescription",
+      "url": "https://www.thehindu.com/news/national/telangana/notices-to-43-medical-shops-in-telangana-over-sale-of-mounjaro-ozempic-without-prescription/article71348448.ece",
+      "summary": "The inspections were conducted amid growing demand for weight loss formulations containing Tirzepatide and Semaglutide, while also focusing on detecting spurious and counterfeit versions and violations in sale",
+      "published_at": "Sun, 16 Aug 2026 09:32:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nti8id/article71348450.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-15%20at%208.53.09%20AM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
       "raw_id": "b78057aba46697e46e",
       "title": "BCI chairman apologises to law students amid enrolment ban controversy",
       "url": "https://www.thehindu.com/news/national/bci-chairman-apologises-to-law-students-amid-enrolment-ban-controversy/article71350433.ece",
       "summary": "Without specifying the controversy or NALSAR, Mr. Mishra apologises for his words or letters that may have hurt students; says they should be free to form and express their own opinions; seeks dialogue and mutual respect",
-      "published_at": "Sun, 16 Aug 2026 01:44:38 +0530",
+      "published_at": "Sun, 16 Aug 2026 08:08:27 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/chzq/article71350759.ece/alternates/LANDSCAPE_1200/Screenshot%202026-08-16%20014256.png",
       "suggested_category": "",
       "priority_discovery": false,
@@ -378,11 +413,11 @@
       "summary": "The CJP will also undertake a similar movement regarding poor health conditions at public hospitals",
       "published_at": "Sat, 15 Aug 2026 22:34:49 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/51mp8n/article71350564.ece/alternates/LANDSCAPE_1200/HPxJcwbaMAATcFg.jpg",
-      "suggested_category": "",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -398,7 +433,7 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Politics & Elections": 4,
-          "Society, Rights & Justice": 4,
+          "Society, Rights & Justice": 12,
           "Environment, Health & Science": 1
         },
         "candidate_categories": [
@@ -549,43 +584,6 @@
       }
     },
     {
-      "raw_id": "e612926c250388eea5",
-      "title": "Dipke launches ‘School Thik Karo’ campaign, alleges govt neglect; seeks capping of fees at private schools",
-      "url": "https://www.thehindu.com/news/national/dipke-set-to-launch-school-thik-karo-campaign-accuses-parties-of-neglecting-govt-run-schools/article71348483.ece",
-      "summary": "The CJP will also undertake a similar movement regarding poor health conditions at public hospitals",
-      "published_at": "Sat, 15 Aug 2026 15:20:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gxk2us/article71349161.ece/alternates/LANDSCAPE_1200/dipke%20.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Society, Rights & Justice": 16,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "f29e8285a712d4c2be",
       "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
       "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
@@ -724,6 +722,41 @@
           "Politics & Elections",
           "Protests",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "d96fbf856118e959e9",
+      "title": "Nigel Farage regains U.K. parliamentary seat, fights off Count Binface challenge",
+      "url": "https://www.thehindu.com/news/international/nigel-farage-regains-uk-parliamentary-seat-fights-off-count-binface-challenge/article71344338.ece",
+      "summary": "Mr. Farage’s main challenger ended up being Count Binface, a figure created by comedian Jonathan Harvey, who has become a fixture of ​fun at British elections.",
+      "published_at": "Fri, 14 Aug 2026 22:56:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2c5iqu/article71344363.ece/alternates/LANDSCAPE_1200/2026-07-10T081806Z_1527072862_RC2Q9MAN14ZL_RTRMADP_3_BRITAIN-POLITICS-REFORM-DONATIONS.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
@@ -1177,6 +1210,39 @@
       }
     },
     {
+      "raw_id": "f5975e6896b813e9c4",
+      "title": "When discounts cost dearly: Why Bengaluru restaurants are upset with Swiggy, Zomato",
+      "url": "https://www.thenewsminute.com/karnataka/when-discounts-cost-dearly-why-bengaluru-restaurants-are-upset-with-swiggy-zomato",
+      "summary": "Shangrila, a Tibetan restaurant on Bengaluru’s Brigade Road, is 52 years old. Currently managed by Kunga, a third generation owner, the restaurant never needed advertising to attract customers. Rather, word of mouth did that job for no charge. Then online platform for food delivery Swiggy came along eight years ago and started taking 24-25% of every order. Around six months ago, the restaurant stopped its association with the delivery platform. Kunga says money wasn’t really the reason. It was how Swiggy treated the relationship. Nobody from the company ever came by to ask how the restaurant was doing. Kunga’s is not the only food business in Bengaluru with a soured relationship with delivery platforms. Restaurant owners across the city accuse both Swiggy and Zomato of charging high commissions and applying discounts and other hidden charges without prior intimation, let alone contractual agreements. They say that commissions and hidden charges cost them Rs 40-60 for every Rs 100 worth of orders. Discontent over the charges levied by delivery platforms have been simmering among businesses for several months now. With the added pressures of the LPG crisis , it boiled over, prompting",
+      "published_at": "Sun, 16 Aug 2026 03:30:00 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/Swiggy_Zomato_Workers_PTI_Delhi_31032020_1200x800.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 2
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
       "raw_id": "748d7d0514a5707998",
       "title": "पलायन और बंधुआ मजदूरी से कब मिलेगी आजादी?",
       "url": "https://theruralpress.in/2026/08/15/cg-migration-bonded-labour-independence-day/",
@@ -1241,39 +1307,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "8572368ccc5e8e1034",
-      "title": "Even as government considers MDR charge on UPI, data shows cash usage quickening in economy",
-      "url": "https://www.thehindu.com/business/Economy/even-as-government-considers-mdr-charge-on-upi-data-shows-cash-usage-quickening-in-economy/article71345365.ece",
-      "summary": "An analysis by The Hindu shows that the growth in the value of UPI transactions has been consistently slowing since 2021-22, although the current rate of growth is still higher than that of cash with the public",
-      "published_at": "Sat, 15 Aug 2026 22:19:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/business/ij4ipv/article71350535.ece/alternates/LANDSCAPE_1200/TH16_UPI_edited.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     },
@@ -1451,6 +1484,39 @@
       }
     },
     {
+      "raw_id": "8b11cc14e104af7749",
+      "title": "U.P. CM Yogi Adityanath announces new ‘Youth Policy’ on Independence Day",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-cm-yogi-adityanath-announces-new-youth-policy-on-independence-day/article71349820.ece",
+      "summary": "The upcoming policy is likely to focus on skill development, employment generation, Artificial Intelligence and entrepreneurship, under a dedicated mechanism",
+      "published_at": "Sun, 16 Aug 2026 07:09:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/amnay9/article71350751.ece/alternates/LANDSCAPE_1200/6607_15_8_2026_14_2_5_4_15_08_INDEPENDENCEDAYCELEBRATIONLUCKNOW_D.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
       "raw_id": "9a14417e1a1dcddb2e",
       "title": "Preserve democracy and secularism, says Minister Roji M. John in his Independence Day message",
       "url": "https://www.thehindu.com/news/national/kerala/preserve-democracy-and-secularism-says-minister-roji-m-john-in-his-independence-day-message/article71349081.ece",
@@ -1482,39 +1548,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "8b11cc14e104af7749",
-      "title": "U.P. CM Yogi Adityanath announces new ‘Youth Policy’ on Independence Day",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-cm-yogi-adityanath-announces-new-youth-policy-on-independence-day/article71349820.ece",
-      "summary": "The upcoming policy is likely to focus on skill development, employment generation, Artificial Intelligence and entrepreneurship, under a dedicated mechanism",
-      "published_at": "Sun, 16 Aug 2026 01:05:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/amnay9/article71350751.ece/alternates/LANDSCAPE_1200/6607_15_8_2026_14_2_5_4_15_08_INDEPENDENCEDAYCELEBRATIONLUCKNOW_D.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     },
@@ -2659,45 +2692,12 @@
       }
     },
     {
-      "raw_id": "13eccc3b2ba7b791cd",
-      "title": "Body of Pakistani climber recovered from Broad Peak 2 weeks after avalanche killed 10",
-      "url": "https://www.thehindu.com/news/international/body-of-pakistani-climber-recovered-from-broad-peak-2-weeks-after-avalanche-killed-10/article71341279.ece",
-      "summary": "The body of Pakistani climber Sohail Sakhi had been missing since July 30, when a 10-member international expedition led by renowned climber Nirmal Purja lost contact with base camp",
-      "published_at": "Thu, 13 Aug 2026 19:06:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hesm7j/article71341360.ece/alternates/LANDSCAPE_1200/%F0%9F%87%B5%F0%9F%87%B0%20HISTORIC%20SUMMIT%20%F0%9F%87%B5%F0%9F%87%B0On%20July%204th%20Sohail%20Sakhi%20from%20Aliabad%20Hunza%20made%20it%20to%20the%20summit%20of.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "212cc887e5f0fb197e",
-      "title": "West Asia war highlights: Iran fires back at Trump’s threat to declare Hormuz a U.S. territory",
-      "url": "https://www.thehindu.com/news/international/iran-us-war-west-asia-conflict-donald-trump-strait-of-hormuz-rising-oil-prices-live-updates-august-15-2026/article71348347.ece",
-      "summary": "Lebanon reports 11 dead in strikes that Israel says targeted Hezbollah; Iran demands release of downed pilots as Qatar denies holding them",
-      "published_at": "Sun, 16 Aug 2026 03:57:54 +0530",
-      "image_url": "",
+      "raw_id": "29a76785b0da2bb963",
+      "title": "Iran fires back at Trump's threat to declare Hormuz a U.S. territory",
+      "url": "https://www.thehindu.com/news/international/iran-fires-back-at-trumps-threat-to-declare-hormuz-a-us-territory/article71350593.ece",
+      "summary": "Mr. Trump has repeatedly said the strait, which Tehran effectively closed at the start of the West Asia war in late February, is under U.S. control an assertion the Islamic Republic denies",
+      "published_at": "Sun, 16 Aug 2026 07:43:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/u5piu9/article71350602.ece/alternates/LANDSCAPE_1200/AP08_15_2026_000041B.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -2725,8 +2725,8 @@
       },
       "related_reports": [
         {
-          "title": "Iran fires back at Trump's threat to declare Hormuz a U.S. territory",
-          "url": "https://www.thehindu.com/news/international/iran-fires-back-at-trumps-threat-to-declare-hormuz-a-us-territory/article71350593.ece",
+          "title": "West Asia war highlights: Iran fires back at Trump’s threat to declare Hormuz a U.S. territory",
+          "url": "https://www.thehindu.com/news/international/iran-us-war-west-asia-conflict-donald-trump-strait-of-hormuz-rising-oil-prices-live-updates-august-15-2026/article71348347.ece",
           "source": {
             "id": "the-hindu-international",
             "name": "The Hindu - International",
@@ -2739,12 +2739,45 @@
       ]
     },
     {
-      "raw_id": "495a0d8314e6788d85",
-      "title": "West Asia war LIVE: Iran demands release of downed pilots as Qatar denies holding them",
-      "url": "https://www.thehindu.com/news/international/iran-us-west-asia-war-strait-of-hormuz-donald-trump-live-updates-on-august-16-2026/article71351835.ece",
-      "summary": "Javad Salehi, Abdolmajid Dashtian and Omran Behraveshian have been held by Qatari forces for six months, said General Mohammad Bagherzadeh of the Iranian armed forces",
-      "published_at": "Sun, 16 Aug 2026 06:45:16 +0530",
-      "image_url": "",
+      "raw_id": "bba71b7fd821cf7e0e",
+      "title": "London police apologise over Al-Fayed probe data breach",
+      "url": "https://www.thehindu.com/news/international/london-police-apologise-over-al-fayed-probe-data-breach/article71351999.ece",
+      "summary": "The incident is being investigated as a matter of priority, and we are reviewing our processes to help prevent a similar breach from happening again, a statement from the Metropolitan Police said.",
+      "published_at": "Sun, 16 Aug 2026 10:12:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2me0zs/article71352012.ece/alternates/LANDSCAPE_1200/Al-Fayed_Sex_Abuse_85005.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "06549af7aec9b731c1",
+      "title": "Morocco arrests 111 migrants headed for Spain’s Ceuta in security crackdown",
+      "url": "https://www.thehindu.com/news/international/morocco-arrests-migrants-headed-for-spains-ceuta-in-security-crackdown/article71351950.ece",
+      "summary": "A source ‌in Morocco’s Interior Ministry told Reuters those detained included 109 migrants from sub-Saharan Africa and two Moroccan citizens arrested in or around Fnideq, the Moroccan city opposite Ceuta.",
+      "published_at": "Sun, 16 Aug 2026 09:43:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mk33k6/article71351968.ece/alternates/LANDSCAPE_1200/2026-08-15T184636Z_978688993_RC2ZYMAYSLNA_RTRMADP_3_MIGRATION-EUROPE-SPAIN-CEUTA.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -2875,7 +2908,7 @@
       "title": "Indian athletics team to have camp in Japan ahead of Asian Games",
       "url": "https://www.thehindu.com/sport/athletics/indian-athletics-team-to-have-camp-in-japan-ahead-of-asian-games/article71350728.ece",
       "summary": "In June, Sports Authority of India signed an MoU with the University of Tsukuba to facilitate participation of Indian athletes, coaches, and sports scientists in specialised training and exchange programmes in Japan",
-      "published_at": "Sun, 16 Aug 2026 00:56:48 +0530",
+      "published_at": "Sun, 16 Aug 2026 09:10:15 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/ndzw9j/article71350741.ece/alternates/LANDSCAPE_1200/AFP__20250911__744Z6T3__v1__HighRes__Asiad2026Jpn%201.jpg",
       "suggested_category": "Sports",
       "priority_discovery": false,
@@ -3454,6 +3487,39 @@
       }
     },
     {
+      "raw_id": "a0ea057e04ea0734bd",
+      "title": "Why Indian Astronomy education needs a makeover",
+      "url": "https://www.thehindu.com/education/why-indian-astronomy-education-needs-a-makeover/article71326976.ece",
+      "summary": "As astronomy becomes increasingly driven by data, coding, and simulations, India needs to move from theory-heavy classrooms to hands-on undergraduate learning",
+      "published_at": "Sat, 15 Aug 2026 12:30:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/aj7anv/article71331291.ece/alternates/LANDSCAPE_1200/Astronomy.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "bb4a6e0d9c26de17e0",
       "title": "How India can build a connected education system",
       "url": "https://www.thehindu.com/education/how-india-can-build-a-connected-education-system/article71331487.ece",
@@ -3526,39 +3592,6 @@
       "summary": "Competitive programming (CP) reveals technical talent that exams, colleges, and recruiters overlook",
       "published_at": "Thu, 13 Aug 2026 12:16:48 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/c0tml4/article71331358.ece/alternates/LANDSCAPE_1200/CP.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "562d79fde6d8849a4b",
-      "title": "Maharashtra’s reservation policies undermined by University admissions practices",
-      "url": "https://www.thehindu.com/education/maharashtras-reservation-policies-undermined-by-university-admissions-practices/article71332228.ece",
-      "summary": "",
-      "published_at": "Wed, 12 Aug 2026 01:21:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/hldjkk/article71332295.ece/alternates/LANDSCAPE_1200/iStock-1128448535.jpg",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -4660,6 +4693,35 @@
       }
     },
     {
+      "raw_id": "e62b3ae21b5d56aba5",
+      "title": "Banda News: 12 हजार की आबादी में सफाई व्यवस्था बेहाल! नाली के पास पड़ा कूड़ा, स्कूल के बच्चों पर असर",
+      "url": "https://khabarlahariya.org/banda-news-sanitation-system-in-shambles-for-a-population-of-12000-garbage-piled-up-near-drains-school-children-affected/",
+      "summary": "12 हजार की आबादी वाले गांव में सफाई व्यवस्था की जमीनी हकीकत सामने आई है। गांव के अंदर नाली के पास बड़ी मात्रा में कूड़ा जमा है। ग्रामीणों का कहना…",
+      "published_at": "Sun, 16 Aug 2026 04:30:11 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "795bfd5cc384fe39e0",
       "title": "Ayodhya News: 3 नौकरियां छोड़ीं, लेकिन शिक्षा नहीं छोड़ी, 74 साल की सुशीला का बच्चों को पढ़ाने का जुनून",
       "url": "https://khabarlahariya.org/ayodhya-news-left-three-jobs-but-didnt-give-up-on-education-74-year-old-sushilas-passion-for-teaching-children/",
@@ -5617,6 +5679,100 @@
       }
     },
     {
+      "raw_id": "c32d9c1f80cef349c6",
+      "title": "Scholarships: August 15, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-august-15-2026/article71280333.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sat, 15 Aug 2026 12:29:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/4criwe/article71280330.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: August 8, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "7970179f441e03c1c5",
+      "title": "Social media ban: Will the Aussie model work for India?",
+      "url": "https://www.thehindu.com/videos/webinars/social-media-ban-will-the-aussie-model-work-for-india/article71335993.ece",
+      "summary": "The Hindu hosted a webinar titled, ‘Social media ban: Will the Aussie model work for India?’, on August 10, 2026, Monday, at 5:00 p.m.",
+      "published_at": "Wed, 12 Aug 2026 15:37:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/1kn9ku/article71335998.ece/alternates/LANDSCAPE_1200/iStock-1392114572.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Social media ban: Will the Aussie model work for India?",
+          "url": "https://www.thehindu.com/education/social-media-ban-will-the-aussie-model-work-for-india/article71309206.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
       "raw_id": "45a8dda1f608bf57b5",
       "title": "Weather Update: दिल्ली, उत्तर प्रदेश, बिहार, मध्य प्रदेश समेत करीब 12 राज्यों में भारी बारिश, जानें कब तक रहेगा ऐसा मौसम",
       "url": "https://khabarlahariya.org/weather-update-heavy-rain-in-around-12-states-including-delhi-uttar-pradesh-bihar-and-madhya-pradesh-find-out-how-long-these-weather-conditions-will-persist/",
@@ -5673,53 +5829,6 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
-    },
-    {
-      "raw_id": "7970179f441e03c1c5",
-      "title": "Social media ban: Will the Aussie model work for India?",
-      "url": "https://www.thehindu.com/videos/webinars/social-media-ban-will-the-aussie-model-work-for-india/article71335993.ece",
-      "summary": "The Hindu hosted a webinar titled, ‘Social media ban: Will the Aussie model work for India?’, on August 10, 2026, Monday, at 5:00 p.m.",
-      "published_at": "Wed, 12 Aug 2026 15:37:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/1kn9ku/article71335998.ece/alternates/LANDSCAPE_1200/iStock-1392114572.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Social media ban: Will the Aussie model work for India?",
-          "url": "https://www.thehindu.com/education/social-media-ban-will-the-aussie-model-work-for-india/article71309206.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
     },
     {
       "raw_id": "3e6dd3e8647a2dfe06",
@@ -6012,35 +6121,6 @@
       }
     },
     {
-      "raw_id": "529746d20053c67357",
-      "title": "UP/Prayagraj: 95% सपेरा समुदाय के बच्चों को मिल रही फ्री शिक्षा",
-      "url": "https://khabarlahariya.org/up-prayagraj-95-of-children-from-the-sapera-community-are-receiving-free-education/",
-      "summary": "प्रयागराज के शंकरगढ़ क्षेत्र के कपारी गांव में ‘एक पहल शिक्षा समिति’ द्वारा संचालित फ्री कोचिंग सेंटर गरीब, कमजोर और अशिक्षित बच्चों के लिए उम्मीद की नई किरण बन गया…",
-      "published_at": "Mon, 03 Aug 2026 05:00:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "7525a77ac5aea1bdd8",
       "title": "Is India Undoing its Foreign Policy? Asks N Ram",
       "url": "https://www.newsclick.in/india-undoing-its-foreign-policy-asks-n-ram",
@@ -6099,45 +6179,12 @@
       }
     },
     {
-      "raw_id": "3448f245d850356017",
-      "title": "Devendra Nath Mahto | The making of an agitator",
-      "url": "https://www.thehindu.com/news/national/jharkhand/profile-devendra-nath-mahto-the-making-of-an-agitator/article71350580.ece",
-      "summary": "The student leader has emerged as the most prominent face of the agitation over alleged irregularities in the conduct of exams in Jharkhand",
-      "published_at": "Sun, 16 Aug 2026 07:00:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/6rcomw/article71350579.ece/alternates/LANDSCAPE_1200/Devendra_Nath_Mahto1.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "4a2b462f511cf0038e",
-      "title": "Separate Industrial Security Force battalion sought for Kalyana Karnataka",
-      "url": "https://www.thehindu.com/news/national/karnataka/separate-industrial-security-force-battalion-sought-for-kalyana-karnataka/article71340163.ece",
-      "summary": "Karnataka State Industrial Security Force currently has four battalions headquartered in Bengaluru, Shivamogga, Dharwad and Mysuru.",
-      "published_at": "Sun, 16 Aug 2026 06:22:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5wonk7/article71350697.ece/alternates/LANDSCAPE_1200/10258_24_6_2024_17_42_57_2_KLB_KALABURAGI_AIRPORT_2.JPG",
+      "raw_id": "9eb8c5d45a48ca8f95",
+      "title": "Patriotic celebrations marked the 80th Independence Day in South Coastal Andhra",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/patriotic-celebrations-marked-the-80th-independence-day-in-south-coastal-andhra/article71350265.ece",
+      "summary": "",
+      "published_at": "Sun, 16 Aug 2026 10:07:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2d5x6v/article71352004.ece/alternates/LANDSCAPE_1200/DSC_4248.jpg.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6161,12 +6208,41 @@
       }
     },
     {
-      "raw_id": "b36486d333f3cf6d9e",
-      "title": "Taken by one of the big four: Snakebite at Maharashtra tribal school",
-      "url": "https://www.thehindu.com/news/national/maharashtra/snakebite-at-maharashtra-gadchiroli-tribal-school/article71349371.ece",
-      "summary": "A common krait bit six girls sleeping at a tribal school in Gadchiroli’s Japtalai village, resulting in the deaths of three due to venom. This report mainly highlights governance issues in Maharashtra’s forested areas",
-      "published_at": "Sun, 16 Aug 2026 03:03:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cux9bw/article71349474.ece/alternates/LANDSCAPE_1200/11908_15_8_2026_17_18_7_3_DSC_8868.JPG",
+      "raw_id": "1e3cbe64e623d3216e",
+      "title": "Minister urges officials to achieve ‘Swarna Kadapa 2047’ goals",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/minister-urges-officials-to-achieve-swarna-kadapa-2047-goals/article71349613.ece",
+      "summary": "The Minister also mentioned the substantial allocation of funds to the municipalities, Water Resources and the Tourism departments",
+      "published_at": "Sun, 16 Aug 2026 10:05:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/se0ynl/article71351990.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-08-16%20at%2009.28.28.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "00b225f4514054383f",
+      "title": "Why Gangtok is India’s most walkable city",
+      "url": "https://www.thehindu.com/life-and-style/travel/why-gangtok-is-indias-most-walkable-city/article70950320.ece",
+      "summary": "What is it like to grow up in a city built for feet, not wheels? Prajwal Parajuly returns to Gangtok, where school, errands and even social visits are made on foot, and reflects on what India’s increasingly car-choked cities could learn from its quiet, uphill rhythms",
+      "published_at": "Sun, 16 Aug 2026 09:57:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/life-and-style/fja1p5/article71335637.ece/alternates/LANDSCAPE_1200/metroplus%20column.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6186,7 +6262,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 4
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -6194,12 +6270,12 @@
       }
     },
     {
-      "raw_id": "ed6419af477d72bce1",
-      "title": "Jharkhand students demand CM Soren’s resignation, ask Congress to ‘withdraw support’ from JMM coalition",
-      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-students-demand-congress-to-withdraw-support-from-jmm-coalition-cm-sorens-resignation/article71350761.ece",
-      "summary": "The students accuse JMM-Congress of playing politics and also announce CM’s residence gherao on August 20",
-      "published_at": "Sun, 16 Aug 2026 02:37:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/izhxiz/article71350762.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000703A.jpg",
+      "raw_id": "fc3c8b9223006a3f81",
+      "title": "Punjab’s cashless healthcare scheme eases medical costs for families",
+      "url": "https://www.thehindu.com/news/national/punjab/punjabs-cashless-healthcare-scheme-eases-medical-costs-for-families/article71351959.ece",
+      "summary": "Dr. Balbir Singh said, “From dialysis to cancer care, Mukh Mantri Sehat Yojana crosses six lakh treatments in Punjab.”",
+      "published_at": "Sun, 16 Aug 2026 09:37:01 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6219,10 +6295,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 4
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Society, Rights & Justice"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -6231,7 +6307,7 @@
       "title": "Nihang Sikhs | The warrior tradition",
       "url": "https://www.thehindu.com/profile/nihang-sikhs-the-warrior-tradition/article71350572.ece",
       "summary": "The recent attack on the Akali Dal chief in Maharashtra has brought the community, traditionally regarded as ‘Guru’s army’, back to public attention",
-      "published_at": "Sun, 16 Aug 2026 02:29:46 +0530",
+      "published_at": "Sun, 16 Aug 2026 09:29:16 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/bir8gm/article71350568.ece/alternates/LANDSCAPE_1200/PTI07_24_2026_000239B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
@@ -6256,12 +6332,12 @@
       }
     },
     {
-      "raw_id": "52147d0e25801c6d76",
-      "title": "Moon Base | India’s lunar future",
-      "url": "https://www.thehindu.com/sci-tech/science/moon-base-indias-lunar-future/article71350559.ece",
-      "summary": "NASA has invited ISRO to participate in its latest lunar programme, which seeks to build a human outpost near the Moon’s south pole, where sunlight is available for longer periods and permanently shadowed craters contain significant deposits of water ice",
-      "published_at": "Sun, 16 Aug 2026 02:11:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ozliz1/article71350557.ece/alternates/LANDSCAPE_1200/2026-05-26T205651Z_2102108279_RC27HLAE8TK8_RTRMADP_3_SPACE-MOON.JPG",
+      "raw_id": "f3dcddb8a03b1b78a9",
+      "title": "CAG finds 89% of audited railway stations deficient in basic amenities",
+      "url": "https://www.thehindu.com/news/national/cag-finds-89-of-audited-railway-stations-deficient-in-basic-amenities/article71345434.ece",
+      "summary": "Of 512 stations audited, 458 stations were deficient in one or more minimum essential amenities, including fans, water coolers, drinking water taps, urinals, seating arrangements, platform shelters, latrines and clocks",
+      "published_at": "Sun, 16 Aug 2026 09:28:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/705q24/article68064948.ece/alternates/LANDSCAPE_1200/PY04Water_Story_1.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6285,17 +6361,17 @@
       }
     },
     {
-      "raw_id": "de99e840e2808b0bad",
-      "title": "Devendra Mahto alleges assault by Ranchi police after being stopped from joining Tiranga Yatra",
-      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-tiranga-march-job-exam-stir-day-22-devendra-mahta-fast/article71348936.ece",
-      "summary": "On the 22nd day of the agitation seeking reforms in the State's recruitment examination process, the 'Tiranga Yatra' was organised from the protest site of Jaipal Singh Munda Stadium to Albert Ekka Chowk",
-      "published_at": "Sun, 16 Aug 2026 02:02:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kmy4te/article71349625.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000599B.jpg",
-      "suggested_category": "",
+      "raw_id": "f0226a05fd5f58482f",
+      "title": "Why Kerala Government mulls a multi-agency probe into the failed bid to bring Messi and company to Kochi? | Explained",
+      "url": "https://www.thehindu.com/news/national/kerala/why-kerala-government-mulls-a-multi-agency-probe-into-the-failed-bid-to-bring-messi-and-company-to-kochi-explained/article71350617.ece",
+      "summary": "Chief Minister V.D. Satheesan says Sports Department’s preliminary inquiry into the failed bid to bring Messi to Kerala during the previous LDF government’s tenure revealed ‘very serious allegations’",
+      "published_at": "Sun, 16 Aug 2026 09:17:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/erntda/article71351853.ece/alternates/LANDSCAPE_1200/IMG_TH26ISSK_2_1_O8CAOUQD.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -6310,78 +6386,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 2
+          "Sports": 9
         },
         "candidate_categories": [
-          "Protests"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "840d5171c2eca9596d",
-      "title": "Chaos at Kozhikode Corporation’s I-Day flag-hoisting as councillors simultaneously sing national anthem, Vande Mataram",
-      "url": "https://www.thehindu.com/news/national/kerala/chaos-at-kozhikode-corporations-i-day-flag-hoisting-as-councillors-simultaneously-sing-national-anthem-vande-mataram/article71348991.ece",
-      "summary": "​As Mayor and councillors from CPI(M)-led ruling front and Congress-led UDF began singing Jana Gana Mana, BJP councillors, about seven of them, started singing the full version of Vande Mataram. Both groups persisted despite the resulting confusion",
-      "published_at": "Sun, 16 Aug 2026 01:31:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/923g5c/article71349023.ece/alternates/LANDSCAPE_1200/flag.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e52c18aecf7c2f05ee",
-      "title": "Bishnoi comes out in support of Rao Inderjit, says ignoring seniors will weaken BJP",
-      "url": "https://www.thehindu.com/news/national/haryana/bishnoi-comes-out-in-support-of-rao-inderjit-says-ignoring-seniors-will-weaken-bjp/article71349986.ece",
-      "summary": "",
-      "published_at": "Sun, 16 Aug 2026 01:25:03 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "8a6081c07dc426fdb2",
-      "title": "Independence Day 2026: A hidden lake of lotuses, and the India I keep seeking",
-      "url": "https://www.thehindu.com/society/independence-day-2026-hidden-lake-lotuses-india-travel/article71327878.ece",
-      "summary": "On India’s 80th Independence Day, a reflection on wrong turns, happy accidents and the thrill of exploring the country, minus maps and social media",
-      "published_at": "Sun, 16 Aug 2026 01:14:02 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ys679s/article71344465.ece/alternates/LANDSCAPE_1200/Untitled%20design%20-%202026-08-14T121237.814.jpg",
+      "raw_id": "0c0d247292960d5d68",
+      "title": "CBI re-registers BSP leader Armstrong murder case",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/cbi-re-registers-bsp-leader-armstrong-murder-case/article71350755.ece",
+      "summary": "Investigators visit scene of crime in Perambur",
+      "published_at": "Sun, 16 Aug 2026 09:08:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rk8m56/article71351928.ece/alternates/LANDSCAPE_1200/IMG_NCSC_VADDEPALLI_RAMC_2_1_F5D2TS7R.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6408,8 +6426,8 @@
       "raw_id": "6106ffeea430ddd192",
       "title": "Yakshagana, Dhol Tasha, Garba add colour to Bengaluru’s first Freedom Habba",
       "url": "https://www.thehindu.com/news/national/karnataka/yakshagana-dhol-tasha-garba-add-colour-to-bengalurus-first-freedom-habba/article71349859.ece",
-      "summary": "",
-      "published_at": "Sun, 16 Aug 2026 01:06:29 +0530",
+      "summary": "People from diverse communities, States and districts dressed in traditional attire showcased their folk traditions, culture, music and dance",
+      "published_at": "Sun, 16 Aug 2026 09:07:26 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/ayq595/article71350753.ece/alternates/LANDSCAPE_1200/ALL_0148.jpeg",
       "suggested_category": "",
       "priority_discovery": false,

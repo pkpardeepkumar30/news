@@ -1,6 +1,6 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-15T20:46:02.639773+00:00",
+  "prepared_at": "2026-08-16T02:04:03.929791+00:00",
   "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
@@ -11,39 +11,6 @@
   "part": 2,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
     {
       "raw_id": "a33e3ffddcb188b9a9",
       "title": "I-Day: CM announces new schemes to boost job creation, AI push in education",
@@ -111,6 +78,39 @@
         "candidate_categories": [
           "Economy & Employment",
           "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "8b11cc14e104af7749",
+      "title": "U.P. CM Yogi Adityanath announces new ‘Youth Policy’ on Independence Day",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-cm-yogi-adityanath-announces-new-youth-policy-on-independence-day/article71349820.ece",
+      "summary": "The upcoming policy is likely to focus on skill development, employment generation, Artificial Intelligence and entrepreneurship, under a dedicated mechanism",
+      "published_at": "Sun, 16 Aug 2026 01:05:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/amnay9/article71350751.ece/alternates/LANDSCAPE_1200/6607_15_8_2026_14_2_5_4_15_08_INDEPENDENCEDAYCELEBRATIONLUCKNOW_D.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -1288,12 +1288,12 @@
       }
     },
     {
-      "raw_id": "745bf8d42843d3c1ee",
-      "title": "Myanmar says over 3,00,000 Rohingya refugees verified for repatriation as exodus enters ninth year",
-      "url": "https://www.thehindu.com/news/international/myanmar-says-over-300000-rohingya-refugees-verified-for-repatriation-as-exodus-enters-ninth-year/article71350651.ece",
-      "summary": "The operation drove more than 7,00,000 Rohingya across the border into Bangladesh, joining hundreds of thousands of others already living there for decades in the wake of waves of previous violence perpetrated by Myanmar's military",
-      "published_at": "Sat, 15 Aug 2026 23:44:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/xj3oqs/article71350672.ece/alternates/LANDSCAPE_1200/Myanmar_Rohingya_15162.jpg",
+      "raw_id": "212cc887e5f0fb197e",
+      "title": "West Asia war highlights: Iran fires back at Trump’s threat to declare Hormuz a U.S. territory",
+      "url": "https://www.thehindu.com/news/international/iran-us-war-west-asia-conflict-donald-trump-strait-of-hormuz-rising-oil-prices-live-updates-august-15-2026/article71348347.ece",
+      "summary": "Lebanon reports 11 dead in strikes that Israel says targeted Hezbollah; Iran demands release of downed pilots as Qatar denies holding them",
+      "published_at": "Sun, 16 Aug 2026 03:57:54 +0530",
+      "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1304,8 +1304,8 @@
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -1318,15 +1318,29 @@
         "candidate_categories": [
           "International & Geopolitics"
         ]
-      }
+      },
+      "related_reports": [
+        {
+          "title": "Iran fires back at Trump's threat to declare Hormuz a U.S. territory",
+          "url": "https://www.thehindu.com/news/international/iran-fires-back-at-trumps-threat-to-declare-hormuz-a-us-territory/article71350593.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
-      "raw_id": "3ef327453e796d1c3c",
-      "title": "Ukraine attacks Russia's Samara industrial site as Kyiv ramps up long-range strikes",
-      "url": "https://www.thehindu.com/news/international/ukraine-attacks-russias-samara-industrial-site-as-kyiv-ramps-up-long-range-strikes/article71350605.ece",
-      "summary": "Ivan Noskov, head of the region's capital, Samara, said air defence forces had repelled a “massive” missile attack, with “localised damage” to the city's industrial sites",
-      "published_at": "Sat, 15 Aug 2026 23:09:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/vc5fv3/article71350624.ece/alternates/LANDSCAPE_1200/2026-08-15T115356Z_1883630685_RC2ZYMAZBZO9_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-ATTACK.JPG",
+      "raw_id": "495a0d8314e6788d85",
+      "title": "West Asia war LIVE: Iran demands release of downed pilots as Qatar denies holding them",
+      "url": "https://www.thehindu.com/news/international/iran-us-west-asia-war-strait-of-hormuz-donald-trump-live-updates-on-august-16-2026/article71351835.ece",
+      "summary": "Javad Salehi, Abdolmajid Dashtian and Omran Behraveshian have been held by Qatari forces for six months, said General Mohammad Bagherzadeh of the Iranian armed forces",
+      "published_at": "Sun, 16 Aug 2026 06:45:16 +0530",
+      "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {

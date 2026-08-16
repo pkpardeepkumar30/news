@@ -1,56 +1,56 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-16T04:57:04.221344+00:00",
-  "input_count": 429,
+  "prepared_at": "2026-08-16T08:54:13.783740+00:00",
+  "input_count": 436,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 123,
+    "established_or_other": 77,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
+      "raw_id": "a66410507b5f415455",
+      "title": "Commonwealth Games 2026: भारत ने जीते 39 मेडल, 2030 में मेजबानी करेगा भारत",
+      "url": "https://khabarlahariya.org/commonwealth-games-2026-india-won-39-medals-india-to-host-in-2030/",
+      "summary": "कॉमनवेल्थ गेम्स 2026 भारत के लिए गौरवपूर्ण और यादगार रहा। कल 2 अगस्त 2026 को इसका समापन कार्यक्रम हुआ। भारतीय खिलाड़ियों ने शानदार प्रदर्शन करते हुए 39 मेडल भारत के…",
+      "published_at": "Mon, 03 Aug 2026 08:17:16 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Protests": 1
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "a33e3ffddcb188b9a9",
-      "title": "I-Day: CM announces new schemes to boost job creation, AI push in education",
-      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-targets-one-lakh-new-jobs-ai-hubs-and-a-3-trillion-economy-by-2047/article71349042.ece",
-      "summary": "Chief Minister announces Karnataka targets one lakh new jobs through Udyoga Sankalpa and Udyoga Nidhi schemes, creation of AI hubs, and a $3 trillion economy by 2047",
-      "published_at": "Sun, 16 Aug 2026 01:03:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/oolrqv/article71349092.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000461A.jpg",
+      "raw_id": "9bf1cf7d6f2d05eca5",
+      "title": "Meta ramps up censorship of protest, political reels",
+      "url": "https://www.thehindu.com/news/national/meta-ramps-up-censorship-of-protest-political-reels/article71317806.ece",
+      "summary": "Instagram posts by political party accounts, Cockroach Janta Party representatives, and ordinary protesters have all been blocked in India; Meta is even barring content it is not legally required to remove",
+      "published_at": "Sun, 16 Aug 2026 11:15:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g4hpbe/article71319322.ece/alternates/LANDSCAPE_1200/CJP%20PROTEST%20DELHI_06_06_51.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -70,27 +70,62 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 2,
-          "Society, Rights & Justice": 4
+          "Politics & Elections": 1,
+          "Protests": 5
         },
         "candidate_categories": [
-          "Economy & Employment",
+          "Politics & Elections",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "c34f680e93e22af27f",
+      "title": "With slogans and tears, Ujjain schoolgirls protest plan to shift government schools far away",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/with-slogans-and-tears-ujjain-schoolgirls-protest-plan-to-shift-government-schools-far-away/article71349995.ece",
+      "summary": "Activists involved with the protests claim six schools are proposed to be merged with the Sandipani Vidyalaya, built in Daudkhedi, and that the move is likely to impact more than 2,500 students",
+      "published_at": "Sun, 16 Aug 2026 10:58:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/t2r3bn/article71350668.ece/alternates/LANDSCAPE_1200/Screenshot%202026-08-15%20234124.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Society, Rights & Justice": 5
+        },
+        "candidate_categories": [
+          "Protests",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "8b11cc14e104af7749",
-      "title": "U.P. CM Yogi Adityanath announces new ‘Youth Policy’ on Independence Day",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-cm-yogi-adityanath-announces-new-youth-policy-on-independence-day/article71349820.ece",
-      "summary": "The upcoming policy is likely to focus on skill development, employment generation, Artificial Intelligence and entrepreneurship, under a dedicated mechanism",
-      "published_at": "Sun, 16 Aug 2026 07:09:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/amnay9/article71350751.ece/alternates/LANDSCAPE_1200/6607_15_8_2026_14_2_5_4_15_08_INDEPENDENCEDAYCELEBRATIONLUCKNOW_D.JPG",
-      "suggested_category": "",
+      "raw_id": "d82f3145bc9ec34d9c",
+      "title": "Iran executes man over involvement in winter protests",
+      "url": "https://www.thehindu.com/news/international/iran-executes-man-over-involvement-in-winter-protests/article71352291.ece",
+      "summary": "Iranian authorities reported more than 3,000 deaths, attributing the violence to \"terrorist acts\" orchestrated by the United States and Israel, while rights groups based abroad maintain that security forces fired on protesters",
+      "published_at": "Sun, 16 Aug 2026 13:30:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ujqvdx/article71352294.ece/alternates/LANDSCAPE_1200/Iran_War_6_749.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -105,20 +140,24 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Protests": 5,
+          "Society, Rights & Justice": 1,
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "International & Geopolitics",
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "9a14417e1a1dcddb2e",
-      "title": "Preserve democracy and secularism, says Minister Roji M. John in his Independence Day message",
-      "url": "https://www.thehindu.com/news/national/kerala/preserve-democracy-and-secularism-says-minister-roji-m-john-in-his-independence-day-message/article71349081.ece",
-      "summary": "Like B.R. Ambedkar said, independence will be complete when along with political freedom, the social and economic freedom of every citizen is ensured, said Minister for Higher Education.",
-      "published_at": "Sun, 16 Aug 2026 01:07:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/v5ns1g/article71350513.ece/alternates/LANDSCAPE_1200/80968_15_8_2026_17_2_24_1_IMG_9035.JPEG",
+      "raw_id": "1399f3754b7bef3df7",
+      "title": "Jharkhand job exam stir: protesters announce CM residence gherao on August 20 to seek Hemant Soren’s resignation",
+      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-students-demand-congress-to-withdraw-support-from-jmm-coalition-cm-sorens-resignation/article71350761.ece",
+      "summary": "The students accuse JMM-Congress of playing politics; ask Congress to withdraw support from JMM-led coalition",
+      "published_at": "Sun, 16 Aug 2026 13:39:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/izhxiz/article71350762.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000703A.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -138,22 +177,22 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1,
+          "Protests": 4,
           "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Economy & Employment",
+          "Protests",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "f67f1c25c531b66efd",
-      "title": "Government rolls out foreign asset disclosure scheme for small taxpayers",
-      "url": "https://www.thehindu.com/business/Economy/government-rolls-out-foreign-asset-disclosure-scheme-for-small-taxpayers/article71350429.ece",
-      "summary": "Taxpayers will pay a 30% tax on the value of the declared undisclosed foreign asset or income, plus an additional amount equal to the tax, effectively taking the levy to 60%",
-      "published_at": "Sat, 15 Aug 2026 22:40:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/doygzp/article71350565.ece/alternates/LANDSCAPE_1200/iStock-1131980879.jpg",
+      "raw_id": "cbdf51c51793ff0261",
+      "title": "Soren promises ‘systemic change’ amid ongoing student protest in Jharkhand",
+      "url": "https://www.thehindu.com/news/national/jharkhand/soren-promises-systemic-change-amid-ongoing-student-protest-in-jharkhand/article71349382.ece",
+      "summary": "Addressing a gathering in Ranchi on Independence Day, the Chief Minister assured students that their hard work would not be left at the mercy of any mafia",
+      "published_at": "Sun, 16 Aug 2026 13:38:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c0npo3/article71349617.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000404B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -173,10 +212,80 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Protests": 4,
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "845bc857255ac10ebc",
+      "title": "Tear gas, water cannons used against Qaumi Insaf morcha protesters, Punjab Bandh call on August 21",
+      "url": "https://www.thehindu.com/news/national/tear-gas-water-cannons-used-against-qaumi-insaf-morcha-protesters-punjab-bandh-call-on-aug-21/article71349805.ece",
+      "summary": "Some protesters attempted to remove barricades and barbed wire, and some others tried to pull them down using a tractor as they attempted to proceed towards the residence of the Punjab Governor at the Lok Bhavan in Chandigarh",
+      "published_at": "Sun, 16 Aug 2026 10:20:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4k7czq/article71349878.ece/alternates/LANDSCAPE_1200/PTI08_15_2026_000655B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "87105118468930909a",
+      "title": "Regret standing with BJP during protest by farmers, says Dushyant Chautala",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/regret-standing-with-bjp-during-protest-by-farmers-says-dushyant-chautala/article68691036.ece",
+      "summary": "JJP leader says it was a mistake that he did not understand farmers’ sentiments but that he does not regret allying with the BJP in 2019",
+      "published_at": "Sat, 28 Sep 2024 05:00:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cp8vh4/article68692172.ece/alternates/LANDSCAPE_1200/5331_27_9_2024_19_46_25_1_IMG_20240927_190506.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
         ]
       }
     },
@@ -581,6 +690,41 @@
       }
     },
     {
+      "raw_id": "cdf3a44208d11dc555",
+      "title": "Tamil Nadu goes to polls",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
+      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
+      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 9
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "d90e759a3f3b1c487b",
       "title": "MCD starts demolition drive in Bhalswa colony in north-west Delhi",
       "url": "https://www.thehindu.com/news/cities/Delhi/mcd-starts-demolition-drive-in-bhalswa-colony-in-north-west-delhi/article68519463.ece",
@@ -950,41 +1094,6 @@
       }
     },
     {
-      "raw_id": "74005d24725e081452",
-      "title": "75 years of Vishnuvardhan: Dream roles and unfulfilled projects of the Kannada actor",
-      "url": "https://www.thehindu.com/entertainment/movies/vishnuvardhan-75th-birth-anniversary-vishnuvardhan-memorial-kannada-actor-sandalwood-dream-roles-projects/article70062572.ece",
-      "summary": "Remembering versatile Kannada actor Vishnuvardhan on his 75th birth anniversary, young filmmakers talk about his untapped potential in the industry",
-      "published_at": "Thu, 18 Sep 2025 19:20:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kg2dtn/article70064297.ece/alternates/LANDSCAPE_1200/Vishnuvardhan_04.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -1251,119 +1360,6 @@
         "candidate_categories": [
           "International & Geopolitics",
           "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "838ea6c888f1297094",
-      "title": "India, Bangladesh in talks for an early bilateral visit by PM Rahman to New Delhi",
-      "url": "https://www.thehindu.com/news/national/india-bangladesh-in-talks-for-an-early-bilateral-visit-by-pm-rahman-to-new-delhi/article71342255.ece",
-      "summary": "Diplomatic sources expressed cautious optimism, saying that 'positive developments' can take place quickly in the coming few days",
-      "published_at": "Thu, 13 Aug 2026 23:53:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/v7p9aa/article71342678.ece/alternates/LANDSCAPE_1200/TH10-Kallol-BanGGPGCHPKI.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "29a76785b0da2bb963",
-      "title": "Iran fires back at Trump's threat to declare Hormuz a U.S. territory",
-      "url": "https://www.thehindu.com/news/international/iran-fires-back-at-trumps-threat-to-declare-hormuz-a-us-territory/article71350593.ece",
-      "summary": "Mr. Trump has repeatedly said the strait, which Tehran effectively closed at the start of the West Asia war in late February, is under U.S. control an assertion the Islamic Republic denies",
-      "published_at": "Sun, 16 Aug 2026 07:43:27 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/u5piu9/article71350602.ece/alternates/LANDSCAPE_1200/AP08_15_2026_000041B.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "West Asia war highlights: Iran fires back at Trump’s threat to declare Hormuz a U.S. territory",
-          "url": "https://www.thehindu.com/news/international/iran-us-war-west-asia-conflict-donald-trump-strait-of-hormuz-rising-oil-prices-live-updates-august-15-2026/article71348347.ece",
-          "source": {
-            "id": "the-hindu-international",
-            "name": "The Hindu - International",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "bba71b7fd821cf7e0e",
-      "title": "London police apologise over Al-Fayed probe data breach",
-      "url": "https://www.thehindu.com/news/international/london-police-apologise-over-al-fayed-probe-data-breach/article71351999.ece",
-      "summary": "The incident is being investigated as a matter of priority, and we are reviewing our processes to help prevent a similar breach from happening again, a statement from the Metropolitan Police said.",
-      "published_at": "Sun, 16 Aug 2026 10:12:58 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2me0zs/article71352012.ece/alternates/LANDSCAPE_1200/Al-Fayed_Sex_Abuse_85005.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
         ]
       }
     }

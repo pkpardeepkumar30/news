@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-17T09:07:58.552060+00:00",
-  "input_count": 481,
+  "prepared_at": "2026-08-17T09:34:27.892360+00:00",
+  "input_count": 1425,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 145,
-    "established_or_other": 55,
+    "independent_social": 135,
+    "established_or_other": 65,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -273,91 +273,283 @@
       }
     },
     {
-      "raw_id": "e95c40faf4aa765aa0",
-      "title": "Mahakal Temple News: नागचंद्रेश्वर दर्शन के दौरान करंट फैलने की उड़ी अफवाह, धक्का-मुक्की में एमपी, बिहार व गुजरात के श्रद्धालु घायल",
-      "url": "https://theruralpress.in/ujjain-nagchandreshwar-temple-queue-stampede-rumour-10-devotees-injured/",
-      "summary": "Mahakal Temple News: सावन के तीसरे सोमवार को उज्जैन के महाकाल मंदिर में श्रीनागचंद्रेश्वर मंदिर के दर्शन के लिए लगी कतार में हरसिद्धि मंदिर चौराहे के पास अचानक अफरा-तफरी मच गई। बैरिकेडिंग के अंदर डीपी के पास करंट फैलने की अफवाह के बाद कतार में खड़े श्रद्धालुओं के बीच भगदड़ जैसी स्थिति बन गई। इस […]",
-      "published_at": "Mon, 17 Aug 2026 07:27:01 +0000",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "7002ed581d8235563c",
+      "title": "Jason Arday, former Cambridge University professor at centre of plagiarism scandal, found dead",
+      "url": "https://www.thehindu.com/news/international/jason-arday-former-cambridge-university-professor-at-centre-of-plagiarism-scandal-found-dead-uk-media/article71347279.ece",
+      "summary": "Arday died after being found unresponsive in south London, according to British media; the plagiarism scandal erupted after some academics and media reports accused Arday, who became Cambridge’s youngest black professor in 2023, of plagiarising parts of his doctoral thesis",
+      "published_at": "Sat, 15 Aug 2026 08:42:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fpm89x/article71347281.ece/alternates/LANDSCAPE_1200/Jason-Arday-at-GFIGC4NU7.3.jpg.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
         "distinct_source_types": [
-          "local"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Jason Arday, former Cambridge professor at centre of plagiarism row, found dead",
+          "url": "https://indianexpress.com/article/world/jason-arday-who-quit-as-cambridge-professor-last-week-over-plagiarism-row-found-dead-in-london-10834454/",
+          "source": {
+            "id": "indian-express-world",
+            "name": "The Indian Express - World",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
-      "raw_id": "710a98b15f99549f6f",
-      "title": "Ayushman Bharat Card: किसे मिलता है, कितना इलाज मुफ्त और कैसे बनता है कार्ड? जानिए पूरी जानकारी",
-      "url": "https://theruralpress.in/ayushman-bharat-card-eligibility-benefits-hospital-cover-and-online-application-guide/",
-      "summary": "Ayushman Bharat Card: बीमारी के इलाज का खर्च कई परिवारों के लिए बड़ी चिंता बन जाता है। ऐसे में आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना यानी AB PM-JAY के तहत पात्र लोगों को अस्पताल में भर्ती होकर इलाज के लिए हर साल 5 लाख रुपये तक का स्वास्थ्य कवर मिलता है। यह सुविधा सरकारी और […]",
-      "published_at": "Mon, 17 Aug 2026 06:16:38 +0000",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "062c506c6f9cf6eb32",
+      "title": "Jemimah Rodrigues ruled out of Asia Cup and Asian Games due to hamstring injury",
+      "url": "https://www.thehindu.com/sport/cricket/jemimah-rodrigues-ruled-out-of-asia-cup-and-asian-games-due-to-hamstring-injury/article71347295.ece",
+      "summary": "The BCCI said in a statement that the 25-year-old Rodrigues has been assessed by the medical team with a high-grade tear",
+      "published_at": "Sat, 15 Aug 2026 02:34:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fofhsz/article71347315.ece/alternates/LANDSCAPE_1200/TH11-INSTA-JEMIGS4GCH1BA.3.jpg.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
         "distinct_source_types": [
-          "local"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1,
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Jemimah Rodrigues ruled out of Asia Cup and Asian Games",
+          "url": "https://indianexpress.com/article/sports/cricket/jemimah-rodrigues-ruled-out-of-asia-cup-and-asian-games-10833533/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
-      "raw_id": "40d035ca5e2852d525",
-      "title": "Increasing numbers of the Indian peafowl worry farmers [Commentary]",
-      "url": "https://india.mongabay.com/2026/08/increasing-numbers-of-the-indian-peafowl-worry-farmers-commentary/",
-      "summary": "Once hailed as a symbol of Indian pride and grace, the Indian peafowl (Pavo cristatus) is now stirring heated debates in the quiet Himalayan foothills. Revered as the national bird of India and a prominent figure in Hindu mythology, this vibrant bird has long enjoyed admiration and legal protection. But in recent years, its soaring […]",
-      "published_at": "17 Aug 2026 13:45:46 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/17101028/Photo-2_%40Mingma-Tamang-768x512.jpg",
+      "raw_id": "7fb5b6ef55d0a53028",
+      "title": "Gold Rate Today, August 14: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "url": "https://indianexpress.com/article/india/gold-rate-today-august-14-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10832490/",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 05:13:38 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/gold-rates-today-1-1.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
+        "dynamic_rank_score": 24,
+        "observed_report_count": 4,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
+      },
+      "related_reports": [
+        {
+          "title": "Gold Rate Today, August 12: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-12-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10829236/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, August 11: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-11-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10827428/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Gold Rate Today, August 13: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+          "url": "https://indianexpress.com/article/india/gold-rate-today-august-13-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10830895/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "625b549af493d03afa",
+      "title": "Gorakhpur-Delhi Amrit Bharat Express: Check train number, route, stops and timings",
+      "url": "https://indianexpress.com/article/india/gorakhpur-delhi-amrit-bharat-express-train-number-route-stops-timings-10832396/",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 04:17:31 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/amrit-bharat.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-india",
+        "name": "The Indian Express — India",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 22,
+        "observed_report_count": 3,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      },
+      "related_reports": [
+        {
+          "title": "Dhanbad-Coimbatore Amrit Bharat Express: Check train number, route, stops and timings",
+          "url": "https://indianexpress.com/article/india/dhanbad-coimbatore-amrit-bharat-express-train-number-route-stops-timings-10834883/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Charlapalli-Gorakhpur Amrit Bharat Express to start in October: Check route, stops and timings",
+          "url": "https://indianexpress.com/article/india/charlapalli-gorakhpur-amrit-bharat-express-train-number-route-stops-timings-10835570/",
+          "source": {
+            "id": "indian-express-india",
+            "name": "The Indian Express — India",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4c2b3d80f820db6f07",
+      "title": "IGNOU extends July 2026 admission, re-registration deadline till August 16",
+      "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-reregistration-deadline-fee-details-important-dates-official-website-to-apply-10818477/",
+      "summary": "",
+      "published_at": "Wed, 05 Aug 2026 04:56:20 +0000",
+      "image_url": "https://images.indianexpress.com/2026/07/IGNOU.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-education",
+        "name": "The Indian Express - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 22,
+        "observed_report_count": 3,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "IGNOU extends July 2026 admission deadline till August 16 for ODL, online programmes",
+          "url": "https://indianexpress.com/article/education/ignou-extends-july-2026-admission-deadline-august-16-open-distance-learnin-odl-online-programmes-ignouadmission-samarth-edu-in-10813315/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "IGNOU extends ODL July 2026 registration deadline till August 31; check steps to apply",
+          "url": "https://indianexpress.com/article/education/ignou-extends-odl-july-2026-registration-deadline-till-august-31-check-steps-to-apply-10836732/",
+          "source": {
+            "id": "indian-express-education",
+            "name": "The Indian Express - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "c32d9c1f80cef349c6",
@@ -454,6 +646,281 @@
       ]
     },
     {
+      "raw_id": "29a76785b0da2bb963",
+      "title": "Iran fires back at Trump's threat to declare Hormuz a U.S. territory",
+      "url": "https://www.thehindu.com/news/international/iran-fires-back-at-trumps-threat-to-declare-hormuz-a-us-territory/article71350593.ece",
+      "summary": "Mr. Trump has repeatedly said the strait, which Tehran effectively closed at the start of the West Asia war in late February, is under U.S. control an assertion the Islamic Republic denies",
+      "published_at": "Sun, 16 Aug 2026 07:43:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/u5piu9/article71350602.ece/alternates/LANDSCAPE_1200/AP08_15_2026_000041B.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "West Asia war highlights: Iran fires back at Trump’s threat to declare Hormuz a U.S. territory",
+          "url": "https://www.thehindu.com/news/international/iran-us-war-west-asia-conflict-donald-trump-strait-of-hormuz-rising-oil-prices-live-updates-august-15-2026/article71348347.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0bfb0dc6fc98c886ca",
+      "title": "Broad Peak avalanche: Rescue briefly paused after 3 bodies recovered, Nirmal Purja among missing",
+      "url": "https://indianexpress.com/article/world/broad-peak-avalanche-rescue-briefly-paused-after-3-bodies-recovered-nirmal-purja-among-missing-10813055/",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 04:13:40 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/Broad-peak.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Broad Peak avalanche: Nepal’s Nirmal Purja among six missing, four bodies recovered",
+          "url": "https://indianexpress.com/article/world/south-asia-nirmal-purja-broad-peak-avalanche-pakistan-missing-10812573/",
+          "source": {
+            "id": "indian-express-world",
+            "name": "The Indian Express - World",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e964141d718f81fd63",
+      "title": "India vs Sri Lanka, 1st Test day 2: IND 460/9 at Stumps vs SL in Galle",
+      "url": "https://indianexpress.com/article/sports/cricket/india-vs-sri-lanka-live-score-day-2-1st-test-galle-devdutt-padikkal-kl-rahul-10835288/",
+      "summary": "",
+      "published_at": "Sun, 16 Aug 2026 04:05:51 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/devdutt-padikkal-bcci.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "IND vs SL, 1st Test: India 288/2 at stumps vs Sri Lanka on Day-1 in Galle",
+          "url": "https://indianexpress.com/article/sports/cricket/ind-vs-sl-live-score-1st-test-day-1-india-sri-lanka-galle-10834183/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "915c2f45dc3ddab655",
+      "title": "FC Goa vs FK Arkadag AFC Champions League 2 qualifier Live Streaming: When, Where to Watch ACL 2 Qualifier",
+      "url": "https://indianexpress.com/article/sports/football/fc-goa-vs-fk-arkadag-afc-champions-league-2-qualifier-live-streaming-when-where-to-watch-acl-2-qualifier-10828256/",
+      "summary": "",
+      "published_at": "Wed, 12 Aug 2026 05:00:41 +0000",
+      "image_url": "https://images.indianexpress.com/2026/08/sandesh-jhingan-fc-goa-aiff.jpeg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-sports",
+        "name": "The Indian Express - Sports",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "East Bengal vs Al-Arabi AFC Champions League 2 qualifier Live Streaming: When, Where to Watch ACL 2 Qualifier",
+          "url": "https://indianexpress.com/article/sports/football/east-bengal-vs-al-arabi-afc-champions-league-2-preliminary-stage-qualifier-live-streaming-when-where-to-watch-acl-2-qualifier-10828079/",
+          "source": {
+            "id": "indian-express-sports",
+            "name": "The Indian Express - Sports",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e95c40faf4aa765aa0",
+      "title": "Mahakal Temple News: नागचंद्रेश्वर दर्शन के दौरान करंट फैलने की उड़ी अफवाह, धक्का-मुक्की में एमपी, बिहार व गुजरात के श्रद्धालु घायल",
+      "url": "https://theruralpress.in/ujjain-nagchandreshwar-temple-queue-stampede-rumour-10-devotees-injured/",
+      "summary": "Mahakal Temple News: सावन के तीसरे सोमवार को उज्जैन के महाकाल मंदिर में श्रीनागचंद्रेश्वर मंदिर के दर्शन के लिए लगी कतार में हरसिद्धि मंदिर चौराहे के पास अचानक अफरा-तफरी मच गई। बैरिकेडिंग के अंदर डीपी के पास करंट फैलने की अफवाह के बाद कतार में खड़े श्रद्धालुओं के बीच भगदड़ जैसी स्थिति बन गई। इस […]",
+      "published_at": "Mon, 17 Aug 2026 07:27:01 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "710a98b15f99549f6f",
+      "title": "Ayushman Bharat Card: किसे मिलता है, कितना इलाज मुफ्त और कैसे बनता है कार्ड? जानिए पूरी जानकारी",
+      "url": "https://theruralpress.in/ayushman-bharat-card-eligibility-benefits-hospital-cover-and-online-application-guide/",
+      "summary": "Ayushman Bharat Card: बीमारी के इलाज का खर्च कई परिवारों के लिए बड़ी चिंता बन जाता है। ऐसे में आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना यानी AB PM-JAY के तहत पात्र लोगों को अस्पताल में भर्ती होकर इलाज के लिए हर साल 5 लाख रुपये तक का स्वास्थ्य कवर मिलता है। यह सुविधा सरकारी और […]",
+      "published_at": "Mon, 17 Aug 2026 06:16:38 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "40d035ca5e2852d525",
+      "title": "Increasing numbers of the Indian peafowl worry farmers [Commentary]",
+      "url": "https://india.mongabay.com/2026/08/increasing-numbers-of-the-indian-peafowl-worry-farmers-commentary/",
+      "summary": "Once hailed as a symbol of Indian pride and grace, the Indian peafowl (Pavo cristatus) is now stirring heated debates in the quiet Himalayan foothills. Revered as the national bird of India and a prominent figure in Hindu mythology, this vibrant bird has long enjoyed admiration and legal protection. But in recent years, its soaring […]",
+      "published_at": "17 Aug 2026 13:45:46 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/17101028/Photo-2_%40Mingma-Tamang-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "f991d19c7df3e95b66",
       "title": "Genetic study of the Arunachali mithun flags declining breeding population",
       "url": "https://india.mongabay.com/2026/08/genetic-study-of-the-arunachali-mithun-flags-declining-breeding-population/",
@@ -538,39 +1005,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "8e4848694073d16baa",
-      "title": "Himalayan pheasants face mounting human pressure",
-      "url": "https://india.mongabay.com/2026/08/himalayan-pheasants-face-mounting-human-pressure/",
-      "summary": "The white-crested kalij pheasant, a relatively adaptable bird, is under increasing pressure from habitat degradation, hunting and other human activities in the forests of the northwestern Himalayas, according to a study that looked at community perceptions of threats to the bird. The bird is listed as least concern by the IUCN Red List, indicating it […]",
-      "published_at": "11 Aug 2026 16:15:25 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/11140304/Western-Tragopan-4-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
       }
     },
     {
@@ -822,6 +1256,41 @@
       }
     },
     {
+      "raw_id": "94ad76060cef95e12b",
+      "title": "SCBA urges Meghalaya bar bodies to withdraw resolution against Advocate General Amit Kumar",
+      "url": "https://www.barandbench.com/news/scba-urges-meghalaya-bar-bodies-to-withdraw-resolution-against-advocate-general-amit-kumar",
+      "summary": "The Supreme Court Bar Association (SCBA) has urged the Meghalaya High Court Bar Association and the Shillong Bar Association to reconsider and withdraw their joint resolution seeking action against Meghalaya Advocate General Amit Kumar . The SCBA said the resolution, passed in the context of Kumar’s submissions before the Meghalaya High Court on the safety and dignity of women advocates and law interns, was unwarranted since the issue was already being considered by the Court. The statement came after the two Meghalaya bar associations passed a joint resolution on Thursday expelling Kumar from their rolls and calling for his removal as Advocate General. The associations had taken exception to his alleged remarks that bar associations had failed to provide a safe environment for women lawyers. The SCBA, however, said the context in which the remarks were made needed to be taken into account. It noted that Kumar, while appearing as Advocate General, had informed the Meghalaya High Court about the action taken in the case and submitted that while the safety of members of the bar must be protected, equal attention must be given to the safety and dignity of women advocates and law inter",
+      "published_at": "Fri, 14 Aug 2026 18:23:02 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-13/pyk7eydk/WEB-SITE-C-copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
       "raw_id": "1c714f8f806cdc5bbe",
       "title": "Supreme Court quashes hate speech complaint against Rahul Gandhi for calling Savarkar British collaborator",
       "url": "https://www.barandbench.com/news/litigation/supreme-court-quashes-hate-speech-complaint-against-rahul-gandhi-for-calling-savarkar-british-collaborator",
@@ -921,301 +1390,46 @@
       }
     },
     {
+      "raw_id": "adb54ebf2161ece223",
+      "title": "Have Vijay Mallya's debts been cleared using his assets? Bombay High Court asks ED, banks",
+      "url": "https://www.barandbench.com/news/have-vijay-mallyas-debts-been-cleared-using-his-assets-bombay-high-court-asks-ed-banks",
+      "summary": "The Bombay High Court on August 12 asked the State Bank of India (SBI) and the Enforcement Directorate (ED) to ascertain and confirm whether fugitive businessman Vijay Mallya's debts and liabilities have been cleared using his movable properties which were attached by ED [Vijay Vittal Mallya v. State Bank of India & Ors] Justice Milind Jadhav passed the direction after Mallya's counsel claimed that the debts have been cleared using the money recovered from his assets attached by ED. Justice Milind Jadhav The Court was hearing a criminal petition filed by Mallya in 2020 challenging an order of a special court of 2019. Mallya is accused of money laundering and siphoning off at least ₹3,500 crore out of the total ₹9,000 crore bank loans granted to his defunct Kingfisher Airlines. ED initiated proceedings under the Prevention of Money Laundering Act (PMLA) and provisionally attached his properties in 2016. In 2019, a special court permitted SBI and other lender banks to utilise Mallya's ED-attached movable properties for debt recovery. Assets included United Breweries Holdings Ltd (UBHL) shares. Mallya challenged this before the High Court in 2020. Though the petition was filed in Janu",
+      "published_at": "Fri, 14 Aug 2026 09:48:44 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-02-18/4lp9ypec/BOMBAY-WEB-PAGE-1600x900tr-copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "0e9c6960e790d4d17a",
       "title": "BWF World Championships 2026:  आज से विश्व बैंडमिंटन चैंपियनशिप की शुरुआत, टिकट कैसे बुक करें और कौन-कौन से भारतीय खिलाड़ी खेलेंगे? जानें पूरी जानकारी",
       "url": "https://khabarlahariya.org/bwf-world-championships-2026-the-world-badminton-championships-kick-off-today-find-out-how-to-book-tickets-which-indian-players-are-competing-and-get-all-the-details/",
       "summary": "दुनिया के जाने-माने बैडमिंटन खिलाड़ी एक बार फिर भारत में आमने-सामने होंगे। BWF वर्ल्ड चैंपियनशिप 2026 की शुरुआत 17 अगस्त से नई दिल्ली में हो रही है। खास बात यह…",
       "published_at": "Mon, 17 Aug 2026 07:24:42 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "18fb6e889e176fa70d",
-      "title": "Varanasi News: 20-30 KM दूर से पढ़ने आती हैं छात्राएं, कम फीस में मिल रही बेहतर शिक्षा",
-      "url": "https://khabarlahariya.org/varanasi-news-female-students-travel-20-30-km-to-study-receiving-quality-education-at-low-fees/",
-      "summary": "वाराणसी के परमानंदपुर में बना विकास इंटर कॉलेज आर्थिक रूप से कमजोर परिवारों की बेटियों के लिए शिक्षा की एक बड़ी उम्मीद बना हुआ है। यहां कई छात्राएं 20 से…",
-      "published_at": "Mon, 17 Aug 2026 05:00:38 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b145e3195c713a99ff",
-      "title": "Bihar/Patna News: बिना शौचालय कैसे मिल मसौढ़ी को ODF प्लस सर्टिफिकेट?",
-      "url": "https://khabarlahariya.org/bihar-patna-news-how-did-masaurhi-get-the-odf-plus-certificate-without-toilets/",
-      "summary": "पटना जिले के मसौढ़ी नगर परिषद को केंद्र सरकार के द्वारा ओडीएफ प्लस जुलाई सन 2025 को घोषित कर दिया गया था जिसको लेकर के लोगों से बातचीत की तो…",
-      "published_at": "Sun, 16 Aug 2026 10:00:43 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c318696c0b0953152c",
-      "title": "India Vs Afghanistan T20I series: भारत बनाम अफगानिस्तान के बीच T20I मैच सीरीज का शेड्यूल (Schedule) जारी, जानें कब और कहाँ होंगे मैच",
-      "url": "https://khabarlahariya.org/india-vs-afghanistan-t20i-series-schedule-released-for-the-t20i-series-between-india-and-afghanistan-find-out-when-and-where-the-matches-will-take-place/",
-      "summary": "क्रिकेट के मैदान पर एक बार फिर भारत और अफगानिस्तान आमने-सामने होंगे। भारत बनाम अफगानिस्तान के बीच होने वाली तीन मैचों की T20I सीरीज़ की घोषणा हो गई है लेकिन…",
-      "published_at": "Sun, 16 Aug 2026 08:06:52 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e62b3ae21b5d56aba5",
-      "title": "Banda News: 12 हजार की आबादी में सफाई व्यवस्था बेहाल! नाली के पास पड़ा कूड़ा, स्कूल के बच्चों पर असर",
-      "url": "https://khabarlahariya.org/banda-news-sanitation-system-in-shambles-for-a-population-of-12000-garbage-piled-up-near-drains-school-children-affected/",
-      "summary": "12 हजार की आबादी वाले गांव में सफाई व्यवस्था की जमीनी हकीकत सामने आई है। गांव के अंदर नाली के पास बड़ी मात्रा में कूड़ा जमा है। ग्रामीणों का कहना…",
-      "published_at": "Sun, 16 Aug 2026 04:30:11 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "795bfd5cc384fe39e0",
-      "title": "Ayodhya News: 3 नौकरियां छोड़ीं, लेकिन शिक्षा नहीं छोड़ी, 74 साल की सुशीला का बच्चों को पढ़ाने का जुनून",
-      "url": "https://khabarlahariya.org/ayodhya-news-left-three-jobs-but-didnt-give-up-on-education-74-year-old-sushilas-passion-for-teaching-children/",
-      "summary": "अयोध्या के टेढ़ी बाजार की रहने वाली 74 वर्षीय सुशीला श्रीवास्तव आज भी बच्चों को शिक्षा देने के लिए लगातार काम कर रही हैं। खास बात यह है कि वह…",
-      "published_at": "Sat, 15 Aug 2026 10:00:37 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "546368541389835a18",
-      "title": "UP/Banda News: 5 साल का विकास या सिर्फ दावा? अतरहट में जलभराव से ग्रामीण परेशान",
-      "url": "https://khabarlahariya.org/up-banda-news-five-years-of-development-or-just-claims-villagers-in-atarhat-troubled-by-waterlogging/",
-      "summary": "बाँदा जिले के अतरहट गांव की गलियों में बारिश के बाद हालात बेहद खराब हैं। 3 अगस्त की बारिश के बाद कई रास्ते पानी में डूब गए और ग्रामीणों को…",
-      "published_at": "Sat, 15 Aug 2026 07:30:24 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "52a2cf5123318472c3",
-      "title": "Varanasi News: 38 वर्षीय महिला की संदिग्ध मौत, अंतिम संस्कार से पहले पुलिस ने कब्जे में लिया शव",
-      "url": "https://khabarlahariya.org/varanasi-news-suspicious-death-of-38-year-old-woman-police-take-custody-of-body-before-cremation/",
-      "summary": "वाराणसी के हुकुलगंज में 38 वर्षीय अविवाहित महिला गुंजा की संदिग्ध परिस्थितियों में मौत से हड़कंप मच गया। परिजन अंतिम संस्कार के लिए शव को मणिकर्णिका घाट ले जाने की…",
-      "published_at": "Fri, 14 Aug 2026 14:00:07 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b879173b179fd808d2",
-      "title": "The Kavita Show: कांवड़ यात्रा में मुस्लिम लड़के की मौत, तोड़फोड़, स्कूल बंद, फिर भी कांवड़ियों पर फूल बरसाता प्रशासन?",
-      "url": "https://khabarlahariya.org/the-kavita-show-death-of-a-muslim-youth-during-the-kanwar-yatra-vandalism-schools-shut-yet-the-administration-showers-flowers-on-the-kanwariyas/",
-      "summary": "कांवड़ यात्रा के दौरान इस साल उत्तर प्रदेश में कई ऐसी घटनाएं सामने आईं, जिनसे कानून-व्यवस्था और प्रशासन के रवैये पर सवाल उठे। लखनऊ में कांवड़ यात्रा के दौरान एक…",
-      "published_at": "Fri, 14 Aug 2026 11:00:19 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "43480d3ce542fb7b8c",
-      "title": "MP, Ground Report: 79 साल आज़ादी के बाद बिक्रमपुर पंचायत चुनाव, सरपंच की कुर्सी पर कोई और फैसलों पर ठाकुरों का दबदबा, क्यों?",
-      "url": "https://khabarlahariya.org/mp-ground-report-bikrampur-panchayat-elections-held-79-years-after-independence-someone-else-holds-the-sarpanchs-seat-yet-thakurs-dominate-decision-making-why/",
-      "summary": "मध्य प्रदेश के छतरपुर जिले की बिक्रमपुर ग्राम पंचायत में लोगों से बात करने पर पंचायत की राजनीति को लेकर एक अलग तस्वीर सामने आती है। रिपोर्टिंग के दौरान कुछ…",
-      "published_at": "Fri, 14 Aug 2026 10:00:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2e32dbce7070107416",
-      "title": "Bihar,UP News: तिरंगा यात्रा के दौरान यूपी में 40 छात्रा और बिहार में क़रीब 30 बच्चे हुए बेहोश",
-      "url": "https://khabarlahariya.org/bihar-up-news-40-female-students-in-up-and-around-30-children-in-bihar-fainted-during-the-tiranga-yatra/",
-      "summary": "तिरंगा यात्रा के दौरान यूपी, और बिहार दोनों राज्यों में तिरंगा यात्रा के दौरान कई बच्चे बीमार पड़ गए और कई छात्राएँ बेहोश भी हो गईं। बच्चों को का इलाज…",
-      "published_at": "Fri, 14 Aug 2026 08:02:46 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

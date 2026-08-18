@@ -1,56 +1,58 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-18T16:55:31.064684+00:00",
-  "input_count": 443,
+  "prepared_at": "2026-08-18T20:47:18.638561+00:00",
+  "input_count": 431,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 127,
-    "established_or_other": 73,
+    "independent_social": 117,
+    "established_or_other": 83,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "5fb97b29f24e2289f6",
-      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
-      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
-      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
-      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 1
+          "States & Local": 8,
+          "Economy & Employment": 5
         },
         "candidate_categories": [
-          "Protests"
+          "Economy & Employment",
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "3f5895b943c31d168c",
-      "title": "SC to examine ‘proportionality’ of the use of facial recognition at NEET protests",
-      "url": "https://www.thehindu.com/news/cities/Delhi/neet-ug-protests-delhi-police-tells-sc-that-facial-recognition-tech-was-used-in-legitimate-state-interest/article71359045.ece",
-      "summary": "Delhi Police say technology was used in “legitimate state interest” to identify “hardened criminals and not ordinary people”; say “false narrative” is being spread against a “legitimate, bona fide and proportionate” policing measure",
-      "published_at": "Tue, 18 Aug 2026 21:54:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/d8atl9/article71359106.ece/alternates/LANDSCAPE_1200/CJP%20PROTEST%20DELHI_24_07_39.jpg",
+      "raw_id": "dc83daa3b27ee75ddd",
+      "title": "BRICS condemns EU carbon tax",
+      "url": "https://www.thehindu.com/sci-tech/energy-and-environment/brics-condemns-eu-carbon-tax/article71361332.ece",
+      "summary": "Calls for a significant increase in international funding to help developing countries adapt to climate change",
+      "published_at": "Wed, 19 Aug 2026 01:54:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-business/qmxj89/article67648908.ece/alternates/LANDSCAPE_1200/MW18-LEAD_GERC5GQTC5134J.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -70,20 +72,57 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4
+          "Economy & Employment": 4,
+          "Environment, Health & Science": 1,
+          "International & Geopolitics": 1
         },
         "candidate_categories": [
-          "Protests"
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "ac9359094481bd9f5f",
-      "title": "Dharna held demanding relocation of dumping yard in Karimnagar",
-      "url": "https://www.thehindu.com/news/national/telangana/trs-workers-protest-demanding-relocation-of-dumping-yard-in-karimnagar/article71361834.ece",
+      "raw_id": "b5e7591d5c48f13e4e",
+      "title": "Employment guarantee has slipped into limbo",
+      "url": "https://www.thehindu.com/opinion/lead/employment-guarantee-has-slipped-into-limbo/article71361563.ece",
+      "summary": "VB-G RAM G was sold as an expansion of MGNREGA, but it has actually driven employment guarantee into the ditch",
+      "published_at": "Wed, 19 Aug 2026 01:32:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sutzic/article71361588.ece/alternates/LANDSCAPE_1200/Mahatma%20Gandhi%20National%20Rural%20Employmen%203.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "30bc5ea106606ac74d",
+      "title": "CITU, AITUC stage separate rallies over workers’ demands",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/citu-aituc-stage-separate-rallies-over-workers-demands/article71361870.ece",
       "summary": "",
-      "published_at": "Tue, 18 Aug 2026 21:47:11 +0530",
-      "image_url": "",
+      "published_at": "Tue, 18 Aug 2026 23:38:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/j01gg2/article71362166.ece/alternates/LANDSCAPE_1200/VSP19_AUTO_RALLY-1.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -103,25 +142,60 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Protests"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "feea0041d0ea5e6c9d",
-      "title": "Villagers protest youth’s death, allege police torture",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/villagers-protest-youths-death-allege-police-torture/article71360799.ece",
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "42111cef7f7f21a9b4",
+      "title": "Apprenticeship degrees promise jobs, but students face low-quality work and weak hiring",
+      "url": "https://www.thehindu.com/education/apprenticeship-degrees-promise-jobs-but-students-face-low-quality-work-and-weak-hiring/article71341184.ece",
       "summary": "",
-      "published_at": "Tue, 18 Aug 2026 21:06:13 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "published_at": "Fri, 14 Aug 2026 15:25:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/vs8ald/article71341288.ece/alternates/LANDSCAPE_1200/iStock-1144474127.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -136,63 +210,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 12
         },
         "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "1a907eb1561f234a70",
-      "title": "Police detain 10 ahead of Hubballi protest over constable exam lapses",
-      "url": "https://www.thehindu.com/news/national/karnataka/police-detain-10-ahead-of-hubballi-protest-over-constable-exam-lapses/article71361316.ece",
-      "summary": "All Karnataka State Students Association condemns police action saying that it suppressed a peaceful protest against recruitment irregularities",
-      "published_at": "Tue, 18 Aug 2026 20:43:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yxbljm/article71361552.ece/alternates/LANDSCAPE_1200/2699_18_8_2026_20_8_8_3_19HUBLIBANDOBAST.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
+          "Economy & Employment",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "71d8d0af4c37fd3761",
-      "title": "Thousands protest 'encounter' killing",
-      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "raw_id": "8f0ac89306cafbf6bb",
+      "title": "How to smartly market films at film festivals? Guneet Monga explains",
+      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
       "summary": "",
-      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "published_at": "2025-07-08T12:40:35+00:00",
       "image_url": "",
-      "suggested_category": "States & Local",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "faye-dsouza-youtube",
+        "name": "Faye D'Souza",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -204,27 +245,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4,
-          "States & Local": 8
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Protests",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "87105118468930909a",
-      "title": "Regret standing with BJP during protest by farmers, says Dushyant Chautala",
-      "url": "https://www.thehindu.com/elections/haryana-assembly/regret-standing-with-bjp-during-protest-by-farmers-says-dushyant-chautala/article68691036.ece",
-      "summary": "JJP leader says it was a mistake that he did not understand farmers’ sentiments but that he does not regret allying with the BJP in 2019",
-      "published_at": "Sat, 28 Sep 2024 05:00:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cp8vh4/article68692172.ece/alternates/LANDSCAPE_1200/5331_27_9_2024_19_46_25_1_IMG_20240927_190506.JPG",
-      "suggested_category": "States & Local",
+      "raw_id": "7d3a76fe4a20aa4ff2",
+      "title": "State to lease 18.16 acres at Ramanthuruth to Cochin Shipyard",
+      "url": "https://www.thehindu.com/news/national/kerala/state-to-lease-1816-acres-at-ramanthuruth-to-cochin-shipyard/article71361813.ece",
+      "summary": "Cochin Shipyard has agreed to invest ₹5,000 crore in the ship block building project, says Chief Minister V.D. Satheesan; project expected to boost the State’s shipbuilding sector and generate additional indirect employment",
+      "published_at": "Tue, 18 Aug 2026 23:19:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/zdfvp5/article71362141.ece/alternates/LANDSCAPE_1200/10018_1_3_2026_15_14_51_5_RAMAN_THURUTHU_15.JPG",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -239,49 +278,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4,
-          "States & Local": 8
+          "Economy & Employment": 1
         },
         "candidate_categories": [
-          "Protests",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "8cc4569821a5103869",
-      "title": "Will protest inside, outside Parliament for J&K’s Statehood: Rahul Gandhi",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/india-bloc-will-hit-road-if-jk-statehood-not-restored-after-polls-rahul-gandhi/article68681774.ece",
-      "summary": "Rahul Gandhi, in an election rally in Jammu, said the 2019 decision to bifurcate Jammu and Kashmir into two Union Territories was \"a grave injustice\"",
-      "published_at": "Fri, 27 Sep 2024 18:59:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/d0m6ov/article68681936.ece/alternates/LANDSCAPE_1200/PTI09_25_2024_000191B.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
@@ -552,56 +552,6 @@
       }
     },
     {
-      "raw_id": "41a8ae61c05284b9f7",
-      "title": "PM CARES spent just Rs 88 lakh of its Rs 8,452 crore in 2024-25, put 93% in FD",
-      "url": "https://www.newslaundry.com/2026/08/18/pm-cares-spent-just-rs-88-lakh-of-its-rs-8452-crore-in-2024-25-put-93-in-fd",
-      "summary": "Rs 20,000 annually to every school-going child orphaned by the COVID-19 pandemic — this was one of the major promises made by the Union government as part of the PM CARES Fund. But in the financial year 2024-2025, only a mere Rs 88 lakh was released for this purpose. The amount, if divided among the 3,383 children the government listed as beneficiaries of the PM CARES for Children Scheme, would come to only Rs Rs 2,596 per child. In fact, this Rs 88 lakh – making up 0.001 percent of the Fund’s corpus – was the only amount the Union government spent during 2024-25. By the end of FY ’25, the Fund had Rs 8,452 crore. Around 93 percent of this is kept in fixed deposits. The numbers were revealed when the PM CARES Fund released its receipts and payments accounts for the last two financial years, 2023-24 and 2024-25, after a long delay. The numbers that don’t add up The PM CARES for Children scheme was launched in May 2021, with Prime Minister Narendra Modi promising support for children who lost parents during the COVID pandemic. It promises assistance for education, health insurance, support for boarding and lodging, and Rs 10 lakh when they turn 18. The PM CARES for Children website s",
-      "published_at": "Tue, 18 Aug 2026 14:21:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 40,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "independent",
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event; includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "PM CARES spent just Rs 88 lakh of its Rs 8452 crore in 2024-25, put 93% in FD",
-          "url": "https://www.thenewsminute.com/news/pm-cares-spent-just-rs-88-lakh-of-its-rs-8452-crore-in-2024-25-put-93-in-fd",
-          "source": {
-            "id": "the-news-minute",
-            "name": "The News Minute",
-            "type": "local",
-            "selection_group": "independent_social",
-            "ownership": "Independent regional digital newsroom"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "0957c6438280f9dd47",
       "title": "Naga peace activist Niketu Iralu passes away",
       "url": "https://eastmojo.com/nagaland/2026/08/18/naga-peace-activist-niketu-iralu-passes-away/",
@@ -701,70 +651,35 @@
       }
     },
     {
-      "raw_id": "e51c3b7a9bdf208c5a",
-      "title": "13-yr-old granddaughter among four minors held for man’s murder in Alappuzha",
-      "url": "https://www.thenewsminute.com/kerala/13-yr-old-granddaughter-among-four-minors-held-for-mans-murder-in-alappuzha",
-      "summary": "A 13-year-old girl allegedly plotted the murder of her 67-year-old grandfather in Karuvatta in Alappuzha district. The girl had earlier told her boyfriend that the man had touched her inappropriately and should be killed, the Alappuzha police said. The murder was also committed with the intention of stealing gold ornaments and cash, police added. Four minors, including the girl and her boyfriend, have been taken into custody in connection with the murder of the man, who was found dead inside his rented house on the night of Saturday, August 15. According to police, the girl roped in three friends from Paravoor in Kollam district to carry out the killing. The three boys are reportedly aged below 18 years. Police took the suspects into custody from Paravoor railway station on August 18. Addressing the media on August 18, Alappuzha SP Vishnu Pratheep said, \"The girl had told her boyfriend that the man had used bad touch on her, and that he should be killed in revenge.\" The man was found dead on Monday, August 17, after the 13-year-old informed neighbours that he was not responding when she called out to him. How the alleged murder plot unravelled VK Nathan, president of the Haripad bl",
-      "published_at": "Tue, 18 Aug 2026 09:52:03 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/f18peoza/Screenshot-2026-08-18-at-3.16.48-PM.png",
+      "raw_id": "ac79ee576e8703cb03",
+      "title": "Why Western Ghats states can’t agree on Eco-Sensitive Areas",
+      "url": "https://india.mongabay.com/2026/08/why-western-ghats-states-cant-agree-on-eco-sensitive-areas/",
+      "summary": "On July 27, the Union Environment Ministry issued the seventh draft notification delineating the Ecologically Sensitive Areas (ESA) falling within the Western Ghats. The ESA restricts activity within the Western Ghats to preserve its biodiversity and geological integrity in the face of rising human activity. But even as experts argue the urgent need to finally […]",
+      "published_at": "10 Aug 2026 19:06:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/10180504/View_of_Western_ghats_from_Rajmachi_point_Khandala_on_the_Mumbai-Pune_expressway-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "States & Local": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -830,6 +745,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
           "States & Local"
         ]
       }
@@ -1098,6 +1048,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "04cea012cb47a26e4e",
+      "title": "Almost 60% of India’s elephants are in Karnataka, Assam, T.N.",
+      "url": "https://www.thehindu.com/news/states/almost-60-of-indias-elephants-are-in-karnataka-assam-tn/article70164209.ece",
+      "summary": "The Wildlife Institute of India released the first-ever DNA-based synchronous estimation of elephants across the country",
+      "published_at": "Wed, 15 Oct 2025 01:40:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ancn3j/article70164201.ece/alternates/LANDSCAPE_1200/IMG_WhatsApp_Image_2025-_2_1_06F05FLE.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
           "States & Local"
         ]
       }

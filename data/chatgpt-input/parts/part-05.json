@@ -1,45 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-17T20:51:10.682420+00:00",
-  "input_count": 432,
+  "prepared_at": "2026-08-18T01:57:24.978483+00:00",
+  "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 118,
-    "established_or_other": 82,
+    "independent_social": 114,
+    "established_or_other": 86,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "dff0bdd57ad6ddbd56",
-      "title": "Hareli Tihar: क्या है हरेली त्योहार, मिट्टी,बारिश, खेत,किसान जानिए इनके खास संबंध और परंपरा के बारे में",
-      "url": "https://khabarlahariya.org/hareli-tihar-what-is-the-hareli-festival-learn-about-the-special-connection-and-traditions-involving-the-soil-rain-fields-and-farmers/",
-      "summary": "हरेली तिहार छत्तीसगढ़ की लोक संस्कृति, खेती-किसानी और प्रकृति से जुड़े गहरे रिश्ते को दिखाता है। छत्तीसगढ़ की पहचान उसकी हरियाली और प्राकृतिक सुंदरता से तो है ही साथ ही…",
-      "published_at": "Tue, 11 Aug 2026 11:52:39 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "495cb6fb259dfe26b0",
       "title": "Bihar News: खराब सड़क के कारण गर्भवती को ट्रैक्टर से ले गए, रास्ते में मौत, खराब सड़क और स्वास्थ्य सुविधा के कारण कई ऐसे खबरें",
@@ -302,53 +273,6 @@
       }
     },
     {
-      "raw_id": "c32d9c1f80cef349c6",
-      "title": "Scholarships: August 15, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-august-15-2026/article71280333.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sat, 15 Aug 2026 12:29:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/4criwe/article71280330.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: August 8, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "54cd7cdcc6ee1c093d",
       "title": "Pumped Storage Project MP: केन बेतवा के बाद पन्ना टाइगर रिजर्व परियोजना, क्यों खतरे में हैं पन्ना के जंगल, बाघ?",
       "url": "https://khabarlahariya.org/pumped-storage-project-in-mp-after-ken-betwa-the-panna-tiger-reserve-project-why-are-pannas-forests-and-tigers-at-risk/",
@@ -463,6 +387,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "c32d9c1f80cef349c6",
+      "title": "Scholarships: August 15, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-august-15-2026/article71280333.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sat, 15 Aug 2026 12:29:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/4criwe/article71280330.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: August 8, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "2395ac11a0b33559fc",
@@ -842,6 +813,310 @@
       }
     },
     {
+      "raw_id": "5908a5574d66589d3b",
+      "title": "Delhi Court orders property attachment of Advocate Mehmood Pracha over unpaid fine",
+      "url": "https://www.thehindu.com/news/national/delhi-court-orders-property-attachment-of-advocate-mehmood-pracha-over-unpaid-fine/article71357159.ece",
+      "summary": "Advocate Mehmood Pracha did not pay a ₹6 lakh fine for seeking to have the Supreme Court’s 2019 Ayodhya verdict declared null and void",
+      "published_at": "Tue, 18 Aug 2026 07:11:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e96g3u/article71358079.ece/alternates/LANDSCAPE_1200/17_UNNAO_RAPE_CASE_HEARING_SUPREME_COURT_29_12_DELHI.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2c1ff97a4ba04d9d8d",
+      "title": "Allahabad High Court criticises U.P. government for taking over ‘Sugriv Kila’ temple land for Ram temple development without paying dues",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/allahabad-high-court-criticises-up-government-for-taking-over-sugriv-kila-temple-land-for-ram-temple-development-without-paying-dues/article71356460.ece",
+      "summary": "The conduct of the respondents-Authorities cannot be termed to be fair, proper or reasonable because of the simple reason that apparently the authorities have fooled the petitioner, said the Allahabad High Court",
+      "published_at": "Tue, 18 Aug 2026 07:07:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3wwfmc/article71358734.ece/alternates/LANDSCAPE_1200/iStock-1571008838.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9bcf6d7ff66751307d",
+      "title": "Vande Mataram incident: Delhi Police enquires into complaint against Sonia, Rahul",
+      "url": "https://www.thehindu.com/news/national/vande-mataram-incident-delhi-police-enquires-into-complaint-against-sonia-rahul/article71355654.ece",
+      "summary": "The complaint filed on August 16 by an advocate sought registration of an FIR against Sonia Gandhi and Rahul Gandhi.",
+      "published_at": "Tue, 18 Aug 2026 07:05:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/swdtx2/article71355681.ece/alternates/LANDSCAPE_1200/20260815466L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b8361a190e764259d3",
+      "title": "The ‘proud Assamese’ from other States",
+      "url": "https://www.thehindu.com/opinion/op-ed/the-proud-assamese-from-other-states/article71357712.ece",
+      "summary": "While others can identify as Assamese speakers, Bengali-origin Muslims were the first",
+      "published_at": "Tue, 18 Aug 2026 05:25:40 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4678zq/article71357854.ece/alternates/LANDSCAPE_1200/PTI08_17_2026_000040B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ae4e17102a1865b2f3",
+      "title": "Jharkhand government cancels JSSC-CGL exam, all exams conducted by tainted firm",
+      "url": "https://www.thehindu.com/news/national/hemant-sorent-announces-jssc-cgl-exam-cancellation-after-emergency-cabinet-meeting/article71357634.ece",
+      "summary": "Students celebrate the decision but say the protest will continue as their demand for a CBI inquiry has still not been accepted; State CID searches JSSC office, makes arrest",
+      "published_at": "Tue, 18 Aug 2026 04:47:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e9x1r5/article71357846.ece/alternates/LANDSCAPE_1200/PTI08_17_2026_000627B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "3a33a4bf7bdedd588f",
+      "title": "Twisha Sharma case: CBI accuses Giribala, Samarth of abetment of suicide",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/twisha-sharma-death-case-samarth-singh-giribala-singh-named-in-cbis-charge-sheet/article71355607.ece",
+      "summary": "In the chargesheet, the CBI has named Samarth, a lawyer, and Giribala, a former district judge, whom the deceased's family has accused of mental abuse, physical violence.",
+      "published_at": "Tue, 18 Aug 2026 03:56:15 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hefpma/article71355637.ece/alternates/LANDSCAPE_1200/PTI05_19_2026_000106B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9c71624246bb3bdba6",
+      "title": "Floods hit 7.85 lakh people in 6 Odisha districts",
+      "url": "https://www.thehindu.com/news/national/odisha/floods-hit-785-lakh-people-in-6-odisha-districts/article71356782.ece",
+      "summary": "Odisha CM Mohan Charan Majhi accompanied by Revenue and Disaster Management Minister Suresh Pujari, visited Jajpur district to make a spot assessment about flood response",
+      "published_at": "Tue, 18 Aug 2026 02:54:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gmyexx/article71357935.ece/alternates/LANDSCAPE_1200/90092_17_8_2026_21_58_56_1_ODISHA_FLOOD_4.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "eff0078b9ef994b9ae",
+      "title": "Left parties renew call to scrap NTA, NEP after UGC-NET paper errors",
+      "url": "https://www.thehindu.com/news/national/left-parties-renew-call-to-scrap-nta-nep-after-ugc-net-paper-errors/article71357931.ece",
+      "summary": "CPI(M), CPI and CPI(ML) say the retest announcement exposes deep flaws in the examination system; demand an overhaul of the education policy and testing mechanism",
+      "published_at": "Tue, 18 Aug 2026 02:42:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hh37b0/article71357933.ece/alternates/LANDSCAPE_1200/two%20frame%209.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "b708d12d7e0321dde2",
+      "title": "Mining to resume in Bihar after October 15, says CM Samrat Choudhary",
+      "url": "https://www.thehindu.com/news/national/bihar/mining-to-resume-in-bihar-after-october-15-says-cm-samrat-choudhary/article71356242.ece",
+      "summary": "The State Chief Minister asserted that mineral royalties would be used for the welfare of the people and the State’s development, ensuring that mineral wealth is not misused at any level",
+      "published_at": "Tue, 18 Aug 2026 02:15:13 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1h8tt5/article71357930.ece/alternates/LANDSCAPE_1200/HP6ez4OaAAEYuZd.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9ce5e9f3c41dc40dfd",
+      "title": "Opium farmers demand more farming licences, ₹1 lakh per kg",
+      "url": "https://www.thehindu.com/news/national/opium-farmers-demand-more-farming-licences-1-lakh-per-kilogram/article71357211.ece",
+      "summary": "Ahead of the announcement of the opium licensing policy for 2026-27, scheduled for September, opium farmers from Madhya Pradesh, Rajasthan and Uttar Pradesh have urged the Union Government to formulate it in a manner that benefits the country and farmers",
+      "published_at": "Tue, 18 Aug 2026 02:05:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/axxn6u/article71009445.ece/alternates/LANDSCAPE_1200/SRNIA_18-5-2016_16-39-14_14-POPPY-SGR-18-05-2016.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "1637fd4454830ccf70",
       "title": "No State can block traditional routes of elephants: Supreme Court",
       "url": "https://www.thehindu.com/news/national/states-cant-create-blockades-in-elephant-corridors-sc/article71356053.ece",
@@ -900,283 +1175,12 @@
       }
     },
     {
-      "raw_id": "69d35f13a62a739663",
-      "title": "Indian sailors’ SOS: ‘Company asking us to risk lives, cross Strait of Hormuz’",
-      "url": "https://www.thehindu.com/news/national/indian-sailors-sos-company-asking-us-to-risk-lives-cross-strait-of-hormuz/article71357907.ece",
-      "summary": "Forward Seamen’s Union of India has said that the shipowners and managers of AM Pioneer are “pressuring the Master to force its 16 Indian crew to transit the high-risk Strait of Hormuz”",
-      "published_at": "Tue, 18 Aug 2026 01:33:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/5lbqgo/article71357913.ece/alternates/LANDSCAPE_1200/Pioneer2.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "99207af40d80eea4c6",
-      "title": "Death of a Trinamool leader and corruption taint in Bengal politics",
-      "url": "https://www.thehindu.com/news/national/west-bengal/death-of-a-trinamool-leader-and-corruption-taint-in-bengal-politics/article71357916.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 01:33:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "186479082e0d8fb16d",
-      "title": "Four-member group allegedly threatens shop owner, fires shot into air in Kasaragod",
-      "url": "https://www.thehindu.com/news/national/kerala/four-member-group-allegedly-threatens-shop-owner-fires-shot-into-air-in-kasaragod/article71357299.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 01:14:05 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "9387478f0544b4e0cc",
-      "title": "Police record UDF leader’s statement in Kozhikode Corporation anthem row",
-      "url": "https://www.thehindu.com/news/national/kerala/police-record-udf-leaders-statement-in-kozhikode-corporation-anthem-row/article71357027.ece",
-      "summary": "The row erupted after two groups of councillors sang Jana Gana Mana and Vande Mataram simultaneously during the Independence Day ceremony.",
-      "published_at": "Tue, 18 Aug 2026 01:07:20 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "80cf5a231d15038701",
-      "title": "SFI holds programme on Kannur University campus despite denial of permission",
-      "url": "https://www.thehindu.com/news/national/kerala/sfi-holds-programme-on-kannur-university-campus-despite-denial-of-permission/article71356913.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 01:05:46 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b3e1608ea4aea7f34b",
-      "title": "Lookout notice for man accused of harassing student on KSRTC bus",
-      "url": "https://www.thehindu.com/news/national/kerala/lookout-notice-for-man-accused-of-harassing-student-on-ksrtc-bus/article71357088.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 01:03:26 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "322e63bf1bb6a98c05",
-      "title": "Seven held with elephant tusk in Malappuram",
-      "url": "https://www.thehindu.com/news/national/kerala/seven-held-with-elephant-tusk-in-malappuram/article71357055.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 01:01:43 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "b13127d7b7f95cf8bf",
-      "title": "Schwan Laboratory inaugurated at GITAM",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/schwan-laboratory-inaugurated-at-gitam/article71356792.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 00:53:51 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ae4e17102a1865b2f3",
-      "title": "Jharkhand government cancels JSSC-CGL exam, all exams conducted by tainted firm",
-      "url": "https://www.thehindu.com/news/national/hemant-sorent-announces-jssc-cgl-exam-cancellation-after-emergency-cabinet-meeting/article71357634.ece",
-      "summary": "Students celebrate the decision but say the protest will continue as their demand for a CBI inquiry has still not been accepted; State CID searches JSSC office, makes arrest",
-      "published_at": "Tue, 18 Aug 2026 00:46:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/e9x1r5/article71357846.ece/alternates/LANDSCAPE_1200/PTI08_17_2026_000627B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "250b76bfcb45b93280",
-      "title": "Long-term vision is to provide certificates within a stipulated timeframe: Sengottaiyan",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/long-term-vision-is-to-provide-certificates-within-a-stipulated-timeframe-sengottaiyan/article71357048.ece",
-      "summary": "Minister says his department will implement a new practice of appointing officials in a three-tier system to speed up the process of providing certificates",
-      "published_at": "Tue, 18 Aug 2026 00:45:58 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3pmlyf/article71357878.ece/alternates/LANDSCAPE_1200/Tamil-Nadu-earmGGSGAJM5P.4.jpg.jpg",
+      "raw_id": "f1d298b17016a70509",
+      "title": "Gujarat police ‘seize’ journalist Ravi Nair’s devices",
+      "url": "https://www.thehindu.com/news/national/gujarat/gujarat-police-seize-devices-belonging-to-journalist-ravi-nair/article71357772.ece",
+      "summary": "The police act on a search warrant issued by a magistrate court",
+      "published_at": "Tue, 18 Aug 2026 01:40:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ljbozs/article71357902.ece/alternates/LANDSCAPE_1200/Copy%20of%20Untitled%20Design%204.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

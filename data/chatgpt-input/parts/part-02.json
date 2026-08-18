@@ -1,31 +1,338 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-18T13:15:35.072462+00:00",
-  "input_count": 486,
+  "prepared_at": "2026-08-18T16:55:31.064684+00:00",
+  "input_count": 443,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 144,
-    "established_or_other": 56,
+    "independent_social": 127,
+    "established_or_other": 73,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "9584dec8640cd9cde5",
-      "title": "Health Tips: अनार खाने के फायदे तो जानते हैं, लेकिन ये नुकसान पड़ सकते हैं भारी",
-      "url": "https://theruralpress.in/lifestyle/pomegranate-health-risks-precautions/",
-      "summary": "Health Tips: अनार को दुनिया भर में एक सुपरफूड माना जाता है, जो एंटीऑक्सीडेंट्स, फाइबर और विटामिन से भरपूर होता है। लेकिन क्या आप जानते हैं कि स्वास्थ्य के प्रति जागरूक रहने के बावजूद, कुछ खास स्थितियों में अनार का सेवन आपके लिए हानिकारक हो सकता है? सामान्य तौर पर फायदेमंद दिखने वाला यह फल […]",
-      "published_at": "Tue, 18 Aug 2026 11:15:11 +0000",
+      "raw_id": "5fb97b29f24e2289f6",
+      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
+      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
+      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
+      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "3f5895b943c31d168c",
+      "title": "SC to examine ‘proportionality’ of the use of facial recognition at NEET protests",
+      "url": "https://www.thehindu.com/news/cities/Delhi/neet-ug-protests-delhi-police-tells-sc-that-facial-recognition-tech-was-used-in-legitimate-state-interest/article71359045.ece",
+      "summary": "Delhi Police say technology was used in “legitimate state interest” to identify “hardened criminals and not ordinary people”; say “false narrative” is being spread against a “legitimate, bona fide and proportionate” policing measure",
+      "published_at": "Tue, 18 Aug 2026 21:54:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/d8atl9/article71359106.ece/alternates/LANDSCAPE_1200/CJP%20PROTEST%20DELHI_24_07_39.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "ac9359094481bd9f5f",
+      "title": "Dharna held demanding relocation of dumping yard in Karimnagar",
+      "url": "https://www.thehindu.com/news/national/telangana/trs-workers-protest-demanding-relocation-of-dumping-yard-in-karimnagar/article71361834.ece",
+      "summary": "",
+      "published_at": "Tue, 18 Aug 2026 21:47:11 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "feea0041d0ea5e6c9d",
+      "title": "Villagers protest youth’s death, allege police torture",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/villagers-protest-youths-death-allege-police-torture/article71360799.ece",
+      "summary": "",
+      "published_at": "Tue, 18 Aug 2026 21:06:13 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "1a907eb1561f234a70",
+      "title": "Police detain 10 ahead of Hubballi protest over constable exam lapses",
+      "url": "https://www.thehindu.com/news/national/karnataka/police-detain-10-ahead-of-hubballi-protest-over-constable-exam-lapses/article71361316.ece",
+      "summary": "All Karnataka State Students Association condemns police action saying that it suppressed a peaceful protest against recruitment irregularities",
+      "published_at": "Tue, 18 Aug 2026 20:43:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yxbljm/article71361552.ece/alternates/LANDSCAPE_1200/2699_18_8_2026_20_8_8_3_19HUBLIBANDOBAST.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "87105118468930909a",
+      "title": "Regret standing with BJP during protest by farmers, says Dushyant Chautala",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/regret-standing-with-bjp-during-protest-by-farmers-says-dushyant-chautala/article68691036.ece",
+      "summary": "JJP leader says it was a mistake that he did not understand farmers’ sentiments but that he does not regret allying with the BJP in 2019",
+      "published_at": "Sat, 28 Sep 2024 05:00:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cp8vh4/article68692172.ece/alternates/LANDSCAPE_1200/5331_27_9_2024_19_46_25_1_IMG_20240927_190506.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "8cc4569821a5103869",
+      "title": "Will protest inside, outside Parliament for J&K’s Statehood: Rahul Gandhi",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/india-bloc-will-hit-road-if-jk-statehood-not-restored-after-polls-rahul-gandhi/article68681774.ece",
+      "summary": "Rahul Gandhi, in an election rally in Jammu, said the 2019 decision to bifurcate Jammu and Kashmir into two Union Territories was \"a grave injustice\"",
+      "published_at": "Fri, 27 Sep 2024 18:59:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/d0m6ov/article68681936.ece/alternates/LANDSCAPE_1200/PTI09_25_2024_000191B.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3d72da0c671bf96a48",
+      "title": "Nine anchor species could meet India’s biodiversity and climate targets",
+      "url": "https://india.mongabay.com/2026/08/nine-anchor-species-could-meet-indias-biodiversity-and-climate-targets/",
+      "summary": "India’s conservation priorities often revolve around charismatic species such as the tiger. But what if the same conservation model is expanded to other species? That’s what researchers explored through a new research published in Conservation Letters. The paper suggests nine “anchor species” whose habitat conservation could simultaneously benefit biodiversity and climate mitigation. Sambar deer (Rusa unicolor), […]",
+      "published_at": "13 Aug 2026 16:33:56 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/17122525/sloth-bear-daroji-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 10
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "eb7ed39b7af0f42ab1",
+      "title": "Long before modern conservation, India was studying elephants",
+      "url": "https://eastmojo.com/news/2026/08/18/long-before-modern-conservation-india-was-studying-elephants/",
+      "summary": "Representational Image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2023/07/Elephants.png?fit=780%2C439&ssl=1\" /> Guwahati: India had developed a detailed body of knowledge on elephants centuries before the emergence of modern wildlife science, with ancient texts documenting their behaviour, health, training and welfare, according to a new commentary published in the Journal of Wildlife Science. The paper, “Gaja-sastra: India’s forgotten Elephant Science”, by Ramesh Kumar Pandey of the Ministry […] The post Long before modern conservation, India was studying elephants appeared first on EastMojo .",
+      "published_at": "Tue, 18 Aug 2026 06:08:11 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -37,7 +344,42 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 7
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "cad635d897aa35354c",
+      "title": "The fraught politics and ethics of climate rankings [Commentary]",
+      "url": "https://india.mongabay.com/2026/08/the-fraught-politics-and-ethics-of-climate-rankings-commentary/",
+      "summary": "​The 2022 version of the Environmental Performance Index (EPI), one of the world’s best-known environmental indices, produced biennially by Yale and Columbia Universities, sparked an acerbic debate in India when it assessed the country as one of the worst performers among 180 countries. Environment and policy experts Navroz K. Dubash and Sharachchandra Lele, in an […]",
+      "published_at": "14 Aug 2026 13:59:52 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/14114613/AP26180521878742-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 6
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -74,41 +416,6 @@
         },
         "candidate_categories": [
           "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "e480c47bda7da12723",
-      "title": "Supreme Court says States cannot obstruct elephant corridors citing crop damage; orders nationwide survey",
-      "url": "https://www.barandbench.com/news/supreme-court-says-states-cannot-obstruct-elephant-corridors-citing-crop-damage-orders-nationwide-survey",
-      "summary": "The Supreme Court on Monday ordered the Union government to conduct a nationwide survey of elephant corridors and submit a report on measures needed to prevent obstacles in wildlife movement [Prerna Singh Bindra and Ors. vs Union of India and Ors] A Bench of Chief Justice of India (CJI) Surya Kant , Justice Joymalya Bagchi and Justice V Mohana said that obstacles cannot be created in elephant corridors merely because of damage to crops. The Court was hearing a matter concerning obstruction of elephant corridors across several States. \"We are very clear that there cannot be obstacles in the way of wildlife. Elephant herds have a practice of travelling long distances. No State can say that just because crops are getting destroyed, there have to be obstacles in their path,\" CJI Kant remarked. The Court noted that while mandatory guidelines already exist to ensure unobstructed elephant corridors through various States, local factors have led to the animal movement being impeded, blocked or obstructed. It, thus, directed the Ministry of Environment, Forest and Climate Change to conduct a fresh survey of elephant corridors nationwide and submit a comprehensive status report \"We direct th",
-      "published_at": "Mon, 17 Aug 2026 16:53:11 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-03/62caf69c-ddab-4acc-8bb7-946007b895af/BOMBAY__WEB_PAGE_1600x900_2.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
         ]
       }
     },
@@ -245,20 +552,70 @@
       }
     },
     {
-      "raw_id": "dc629dc51aa8fd15ff",
-      "title": "CG News: अस्पतालों में दवा और स्वच्छता पर सख्त निर्देश, लापरवाही पर खैर नहीं",
-      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-health-minister-shyam-bihari-jaiswal-reviews-health-department-facilities/",
-      "summary": "Health Department Services: छत्तीसगढ़ के स्वास्थ्य मंत्री श्याम बिहारी जायसवाल ने नवा रायपुर स्थित महानदी भवन (मंत्रालय) में स्वास्थ्य विभाग के वरिष्ठ अधिकारियों की उच्चस्तरीय समीक्षा बैठक ली। बैठक में प्रदेश भर के सरकारी अस्पतालों में स्वास्थ्य सुविधाओं को दुरुस्त करने, दूरस्थ इलाकों में दवाइयों की निर्बाध आपूर्ति और स्वच्छता मानकों को बेहतर बनाने के […]",
-      "published_at": "Tue, 18 Aug 2026 11:21:33 +0000",
+      "raw_id": "41a8ae61c05284b9f7",
+      "title": "PM CARES spent just Rs 88 lakh of its Rs 8,452 crore in 2024-25, put 93% in FD",
+      "url": "https://www.newslaundry.com/2026/08/18/pm-cares-spent-just-rs-88-lakh-of-its-rs-8452-crore-in-2024-25-put-93-in-fd",
+      "summary": "Rs 20,000 annually to every school-going child orphaned by the COVID-19 pandemic — this was one of the major promises made by the Union government as part of the PM CARES Fund. But in the financial year 2024-2025, only a mere Rs 88 lakh was released for this purpose. The amount, if divided among the 3,383 children the government listed as beneficiaries of the PM CARES for Children Scheme, would come to only Rs Rs 2,596 per child. In fact, this Rs 88 lakh – making up 0.001 percent of the Fund’s corpus – was the only amount the Union government spent during 2024-25. By the end of FY ’25, the Fund had Rs 8,452 crore. Around 93 percent of this is kept in fixed deposits. The numbers were revealed when the PM CARES Fund released its receipts and payments accounts for the last two financial years, 2023-24 and 2024-25, after a long delay. The numbers that don’t add up The PM CARES for Children scheme was launched in May 2021, with Prime Minister Narendra Modi promising support for children who lost parents during the COVID pandemic. It promises assistance for education, health insurance, support for boarding and lodging, and Rs 10 lakh when they turn 18. The PM CARES for Children website s",
+      "published_at": "Tue, 18 Aug 2026 14:21:53 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 40,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "independent",
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event; includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "PM CARES spent just Rs 88 lakh of its Rs 8452 crore in 2024-25, put 93% in FD",
+          "url": "https://www.thenewsminute.com/news/pm-cares-spent-just-rs-88-lakh-of-its-rs-8452-crore-in-2024-25-put-93-in-fd",
+          "source": {
+            "id": "the-news-minute",
+            "name": "The News Minute",
+            "type": "local",
+            "selection_group": "independent_social",
+            "ownership": "Independent regional digital newsroom"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "0957c6438280f9dd47",
+      "title": "Naga peace activist Niketu Iralu passes away",
+      "url": "https://eastmojo.com/nagaland/2026/08/18/naga-peace-activist-niketu-iralu-passes-away/",
+      "summary": "Kohima: Prominent peace activist Niketu Iralu died in New Delhi on Tuesday. As per reports, the nonagenarian had been undergoing treatment at BLK Hospital in New Delhi. For decades, Iralu worked to encourage dialogue between communities and political groups and remained closely associated with efforts to address divisions within Naga society. He played a key […] The post Naga peace activist Niketu Iralu passes away appeared first on EastMojo .",
+      "published_at": "Tue, 18 Aug 2026 13:32:58 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -278,20 +635,20 @@
       }
     },
     {
-      "raw_id": "990dcd13f3b73583f1",
-      "title": "Can BCI run a law college? Prashant Bhushan says he will file plea in Supreme Court",
-      "url": "https://www.barandbench.com/news/can-bci-run-a-law-college-prashant-bhushan-says-he-will-file-plea-in-supreme-court",
-      "summary": "Advocate Prashant Bhushan told the Supreme Court on Monday that he was in the process of filing a petition against the Bar Council of India (BCI) running a law college. While he did not give any specific details, Bhushan might have been referring to the India International University of Legal Education and Research (IIULER) at Goa, which is an initiative of BCI. \"Bar Council cannot run a law college. In fact, we are filing a petition regarding that - that the Bar Council cannot run a law college. That they are regulating these law colleges and they are running a law college,\" Bhushan told the Court. He made the comment while arguing a different case challenging the provisions of the Sustainable Harnessing and Advancement of Nuclear Energy for Transforming India Act, 2025 (SHANTI Act) concerning liability arising from nuclear accidents. The IIULER is an initiative of the BCI Trust-Pearl First. It was established in 2022 and offers undergraduate, postgraduate and research courses. Recently, the BCI had announced that it is proposing to set up a National Legal Academy (NLA) at IIULER to provide compulsory training for all lawyers. In this regard, BCI Chairman Manan Kumar Mishra said o",
-      "published_at": "Mon, 17 Aug 2026 13:21:23 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/f284cd05-7a57-4bb5-a07f-878474f7e442/12.jpg",
+      "raw_id": "2ed2cfd7ed02768d41",
+      "title": "Ladakh glaciers losing speed as ice melts, new study warns",
+      "url": "https://india.mongabay.com/2026/08/ladakh-glaciers-losing-speed-as-ice-melts-new-study-warns/",
+      "summary": "The phrase “moving at glacial pace” is inspired by the slow, inching motion of glaciers as they flow downwards. But new research suggests glaciers in the Zanskar Himalayas in Ladakh are moving even slower than before, with implications for water availability in the region over the long term. Centuries-old glaciers blanketing mountaintops may appear to […]",
+      "published_at": "18 Aug 2026 14:57:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/18131448/IMG_4388-768x512.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -303,34 +660,28 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 3,
-          "Environment, Health & Science": 1,
-          "International & Geopolitics": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics",
-          "Society, Rights & Justice"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "3816dce16dd015d64b",
-      "title": "Decide fate of Sainik Farm: Delhi HC orders meeting between Centre, Delhi government, DDA, MCD",
-      "url": "https://www.barandbench.com/news/decide-fate-of-sainik-farm-delhi-hc-orders-meeting-between-centre-delhi-government-dda-mcd",
-      "summary": "The Delhi High Court on Tuesday asked the officials of the Union Ministry of Housing and Urban Affairs (MoHUA), Delhi government, Delhi Development Authority (DDA) and Municipal Corporation of Delhi (MCD) to convene a meeting and address the issues related to Sainik Farm. Sainik Farm is an affluent but legally unauthorised and unregularised colony in South Delhi. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia today noted that the petitions related to construction and legality of the colony have been pending before the Court for over a decade and, therefore, ordered the government authorities to conduct the exercise in two months. It said that the outcome of the meeting must be brought to Court before the next date of hearing in the case in November. The Court said that after the meeting, the government must come forward with \"some scheme, policy decision or decision in principle\". The Bench underscored that it is high time that the authorities decide the issue of Sainik Farms. “You have to take some decision. You cannot keep them in lurch. Something needs to be done. It’s your government which has been bringing legislation after legislation for r",
-      "published_at": "Tue, 18 Aug 2026 17:40:25 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-04/0e1c6428-fab0-447f-8b00-362a78dbc2e5/15.jpg",
+      "raw_id": "8e4848694073d16baa",
+      "title": "Himalayan pheasants face mounting human pressure",
+      "url": "https://india.mongabay.com/2026/08/himalayan-pheasants-face-mounting-human-pressure/",
+      "summary": "The white-crested kalij pheasant, a relatively adaptable bird, is under increasing pressure from habitat degradation, hunting and other human activities in the forests of the northwestern Himalayas, according to a study that looked at community perceptions of threats to the bird. The bird is listed as least concern by the IUCN Red List, indicating it […]",
+      "published_at": "11 Aug 2026 16:15:25 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/11140304/Western-Tragopan-4-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -342,397 +693,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "71e4773ce60db8cb7c",
-      "title": "Gujarat HC Advocates Association condemns manner in which advocates were booked in rape FIR",
-      "url": "https://www.barandbench.com/news/gujarat-hc-advocates-association-condemns-manner-in-which-advocates-were-booked-in-rape-fir",
-      "summary": "The Gujarat High Court Advocates Association (GHCAA) has passed a resolution condemning the manner in which a first information report (FIR) was registered against an advocate, his wife (also an advocate) and their junior in a case involving allegations of gang-rape and caste-based abuse. The resolution, adopted unanimously on August 13, states, \"The Gujarat High Court Advocates Association expresses its serious concern and strongly condemns the manner in which criminal proceedings/F.I.R. have been initiated against Advocate Shri Hitesh Lalithai Gupta, Advocate Smt. Shubhra Hiteshbhai Gupta and one Junior Advocate.\" The Association's resolution further underscored that any action against a member of the legal profession must be undertaken strictly in accordance with law, with fairness, due process and complete regard to the dignity and independence of the legal profession. It also placed on record its solidarity with the three advocates. \"The Association shall stand by its members wherever any action appears to have the effect of undermining the independence, dignity or professional rights of the Bar,\" the resolution said. It added that the members of the association have authorise",
-      "published_at": "Tue, 18 Aug 2026 15:00:59 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/bcfe3969-464a-4d64-b812-2955609ee0d2/31.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "a4b5912172ae6baaca",
-      "title": "Karnataka HC to rehear ED in Sammaan Capital money laundering case in view of pending Supreme Court matter",
-      "url": "https://www.barandbench.com/news/litigation/karnataka-hc-to-rehear-ed-in-sammaan-capital-money-laundering-case-in-view-of-pending-supreme-court-matter",
-      "summary": "The Karnataka High Court said on Monday that it was not made aware of Supreme Court orders in a matter related to Sammaan Capital (formerly Indiabulls Housing Finance Limited) while it quashed Directorate of Enforcement (ED) proceedings against the non-banking finance company last week. Addressing Advocate Anuparna Bordoloi, appearing for the ED, Justice M Nagaprasanna said, \"You did not bring it to my notice in the Indiabulls matter Supreme Court has issued certain directions. Delhi High Court's judgment is sent back permitting review to be filed. All that why you did not tell?\" Justice M Nagaprasanna Karnataka High Court says it will quash ED proceedings against Sammaan Capital Counsel for ED said that instructions were not given to her. The Court then asked Additional Solicitor General of India Aravind Kamath to make arguments for the ED on Tuesday, when it re-hears the matter. ASG Arvind Kamath The Court had quashed ED proceedings against Sammaan Capital on the ground that the 5 predicate offences - on which basis the Enforcement Case Information Report (ECIR) was filed - had been dropped. It had relied on the counsel's submission that the ED was not taking precipitative action",
-      "published_at": "Mon, 17 Aug 2026 19:32:04 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-13/p49clj80/K-dealstreet-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "c67d5c4ef738cc49d3",
-      "title": "Supreme Court orders Allahabad HC to defer case over Rahul Gandhi's assets; directs CBI to halt report",
-      "url": "https://www.barandbench.com/news/litigation/supreme-court-orders-allahabad-hc-to-defer-case-over-rahul-gandhis-assets-directs-cbi-to-halt-report",
-      "summary": "The Supreme Court on Monday ordered the Allahabad High Court to defer proceedings before it in a petition filed by a BJP worker alleging that Leader of Opposition Rahul Gandhi possesses assets disproportionate to his known sources of income. A Bench of Chief Justice of India (CJI) Surya Kant , Justice Joymalya Bagchi and Justice V Mohana also ordered the Central Bureau of Investigation (CBI) or any other authority not to submit any report to the High Court in the meantime. During the hearing, the Court asked why the High Court passed orders in the case without giving Gandhi an opportunity of hearing. \"Suppose somebody commits murders, etc. police does not need permission. But what appears to us is, subject to the assistance provided to us from both sides, if the Court wants to issue a direction, the courts are expected to follow the principle of natural justice,\" the CJI remarked. The Bench also said that if any agency has knowledge of any disproportionate assets belonging to any individual, it can proceed on its own and the same does not require court orders. In this particular case, the agencies have not taken any action on their own, the Court noted. \"If it is so serious, why ha",
-      "published_at": "Mon, 17 Aug 2026 12:26:48 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-07/2716a09d-18a3-4434-be88-e73b17df7e79/SUPREME_COURT_OF_INDIA__WEB_PAGE_1600x900___Copy_copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "348babd19a42ffe5ac",
-      "title": "KPSC recruitment row: ED searches 21 premises over veterinary officer selection",
-      "url": "https://www.thenewsminute.com/karnataka/kpsc-recruitment-row-ed-searches-21-premises-over-veterinary-officer-selection",
-      "summary": "Enforcement Directorate (ED) officials on Tuesday, August 18, raided the Karnataka Public Service Commission (KPSC) office and premises linked to those accused of irregularities in the recruitment of Veterinary Officers. According to reports, the searches were conducted at 21 premises across Karnataka and Ahmedabad in Gujarat. The locations include the KPSC office in Bengaluru, the residence of suspended KPSC Chairperson Shivashankarappa S Sahukar, KPSC member Shanta Hosmani, alleged middlemen, selected candidates and the premises of Edutest Solutions Private Limited, the agency responsible for the digital evaluation of examination papers. The searches are being conducted in Bengaluru, Hassan, Chitradurga, Davanagere, Raichur, Karwar, Kalaburagi and Belagavi in Karnataka, besides Ahmedabad. This comes after four FIRs registered at the Vidhana Soudha Police Station in Bengaluru over alleged irregularities in the final selection process for Veterinary Officers. The investigation into the cases was subsequently handed over to the Karnataka CID. According to the complaints, alleged middlemen approached candidates, including the complainant, and demanded between Rs 70 lakh and Rs 80 lak",
-      "published_at": "Tue, 18 Aug 2026 09:19:53 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/yz50i4e5/WhatsApp-Image-2026-07-13-at-17.51.35.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "57ef629106b0cc8426",
-      "title": "Will appoint special public prosecutor to conduct trial against Sriram Venkitaraman IAS: State to Kerala HC",
-      "url": "https://www.barandbench.com/news/will-appoint-special-public-prosecutor-to-conduct-trial-against-sriram-venkitaraman-ias-state-to-kerala-hc",
-      "summary": "A Special Public Prosecutor (SPP) will be appointed to represent the State during the trial in the 2019 rash driving case against IAS officer Sriram Venkitaraman, the State government told the Kerala High Court on Tuesday [ Jaseela C v Sriram Venkitaraman & ors ]. The case involves allegations that Venkitaraman recklessly drove his car while under the influence of alcohol and rammed it into a motorcycle driver by journalist KM Basheer, resulting in Basheer’s death. C Jaseela, Basheer's widow, had recently challenged the transfer of the case from one trial court to another on grounds that Venkitaraman's counsel was unable to climb stairs to access the earlier courtroom. She had also sought the appointment of a Special Public Prosecutor (SPP), to ensure that the trial will be conducted properly. Her counsel eventually clarified that she is only pressing for the appointment of an SPP and no longer challenging the transfer of trial. The State today told the Court that it has decided to appoint Advocate A Santosh Kumar as the Special Public Prosecutor in the case. Since the SPP's appointment is yet to be notified, Justice CS Dias ordered that that trial be deferred for a month's time. T",
-      "published_at": "Tue, 18 Aug 2026 17:22:53 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-04/3ce41498-1891-4cba-a960-c66418c364f6/2.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "caf6e4a45fd6fc1c5a",
-      "title": "Bombay High Court grants bail to another convict in Narendra Dabholkar murder case",
-      "url": "https://www.barandbench.com/news/bombay-high-court-grants-bail-to-another-convict-in-narendra-dabholkar-murder-case",
-      "summary": "The Bombay High Court on Tuesday granted bail to Sachin Prakashrao Andure, convicted for the 2013 murder of rationalist Dr Narendra Dabholkar. A Bench of Justices SV Kotwal and RR Bhonsale invoked the principle of parity with co-convict Sharad Bhausaheb Kalaskar. It also suspended Andure's life sentence pending the final disposal of his appeal against conviction. Senior Advocate Niteen Pradhan , appearing for Andure, submitted that the prosecution’s case rested on an uncorroborated extra-judicial confession. He pointed out that no formal Test Identification Parade (TIP) was conducted to confirm his identity and that the murder weapon was never recovered in connection with the crime. Andure was released on grounds similar to his co-convict Kalaskar. In an order passed on April 29 this year, Kalaskar was granted bail by a co-ordinate bench of the High Court. The Bench noted that the Central Bureau of Investigation (CBI) failed to conduct a TIP. This rendered the identification of the accused through photos shown while in custody to be legally compromised. The Court had also noted that Kalaskar had served over seven-and-a-half years in custody with little prospect of the appeal being ",
-      "published_at": "Tue, 18 Aug 2026 15:45:01 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-04/b20afc21-769a-4731-8a3f-454c054bbe95/05.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "f4596ab41e6e6a3fb5",
-      "title": "Karnataka HC to quash ED proceedings against Sammaan Capital after clearing its own doubts",
-      "url": "https://www.barandbench.com/news/litigation/karnataka-hc-to-quash-ed-proceedings-against-sammaan-capital-after-clearing-its-own-doubts",
-      "summary": "The Karnataka High Court on Tuesday quashed proceedings initiated by the Directorate of Enforcement (ED) against Sammaan Capital (formerly Indiabulls Housing Finance Limited or IHFL) in a money laundering case after rehearing the matter [Sammaan Capital v Directorate of Enforcement] . The Court said that it would quash the proceedings earlier last week. However, on August 17, the Court said that it would rehear the case since it was not informed of the proceedings pending before the Supreme Court against IHFL. Justice M Nagaprasanna noted an affidavit submitted by the ED in today's order that the proceedings pending before the Supreme Court were not connected to the Enforcement Case Information Report (ECIR) in the current proceedings before the Karnataka High Court. \" The learned senior counsel for the petitioners Prabhuling Navadgi and Dhyan Chinnappa in unison would submit that there is the matter that is pending before the Apex Court or directions issued by the Apex Court in those matters has nothing to do with the present matters. They would take this Court through the affidavit filed by the ED in the case at hand with particular reference to para 8-12,\" the judge noted. Justi",
-      "published_at": "Tue, 18 Aug 2026 15:42:54 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-18/509hhxfd/K-dealstreet-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "34117fd91a4c47ade0",
-      "title": "2025 Red Fort terror attack: Delhi High Court denies bail to accused Jasir Bilal Wani",
-      "url": "https://www.barandbench.com/news/2025-red-fort-terror-attack-delhi-high-court-denies-bail-to-accused-jasir-bilal-wani",
-      "summary": "The Delhi High Court on Tuesday denied default bail to Red Fort terror case accused Jasir Bilal Wani alias Danish. A Division Bench of Justices Prathiba M Singh and Vikas Mahajan rejected the appeal filed by Wani against the trial court order. The detailed order is awaited. Default bail is a right to be released from custody when the police or investigating agency fail to finish their investigation and file a chargesheet within a set legal time limit. Justice Prathiba M Singh and Justice Vikas Mahajan Wani is a 20-year-old resident of Jammu and Kashmir's Anantnag. He has been accused by the National Investigation Agency (NIA) of being an active co-conspirator in the November 10, 2025, Red Fort area car bomb blast. He allegedly worked closely with Dr. Umer-un-Nabi, who drove the explosive-laden car used in the attack. The agency has alleged that Wani provided technical assistance to the terror module, including modifying drones and attempting to develop rockets. According to reports , NIA's May 2026 chargesheet describes Wani as the module's “in-house engineer” and alleges that he provided technical support to its members. Investigators have also alleged that he stayed at Al Falah U",
-      "published_at": "Tue, 18 Aug 2026 14:58:38 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-12-03/s6z2auqn/DELHI-WEB-PAGE-1600x900-sdcopy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "512ac9a358bf950269",
-      "title": "Nashik Court grants bail to AIMIM corporator Mateen Majeed Shaik in TCS case",
-      "url": "https://www.barandbench.com/news/nashik-court-grants-bail-to-aimim-corporator-mateen-majeed-shaik-in-tcs-case",
-      "summary": "A sessions court in Nashik on Monday granted bail to All India Majlis-e-Ittehadul Muslimeen (AIMIM) corporator Mateen Majeed Shaikh alias Mateen Patel accused in the TCS Nashik sexual harassment case. Additional sessions judge Kedar Rajaram Joglekar granted him bail after observing that the investigating agency had not deemed it necessary to arrest Shaikh during the probe. Shaikh was implicated for allegedly sheltering co-accused Nida Khan, who was evading arrest in the matter. The Court noted that giving shelter to an accused was the only offence invoked against Shaikh. \"As regards the case of the present applicant is concerned, his case is different than other accused and he was charged only for the offence punishable under Section 249 of Bhartiya Nyay Sanhita i.e. to give shelter to the accused involved in an offence of non-bailable nature,” the order said. The Nashik Police registered an FIR against eight employees of TCS’s Nashik office under the Bharatiya Nyaya Sanhita for offences including sexual harassment and hurting religious sentiments, along with provisions of the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act. The FIR charged the accused for cons",
-      "published_at": "Mon, 17 Aug 2026 19:55:02 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-04-27/ymcdvd2m/1000528366.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "882e593da4046757d1",
-      "title": "Police can't arbitrarily restrict right to carry Indian Flag at peaceful rallies: Madras High Court",
-      "url": "https://www.barandbench.com/news/litigation/police-cant-arbitrarily-restrict-right-to-carry-indian-flag-at-peaceful-rallies-madras-high-court",
-      "summary": "Citizens have a fundamental right to carry the national flag during peaceful rallies and the police cannot arbitrarily restrict the exercise of this right, the Madras High Court held recently [J Ramesh Kumar v. State of Tamil Nadu and others]. In the order passed on August 14, Justice V Lakshminarayanan said that displaying the tricolour is protected as freedom of expression under Article 19(1)(a) of the Constitution. “Reading Article 19(1)(a) along with Article 19(1)(b), a citizen has a fundamental right not only to hoist the National Flag, but also to carry it during peaceful processions or rallies, whatever may be the purpose or intent of the rally, as an expression of national sentiment, as claimed by the petitioner in this case or in other cases, perhaps to express dissent, ” the Court said. Clarifying that the police cannot arbitrarily restrict this right, the Court added, “It is hoped that in future, the police will ensure that the citizens are not driven to approach the Constitutional Courts in order to secure an order to pay homage to the Nation and its Flag.\" Justice V Lakshminarayanan The Court was hearing a petition filed by J Ramesh Kumar, the Coimbatore District Presi",
-      "published_at": "Mon, 17 Aug 2026 18:44:32 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-08/153625b4-42ff-4796-82dc-e0154afd1db0/18.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9339fc25da939f362a",
-      "title": "Allahabad High Court rejects lawyer's plea for ₹4.8 crore pending fee from State",
-      "url": "https://www.barandbench.com/news/allahabad-high-court-rejects-lawyers-plea-for-48-crore-pending-fee-from-state",
-      "summary": "The Allahabad High Court recently rejected four petitions filed by an advocate who claimed that the Uttar Pradesh government owes him ₹4.8 crore as professional fee for representing it as a special counsel in various appeals. A Division Bench of Justice Shekhar B Saraf and Justice Abdhesh Kumar Chaudhary at the outset deprecated the conduct of the State government for compelling the counsel to approach the Court. It observed that the payment of professional fees ought to be a very privileged and private affair between an advocate and a client. It added that such dispute should not be brought before the Court and must be resolved by mediation/conciliation. In the judgment delivered on August 14, the Court also emphasised that counsel should show restraint in dragging a client to a court for payment of fees. \"In either of these cases, a party may win, but it is the trust and faith which always loses, which may not be the best of things in dispensation of justice. A litigation between a counsel and his client would tantamount to defeating the very bedrock of trust and faith, which is the basic foundation for an advocate and client relationship,\" the Bench said. Justices Shekhar B Sara",
-      "published_at": "Mon, 17 Aug 2026 18:52:18 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-05/7b9b12da-ff26-4df4-8968-30b5f6f9cb09/18.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -740,7 +704,7 @@
       "raw_id": "e51c3b7a9bdf208c5a",
       "title": "13-yr-old granddaughter among four minors held for man’s murder in Alappuzha",
       "url": "https://www.thenewsminute.com/kerala/13-yr-old-granddaughter-among-four-minors-held-for-mans-murder-in-alappuzha",
-      "summary": "A 13-year-old girl allegedly plotted the murder of her 67-year-old grandfather in Karuvatta in Alappuzha district, with the intention of stealing gold ornaments and cash, police said. Four minors, including the girl, have been taken into custody in connection with the murder of Sivankutty Chettiar, who was found dead inside his rented house on the night of Saturday, August 15. According to police, the girl roped in three friends from Paravoor in Kollam district to carry out the killing. The three boys are reportedly aged below 18 years. Police took the suspects into custody from Paravoor railway station on August 18. Sivankutty was found dead on Monday, August 17, after the 13-year-old informed neighbours that he was not responding when she called out to him. How the alleged murder plot unravelled VK Nathan, president of the Haripad block panchayat, said the initial suspicion was that Sivakutty had been killed during a robbery. Around six to eight sovereigns of gold are suspected to be missing from the house. Household articles had been scattered and cupboards were found broken open, initially strengthening the suspicion of a robbery. “The girl told the neighbours that Sivankutty h",
+      "summary": "A 13-year-old girl allegedly plotted the murder of her 67-year-old grandfather in Karuvatta in Alappuzha district. The girl had earlier told her boyfriend that the man had touched her inappropriately and should be killed, the Alappuzha police said. The murder was also committed with the intention of stealing gold ornaments and cash, police added. Four minors, including the girl and her boyfriend, have been taken into custody in connection with the murder of the man, who was found dead inside his rented house on the night of Saturday, August 15. According to police, the girl roped in three friends from Paravoor in Kollam district to carry out the killing. The three boys are reportedly aged below 18 years. Police took the suspects into custody from Paravoor railway station on August 18. Addressing the media on August 18, Alappuzha SP Vishnu Pratheep said, \"The girl had told her boyfriend that the man had used bad touch on her, and that he should be killed in revenge.\" The man was found dead on Monday, August 17, after the 13-year-old informed neighbours that he was not responding when she called out to him. How the alleged murder plot unravelled VK Nathan, president of the Haripad bl",
       "published_at": "Tue, 18 Aug 2026 09:52:03 +0000",
       "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/f18peoza/Screenshot-2026-08-18-at-3.16.48-PM.png",
       "suggested_category": "",
@@ -762,11 +726,9 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
           "States & Local": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -873,41 +835,6 @@
       }
     },
     {
-      "raw_id": "71d8d0af4c37fd3761",
-      "title": "Thousands protest 'encounter' killing",
-      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
-      "summary": "",
-      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Protests",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "ce5e84ffc7c68f6982",
       "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
       "url": "https://www.thehindu.com/videos/watch-maratha-reservation-stir-what-are-its-implications-of-the-obc-backlash/article67576436.ece",
@@ -1007,43 +934,6 @@
       }
     },
     {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "cf4c55e5970c63b712",
       "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
       "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
@@ -1077,12 +967,12 @@
       }
     },
     {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "raw_id": "64f571bffddd16e123",
+      "title": "Chennai RWA shines in TN’s solar race",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennairwashines-in-tnssolar-race/article70633195.ece",
+      "summary": "Bollineni Hillside, a 1295-unit gated community in Perumbakkam off Old Mahabalipuram Road, has bagged an award for the biggest solar rooftop installation in Tamil Nadu in the category for resident welfare associations",
+      "published_at": "Sun, 15 Feb 2026 16:28:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xyfnyz/article70633207.ece/alternates/LANDSCAPE_1200/15dcadyr_gatedcommunity.jpg",
       "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
@@ -1103,10 +993,111 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "States & Local": 8,
-          "Economy & Employment": 4
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "47e87507b5c8ce38f4",
+      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
+      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
+      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 1
         },
         "candidate_categories": [
           "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "c31cb46924ed3cc2f0",
+      "title": "Congress asks why PM didn’t pay tribute to Garg during Assam visit",
+      "url": "https://www.thehindu.com/news/cities/Delhi/congress-asks-why-pm-didnt-pay-tribute-togargduring-assam-visit/article70427314.ece",
+      "summary": "",
+      "published_at": "Mon, 22 Dec 2025 22:46:19 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "1063ea0a88c22b17bc",
+      "title": "Mob vandalises prayer hall over burial dispute in Bastar",
+      "url": "https://www.thehindu.com/news/national/chhattisgarh/mob-vandalises-prayer-hall-over-burial-dispute-in-bastar/article70412766.ece",
+      "summary": "Clashes in Kanker village follow opposition to Christian burial rites; police personnel among those injured in mob fury",
+      "published_at": "Thu, 18 Dec 2025 22:34:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/im4icd/article70412944.ece/alternates/LANDSCAPE_1200/03_Bastar_Story.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
           "States & Local"
         ]
       }

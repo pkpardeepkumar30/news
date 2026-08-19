@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-18T20:47:18.638561+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-08-19T01:59:51.588988+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 117,
-    "established_or_other": 83,
+    "independent_social": 114,
+    "established_or_other": 86,
     "independent_social_majority_required": true
   },
   "part_count": 5,
@@ -17,74 +17,6 @@
     "data/chatgpt-input/parts/part-05.json"
   ],
   "items": [
-    {
-      "raw_id": "578c5ed632172f626a",
-      "title": "Supreme Court Collegium recommends appointment of 4 advocates as Orissa High Court judges",
-      "url": "https://www.barandbench.com/news/supreme-court-collegium-recommends-appointment-of-4-advocates-as-orissa-high-court-judges",
-      "summary": "The Supreme Court Collegium on Tuesday recommended the appointment of 4 advocates as judges of the Orissa High Court. Following a meeting held on August 18, the Collegium approved proposals for appointment of the following advocates as judges: (i) Sasmita Tripathy (ii) Aditya Narayan Das (iii) Rajjeet Roy (iv) Gautam Misra The Orissa High Court is currently functioning with only 17 active judges, with 2 judges, including Chief Justice Harish Tandon , set to retire this year. The High Court's sanctioned judge strength is 33. [Read Collegium Statement]",
-      "published_at": "Tue, 18 Aug 2026 22:47:09 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/693a7338-ef91-4714-b68f-b5e910c3ff72/05.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "cefb93c93fef77df27",
-      "title": "Supreme Court Collegium recommends 3 judicial officers for elevation to Chhattisgarh High Court",
-      "url": "https://www.barandbench.com/news/supreme-court-collegium-recommends-3-judicial-officers-for-elevation-to-chhattisgarh-high-court",
-      "summary": "The Supreme Court Collegium has recommended the appointment of three judicial officers as judges of the Chhattisgarh High Court. The three names recommended for elevation after the Collegium's meeting on Tuesday, August 18 are: (i) Santosh Sharma (ii) Sushma Sawant (iii) Sudhir Kumar The High Court currently has a working strength of 13 judges as against a sanctioned strength of 22. [Read Collegium resolution]",
-      "published_at": "Tue, 18 Aug 2026 22:32:57 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-10-15/je7awkhr/chhattisgarhhighcourt.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
     {
       "raw_id": "6590870d4d2e6bb36c",
       "title": "Address systemic gaps in criminal laws related to children, Madras HC directs T.N. Chief Secretary",
@@ -117,41 +49,6 @@
         "candidate_categories": [
           "Environment, Health & Science",
           "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "1db26e199f674f0b05",
-      "title": "Trump cites CEC Gyanesh Kumar to make case for U.S. voter ID law; Congress says ‘take him to America’",
-      "url": "https://www.thehindu.com/news/national/take-gyanesh-kumar-to-america-keep-him-there-pawan-kheras-response-to-trumps-post/article71360215.ece",
-      "summary": "A White House factsheet on the proposed new U.S. legislation says India and Brazil had linked voter identity cards to a biometric database, while the U.S. system relied on self-attestation by voters",
-      "published_at": "Tue, 18 Aug 2026 22:50:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kjia9c/article71360221.ece/alternates/LANDSCAPE_1200/CONGRESS%20KHERA%20PC%20%20DELHI%202026_20_06_1.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 5
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections"
         ]
       }
     },
@@ -228,11 +125,11 @@
       }
     },
     {
-      "raw_id": "ad10003210d670038f",
-      "title": "80% of Delhi is unplanned, fire preparedness ‘average’: Chief Fire Officer",
+      "raw_id": "1a5c3dcdd2a6f3b42d",
+      "title": "Delhi Chief Fire Officer interview: ‘We need more than 12,000 firefighters but have only about 2,500’",
       "url": "https://www.thehindu.com/news/cities/Delhi/80-of-delhi-is-unplanned-fire-preparedness-average-chieffireofficer/article71361344.ece",
       "summary": "Delhi’s fire risks are growing amid unplanned construction, weak compliance, inadequate manpower and congested roads, Delhi Fire Services Chief Fire Officer A.K. Malik said on Tuesday. In an interaction with The Hindu, he assesses the city’s fire-safety preparedness, gaps in enforcement and infrastructure, changing fire risks and measures to improve response",
-      "published_at": "Wed, 19 Aug 2026 01:12:43 +0530",
+      "published_at": "Wed, 19 Aug 2026 07:13:03 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/wtuwcy/article71361264.ece/alternates/LANDSCAPE_1200/DFS%20CHIEF%20MALIK%20DELHI%202026_18_08_8.jpg",
       "suggested_category": "",
       "priority_discovery": false,
@@ -261,12 +158,80 @@
       }
     },
     {
+      "raw_id": "695c95b93c2ae6d12c",
+      "title": "Bengal hotel fire: Two owners held, death toll rises to nine",
+      "url": "https://www.thehindu.com/news/national/west-bengal/bengal-hotel-fire-two-owners-held-death-toll-rises/article71361224.ece",
+      "summary": "During an inspection by the Birbhum district administration, at least 15 hotels have been found where fire safety arrangements were not in place. The administration is directed to seal all those hotels",
+      "published_at": "Wed, 19 Aug 2026 02:29:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ad9gzk/article71362260.ece/alternates/LANDSCAPE_1200/20260817175L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "f3d181c2dff9be8d89",
       "title": "Karnataka Public Service Commission case: President orders inquiry against chairperson; Karnataka High Court quashes his suspension by Governor",
       "url": "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-sets-aside-suspension-of-kpsc-chairperson-shivashankarappa-s-sahukar-by-governor/article71359923.ece",
       "summary": "The court held that the suspension was bad in law as the Governor had acted without the aid and advise of the State Cabinet",
       "published_at": "Wed, 19 Aug 2026 00:33:14 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/vclx55/article71359936.ece/alternates/LANDSCAPE_1200/KPSC-veterinaryGGSGAKHS6.3.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "5f012f7cc16bc5d7e8",
+      "title": "Residents stop lorries near Cheyyar for damaging water pipelines, roads",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/residents-stop-lorries-near-cheyyar-for-damaging-water-pipelines-roads/article71360596.ece",
+      "summary": "They say the continuous movement of the lorries is damaging the pipelines that supply water to Nedumpirai and Moranam villages; they demand regulation of movement of lorries on the route",
+      "published_at": "Wed, 19 Aug 2026 00:29:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/gk9bnl/article71361111.ece/alternates/LANDSCAPE_1200/block-6.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -399,41 +364,6 @@
           "Governance & Administration",
           "International & Geopolitics",
           "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "7188278b365df9b509",
-      "title": "Calls for U.K. inquiry into ‘hounding’ of ex-Cambridge academic",
-      "url": "https://www.thehindu.com/news/international/calls-for-uk-inquiry-into-hounding-of-ex-cambridge-academic/article71354811.ece",
-      "summary": "There cannot be any doubt that Dr. Arday's tragic death was the direct, foreseeable and foreseen result of press harassment, the Good Law Project wrote on its website",
-      "published_at": "Mon, 17 Aug 2026 11:29:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/x2tff2/article71354892.ece/alternates/LANDSCAPE_1200/Britain_Cambridge_Professor_81622.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
         ]
       }
     },
@@ -759,6 +689,39 @@
       }
     },
     {
+      "raw_id": "0b11912212647952c1",
+      "title": "Factors at play in choosing the next Keralam Congress chief",
+      "url": "https://www.thehindu.com/news/national/kerala/factors-at-play-in-choosing-the-next-keralam-congress-chief/article71361098.ece",
+      "summary": "The choice of the next KPCC president is likely to be read as a signal of how the Congress intends to build its social coalition in a State where it has recently reaped rich electoral dividends",
+      "published_at": "Wed, 19 Aug 2026 06:40:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9dx0ck/article71363117.ece/alternates/LANDSCAPE_1200/NH04UDF11.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
       "raw_id": "f29e8285a712d4c2be",
       "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
       "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
@@ -821,41 +784,6 @@
         "category_candidate_scores": {
           "Politics & Elections": 1,
           "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "5135a5e751d0c122ea",
-      "title": "Those supporting terrorism will meet fate of Afzal Guru: Amit Shah",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/terrorism-wont-be-allowed-to-stage-comeback-it-has-been-buried-amit-shah-in-udhampur-rally/article68685621.ece",
-      "summary": "The Union Home Minister said, “Even generations after Rahul (Gandhi) would not be able to restore it (Article 370). Elections are being held here for the first time without Article 370 and a separate flag”",
-      "published_at": "Sat, 28 Sep 2024 02:30:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wex2nb/article68685658.ece/alternates/LANDSCAPE_1200/PTI09_26_2024_000103B.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 8
         },
         "candidate_categories": [
           "Politics & Elections",
@@ -1377,39 +1305,6 @@
       }
     },
     {
-      "raw_id": "5913b3f3efbd63f240",
-      "title": "India's economic growth to slow to 6.8% FY27 amid West Asia crisis, El Nino impact",
-      "url": "https://www.thehindu.com/business/Economy/indias-economic-growth-to-slow-to-68-fy27-amid-west-asia-crisis-el-nino-impact/article71362062.ece",
-      "summary": "Earlier this month, the Reserve Bank of India (RBI) had raised growth projections from 6.6% to 6.7% citing resilient domestic economy.",
-      "published_at": "Tue, 18 Aug 2026 22:50:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9ydr1x/article71362077.ece/alternates/LANDSCAPE_1200/2026-08-05T104210Z_272679095_RC26SMAKGFUM_RTRMADP_3_INDIA-ECONOMY-RATES.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
       "raw_id": "546c40401f6160bbef",
       "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
       "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
@@ -1451,11 +1346,11 @@
       "summary": "Calls for a significant increase in international funding to help developing countries adapt to climate change",
       "published_at": "Wed, 19 Aug 2026 01:54:43 +0530",
       "image_url": "https://th-i.thgim.com/public/todays-paper/tp-business/qmxj89/article67648908.ece/alternates/LANDSCAPE_1200/MW18-LEAD_GERC5GQTC5134J.3.jpg.jpg",
-      "suggested_category": "",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1472,7 +1367,7 @@
         "category_candidate_scores": {
           "Economy & Employment": 4,
           "Environment, Health & Science": 1,
-          "International & Geopolitics": 1
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
           "Economy & Employment",
@@ -1657,6 +1552,39 @@
       "summary": "Cochin Shipyard has agreed to invest ₹5,000 crore in the ship block building project, says Chief Minister V.D. Satheesan; project expected to boost the State’s shipbuilding sector and generate additional indirect employment",
       "published_at": "Tue, 18 Aug 2026 23:19:47 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/zdfvp5/article71362141.ece/alternates/LANDSCAPE_1200/10018_1_3_2026_15_14_51_5_RAMAN_THURUTHU_15.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "b54128defff58a57eb",
+      "title": "Shadow of price rise looms over Onam Pookkalam",
+      "url": "https://www.thehindu.com/news/national/kerala/shadow-of-price-rise-looms-over-onam-pookkalam/article71361269.ece",
+      "summary": "Vendors believe business may improve once educational institutions close and people fully enter the Onam mood",
+      "published_at": "Tue, 18 Aug 2026 23:19:15 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/va1vl3/article71361802.ece/alternates/LANDSCAPE_1200/Flowers1.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -2587,6 +2515,39 @@
       }
     },
     {
+      "raw_id": "dae4e38883784193b8",
+      "title": "U.S. sanctions ICC chief Tomoko Akane of Japan",
+      "url": "https://www.thehindu.com/news/international/us-sanctions-icc-chief-tomoko-akane-of-japan/article71363112.ece",
+      "summary": "These individuals have directly engaged in efforts by the ICC to investigate, arrest, detain, or prosecute officials whose government has not consented to ICC jurisdiction, U.S. Secretary of State Marco Rubio said in a statement",
+      "published_at": "Wed, 19 Aug 2026 06:47:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fhabij/article71363113.ece/alternates/LANDSCAPE_1200/2026-08-18T223537Z_1521161642_RC20XGAFJT8B_RTRMADP_3_USA-ICC-SANCTIONS.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "6bc8a16aab9bf481ef",
       "title": "China’s Foreign Minister Wang Yi to visit South Korea from August 19-20",
       "url": "https://www.thehindu.com/news/international/chinas-foreign-minister-wang-yi-to-visit-south-korea-from-august-19-20/article71359226.ece",
@@ -2791,44 +2752,11 @@
       }
     },
     {
-      "raw_id": "8c7bd3fffffb27c86d",
-      "title": "Lebanon is handing over an Assad-era general after war crimes questioning",
-      "url": "https://www.thehindu.com/news/national/lebanon-is-handing-over-an-assad-era-general-after-war-crimes-questioning/article71362047.ece",
-      "summary": "Lebanon’s judicial authorities have decided to hand over a former Syrian military officer to Damascus",
-      "published_at": "Tue, 18 Aug 2026 22:49:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ol7eak/article71362072.ece/alternates/LANDSCAPE_1200/2026-08-11T092944Z_1769915961_RC29WMAXFZH1_RTRMADP_3_SYRIA-JUSTICE-ASSAD.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e7a08347cb2ad539d1",
-      "title": "Beyond America: On the Arab states, their security needs",
-      "url": "https://www.thehindu.com/opinion/editorial/beyond-america-on-the-arab-states-their-security-needs/article71360986.ece",
-      "summary": "Arab states can no longer depend on the U.S. for security needs",
-      "published_at": "Wed, 19 Aug 2026 01:08:39 +0530",
+      "raw_id": "0cfb42d5cbd2cceca5",
+      "title": "West Asia war highlights: UAE accuses Iran of firing ballistic missiles at its territory",
+      "url": "https://www.thehindu.com/news/international/iran-us-west-asia-war-strait-of-hormuz-news-donald-trump-live-updates-on-august-18-2026/article71358724.ece",
+      "summary": "Iran “categorically rejected the United Arab Emirates’ claim that Iran had launched a missile toward that country”, calling it harmful to regional trust and security efforts",
+      "published_at": "Wed, 19 Aug 2026 04:30:33 +0530",
       "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -2840,8 +2768,8 @@
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -2854,14 +2782,28 @@
         "candidate_categories": [
           "International & Geopolitics"
         ]
-      }
+      },
+      "related_reports": [
+        {
+          "title": "UAE accuses Iran of firing two ballistic missiles at its territory",
+          "url": "https://www.thehindu.com/news/international/uae-accuses-iran-of-firing-ballistic-missiles-at-its-territory/article71362169.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
-      "raw_id": "9040a8229aa886c8af",
-      "title": "West Asia war LIVE: UAE accuses Iran of firing ballistic missiles at its territory",
-      "url": "https://www.thehindu.com/news/international/iran-us-west-asia-war-strait-of-hormuz-news-donald-trump-live-updates-on-august-18-2026/article71358724.ece",
-      "summary": "The statement came nearly two hours after a brief phone alert warned UAE residents of a “potential missile threat”",
-      "published_at": "Wed, 19 Aug 2026 00:01:53 +0530",
+      "raw_id": "4329e034db9bbebf2d",
+      "title": "West Asia war LIVE: Turkiye rejects Israeli claims after strike on Syria air base",
+      "url": "https://www.thehindu.com/news/international/iran-us-west-asia-war-strait-of-hormuz-news-donald-trump-live-updates-on-august-19-2026/article71363121.ece",
+      "summary": "Israel and Syria agreed to a status quo in security matters, which Syria was on the verge of breaching by permitting Turkish troops to deploy at an airbase near Aleppo, said Benjamin Netanyahu",
+      "published_at": "Wed, 19 Aug 2026 07:17:15 +0530",
       "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -3090,6 +3032,39 @@
       }
     },
     {
+      "raw_id": "4ab334b6ba7c2ac9ae",
+      "title": "A unique experience awaits athletes at the Asian Games",
+      "url": "https://www.thehindu.com/sport/a-unique-experience-awaits-athletes-at-the-asian-games/article71362418.ece",
+      "summary": "About 15,000 competitors and officials are expected at the event, which takes place in Nagoya and the wider Aichi area from September 19 to October 4",
+      "published_at": "Wed, 19 Aug 2026 03:51:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ot84ml/article71128693.ece/alternates/LANDSCAPE_1200/PTI06_17_2026_000171B.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "2ec5b1aea83baa9423",
       "title": "Hockey World Cup: India routs South Africa, jumps to top of the table",
       "url": "https://www.thehindu.com/sport/hockey/hockey-world-cup-india-routs-south-africa-jumps-to-top-of-the-table/article71361903.ece",
@@ -3251,72 +3226,6 @@
         },
         "candidate_categories": [
           "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "eee9abe111f7db623b",
-      "title": "Badminton Worlds: Indian hopes rest on Sindhu, Satwik-Chirag pair",
-      "url": "https://www.thehindu.com/sport/other-sports/badminton-worlds-indian-hopes-rest-on-sindhu-satwik-chirag-pair/article71352618.ece",
-      "summary": "Ayush takes on defending champion Shi in the opening round; Lakshya attempts to script history",
-      "published_at": "Mon, 17 Aug 2026 17:20:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ormafs/article71352786.ece/alternates/LANDSCAPE_1200/52_Badminton_World_Championship_16_08_Delhi.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "6387ee6e47193ddec2",
-      "title": "Pradeep Rai elected new Supreme Court Bar Association president",
-      "url": "https://www.barandbench.com/news/pradeep-rai-elected-new-supreme-court-bar-association-president",
-      "summary": "Senior Advocate Pradeep Rai was on Tuesday elected as the new president of the Supreme Court Bar Association (SCBA). He defeated nearest rival Senior Advocate Anupam Lal Das by 371 votes. The final tally of votes is as follows: Aadish Agarwalla - 412 Gaurav Bhatia - 370 Anupam Lal Das - 451 Pradeep Rai - 822 Sukumar - 269 Mahalakshmi Pavani -128 Siddharth Mridul - 217 Former High Court Chief Justice among 6 candidates for SCBA President Senior Advocate Rahul Kaushik has been elected as the Vice President of SCBA, while Pragya Baghel has been elected as the Secretary of SCBA.",
-      "published_at": "Tue, 18 Aug 2026 22:45:14 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-05/67b8ecb3-ed5f-4176-9690-ba2dbcc7218a/Sr%20Adv%20Pradeep%20Rai.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
         ]
       }
     },
@@ -3675,6 +3584,39 @@
       "summary": "Competitive programming (CP) reveals technical talent that exams, colleges, and recruiters overlook",
       "published_at": "Sun, 16 Aug 2026 13:10:14 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/c0tml4/article71331358.ece/alternates/LANDSCAPE_1200/CP.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "3a1f43933732b83a4d",
+      "title": "When schools become zones of confrontation between parents and teachers",
+      "url": "https://www.thehindu.com/education/when-schools-become-zones-of-confrontation-between-parents-and-teachers/article71340930.ece",
+      "summary": "",
+      "published_at": "Fri, 14 Aug 2026 16:07:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/mviyh4/article71340974.ece/alternates/LANDSCAPE_1200/iStock-1690425323.jpg",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -5663,6 +5605,93 @@
       }
     },
     {
+      "raw_id": "768332016b57669bd7",
+      "title": "Prayagraj News: अन्ना-जानवर ने कर रखा है किसानों की नाक में दम!",
+      "url": "https://khabarlahariya.org/prayagraj-news-stray-cattle-have-made-life-miserable-for-farmers/",
+      "summary": "जिला प्रयागराज, ब्लाक जसरा‌, गांव सेहुँड़ा में गौवशाला‌ नहीं है, इस कारण किसान खेती नहीं कर पते हैं। बारिश के मौसम में धान-बेहन‌ की रखवाली दिन-रात करते है। इस गांव…",
+      "published_at": "Sat, 08 Aug 2026 10:30:28 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "d05ce2231ee19e502a",
+      "title": "Banda News: करीब 400 सरकारी जमीनी पट्टे निरस्त किए गए,लेखपाल",
+      "url": "https://khabarlahariya.org/banda-news-around-400-government-land-leases-cancelled-lekhpal/",
+      "summary": "बांदा जिले की ग्राम पंचायत गुरेह के सैकड़ों ग्रामीण जिलाधिकारी कार्यालय पहुंचे और अपनी जमीन के पट्टों को लेकर ज्ञापन सौंपा। ग्रामीणों का आरोप है कि करीब 45 साल पुराने…",
+      "published_at": "Sat, 08 Aug 2026 05:30:44 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "54cd7cdcc6ee1c093d",
+      "title": "Pumped Storage Project MP: केन बेतवा के बाद पन्ना टाइगर रिजर्व परियोजना, क्यों खतरे में हैं पन्ना के जंगल, बाघ?",
+      "url": "https://khabarlahariya.org/pumped-storage-project-in-mp-after-ken-betwa-the-panna-tiger-reserve-project-why-are-pannas-forests-and-tigers-at-risk/",
+      "summary": "मध्य प्रदेश देश का ‘टाइगर स्टेट’ कहा जाता है। मध्य प्रदेश में सबसे अधिक बाघ पाए जाते हैं और राज्य के बड़े हिस्सों में घने जंगल, संरक्षित वन क्षेत्र और…",
+      "published_at": "Sat, 08 Aug 2026 04:30:46 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "c32d9c1f80cef349c6",
       "title": "Scholarships: August 15, 2026",
       "url": "https://www.thehindu.com/education/scholarships-august-15-2026/article71280333.ece",
@@ -5755,93 +5784,6 @@
           "social_attention": null
         }
       ]
-    },
-    {
-      "raw_id": "768332016b57669bd7",
-      "title": "Prayagraj News: अन्ना-जानवर ने कर रखा है किसानों की नाक में दम!",
-      "url": "https://khabarlahariya.org/prayagraj-news-stray-cattle-have-made-life-miserable-for-farmers/",
-      "summary": "जिला प्रयागराज, ब्लाक जसरा‌, गांव सेहुँड़ा में गौवशाला‌ नहीं है, इस कारण किसान खेती नहीं कर पते हैं। बारिश के मौसम में धान-बेहन‌ की रखवाली दिन-रात करते है। इस गांव…",
-      "published_at": "Sat, 08 Aug 2026 10:30:28 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "d05ce2231ee19e502a",
-      "title": "Banda News: करीब 400 सरकारी जमीनी पट्टे निरस्त किए गए,लेखपाल",
-      "url": "https://khabarlahariya.org/banda-news-around-400-government-land-leases-cancelled-lekhpal/",
-      "summary": "बांदा जिले की ग्राम पंचायत गुरेह के सैकड़ों ग्रामीण जिलाधिकारी कार्यालय पहुंचे और अपनी जमीन के पट्टों को लेकर ज्ञापन सौंपा। ग्रामीणों का आरोप है कि करीब 45 साल पुराने…",
-      "published_at": "Sat, 08 Aug 2026 05:30:44 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "54cd7cdcc6ee1c093d",
-      "title": "Pumped Storage Project MP: केन बेतवा के बाद पन्ना टाइगर रिजर्व परियोजना, क्यों खतरे में हैं पन्ना के जंगल, बाघ?",
-      "url": "https://khabarlahariya.org/pumped-storage-project-in-mp-after-ken-betwa-the-panna-tiger-reserve-project-why-are-pannas-forests-and-tigers-at-risk/",
-      "summary": "मध्य प्रदेश देश का ‘टाइगर स्टेट’ कहा जाता है। मध्य प्रदेश में सबसे अधिक बाघ पाए जाते हैं और राज्य के बड़े हिस्सों में घने जंगल, संरक्षित वन क्षेत्र और…",
-      "published_at": "Sat, 08 Aug 2026 04:30:46 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
     },
     {
       "raw_id": "e4163aa14c0b380872",
@@ -6221,6 +6163,194 @@
       }
     },
     {
+      "raw_id": "6d558a851abf947a4a",
+      "title": "U.P. job aspirants to hold ‘Hunkar panchayat’ on August 25, demand transparent, time-bound recruitment",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-job-aspirants-to-hold-hunkar-panchayat-on-august-25-demand-transparent-time-bound-recruitment/article71361280.ece",
+      "summary": "Students from across the State have been invited for detailed deliberations",
+      "published_at": "Wed, 19 Aug 2026 07:08:28 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "55511ffcbf3b11ea44",
+      "title": "Census 2027 questionnaire seeks parents’ religion, place of birth up to village level",
+      "url": "https://www.thehindu.com/news/national/census-2027-questionnaire-seeks-parents-religion-place-of-birth-up-to-village-level/article71361794.ece",
+      "summary": "Besides the open field option to declare caste, respondents can choose “Does not want to declare Caste” and “No Caste”",
+      "published_at": "Wed, 19 Aug 2026 04:50:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/vxjp17/article71361837.ece/alternates/LANDSCAPE_1200/a3cff4e0-164a-457f-b3d2-e55fcdf0c644.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "49bc521366b7fce1e3",
+      "title": "Pressers, meetings cancelled in Kolkata due to BJP pressure: CJP",
+      "url": "https://www.thehindu.com/news/national/west-bengal/pressers-meetings-cancelled-in-kolkata-due-to-bjp-pressure-cjp/article71361026.ece",
+      "summary": "‘You cannot stop the cockroaches in this way. The more they try to prevent us, the more youth will come forward,’ says co-convenor Ashutosh Ranka",
+      "published_at": "Wed, 19 Aug 2026 04:06:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8wwyya/article71362244.ece/alternates/LANDSCAPE_1200/PTI08_18_2026_000402A.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "08c8763d6113db530a",
+      "title": "India reiterates support for negotiated two-state solution in Palestine: MEA Secretary Ranganathan",
+      "url": "https://www.thehindu.com/news/national/india-reiterates-support-for-negotiated-two-state-solution-in-palestine-mea-secretary-ranganathan/article71362411.ece",
+      "summary": "Ms. Ranganathan also “conveyed India’s concern over the grave humanitarian situation in Gaza”",
+      "published_at": "Wed, 19 Aug 2026 03:20:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/59riqf/article71362412.ece/alternates/LANDSCAPE_1200/HQBblhVXcAAYjbO.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7831bfcac2528d7faf",
+      "title": "Why is PM CARES Fund keeping large sums idle, asks RTI activist",
+      "url": "https://www.thehindu.com/news/national/pm-cares-fund-audit-2024-25-domestic-foreign-donations/article71360330.ece",
+      "summary": "PM CARES Fund, a public charitable trust established in March 2020 to support relief efforts during public health emergencies and other disasters, is chaired by the Prime Minister and funded entirely through voluntary contributions",
+      "published_at": "Wed, 19 Aug 2026 03:04:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/iechvw/article71360467.ece/alternates/LANDSCAPE_1200/vbk-stock-PM%20Cares-website.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "45e5022ff5435fd6c3",
+      "title": "NCB busts drug trafficking network involving illegally overstaying foreign nationals",
+      "url": "https://www.thehindu.com/news/national/ncb-busts-drug-trafficking-network-involving-illegally-overstaying-foreign-nationals/article71360942.ece",
+      "summary": "The agency, in coordination with the police and immigration authorities, is launching a nationwide fortnight-long drive, “Trinetra,” next month to identify overstaying foreigners and initiate action",
+      "published_at": "Wed, 19 Aug 2026 02:28:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gid330/article71362270.ece/alternates/LANDSCAPE_1200/two%20frame%2010.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "e12ef9e636945b63a3",
       "title": "H1N1 cases on the rise, experts say no cause for alarm",
       "url": "https://www.thehindu.com/sci-tech/health/h1n1-cases-spike-across-the-country/article71361535.ece",
@@ -6250,12 +6380,12 @@
       }
     },
     {
-      "raw_id": "7831bfcac2528d7faf",
-      "title": "Why is PM CARES Fund keeping large sums idle, asks RTI activist",
-      "url": "https://www.thehindu.com/news/national/pm-cares-fund-audit-2024-25-domestic-foreign-donations/article71360330.ece",
-      "summary": "PM CARES Fund, a public charitable trust established in March 2020 to support relief efforts during public health emergencies and other disasters, is chaired by the Prime Minister and funded entirely through voluntary contributions",
-      "published_at": "Wed, 19 Aug 2026 01:43:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/iechvw/article71360467.ece/alternates/LANDSCAPE_1200/vbk-stock-PM%20Cares-website.jpg",
+      "raw_id": "34d4d83d7b6325ee96",
+      "title": "Lawyers boycott work in J&K’s Poonch after ‘police search judge’s vehicle’",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/lawyers-boycott-work-in-jks-poonch-after-policesearch-judges-vehicle/article71361938.ece",
+      "summary": "Lawyers in Poonch boycott court after police allegedly “disrespected a judge” during a vehicle search, demanding an inquiry",
+      "published_at": "Wed, 19 Aug 2026 01:50:54 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6274,12 +6404,8 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
@@ -6288,126 +6414,6 @@
       "url": "https://www.thehindu.com/news/national/kerala/mvd-cracks-down-on-illegal-taxis-slaps-penalty-of-147-lakh-in-keralams-kochi/article71361745.ece",
       "summary": "A total of four squads deployed in Angamaly, Aluva, Perumbavoor, and Kalady to book such vehicles operating without taxi permit and for other traffic violations",
       "published_at": "Wed, 19 Aug 2026 01:39:45 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "213f613143d4a7a501",
-      "title": "57-year-old patient dies 2 days after rape in Haryana hospital",
-      "url": "https://www.thehindu.com/news/national/haryana/57-year-old-patient-dies-2-days-after-rape-in-haryana-hospital/article71362258.ece",
-      "summary": "",
-      "published_at": "Wed, 19 Aug 2026 01:21:26 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "40fe052b4bf17683f3",
-      "title": "Odisha announces ₹1,000-crore aid for flood-hit areas",
-      "url": "https://www.thehindu.com/news/national/odisha/odisha-announces-1000-crore-aid-for-flood-hit-areas/article71361732.ece",
-      "summary": "Nearly 9.40 lakh people affected in six districts; over 3.70 lakh evacuated to safer locations; CM says additional funds will be released after detailed assessment of damage",
-      "published_at": "Wed, 19 Aug 2026 01:17:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tfsvgn/article71362257.ece/alternates/LANDSCAPE_1200/7.85-lakh-peoplGBMGDIEJO.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "54ff719f144151322c",
-      "title": "Jharkhand Government releases list of 44 recruitment exams cancelled due to irregularities",
-      "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-government-releases-list-of-recruitment-exams-cancelled-due-to-irregularities/article71362249.ece",
-      "summary": "The cancelled exams include recruitment for drug inspectors, assistant professors, deputy collectors, dental doctors, assistant engineers, civil judges, and additional public prosecutors, among others",
-      "published_at": "Wed, 19 Aug 2026 01:16:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6woj5q/article71362253.ece/alternates/LANDSCAPE_1200/20260818028L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "df4e957418b3776107",
-      "title": "​Time to push back: On India and the continuing U.S. pressure",
-      "url": "https://www.thehindu.com/opinion/editorial/time-to-push-back-on-india-and-the-continuing-us-pressure/article71360916.ece",
-      "summary": "The U.S. has been emboldened to make increasing demands on India",
-      "published_at": "Wed, 19 Aug 2026 01:12:54 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

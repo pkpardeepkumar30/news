@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-19T09:01:16.165486+00:00",
-  "input_count": 486,
+  "prepared_at": "2026-08-19T13:16:46.579514+00:00",
+  "input_count": 461,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 143,
-    "established_or_other": 57,
+    "independent_social": 139,
+    "established_or_other": 61,
     "independent_social_majority_required": true
   },
   "part": 4,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "96be3ecf65e86b752f",
+      "title": "Rapid Fire with Arvind Kejriwal",
+      "url": "https://www.youtube.com/shorts/GkdZy9PRVkk",
+      "summary": "",
+      "published_at": "2026-08-10T10:46:06+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "df714be9d2119d42d2",
       "title": "Modi Paglus Logic 😂",
@@ -41,30 +70,30 @@
       }
     },
     {
-      "raw_id": "d2df635444a7562004",
-      "title": "Raghav Chadha Plot Twist 😭",
-      "url": "https://www.youtube.com/shorts/f3AGjsltieE",
-      "summary": "",
-      "published_at": "2026-08-10T10:00:09+00:00",
+      "raw_id": "cc76c7a76bf01f1d51",
+      "title": "Manipur CM backs NRC, urges artistes to promote peace",
+      "url": "https://eastmojo.com/manipur/2026/08/19/manipur-cm-backs-nrc-urges-artistes-to-promote-peace/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Wednesday backed the implementation of the National Register of Citizens (NRC) in the state and urged artistes to use their platforms to promote peace and harmony among different communities. Khemchand Singh made the remarks while meeting several renowned artistes of Manipur at the Chief Minister’s Bungalow in […] The post Manipur CM backs NRC, urges artistes to promote peace appeared first on EastMojo .",
+      "published_at": "Wed, 19 Aug 2026 09:44:12 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
@@ -186,11 +215,11 @@
       }
     },
     {
-      "raw_id": "88fe6814223f121d79",
-      "title": "Manipur: 46 KCP (Taibanganba) cadres join mainstream; surrender arms",
-      "url": "https://eastmojo.com/manipur/2026/08/18/manipur-46-kcp-taibanganba-cadres-join-mainstream-surrender-arms/",
-      "summary": "Imphal: In a significant step towards peace and reconciliation, 46 cadres of the Kangleipak Communist Party (Taibanganba Group) led by its Chairman Haobijam Dilip laid down arms and joined the mainstream on Tuesday. The return of armed cadres to the mainstream marked its strengthening of peace process in the violence-hit state of Manipur. Chief Minister […] The post Manipur: 46 KCP (Taibanganba) cadres join mainstream; surrender arms appeared first on EastMojo .",
-      "published_at": "Tue, 18 Aug 2026 10:34:29 +0000",
+      "raw_id": "0957c6438280f9dd47",
+      "title": "Naga peace activist Niketu Iralu passes away",
+      "url": "https://eastmojo.com/nagaland/2026/08/18/naga-peace-activist-niketu-iralu-passes-away/",
+      "summary": "Kohima: Prominent peace activist Niketu Iralu died in New Delhi on Tuesday. As per reports, the nonagenarian had been undergoing treatment at BLK Hospital in New Delhi. For decades, Iralu worked to encourage dialogue between communities and political groups and remained closely associated with efforts to address divisions within Naga society. He played a key […] The post Naga peace activist Niketu Iralu passes away appeared first on EastMojo .",
+      "published_at": "Tue, 18 Aug 2026 13:32:58 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -210,16 +239,20 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
-      "raw_id": "206aa4babe93473100",
-      "title": "RJD Lok Bhavan March: लोकभवन मार्च में हिरासत में लिए गए तेजस्वी यादव, पुलिस ने वाटर कैनन चलाया",
-      "url": "https://theruralpress.in/national/rjd-lok-bhavan-march-tejashwi-yadav-detained-in-patna-over-ak-47-firing-protest/",
-      "summary": "RJD Lok Bhavan March: पटना में RJD के लोकभवन मार्च के दौरान पुलिस ने नेता प्रतिपक्ष तेजस्वी यादव को हिरासत में ले लिया। छात्रों की समस्याओं, बेरोजगारी और सिवान में AK-47 से हुई फायरिंग के विरोध में RJD कार्यकर्ता मार्च कर रहे थे। मार्च को रोकने के लिए डाक बंगला चौराहे पर पुलिस ने बैरिकेडिंग […]",
-      "published_at": "Wed, 19 Aug 2026 08:02:14 +0000",
+      "raw_id": "0306678d34181f394b",
+      "title": "CG News: नवा रायपुर में चलेंगी ई-बस, रायगढ़-घरघोड़ा फोरलेन और अकलतरा बायपास मार्ग को हरी झंडी",
+      "url": "https://theruralpress.in/chhattisgarh/nawa-raipur-e-bus-service-road-projects-chhattisgarh-secratary-meeting/",
+      "summary": "Nawa Raipur Electric Bus: छत्तीसगढ़ के मुख्य सचिव विकासशील की अध्यक्षता में मंत्रालय महानदी भवन में ‘परियोजना निर्माण एवं क्रियान्वयन समिति’ की अहम बैठक हुई। बैठक में नवा रायपुर अटल विकास प्राधिकरण (NRDA) के तहत ‘कंप्लायंट बैटरी ऑपरेटेड मोटर एसी-ई बसों’ के डिजाइन, आपूर्ति और परिचालन (Gross Cost Contract) के लिए निविदा आमंत्रित करने के […]",
+      "published_at": "Wed, 19 Aug 2026 12:10:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -244,11 +277,11 @@
       }
     },
     {
-      "raw_id": "019ed64b7e198a3a9c",
-      "title": "CG News: 2.65 करोड़ युवा जुड़े माय भारत से, सीएम साय बोले- युवाओं की ऊर्जा से बनेगा विकसित छत्तीसगढ़",
-      "url": "https://theruralpress.in/chhattisgarh/cg-news-cm-vishnu-deo-sai-my-bharat-chhattisgarh-review-meeting/",
-      "summary": "My Bharat Portal: मुख्यमंत्री विष्णुदेव साय ने मंत्रालय महानदी भवन में आयोजित ‘मेरा युवा भारत’ (माय भारत) की प्रदेश स्तरीय समीक्षा बैठक में युवाओं की भागीदारी पर विशेष जोर दिया। सीएम ने स्पष्ट किया कि युवाओं की ऊर्जा, प्रतिभा और नवाचार क्षमता ही ‘विकसित भारत’ और ‘विकसित छत्तीसगढ़’ के निर्माण का असली आधार है। हर […]",
-      "published_at": "Wed, 19 Aug 2026 07:56:30 +0000",
+      "raw_id": "42a533373dffd244e5",
+      "title": "Monsoon Tips: बारिश में घर से नहीं जा रही सीलन की बदबू? अपनाएं ये असरदार उपाय",
+      "url": "https://theruralpress.in/lifestyle/monsoon-tips-damp-smell-home-remedies/",
+      "summary": "Monsoon Tips: बारिश के दिनों में घर के अंदर सीलन आने की वजह से अजीब सी गंध आने लगती है। बहुत ज्यादा सफाई करने के बाद भी यह बदबू आसानी से कम नहीं होती है। घर की सीलन दूर करने के लिए कुछ सिंपल से तरीके बेहद काम आते हैं। इसके इस्तेमाल से घर की […]",
+      "published_at": "Wed, 19 Aug 2026 11:50:02 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -273,11 +306,11 @@
       }
     },
     {
-      "raw_id": "5ce8a6b02acd9c5380",
-      "title": "Raksha Bandhan Gift Ideas: इस रक्षाबंधन बहन को दें ये 10 खास और यादगार तोहफे",
-      "url": "https://theruralpress.in/lifestyle/raksha-bandhan-gift-ideas-for-sister/",
-      "summary": "Raksha Bandhan Gift Ideas: रक्षाबंधन भाई-बहन के रिश्ते को सेलिब्रेट करने का खास मौका है। इस दिन बहन भाई की कलाई पर राखी बांधती है और भाई उसकी खुशी के लिए तोहफा देता है। अगर इस बार आप कपड़े, चॉकलेट या पारंपरिक गिफ्ट से कुछ अलग देना चाहते हैं, तो बहन की पसंद और जरूरत […]",
-      "published_at": "Wed, 19 Aug 2026 07:53:52 +0000",
+      "raw_id": "d9a8f055a176a63436",
+      "title": "IND vs SL Test: पहले टेस्ट में भारत ने श्रीलंका को 165 रनों से हराया, मानव सुतार ने की शानदार गेंदबाजी",
+      "url": "https://theruralpress.in/national/ind-vs-sl-galle-test-match-result-india-win-sports-news/",
+      "summary": "IND vs SL Test: भारतीय क्रिकेट टीम ने गॉल के मैदान पर इतिहास रचते हुए अपने 600वें टेस्ट मैच में श्रीलंका को 165 रन के विशाल अंतर से हरा दिया। शुभमन गिल की कप्तानी में मिली इस जीत के साथ ही भारत ने दो मैचों की टेस्ट सीरीज में 1-0 की बढ़त बना ली है। […]",
+      "published_at": "Wed, 19 Aug 2026 09:19:39 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -302,11 +335,11 @@
       }
     },
     {
-      "raw_id": "469cd5d0feef0f41b7",
-      "title": "NSE IPO Issue Price पर बड़ा अपडेट, 2,500-2,800 हो सकता है इश्यू प्राइस",
-      "url": "https://theruralpress.in/business/nse-ipo-issue-price-update-expected-at-2500-2800-listing-likely-in-september/",
-      "summary": "NSE IPO Issue Price: नेशनल स्टॉक एक्सचेंज ऑफ इंडिया लिमिटेड (NSE) के बहुप्रतीक्षित IPO को लेकर नया अपडेट सामने आया है। लाइव मिंट की रिपोर्ट के मुताबिक, NSE का इश्यू प्राइस ₹2,500 से ₹2,800 प्रति शेयर के बीच हो सकता है। कंपनी ने IPO की तैयारियों से जुड़े काम पूरे कर लिए हैं और संस्थागत […]",
-      "published_at": "Wed, 19 Aug 2026 07:47:46 +0000",
+      "raw_id": "e34dcc13c7301e7fc4",
+      "title": "CG News: बारिश में भाजपा सरकार के भ्रष्टाचार की पोल खुली, नवनिर्मित पुल और सड़कें बह रहीं-दीपक बैज",
+      "url": "https://theruralpress.in/chhattisgarh/raipur-pcc-chief-deepak-baij-press-conference-bjp-corruption-roads-bridges/",
+      "summary": "Bjp Corruption: छत्तीसगढ़ प्रदेश कांग्रेस कमेटी के अध्यक्ष दीपक बैज ने रायपुर में पत्रकारों से चर्चा करते हुए राज्य की भाजपा सरकार पर जमकर निशाना साधा। उन्होंने आरोप लगाया कि प्रदेश में पहली ही बारिश में सरकार के भ्रष्टाचार और कमीशनखोरी की पोल खुल गई है। दीपक बैज ने कहा कि नवनिर्मित पुल, पुलिया और […]",
+      "published_at": "Wed, 19 Aug 2026 09:12:36 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -331,11 +364,11 @@
       }
     },
     {
-      "raw_id": "a5e6da9397fe385793",
-      "title": "ओपनएआई ने पेश किया ChatGPT for Teens: टीनएजर्स को मेंटल हेल्थ के खतरों से बचाएगा नया सेफ मोड",
-      "url": "https://theruralpress.in/tech/chatgpt-for-teens-openai-launches-new-safe-ai-mode-for-teenagers/",
-      "summary": "ChatGPT for Teens: आर्टिफिशियल इंटेलीजेंस (AI) चैटबॉट ओपनएआई (OpenAI) ने टीनएजर्स की सुरक्षा और मेंटल हेल्थ को ध्यान में रखते हुए एक नया मोड ‘ChatGPT for Teens’ लॉन्च किया है। यह खास फीचर 13 से 17 साल की उम्र के बच्चों को ऐसे कंटेंट और जवाबों से दूर रखेगा जो उनकी मानसिक सेहत के लिए […]",
-      "published_at": "Wed, 19 Aug 2026 06:12:49 +0000",
+      "raw_id": "91e539be7debd1afd6",
+      "title": "Chhattisgarh Weather Alert: छत्तीसगढ़ के 12 जिलों में अगले 3 घंटे बारिश का अलर्ट! बाहर निकलने से पहले पढ़ें मौसम विभाग की चेतावनी",
+      "url": "https://theruralpress.in/chhattisgarh/weather-alert-moderate-rain-alert-in-12-districts-by-imd-raipur/",
+      "summary": "Chhattisgarh Weather Alert : छत्तीसगढ़ के लिए अगले 3 घंटे काफी अहम हैं। मौसम विभाग ने तेज बारिश की चेतावनी जारी की है। कई जिलों में झमाझम बारिश होगी। इसके साथ ही प्रदेश में मध्यम से हल्की बारिश की भी संभावना है। मौसम विभाग के अनुसार प्रदेश के 12 जिलों में 5 से 15 मिमी […]",
+      "published_at": "Wed, 19 Aug 2026 09:08:14 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -360,11 +393,11 @@
       }
     },
     {
-      "raw_id": "2309636c1f0ecca6e7",
-      "title": "SC कॉलेजियम ने हाईकोर्ट के लिए तीन नामों पर लगाई मुहर, संतोष शर्मा, सुषमा सावंत और सुधीर कुमार बनेंगे जज",
-      "url": "https://theruralpress.in/chhattisgarh/high-court-new-judges-collegium-approval-santosh-sharma-sushma-sawant-sudhir-kumar/",
-      "summary": "Chhattisgarh High Court New Judges: छत्तीसगढ़ हाईकोर्ट में न्यायिक कामकाज को अधिक गति देने के उद्देश्य से सुप्रीम कोर्ट कॉलेजियम ने 18 अगस्त 2026 को हुई अपनी बैठक में तीन वरिष्ठ न्यायिक अधिकारियों को जज बनाने के प्रस्ताव को अपनी अंतिम स्वीकृति दे दी है। कॉलेजियम द्वारा अनुशंसित नामों में कोरबा के प्रधान जिला एवं […]",
-      "published_at": "Wed, 19 Aug 2026 06:00:14 +0000",
+      "raw_id": "274041e4babc104dea",
+      "title": "Skin Care Tips: रक्षाबंधन पर चेहरे का ग्लो चाहिए? घर पर करें 4 स्टेप का आसान फेशियल",
+      "url": "https://theruralpress.in/lifestyle/raksha-bandhan-facial-home-remedy/",
+      "summary": "Skin Care Tips: रक्षाबंधन का पावन पर्व नजदीक आते ही हर कोई अपनी खूबसूरती को लेकर खास तैयारी में जुट जाता है। यही वजह है कि इस खास मौके पर हर महिला चेहरे पर फ्रेश और ग्लोइंग लुक चाहती है। हालांकि, बाजार के महंगे प्रोडक्ट्स और केमिकल वाले ट्रीटमेंट त्वचा को नुकसान पहुंचा सकते हैं। […]",
+      "published_at": "Wed, 19 Aug 2026 09:02:12 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -389,11 +422,11 @@
       }
     },
     {
-      "raw_id": "2ce9621986eaaa1968",
-      "title": "Korba: पीड़ित के पैसों से हवाई यात्रा कर आरोपी को गिरफ्तार करने गई पुलिस, कटघोरा TI समेत 8 पुलिसकर्मी सस्पेंड, जानिए क्या है मामला",
-      "url": "https://theruralpress.in/chhattisgarh/korba-police-suspended-8-cops-katghora-ti-moti-patel-air-travel/",
-      "summary": "Air Travel Using Victim’s Money Proves Costly: बिलासपुर रेंज के IG रामगोपाल गर्ग ने भ्रष्टाचार और वित्तीय अनियमितता के एक गंभीर मामले में बड़ी कार्रवाई की है। इस मामले में कटघोरा थाना प्रभारी निरीक्षक मोती पटेल समेत 8 पुलिसकर्मियों को त्काल प्रभाव से निलंबित कर दिया गया है। आरोप है कि आरोपी की गिरफ्तारी के […]",
-      "published_at": "Wed, 19 Aug 2026 05:55:43 +0000",
+      "raw_id": "ff06ace92d710026b6",
+      "title": "CG News: छत्तीसगढ़ के सभी अस्पताल 1 जनवरी से होंगे डिजिटल, स्वास्थ्य मंत्री का निर्देश",
+      "url": "https://theruralpress.in/chhattisgarh/ayushman-bharat-digital-mission-shyam-bihari-jaiswal-abha-id/",
+      "summary": "Ayushman Bharat Digital Mission: छत्तीसगढ़ में स्वास्थ्य सेवाओं को अत्याधुनिक और पारदर्शी बनाने की दिशा में एक बड़ी पहल शुरू की गई है। स्वास्थ्य मंत्री श्याम बिहारी जायसवाल ने आयुष्मान भारत डिजिटल मिशन (ABDM) की ‘मॉडल डिस्ट्रिक्ट इनिशिएटिव’ कार्यशाला का शुभारंभ करते हुए अधिकारियों को निर्देश दिए हैं कि 1 जनवरी से राज्य के सभी […]",
+      "published_at": "Wed, 19 Aug 2026 08:37:23 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -418,11 +451,11 @@
       }
     },
     {
-      "raw_id": "d6bc2452f7055a21bb",
-      "title": "Sawan Purnima 2026 Date: सावन पूर्णिमा 27 या 28 अगस्त? पंचांग से जानें सही तारीख और शुभ मुहूर्त",
-      "url": "https://theruralpress.in/religion-spirituality/sawan-purnima-2026-date-27-28-august-shubh-muhurat-puja-vidhi/",
-      "summary": "Sawan Purnima 2026 Date: सावन पूर्णिमा 27 या 28 अगस्त? पंचांग से जानें सही तारीख और शुभ मुहूर्त सावन पूर्णिमा को लेकर इस बार तारीख की उलझन बनी हुई है। पंचांग के अनुसार, सावन शुक्ल पक्ष की पूर्णिमा तिथि 27 अगस्त 2026 को सुबह 9 बजकर 9 मिनट से शुरू होगी और 28 अगस्त को […]",
-      "published_at": "Wed, 19 Aug 2026 05:15:01 +0000",
+      "raw_id": "c9df0a80452c96bb9c",
+      "title": "Chhattisgarh Weather: बारिश का दौर जारी, बलरामपुर-रामानुजगंज में सबसे ज्यादा 292 मिमी वर्षा",
+      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-weather-update-imd-alert-highest-292-mm-rain-in-balrampur-ramanujganj/",
+      "summary": "Chhattisgarh Weather: छत्तीसगढ़ में बारिश का दौर जारी है। मौसम केंद्र रायपुर की ओर से दर्ज आंकड़ों के मुताबिक बलरामपुर-रामानुजगंज जिले में सबसे अधिक 292 मिमी बारिश दर्ज की गई। इसके बाद सूरजपुर में 93.4 मिमी, सरगुजा में 82.6 मिमी और जशपुर में 66.5 मिमी वर्षा दर्ज हुई। बलरामपुर-रामानुजगंज में सबसे ज्यादा बारिश मौसम विभाग […]",
+      "published_at": "Wed, 19 Aug 2026 08:25:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -444,6 +477,68 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "18da6f782eaee26a36",
+      "title": "रायपुर में नाबालिग से दुष्कर्म के बाद नवजात का सौदा! 1.50 लाख में बेचने का आरोप, ऐसे खुला पूरा राज",
+      "url": "https://theruralpress.in/chhattisgarh/raipur-minor-rape-case-newborn-baby-selling-case-new-rajendra-nagar-full-inside-story/",
+      "summary": "Raipur News: रायपुर में नाबालिग से दुष्कर्म, जबरन गर्भपात और नवजात को कथित तौर पर बेचने का गंभीर मामला सामने आया है। न्यू राजेंद्र नगर थाना क्षेत्र की 16 वर्षीय पीड़िता ने अपने ही पिता पर करीब तीन साल तक यौन शोषण करने का आरोप लगाया है। शिकायत के बाद पुलिस ने पिता, बुआ समेत […]",
+      "published_at": "Wed, 19 Aug 2026 08:23:21 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2ed2cfd7ed02768d41",
+      "title": "Ladakh glaciers losing speed as ice melts, new study warns",
+      "url": "https://india.mongabay.com/2026/08/ladakh-glaciers-losing-speed-as-ice-melts-new-study-warns/",
+      "summary": "The phrase “moving at glacial pace” is inspired by the slow, inching motion of glaciers as they flow downwards. But new research suggests glaciers in the Zanskar Himalayas in Ladakh are moving even slower than before, with implications for water availability in the region over the long term. Centuries-old glaciers blanketing mountaintops may appear to […]",
+      "published_at": "18 Aug 2026 14:57:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/18131448/IMG_4388-768x512.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -532,147 +627,6 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
-    },
-    {
-      "raw_id": "c32d9c1f80cef349c6",
-      "title": "Scholarships: August 15, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-august-15-2026/article71280333.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sat, 15 Aug 2026 12:29:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/4criwe/article71280330.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: August 8, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-august-8-2026/article71280322.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "5932fd6bc5b7a77da4",
-      "title": "News from the world of Education: August 13, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-august-13-2026/article71340107.ece",
-      "summary": "Information on admissions, scholarships, competitions for students, events for educators and more",
-      "published_at": "Thu, 13 Aug 2026 13:39:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/qkg2f7/article71340094.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "News from the world of Education: August 9, 2026",
-          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-august-9-2026/article71324319.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "ec7deb2642ff3851fd",
-      "title": "Spanish Eyes and Queen Caroline show out",
-      "url": "https://www.thehindu.com/sport/races/spanish-eyes-and-queen-caroline-show-out/article71361187.ece",
-      "summary": "",
-      "published_at": "Tue, 18 Aug 2026 19:47:59 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Spanish Eyes and Queen Caroline show out",
-          "url": "https://www.thehindu.com/sport/races/horse-racing/article71360404.ece",
-          "source": {
-            "id": "the-hindu-sport",
-            "name": "The Hindu - Sport",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
     },
     {
       "raw_id": "2066d44938099ec23f",
@@ -799,53 +753,20 @@
       }
     },
     {
-      "raw_id": "49b9d6da2ce950f0e5",
-      "title": "Supreme court upholds centre’s power to notify post-facto clearance",
-      "url": "https://india.mongabay.com/2026/08/supreme-court-upholds-centres-power-to-notify-post-facto-clearance/",
-      "summary": "The Supreme Court has struck down the centre’s 2021 Office Memorandum (OM) that created a mechanism for granting post facto environmental clearances to projects that violated prior environmental clearance norms. At the same time, it stated that the central government has the power to frame statutory amnesty schemes for specified categories of such violations under […]",
-      "published_at": "07 Aug 2026 16:28:40 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07135307/AP22207426732440-768x512.jpg",
+      "raw_id": "69a68707ccce9dd68e",
+      "title": "पीएम केयर्स फंड पर उठे सवाल: हजारों करोड़ जमा लेकिन खर्च हुए महज कुछ लाख",
+      "url": "https://hindi.newslaundry.com/2026/08/19/newslaundry-explainer-on-pm-cares-fund-release-audit-report",
+      "summary": "भारत सरकार ने दो साल के इंतजार के बाद आखिरकार पीएम केयर्स फंड की ऑडिट रिपोर्ट जारी कर दी है. प्रधानमंत्री आपात स्थिति नागरिक सहायता एवं राहत निधि, जिसे पीएम केयर्स फंड के नाम से जाना जाता है, उस फंड में फिलहाल 8452.06 करोड़ रुपये जमा हैं. इसमें से 7846.6 करोड़ फिक्सड डिपोजिट के तौर पर और 605.4 करोड़ रुपये सेविंग खाते में मौजूद हैं. यह फंड कोविड आपदा के समय महामारी से उत्पन्न आपातकालीन परिस्थितियों से निपटने के लिए था. इस फंड की अध्यक्षता भारत के प्रधानमंत्री करते हैं और कई केंद्रीय मंंत्री इसके सदस्य है. चूंकि सरकार इसे सरकारी फंड नहीं मानती है इसलिए इसमें हुए लेनदेन की जानकारी ना तो आरटीआई और ना ही संसद में पूछे जाने वाले सवालों के अंतर्गत दिया जाता है. भाजपा के पसंदीदा दुश्मन जॉर्ज सोरोस ने जब हरदीप पुरी की बेटी को 200 मिलियन डॉलर का फंड मैनेजमेंट के लिए सौंपा ‘दिव्यांगों के लिए फंड है, कानून है, भाषण भी हैं लेकिन एक्सेसिबिलिटी का क्या?",
+      "published_at": "Wed, 19 Aug 2026 11:00:46 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-08-19/57jwmbcr/AI-7.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
+        "id": "newslaundry",
+        "name": "Newslaundry",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "8497427b840bf4ebbb",
-      "title": "Heatwaves and lightning notified as national disasters, government says",
-      "url": "https://india.mongabay.com/short-article/2026/08/heatwaves-and-lightning-notified-as-national-disasters-government-says/",
-      "summary": "Heatwaves and lightning have officially been recognised as natural calamities eligible for relief under the State and National Disaster Response Funds, Union Minister of State in the Ministry of Home Affairs, Nityanand Rai, told Parliament on August 4. The decision to notify heatwaves and lightning as disasters follows the recommendations of the 16th Finance Commission, […]",
-      "published_at": "07 Aug 2026 16:16:18 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/07152230/AP26196538423127-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -861,146 +782,12 @@
       }
     },
     {
-      "raw_id": "5c838ff5268b477d68",
-      "title": "NEET paper leak: Supreme Court says NTA needs to be institutionalised, tech changes needed",
-      "url": "https://www.barandbench.com/news/neet-paper-leak-supreme-court-says-nta-needs-to-be-institutionalised-tech-changes-needed",
-      "summary": "The Supreme Court on Wednesday underscored that the National Testing Agency, which conducts various entrance examinations to higher educational institutions, needs to be institutionalised and made robust to ensure there are no question paper leaks. A Bench of Justices PS Narasimha and Alok Aradhe also emphasised that various technological changes need to be ushered in to ensure that a robust mechanism is in place to hold entrance examinations smoothly. The Court was hearing a batch of petitions filed in light of the question paper leaks connected to the National Eligibility cum Entrance Test (NEET) this year. The Court today said that it is duty bound to ensure that NTA functions as a vibrant institution and experienced people work for the body. \"Our duty is to ensure that there is a vibrant is institution that the country can be proud of. If you don’t institutionalise, experienced people get transferred and the entire experience is lost. There are a lot of technological changes that have to be brought about,\" the Court remarked. The Court then directed the Central government to file an affidavit indicating the progress made and steps taken to implement the recommendations made by ",
-      "published_at": "Wed, 19 Aug 2026 13:14:37 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/05e55af3-1d9d-47ae-bacf-6681027d9440/DELHI%20%20WEB%20PAGE%201600x900.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "282753fbb084ed79cf",
-      "title": "The Rule 14 vacuum: Delayed FSL reports and prolonged incarceration under the NDPS Act",
-      "url": "https://www.barandbench.com/law-firms/view-point/the-rule-14-vacuum-delayed-fsl-reports-and-prolonged-incarceration-under-the-ndps-act",
-      "summary": "One of the most draconian criminal laws in India is the Narcotic Drugs and Psychotropic Substances Act, 1985 (NDPS Act). Often so, we hear that the authorities have arrested a person found with a commercial quantity of substances which are prohibited under the NDPS Act (such as cocaine, MD, etc.). In such cases, it is extremely difficult to obtain bail, more so because of the stringent provisions under the NDPS Act, thereby leaving the accused persons incarcerated for a prolonged period. The NDPS (Seizure, Storage, Sampling and Disposal) Rules, 2022 (NDPS Rules) were introduced to streamline the procedures of seizure, storage, sampling and disposal. Once the substance has been seized by the authorities, samples thereof are required to be sent to the government laboratory (usually the Forensic Science Lab – FSL) for chemical analysis. Rule 14 of the NDPS Rules particularly requires the chemical laboratory to provide its reports (forensic reports) within 15 days of receiving the sample and where quantitative analysis requires additional time, the quantitative report within a further 15 days. However, the ground reality is that government laboratories are overburdened and are unable t",
-      "published_at": "Wed, 19 Aug 2026 11:58:27 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-19/tx0aeyfq/F-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "27d5ff8fa33486cbf3",
-      "title": "A guess in the dark, or an estimate in the light? The Arbitrator’s guesstimate",
-      "url": "https://www.barandbench.com/law-firms/view-point/a-guess-in-the-dark-or-an-estimate-in-the-light-the-arbitrators-guesstimate",
-      "summary": "Every arbitrator who has sat through final arguments faces a familiar difficulty: the breach is proved, the loss is real, but the arithmetic is nowhere to be found. Section 73 of the Contract Act, 1872 requires proof of actual loss, while commercial reality rarely permits precise calculation. In the gap between the two lies one of arbitration’s most consequential exercises: the honest estimate. Where precise proof of loss is genuinely impossible, a tribunal may arrive at an honest estimate. In Trishala Jain v. State of Uttaranchal , the Supreme Court distinguished a ‘guess’—an estimate without specific evidence—from a ‘calculation’ based on specific evidence and a ‘guesstimate’, which combines elements of both and carries greater certainty than a bare guess. The line is narrow: too little estimation may unfairly reward the breaching party; too much may become speculation and expose the award to challenge. This article examines how common law and civil law jurisdictions navigate this boundary and what their approaches reveal about the extent of arbitral discretion in assessing damages. Common Law: An exception that must be earned India’s position has deep roots in the common law tra",
-      "published_at": "Wed, 19 Aug 2026 10:16:00 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-18/fuiwswcp/J-WEB-SITE-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "cefb93c93fef77df27",
-      "title": "Supreme Court Collegium recommends 3 judicial officers for elevation to Chhattisgarh High Court",
-      "url": "https://www.barandbench.com/news/supreme-court-collegium-recommends-3-judicial-officers-for-elevation-to-chhattisgarh-high-court",
-      "summary": "The Supreme Court Collegium has recommended the appointment of three judicial officers as judges of the Chhattisgarh High Court. The three names recommended for elevation after the Collegium's meeting on Tuesday, August 18 are: (i) Santosh Sharma (ii) Sushma Sawant (iii) Sudhir Kumar The High Court currently has a working strength of 13 judges as against a sanctioned strength of 22. [Read Collegium resolution] Supreme Court Collegium recommends 3 judicial officers for elevation to Chhattisgarh High Court https://t.co/RH2YJIdMO1 — Bar and Bench (@barandbench) August 19, 2026",
-      "published_at": "Tue, 18 Aug 2026 22:32:57 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-10-15/je7awkhr/chhattisgarhhighcourt.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "79bcdadb5f5f0114cf",
-      "title": "Goa moves Supreme Court seeking life imprisonment for Tarun Tejpal in rape case",
-      "url": "https://www.barandbench.com/news/goa-moves-supreme-court-seeking-life-imprisonment-for-tarun-tejpal-in-rape-case",
-      "summary": "Goa government has moved the Supreme Court seeking enhancement of sentence to former Tehelka editor Tarun Tejpal in the 2013 rape case. [State of Goa v. Tarunjit Tejpal] The State has sought life imprisonment for Tejpal instead of the sentence of ten years imposed on him by the Bombay High Court . The plea clarified that the State does not want to reopen or challenge findings of conviction recorded by the High Court. \"The challenge is confined to the quantum of sentence and the direction for concurrent operation of sentences. The State relies only upon the findings and circumstances already recorded by the High Court to demonstrate that the sentence imposed is manifestly inadequate,\" the petition states. The case dates back to 2013, when Tejpal was accused of sexually assaulting a junior colleague in an elevator of a high-end hotel in Goa. The Goa Police subsequently registered a First Information Report (FIR) against Tejpal for various offences including rape. He was arrested in November 2013 and later released on bail in July 2014. The trial against Tejpal commenced in 2017 and lasted for 4 years. In May 2021, the trial court acquitted Tejpal . The trial judge reasoned that the i",
-      "published_at": "Tue, 18 Aug 2026 21:45:34 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-06/38dcf69d-fbbc-4279-b6a0-f4c576da7326/Tarun_Tejpal_and_Supreme_Court.jpg",
+      "raw_id": "e5e97ed64bbd67be8a",
+      "title": "Delhi court sends AAP's Satyendar Jain to judicial custody, refuses to declare his arrest illegal",
+      "url": "https://www.barandbench.com/news/delhi-court-sends-aaps-satyendar-jain-to-judicial-custody-refuses-to-declare-his-arrest-illegal",
+      "summary": "A Delhi court on Wednesday refused to declare Aam Aadmi Party (AAP) leader Satyendar Jain's arrest by Delhi's Anti-Corruption Branch (ACB) as illegal. Special Judge (PC Act) Digvinay Singh of the Rouse Avenue Courts rejected Jain's application in this regard and sent him to judicial custody. Jain was arrested by the ACB on August 18 in connection with alleged irregularities in the tendering process for sewage treatment plant projects of the Delhi Jal Board (DJB). The case, registered in May 2024 following a complaint by the Directorate of Vigilance, concerns alleged manipulation of tender conditions, criminal conspiracy and suspected bribe payments linked to contracts for upgrading DJB sewage treatment plants. Apart from Jain, ACB also arrested Udit Prakash Rai, former Chief Executive Officer (CEO) of the Delhi Jal Board (DJB), Ankit Srivastava, Nagendra Yadav, Raja Kumar Kurra and Pankaj Verma.",
+      "published_at": "Wed, 19 Aug 2026 18:39:45 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-05/16c5e6ff-0cf0-4681-936b-a84194a07453/05.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1024,183 +811,12 @@
       }
     },
     {
-      "raw_id": "6ed57aef4b33c7f3a3",
-      "title": "Delhi HC imposes ₹2 lakh costs, registers criminal contempt case against advocate for suppressing facts",
-      "url": "https://www.barandbench.com/news/delhi-hc-imposes-2-lakh-costs-registers-criminal-contempt-case-against-advocate-for-suppressing-facts",
-      "summary": "The Delhi High Court recently registered suo motu contempt of court proceedings against an advocate for suppression of material facts in a property dispute matter [ Harjeet Singh Mendiratta v. State Govt of NCT of Delhi and Anr ]. Justice Manmeet Pritam Singh Arora observed that withholding material facts is a serious matter and cannot be ignored. The Court stated, “An advocate is under a duty not merely to advance the cause of a client but also to act as an officer of the Court, to ensure fairness in judicial proceedings, to prevent resort to unfair practices and to refrain from fuelling litigation.” Justice Manmeet Pritam Singh Arora The advocate in question, Kalpana, had a power of attorney of the petitioner, who is her husband. She also represented him in a dispute related to sharing the inheritance of a family property with his sister. In the property dispute, the petitioner’s sister filed a criminal complaint accusing him of causing hurt, wrongful restraint, trespass, criminal intimidation and insulting her modesty. In this backdrop, the man moved the High Court seeking quashing of the criminal proceedings. The Court stated that Advocate Kalpana had a direct personal interest",
-      "published_at": "Tue, 18 Aug 2026 18:24:42 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-16/p4005198/1000589961.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "4221858f73355e2f5e",
-      "title": "Allahabad HC grants daughter's custody to father after finding mother tutored child to claim sexual abuse",
-      "url": "https://www.barandbench.com/news/allahabad-hc-grants-daughters-custody-to-father-after-finding-mother-tutored-child-to-claim-sexual-abuse",
-      "summary": "The Allahabad High Court has granted permanent custody of a 5-year-old girl to his father after finding that the child was tutored by her mother to accuse the father of sexual abuse. Justice Sandeep Jain took note of the minor's unequivocal willingness to reside with her father. It also found that after the minor was temporarily handed over to the custody of her father in July, she appeared to be comfortable, secure and well-cared for. Accordingly, it granted the man, a doctor, permanent custody of his daughter. However, the Court also said the minor's mother will be extended the right to visitation and interaction with the child. Justice Sandeep Jain The order was passed on a Habeas Corpus petition moved by the minor's father in June alleging that his wife was creating obstruction and hindrance in his meetings with the daughter. He also said that she was heavily tutored by her mother and \"taught such abusive and sexual content\" which are beyond her age and logic. Thus, he prayed for permanent custody of the minor. Following an interaction with the minor, the Court in July noted that she was being used as a pawn in the fight between the husband and wife. \"It is apparent that the co",
-      "published_at": "Tue, 18 Aug 2026 17:16:39 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-09/39f495e3-9ce7-4c7c-adc6-04e731a4f380/13.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "caf6e4a45fd6fc1c5a",
-      "title": "Bombay High Court grants bail to another convict in Narendra Dabholkar murder case",
-      "url": "https://www.barandbench.com/news/bombay-high-court-grants-bail-to-another-convict-in-narendra-dabholkar-murder-case",
-      "summary": "The Bombay High Court on Tuesday granted bail to Sachin Prakashrao Andure, convicted for the 2013 murder of rationalist Dr Narendra Dabholkar. A Bench of Justices SV Kotwal and RR Bhonsale invoked the principle of parity with co-convict Sharad Bhausaheb Kalaskar. It also suspended Andure's life sentence pending the final disposal of his appeal against conviction. “There are fair chances of Andure’s acquittal in his appeal,” the court noted. Justice SV Kotwal, Justice RR Bhonsale The division bench took critical note of glaring evidentiary gaps in the Central Bureau of Investigation’s case. It dissected the testimony of the prosecution’s key eyewitnesses and observed that dock identification conducted over eight years after the incident carried negligible weight. The court highlighted that no formal Test Identification Parade (TIP) was conducted and witnesses failed to identify Andure in photographs shown during investigation. “The identification of Andure by prosecution witnesses is extremely weak. They have identified Andure for the first time after the incident after over 8 years; that is quite a long period for identification. Both the witnesses had not identified the photograph",
-      "published_at": "Tue, 18 Aug 2026 15:45:01 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-04/b20afc21-769a-4731-8a3f-454c054bbe95/05.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "f4596ab41e6e6a3fb5",
-      "title": "Karnataka HC to quash ED proceedings against Sammaan Capital after clearing its own doubts",
-      "url": "https://www.barandbench.com/news/litigation/karnataka-hc-to-quash-ed-proceedings-against-sammaan-capital-after-clearing-its-own-doubts",
-      "summary": "The Karnataka High Court on Tuesday quashed proceedings initiated by the Directorate of Enforcement (ED) against Sammaan Capital (formerly Indiabulls Housing Finance Limited or IHFL) in a money laundering case after rehearing the matter [Sammaan Capital v Directorate of Enforcement] . The Court said that it would quash the proceedings earlier last week. However, on August 17, the Court said that it would rehear the case since it was not informed of the proceedings pending before the Supreme Court against IHFL. Justice M Nagaprasanna noted an affidavit submitted by the ED in today's order that the proceedings pending before the Supreme Court were not connected to the Enforcement Case Information Report (ECIR) in the current proceedings before the Karnataka High Court. \" The learned senior counsel for the petitioners Prabhuling Navadgi and Dhyan Chinnappa in unison would submit that there is the matter that is pending before the Apex Court or directions issued by the Apex Court in those matters has nothing to do with the present matters. They would take this Court through the affidavit filed by the ED in the case at hand with particular reference to para 8-12,\" the judge noted. Justi",
-      "published_at": "Tue, 18 Aug 2026 15:42:54 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-18/509hhxfd/K-dealstreet-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b50ddc77f870d7cc3d",
-      "title": "Delhi High Court imposes ₹5 lakh costs on DMRC for filing sham plea",
-      "url": "https://www.barandbench.com/news/litigation/delhi-high-court-imposes-5-lakh-costs-on-dmrc-for-filing-sham-plea",
-      "summary": "The Delhi High Court has imposed costs of ₹5 lakh on the Delhi Metro Rail Corporation (DMRC) for misusing a provision meant for correcting clerical errors in arbitral awards, possibly to gain additional time to challenge an award passed against it [ Delhi Metro Rail Corporation Ltd v HCC Samsung JV ]. In an order passed on August 17, a Division Bench of Justices C Hari Shankar and Om Prakash Shukla said that DMRC’s application under Section 33 of the Arbitration and Conciliation Act, 1996 sought a re-adjudication of the entire dispute rather than the correction of any clerical, typographical or computational error. “ It is not possible for us to believe that an organisation such as the appellant did not know the fundamentals of Section 33 and what is permitted thereunde r. This, therefore, is a classic case of misuse of Section 33, perhaps with a view to obtain breathing space to launch the challenge to the substantive award, ” the Court said. However, the Bench set aside a single-judge’s decision dismissing DMRC’s challenge to the award as time-barred. It held that under recent Supreme Court rulings, the limitation period for challenging an award begins from the date on which a fo",
-      "published_at": "Tue, 18 Aug 2026 14:55:10 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/01/Delhi-Metro.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "237a8309bc746ea1d1",
-      "title": "Should consumer forum jurisdiction depend on price paid or compensation claimed? Supreme Court asks Centre",
-      "url": "https://www.barandbench.com/news/should-consumer-forum-jurisdiction-depend-on-price-paid-or-compensation-claimed-supreme-court-asks-centre",
-      "summary": "The Supreme Court recently asked the Central government to explain how the jurisdiction of consumer courts should be determined - whether by the value of goods or services paid for or by the amount of compensation being claimed [ Avon Elastomers v. Bajaj Allianz General Insurance ]. A Bench of Justices KV Viswanathan and Arun Palli asked the Centre to file an affidavit addressing several anomalies flagged before it, arising from how pecuniary jurisdiction is currently split between the District, State and National Consumer Disputes Redressal Commissions. The Bench also asked the Centre to explain the reasoning behind a 2021 notification that reduced the National Commission's pecuniary jurisdiction from ₹10 crore to ₹2 crore. Justices KV Viswanathan and Arun Palli The Court was hearing a petition raising the question of how such jurisdiction ought to be determined. Senior Advocate Gagan Gupta , appearing for the petitioner, argued that basing jurisdiction on the value of goods or services paid as consideration would lead to a host of anomalies and could leave several genuine cases of deficient service outside the reach of consumer forums altogether. To illustrate this, Gupta gave th",
-      "published_at": "Tue, 18 Aug 2026 13:27:57 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/3292b28c-a507-443c-bd96-4b32d298a5f0/01.jpg",
+      "raw_id": "d0b1db32748e228236",
+      "title": "JSA advises BlissClub on ₹160 crore Series B fundraise",
+      "url": "https://www.barandbench.com/law-firms/dealstreet/jsa-advises-blissclub-on-160-crore-series-b-fundraise",
+      "summary": "BlissClub Fitness Private Limited has raised ₹160 crore from a Series B fundraise led by Singularity AMC, with participation from Vidit Aatrey (CEO, Meesho) and existing investors Elevation Capital and Eight Roads Ventures. JSA Advocates and Solicitors advised BlissClub on this fundraise. The Firm handled transaction documentation, negotiation, and closing. The transaction was led by Rashi Saraf (Partner), with support from Rohit Jain (Principal Associate), Associates Sanjana Sreenath and Vaastu Tyagi. BlissClub BlissClub is a D2C athleisure brand. The fresh capital is earmarked for offline retail scale-up and new product category expansion. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
+      "published_at": "Wed, 19 Aug 2026 17:47:03 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-02/cht14wxs/168056.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1224,12 +840,12 @@
       }
     },
     {
-      "raw_id": "7d3f2cdcd040d58466",
-      "title": "Supreme Court seeks responses from Meta, X on plea against police posting photos, videos of accused persons",
-      "url": "https://www.barandbench.com/news/litigation/supreme-court-seeks-responses-from-meta-x-on-plea-against-police-posting-photos-videos-of-accused-persons",
-      "summary": "The Supreme Court on Tuesday sought replies from the Centre and social media intermediaries on a plea seeking safeguards against police uploading photographs and videos of accused persons on social media in a manner that could prejudice their right to a fair trial and violate their dignity [Hemendra Patel v. Union of India & Ors.] . A Bench comprising Chief Justice of India (CJI) Surya Kant and Justice Joymalya Bagchi and Justice V Mohana issued notice to Meta and X (formerly Twitter) and sought responses from them. However, while issuing notice, the Court flagged the difficulty in regulating content once it enters the digital ecosystem. “Issue notice. The only problem is how to control it because this is not a border that you can just close down,” observed CJI Kant. Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana The present plea follows an earlier petition filed by the petitioner on the issue. The earlier petition was withdrawn in March 2026 with liberty to approach the Supreme Court with an enlarged scope. At the time, the Court had indicated that guidelines being framed in separate proceedings concerning police media briefings could also cover police",
-      "published_at": "Tue, 18 Aug 2026 12:23:29 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-06/755f3e5a-c177-4020-b1aa-2cff5d612b16/Police_2.jpg",
+      "raw_id": "bb4d3666f07e7c9052",
+      "title": "Analysis of Roadway Solutions India Infra vs NHAI",
+      "url": "https://www.barandbench.com/law-firms/view-point/analysis-of-roadway-solutions-india-infra-vs-nhai",
+      "summary": "Facts 1. The parties entered into a Contract dated October 17, 2022 for the execution of the highway project inter alia the original Scheduled Completion Date was January 12, 2025. 2. Disputes arose regarding delay in execution. The petitioner attributed the delay to the respondent’s failure to provide right of way under clause 8.1, non-availability of continuous work fronts and delays in obtaining approvals. The respondent attributed the delay to the petitioner’s failure to deploy adequate resources, maintain the highway stretch and comply with contractual and safety obligations. 3. The petitioner sought extension of time under Clause 10.5(ii), pursuant to which the respondent’s engineer recommended an extension of 474 days. The parties thereafter executed a settlement agreement dated April, 25, 2025, revising the Scheduled Completion Date to April 30, 2026 and Milestone-III to January 11, 2026. 4. Disputes nevertheless continued. On January 2, 2026, the respondent issued a cure period notice alleging defaults and granting 60 days to cure them. The petitioner disputed the allegations, contending that the notice was premature, the respondent’s continuing defaults had not been consi",
+      "published_at": "Wed, 19 Aug 2026 15:24:33 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-19/5nicg4zg/203305.png",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1248,21 +864,17 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
-      "raw_id": "4a8044137c38c644a7",
-      "title": "Kerala HC flags misuse of POCSO Act in marital disputes; clears man accused of raping stepdaughter",
-      "url": "https://www.barandbench.com/news/kerala-hc-flags-misuse-of-pocso-act-in-marital-disputes-clears-man-accused-of-raping-stepdaughter",
-      "summary": "The Protection of Children from Sexual Offences Act (POCSO Act) is prone to misuse by some sections of people to wreak vengeance during times of matrimonial discord, cautioned the Kerala High Court recently. Justice A Badharudeen made the observation while acquitting a man accused of sexually assaulting his stepdaughter. The Court found there were several factors that raised doubts about the genuineness of the allegations in this case. The question of whether the accused was falsely accused by his estranged wife could not be ruled out, it concluded. \"The provisions of the POCSO Act have been misused by a section of people to wreak vengeance, settle scores and obtain illegal gain. The prime area where one could find false implication of innocent persons in POCSO cases is when there is matrimonial discord between two spouses,\" it observed. Justice A Badharudeen Kerala High Court POCSO Act has been misused by a section of people to wreak vengeance, settle scores and obtain illegal gain. The Court took note of a larger trend where men entangled in matrimonial disputes may face false allegations of sexual assault. \" Particularly when the wife is at loggerheads with her husband, she not ",
-      "published_at": "Tue, 18 Aug 2026 11:10:08 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/4ce65787-ff5f-46de-b850-db092c71fb86/16.jpg",
+      "raw_id": "ad156cbb85c31cb1c6",
+      "title": "Graham Staines murder: Supreme Court pulls up sentence review board for delay in deciding convict's remission plea",
+      "url": "https://www.barandbench.com/news/litigation/graham-staines-murder-supreme-court-pulls-up-sentence-review-board-for-delay-in-deciding-convicts-remission-plea",
+      "summary": "The Supreme Court on Wednesday pulled up the Odisha State Sentence Review Board for delaying its decision on a remission plea filed by Dara Singh, who is serving a life sentence for the 1999 murder of Australian missionary Graham Staines and his two minor sons [ Rabindra Kumar Pal @ Dara Singh v. State of Odisha ]. A Bench of Justices Manoj Misra and Vijay Bishnoi expressed displeasure over the State’s continued failure to decide the plea despite the matter having been adjourned repeatedly for this purpose. “You take a decision, otherwise we will take our call. We cannot tolerate this ,” the Court remarked. Justices Manoj Misra and Vijay Bishnoi Dara Singh was part of a mob that killed Staines and his two minor sons in 1999. The mob had set alight a vehicle in which the Staines were taking shelter for the night. The Supreme Court judgment convicting Singh recorded that the intention of the mob \"was to teach a lesson to Graham Staines about his religious activities, namely, converting poor tribals to Christianity.\" Singh was initially sentenced to death by the trial court. The Orissa High Court subsequently commuted the sentence to life imprisonment, which was upheld by the Supreme ",
+      "published_at": "Wed, 19 Aug 2026 15:10:56 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-08/2ed7eff6-e4b1-4b73-94c2-8c296f47154c/jail_and_sc.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1281,12 +893,334 @@
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "82d338c398f5b53e2c",
+      "title": "UP/ Mahoba: बारिश में घुटनों तक पानी और कीचड़ से गुजरने को मजबूर लोग",
+      "url": "https://khabarlahariya.org/up-mahoba-people-forced-to-wade-through-knee-deep-water-and-mud-amidst-the-rains/",
+      "summary": "महोबा नगर पालिका के वार्ड नंबर 7 में करीब 400 मीटर सीसी रोड का निर्माण न होने से स्थानीय लोगों को परेशानी का सामना करना पड़ रहा है। लोगों का…",
+      "published_at": "Wed, 19 Aug 2026 12:30:20 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "f880e523cc88ce7c92",
+      "title": "Ganga Expressway, Kanpur-Lucknow Expressway: करोड़ों की सड़क और पुल धंसा, उत्तर प्रदेश में गंगा एक्सप्रेस-वे और इंदौर में सड़क के नीचे पाइपलाइन फटी, निर्माण पर उठे सवाल",
+      "url": "https://khabarlahariya.org/ganga-expressway-kanpur-lucknow-expressway-multi-crore-road-and-bridge-sections-cave-in-pipeline-bursts-beneath-road-in-indore-questions-raised-over-construction-quality/",
+      "summary": "देश में बड़े-बड़े एक्सप्रेस-वे, पुल और स्मार्ट सिटी की सड़कें विकास की तस्वीर के रूप में पेश की जाती हैं। इन परियोजनाओं पर हजारों करोड़ रुपये का सार्वजनिक पैसा खर्च…",
+      "published_at": "Wed, 19 Aug 2026 10:33:37 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "cd2089d20d75033d3b",
+      "title": "बिहार में BPSC TRE-4 और एमपी में Group-3 भर्ती में 32,388 और 1040 पदों पर होगी भर्ती, जाने कैसे करें आवेदन",
+      "url": "https://khabarlahariya.org/recruitment-will-be-conducted-for-32388-posts-under-bpsc-tre-4-in-bihar-and-1040-posts-under-group-3-in-mp-find-out-how-to-apply/",
+      "summary": "बिहार में शिक्षकों के लिए एक बड़ी खबर आई है। बिहार में BPSC TRE-4 का नोटिफिकेशन जारी हो गया है। यानी बिहार…",
+      "published_at": "Wed, 19 Aug 2026 09:26:46 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6befa67ed70598ed1a",
+      "title": "UP,Ayodhya/Ground Report: दातून जो दातों की सफाई और आस्था के साथ गरीब परिवारों का रोजगार भी है, जाने कैसे",
+      "url": "https://khabarlahariya.org/up-ayodhya-ground-report-datun-used-for-cleaning-teeth-and-rooted-in-faith-also-provides-a-livelihood-for-poor-families-find-out-how/",
+      "summary": "परिवार सुबह-सुबह अपनी दातून लेकर घाट और उसके आसपास पहुंच जाते हैं। कोई जमीन पर बोरी बिछाकर दातून के गट्ठर रखता है तो कोई छोटी-सी दुकान लगा लेता है।…",
+      "published_at": "Wed, 19 Aug 2026 08:36:23 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "cff1e543ba442ff0d2",
+      "title": "UP/Banda: 400 से अधिक पौधों का वृक्षारोपण, संरक्षण पर विशेष जोर, IWCI का सराहनीय अभियान",
+      "url": "https://khabarlahariya.org/up-banda-plantation-of-over-400-saplings-special-emphasis-on-conservation-iwcis-commendable-campaign/",
+      "summary": "बांदा, उत्तर प्रदेश | 18 अगस्त 2026 बड़ोखर खुर्द ब्लॉक की ग्राम पंचायत बिसंडी खुर्द के मथना खेड़ा और बेनी के पुरवा में इंस्टीट्यूट फॉर वाटर एंड क्लाइमेट इनिशिएटिव्स (IWCI)…",
+      "published_at": "Wed, 19 Aug 2026 05:00:34 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bf996ed89ed6e3ba66",
+      "title": "Chhatarpur: धारदार हथियार से 25 वर्षीय महिला की हत्या का आरोप",
+      "url": "https://khabarlahariya.org/chhatarpur-accusation-of-murdering-a-25-year-old-woman-with-a-sharp-edged-weapon/",
+      "summary": "मध्य प्रदेश के छतरपुर जिले के सिविल लाइन थाना क्षेत्र में 17 अगस्त की शाम करीब 6 बजे एक 25 वर्षीय महिला की हत्या का मामला सामने आया है। घटना…",
+      "published_at": "Tue, 18 Aug 2026 12:43:21 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3a3c6c827d381b752b",
+      "title": "Competency-based assessment",
+      "url": "https://www.thehindu.com/videos/webinars/competency-based-assessment/article71364248.ece",
+      "summary": "The Hindu hosted a webinar titled, ‘Competency-based assessment’, on August 17, 5:00 p.m.",
+      "published_at": "Wed, 19 Aug 2026 15:34:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/pcsvz4/article71364256.ece/alternates/LANDSCAPE_1200/iStock-2245125987.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 8
         },
         "candidate_categories": [
           "Society, Rights & Justice"
         ]
+      },
+      "related_reports": [
+        {
+          "title": "Competency-based assessment",
+          "url": "https://www.thehindu.com/education/competency-based-assessment/article71336186.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "ec7deb2642ff3851fd",
+      "title": "Spanish Eyes and Queen Caroline show out",
+      "url": "https://www.thehindu.com/sport/races/spanish-eyes-and-queen-caroline-show-out/article71361187.ece",
+      "summary": "",
+      "published_at": "Tue, 18 Aug 2026 19:47:59 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Spanish Eyes and Queen Caroline show out",
+          "url": "https://www.thehindu.com/sport/races/horse-racing/article71360404.ece",
+          "source": {
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "e9046c19d809dfc9a5",
+      "title": "DNJP: नरेंद्र मोदी के ‘दिमागी नक्सल’ भाषण के बाद बना ‘दिमागी नक्सल जनता पार्टी’ का सोशल मीडिया अकाउंट, क्या है राजनीति टिप्पणी",
+      "url": "https://khabarlahariya.org/dnjp-dimagi-naxal-janta-party-social-media-account-created-following-narendra-modis-dimagi-naxal-speech-what-is-the-political-commentary/",
+      "summary": "इस समय प्रधानमंत्री नरेंद्र मोदी द्वारा बोला गया ‘दिमागी नक्सली’ बयान (शब्द) काफी चर्चे में है। इसे लेकर युवाओं और विपक्षी नेताओं के बीच ग़ुस्सा और नाराज़गी भी है। दरअसल…",
+      "published_at": "Tue, 18 Aug 2026 10:30:14 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "5ae29c5bff95363455",
+      "title": "Chinese manjha: चीनी मांझे पर प्रतिबंध के बावजूद क्यों नहीं थम रहे हादसे, गोरखपुर में बाइक सवार किसान की गर्दन कटी, लगे सात टांके",
+      "url": "https://khabarlahariya.org/chinese-manjha-why-do-accidents-involving-chinese-manjha-persist-despite-the-ban-a-farmer-riding-a-motorcycle-in-gorakhpur-suffered-a-neck-laceration-and-required-seven-stitches/",
+      "summary": "चीनी मांझे (Chinese manjha) एक बार फिर लोगों की जान के लिए बड़ा खतरा बनकर सामने आया है। प्रतिबंध के बावजूद इसकी बिक्री और इस्तेमाल पर सरकार पूरी तरह रोक…",
+      "published_at": "Tue, 18 Aug 2026 08:18:52 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     }
   ]

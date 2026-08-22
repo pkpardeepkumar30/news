@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-22T13:07:51.625007+00:00",
+  "prepared_at": "2026-08-22T16:47:48.121160+00:00",
   "input_count": 440,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 125,
-    "established_or_other": 75,
+    "independent_social": 124,
+    "established_or_other": 76,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "bf996ed89ed6e3ba66",
+      "title": "Chhatarpur: धारदार हथियार से 25 वर्षीय महिला की हत्या का आरोप",
+      "url": "https://khabarlahariya.org/chhatarpur-accusation-of-murdering-a-25-year-old-woman-with-a-sharp-edged-weapon/",
+      "summary": "मध्य प्रदेश के छतरपुर जिले के सिविल लाइन थाना क्षेत्र में 17 अगस्त की शाम करीब 6 बजे एक 25 वर्षीय महिला की हत्या का मामला सामने आया है। घटना…",
+      "published_at": "Tue, 18 Aug 2026 12:43:21 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "e9046c19d809dfc9a5",
       "title": "DNJP: नरेंद्र मोदी के ‘दिमागी नक्सल’ भाषण के बाद बना ‘दिमागी नक्सल जनता पार्टी’ का सोशल मीडिया अकाउंट, क्या है राजनीति टिप्पणी",
@@ -244,53 +273,6 @@
       }
     },
     {
-      "raw_id": "3a3c6c827d381b752b",
-      "title": "Competency-based assessment",
-      "url": "https://www.thehindu.com/videos/webinars/competency-based-assessment/article71364248.ece",
-      "summary": "The Hindu hosted a webinar titled, ‘Competency-based assessment’, on August 17, 5:00 p.m.",
-      "published_at": "Wed, 19 Aug 2026 15:34:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/pcsvz4/article71364256.ece/alternates/LANDSCAPE_1200/iStock-2245125987.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Competency-based assessment",
-          "url": "https://www.thehindu.com/education/competency-based-assessment/article71336186.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "e62b3ae21b5d56aba5",
       "title": "Banda News: 12 हजार की आबादी में सफाई व्यवस्था बेहाल! नाली के पास पड़ा कूड़ा, स्कूल के बच्चों पर असर",
       "url": "https://khabarlahariya.org/banda-news-sanitation-system-in-shambles-for-a-population-of-12000-garbage-piled-up-near-drains-school-children-affected/",
@@ -376,6 +358,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "3a3c6c827d381b752b",
+      "title": "Competency-based assessment",
+      "url": "https://www.thehindu.com/videos/webinars/competency-based-assessment/article71364248.ece",
+      "summary": "The Hindu hosted a webinar titled, ‘Competency-based assessment’, on August 17, 5:00 p.m.",
+      "published_at": "Wed, 19 Aug 2026 15:34:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/pcsvz4/article71364256.ece/alternates/LANDSCAPE_1200/iStock-2245125987.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Competency-based assessment",
+          "url": "https://www.thehindu.com/education/competency-based-assessment/article71336186.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "52a2cf5123318472c3",
@@ -929,6 +958,68 @@
       }
     },
     {
+      "raw_id": "47a1182d7eaba8cb60",
+      "title": "Hyderabad road kill: Why has Jana Sena MP’s son not faced arrest?",
+      "url": "https://www.thenewsminute.com/videos/let-me-explain/hyderabad-road-kill-why-has-jana-sena-mps-son-not-faced-arrest",
+      "summary": "21-year-old Sanjush ran over and killed a woman in Hyderabad less than a week ago. While Sanjush took the victim, 26 year old Bharati, to the hospital in his Aston Martin, she died on the spot. The police have registered a case, conducted blood tests and grilled Sanjush. But why no arrest? Anjana Meenakshi explains.",
+      "published_at": "Sat, 22 Aug 2026 15:57:42 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-22/ngpmuf7f/WhatsApp-Image-2026-08-22-at-9.01.44-PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "1883afc619d2322d02",
+      "title": "‘They threatened to kill me’: Prajwal Revanna case witness tells Bengaluru court",
+      "url": "https://www.thenewsminute.com/karnataka/they-threatened-to-kill-me-prajwal-revanna-case-witness-tells-bengaluru-court",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. “They threatened to kill me or put me in jail,” a 43-year-old social worker told a Bengaluru court on August 20 during her cross-examination in the sexual assault case against former Hassan MP Prajwal Revanna. The woman, the fourth prosecution witness in the case, told the court that she received threatening calls after her deposition. She also said that if anything happened to her or her son, Prajwal would be responsible. The trial is taking place a year after Prajwal was convicted and sentenced to life imprisonment in a separate rape case. The case on trial relates to allegations of sexual assault involving a domestic worker and her daughter. On April 28, 2024, an FIR was registered at Holenarasipura Town Police Station against former Janata Dal - Secular [JD(S)] MLA HD Revanna and his son Prajwal. In her complaint, the mother alleged that Prajwal raped her and that she and her daughter had faced years of sexual harassment and abuse by Prajwal and HD Revanna. Prajwal was also accused of forcing her daughter to strip during a video call. The social worker had helped the mother and daughter approach the authorities. In",
+      "published_at": "Sat, 22 Aug 2026 13:34:34 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "7525a77ac5aea1bdd8",
       "title": "Is India Undoing its Foreign Policy? Asks N Ram",
       "url": "https://www.newsclick.in/india-undoing-its-foreign-policy-asks-n-ram",
@@ -987,41 +1078,12 @@
       }
     },
     {
-      "raw_id": "be704988e1cfeb7f9a",
-      "title": "Extended search operations urged for missing fishermen in sea off Andhra Pradesh",
-      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/extended-search-operations-urged-for-missing-fishermen-in-sea-off-andhra-pradesh/article71377116.ece",
-      "summary": "East Coast Mechanised Fishing Boat Owners Association of India president Vasupalli Janakiram argued that standard short-term rescue protocols are inadequate and demanded that the Indian Coast Guard and Indian Navy maintain an extended, wide-area search until the missing fishermen are located",
-      "published_at": "Sat, 22 Aug 2026 18:23:14 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "dca43dc8f61a59201a",
-      "title": "Deputy Commissioner inspects Mother and Child Hospital in Yadgir city, orders infrastructure boost",
-      "url": "https://www.thehindu.com/news/national/karnataka/deputy-commissioner-inspects-mother-and-child-hospital-in-yadgir-city-orders-infrastructure-boost/article71377591.ece",
-      "summary": "​Mr. Pandve interacted with mothers and their attendants to verify whether mandatory facilities were being provided to them at the hospital.",
-      "published_at": "Sat, 22 Aug 2026 18:22:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/21q1zq/article71377691.ece/alternates/LANDSCAPE_1200/YDRKN_22_8_2026_17_54_59_2_IMG_20260821_WA0192.JPG",
+      "raw_id": "064ea0d46fefd3bb56",
+      "title": "Village students shifted to vacant house after attack on CJP activists in Rajasthan",
+      "url": "https://www.thehindu.com/news/national/rajasthan/village-students-shifted-to-vacant-house-after-attack-on-cjp-activists-in-rajasthan/article71378304.ece",
+      "summary": "About 20 students of the government primary school, who turned up for attending classes, were shifted to a vacant house situated nearby; the children were earlier studying in a cattle enclosure in unhygienic conditions; this was just a day after Cockroach Janta Party (CJP) activists were hounded out following their failed attempt to inspect the school",
+      "published_at": "Sat, 22 Aug 2026 22:04:18 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lhqz1n/article71378697.ece/alternates/LANDSCAPE_1200/21th-iqbal-CJP-G6JGE95G9.4.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1041,78 +1103,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Society, Rights & Justice": 5
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "468b48e2ffbd3a6bd4",
-      "title": "Keralam moots prevention component in SOP for missing children, human trafficking",
-      "url": "https://www.thehindu.com/news/national/kerala/keralam-moots-prevention-component-in-sop-for-missing-children-human-trafficking/article71377152.ece",
-      "summary": "Proposals made by Women and Child Development department at a zonal consultation for southern States convened by a committee constituted by the Supreme Court",
-      "published_at": "Sat, 22 Aug 2026 18:16:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6vwxek/article71377648.ece/alternates/LANDSCAPE_1200/IMG_iStock-531610793_4_1_GT9OQ96Q.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "17013895b95c3c87e7",
-      "title": "Keralam Opposition leader Pinarayi Vijayan rejects hawala allegations, claims family being targeted",
-      "url": "https://www.thehindu.com/news/national/kerala/pinarayi-vijayan-rejects-hawala-allegations-claims-family-being-targeted/article71377341.ece",
-      "summary": "Keralam Leader of the Opposition says daughter Veena has cooperated with ED probe.",
-      "published_at": "Sat, 22 Aug 2026 18:15:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/x7csex/article71377397.ece/alternates/LANDSCAPE_1200/Census-2027_-KeGSRGDS4CI.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "fb3af1287767f7dd82",
-      "title": "India to end boarding pass stamping at airports for international travellers from September 1",
-      "url": "https://www.thehindu.com/news/national/india-to-end-boarding-pass-stamping-at-airports-for-international-travellers-from-september-1/article71377582.ece",
-      "summary": "“Instead, passengers travelling abroad will have to produce an e-boarding pass on their smartphones for immigration clearance,” officials said",
-      "published_at": "Sat, 22 Aug 2026 18:13:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ybgrd1/article68312062.ece/alternates/LANDSCAPE_1200/Flights_06.jpg",
+      "raw_id": "316f4ba6758bb53a06",
+      "title": "Naidu pitches Visakhapatnam as hub for BRICS sports network",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/naidu-pitches-visakhapatnam-as-hub-for-brics-sports-network/article71378435.ece",
+      "summary": "Chief Minister invites investment in water sports and sports tourism, citing State’s long coastline and skilled youth",
+      "published_at": "Sat, 22 Aug 2026 22:03:13 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cdmmid/article71378693.ece/alternates/LANDSCAPE_1200/6726_22_8_2026_21_43_52_1_01CM_BRICKS.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1132,20 +1136,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 4
+          "Sports": 4
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "e122b5b392db602958",
-      "title": "Chennai’s remarkable quality is the willingness of people to help others: V.P. Jeyaseelan",
-      "url": "https://www.thehindu.com/news/cities/chennai/chennais-remarkable-quality-is-the-willingness-of-people-to-help-others-vp-jeyaseelan/article71372691.ece",
-      "summary": "Dr. V.P Jeyaseelan I.A.S., Director of Tourism, Tamil Nadu, and Managing Director, TTDC",
-      "published_at": "Sat, 22 Aug 2026 18:09:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/rs4vqz/article71377643.ece/alternates/LANDSCAPE_1200/Director%20-%20Tourism%20TN.jpeg",
+      "raw_id": "19f4be88916eddd239",
+      "title": "Gorkha issue: Union Government promises permanent solution; sets up committee",
+      "url": "https://www.thehindu.com/news/national/west-bengal/amit-shah-meets-hill-leaders-to-discuss-permanent-political-solution-for-darjeeling/article71376943.ece",
+      "summary": "Gorkhas have been seeking a separate State of Gorkhaland comprising parts of Darjeeling hills and adjoining areas; Amit Shah assures the community of a political solution",
+      "published_at": "Sat, 22 Aug 2026 22:02:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/aejvto/article71377124.ece/alternates/LANDSCAPE_1200/HQPuMNSbsAA3w0V.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1169,12 +1173,12 @@
       }
     },
     {
-      "raw_id": "ad0a747372b15699bf",
-      "title": "Amit Shah reviews Siliguri Corridor security, pushes for ‘triangular grid’",
-      "url": "https://www.thehindu.com/news/national/west-bengal/amit-shah-reviews-siliguri-corridor-security-pushes-for-triangular-grid/article71377366.ece",
-      "summary": "‘We have prepared a triangular grid comprising three new military garrisons at Dhubri in Assam, Kishanganj in Bihar and Chopra in West Bengal,’ said Amit Shah",
-      "published_at": "Sat, 22 Aug 2026 18:08:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jr46bf/article71377392.ece/alternates/LANDSCAPE_1200/PTI08_21_2026_000610B.jpg",
+      "raw_id": "6dfd12570c298e2314",
+      "title": "Content creator who reported on Ram Temple donations theft, corruption in Uttar Pradesh alleges harassment",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/content-creator-who-reported-on-ram-temple-donations-theft-corruption-in-uttar-pradesh-alleges-harassment/article71378440.ece",
+      "summary": "Congress MP Pawan Khera, AAP’s Sanjay Singh, and RJD spokesperson Priyanka Bharti have extended support to Abhishek Upadhyay",
+      "published_at": "Sat, 22 Aug 2026 21:44:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/k6vuh/article71378650.ece/alternates/LANDSCAPE_1200/iStock-468512796.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

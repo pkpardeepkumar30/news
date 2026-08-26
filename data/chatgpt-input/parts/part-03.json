@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-26T09:09:36.740615+00:00",
-  "input_count": 478,
+  "prepared_at": "2026-08-26T13:23:40.787936+00:00",
+  "input_count": 433,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 145,
-    "established_or_other": 55,
+    "independent_social": 122,
+    "established_or_other": 78,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "443ca24a0c8cb3f1de",
+      "title": "U.S. military says it struck vessel in the Caribbean, killing four",
+      "url": "https://www.thehindu.com/news/international/several-killed-as-us-military-says-it-struck-vessel-in-the-caribbean-updates/article71391222.ece",
+      "summary": "Human Rights Watch, Amnesty International, and independent U.N. experts have called ‌the strikes unlawful extrajudicial killings",
+      "published_at": "Wed, 26 Aug 2026 10:51:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/yxoz59/article71391226.ece/alternates/LANDSCAPE_1200/Screenshot%202026-08-26%20063650.png",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 2,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
     {
       "raw_id": "8de663acfab704afef",
       "title": "Pakistan, Iran explore reopening Strait of Hormuz, easing West Asia tensions",
@@ -80,47 +115,12 @@
       }
     },
     {
-      "raw_id": "2a1c39a140f7869e11",
-      "title": "U.S. Treasury chief vows to cut every ‘economic lifeline’ of Iran",
-      "url": "https://www.thehindu.com/news/international/us-treasury-chief-vows-to-cut-every-economic-lifeline-of-iran/article71386161.ece",
-      "summary": "Scott Bessent’s address comes almost six months into a war on Tehran that has ground to a stalemate, with stalled peace talks and Iran preventing most traffic through the crucial Strait of Hormuz",
-      "published_at": "Tue, 25 Aug 2026 01:02:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/k24fdh/article71386159.ece/alternates/LANDSCAPE_1200/2291864969.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "b41ff4ba8285555b2d",
-      "title": "Mamdani says he opposes RSS, does not support Mohan Bhagwat’s event at Madison Square Garden",
-      "url": "https://www.thehindu.com/news/national/nyc-mayor-mamdani-opposes-rss-chief-bhagwats-madison-square-event/article71390368.ece",
-      "summary": "The New York City Mayor also clarified that he is unsure if the city has any jurisdiction on cancelling a private event in the U.S.",
-      "published_at": "Wed, 26 Aug 2026 13:26:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/zq5n5/article71391643.ece/alternates/LANDSCAPE_1200/2026-08-12T191541Z_503525274_RC25XMA6LHSX_RTRMADP_3_USA-TRUMP-IMMIGRATION-NEW-YORK.JPG",
+      "raw_id": "4b825682a9f17631b2",
+      "title": "Nepal flash flood: At least 50 pilgrims from Tamil Nadu stranded as landslips disrupt route",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/nepal-flash-flood-pilgrims-from-tamil-nadu-stranded/article71392163.ece",
+      "summary": "As per initial information, the pilgrims were on board three vehicles and occupants of one of the vehicles have taken refuge in a Armed Police Force outpost at Timure, about 150 km north of Kathmandu",
+      "published_at": "Wed, 26 Aug 2026 16:49:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ttnfaa/article71392442.ece/alternates/LANDSCAPE_1200/2026-08-26T095449Z_904621719_RC296NAV4VF1_RTRMADP_3_NEPAL-FLOODS.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -144,39 +144,6 @@
         },
         "candidate_categories": [
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "38652fd0de35a9f7dc",
-      "title": "A league, a legacy and a chance to reshape Kohima football?",
-      "url": "https://eastmojo.com/premium/2026/08/25/a-league-a-legacy-and-a-chance-to-reshape-kohima-football/",
-      "summary": "Kohima: There is a familiar problem in football development: talent is rarely the only thing missing. Players need games. Clubs need structure. Young footballers need meaningful competition against better opposition. Administrators need competitions that can connect those pieces rather than simply produce another champion. That is the ambition behind the Atuo Mezhür Sekhose Super League, organised […] The post A league, a legacy and a chance to reshape Kohima football? appeared first on EastMojo .",
-      "published_at": "Tue, 25 Aug 2026 10:08:51 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
         ]
       }
     },
@@ -214,20 +181,20 @@
       }
     },
     {
-      "raw_id": "21c2cf5ae125aa2dcd",
-      "title": "Manipur: CRPF’s CoBRA unit conducts searches in Senapati",
-      "url": "https://eastmojo.com/manipur/2026/08/26/manipur-crpfs-cobra-unit-conducts-searches-in-senapati/",
-      "summary": "Senapati: The Central Reserve Police Force’s (CRPF) CoBRA unit on Tuesday conducted door-to-door searches at Taphou Liangmai and adjoining areas of Senapati district, a day after renewed tension in the area left a CRPF personal injured. District police personnel accompanied the CoBRA team during the operation, with security personnel carrying out searches of houses and […] The post Manipur: CRPF’s CoBRA unit conducts searches in Senapati appeared first on EastMojo .",
-      "published_at": "Wed, 26 Aug 2026 02:30:00 +0000",
+      "raw_id": "360cdcd89210a9064d",
+      "title": "Asian Games 2026: क्रिकेट का शेड्यूल जारी, इन टीमों को मिली क्वार्टर फाइनल में एंट्री, फाइनल में भारत-पाक भिड़ंत की उम्मीद",
+      "url": "https://theruralpress.in/sports/asian-games-2026-cricket-schedule-announced-india-pakistan-direct-entry-quarter-final/",
+      "summary": "Asian Games 2026 Cricket schedule: एशियन गेम्स 2026 में क्रिकेट को लेकर तस्वीर साफ हो गई है। टूर्नामेंट का शेड्यूल जारी होने के साथ ही पुरुष और महिला वर्ग के मुकाबलों की तारीखें भी सामने आ गई हैं। सबसे खास बात यह है कि पुरुष क्रिकेट में भारत, पाकिस्तान, बांग्लादेश और श्रीलंका को सीधे क्वार्टर […]",
+      "published_at": "Wed, 26 Aug 2026 10:04:16 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -242,76 +209,6 @@
           "Sports": 1
         },
         "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "38c03782254110ef95",
-      "title": "Manipur: Huge cache of arms, ammunition recovered; one held",
-      "url": "https://eastmojo.com/manipur/2026/08/25/manipur-huge-cache-of-arms-ammunition-recovered-one-held/",
-      "summary": "Imphal: A combined team of the Manipur Police, Central Reserve Police Force (CRPF), Rapid Action Force (RAF) and Commando Battalion for Resolute Action (CoBRA) on Monday conducted cordon-and-search operations in Kangpokpi district, police said. During the operation, security forces recovered a large cache of weapons and other items from J Songtun village, according to the […] The post Manipur: Huge cache of arms, ammunition recovered; one held appeared first on EastMojo .",
-      "published_at": "Tue, 25 Aug 2026 16:29:11 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ab5557277233df5ba1",
-      "title": "CMS INDUSLAW acts on Freehand $75 million Series B fundraise",
-      "url": "https://www.barandbench.com/law-firms/dealstreet/cms-induslaw-act-on-freehand-75-million-series-b-fundraise",
-      "summary": "Freehand, a San Francisco-based enterprise AI company, has raised $75 million from a Series B fundraise, co-led by Battery Ventures and NewRoad Capital Partners, with participation from PSP Growth, Nexus Venture Partners and other investors. CMS INDUSLAW advised Freehand on this fundraise. The transaction team consisted of Winnie Shekhar (Partner), Shantanu Singh (Partner) and Ravishankar M (Senior Associate). Freehand Freehand develops autonomous AI agents that manage enterprise supply-chain spend, including contract enforcement, supplier management, invoice processing, payment workflows and spend reconciliation. Its platform is deployed by leading global enterprises including Meta, Unilever, Johnson & Johnson, Pfizer, Dunkin' and Cardinal Health. The fresh capital will support the expansion of its AI platform and enterprise deployments. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
-      "published_at": "Wed, 26 Aug 2026 07:45:10 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-07-11/kxo46xq2/11.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 1,
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
           "Sports"
         ]
       }
@@ -343,6 +240,72 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Sports": 16
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "416406bbd641d61bc0",
+      "title": "Total World Chess Championship Tour muscles its way into global calendar",
+      "url": "https://www.thehindu.com/sport/other-sports/total-world-chess-championship-tour-muscles-its-way-into-global-calendar/article71392732.ece",
+      "summary": "Its pilot will be held at Budapest from November 10 to 21 with many of the biggest names in chess, including World No. 1 Magnus Carlsen, participating",
+      "published_at": "Wed, 26 Aug 2026 17:50:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qtgt8o/article71392739.ece/alternates/LANDSCAPE_1200/54000261416_f83d4cbd15_o.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "c1751eb0dd47f06742",
+      "title": "Who is Anaya Bangar? Cricketer gets approval to play domestic cricket in Australia",
+      "url": "https://www.thehindu.com/sport/cricket/anaya-bangar-gets-cricket-australia-approval-who-is-she/article71392039.ece",
+      "summary": "Anaya Bangar formerly trained and played as a top-order batter and all-rounder in Mumbai’s youth divisions, alongside notable names including Indian Test cricketer Sarfaraz Khan.",
+      "published_at": "Wed, 26 Aug 2026 16:28:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vu5eak/article71392360.ece/alternates/LANDSCAPE_1200/616451741_18087810827277087_1836057549684493617_n.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
         },
         "candidate_categories": [
           "Sports"
@@ -548,35 +511,35 @@
       }
     },
     {
-      "raw_id": "e7b0e4ad385c77719d",
-      "title": "Forcibly de-boarding passenger from bus is a consumer case, not human rights violation: Madras HC",
-      "url": "https://www.barandbench.com/news/litigation/forcibly-de-boarding-passenger-from-bus-is-a-consumer-case-not-human-rights-violation-madras-hc",
-      "summary": "The Madras High Court recently held that a passenger’s complaint that he was forcibly de-boarded from a government bus and denied a ticket amounted to a consumer grievance and cannot ordinarily be treated as a human rights violation [ Chidambara Selvan v. TNHRC ]. A Bench of Justices M Dhandapani and N Dilip Kumar , therefore, set aside a Tamil Nadu State Human Rights Commission (SHRC) order directing the payment of compensation to a passenger who alleged that a bus conductor had behaved rudely with him before forcing him to de-board a bus. Justice M Dhandapani and Justice N Dilip Kumar The Court was hearing a petition filed by S Chidambara Selvan, an employee of the Tamil Nadu State Transport Corporation. He challenged an SHRC order passed in September 2019, by which a sum of ₹30,000 was ordered to be paid to bus passenger on account of his human rights being violated by the crew of the bus. The dispute arose from an incident on January 16, 2016. The complainant, N Ramesh Kumar, alleged that he was travelling on a government bus operating on Route No. 2V when the driver and conductor behaved rudely with him. He claimed that the bus crew forcibly pushed him out of the bus and also ",
-      "published_at": "Tue, 25 Aug 2026 17:13:48 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/01/buss.jpg",
-      "suggested_category": "",
+      "raw_id": "ef33d14392878d064b",
+      "title": "Table Tennis | I just stuck to my process: Payas",
+      "url": "https://www.thehindu.com/sport/other-sports/i-just-stuck-to-my-process-payas/article71384603.ece",
+      "summary": "",
+      "published_at": "Mon, 24 Aug 2026 18:36:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5xkqvc/article71384601.ece/alternates/LANDSCAPE_1200/COMMONWEALTH%20TABLE%20TENNIS%20CHAMPIONSHIP%20NEW%20DELHI%20105.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 9
+          "Sports": 12
         },
         "candidate_categories": [
-          "Society, Rights & Justice"
+          "Sports"
         ]
       }
     },
@@ -614,32 +577,265 @@
       }
     },
     {
-      "raw_id": "d11a28cfe1bb7cd511",
-      "title": "EXCLUSIVE: Supreme Court Justice Sandeep Mehta asks CJI Surya Kant to replace Rajasthan HC Acting Chief Justice for misusing office",
-      "url": "https://www.barandbench.com/news/litigation/exclusive-supreme-court-justice-sandeep-mehta-asks-cji-surya-kant-to-replace-rajasthan-hc-acting-chief-justice-for-misusing-office",
-      "summary": "Supreme Court Justice Sandeep Mehta has asked Chief Justice of India (CJI) Surya Kant to appoint a Chief Justice from another State to head the Rajasthan High Court \"with immediate effect\". In letters dated August 2, August 10 and August 17 accessed by Bar & Bench , Justice Mehta has accused acting Chief Justice Sanjeev Prakash Sharma of manipulating case listings in favour of rich litigants and misusing his administrative powers ahead of his retirement, due later next month. Justice Sharma was appointed as Rajasthan High Court judge in November 2016 and transferred to the Patna High Court in 2022. When he sought repatriation on health grounds, the Collegium headed by then Chief Justice of India DY Chandrachud declined the request in March 2023 and sent him instead to the Punjab and Haryana High Court. In May 2025, a fresh Collegium resolution recommended his return to Rajasthan. He went on to become the acting Chief Justice, a post Justice Mehta's letter says he has now held \"for more than last 10 months.\" Justice Sanjeev Prakash Sharma In his first letter, dated August 2, Justice Mehta wrote that during his visits to Rajasthan, \"numerous Judges of Rajasthan High Court have met me",
-      "published_at": "Wed, 26 Aug 2026 06:00:34 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/f5cce24e-e165-4afe-b3f7-5d290e783cf4/01.jpg",
-      "suggested_category": "",
+      "raw_id": "b2659daae0c4661079",
+      "title": "Data check: India’s gender gap in private education defies caste and class",
+      "url": "https://www.thehindu.com/education/indias-gender-gap-in-private-education-defies-caste-and-class/article71369368.ece",
+      "summary": "Caste and money both shape who gets private schooling and private tuition; the gender gap moves with neither, nor with how far a child has got through school",
+      "published_at": "Sat, 22 Aug 2026 22:10:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/j1olv4/article71369419.ece/alternates/LANDSCAPE_1200/girl%20students%202.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 4,
+          "Society, Rights & Justice": 21
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "7710ce53e25c95f8ce",
+      "title": "TN-ARIVU curriculum to be introduced next academic year: Tamil Nadu School Education Minister",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-arivu-curriculum-to-be-introduced-in-academic-year-2027-28-tn-school-education-minister-rajmohan/article71385516.ece",
+      "summary": "This new curriculum will be based on a development framework called ARIVU Foundation for Classes I-V, ARIVU Discovery for Classes VI-VIII, and ARIVU Edge for Classes IX-XII",
+      "published_at": "Tue, 25 Aug 2026 17:42:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vkb1es/article71386122.ece/alternates/LANDSCAPE_1200/DSC_8934.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "a088fad7b76d743a3b",
+      "title": "Why has Delhi University allowed some colleges to admit students based on Class 12 marks? | Explained",
+      "url": "https://www.thehindu.com/news/cities/Delhi/why-has-delhi-university-allowed-some-colleges-to-admit-students-based-on-class-12-marks-explained/article71387176.ece",
+      "summary": "Out of the approximately 71,600 undergraduate seats on offer across DU’s affiliated colleges, over 13,300 remain vacant after multiple rounds of admissions",
+      "published_at": "Tue, 25 Aug 2026 09:09:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bmrcux/article71387174.ece/alternates/LANDSCAPE_1200/6270_24_7_2025_14_21_49_2_DELHIUNIVERSITYDELHI2025_24_07_2.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "dbc146cee8312683da",
+      "title": "Why are students at Uttar Pradesh’s oldest university protesting?",
+      "url": "https://www.thehindu.com/education/allahabad-university-students-protest-against-fee-hike-and-course-seat-reductions/article71381567.ece",
+      "summary": "Students have been protesting since July 10 against fee hikes, reduction of around 6,000 course seats and poor infrastructure; however, Allahabad University’s income went from a deficit of ₹147.18 crore in 2021-22 to a surplus of ₹132.29 crore in 2024-25",
+      "published_at": "Mon, 24 Aug 2026 00:26:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/736j24/article71381579.ece/alternates/LANDSCAPE_1200/PTI07_22_2026_000253B.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "65d50ae5ee724d2b8b",
+      "title": "Union Ministers to visit universities in Centre’s 'One Day, One University' Gen Z outreach",
+      "url": "https://www.thehindu.com/news/national/union-ministers-to-visit-universities-in-centres-one-day-one-university-gen-z-outreach/article71365736.ece",
+      "summary": "A Union Minister will visit an assigned university to interact with students, listen to their views on different subjects, and inform them about government welfare schemes, particularly those for youth and students",
+      "published_at": "Wed, 19 Aug 2026 21:24:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ob1zay/article71336648.ece/alternates/LANDSCAPE_1200/PTI08_07_2026_000246B.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 14
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "45d25276487fb8a2e2",
+      "title": "Geography and caste shape access to private coaching in India",
+      "url": "https://www.thehindu.com/education/geography-and-caste-shape-access-to-private-coaching-in-india/article71385115.ece",
+      "summary": "In much of India, private tuition is a compensatory choice made by families who cannot count on the school.",
+      "published_at": "Tue, 25 Aug 2026 16:49:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lzy8qy/article71385606.ece/alternates/LANDSCAPE_1200/THSMV_5-2-2016_11-53-41_VOLUNTEERSTEACHING.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "4bf328213352480f08",
+      "title": "Education Minister meets officials to review ‘key priorities’ to strengthen CBSE",
+      "url": "https://www.thehindu.com/news/national/education-minister-meets-officials-to-review-key-priorities-to-strengthen-cbse/article71385240.ece",
+      "summary": "CBSE is facing public scrutiny, particularly surrounding its 2026 Class 12 examination evaluation process, issues concerning technological mismanagement and administrative failures, and a trust deficit among students",
+      "published_at": "Tue, 25 Aug 2026 16:08:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8ulj2x/article71385835.ece/alternates/LANDSCAPE_1200/20260824464L.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "ea578a5a34642309e8",
+      "title": "Teaching students to think in the age of ChatGPT",
+      "url": "https://www.thehindu.com/education/teaching-students-to-think-in-the-age-of-chatgpt/article71363458.ece",
+      "summary": "When AI is changing how students write, research, and create, education must change how it teaches them to think",
+      "published_at": "Mon, 24 Aug 2026 10:56:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fi5em0/article71363803.ece/alternates/LANDSCAPE_1200/Wide%20Angle.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13,
           "Environment, Health & Science": 1
         },
         "candidate_categories": [
@@ -649,32 +845,32 @@
       }
     },
     {
-      "raw_id": "fb5279e400de6a5cb4",
-      "title": "CBSE OSM row: Supreme Court refuses to direct reopening of re-evaluation portal for class XII answer sheets",
-      "url": "https://www.barandbench.com/news/litigation/cbse-osm-row-supreme-court-refuses-to-direct-reopening-of-re-evaluation-portal-for-class-xii-answer-sheets",
-      "summary": "The Supreme Court on Tuesday refused to direct the reopening of the CBSE Class XII examination verification and re-evaluation portal for students with grievances over the evaluation of their answer sheets through the On-Screen Marking (OSM) system. A Bench of Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana observed the portal had already been opened for all candidates for a specified period and that reopening it could trigger lakhs of fresh claims. \"If you don't use the bus, you miss the bus,\" CJI Kant said. Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana The Court was hearing a petition challenging the manner in which CBSE introduced the OSM system for evaluation of answer sheets. The plea pointed out that OSM was implemented for the first time in 2026 and that teachers were not provided formal training before its implementation. The plea alleged that the introduction of digital scanning resulted in several irregularities, including certain pages of answer sheets not being scanned, illegible scans and answers or pages not being evaluated. The petitioner claimed that these errors led to arbitrary evaluation and in some cases, ",
-      "published_at": "Tue, 25 Aug 2026 13:06:17 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-05/75fcec42-bfff-4c11-8d5b-a1a637717cc1/ea499830_cb9b_4b08_9ded_cfe4d23321f3.jpg",
-      "suggested_category": "",
+      "raw_id": "ce5f2e81bd2ebd93a5",
+      "title": "₹1,855 – What parents of each govt. school student spend on private tuition on average",
+      "url": "https://www.thehindu.com/education/1855-what-parents-of-govt-school-students-spend-on-private-coaching/article71377885.ece",
+      "summary": "Though only 27% of students have opted for private coaching, it is their largest cost",
+      "published_at": "Sun, 23 Aug 2026 23:05:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/rtr4wx/article71380748.ece/alternates/LANDSCAPE_1200/image%201.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 3
+          "Society, Rights & Justice": 13
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -682,32 +878,32 @@
       }
     },
     {
-      "raw_id": "1a34ddd4d8952b10a8",
-      "title": "Plea before Supreme Court seeks stay on NALSA decision to discontinue LADCS contracts",
-      "url": "https://www.barandbench.com/news/litigation/plea-before-supreme-court-seeks-stay-on-nalsa-decision-to-discontinue-ladcs-contracts",
-      "summary": "The Supreme Court on Tuesday sought responses from the Central government and the National Legal Services Authority (NALSA) on a plea challenging NALSA’s August 4 communication directing the discontinuation of contract renewals for lawyers engaged under the Legal Aid Defence Counsel System (LADCS). [Association of Legal Aid Defence Counsels v. UOI] A Bench of Justices MM Sundresh and Prasanna B Varale issued notice in the matter. The petition was filed by serving legal aid defence counsel and supporting staff engaged under the scheme in various districts of Assam, Meghalaya and Nagaland. The petitioners have sought a stay on the communication and continuation of the existing LADCS system until the case is decided. Justice M.M. Sundresh and Justice Prasanna B. Varale NALSA introduced the LADCS scheme in 2022 to provide legal assistance and representation in criminal cases along the lines of a public-defender system. The scheme came in the eye of the storm earlier this year after lawyers, particularly in Punjab, went on a strike last month, alleging that the scheme created a parallel State-funded criminal defence system which was affecting the practice of independent advocates. The s",
-      "published_at": "Tue, 25 Aug 2026 17:34:01 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-08/309cebb6-5b18-475c-9afd-fdd65d227982/lawyers_dd.jpg",
-      "suggested_category": "",
+      "raw_id": "004e2b698b4244e89c",
+      "title": "News from the world of Education: August 21, 2026",
+      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-august-21-2026/article71375242.ece",
+      "summary": "Information on admissions, scholarships, competitions for students, events for educators and more",
+      "published_at": "Fri, 21 Aug 2026 23:50:28 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/tz9cz3/article71375234.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 2
+          "Society, Rights & Justice": 13
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -715,232 +911,32 @@
       }
     },
     {
-      "raw_id": "9ed8d5c8150a24ac04",
-      "title": "Flash floods an 'act of God', ensuing damage to rented building can't be basis of cheating case: J&K High Court",
-      "url": "https://www.barandbench.com/news/flash-floods-an-act-of-god-ensuing-damage-to-rented-building-cant-be-basis-of-cheating-case-jk-high-court",
-      "summary": "Damage caused a building due to flash floods cannot be blamed on its landlord, observed the Jammu and Kashmir High Court recently while quashing a cheating case filed against the landlord and trustees of a school by a person who had taken over its management [ Ghulam Rasool Rather & Ors. v. UT of J&K ]. The woman who had taken over the management claimed that the school's trustees had failed to disclose structural deficiencies in the school building when it was handed over to her. She, therefore, accused the school's trustees and the building's landlord of cheating her. Justice Sanjay Dhar , however, observed that the primary basis for such an allegation was the damage caused to the building after flash floods that occurred in the area in 2013. Flash floods are an act of God and cannot, by itself, form the basis of a criminal cheating case, the Court held. \"Merely because water of flash floods entered the school building and it caused damage to the school building does not make out a case of cheating of the petitioners (school trustees, landlord of building). The petitioners/trustees only happen to be the managers of the school and they had transferred the management of the school ",
-      "published_at": "Tue, 25 Aug 2026 15:56:27 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/704be30b-12c0-49cb-b7af-8a4df088918b/BOMBAY%20%20WEB%20PAGE%201600x900.jpg",
-      "suggested_category": "",
+      "raw_id": "43005c72190f8e1dc0",
+      "title": "Student well-being in India declines sharply through senior school years, finds study",
+      "url": "https://www.thehindu.com/education/student-well-being-in-india-declines-sharply-through-senior-school-years-finds-study/article71370262.ece",
+      "summary": "According to the findings of the study, sleep declined steadily and sharply as students moved into higher grades; the grade-level trend showed a deterioration in sleep as academic pressure increased.",
+      "published_at": "Fri, 21 Aug 2026 13:01:15 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p1opyd/article71372286.ece/alternates/LANDSCAPE_1200/iStock-2246500567.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "92dde5095a1ce1052a",
-      "title": "Delhi HC directs State to decide public prosecutors' challenge to biometric attendance system",
-      "url": "https://www.barandbench.com/news/delhi-hc-directs-state-to-decide-public-prosecutors-challenge-to-biometric-attendance-system",
-      "summary": "The Delhi High Court on Monday directed the Delhi government to decide within four weeks the public prosecutors’ plea challenging Aadhaar based biometric attendance system [ Delhi Prosecutors Welfare Association Vs State GNCT of Delhi and Anr ]. Justice Swarana Kanta Sharma passed the directions on August 17 while considering a petition filed by Delhi Prosecutors Welfare Association seeking quashing of Delhi government’s circulars requiring recording of biometric attendance of public prosecutors. Justice Swarana Kanta Sharma The petitioner-association challenged two circulars mandating the implementation of Aadhaar Enabled Biometric Attendance System (AEBAS) for public prosecutors. The association submitted that public prosecutors, being officers of the court, are required to visit different courts, police stations and other locations while discharging their duties. The biometric system is impractical and the presence of prosecutors is reflected in the court records and proceedings, it was contended. Biometric attendance was implemented without taking into account their previous representation to the government challenging the mechanism, it was submitted. The association alternativ",
-      "published_at": "Tue, 25 Aug 2026 11:26:00 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-01/d58d6ab5-11f0-40fe-a53e-91ae0610f1a3/lawyers_01.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "77af904af7d4b9be4f",
-      "title": "NEATEHUB, AISF sign MoU to strengthen agritech entrepreneurship in Assam",
-      "url": "https://eastmojo.com/assam/2026/08/25/neatehub-aisf-sign-mou-to-strengthen-agritech-entrepreneurship-in-assam/",
-      "summary": "NEATEHUB, the agribusiness incubator of Assam Agricultural University, has signed a Memorandum of Understanding (MoU) with the Assam Innovation and Startup Foundation (AISF) to strengthen innovation and entrepreneurship in agriculture, agritech and allied sectors. The MoU was signed at the Assam Startup office in Guwahati on 24 August by Partha Borthakur, CEO (i/c) and COO, […] The post NEATEHUB, AISF sign MoU to strengthen agritech entrepreneurship in Assam appeared first on EastMojo .",
-      "published_at": "Tue, 25 Aug 2026 12:45:32 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "f4db42d588c2a5e497",
-      "title": "Court fee in joint writ petitions payable 'per petitioner' if cause of action is individual: Bombay HC",
-      "url": "https://www.barandbench.com/news/court-fee-in-joint-writ-petitions-payable-per-petitioner-if-cause-of-action-is-individual-bombay-hc",
-      "summary": "The Bombay High Court on Tuesday held that court fees for joint writ petitions filed under Articles 226 or 227 of the Constitution must be paid 'per petitioner' when individual causes of action are espoused [Satyam Surana v. Bombay High Court]. Justice Sandeep V Marne clarified that a single set of court fee suffices only when co-petitioners share a common or identical cause of action. “This facility of convenience made available to the litigants cannot be misused for avoiding payment of court fees,” the Court observed, Justice Sandeep Marne The clarification came after advocate Satyam Surana filed an application seeking a declaration that court fees under the Maharashtra Court Fees Act, 1959 must be levied 'per petition' rather than 'per petitioner'. Surana contended that the statute prescribes a fixed fee for an application or petition presented before the High Court and intentionally omits the phrase 'per petitioner'. He argued that demanding separate fees for each petitioner causes unnecessary financial loss to litigants. The Court applied the test of 'common interest' versus 'individual interest'. “In my view therefore, the key to the problem is to examine whether what is soug",
-      "published_at": "Wed, 26 Aug 2026 10:56:36 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/61e19feb-bd2a-4652-86d0-26e846ef7334/11.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "190c4213d3ab18458a",
-      "title": "Agencies must unite to trace, deport foreign nationals with fake Aadhaar: Bombay High Court",
-      "url": "https://www.barandbench.com/news/agencies-must-unite-to-trace-deport-foreign-nationals-with-fake-aadhaar-bombay-high-court",
-      "summary": "All government agencies must work together to detect and deport foreign nationals using fake or fraudulent Aadhaar cards, the Bombay High Court recently observed [State of Maharashtra v. Unique Identification Authority of India & Ors]. In two separate orders passed on July 27 and August 10, a division bench of Justices AS Gadkari and Kamal Khata emphasised the need for joint action. Justice AS Gadkari and Justice Kamal Khata The bench flagged a concerning pattern where foreign nationals have illegally infiltrated into India and fraudulently obtained basic documents. “Foreign nationals have illegally infiltrated India’s border and have fraudulently obtained basic documents to conceal their true identity and subsequently procured Aadhaar Cards to claim Indian identity. In a few cases, the investigating agencies have reported that such persons have engaged in alleged anti-national activities after securing these fraudulent documents, particularly leveraging the Aadhaar Card to claim false legitimacy as Indian citizens,” the July 27 order noted. The Court highlighted that this pattern reflected a critical gap in inter-agency coordination and document verification procedures. “The avail",
-      "published_at": "Wed, 26 Aug 2026 10:31:11 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-09/87e3e4ee-1ed7-4ed4-8afa-1b95796a1ab4/aadhar_card.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "13fe4c6016135fbf5e",
-      "title": "Calcutta High Court stays arrest warrant against TMC MP Mahua Moitra",
-      "url": "https://www.barandbench.com/news/calcutta-high-court-stays-arrest-warrant-against-tmc-mp-mahua-moitra",
-      "summary": "The Calcutta High Court on Tuesday stayed an arrest warrant issued against Trinamool Congress MP Mahua Moitra by a trial court in a case of alleged hate speech [Mahua Moitra v State of West Bengal and Others] A Bench of Justice Debangsu Basak and Justice Aryak Dutt passed the order on Moitra’s petition seeking quashing of the complaint case filed against her before a Krishnanagar court “Till September 30, 2026 or until further orders, police will not execute warrant of arrest issued as against the petitioner on August 19, 2026,” the Court directed. A Krishnanagar court had issued an arrest warrant against Moitra on August 19 after she failed to appear before it. Today, the High Court said that the issue with regard to the jurisdiction of the court which directed issuance of arrest warrant against her requires consideration. Moitra’s counsel earlier submitted that due to a resolution of the local bar association, she could not participate in the complaint case on June 18. It was also argued that the complaint case was pending before a court lacking jurisdiction to hear it. The complaint case against Moitra reportedly accuses her of making objectionable remarks, including those insul",
-      "published_at": "Tue, 25 Aug 2026 20:17:46 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/07/Mahua-Moitra.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "f7a6f1b320b9b37231",
-      "title": "Ajeet Bharti moves Delhi court for anticipatory bail, says no case made out under SC/ST Act",
-      "url": "https://www.barandbench.com/news/ajeet-bharti-moves-delhi-court-for-anticipatory-bail-says-no-case-made-out-under-scst-act",
-      "summary": "YouTuber and commentator Ajeet Bharti has approached Delhi's Patiala House Court seeking anticipatory bail in the case registered against him under the Scheduled Caste and Scheduled Tribe (Prevention of Atrocities) Act (SC/ST Act). The case was heard today by Additional Sessions Judge (ASJ) Saurabh Pratap Singh Laler . Advocate Jai Anant Dehadrai and Pratyush Prasanna appeared for Bharti and argued that no offence under the SC/ST Act was made out against him on the facts of this case. Dehadrai added that the police was yet to issue a notice under Section 35(3) of Bharatiya Nagarik Suraksha Sanhita (BNSS) to Bharti. Section 35(3) mandates that police officers must issue a written notice of appearance to an accused person in cases where an immediate arrest is not required. After hearing the case briefly, the Court said that if the police issues a notice to Bharti, the same must be placed before the Court for examination. \"In the event such notice is issued by the Investigating Officer, a copy thereof shall be placed by IO on record of this Court, so that the Court may examine the date of issuance of the notice and the prima facie satisfaction regarding the ingredients of the offence ",
-      "published_at": "Tue, 25 Aug 2026 19:42:15 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 13
         },
         "candidate_categories": [
           "Society, Rights & Justice"

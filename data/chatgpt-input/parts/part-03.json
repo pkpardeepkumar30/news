@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-26T02:05:19.475183+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-08-26T05:02:43.044243+00:00",
+  "input_count": 413,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 117,
-    "established_or_other": 83,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 3,
@@ -80,12 +80,47 @@
       }
     },
     {
-      "raw_id": "1146b7f06ba88099fc",
-      "title": "Iran, Oman hold talks on managing Strait of Hormuz",
-      "url": "https://www.thehindu.com/news/international/iran-oman-hold-talks-on-managing-strait-of-hormuz/article71390541.ece",
-      "summary": "A joint statement by the two countries said the proposed framework includes a “joint temporary navigational corridor” and both countries working to clear mines from the waterway",
-      "published_at": "Wed, 26 Aug 2026 04:17:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/l6fssi/article71390542.ece/alternates/LANDSCAPE_1200/2026-08-25T155102Z_545359495_RC2Q5NAY0RDK_RTRMADP_3_IRAN-CRISIS-OMAN.JPG",
+      "raw_id": "41eb3de157ed037850",
+      "title": "At least 15 infants killed in Islamabad hospital fire, local TV reports",
+      "url": "https://www.thehindu.com/news/international/several-killed-infants-fire-pakistan-islamabad-hospital-updates/article71391349.ece",
+      "summary": "According to reports, the fire was triggered by a fault ‌in the air conditioning system.",
+      "published_at": "Wed, 26 Aug 2026 10:04:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/z5sz6c/article71391354.ece/alternates/LANDSCAPE_1200/iStock-1327086620%202.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "6eb92dbe0ccc4e08a7",
+      "title": "9 to 5, then forever: Dolly Parton’s Era will never end",
+      "url": "https://www.thehindu.com/news/international/9-to-5-then-forever-dolly-partons-era-will-never-end/article71391265.ece",
+      "summary": "“At the end of the day, I hope that I will be remembered as a good songwriter. The songs are my legacy,” Dolly Parton, Songteller",
+      "published_at": "Wed, 26 Aug 2026 08:42:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/h4pe3p/article71391278.ece/alternates/LANDSCAPE_1200/Obit_Dolly_Parton_62689.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -179,6 +214,39 @@
       }
     },
     {
+      "raw_id": "21c2cf5ae125aa2dcd",
+      "title": "Manipur: CRPF’s CoBRA unit conducts searches in Senapati",
+      "url": "https://eastmojo.com/manipur/2026/08/26/manipur-crpfs-cobra-unit-conducts-searches-in-senapati/",
+      "summary": "Senapati: The Central Reserve Police Force’s (CRPF) CoBRA unit on Tuesday conducted door-to-door searches at Taphou Liangmai and adjoining areas of Senapati district, a day after renewed tension in the area left a CRPF personal injured. District police personnel accompanied the CoBRA team during the operation, with security personnel carrying out searches of houses and […] The post Manipur: CRPF’s CoBRA unit conducts searches in Senapati appeared first on EastMojo .",
+      "published_at": "Wed, 26 Aug 2026 02:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "38c03782254110ef95",
       "title": "Manipur: Huge cache of arms, ammunition recovered; one held",
       "url": "https://eastmojo.com/manipur/2026/08/25/manipur-huge-cache-of-arms-ammunition-recovered-one-held/",
@@ -200,6 +268,105 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "030a2451352dc9ba37",
+      "title": "Vidhigya Associates acts on Sunshine Pictures ₹282 crore IPO",
+      "url": "https://www.barandbench.com/law-firms/dealstreet/vidhigya-associates-acts-on-sunshine-pictures-282-crore-ipo",
+      "summary": "Sunshine Pictures Limited has launched an Initial Public Offering totaling ₹282.14 crore, which includes a fresh issue of 48,00,034 equity shares and offer for sale of 30,37,157 equity shares. Vidhigya Associates acted as the sole legal counsel for the offering. The transaction team consisted of Rahul Pandey (Managing Partner), Himanshu Pandey (Partner), Yash Desai (Senior Associate) and Darshi Shah (Associate). Sunshine Pictures Limited Sunshine Pictures is an entertainment content production company engaged in originating, developing, producing, marketing and distributing feature films, television serials, web series and other audio visual content. The Company has produced 13 commercial films (including self-produced and co produced films), two web series, three television serials and one short commercial film. The IPO was subscribed 105.81 times. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
+      "published_at": "Wed, 26 Aug 2026 07:44:10 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2025-05-31/2k3vdpyl/16.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "b89ee9a9d8dfb55642",
+      "title": "Oriental Hotels merges into The Indian Hotel Company; Cyril Amarchand Mangaldas advises",
+      "url": "https://www.barandbench.com/law-firms/dealstreet/oriental-hotels-merges-into-the-indian-hotel-company-cyril-amarchand-mangaldas-advises",
+      "summary": "Oriental Hotels Limited, an associate company of The Indian Hotel Company Limited, is set to merge with and into IHCL by way of a Scheme of Arrangement, approved by the boards of both companies on August 24, 2026. Cyril Amarchand Mangaldas advised IHCL on this merger. The transaction team included Pranay Chandran (Partner), Pranav Sharma (Senior Associate), Associates Naman Jain and Ajitesh Arya. Avaantika Kakkar (Partner, Head - Competition). with support from Ananya Mahant (Senior Associate) advised on competition aspects of the transaction. The share exchange ratio is 25 equity shares of IHCL for every 117 equity shares of Oriental Hotels, on an all-stock basis, with completion targeted in the second half of FY2028 and an Appointed Date of April 1, 2027. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
+      "published_at": "Wed, 26 Aug 2026 07:43:59 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-24/2fkpp91v/1000621817.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "fc9e1a3bc219281fa4",
+      "title": "Khaitan & Co, Trilegal act on SPR Auto Technologies ₹1,000 crore QIP",
+      "url": "https://www.barandbench.com/law-firms/dealstreet/khaitan-co-trilegal-act-on-spr-auto-technologies-1000-crore-qip",
+      "summary": "SPR Auto Technologies Limited (formerly Shriram Pistons & Rings) has made a qualified institutional placement of 2,336,448 equity shares aggregating to ₹1,000 crore. Khaitan & Co advised SPR Auto Technologies on this QIP. The transaction team consisted of Gautham Srinivas (Partner), Sathvik Ponnappa (Partner), Pulkit Singh Rahangdale (Principal Associate), Avinash Gautam (Senior Associate), Associates Anushaka Sharma, Shambhavi Gautam and Rishav Khetan. Gautham Srinivas, Sathvik Ponnappa Trilegal advised the lead managers to the Issue, Axis Capital Limited and Emkay Global Financial Services Limited. The transaction was led by Vinay Sirohia (Partner), with support from Shashwat Raj Solanki (Senior Associate), Associates Sheetal Kumar, Olivia De and Apoorva Chander; Trainee Associates Pratik Basistha and Sanchit Gupta. Vinay Sirohia SPR Auto Technologies is one of India’s leading automotive component manufacturers, with a heritage of over five decades as part of the Shriram Group. The Company has grown from a manufacturer of pistons, piston pins, piston rings and engine valves into a diversified, technology-driven engineering group offering a broad portfolio of powertrain and powert",
+      "published_at": "Wed, 26 Aug 2026 07:43:11 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-24/48s4xrpt/c9751e1397c54c1389292fdbfdd73d55.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -377,143 +544,11 @@
       }
     },
     {
-      "raw_id": "697632bdef0f00b46a",
-      "title": "Singapore U-20 coach Azmir impressed with his team’s India outing",
-      "url": "https://www.thehindu.com/sport/football/singapore-u-20-coach-azmir-impressed-with-his-teams-india-outing/article71384391.ece",
-      "summary": "",
-      "published_at": "Mon, 24 Aug 2026 19:11:52 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "8785d4907c9ce3004b",
-      "title": "PGTI unveils Race to DP World India Championship",
-      "url": "https://www.thehindu.com/sport/other-sports/pgti-unveils-race-to-dp-world-india-championship/article71384689.ece",
-      "summary": "",
-      "published_at": "Mon, 24 Aug 2026 18:42:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jiij3p/article71384679.ece/alternates/LANDSCAPE_1200/20260824131L_shULSh5.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ef33d14392878d064b",
-      "title": "Table Tennis | I just stuck to my process: Payas",
-      "url": "https://www.thehindu.com/sport/other-sports/i-just-stuck-to-my-process-payas/article71384603.ece",
-      "summary": "",
-      "published_at": "Mon, 24 Aug 2026 18:36:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5xkqvc/article71384601.ece/alternates/LANDSCAPE_1200/COMMONWEALTH%20TABLE%20TENNIS%20CHAMPIONSHIP%20NEW%20DELHI%20105.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "43f39c812bbf05e7d7",
-      "title": "Yashasvi Jaiswal, Asitha Fernando fined 25% match fee over heated exchange",
-      "url": "https://www.thehindu.com/sport/cricket/yashasvi-jaiswal-asitha-fernando-fined-25-match-fee-over-heated-exchange/article71383954.ece",
-      "summary": "India’s Yashasvi Jaiswal and Sri Lanka pacer Asitha Fernando have been fined 25% of their match fees and handed one demerit point each for breaching the ICC Code of Conduct",
-      "published_at": "Mon, 24 Aug 2026 16:03:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9ccev6/article71383952.ece/alternates/LANDSCAPE_1200/AFP__20260823__C6B44FM__v1__HighRes__CricketSriIndTest.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "d197d986c850a672e4",
-      "title": "Meghalaya: Jaintia students move HC against Shree Cement mining hearing",
-      "url": "https://eastmojo.com/meghalaya/2026/08/24/meghalaya-jaintia-students-n-move-hc-against-shree-cement-mining-hearing/",
-      "summary": "Shillong: The Jaintia Students’ Union (JSU) on Monday filed a Public Interest Litigation (PIL) before the Meghalaya High Court challenging the public hearing held on July 31, 2026, for the proposed Shree Cement Limited mining project at Lum Syrman, Elaka Nongkhlieh. The PIL was filed by a JSU delegation led by Education Secretary Bocheru Mi […] The post Meghalaya: Jaintia students move HC against Shree Cement mining hearing appeared first on EastMojo .",
-      "published_at": "Mon, 24 Aug 2026 14:20:50 +0000",
+      "raw_id": "a68c913bfa8e9ddcd8",
+      "title": "Mizoram: Kolasib, Serchhip districts discuss draft school drug policy",
+      "url": "https://eastmojo.com/mizoram/2026/08/26/mizoram-kolasib-serchhip-districts-discuss-draft-school-drug-policy/",
+      "summary": "Aizawl: Officials in Kolasib and Serchhip districts on Tuesday held consultations on the draft Mizoram State School Drug Policy 2026, with discussions focusing on strengthening drug prevention, counselling and monitoring mechanisms in schools. In Kolasib, a meeting chaired by Deputy Commissioner H. Dolianbuaia was held at the DC Conference Hall to discuss the draft policy aimed at protecting students […] The post Mizoram: Kolasib, Serchhip districts discuss draft school drug policy appeared first on EastMojo .",
+      "published_at": "Wed, 26 Aug 2026 03:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -534,7 +569,7 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 5
+          "Society, Rights & Justice": 6
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -578,7 +613,7 @@
       "raw_id": "d11a28cfe1bb7cd511",
       "title": "EXCLUSIVE: Supreme Court Justice Sandeep Mehta asks CJI Surya Kant to replace Rajasthan HC Acting Chief Justice for misusing office",
       "url": "https://www.barandbench.com/news/litigation/exclusive-supreme-court-justice-sandeep-mehta-asks-cji-surya-kant-to-replace-rajasthan-hc-acting-chief-justice-for-misusing-office",
-      "summary": "Supreme Court Justice Sandeep Mehta has asked Chief Justice of India (CJI) Surya Kant to appoint a Chief Justice from another State to head the Rajasthan High Court \"with immediate effect\". In letters dated August 2, August 10 and August 17 accessed by Bar & Bench , Justice Mehta has accused acting Chief Justice Sanjeev Prakash Sharma of manipulating case listings in favour of rich litigants and misusing his administrative powers ahead of his retirement, due later next month. Justice Sharma was appointed a Rajasthan High Court judge in November 2016 and transferred to the Patna High Court in 2022. When he sought repatriation on health grounds, the Collegium headed by then Chief Justice of India DY Chandrachud declined the request in March 2023 and sent him instead to the Punjab and Haryana High Court. In May 2025, a fresh Collegium resolution recommended his return to Rajasthan. He went on to become the acting Chief Justice, a post Justice Mehta's letter says he has now held \"for more than last 10 months.\" Justice Sanjeev Prakash Sharma In his first letter, dated August 2, Justice Mehta wrote that during his visits to Rajasthan, \"numerous Judges of Rajasthan High Court have met me ",
+      "summary": "Supreme Court Justice Sandeep Mehta has asked Chief Justice of India (CJI) Surya Kant to appoint a Chief Justice from another State to head the Rajasthan High Court \"with immediate effect\". In letters dated August 2, August 10 and August 17 accessed by Bar & Bench , Justice Mehta has accused acting Chief Justice Sanjeev Prakash Sharma of manipulating case listings in favour of rich litigants and misusing his administrative powers ahead of his retirement, due later next month. Justice Sharma was appointed as Rajasthan High Court judge in November 2016 and transferred to the Patna High Court in 2022. When he sought repatriation on health grounds, the Collegium headed by then Chief Justice of India DY Chandrachud declined the request in March 2023 and sent him instead to the Punjab and Haryana High Court. In May 2025, a fresh Collegium resolution recommended his return to Rajasthan. He went on to become the acting Chief Justice, a post Justice Mehta's letter says he has now held \"for more than last 10 months.\" Justice Sanjeev Prakash Sharma In his first letter, dated August 2, Justice Mehta wrote that during his visits to Rajasthan, \"numerous Judges of Rajasthan High Court have met me",
       "published_at": "Wed, 26 Aug 2026 06:00:34 +0530",
       "image_url": "https://cf-images.assettype.com/barandbench/2022-07/f5cce24e-e165-4afe-b3f7-5d290e783cf4/01.jpg",
       "suggested_category": "",
@@ -643,10 +678,10 @@
       }
     },
     {
-      "raw_id": "5bab7b59e0537daa1f",
-      "title": "Delhi court rejects Delhi Race Club's plea against government order to vacate its Lutyens' Delhi premises",
-      "url": "https://www.barandbench.com/news/delhi-court-rejects-delhi-race-clubs-plea-against-government-order-to-vacate-its-lutyens-delhi-premises",
-      "summary": "A Delhi court on Tuesday refused to stay the government order of August 11 directing Delhi Race Club to vacate its Lutyens Delhi Premises in 15 days. Delhi Race Club is a century-old horse-racing institution located on Central Golf Link Road opposite the Prime Minister's House. Principal District & Sessions Judge (PDSJ) Pitamber Dutt of the Patiala House Courts dismissed the application filed by the Club seeking interim stay of the eviction order passed against it by the Estate Officer under the Public Premises (Eviction of Unauthorised Occupants) Act. “In view of the above facts and circumstances, I am of the considered view that appellant has failed to make a prima facie case for stay of the impugned order dated 11.08.2026 passed by the Ld. Estate Officer in case No.ESO/11/3(1)/2026 titled as Union of India Vs. Delhi Race Club. Accordingly, the application filed by the applicant/appellant for interim stay is dismissed,” the Court said. Appearing for the Club, Senior Advocate Suhail Dutt had argued that the Estate Officer's order dated August 11 violated principles of natural justice, as the Club had not been supplied a copy of the plaint despite repeated requests. He also contend",
+      "raw_id": "0f6b8e817b34aad7b9",
+      "title": "Patiala House court rejects Delhi Race Club's plea against order to vacate its Lutyens' Delhi premises",
+      "url": "https://www.barandbench.com/news/patiala-house-court-rejects-delhi-race-clubs-plea-against-order-to-vacate-its-lutyens-delhi-premises",
+      "summary": "A Delhi court on Tuesday refused to stay the government order of August 11 directing Delhi Race Club to vacate its Lutyens Delhi Premises in 15 days. Delhi Race Club is a century-old horse-racing institution located on Central Golf Link Road opposite the Prime Minister's official residence. Principal District & Sessions Judge (PDSJ) Pitamber Dutt of the Patiala House Courts dismissed the application filed by the Club seeking interim stay of the eviction order passed against it by the Estate Officer under the Public Premises (Eviction of Unauthorised Occupants) Act. “In view of the above facts and circumstances, I am of the considered view that appellant has failed to make a prima facie case for stay of the impugned order dated 11.08.2026 passed by the Ld. Estate Officer in case No.ESO/11/3(1)/2026 titled as Union of India Vs. Delhi Race Club. Accordingly, the application filed by the applicant/appellant for interim stay is dismissed,” the Court said. Appearing for the club, Senior Advocate Suhail Dutt had argued that the Estate Officer's order dated August 11 violated principles of natural justice, as the Club was not supplied a copy of the plaint despite repeated requests. He also",
       "published_at": "Wed, 26 Aug 2026 05:15:57 +0530",
       "image_url": "https://cf-images.assettype.com/barandbench/2023-09/dbf5a03a-ff15-4e84-b50b-2e61779e940f/41.jpg",
       "suggested_category": "",
@@ -702,6 +737,39 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Society, Rights & Justice": 21
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "7710ce53e25c95f8ce",
+      "title": "TN-ARIVU curriculum to be introduced next academic year: Tamil Nadu School Education Minister",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-arivu-curriculum-to-be-introduced-in-academic-year-2027-28-tn-school-education-minister-rajmohan/article71385516.ece",
+      "summary": "This new curriculum will be based on a development framework called ARIVU Foundation for Classes I-V, ARIVU Discovery for Classes VI-VIII, and ARIVU Edge for Classes IX-XII",
+      "published_at": "Tue, 25 Aug 2026 17:42:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vkb1es/article71386122.ece/alternates/LANDSCAPE_1200/DSC_8934.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -876,413 +944,349 @@
       }
     },
     {
-      "raw_id": "ea578a5a34642309e8",
-      "title": "Teaching students to think in the age of ChatGPT",
-      "url": "https://www.thehindu.com/education/teaching-students-to-think-in-the-age-of-chatgpt/article71363458.ece",
-      "summary": "When AI is changing how students write, research, and create, education must change how it teaches them to think",
-      "published_at": "Mon, 24 Aug 2026 10:56:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fi5em0/article71363803.ece/alternates/LANDSCAPE_1200/Wide%20Angle.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "cb978d818f7a974961",
+      "title": "Manipur CM lauds Naga, Kuki communities for NH-2 free movement",
+      "url": "https://eastmojo.com/manipur/2026/08/26/manipur-cm-lauds-naga-kuki-communities-for-nh-2-free-movement/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Tuesday thanked the Naga and Kuki communities for facilitating the free movement of public road transport along National Highway-2 (NH-2). Addressing the 45th Hawkers’ Day celebration organised by the Manipur Hawkers’ Association (Newspaper Distributors) at Haying Khongbal in Imphal, the Chief Minister said the cooperation and understanding […] The post Manipur CM lauds Naga, Kuki communities for NH-2 free movement appeared first on EastMojo .",
+      "published_at": "Wed, 26 Aug 2026 04:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "666e6e6dcfd6ccf558",
-      "title": "Rasmalai Pe Mahabharat! 😂",
-      "url": "https://www.youtube.com/shorts/jstTbQBNeoA",
-      "summary": "",
-      "published_at": "2026-08-25T08:23:03+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8b80dad7a09a746b85",
-      "title": "Convince hogye aap?🤣",
-      "url": "https://www.youtube.com/shorts/Br9y_oqclDM",
-      "summary": "",
-      "published_at": "2026-08-24T08:19:27+00:00",
+      "raw_id": "de7b6583aa708fc829",
+      "title": "Meghalaya detects 736 illegal foreign nationals since 2021, 262 deported",
+      "url": "https://eastmojo.com/meghalaya/2026/08/26/meghalaya-detects-736-illegal-foreign-nationals-since-2021-262-deported/",
+      "summary": "Shillong: Meghalaya has detected 736 foreign nationals staying illegally in the State since 2021, with 262 of them deported after serving their sentences and securing the required travel permits, Chief Minister Conrad K Sangma told the Assembly on Tuesday. Sangma was replying to a short-duration discussion on the 10-point charter of the Voice of the […] The post Meghalaya detects 736 illegal foreign nationals since 2021, 262 deported appeared first on EastMojo .",
+      "published_at": "Wed, 26 Aug 2026 04:00:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "5420edd4d61b789c91",
-      "title": "Mithai me Khattas?👀",
-      "url": "https://www.youtube.com/shorts/1QucKICQSuk",
-      "summary": "",
-      "published_at": "2026-08-24T08:17:34+00:00",
+      "raw_id": "2292fb7587e63cca0c",
+      "title": "Nagaland: Three Congress councillors join NPF party",
+      "url": "https://eastmojo.com/nagaland/2026/08/26/nagaland-three-congress-councillors-join-npf-party/",
+      "summary": "Kohima: In a significant political development, three elected councillors of the Indian National Congress from the Chumoukedima and Tuli town councils have joined the Naga People’s Front (NPF). The councillors formally joined the regional party at an induction programme held at the NPF Central Office in Kohima on Tuesday in the presence of NPF Advisor […] The post Nagaland: Three Congress councillors join NPF party appeared first on EastMojo .",
+      "published_at": "Wed, 26 Aug 2026 03:00:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "e92706622bfb845681",
-      "title": "Ramdev Baba Vs. Kangana Ranaut 🗣️💯",
-      "url": "https://www.youtube.com/shorts/Z0BYCKgYrkk",
-      "summary": "",
-      "published_at": "2026-08-23T12:00:28+00:00",
+      "raw_id": "095a4c74139232c7ff",
+      "title": "Meghalaya: Two held after mob assaults three suspected thieves",
+      "url": "https://eastmojo.com/meghalaya/2026/08/25/meghalaya-two-held-after-mob-assaults-three-suspected-thieves/",
+      "summary": "Shillong: Two persons have been arrested after a mob allegedly assaulted three suspected thieves at 11 Mer, Mylliem, on August 23, East Khasi Hills police said. According to a press release issued by the Superintendent of Police, East Khasi Hills, information was received at Mawngap Police Station at around 5.40 am that suspected thieves had […] The post Meghalaya: Two held after mob assaults three suspected thieves appeared first on EastMojo .",
+      "published_at": "Tue, 25 Aug 2026 16:32:14 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "ae0b425e6de6dfa2c6",
-      "title": "We got Modi Chalisa before GTA 6 😭🤣",
-      "url": "https://www.youtube.com/shorts/Krtg_9N3EMk",
-      "summary": "",
-      "published_at": "2026-08-23T08:50:06+00:00",
+      "raw_id": "7cf8ae98716b1ede0f",
+      "title": "Arunachal: Human trafficking network busted; 19 children rescued",
+      "url": "https://eastmojo.com/arunachal-pradesh/2026/08/25/arunachal-human-trafficking-network-busted-19-children-rescued/",
+      "summary": "Dibrugarh: Namsai Police have rescued 19 children from different parts of Arunachal Pradesh and arrested three people for their alleged involvement in facilitating child trafficking, officials said. The arrested persons have been identified as Gumnya Kochung, Marte Ete and Neha Gerory. According to police, the children were rescued from Mechuka, Aalo, Pasighat, Naharlagun, Itanagar and […] The post Arunachal: Human trafficking network busted; 19 children rescued appeared first on EastMojo .",
+      "published_at": "Tue, 25 Aug 2026 09:07:26 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "a307fe3352d27f26bb",
-      "title": "Bhangra me bhi scam? 🤣",
-      "url": "https://www.youtube.com/shorts/1hUfXp7Z_Ss",
-      "summary": "",
-      "published_at": "2026-08-21T08:17:23+00:00",
+      "raw_id": "b578c53df1a8c3eaf1",
+      "title": "Aaj Ka Rashifal: मिथुन और सिंह राशि वालों की आज खुलेगी किस्मत, इन्हें रहना होगा सावधान, पढ़ें आज का राशिफल",
+      "url": "https://theruralpress.in/religion-spirituality/astro-daily-horoscope-aaj-ka-rashifal-26-august-2026-today-tuesday-aries-to-pisces-zodiac-prediction-zodiac-signs/",
+      "summary": "Aaj Ka Rashifal: 26 अगस्त, बुधवार का दिन धार्मिक और ज्योतिषीय दृष्टि से खास माना जा रहा है। बुधवार का संबंध भगवान गणेश और बुध ग्रह से माना जाता है। मान्यता है कि इस दिन गणेश जी की पूजा करने से बुद्धि, सुख-समृद्धि और कार्यों में सफलता का आशीर्वाद मिलता है। धार्मिक मान्यताओं के अनुसार […]",
+      "published_at": "Wed, 26 Aug 2026 01:00:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "e07a9730612874cb15",
-      "title": "Doctor Nahi, Jugaad Hai! 🤣",
-      "url": "https://www.youtube.com/shorts/YumVQI2CEP8",
-      "summary": "",
-      "published_at": "2026-08-20T14:30:31+00:00",
+      "raw_id": "34a9731163b409221c",
+      "title": "Chhattisgarh Teacher Transfer List: छत्तीसगढ़ में शिक्षा विभाग में बंपर तबादले, ट्रांसफर सूची में 126 व्याख्याता, सहायक शिक्षकों के नाम, देखें लिस्ट",
+      "url": "https://theruralpress.in/trp-news/chhattisgarh-education-department-teachers-transfer-list-out/",
+      "summary": "Chhattisgarh Teacher Transfer List: टीआरपी न्यूज रायपुर। शिक्षा विभाग में मंगलवार देर शाम बंपर तबादला किया गया है। कई सालों से पदस्थ शिक्षकों को इधर से उधर किया गया है। 126 सहायक शिक्षकों और व्याख्याताओं का तबादला स्कूल शिक्षा विभाग ने किया है। लगभग सभी तबादले आपसी सामंजस्य यानी कि म्यूचुअल अंडरस्टैंडिंग के हिसाब से […]",
+      "published_at": "Tue, 25 Aug 2026 17:01:19 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "bf8b987b6e863ce556",
-      "title": "The Wedding Plot Twist! 💀",
-      "url": "https://www.youtube.com/shorts/oqY-gaBf-ys",
-      "summary": "",
-      "published_at": "2026-08-20T11:30:21+00:00",
+      "raw_id": "21defacd035e3ea8ff",
+      "title": "दिल्ली में स्वाइन फ्लू का कहर: 3000 में से 2308 केस H1N1 के, CM रेखा गुप्ता ने बुलाई इमरजेंसी मीटिंग, जानिए क्यों होता है और क्या हैं बचने के उपाय",
+      "url": "https://theruralpress.in/big-breaking/delhi-swine-flu-2308-cases-h1n1/",
+      "summary": "Swine Flu Outbreak in Delhi: राजधानी दिल्ली में स्वाइन फ्लू ने टेंशन बढ़ा दी है। स्वास्थ्य मंत्री पंकज कुमार सिंह ने बताया है कि इस साल अब तक इंफ्लुएंजा के करीब 3000 मामले सामने आए हैं, जिनमें 2308 मामले H1N1 यानी स्वाइन फ्लू के हैं। हालात को देखते हुए मुख्यमंत्री रेखा गुप्ता ने इमरजेंसी समीक्षा […]",
+      "published_at": "Tue, 25 Aug 2026 16:45:52 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "2b18bd52d42b2f139f",
-      "title": "Now We Have “Dimagi Naxals” 💀",
-      "url": "https://www.youtube.com/shorts/wAGfF5hURj8",
-      "summary": "",
-      "published_at": "2026-08-20T10:33:24+00:00",
+      "raw_id": "183c1f8add1a9619b5",
+      "title": "Bemetara: हेमाबंद में पशुओं को बंधक बनाकर क्रूरता, आरोपी पिता-पुत्र गिरफ्तार, पंचायत सचिव सस्पेंड, शासकीय जमीन से अतिक्रमण हटाया",
+      "url": "https://theruralpress.in/crime/bemetara-hemaband-animal-cruelty-126-cattle-rescued-father-son-arrested-secretary-suspended/",
+      "summary": "Case of illegal confinement of stray animals: बेमेतरा जिले के दाढ़ी तहसील के ग्राम हेमाबंद में पशु क्रूरता के सनसनीखेज मामले में जिला प्रशासन ने सख्त कार्रवाई की है। आवारा और घुमंतू पशुओं को अनाधिकृत रूप से बंधक बनाकर रखने की शिकायत पर पिता-पुत्र को गिरफ्तार करते हुए पंचायत सचिव को सस्पेंड और 126 पशुओं […]",
+      "published_at": "Tue, 25 Aug 2026 15:58:55 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "37d94daf506cef87a2",
-      "title": "Sohail, It’s Done Bro 💀",
-      "url": "https://www.youtube.com/shorts/AHUMUU7bXGM",
-      "summary": "",
-      "published_at": "2026-08-20T09:00:13+00:00",
+      "raw_id": "1974152de3978c2789",
+      "title": "NMDC Nagarnar स्टील प्लांट के लिए आ रही 31.5 टन आयरन गिट्टी का गबन, पुलिस ने 2 आरोपियों को दबोचा",
+      "url": "https://theruralpress.in/chhattisgarh/nmdc-nagarar-steel-plant-iron-ore-gitti-theft-bastar-police-action/",
+      "summary": "NMDC Nagarnar Steel Plant theft: जगदलपुर। छत्तीसगढ़ के बस्तर जिले में स्थित NMDC के नगरनार स्टील प्लांट से जुड़ा एक हैरान करने वाला मामला सामने आया है। प्लांट के लिए भेजी गई करोड़ों की आयरन गिट्टी (Iron Ore Gitti) को तय पते पर पहुंचाने की बजाय बीच रास्ते में ही गायब करने वाले दो शातिर […]",
+      "published_at": "Tue, 25 Aug 2026 15:47:47 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "0faaa3f0bfb86659c7",
-      "title": "System Declared Him Dead! 💀",
-      "url": "https://www.youtube.com/shorts/Ukyf1rypRUM",
-      "summary": "",
-      "published_at": "2026-08-20T08:50:43+00:00",
+      "raw_id": "c9ccd13ba77811d67f",
+      "title": "Baloda Bazar: फर्जी ट्रांसफर लेटर कांड में फंसे BJP के जिला महामंत्री और उपाध्यक्ष 6 साल के लिए निष्कासित, RMA समेत 6 हो चुके हैं गिरफ्तार",
+      "url": "https://theruralpress.in/politics/balodabazar-fake-transfer-order-bjp-krishna-awasthi-puniram-patel-expelled-6-arrested/",
+      "summary": "Fake transfer letter scandal: फर्जी स्थानांतरण आदेश से RMA को मनचाहा ट्रांसफर दिलाने के मामले में भाजपा ने बड़ी कार्रवाई की है। प्रदेश कार्यालय ने बलौदाबाजार जिला महामंत्री कृष्णा अवस्थी और जिला उपाध्यक्ष पुनीराम पटेल को 6 साल के लिए पार्टी से निष्कासित कर दिया है। इससे पहले पलारी पुलिस ने इस कांड में 6 […]",
+      "published_at": "Tue, 25 Aug 2026 14:51:07 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c267d88807ad1c4349",
-      "title": "Media Went To Investigate Fish! 💀",
-      "url": "https://www.youtube.com/shorts/u-MOz0bX2gg",
-      "summary": "",
-      "published_at": "2026-08-19T09:30:12+00:00",
+      "raw_id": "c1ecc39e29a10f9d30",
+      "title": "Chandrakhuri Ram Statue Controversy: राजनीति में फंसे भगवान राम, ग्वालियर से आई प्रतिमा 6 माह से धूल फांक रही",
+      "url": "https://theruralpress.in/chhattisgarh/chandrakhuri-raipur-ram-statue-controversy-trust-disagreement-political-agenda/",
+      "summary": "टीआरपी न्यूज. रायपुरChandrakhuri Ram Statue Controversy: चंद्रखुरी में पुरानी राम मूर्ति को हटाकर नई मूर्ति लगाने की योजना सिर्फ पॉलिटिकल एजेंडा मात्र दिखाई दे रही है। ग्वालियर से भगवान श्री राम की मूर्ति फरवरी 2026 से आकर रायपुर में रखी गई है, लेकिन अब तक इसे लगाने का प्रोसेस आगे नहीं बढ़ पाया है। इसके […]",
+      "published_at": "Tue, 25 Aug 2026 13:37:59 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "7592777c7f54ccedb9",
-      "title": "Fish is Actually Veg? 😭",
-      "url": "https://www.youtube.com/shorts/NtqVf9vKsVo",
-      "summary": "",
-      "published_at": "2026-08-19T08:32:23+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 28,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

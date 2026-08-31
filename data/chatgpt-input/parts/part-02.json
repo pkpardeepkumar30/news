@@ -1,28 +1,96 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-08-31T05:46:07.402066+00:00",
-  "input_count": 436,
+  "prepared_at": "2026-08-31T16:16:41.595713+00:00",
+  "input_count": 450,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 126,
-    "established_or_other": 74,
+    "independent_social": 136,
+    "established_or_other": 64,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "e76e8c8b758eb9aa03",
-      "title": "Nepal flash floods LIVE: At least 933 workers trapped in hydropower projects",
-      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-aftermath-live-udpates-rescue-work-august-31-2026/article71409646.ece",
-      "summary": "Prime Minister Balendra Shah has said the country is facing an “unimaginable and heartbreaking” disaster",
-      "published_at": "Mon, 31 Aug 2026 10:45:55 +0530",
-      "image_url": "",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "acd093422d19a70978",
+      "title": "‘Why don’t you stay home?’: Muslim women in Kerala push back against Kanthapuram’s remarks",
+      "url": "https://www.thenewsminute.com/kerala/why-dont-you-stay-home-muslim-women-in-kerala-push-back-against-kanthapurams-remarks",
+      "summary": "Follow TNM's WhatsApp channel for news updates and story links. Muslim women in Kerala are pushing back against the Grand Mufti of India, Kanthapuram AP Aboobacker Musliyar, after his remarks advocating restrictions on women’s participation in public life sparked widespread criticism on social media. Through videos and posts, women have challenged his views stating that such restrictions have no place in Kerala’s public life. The controversy began after the Kanthapuram-led faction of Samastha Kerala Jamiyyathul Ulama recently issued a circular directing madrasas and local committees to bar women from public stages and prevent them from mixing with unrelated men at religious events. Defending the circular at a conference in Kochi, Kanthapuram said bringing women onto public platforms would lead to “great destruction” and argued that women should remain confined to their homes. His remarks triggered a wave of criticism, particularly from Muslim women and content creators on social media. Content creator Raseena Noushad criticised the idea that women’s role should be restricted to the home. “They believe women should stay at home, deliver babies, and cook,” she said. Turning the argum",
+      "published_at": "Mon, 31 Aug 2026 12:35:18 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/kanthapuram_1.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "95cf1b5256952fc0c9",
+      "title": "Keralam must focus on high-tech industries to reverse migration, says Vice-President",
+      "url": "https://www.thehindu.com/news/national/kerala/keralam-has-to-focus-on-high-tech-industries-to-reverse-migration-says-vice-president/article71411030.ece",
+      "summary": "“In Kerala, land is a scarce commodity. But you have to develop the State with more opportunities. Traditional industry may not be possible because of the land cost”",
+      "published_at": "Mon, 31 Aug 2026 21:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/6mbuu1/article71411532.ece/alternates/LANDSCAPE_1200/PTI08_31_2026_000367B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -37,12 +105,78 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
         },
         "candidate_categories": [
           "Economy & Employment",
-          "International & Geopolitics"
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "75347594fc51a99a2c",
+      "title": "Pinarayi 'intimidating’ former party workers, accuses Keralam Minister C.P. John",
+      "url": "https://www.thehindu.com/news/national/kerala/pinarayi-intimidating-former-party-workers-accuses-keralam-minister-cp-john/article71411381.ece",
+      "summary": "He says demands for Pinarayi Vijayan to vacate the position of the Leader of the Opposition and M.V. Govindan to vacate the position of CPI(M) State secretary has been raised from the branch level to the State level",
+      "published_at": "Mon, 31 Aug 2026 20:51:41 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -82,11 +216,48 @@
       }
     },
     {
+      "raw_id": "29cc27b161c9b004b4",
+      "title": "U.N. committee says countries must consider reparations for slave trade",
+      "url": "https://www.thehindu.com/news/international/un-committee-says-countries-must-consider-reparations-for-slave-trade/article71410123.ece",
+      "summary": "At ​least 12.5 million Africans ‌were taken and sold between the 15th and 19th centuries in what the Committee on the Elimination of Racial Discrimination called the largest forced displacement in history",
+      "published_at": "Mon, 31 Aug 2026 14:24:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yrolm/article71410133.ece/alternates/LANDSCAPE_1200/2015-03-25T201452Z_1629774190_GF10000038315_RTRMADP_3_USA-UN-SLAVERY.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "87bc79c64bfee8ab33",
       "title": "G20 countries should consider more trade barriers on China to cut imbalances, Bessent says",
       "url": "https://www.thehindu.com/news/international/g20-countries-should-consider-more-trade-barriers-on-china-to-cut-imbalances-bessent-says/article71409702.ece",
       "summary": "Mr. Bessent said in an interview ahead of a G20 finance leaders meeting that the current flood of exports from China was unsustainable, even though the U.S. direct trade position with China was “rapidly improving”",
-      "published_at": "Mon, 31 Aug 2026 11:04:37 +0530",
+      "published_at": "Mon, 31 Aug 2026 11:18:23 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/njdf0/article71409767.ece/alternates/LANDSCAPE_1200/Bessent_Interview_95761.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -117,175 +288,35 @@
       }
     },
     {
-      "raw_id": "d32050eb8486f8fe82",
-      "title": "Nepal flash floods updates: Death toll reaches 788; rescuers drill through debris towards trapped tunnel workers",
-      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-live-updates-death-toll-rescue-operation-missing-person-tibet-border-glacier-collapse-news/article71406948.ece",
-      "summary": "Nepal begins mass burials of unidentified flood victims as families seek missing",
-      "published_at": "Mon, 31 Aug 2026 06:24:18 +0530",
-      "image_url": "",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
-      "image_url": "",
+      "raw_id": "56c3af2ac9852d852c",
+      "title": "Genetic blueprint of four Asian hornbills offers new tool for hornbill research",
+      "url": "https://india.mongabay.com/2026/08/genetic-blueprint-of-four-asian-hornbills-offer-new-tool-for-hornbill-research/",
+      "summary": "Scientists have generated a reference genome, a genetic structure model, for four threatened Asian hornbill species. The high-quality genome assemblies were generated for the great hornbill, rufous-necked hornbill, Malabar-pied hornbill and wreathed hornbill by researchers from the Nature Conservation Foundation, Mysore and CSIR-Centre for Cellular and Molecular Biology (CCMB), Hyderabad. “My research interest is [in] […]",
+      "published_at": "31 Aug 2026 11:40:36 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/31102922/Great_Hornbill_Flock_Valparai_Tamil_Nadu_Western_Ghats_DSCN3369-scaled-e1788152726315-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Environment, Health & Science": 7
         },
         "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "622a689b8d757da836",
-      "title": "Taking reforms to the road: From Ranchi protest to a Statewide yatra",
-      "url": "https://www.thehindu.com/news/national/jharkhand/taking-reforms-to-the-road-from-ranchi-protest-to-a-statewide-yatra/article71407668.ece",
-      "summary": "The students’ protest in Ranchi over alleged irregularities in Jharkhand’s recruitment exams for government jobs has remained in the news for most of August. Amit Bhelari examines the fallout of the government’s decision to cancel exams, which has left both aspiring candidates and already-appointed government employees caught in the dispute. It has pushed student leader Devendra Nath Mahto from a prolonged protest in Ranchi to a Statewide yatra demanding transparency, accountability and reforms in the government recruitment system",
-      "published_at": "Mon, 31 Aug 2026 01:15:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/f2clgq/article71407676.ece/alternates/LANDSCAPE_1200/Devendra%20Nath%20Mahto%20%201.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "2fee104d89482b1bdd",
-      "title": "Farmers’ associations seek lifting of toddy ban in Tamil Nadu",
-      "url": "https://www.thehindu.com/news/cities/chennai/farmers-associations-seek-lifting-of-toddy-ban-in-tamil-nadu/article71408355.ece",
-      "summary": "C. Nallasamy, coordinator, Tamil Nadu Toddy Movement, says the lifting of the band will create jobs and help many families",
-      "published_at": "Mon, 31 Aug 2026 00:39:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uq1lmo/article71408811.ece/alternates/LANDSCAPE_1200/4861_22-11-2018_21-17-34_1_PALM1.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "47e87507b5c8ce38f4",
-      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
-      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
-      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -323,45 +354,47 @@
       }
     },
     {
-      "raw_id": "a4f0b9369c7bcbb131",
-      "title": "India started measuring climate readiness of cities, then stalled [Commentary]",
-      "url": "https://india.mongabay.com/2026/08/india-started-measuring-climate-readiness-of-cities-then-stalled-commentary/",
-      "summary": "Cities are the source of more than 70% of the world’s greenhouse gas (GHG) emissions. They are also home to more than half of humanity. As a focal point of human activity, cities are both major contributors to global warming and crucial actors in addressing it. Climate change impacts cities through more frequent extreme weather […]",
-      "published_at": "21 Aug 2026 15:31:18 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/21132802/AP23168434501284-768x512.jpg",
+      "raw_id": "9ff15d519d91e89623",
+      "title": "Sikkim eyes Nagaland’s CM Health Insurance Scheme model",
+      "url": "https://eastmojo.com/nagaland/2026/08/31/sikkim-eyes-nagalands-cm-health-insurance-scheme-model/",
+      "summary": "Kohima: A delegation from Sikkim visited Nagaland on Monday to study the implementation of the Nagaland Chief Minister’s Health Insurance Scheme (CMHIS), with the state government expressing interest in adopting elements of the model. The four-member delegation, on a two-day visit to Nagaland, called on Development Commissioner Y Kikheto Sema at the Nagaland Civil Secretariat […] The post Sikkim eyes Nagaland’s CM Health Insurance Scheme model appeared first on EastMojo .",
+      "published_at": "Mon, 31 Aug 2026 13:22:59 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
+          "States & Local": 1,
           "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Environment, Health & Science",
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "bd9989983fd8ce7be5",
-      "title": "Harvesting rice and crabs on one field offers farmers a climate-resilient alternative",
-      "url": "https://india.mongabay.com/2026/08/harvesting-rice-and-crabs-on-one-field-offers-farmers-a-climate-resilient-alternative/",
-      "summary": "The harsh summer sun was beating down their backs, yet farmers in Assam’s Borborua block in Dibrugarh district went about their paddy cultivation. Waddling through paddy fields submerged in the rainwater of the past few weeks, they hummed songs and chatted as they planted Betguti (Oryza sativa), an indigenous variety of rice that holds the […]",
-      "published_at": "18 Aug 2026 16:59:06 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/18120034/Women-farmers-releasing-crabs-in-the-paddy-field-in-Borborua-block-in-Dibrugarh-district-of-Assam-768x512.jpg",
+      "raw_id": "a4f0b9369c7bcbb131",
+      "title": "India started measuring climate readiness of cities, then stalled [Commentary]",
+      "url": "https://india.mongabay.com/2026/08/india-started-measuring-climate-readiness-of-cities-then-stalled-commentary/",
+      "summary": "Cities are the source of more than 70% of the world’s greenhouse gas (GHG) emissions. They are also home to more than half of humanity. As a focal point of human activity, cities are both major contributors to global warming and crucial actors in addressing it. Climate change impacts cities through more frequent extreme weather […]",
+      "published_at": "21 Aug 2026 15:31:18 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/21132802/AP23168434501284-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -554,74 +587,6 @@
       }
     },
     {
-      "raw_id": "1a387c595a4a0d166d",
-      "title": "Nepal-China flood survivors reach safe areas as families await news of nearly 3,000 missing",
-      "url": "https://www.thenewsminute.com/news/nepal-china-flood-survivors-reach-safe-areas-as-families-await-news-of-nearly-3000-missing",
-      "summary": "As rescue efforts in communities buried by catastrophic flash floods along the Nepal - China border entered their fourth day Saturday, authorities were still finding survivors and transporting them to safety. At relief centers, families of missing people waited anxiously for news of their loved ones as the death toll and the number of people unaccounted for continued to rise. The combined toll in Nepal and Tibet rose to 691 dead and over 3,000 people missing after China's latest update on Sunday. Chinese authorities reported 16 deaths and 546 missing, while Nepal's disaster agency said late Saturday that the death toll had climbed to 675 with 2,498 people missing. More than 3,700 people have been rescued in Nepal so far. In Nuwakot, one of the Nepali districts devastated by the floods, helicopters arrived loaded with boxes and bags of aid, including clothes, instant noodles, crackers and rice. Others returned from the flood-hit areas carrying survivors. An older man was carefully helped off one helicopter, while a soldier carried an older woman on his back to a medical tent. Most arrived with nothing except the clothes they were wearing. About a dozen people emerged from another he",
-      "published_at": "Mon, 31 Aug 2026 03:39:18 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-31/kqwmntvz/Nepal-floods.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "b0d875cd8717c7198e",
-      "title": "Manipur: Japhou youth hails Chandel brothers for 2026 national awards",
-      "url": "https://eastmojo.com/manipur/2026/08/31/manipur-japhou-youth-hails-chandel-brothers-for-2026-national-awards/",
-      "summary": "Chandel: The Japhou Youth Club in Manipur’s Chandel district has congratulated brothers Prof Shongsir Warson Monsang and Shongsir Nicodim Monsang for receiving national-level honours for their contributions to veterinary medicine and education. In a statement, the Japhou Youth Club extended its profound honour and immense pride in celebrating the historic achievement of two distinguished sibling […] The post Manipur: Japhou youth hails Chandel brothers for 2026 national awards appeared first on EastMojo .",
-      "published_at": "Mon, 31 Aug 2026 05:36:26 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "c6aa64ebbe332be1ff",
       "title": "Court orders survey of elephant corridors, seeks ban on fireball use",
       "url": "https://india.mongabay.com/short-article/2026/08/court-orders-survey-of-elephant-corridors-seeks-ban-on-fireball-use/",
@@ -661,6 +626,39 @@
       "summary": "Species File: Exploring India’s biodiversity, one species at a time. Every winter, hundreds of colossal, leathery-shelled reptiles arrive at Galathea Bay on Great Nicobar Island. They dig deep trenches, lay their eggs, and cover them with sand before heading back into the waters. In around two months, the eggs begin to hatch, and baby turtles […]",
       "published_at": "26 Aug 2026 13:23:23 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/26115753/turtle-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "3d62e7a33d49a9a3e3",
+      "title": "Rising temperatures could intensify humid heat during India’s monsoon",
+      "url": "https://india.mongabay.com/2026/08/rising-temperatures-could-intensify-humid-heat-during-indias-monsoon/",
+      "summary": "In Kothigal, a village situated in the coastal district of Ramanathapuram, Tamil Nadu, 30-year-old V. Kalaiselvi’s workday is governed by a clock that the climate change impacts are actively resetting. Her family cultivates green gram, cotton, and urad dal across three acres. Even during the peak of summer, Kalaiselvi could reliably work in her fields […]",
+      "published_at": "20 Aug 2026 14:12:31 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/08/20130158/AP26170164072945-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -923,6 +921,43 @@
       }
     },
     {
+      "raw_id": "0f29dfc9f5713aa557",
+      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
+      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
+      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
+      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Governance & Administration": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "cf4c55e5970c63b712",
       "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
       "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
@@ -991,6 +1026,41 @@
       }
     },
     {
+      "raw_id": "47e87507b5c8ce38f4",
+      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
+      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
+      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "c31cb46924ed3cc2f0",
       "title": "Congress asks why PM didn’t pay tribute to Garg during Assam visit",
       "url": "https://www.thehindu.com/news/cities/Delhi/congress-asks-why-pm-didnt-pay-tribute-togargduring-assam-visit/article70427314.ece",
@@ -1019,74 +1089,6 @@
           "States & Local": 8
         },
         "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1063ea0a88c22b17bc",
-      "title": "Mob vandalises prayer hall over burial dispute in Bastar",
-      "url": "https://www.thehindu.com/news/national/chhattisgarh/mob-vandalises-prayer-hall-over-burial-dispute-in-bastar/article70412766.ece",
-      "summary": "Clashes in Kanker village follow opposition to Christian burial rites; police personnel among those injured in mob fury",
-      "published_at": "Thu, 18 Dec 2025 22:34:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/im4icd/article70412944.ece/alternates/LANDSCAPE_1200/03_Bastar_Story.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "04cea012cb47a26e4e",
-      "title": "Almost 60% of India’s elephants are in Karnataka, Assam, T.N.",
-      "url": "https://www.thehindu.com/news/states/almost-60-of-indias-elephants-are-in-karnataka-assam-tn/article70164209.ece",
-      "summary": "The Wildlife Institute of India released the first-ever DNA-based synchronous estimation of elephants across the country",
-      "published_at": "Wed, 15 Oct 2025 01:40:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ancn3j/article70164201.ece/alternates/LANDSCAPE_1200/IMG_WhatsApp_Image_2025-_2_1_06F05FLE.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
           "States & Local"
         ]
       }
@@ -1325,12 +1327,12 @@
       }
     },
     {
-      "raw_id": "39f26f12c12e990882",
-      "title": "Nepal flood death toll rises to 675, more than 2,400 missing",
-      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-death-toll-rises-number-of-missing-jumps-to-more-than-2000/article71403649.ece",
-      "summary": "Search and rescue operations remain a top priority, focusing on missing individuals, including foreign nationals, says Foreign Minister; China sent 5 tunnel experts to assist Nepalese rescue teams, while 114 Indian nationals rescued",
-      "published_at": "Sat, 29 Aug 2026 21:33:31 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/h1cks/article71405167.ece/alternates/LANDSCAPE_1200/20260829326L.jpg",
+      "raw_id": "dc606fd19b597824ff",
+      "title": "Nepal flash floods LIVE: Death toll rises to 939, missing people drops to 3,925: disaster authority",
+      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-aftermath-live-udpates-rescue-work-august-31-2026/article71409646.ece",
+      "summary": "China rejects claims linking its massive hydropower projects in Tibet to the August 26 flash flood disaster in Nepal, calling them “malicious speculation”",
+      "published_at": "Mon, 31 Aug 2026 20:01:53 +0530",
+      "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1350,7 +1352,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics"

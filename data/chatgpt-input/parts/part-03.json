@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-03T04:42:08.544767+00:00",
-  "input_count": 408,
+  "prepared_at": "2026-09-03T12:56:05.087597+00:00",
+  "input_count": 473,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 109,
-    "established_or_other": 91,
+    "independent_social": 145,
+    "established_or_other": 55,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "223a187283b93a2e66",
+      "title": "When cricket is forced to serve an agenda, everyone loses",
+      "url": "https://www.thehindu.com/sport/cricket/when-cricket-is-forced-to-serve-an-agenda-everyone-loses/article71415058.ece",
+      "summary": "",
+      "published_at": "Tue, 01 Sep 2026 17:28:54 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
     {
       "raw_id": "f00b8e0ccab5004e70",
       "title": "Messi’s glorious position in football is set in stone",
@@ -113,39 +146,6 @@
       }
     },
     {
-      "raw_id": "9e2851a47e3fa61d3d",
-      "title": "Rule changes to be tested in Thimmappaiah Memorial tournament to make it result-oriented",
-      "url": "https://www.thehindu.com/sport/rule-changes-to-be-tested-in-thimmappaiah-memorial-tournament-to-make-it-result-oriented/article71410890.ece",
-      "summary": "",
-      "published_at": "Mon, 31 Aug 2026 18:37:43 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -207,6 +207,142 @@
           "International & Geopolitics": 4
         },
         "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "e5d0f0ef153bf7b585",
+      "title": "Guwahati cinema documentary selected for Kerala Film Festival",
+      "url": "https://eastmojo.com/assam/2026/09/03/guwahati-cinema-documentary-selected-for-kerala-film-festival/",
+      "summary": "Guwahati: Dreams of a Forgotten Past, a documentary on the history and decline of Guwahati’s traditional single-screen cinema halls, has been selected for screening in the non-competition section of the 18th International Documentary & Short Film Festival of Kerala (IDSFFK). Directed by Kalpajyoti Bhuyan and produced by Dr Zabeen Ahmed, Dr Muktismaan Hazarika and Himjyoti Talukdar, […] The post Guwahati cinema documentary selected for Kerala Film Festival appeared first on EastMojo .",
+      "published_at": "Thu, 03 Sep 2026 12:03:54 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "791cc93f64ec4932c0",
+      "title": "Move Andhra Pradesh HC: Delhi High Court rejects PIL against closure of old Visakhapatnam airport",
+      "url": "https://www.barandbench.com/news/move-andhra-pradesh-hc-delhi-high-court-rejects-pil-against-closure-of-old-visakhapatnam-airport",
+      "summary": "The Delhi High Court on Wednesday rejected a public interest litigation (PIL) petition challenging the closure of Visakhapatnam airport at Dega after commercial operations were transferred to the new Alluri Sitarama Raju International Airport. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia asked the petitioner, Gopala Krishna Kosaraju, to agitate his grievance before the Andhra Pradesh High Court. The Bench said that since the dominant cause of action arose in Andhra Pradesh, the petitioner must approach the jurisdictional High Court. \"Petition dismissed on the ground of forum convenience. It is needless to say that the petitioner will be at liberty to agitate his case before the jurisdictional High Court,\" the Court ordered. Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia The old Visakhapatnam airport at INS Dega, which had handled scheduled commercial flights for decades, ceased such operations last month. The shutdown followed the inauguration of the new Alluri Sitarama Raju International Airport at Bhogapuram on August 1. All scheduled passenger flights were transferred to the new airport, while INS Dega remains available for n",
+      "published_at": "Wed, 02 Sep 2026 16:31:18 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2020-04/e7d43fd1-ad6f-4991-82d3-eae387144cbe/Planes.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "0a73fd94b9d2dfc79c",
+      "title": "Putin cites chance of peace deal but says Ukrainian aviation warning makes it harder",
+      "url": "https://www.thehindu.com/news/international/putin-cites-chance-of-peace-deal-but-says-ukrainian-aviation-warning-makes-it-harder/article71423393.ece",
+      "summary": "Ukrainian attacks on civilian merchant ships and “reported threats of attacks on civilian aircraft” were “acts of state terrorism”, which he said “complicates the ​prospects for bilateral peace talks”, Russian President Vladimir Putin said",
+      "published_at": "Thu, 03 Sep 2026 16:20:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yshd44/article71423416.ece/alternates/LANDSCAPE_1200/2026-09-03T103948Z_899885375_RC2IBNAOO1HA_RTRMADP_3_RUSSIA-FORUM-PUTIN.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "831fbab40b435a7195",
+      "title": "Iran, India not talking trade: Rubio on Modi-Pezeshkian meet",
+      "url": "https://www.thehindu.com/news/international/iran-india-not-talking-trade-rubio-on-modi-pezeshkian-meet/article71423034.ece",
+      "summary": "U.S. Secretary of State Marco Rubio said that U.S. President Donald Trump has made it clear that no country should help Iran evade sanctions",
+      "published_at": "Thu, 03 Sep 2026 15:57:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1oo7r9/article71423101.ece/alternates/LANDSCAPE_1200/2026-07-31T162639Z_2034323327_RC23PMASOSPO_RTRMADP_3_USA-TRUMP.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "Economy & Employment",
           "International & Geopolitics"
         ]
       }
@@ -379,84 +515,12 @@
       }
     },
     {
-      "raw_id": "0b2bb410283ecfa80f",
-      "title": "New York Mayor Zohran Mamdani announces ban on AI use for students until high school",
-      "url": "https://www.thehindu.com/sci-tech/technology/new-york-mayor-zohran-mamdani-announces-ban-on-ai-use-for-students-until-high-school/article71422209.ece",
-      "summary": "Only high school students, typically aged 14 and above, will be permitted to use artificial intelligence in limited pilot programmes",
-      "published_at": "Thu, 03 Sep 2026 09:31:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kdevir/article71422215.ece/alternates/LANDSCAPE_1200/Education_AI_Ban_New_York_381_7.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9d671ab3666b46d8bf",
-      "title": "Nepal flash floods aftermath LIVE: Nepal-Tibet flood death toll rises to 1,243 as PM Shah flags climate change link",
-      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-live-updates-death-toll-rescue-operations-missing-persons-helpline-number-september-3-2026/article71422150.ece",
-      "summary": "India delivered a fifth tranche of over five tonnes of essential medicines to Nepal, alongside an 11-member rescue team",
-      "published_at": "Thu, 03 Sep 2026 09:52:40 +0530",
-      "image_url": "",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "Sports": 1,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "2cc0d6e1e2adb518a8",
-      "title": "Uber says laying off 'about 10%' of workforce worldwide",
-      "url": "https://www.thehindu.com/sci-tech/technology/uber-says-laying-off-about-10-of-workforce-worldwide/article71422253.ece",
-      "summary": "Uber has a total of roughly 34,000 employees with operations in more than 70 countries, according to a recent SEC filing",
-      "published_at": "Thu, 03 Sep 2026 09:51:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5iyab8/article71422257.ece/alternates/LANDSCAPE_1200/2026-09-02T114002Z_1782714086_RC281GAOO6AQ_RTRMADP_3_UBER-LAYOFFS.JPG",
+      "raw_id": "a8db5c0c23f4e1dc6e",
+      "title": "India ready to help end war in Ukraine: Jaishankar",
+      "url": "https://www.thehindu.com/news/national/jaishankar-visit-india-on-ukraine-russia-war/article71423638.ece",
+      "summary": "The External Affairs Minister said attacks on commercial ‌shipping featured ​prominently in his discussions with Ukrainian counterpart",
+      "published_at": "Thu, 03 Sep 2026 17:04:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ykr308/article71423648.ece/alternates/LANDSCAPE_1200/AP09_03_2026_000238B.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -484,88 +548,20 @@
       }
     },
     {
-      "raw_id": "7fa5cf8f82dc8644c8",
-      "title": "Ex-Venezuelan President Nicolás Maduro, wife seek to end drug charges case on immunity grounds",
-      "url": "https://www.thehindu.com/news/international/ex-venezuelan-president-nicolas-maduro-wife-seek-to-end-drug-charges-case-on-immunity-grounds/article71422276.ece",
-      "summary": "In papers filed in Manhattan federal court, lawyers for Mr. Maduro said a judge was required by law to reject the indictment because it cannot be brought against a foreign leader",
-      "published_at": "Thu, 03 Sep 2026 09:46:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2zhj1n/article71422322.ece/alternates/LANDSCAPE_1200/Venezuela_Maduro_4829_.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "5037c9a56c4d040a3f",
-      "title": "Trump floats renaming Strait of Hormuz as 'Trump Strait'",
-      "url": "https://www.thehindu.com/news/international/trump-floats-renaming-strait-of-hormuz-as-trump-strait/article71420981.ece",
-      "summary": "Many of the previous name changes, including Gulf of Mexico as the \"Gulf of America”, started off as apparently jovial remarks by the 80-year-old U.S. President before he then followed through to make them a reality.",
-      "published_at": "Thu, 03 Sep 2026 08:20:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jl7lp7/article71420999.ece/alternates/LANDSCAPE_1200/Trump_Dodging_Responsibility__6321.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "4cc3b7314fb3a45886",
-      "title": "‘Bokshi’ trailer spotlights Sikkim’s myths and landscapes",
-      "url": "https://eastmojo.com/free-digest/2026/09/02/bokshi-trailer-spotlights-sikkims-myths-and-landscapes/",
-      "summary": "Gangtok: Indian horror film ‘Bokshi’, extensively shot across Sikkim and inspired by the region’s myths, landscapes and folk traditions, has unveiled its trailer ahead of its nationwide theatrical release on October 9. The trailer offers a glimpse into the film’s folk-horror narrative, following troubled teenager Anahita as a school expedition into the mountains takes her […] The post ‘Bokshi’ trailer spotlights Sikkim’s myths and landscapes appeared first on EastMojo .",
-      "published_at": "Wed, 02 Sep 2026 11:08:44 +0000",
+      "raw_id": "762b2a9388dc9d85ae",
+      "title": "Amity University के मेस में खाने पर बवाल, भोजन में मिल रहे कीड़े-मकोड़े!",
+      "url": "https://theruralpress.in/chhattisgarh/amity-university-mess-food-insects-students-complaint/",
+      "summary": "Amity University Mess: एमिटी यूनिवर्सिटी के मेस में परोसे जा रहे भोजन की गुणवत्ता को लेकर छात्रों की नाराजगी बढ़ती जा रही है। छात्रों का आरोप है कि मेस के खाने में आए दिन कीड़े-मकोड़े और बरसाती जीव मिल रहे हैं। कई बार भोजन में इल्ली और छोटे कीड़े मिलने की शिकायत भी सामने आई […]",
+      "published_at": "Thu, 03 Sep 2026 09:56:17 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -573,6 +569,204 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "1e4db1a0f386558735",
+      "title": "Bombay High Court grants actress Shruti Haasan interim relief on plea against AI deepfakes",
+      "url": "https://www.barandbench.com/news/bombay-high-court-grants-actress-shruti-haasan-interim-relief-on-plea-against-ai-deepfakes",
+      "summary": "The Bombay High Court has passed an interim order in favor of actress Shruti Haasan on her plea seeking directions to restrain the publication of artificial intelligence (AI) generated and other content that violate her personality rights by misusing her image or likeness. Haasan had approached the Court seeking the protection of her personality and publicity rights, which she contended were being violated through AI-generated deepfakes that use her image without permission, manipulated videos, unauthorised commercial endorsements, and unlicensed merchandise. Justice Madhav Jamdar , in an interim order, recognised the severe harm caused by such digital manipulation of one's image and the rapid spread of deepfakes online. \"There is substance in the contention raised by the plaintiff (Haasan) that the continuing dissemination of AI-generated deepfakes, manipulated images, chatbots, and other infringing content has caused and continues to cause irreparable injury to the plaintiff's goodwill, reputation, and commercial interests. Such injury cannot be adequately compensated by monetary damages alone, as once deepfake content is disseminated across the internet, it is capable of unlimit",
+      "published_at": "Thu, 03 Sep 2026 15:14:53 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-03/dnopfggh/ViewPoint-MIddle-Single-Image-Recovered.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "aedbac9f1c9ad37f44",
+      "title": "Allahabad HC rejects plea questioning Rahul Gandhi's citizenship after petitioner fails to produce evidence",
+      "url": "https://www.barandbench.com/news/allahabad-hc-rejects-plea-questioning-rahul-gandhis-citizenship-after-petitioner-fails-to-produce-evidence",
+      "summary": "The Allahabad High Court has refused to entertain a petition challenging Leader of Opposition Rahul Gandhi's right to be a Member of Parliament (MP) on the ground that he is not a citizen of India [Ashok Pandey and Another v Sri Rahul Gandhi @ Raul Vinci New Delhi and 2 Others] In its order passed on August 31, a bench of Justice Shekhar B Saraf and Justice Abdhesh Kumar Chaudhary noted that the petitioner failed to produce even a single document to prove his allegation that Gandhi was a citizen of the United Kingdom. Considering the Court's observations, the petitioner chose to withdraw the plea. The request was granted by the Court. \"In light of the submission made above, the petitioner is permitted to withdraw the present writ petition. The present writ petition as such is dismissed as withdrawn,\" the Court said. Justices Shekhar B Saraf and Abdhesh Kumar Chaudhary Allahabad High Court Petitioner could not show a single document to show that Rahul Gandhi has declared himself to be a British citizen. The Court had earlier said it was skeptical to entertain the writ petition since the issue related to Gandhi's citizenship was pending before the Central government. However, the Cou",
+      "published_at": "Wed, 02 Sep 2026 18:59:39 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/39fcc871-ad68-479c-a1de-323be1090708/DELHI%20%20WEB%20PAGE%201600x900.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "f7d781595ac9dd51b3",
+      "title": "‘Saffron hooliganism’ coverage FIRs: HC asks for no coercive action against Anandabazar Patrika journalists",
+      "url": "https://www.newslaundry.com/2026/09/03/saffron-hooliganism-coverage-firs-hc-asks-for-no-coercive-action-against-anandabazar-patrika-journalists",
+      "summary": "The Calcutta High Court has asked the West Bengal government to assure that no coercive steps would be taken against Anandabazar Patrika journalists facing FIRs over the newspaper’s use of the phrase “saffron hooliganism”, as long as they cooperate with the notices issued to them, LiveLaw reported . The first case was filed on August 28 at the Bowbazar police station in Kolkata over a complaint by Shastri Maharaj, described as a Hindu monk. It objected to the term, ‘gerua gundami’ that translates into ‘saffron hooliganism’ that featured in reports by the publication on violent clashes that erupted at Jadavpur University earlier last month. Several press associations have demanded the immediate withdrawal of the FIRs. On Thursday, the state, represented by the Additional Advocate General Rajdeep Mazumdar, gave the assurance the court asked for after Senior Advocate S N Mookherjee, assisted by Advocates Arunabha Deb and Ashika Daga, flagged the FIRs. Mookherjee reportedly said the cases had been initiated on the allegation of incitement as if journalists had demeaned sanyasis across the country. He also told the court that the outlet’s office had been painted saffron by protestors. R",
+      "published_at": "Thu, 03 Sep 2026 10:36:14 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-09-01/thvvitlp/Shot-19.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "d83c1ac3ef0a40e458",
+      "title": "Punjab & Haryana High Court quashes dismissal of DSP accused of facilitating Lawrence Bishnoi TV interview",
+      "url": "https://www.barandbench.com/news/punjab-haryana-high-court-quashes-dismissal-of-dsp-accused-of-facilitating-lawrence-bishnoi-tv-interview",
+      "summary": "The Punjab and Haryana High Court has ordered reinstatement of a Deputy Superintendent of Police (DSP) who was dismissed last year by Punjab government for allegedly facilitating a television interview of gangster Lawrence Bishnoi while he was in custody [Gursher Singh Sandhu v State of Punjab and Other] By way of a judgment passed on September 1, Justice Namit Kumar quashed the order by which DSP Gursher Singh Sandhu was dismissed from service under Article 311(2)(b) that allows the State to dismiss an employee without holding a regular departmental inquiry. The Court ruled that the satisfaction recorded by the competent authority for dispensing with the departmental inquiry did not meet the constitutional standard prescribed under Article 311(2)(b) of the Constitution. Thus, it quashed Sandhu's dismissal. However, the Court also clarified that the State can resume an earlier departmental inquiry initiated against him. The enquiry pending before retired Justice Rajiv Narain Raina had been closed after the State decided to dismiss Sandhu without holding any inquiry. Justice Namit Kumar Sandhu was dismissed in connection with television interviews of gangster Lawrence Bishnoi which ",
+      "published_at": "Thu, 03 Sep 2026 14:18:20 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-06/e4e4c919-522e-439f-9a53-422a18dfa579/7.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "65b0a34e6deb782249",
+      "title": "Driving at high speed alone not rash or negligent driving: Delhi High Court",
+      "url": "https://www.barandbench.com/news/litigation/driving-at-high-speed-alone-not-rash-or-negligent-driving-delhi-high-court",
+      "summary": "Vehicles are intended to be driven fast and the fact that a vehicle was moving at high speed does not, by itself, establish criminal rashness or negligence on the part of the driver, the Delhi High Court recently observed [State v Sanjay] . Justice Chandrasekharan Sudha made the observation while dismissing the Delhi government’s appeal against the acquittal of a tempo driver booked under Sections 279 (rash driving) and 304A (causing death by negligence) of the Indian Penal Code (IPC) for causing a woman’s death in a road accident in 2009. “ Vehicles are intended to be driven in speed. Merely because the vehicle was driven at high speed would not mean that the driver was rash or negligent by itself. ‘High speed’ or ‘over speed’ are relative terms, ” the Court said. Justice Chandrasekharan Sudha Delhi High Court Merely because the vehicle was driven at high speed would not mean that the driver was rash or negligent by itself. The case arose from an accident on November 12, 2009. The prosecution alleged that the accused was driving a tempo rashly and negligently when it struck a bicycle carrying a man and his mother near Naresh Park Extension in Delhi. The tempo’s front wheel alleged",
+      "published_at": "Wed, 02 Sep 2026 17:23:54 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2023-03/c0c3d8ad-7943-4228-87e2-b346696aac3c/BOMBAY__WEB_PAGE_1600x900_copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "ecb010e9fd949b1fda",
+      "title": "India's Got Latent row: Supreme Court quashes FIRs against Samay Raina, Ranveer Allahbadia, others",
+      "url": "https://www.barandbench.com/news/litigation/indias-got-latent-row-supreme-court-quashes-firs-against-samay-raina-ranveer-allahbadia-others",
+      "summary": "The Supreme Court on Friday quashed criminal cases filed against digital creator and podcast host Ranveer Allahbadia, and YouTuber-comedians Samay Raina, Ashish Chanchlani and four others over their controversial remarks during an episode of comedy talent show, India's Got Latent. A Bench Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana passed the order. Apart from Allahbadia, Raina, and Chanchlani, the others who have been given relief in connection with this case are Vipul Goyal, Balraj Paramjeet Singh Ghai, Sonali Thakkar alias Sonali Aditya Desai, and Nishant Jagdish Tanwar. The Court today also appreciated the efforts made by Raina, Goyal, Ghai, Thakkar and Tanwar to organise shows for the benefit of persons with disabilities. \" Once there are genuine efforts positive results are bound to be there. They are very bright youngsters. If they have started working in positive direction, there will be positive output,\" the Bench said. The Court proceeded to quash criminal cases filed against Raina, Goyal, Ghai, Thakkar and Tanwar over insensitive remarks made on the show against disabled persons. The Court, however, will hear the matter further to co",
+      "published_at": "Fri, 14 Aug 2026 14:23:53 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2025-02-10/bti6fkm9/14.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -752,549 +946,349 @@
       }
     },
     {
-      "raw_id": "31bf6d43ea90ebed17",
-      "title": "Kandela Khap condemns restrictions on inspections of Haryana government schools",
-      "url": "https://www.thehindu.com/news/national/haryana/kandela-khap-condemns-restrictions-on-inspections-of-haryana-government-schools/article71407859.ece",
-      "summary": "The Sarv Jatiya Kandela Khap alleged that the move was aimed at hiding shortcomings in the education system",
-      "published_at": "Sun, 30 Aug 2026 22:55:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cjzcqh/article71407997.ece/alternates/LANDSCAPE_1200/KHAP%20PANCHAYAT%20GROUND%20ZERO.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b750935327aedb25a7",
-      "title": "News from the world of Education: August 28, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-august-28-2026/article71400235.ece",
-      "summary": "Information on admissions, scholarships, competitions for students, events for educators and more",
-      "published_at": "Fri, 28 Aug 2026 17:28:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/c9g320/article71400082.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "45d25276487fb8a2e2",
-      "title": "Geography and caste shape access to private coaching in India",
-      "url": "https://www.thehindu.com/education/geography-and-caste-shape-access-to-private-coaching-in-india/article71385115.ece",
-      "summary": "In much of India, private tuition is a compensatory choice made by families who cannot count on the school.",
-      "published_at": "Tue, 25 Aug 2026 16:49:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lzy8qy/article71385606.ece/alternates/LANDSCAPE_1200/THSMV_5-2-2016_11-53-41_VOLUNTEERSTEACHING.JPG",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "4bf328213352480f08",
-      "title": "Education Minister meets officials to review ‘key priorities’ to strengthen CBSE",
-      "url": "https://www.thehindu.com/news/national/education-minister-meets-officials-to-review-key-priorities-to-strengthen-cbse/article71385240.ece",
-      "summary": "CBSE is facing public scrutiny, particularly surrounding its 2026 Class 12 examination evaluation process, issues concerning technological mismanagement and administrative failures, and a trust deficit among students",
-      "published_at": "Tue, 25 Aug 2026 16:08:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8ulj2x/article71385835.ece/alternates/LANDSCAPE_1200/20260824464L.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "ea578a5a34642309e8",
-      "title": "Teaching students to think in the age of ChatGPT",
-      "url": "https://www.thehindu.com/education/teaching-students-to-think-in-the-age-of-chatgpt/article71363458.ece",
-      "summary": "When AI is changing how students write, research, and create, education must change how it teaches them to think",
-      "published_at": "Mon, 24 Aug 2026 10:56:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fi5em0/article71363803.ece/alternates/LANDSCAPE_1200/Wide%20Angle.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 13,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d215fa2123043283fd",
-      "title": "Are college students over-optimising their resumes?",
-      "url": "https://www.thehindu.com/education/are-college-students-over-optimising-their-resumes/article71409756.ece",
-      "summary": "The best resumes emerge when experiences reflect curiosity, growth, and a sense of direction",
-      "published_at": "Wed, 02 Sep 2026 12:16:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/908l3k/article71418377.ece/alternates/LANDSCAPE_1200/IMG_bloc_hiring_graduate_2_1_BK8TMDU8.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "0b891ac565324d46bf",
-      "title": "Manipur Assembly reaffirms demand for NRC update before Census",
-      "url": "https://eastmojo.com/manipur/2026/09/02/manipur-assembly-reaffirms-demand-for-nrc-update-before-census/",
-      "summary": "Imphal: The Manipur Legislative Assembly on Wednesday reaffirmed its demand that the National Register of Citizens (NRC) in the state be updated before the conduct of the Census. Chief Minister and Leader of the House Yumnam Khemchand Singh moved a resolution during the evening session of the eighth sitting of the 12th Manipur Legislative Assembly. […] The post Manipur Assembly reaffirms demand for NRC update before Census appeared first on EastMojo .",
-      "published_at": "Wed, 02 Sep 2026 15:29:49 +0000",
+      "raw_id": "bb145e5ac338bc6447",
+      "title": "Chor Calling Police? 😂",
+      "url": "https://www.youtube.com/shorts/U4Dqd-wblYE",
+      "summary": "",
+      "published_at": "2026-09-03T07:00:28+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "2f9317f050eb7c55cb",
-      "title": "Meghalaya: 239 Civil Defence, Home Guards personnel pass out",
-      "url": "https://eastmojo.com/meghalaya/2026/09/02/meghalaya-239-civil-defence-home-guards-personnel-pass-out/",
-      "summary": "Shillong: As many as 239 Guardsmen and personnel of equivalent ranks passed out from the 5th Basic Course of the Civil Defence and Home Guards Department at a passing-out parade held at the Parade Ground of the Civil Defence and Home Guards Complex, Mawdiangdiang, Shillong, on Tuesday. Minister for Civil Defence and Home Guards Brening […] The post Meghalaya: 239 Civil Defence, Home Guards personnel pass out appeared first on EastMojo .",
-      "published_at": "Wed, 02 Sep 2026 14:01:59 +0000",
+      "raw_id": "3feb8dd4566c4621bd",
+      "title": "National Media Or WWE? 😂",
+      "url": "https://www.youtube.com/shorts/RYQN_D0lAMs",
+      "summary": "",
+      "published_at": "2026-09-02T09:09:18+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "b79ae5d4f7b2da8428",
-      "title": "Arunachal’s Shergaon Folk Quest set to return for second edition in October",
-      "url": "https://eastmojo.com/arunachal-pradesh/2026/09/02/arunachals-shergaon-folk-quest-set-to-return-for-second-edition-in-october/",
-      "summary": "The second edition of Shergaon Folk Quest will be held on October 17 and 18 in Shergaon, Arunachal Pradesh, bringing together indigenous artists, storytellers, writers, farmers, nature enthusiasts and local communities. Held under the theme “The Hills Sing. The Heart Listens”, the festival aims to highlight the living cultural heritage of the Sherdukpen community while […] The post Arunachal’s Shergaon Folk Quest set to return for second edition in October appeared first on EastMojo .",
-      "published_at": "Wed, 02 Sep 2026 11:23:32 +0000",
+      "raw_id": "1c36931f980f2ed9af",
+      "title": "KISS-ki Car? 😂😂",
+      "url": "https://www.youtube.com/shorts/iwRlgx20lgI",
+      "summary": "",
+      "published_at": "2026-09-01T13:00:21+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "33802e6460ac953c2a",
-      "title": "Manipur: Kuki-Zo MLAs return to Assembly in person after over 3 years",
-      "url": "https://eastmojo.com/manipur/2026/09/02/manipur-kuki-zo-mlas-return-to-assembly-in-person-after-over-3-years/",
-      "summary": "Imphal: The eighth session of the 12th Manipur Legislative Assembly commenced on Wednesday, with two Kuki-Zo legislators attending the House in person for the first time in more than three years. Haokholet Kipgen, MLA from Saitu Assembly constituency, and Kimneo Haokip Hangshing, MLA from Saikul Assembly constituency, were physically present during the first sitting of […] The post Manipur: Kuki-Zo MLAs return to Assembly in person after over 3 years appeared first on EastMojo .",
-      "published_at": "Wed, 02 Sep 2026 09:39:31 +0000",
+      "raw_id": "4fc65b4826778d4c33",
+      "title": "Patriarchy ka Patriotism?",
+      "url": "https://www.youtube.com/shorts/lEpvb0IMDNE",
+      "summary": "",
+      "published_at": "2026-09-01T10:48:46+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "01821c08698c5fb30f",
-      "title": "CG Weather Update: छत्तीसगढ़ में फिर बिगड़ेगा मौसम! रायपुर समेत कई जिलों में भारी बारिश का अलर्ट",
-      "url": "https://theruralpress.in/chhattisgarh/raipur-bilaspur-imd-weather-update-3-september-heavy-rain-thunderstorm-mausam/",
-      "summary": "CG Weather Update: देशभर में मानसून का असर एक बार फिर तेज हो गया है। मौसम विभाग ने बुधवार 2 सितंबर को जारी ताजा पूर्वानुमान में 3 सितंबर के लिए कई राज्यों में भारी बारिश, गरज-चमक और तेज हवाओं की चेतावनी जारी की है। उत्तर प्रदेश, बिहार सहित देश के कई हिस्सों में खराब मौसम […]",
-      "published_at": "Thu, 03 Sep 2026 01:00:00 +0000",
+      "raw_id": "52c4017574741ca228",
+      "title": "BJP ka Pakistani prem?😱",
+      "url": "https://www.youtube.com/shorts/qOkrOii0wjU",
+      "summary": "",
+      "published_at": "2026-09-01T10:20:05+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c84881c6d910e9523b",
-      "title": "Aaj Ka Rashifal: मेष से मीन तक जानें कैसा रहेगा आपका दिन, किसे मिलेगा करियर और कारोबार में फायदा",
-      "url": "https://theruralpress.in/religion-spirituality/aaj-ka-rashifal-horoscope-today-daily-horoscope-zodiac-signs-aries-taurus-gemini-cancer/",
-      "summary": "Aaj Ka Rashifal: आज का दिन कई राशियों के लिए कामकाज, करियर और आर्थिक मामलों में अच्छा रह सकता है। मेष राशि के जातकों की निजी गतिविधियों में रुचि बढ़ेगी और परिवार में उत्साह बना रहेगा। वृष राशि के लिए कार्य विस्तार और आर्थिक मामलों में अच्छे अवसर बनेंगे। कर्क और कन्या राशि के जातकों […]",
-      "published_at": "Thu, 03 Sep 2026 00:30:00 +0000",
+      "raw_id": "1905c5cdf0752b7bbc",
+      "title": "Milk At ₹102/Litre? 😳",
+      "url": "https://www.youtube.com/shorts/8JE7iCBSA28",
+      "summary": "",
+      "published_at": "2026-08-30T15:40:12+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "fc3e5fd832edfa0e57",
-      "title": "Women Champions Trophy: भारत में पहली महिला चैंपियंस ट्रॉफी का आगाज, ICC ने तारीख और वेन्यू किया तय, जानें कौन 6 टीमें लेंगी हिस्सा",
-      "url": "https://theruralpress.in/sports/women-champions-trophy-2027-india-icc-venue-date-six-teams/",
-      "summary": "Women Champions Trophy: नई दिल्ली। महिला क्रिकेट के लिए एक ऐतिहासिक शुरुआत होने जा रही है। अंतरराष्ट्रीय क्रिकेट परिषद (ICC) ने पहली महिला चैंपियंस ट्रॉफी के आयोजन की तारीख और वेन्यू का ऐलान कर दिया है। छह टीमों के बीच खेला जाने वाला यह टूर्नामेंट 14 से 28 फरवरी 2027 तक भारत में आयोजित होगा। […]",
-      "published_at": "Wed, 02 Sep 2026 16:37:11 +0000",
+      "raw_id": "666e6e6dcfd6ccf558",
+      "title": "Rasmalai Pe Mahabharat! 😂",
+      "url": "https://www.youtube.com/shorts/jstTbQBNeoA",
+      "summary": "",
+      "published_at": "2026-08-25T08:23:03+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c6ad76c462d349df6f",
-      "title": "Chhattisgarh COVID-19 and H1N1 Active Cases: छत्तीसगढ़ में H1N1 के बीच कोरोना की एंट्री, रायपुर-राजनांदगांव में मिले 2 कोविड मरीज,स्वाइन फ्लू के 37 केस एक्टिव,जानें ताजा अपडेट",
-      "url": "https://theruralpress.in/trp-news/chhattisgarh-corona-h1n1-covid-positive-raipur-rajnandgaon/",
-      "summary": "Chhattisgarh COVID-19 and H1N1 Active Cases: रायपुर। छत्तीसगढ़ में स्वाइन फ्लू (H1N1) संक्रमण के बीच कोरोना वायरस ने भी दस्तक दे दी है। प्रदेश के रायपुर और राजनांदगांव जिले में कोविड-19 के दो पॉजिटिव मरीज मिलने के बाद स्वास्थ्य विभाग सतर्क हो गया है। रायपुर में संक्रमित मरीज का इलाज होम आइसोलेशन में चल रहा […]",
-      "published_at": "Wed, 02 Sep 2026 15:54:01 +0000",
+      "raw_id": "8b80dad7a09a746b85",
+      "title": "Convince hogye aap?🤣",
+      "url": "https://www.youtube.com/shorts/Br9y_oqclDM",
+      "summary": "",
+      "published_at": "2026-08-24T08:19:27+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "9675ba15ef4ab2660a",
-      "title": "Sukma ACB Trap: 10 हजार की रिश्वत लेते BEO गिरफ्तार, जानें पूरा मामला",
-      "url": "https://theruralpress.in/chhattisgarh/sukma-beo-acb-trap-10-hazar-bribe/",
-      "summary": "Sukma ACB Trap: रायपुर/सुकमा। छत्तीसगढ़ के सुकमा जिले में एंटी करप्शन ब्यूरो (ACB) ने बुधवार को बड़ी कार्रवाई करते हुए खंड शिक्षा अधिकारी चंद्र कुमार यारदा को 10 हजार रुपये की रिश्वत लेते रंगे हाथों गिरफ्तार किया है। आरोपी पर 16 लाख रुपये के एरियर्स भुगतान के एवज में रिश्वत मांगने का आरोप है। एंटी […]",
-      "published_at": "Wed, 02 Sep 2026 15:01:41 +0000",
+      "raw_id": "5420edd4d61b789c91",
+      "title": "Mithai me Khattas?👀",
+      "url": "https://www.youtube.com/shorts/1QucKICQSuk",
+      "summary": "",
+      "published_at": "2026-08-24T08:17:34+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "a17a33babc913516d4",
-      "title": "Chhattisgarh High Court news: पत्नी की कमाई पर पति कर सकेगा सवाल, हाईकोर्ट ने पलटा फैमिली कोर्ट का फैसला, जानें क्या है मामला",
-      "url": "https://theruralpress.in/trp-news/chhattisgarh-high-court-husband-wife-income-maintenance-case/",
-      "summary": "Chhattisgarh High Court news: बिलासपुर। गुजारा भत्ता से जुड़े एक अहम मामले में छत्तीसगढ़ हाईकोर्ट ने स्पष्ट किया है कि पत्नी ने अपनी आय और कमाई के स्रोत को लेकर कोर्ट में जो शपथ पत्र पेश किया है, उस पर पति को सवाल पूछने और जिरह करने का पूरा अवसर मिलना चाहिए। कोर्ट ने कहा […]",
-      "published_at": "Wed, 02 Sep 2026 14:53:14 +0000",
+      "raw_id": "e92706622bfb845681",
+      "title": "Ramdev Baba Vs. Kangana Ranaut 🗣️💯",
+      "url": "https://www.youtube.com/shorts/Z0BYCKgYrkk",
+      "summary": "",
+      "published_at": "2026-08-23T12:00:28+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "bf2b8c4e1a7c46fef1",
-      "title": "CG Congress: भाजपा का बस्तर मॉडल विकास का नहीं, आदिवासियों के विनाश और कॉर्पोरेट लूट का मॉडल-दीपक बैज",
-      "url": "https://theruralpress.in/chhattisgarh/cg-congress-deepak-baij-attacks-bjp-bastar-model/",
-      "summary": "CG Congress: छत्तीसगढ़ प्रदेश कांग्रेस कमेटी के अध्यक्ष दीपक बैज ने भारतीय जनता पार्टी (भाजपा) द्वारा प्रचारित बस्तर के विकास मॉडल पर तीखा हमला बोला है। दीपक बैज ने इसे बस्तर के स्थानीय आदिवासियों के विनाश और कॉर्पोरेट घरानों की लूट का मॉडल करार दिया। उन्होंने कहा कि राज्य की डबल इंजन सरकार नक्सल प्रभावित […]",
-      "published_at": "Wed, 02 Sep 2026 13:01:44 +0000",
+      "raw_id": "ae0b425e6de6dfa2c6",
+      "title": "We got Modi Chalisa before GTA 6 😭🤣",
+      "url": "https://www.youtube.com/shorts/Krtg_9N3EMk",
+      "summary": "",
+      "published_at": "2026-08-23T08:50:06+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "e2f40041e0f40bb9b0",
-      "title": "Ayodhya Shri Ram Mandir: अयोध्या राम मंदिर के पहले सीईओ बने एयर मार्शल जितेंद्र मिश्रा, राम जन्मभूमि ट्रस्ट में तीन नए सदस्य भी शामिल",
-      "url": "https://theruralpress.in/national/ayodhya-ram-mandir-first-ceo-air-marshal-jitendra-mishra-trust-new-members/",
-      "summary": "Ayodhya Shri Ram Mandir: अयोध्या के श्रीराम जन्मभूमि तीर्थ क्षेत्र ट्रस्ट ने मंदिर प्रशासन को सुचारू रूप से चलाने के लिए बड़ा निर्णय लिया है। पूर्व एयर मार्शल जितेंद्र मिश्रा को राम मंदिर का पहला मुख्य कार्यपालक अधिकारी (सीईओ) नियुक्त किया गया है। बुधवार को अयोध्या की मणिरामदास छावनी में महंत नृत्यगोपालदास की अध्यक्षता में […]",
-      "published_at": "Wed, 02 Sep 2026 11:37:33 +0000",
+      "raw_id": "a307fe3352d27f26bb",
+      "title": "Bhangra me bhi scam? 🤣",
+      "url": "https://www.youtube.com/shorts/1hUfXp7Z_Ss",
+      "summary": "",
+      "published_at": "2026-08-21T08:17:23+00:00",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": false,
+      "priority_discovery": true,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent journalist and digital video publisher"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 28,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

@@ -1,7 +1,7 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-04T19:04:51.491566+00:00",
-  "input_count": 425,
+  "prepared_at": "2026-09-04T22:27:45.180426+00:00",
+  "input_count": 424,
   "supplied_count": 200,
   "source_mix": {
     "independent_social": 116,
@@ -11,6 +11,41 @@
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "a254c9410d081e0fcd",
+      "title": "Belgian PM pitches Port of Antwerp-Bruges as India’s trade gateway to Europe",
+      "url": "https://www.thehindu.com/news/national/belgian-pm-pitches-port-of-antwerp-bruges-as-indias-trade-gateway-to-europe/article71429469.ece",
+      "summary": "Piyush Goyal says India-EU Free Trade Agreement will create opportunities for farmers, fishermen, MSMEs, startups, women entrepreneurs, manufacturers and service providers across India and Europe",
+      "published_at": "Fri, 04 Sep 2026 23:04:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1xzbim/article71429700.ece/alternates/LANDSCAPE_1200/20260904467L.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
+        ]
+      }
+    },
     {
       "raw_id": "a7887ee24c450bb428",
       "title": "Farmers’ union to mobilise one million ‘swayamsevaks’ to fight trade deals",
@@ -251,39 +286,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     },

@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-05T18:25:43.071449+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-09-05T22:09:28.489173+00:00",
+  "input_count": 436,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 122,
+    "established_or_other": 78,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "f86ce91a90eeccf6b4",
+      "title": "Chitrakoot Flood and Weather Update: अचानक बाढ़ से डूबा चित्रकूट, दलित और मुस्लिम बस्ती तक क्यों नहीं पहुंची राहत? Bihar,MP, Delhi और Chhattisgarh अगले 5 दिनों का मौसम अपडेट",
+      "url": "https://khabarlahariya.org/chitrakoot-flood-and-weather-update-chitrakoot-submerged-by-flash-floods-why-did-relief-fail-to-reach-dalit-and-muslim-settlements-weather-update-for-bihar-mp-delhi-and-chhattisgarh-for-t/",
+      "summary": "नत्थु और उनकी पत्नी दोनों देख नहीं पाते और उन्हें पानी बढ़ने का पता तब चला जब कमरा और कपड़े पानी से भीग चुके थे। घर का सामान, कपड़े और…",
+      "published_at": "Mon, 31 Aug 2026 11:16:54 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "ac46478b7cf80df8d3",
       "title": "Delhi Bus Gang Rape Case: 16 साल की नाबालिग लड़की के साथ कथित गैंगरेप, बस ड्राइवर और कंडक्टर गिरफ्तार",
@@ -882,70 +911,12 @@
       }
     },
     {
-      "raw_id": "03a5c6d7d9881fa300",
-      "title": "Road works worth ₹15.71 crore progressing rapidly in Ponnur constituency: Pemmasani",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/road-works-worth-1571-crore-progressing-rapidly-in-ponnur-pemmasani/article71431768.ece",
-      "summary": "",
-      "published_at": "Sat, 05 Sep 2026 23:47:36 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "51881e2b05f6ffe050",
-      "title": "Applications invited for journalist awards in A.P.",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/applications-invited-for-journalist-awards-in-ap/article71432784.ece",
-      "summary": "The awards cover 12 categories, with cash prizes ranging from ₹1 lakh to ₹2 lakh; applicants must submit details and at least five works published or broadcast in 2025",
-      "published_at": "Sat, 05 Sep 2026 23:47:12 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "df2f6c89dc9d90d58e",
-      "title": "Lokayukta registers suo motu case over lack of medical aid at Shivajinagar bus stand",
-      "url": "https://www.thehindu.com/news/national/karnataka/lokayukta-registers-suo-motu-case-over-lack-of-medical-aid-at-shivajinagar-bus-stand/article71432893.ece",
-      "summary": "The action was initiated by Justice K.N. Phaneendra, Upalokayukta, Karnataka.",
-      "published_at": "Sat, 05 Sep 2026 23:42:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/y2nhal/article71433276.ece/alternates/LANDSCAPE_1200/BMTC_06.jpg",
+      "raw_id": "03c21fb2b38a907550",
+      "title": "Bihar govt. restricts CBI power; State nod mandatory to probe against its employees",
+      "url": "https://www.thehindu.com/news/national/bihar/bihar-govt-restricts-cbi-power-state-nod-mandatory-to-probe-against-its-employees/article71431967.ece",
+      "summary": "However, the notification issued by the Bihar Home Department on September 3, 2026, clearly stated that the CBI will not require permission from the State government to take action against Central Government employees",
+      "published_at": "Sun, 06 Sep 2026 03:22:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tav0yv/article71433478.ece/alternates/LANDSCAPE_1200/cbi.png",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -965,22 +936,169 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 4
+          "States & Local": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "7a56c20f6c67188d8d",
-      "title": "Efforts on to capture a second tiger in Gudalur Forest Division",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/efforts-on-to-capture-a-second-tiger-in-gudalur-forest-division/article71431419.ece",
-      "summary": "Forest Department confirms that this tiger is different to the one that killed two people in O’Valley in August",
-      "published_at": "Sat, 05 Sep 2026 23:33:03 +0530",
+      "raw_id": "2887f518990b47978c",
+      "title": "VTU asks principals of engineering colleges to dedicate time slots for student interaction and grievance redressal",
+      "url": "https://www.thehindu.com/news/national/karnataka/vtu-asks-principals-of-engineering-colleges-to-dedicate-time-slots-for-student-interaction-and-grievance-redressal/article71432794.ece",
+      "summary": "The colleges have been asked to maintain a grievance log book. In the log book, the principal must record the date, brief nature of the grievance/query, and the action taken or resolution provided, wherever applicable.",
+      "published_at": "Sun, 06 Sep 2026 03:05:50 +0530",
       "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "82c89f00cd23fbca0f",
+      "title": "MLA seeks steps to address water shortage in Chittoor, Vaduthala areas",
+      "url": "https://www.thehindu.com/news/national/kerala/mla-seeks-steps-to-address-water-shortage-in-chittoor-vaduthala-areas/article71433057.ece",
+      "summary": "Drinking water supply in Chittoor and Vaduthala areas has been significantly disrupted for nearly a month, causing immense difficulty to residents.",
+      "published_at": "Sun, 06 Sep 2026 01:29:30 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "d5cfb1c431235fcfff",
+      "title": "Manipur tribe body seeks ‘impartial’ NIA probe in killing of three church leaders",
+      "url": "https://www.thehindu.com/news/national/manipur/manipur-tribe-body-seeks-impartial-nia-probe-in-killing-of-three-church-leaders/article71432079.ece",
+      "summary": "The Thadou Inpi Manipur resents the sloth in the probe and says the lack of publicly known arrests has raised concerns about the transparency and credibility of the investigation",
+      "published_at": "Sun, 06 Sep 2026 01:28:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yv6ykl/article71433356.ece/alternates/LANDSCAPE_1200/20260828132L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "2fc051955064279c0a",
+      "title": "Traffic curbs in Kochi in view of police marathon",
+      "url": "https://www.thehindu.com/news/national/kerala/traffic-curbs-in-kochi-in-view-of-police-marathon/article71433014.ece",
+      "summary": "Curbs will be imposed on the stretch of NH 544 between SCMS, Kalamassery, and JLN Stadium, Kaloor; Aluva-Ernakulam PWD Road, and the premises of the stadium between 3 p.m. and 7 p.m.",
+      "published_at": "Sun, 06 Sep 2026 01:25:48 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "5bb681b39bbbb33e6b",
+      "title": "342 complete training at OTA; commissioned as officers in Indian Army",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/342-complete-training-at-ota-commissioned-as-officers-in-indian-army/article71431381.ece",
+      "summary": "17 from seven friendly foreign countries also complete training",
+      "published_at": "Sun, 06 Sep 2026 01:06:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sohdqg/article71432431.ece/alternates/LANDSCAPE_1200/11658_5_9_2026_19_18_27_3_3.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "baefcda14f54d87e46",
+      "title": "Documentary on wildlife in Tamil Nadu to be screened from Monday",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/documentary-on-wildlife-in-tamil-nadu-to-be-screened-from-monday/article71432552.ece",
+      "summary": "",
+      "published_at": "Sun, 06 Sep 2026 01:05:03 +0530",
+      "image_url": "https://th-i.thgim.com/public/entertainment/movies/2euzfk/article71164817.ece/alternates/LANDSCAPE_1200/Wild%20Tamil%20Nadu%20-%20Official%20Poster.jpg.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1008,12 +1126,12 @@
       }
     },
     {
-      "raw_id": "7f649a078b755a0597",
-      "title": "71-year-old  doctor loses ₹5 lakh in fake customer care scam",
-      "url": "https://www.thehindu.com/news/national/karnataka/71-year-old-doctor-loses-5-lakh-in-fake-customer-care-scam/article71431968.ece",
-      "summary": "",
-      "published_at": "Sat, 05 Sep 2026 23:32:53 +0530",
-      "image_url": "",
+      "raw_id": "deb4667e312c919271",
+      "title": "Second homes, lifestyle upgrades fuel interest at property expo",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/second-homes-lifestyle-upgrades-fuel-interest-at-property-expo/article71432227.ece",
+      "summary": "Young women were among the prominent visitors at the expo, with many exploring property options and looking to make their own real estate investments",
+      "published_at": "Sun, 06 Sep 2026 01:00:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g7yk7k/article71432577.ece/alternates/LANDSCAPE_1200/BVR_9884.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1037,41 +1155,12 @@
       }
     },
     {
-      "raw_id": "555120294e215bc364",
-      "title": "Peringamala gearing up to host Niravu farm fete",
-      "url": "https://www.thehindu.com/news/national/kerala/peringamala-gearing-up-to-host-niravu-farm-fete/article71432845.ece",
-      "summary": "",
-      "published_at": "Sat, 05 Sep 2026 23:31:42 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "89fbd11ee2c6a2d32e",
-      "title": "79 monoliths and a mountain of challenges: reconstructing a Nayak-era wonder",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/79-monoliths-and-a-mountain-of-challenges-reconstructing-a-nayak-era-wonder/article71432437.ece",
-      "summary": "The initiative to restore the Veera Vasantharayar Mandapam at the Meenakshi Amman Temple in Madurai, which burned in a fire, ran into many hurdles. After an uphill struggle, a team of around 150 sculptors, led by sthapathi V.P. Velmurugan of Tiruppur, managed to complete the project, with the renewed hall being formally inaugurated on August 30",
-      "published_at": "Sat, 05 Sep 2026 23:29:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/klriv0/article71432588.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-04%20at%2018.45.26.jpeg",
+      "raw_id": "65e9d1cbfcc8469254",
+      "title": "Kolkata school teacher booked for ‘forcing’ student to remove tilak",
+      "url": "https://www.thehindu.com/news/cities/kolkata/kolkata-school-teacher-booked-for-forcing-student-to-remove-tilak/article71432898.ece",
+      "summary": "West Bengal Chief Minister Suvendu Adhikari says an FIR has been registered against the teacher for ‘hurting religious sentiments’ and ‘humiliating’ the student. Such things ‘will not be allowed in Bengal’, he says",
+      "published_at": "Sun, 06 Sep 2026 00:44:15 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vzhccc/article71433335.ece/alternates/LANDSCAPE_1200/20260904294L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1091,98 +1180,11 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 1
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
-          "Sports"
+          "Society, Rights & Justice"
         ]
-      }
-    },
-    {
-      "raw_id": "dd2906a92efcaeef8a",
-      "title": "Overpriced popcorn, bottled water in multiplexes: Keralam govt. agencies begin inspections",
-      "url": "https://www.thehindu.com/news/national/kerala/overpriced-popcorn-bottled-water-in-multiplexes-keralam-govt-agencies-begin-inspections/article71431510.ece",
-      "summary": "Officials issue notices to representatives of multiplexes, saying that the prices are excessive, and that the matter will be reported to the government",
-      "published_at": "Sat, 05 Sep 2026 23:26:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r9ww43/article71432918.ece/alternates/LANDSCAPE_1200/80968_5_9_2026_17_10_25_2_IMG_0502.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5978f66c4408f53c25",
-      "title": "Woman alleges ₹1.5 lakh fraud in promise of CM relief fund assistance",
-      "url": "https://www.thehindu.com/news/national/karnataka/woman-alleges-15-lakh-fraud-in-promise-of-cm-relief-fund-assistance/article71432065.ece",
-      "summary": "",
-      "published_at": "Sat, 05 Sep 2026 23:23:18 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "730ce9d29640d6df74",
-      "title": "Supreme Court wants affidavit on IPS postings in CAPFs, continues oversight of 2025 judgment",
-      "url": "https://www.thehindu.com/news/national/supreme-court-wants-affidavit-on-ips-postings-in-capfs-continues-oversight-of-2025-judgment/article71433084.ece",
-      "summary": "In an affidavit, the Union Home Secretary had informed the court that 46 IPS officers have been brought on deputation to the CAPFs up to the SAG level after the court’s 2025 judgment",
-      "published_at": "Sat, 05 Sep 2026 23:22:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3ua3mv/article71433253.ece/alternates/LANDSCAPE_1200/6744_19_8_2025_16_9_6_4_18_08_2025_SUPREME_COURT01.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
       }
     }
   ]

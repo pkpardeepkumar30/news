@@ -1,57 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-07T20:04:02.313111+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-09-07T22:56:47.857818+00:00",
+  "input_count": 429,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 118,
-    "established_or_other": 82,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "f756cb150ed330ed5a",
-      "title": "Delhi High Court grants relief to Mahabelly against MCD sealing action",
-      "url": "https://www.barandbench.com/news/delhi-high-grants-relief-to-mahabelly-against-mcd-sealing-action",
-      "summary": "The Delhi High Court on Monday granted interim protection to popular South Delhi eatery Mahabelly Canteen against sealing action of Municipal Corporation of Delhi (MCD). Justice Amit Bansal directed MCD not to take any precipitative or coercive sealing action against Mahabelly's premises in Saidulajab. The Court passed the order on a petition filed by the restaurant’s operating entity, M/s Fenn & Jacob Associates LLP, challenging a 48-hour sealing notice issued on September 1 by the Deputy Commissioner (South Zone) of the MCD under Section 345-A of the Delhi Municipal Corporation Act, 1957. The Court granted Mahabelly two weeks to submit a detailed representation in response to the notice. The Court directed the civic body to consider the reply and arrive at a reasoned decision in accordance with law, In the interim, no precipitative steps shall be taken against the establishment, the Court directed. Justice Amit Bansal Earlier, the counsel for Mahabelly argued that MCD had arbitrarily formed a final view regarding the alleged “misuse” of premises under the Master Plan for Delhi-2021 without affording an opportunity of hearing, providing an inspection report, or adhering to the pri",
-      "published_at": "Mon, 07 Sep 2026 20:33:13 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-07/mqupy42e/1000633535.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "States & Local": 2,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
     {
       "raw_id": "fc08c5372c63208db7",
       "title": "Crime content on social media threatens wildlife safety",
@@ -222,6 +181,74 @@
           "Governance & Administration",
           "Politics & Elections",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2c7fb53f1590532083",
+      "title": "Sanjay Kumar Agrawal sworn in as Rajasthan HC Chief Justice",
+      "url": "https://www.thehindu.com/news/national/rajasthan/sanjay-kumar-agrawal-sworn-in-as-rajasthan-hc-chief-justice/article71439110.ece",
+      "summary": "Justice Agrawal’s appointment in Rajasthan comes amid a controversy surrounding Justice Sanjeev Prakash Sharma, who had been serving as the High Court’s Acting Chief Justice since September 2025.",
+      "published_at": "Tue, 08 Sep 2026 03:33:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/m74hz1/article71440418.ece/alternates/LANDSCAPE_1200/20260907273L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "5067faf728bc79fdb8",
+      "title": "Uttar Pradesh Congress president Ajay Rai, others detained as row over Saharanpur mosque demolition escalates",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/uttar-pradesh-congress-president-ajay-rai-others-detained-as-row-over-saharanpur-mosque-demolition-escalates/article71439412.ece",
+      "summary": "The Congress described the police action as dictatorship, adding the administration is working on the directions of the Bharatiya Janata Party (BJP) government to silence the voices of opposition.",
+      "published_at": "Tue, 08 Sep 2026 02:38:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ypghn2/article71440291.ece/alternates/LANDSCAPE_1200/20260907086L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
         ]
       }
     },
@@ -537,12 +564,12 @@
       }
     },
     {
-      "raw_id": "24928d544b4fa48099",
-      "title": "13 lakh Delhi voters deleted in pre-SIR mapping phase, highest in Phase-3",
-      "url": "https://www.thehindu.com/news/cities/Delhi/13-lakh-delhi-voters-deleted-in-pre-sir-mapping-phase-highest-in-phase-3/article71436483.ece",
-      "summary": "January 2026 alone accounted for more deletions than 11 months of 2025; officials say this was part of “continuous updation of rolls”; no separate list was published with reasons for the mass deletions",
-      "published_at": "Mon, 07 Sep 2026 22:47:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/g6pwam/article71440096.ece/alternates/LANDSCAPE_1200/4col_Lead_StoryGPBGDKFNJ.3.jpg.jpg",
+      "raw_id": "b522f78d82cb56c5fa",
+      "title": "Mizoram electoral rolls see 78,442 deletions, 39,243 additions after SIR; final count at 8.35 lakh",
+      "url": "https://www.thehindu.com/news/national/mizoram/mizoram-electoral-rolls-see-78442-deletions-39243-additions-after-sir-final-count-at-835-lakh/article71440012.ece",
+      "summary": "\"The draft electoral rolls published on July 4 contained 8,28,906 electors. During the claims and objections period, which ended on 2 September, 32,280 more names were removed while 39,243 voters were added, resulting in a net increase of 6,963 electors or 0.84% from the draft rolls, in the final rolls,\" Chief Electoral Officer Garima Gupta said",
+      "published_at": "Tue, 08 Sep 2026 02:15:14 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -562,7 +589,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 4
+          "Politics & Elections": 5
         },
         "candidate_categories": [
           "Politics & Elections"
@@ -570,12 +597,12 @@
       }
     },
     {
-      "raw_id": "9f172ee59cae432b5d",
-      "title": "New political party launched",
-      "url": "https://www.thehindu.com/news/national/karnataka/new-political-party-launched/article71439767.ece",
-      "summary": "",
-      "published_at": "Mon, 07 Sep 2026 22:17:07 +0530",
-      "image_url": "",
+      "raw_id": "24928d544b4fa48099",
+      "title": "13 lakh Delhi voters deleted in pre-SIR mapping phase, highest in Phase-3",
+      "url": "https://www.thehindu.com/news/cities/Delhi/13-lakh-delhi-voters-deleted-in-pre-sir-mapping-phase-highest-in-phase-3/article71436483.ece",
+      "summary": "January 2026 alone accounted for more deletions than 11 months of 2025; officials say this was part of “continuous updation of rolls”; no separate list was published with reasons for the mass deletions",
+      "published_at": "Mon, 07 Sep 2026 22:47:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g6pwam/article71440096.ece/alternates/LANDSCAPE_1200/4col_Lead_StoryGPBGDKFNJ.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1347,41 +1374,6 @@
         },
         "candidate_categories": [
           "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
         ]
       }
     }

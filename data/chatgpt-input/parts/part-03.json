@@ -1,61 +1,94 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-08T12:59:00.344656+00:00",
-  "input_count": 489,
+  "prepared_at": "2026-09-08T19:31:43.700760+00:00",
+  "input_count": 431,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 148,
-    "established_or_other": 52,
+    "independent_social": 119,
+    "established_or_other": 81,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "503a5d2cb7b61c39b8",
-      "title": "Summer shake-up, early verdicts: assessing the Premier League’s Big Six start to the new season",
-      "url": "https://www.thehindu.com/sport/football/summer-shake-up-early-verdicts-assessing-the-premier-leagues-big-six-start-to-the-new-season/article71441976.ece",
-      "summary": "Defending champions Arsenal and a new-look Manchester City have started strongly, while the others are playing catch-up again",
-      "published_at": "Tue, 08 Sep 2026 15:08:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/b20ngu/article71442041.ece/alternates/LANDSCAPE_1200/havertz%20rogers%20barcola%20reuters.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 12
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "39d89e4ee1f5663436",
-      "title": "Asian Games | For cricket to grow, it has to be played everywhere: Sunil Gavaskar",
-      "url": "https://www.thehindu.com/sport/cricket/asian-games-for-cricket-to-grow-it-has-to-be-played-everywhere-sunil-gavaskar/article71438736.ece",
-      "summary": "Though reports have emerged of the arrangements in Japan for the cricketers not being up to scratch, Gavaskar emphasised that such obstacles shouldn’t dissuade the game’s stakeholders from exploring newer markets",
-      "published_at": "Tue, 08 Sep 2026 00:02:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/xullne/article71438738.ece/alternates/LANDSCAPE_1200/AP07_04_2026_000507A.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "4b31649bc41b998026",
+      "title": "Israel orders closure of U.K. consulate in Jerusalem over settlement sanctions",
+      "url": "https://www.thehindu.com/news/international/israel-orders-closure-of-uk-consulate-in-jerusalem-over-settlement-sanctions/article71443779.ece",
+      "summary": "Israel said it would also expel British diplomats at a centre monitoring the U.S.-brokered ceasefire plan in Gaza and bar British training for Palestinian Authority forces, as well as banning 12 British officials from visiting Israel",
+      "published_at": "Tue, 08 Sep 2026 21:22:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/cm7ywv/article71443959.ece/alternates/LANDSCAPE_1200/AFP__20260908__C7P47ZY__v1__HighRes__IsraelPalestinianBritainDiplomacy.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -70,27 +103,272 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Sports": 12
+          "International & Geopolitics": 13
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "cc512497be9a4d8b1f",
+      "title": "Iran values long-standing, civilisational ties with India: Foreign Ministry",
+      "url": "https://www.thehindu.com/news/international/iran-values-long-standing-civilisational-ties-with-india-foreign-ministry/article71441080.ece",
+      "summary": "Just days before the BRICS summit, Mr. Baghaei said that Chabahar Port is one of the issues of bilateral talks between India and Iran. He said, “Various issues are usually discussed during consultations between Iran and India, including the Chabahar Port, which is important to both countries.”",
+      "published_at": "Tue, 08 Sep 2026 09:16:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9ewgb6/article71441081.ece/alternates/LANDSCAPE_1200/GwDbcjCWUAANeIQ%201.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "2f397075146fdea347",
+      "title": "TN Assembly drama: CM Vijay attacks DMK over past corruption | Above the Fold | Sept 7, 2026",
+      "url": "https://www.thehindu.com/videos/tn-assembly-drama-cm-vijay-attacks-dmk-over-past-corruption-above-the-fold-sept-7-2026/article71440003.ece",
+      "summary": "Today’s Above the Fold bulletin covers Tamil Nadu’s heated Assembly clashes over past corruption charges, Delhi’s tragic hostel collapse raising serious safety questions, and New Delhi’s official stance on a controversial new UN map. We also examine escalating West Asia strikes, ISRO’s milestone satellite launch, and key diplomatic engagements worldwide.",
+      "published_at": "Mon, 07 Sep 2026 21:58:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/uw01p2/article71439998.ece/alternates/LANDSCAPE_1200/AUGUST%2027.jpg%201.jpeg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "6c4d5f6a2c7207a52e",
+      "title": "Nepal tunnel rescues face ‘unprecedented’ challenge",
+      "url": "https://www.thehindu.com/news/international/nepal-tunnel-rescues-face-unprecedented-challenge/article71437515.ece",
+      "summary": "\"We are facing something I have never faced before,\" said the president of the International Tunnelling and Underground Space Association",
+      "published_at": "Mon, 07 Sep 2026 12:43:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hav5n/article71437535.ece/alternates/LANDSCAPE_1200/20260906310L.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "873e276cccd53f9228",
+      "title": "West Asia conflict updates: Iran warns U.S. energy assets in Gulf are vulnerable after latest clashes",
+      "url": "https://www.thehindu.com/news/international/us-iran-war-live-updates-israel-strikes-lebanon-hezbollah-donald-trump-netanyahu-september-7-2026/article71437351.ece",
+      "summary": "Iranian Parliament Speaker Mohammad Bagher Ghalibaf warned the U.S. that the “rules of the game” in its war with Iran had changed, saying any further attack on Iranian interests or security would draw a faster and more painful response",
+      "published_at": "Tue, 08 Sep 2026 05:09:47 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Iran warns U.S. energy assets in Gulf are vulnerable after latest clashes",
+          "url": "https://www.thehindu.com/news/international/iran-warns-us-energy-assets-in-gulf-are-vulnerable-after-latest-clashes/article71440074.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "5dcf0257780be057d3",
+      "title": "Russia welcomes India’s contribution to end Ukraine crisis: Kremlin spokesperson",
+      "url": "https://www.thehindu.com/news/international/russia-will-welcome-indias-efforts-toward-peaceful-resolution-of-ukraine-conflict-peskov/article71442448.ece",
+      "summary": "On the expectations and challenges before the BRICS Summit that will be chaired by India this time, Dmitry Peskov says that BRICS is not ‘anti-Western’, and that it is a grouping of countries who share an outlook",
+      "published_at": "Tue, 08 Sep 2026 22:47:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/aktk4n/article71442450.ece/alternates/LANDSCAPE_1200/PTI09_08_2026_000249B.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "d93232f8ae7dc1f495",
+      "title": "Magnitude 5.3 earthquake strikes Tibet, EMSC says",
+      "url": "https://www.thehindu.com/news/international/earthquake-in-nepal-and-tibet/article71444376.ece",
+      "summary": "Earlier on Tuesday (September 8) an earthquake measuring 5.3 magnitude hit Mustang district in northwest Nepal",
+      "published_at": "Tue, 08 Sep 2026 23:36:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3qx93t/article71444406.ece/alternates/LANDSCAPE_1200/iStock-2203060736%202.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "2b0e855e900d78bf37",
+      "title": "Russia, North Korea open first road link across shared border",
+      "url": "https://www.thehindu.com/news/international/russia-north-korea-open-first-road-link-across-shared-border/article71444269.ece",
+      "summary": "Expansion of transport infrastructure near the border will give a powerful boost to the further development of trade, economic, technological, scientific and cultural cooperation between the Russian Federation and the Democratic People's Republic of Korea, said Prime Minister Mikhail Mishustin",
+      "published_at": "Tue, 08 Sep 2026 22:40:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/abr22e/article71444282.ece/alternates/LANDSCAPE_1200/2026-09-07T215756Z_1901237136_RC2RXMAGT0F0_RTRMADP_3_NORTHKOREA-RUSSIA-BRIDGE.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 2,
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "3cb430dc1925332ff9",
-      "title": "Women’s Asia Cup: Pakistan captain Fatima Sana fined 10% match fee for Shafali Verma send-off",
-      "url": "https://www.thehindu.com/sport/cricket/womens-asia-cup-pakistan-captain-fatima-sana-fined-10-match-fee-for-shafali-verma-send-off/article71438499.ece",
-      "summary": "The incident occurred in the second over of India's innings when Fatima, after dismissing Shafali, gestured in the direction of the pavilion",
-      "published_at": "Mon, 07 Sep 2026 17:20:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5tpv76/article71438505.ece/alternates/LANDSCAPE_1200/GettyImages-2281755673.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "29e9d961eb5405ef6d",
+      "title": "U.K. air traffic control glitch prompts nearly 300 cancellations, monitor says",
+      "url": "https://www.thehindu.com/news/international/uk-air-traffic-control-glitch-prompts-nearly-300-cancellations-monitor-says/article71444236.ece",
+      "summary": "Heathrow, Stansted and City airports in London, as well as airports in Manchester, Birmingham, Scotland and elsewhere in the U.K., said the technical issue was causing some disruptions. They warned passengers to check the status of their flight with their airline",
+      "published_at": "Tue, 08 Sep 2026 22:33:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/kdaing/article71444262.ece/alternates/LANDSCAPE_1200/2026-09-08T144354Z_869264541_RC24JCAKOSFU_RTRMADP_3_BRITAIN-AIRPORT.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -105,25 +383,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 12
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "b38bc6d4fccfbe0f93",
-      "title": "Arsenal rally past Chelsea in Premier League comeback win",
-      "url": "https://www.thehindu.com/sport/football/arsenal-rally-past-chelsea-in-comeback-win/article71437545.ece",
-      "summary": "Captain Martin Odegaard scored the winner as Mikel Arteta’s side made an early statement in the Premier League title race",
-      "published_at": "Mon, 07 Sep 2026 12:25:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3zj5wv/article71437556.ece/alternates/LANDSCAPE_1200/Britain_Premier_League_Soccer_15321.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "d6dd3da10448cb789f",
+      "title": "Nepal marks first anniversary of Gen Z movement",
+      "url": "https://www.thehindu.com/news/international/nepal-marks-first-anniversary-of-gen-z-movement/article71444136.ece",
+      "summary": "The government declared a public holiday on September 8 to mark Gen Z Martyrs' Day, with special programmes being organised across Nepal in honour of those who lost their lives during the Gen Z movement",
+      "published_at": "Tue, 08 Sep 2026 22:31:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9pwfzz/article71444260.ece/alternates/LANDSCAPE_1200/Nepal_GenZ_Protest_Anniversary_72938.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -138,428 +416,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 12
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "f8aea15d7e0f7a393a",
-      "title": "Village volunteers, Arambai Tenggol not banned: Manipur CM",
-      "url": "https://eastmojo.com/manipur/2026/09/08/village-volunteers-arambai-tenggol-not-banned-manipur-cm/",
-      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Monday said the State Government is examining individual cases of alleged unlawful and criminal activities registered in the wake of the violence that broke out in May 2023. Taking part in a short-duration discussion moved by Opposition MLA K. Ranjit Singh in the Manipur Assembly, the Chief […] The post Village volunteers, Arambai Tenggol not banned: Manipur CM appeared first on EastMojo .",
-      "published_at": "Tue, 08 Sep 2026 06:20:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "d7d57ad36901860fd8",
-      "title": "Karnataka HC refuses to quash case against news channel's MD, CEO for making allegations about Dy. CM and  Collector",
-      "url": "https://www.barandbench.com/news/litigation/karnataka-hc-refuses-to-quash-case-against-news-channels-md-ceo-for-making-allegations-about-dy-cm-and-collector",
-      "summary": "The Karnataka High Court on Monday refused to quash criminal case against a Tumakuru-based news channel's executives in connection with a YouTube video which allegedly portrayed Deputy Chief Minister Dr G Parameshwar as being in a relationship with Tumakuru District Collector Shubha Kalyan IAS. Justice V Srishananda rejected the petitions filed by Prajashakti Channel Managing Director Shabbir Pasha and CEO V Kusuma, seeking quashing of the criminal case. During the hearing, the Court took strong exception to the language employed by the petitioners and the insinuations made by them in the video. “The background voice in the program is yours. You are the one who said that the Deputy Chief Minister is in love with the District Collector. Would it be okay if somebody speak like this to the daughters of your house? Do you alone have protection of Article 21 of the Constitution? Don't they?” the bench asked. The Court also questioned the accused about the impact such allegations could have on the dignity and reputation of the Deputy Commissioner and her family members, particularly her children. “You were arrested after collecting and checking your voice sample. Is it your job that to d",
-      "published_at": "Mon, 07 Sep 2026 22:03:03 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-06/7bf60ef0-f486-4036-b7ec-84b9f2c3c0e2/Karnataka_HC.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "868ad56d55abf34c1a",
-      "title": "Government can't escape responsibility: Delhi High Court on Satya Niketan building collapse",
-      "url": "https://www.barandbench.com/news/litigation/government-cant-escape-responsibility-delhi-high-court-on-satya-niketan-building-collapse",
-      "summary": "The Delhi High Court on Monday directed the Delhi government to intensify efforts to rescue students trappened under the debris of a multi-storied Paying Guest (PG) building that collapsed in South West Delhi's Satya Niketan. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia expressed anguish over the incident and warned the government that it could not wash its hands off the tragedy. \" You [government] can't escape responsibility... 50 young students who are at the threshold of their lives... Majority of them are perhaps still lying under the debris, there can’t be anything more sad than this ,\" the Court said. It directed the Municipal Corporation of Delhi (MCD) to conduct an inquiry at the highest level to find out whether the building which collapsed was constructed with valid permission. The Court said that the civic authority must fix the responsibility of the officers for such a lapse and inform the Court about what action has been proposed against the erring officials. The Court lamented that such tragedies occur in the national capital every second year. It questioned the Delhi government about what it was doing to stop such incidents. Soli",
-      "published_at": "Mon, 07 Sep 2026 16:16:14 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-03-27/ncjwb71r/KERALA-HC-WEB-PAGE-1600x900asd-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 3
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "727ec8806f8b87d97f",
-      "title": "Will pass blanket order barring more FIRs against Abhishek Banerjee: Calcutta HC warns State",
-      "url": "https://www.barandbench.com/news/litigation/will-pass-blanket-order-barring-more-firs-against-abhishek-banerjee-calcutta-hc-warns-state",
-      "summary": "The Calcutta High Court on Monday protected All India Trinamool Congress (TMC) leader and Diamond Harbour MP Abhishek Banerjee from coercive action in three more first information reports (FIRs) linked to allegations surrounding the Sebaashray medical camps [ Abhishek Banerjee v. State of West Bengal & Ors. ]. During the hearing, Justice Saugata Bhattacharyya took strong exception to the State government lodging multiple FIRs against the TMC leader and indicated that the Court may consider barring registration of any further FIRs against Banerjee without its permission, if complaints against him continue to be filed in similar manner. \"Why was the whistle not blown one year back? Every day issues coming one after another based on one complaint and another. If this thing goes on, then I am telling you that I am going to pass an order for blanket injunction,\" said Justice Bhattacharyya. The Court noted that the repeated registration of cases was becoming a matter of concern. \"Enough is enough. From May 2026. I am hearing these matters. Now I am going to pass, relying upon Suvendu Adhikari's order passed by a coordinate bench. I am telling you, that now I am fed up. That I am going to",
-      "published_at": "Mon, 07 Sep 2026 15:31:16 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-30/xzrrbn5k/J-dealstreet-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "e69e2955d0cbe77e0f",
-      "title": "We will not be browbeaten: Punjab and Haryana High Court in Punjab DA case",
-      "url": "https://www.barandbench.com/news/we-will-not-be-browbeaten-punjab-and-haryana-high-court-in-punjab-da-case",
-      "summary": "The Punjab and Haryana High Court on Monday observed that the Court will not be browbeaten by any kind of tactics and will defend the oath of the Constitution. The comment by Chief Justice Ashwani Kumar Mishra was made during the hearing of applications related to pending Dearness Allowance (DA) of Punjab government employees and pensioners. Justice Mishra, who today took oath as the Chief Justice amid a brewing controversy over the Punjab government's opposition to his elevation, was sitting on a division bench along with Justice Rohit Kapoor when he made the observation. \"This Court would be governed by the rule of law and this institution will not be browbeaten by any kind of tactics. So therefore, we will go strictly as per the law. We have taken the oath of the Constitution and we know how to preserve our oath and defend it,\" Chief Justice Mishra said. The Court said it will neither be influenced by the submissions of the petitioners nor the government. \"Either side, don't comment! You may have a lot of things to say or do, we will go by law. We have taken the oath of the Constitution,\" Justice Mishra said. Chief Justice Ashwani Kumar Mishra and Justice Rohit Kapoor In August,",
-      "published_at": "Mon, 07 Sep 2026 12:25:31 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-07/9fcd0d9a-3c36-4d8f-acc3-266aad7cbf90/21.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "23815d89d328117551",
-      "title": "Mass tourism is hurting Kannur’s Madayippara, an eco heritage status can change it",
-      "url": "https://www.thenewsminute.com/kerala/mass-tourism-is-hurting-kannurs-madayippara-an-eco-heritage-status-can-change-it",
-      "summary": "On a holiday, the road around Madayippara can become a parking lot. Hundreds of vehicles line the roadside as visitors make their way towards the biodiversity-rich laterite plateau in Kannur, drawn by its seasonal flowers, open landscape, and photographs of the place that have increasingly found their way into tourism promotions and social media feeds. But for those fighting to protect Madayippara, the crowds are a warning. The concern is not merely about litter, traffic or the inconvenience caused by visitors. It is about what happens to a fragile ecosystem when a landscape never meant to accommodate mass tourism begins attracting it in growing numbers, even as commercial projects emerge around it. Madayippara is a flat laterite hillock spread across around 365 hectares near Payangadi, about 22 km north of Kannur town. Once known mainly for its religious, cultural and ecological significance, it has increasingly become a tourist attraction, drawing visitors from Kerala and elsewhere, including tourists from outside India. That anxiety brought residents, environmentalists and others together for a rally on August 22, demanding to drop the proposed Eco Park project in the area and f",
-      "published_at": "Tue, 08 Sep 2026 07:47:27 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-05/75c2blxg/Madayi-protest.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "d90e759a3f3b1c487b",
-      "title": "MCD starts demolition drive in Bhalswa colony in north-west Delhi",
-      "url": "https://www.thehindu.com/news/cities/Delhi/mcd-starts-demolition-drive-in-bhalswa-colony-in-north-west-delhi/article68519463.ece",
-      "summary": "The Municipal Corporation of Delhi on August 13 began a demolition drive in north-west Delhi's Bhalswa Dairy colony; heavy deployment of security personnel has been made at the site",
-      "published_at": "Tue, 13 Aug 2024 12:35:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/s5onwe/article68519486.ece/alternates/LANDSCAPE_1200/06_RVM4466.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "e74856391abd7b3be6",
-      "title": "Rooftop solar in Tamil Nadu gets a fresh boost",
-      "url": "https://www.thehindu.com/news/states/rooftop-solar-gets-a-fresh-boost/article71354967.ece",
-      "summary": "The Tamil Nadu government announces an additional incentive to accelerate investment in solar technology. What should it focus on next?",
-      "published_at": "Mon, 17 Aug 2026 10:51:02 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ujdop5/article71354969.ece/alternates/LANDSCAPE_1200/Rooftop-solar-wG42GAEI5S.4.jpg.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "71d8d0af4c37fd3761",
-      "title": "Thousands protest 'encounter' killing",
-      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
-      "summary": "",
-      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Protests",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "ce5e84ffc7c68f6982",
-      "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
-      "url": "https://www.thehindu.com/videos/watch-maratha-reservation-stir-what-are-its-implications-of-the-obc-backlash/article67576436.ece",
-      "summary": "In this episode of Talking Politics, we discuss the implications of the OBC backlash over the Maratha reservation stir and its impact on the domestic politics of the state.",
-      "published_at": "Wed, 29 Jul 2026 12:07:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/957hu8/article67576418.ece/alternates/LANDSCAPE_1200/Nistula%20Thumb%202.png",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa2d94dc291e5880c2",
-      "title": "The controversy over the proposed Mekedatu water project",
-      "url": "https://www.thehindu.com/news/national/karnataka/the-controversy-over-the-proposed-mekedatu-water-project/article65252631.ece",
-      "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
-      "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
@@ -590,109 +450,6 @@
         "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
         "category_candidate_scores": {
           "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "2c5f2d78acec6f4d56",
-      "title": "‘I was shocked’: Justice RV Raveendran disagrees with Justice Nariman on full appeal against arbitral awards",
-      "url": "https://www.barandbench.com/news/i-was-shocked-justice-rv-raveendran-disagrees-with-justice-nariman-on-full-appeal-against-arbitral-awards",
-      "summary": "Former Supreme Court judge Justice RV Raveendran on Sunday disagreed with Justice Rohinton Fali Nariman’s recent suggestion for a full-fledged first appeal against domestic arbitral awards on facts and law, saying such a remedy would defeat the very purpose of arbitration. Justice Raveendran said he was “shocked” by the suggestion, though he acknowledged that it reflected the frustration caused by the present state of challenges to arbitral awards. “ Imagine, out of desperation, Justice Nariman said, let us have a first one appeal, full appeal and be done with it. I was shocked. But see, that is the amount of desperation .” He added, “ If you have a first appeal, then why have an arbitration? The entire purpose of arbitration is to have finality .” Justice RV Raveendran Justice Raveendran said that if courts were given wider appellate powers, including the ability to extensively reconsider or modify awards, the distinction between arbitration and ordinary litigation would begin to disappear. He was speaking at a panel discussion titled “A Judge’s wish list of what the law ought to be” on the concluding day of GHAC Arbitration Week 2026 in Gandhinagar. The three-day conference, held",
-      "published_at": "Sun, 06 Sep 2026 18:23:17 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-06/m42qpyq5/1000632763.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "45c44f1e375d651c8d",
-      "title": "Supreme Court’s recent arbitration rulings have created grave uncertainty: Retired Justice Rohinton Nariman",
-      "url": "https://www.barandbench.com/news/supreme-courts-recent-arbitration-rulings-have-created-grave-uncertainty-retired-justice-rohinton-nariman",
-      "summary": "Former Supreme Court Justice Rohinton F Nariman recently said that some of the Supreme Court’s recent arbitration judgments were incorrect and had created “grave uncertainty” by reopening settled questions. Justice Nariman was delivering the keynote address at the Gujarat High Court Arbitration Centre’s Arbitration Week 2026. He examined 5 recent Constitution Bench decisions concerning the appointment of arbitrators and challenges to arbitral awards. “ Here we have five recent judgments of the Supreme Court. How has the Act fared? According to me, not particularly well, because, firstly, the judgments don’t conduce to certainty . Secondly, constantly reopening closed questions again leads to grave uncertainty. Some of the judgments, unfortunately, are on the face of them not correct, in my humble submission,\" he said. Justice Nariman first referred to the five-judge ruling in Cox and Kings . The judgment held that the Arbitration and Conciliation Act, 1996 had to be read with the Contract Act while deciding whether a non-signatory intended to be bound by an arbitration agreement. He contrasted this with the subsequent 7-judge ruling on unstamped arbitration agreements. That judgmen",
-      "published_at": "Fri, 04 Sep 2026 13:31:35 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-04/g5x34v4j/B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "2d14f147419448363b",
-      "title": "Delhi High Court rejects NSUI plea over CBSE OSM row",
-      "url": "https://www.barandbench.com/news/litigation/delhi-high-court-rejects-nsui-plea-over-cbse-osm-row",
-      "summary": "The Delhi High Court on Monday refused to entertain a Public Interest Litigation (PIL) petition against alleged irregularities and technical failure in the Central Board of Secondary Education (CBSE)'s On-Screen Marking (OSM) system for the class XII exams. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia disposed of the PIL filed by National Students’ Union of India (NSUI) without any orders after noting that a similar petition was recently rejected by the Supreme Court. The Court also observed that such grievances cannot be decided in a PIL. It added that the students can individually approach the Court or CBSE as per the prescribed framework. \"We observe that claim for revaluation of answer book gives rise to individual cause of action to the student concerned for which it is always open for the student to take rederssal of the grievances with CBSE within framework,\" the Bench said. Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia The petition filed by NSUI President Vinod Jhakhar sought directions for the award of compensatory marks to students whose answer scripts were missing, blurred or incorrectly evaluated. The petitioner als",
-      "published_at": "Mon, 07 Sep 2026 18:47:10 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-07/c4a878c2-9b11-4b82-abb5-a93d994a5edc/BOMBAY__WEB_PAGE_1600x900_copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 3
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -766,82 +523,12 @@
       }
     },
     {
-      "raw_id": "3472fc554f1b9c07fa",
-      "title": "‘Are we safe here?’ Manipuri musician’s death in Delhi revives racism concerns",
-      "url": "https://eastmojo.com/premium/2026/09/08/are-we-safe-here-manipuri-musicians-death-in-delhi-revives-racism-concerns/",
-      "summary": "Chongtham Vikram Singh was killed in Delhi \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/09/Codex-Image-8-Sept-2026-12_33_58.png?fit=780%2C439&ssl=1\" /> The death of 54-year-old Manipuri musician Chongtham Vikram Singh, who allegedly died after being assaulted by a group of delivery workers and dhaba staff in Delhi’s Kilokari village, has reignited concerns over the safety and racial discrimination faced by people from the Northeast in the national capital. Singh was allegedly attacked in the early hours […] The post ‘Are we safe here?’ Manipuri musician’s death in Delhi revives racism concerns appeared first on EastMojo .",
-      "published_at": "Tue, 08 Sep 2026 07:15:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d86270b9ff12af67eb",
-      "title": "Calcutta High Court transfers hate speech case against Mahua Moitra to MP/MLA Court",
-      "url": "https://www.barandbench.com/news/calcutta-high-court-transfers-hate-speech-case-against-mahua-moitra-to-mpmla-court",
-      "summary": "The Calcutta High Court on September 7 transferred the hate speech case against Trinamool Congress Member of Parliament Mahua Moitra from a Magistrate court to a special MP/MLA court [Mahua Moitra vs. The State of West Bengal & Ors.]. A Division Bench comprising Justice Debangsu Basak and Justice Aryak Dutt said that a regular magistrate court lacks the jurisdiction to entertain cases against lawmakers. \"In the facts and circumstances of the present case, there is a complaint case as against the petitioner before us who is a Member of Parliament. Complaint registered as against the Member of Parliament was sought to be taken cognizance of by the learned 3rd Judicial Magistrate, Krishnagar, Nadia. Such Court is not the designated Court for the purpose of trying an offence against a Member of Parliament and Member of State Legislature,\" the Court held. Hence, it directed that the proceedings be transferred from the court of the Magistrate court at Krishnanagar in Nadia to the designated special court for MP/MLA cases situated at Bidhannagar in North 24 Parganas. The special MP/MLA court at Bidhannagar must take up the matter afresh at the pre-cognizance stage, the Court added. The co",
-      "published_at": "Tue, 08 Sep 2026 17:26:31 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-06/2bbf8db2-11b2-4dc6-9bbc-9d453ec6500d/Calcutta_High_Court_17.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "6adb61b75a2bfb2bcf",
-      "title": "Will summon your officers if you don't decide on remission plea by Dara Singh: Supreme Court to Odisha",
-      "url": "https://www.barandbench.com/news/litigation/will-summon-your-officers-if-you-dont-decide-on-remission-plea-by-dara-singh-supreme-court-to-odisha",
-      "summary": "The Supreme Court on Tuesday warned that it would summon officials of the Odisha government if the State's Sentence Review Board continues to delay its decision on a remission plea filed by Dara Singh, who is serving a life sentence for the 1999 murder of Australian missionary Graham Staines and his two minor sons [ Rabindra Kumar Pal @ Dara Singh v. State of Odisha ]. A Bench of Justices Manoj Misra and Vijay Bishnoi was hearing Singh’s petition seeking premature release from prison. “ Take a decision; otherwise, we will summon your officers, ” the Court said. This was after Odisha government's counsel sought an adjournment of the matter today, stating that Advocate-on-Record (AoR) was suffering from a viral infection. The Court pointed out that the case was adjourned several times earlier for the State's Sentence Review Board to make a decision, to no avail. “ You (State authority) cannot avoid taking a decision. You have to decide one way or the other. For two years, you have been delaying the decision. Accept or reject the plea, but take a decision. Inform the Court, ” Justice Manoj Misra said. Justices Manoj Misra and Vijay Bishnoi Dara Singh was part of a mob that killed Grah",
-      "published_at": "Tue, 08 Sep 2026 17:24:25 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-02-07/lzxw3lef/09.jpg",
+      "raw_id": "cc580c4469397f52b9",
+      "title": "Prisoners in Punjab become drug-dependent after entering jail: P&H High Court calls situation serious",
+      "url": "https://www.barandbench.com/news/litigation/inmates-in-punjab-become-drug-dependent-after-entering-jail-ph-high-court-calls-situation-serious",
+      "summary": "The Punjab and Haryana High Court on Tuesday expressed serious concern over the fact that many prisoners in Punjab become drug-dependent after their entry into the jails [Court On Its Own Motion v State of Punjab and Others]. A Bench of Chief Justice Ashwani Kumar Mishra and Justice Rohit Kapoor observed that in the absence of any strategy to cure the inmates' drug dependence, they will never be able to fully avail of their right to life as the continued drug dependence would cause further crises in their lives. The official data submitted before the Court on September 1 had revealed that 44 percent (15,768 out of 35,449) of the prisoners lodged in jails across Punjab are dependent on drugs. Today, the Court noted that about 83 percent of these inmates were registered with the Out Patient Opioid Assisted Treatment Clinic (OOAT Clinic) only after their jail entry. \"Learned Amicus Curiae has pointed out from the affidavit filed by the State of Punjab on the previous occasion that, at the time of entry into jail, 2540 inmates were already registered under the Out Patient Opioid Assisted Treatment Clinic (OOAT Clinic) and were being administered tablets/medicines prior to their admissi",
+      "published_at": "Tue, 08 Sep 2026 21:18:32 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-08/ffc55504-8c9b-4dce-9eec-0ab1805a5383/jail_drugs.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -869,32 +556,32 @@
       }
     },
     {
-      "raw_id": "d20ea754952bdb922f",
-      "title": "Is Andar Bahar a game of skill or chance? Karnataka HC refers issue to larger bench",
-      "url": "https://www.barandbench.com/news/litigation/is-andar-bahar-a-game-of-skill-or-chance-karnataka-hc-refers-issue-to-larger-bench",
-      "summary": "A single judge Bench of the Karnataka High Court on Tuesday held that the question of whether Andar Bahar is a game of skill or a game of chance requires reconsideration by a larger Bench. Andar Bahar is a card game in which players place bets on whether a card matching a designated card will appear first on a box referred to as \"Andar\" or on the \"Bahar\" box. Justice Suraj Govindaraj today expressed doubts over the correctness of a 1977 High Court ruling, E Eranna v. State of Karnataka , in which 14 persons said to have played Andar Bahar were acquitted of allegations that they had played outlawed games of chance (wagering or betting games). In E Eranna , a single-judge Bench of the High Court had reasoned that the prosecution did not show how Andar Bahar was a game of chance. \" It was not categorically proved that ‘Andar Bahar’ is a game of chance and that these accused were playing that game,\" the High Court had ruled in the E Eranna judgment. This ruling has subsequently been cited time and again by other Benches of the Court to rule that Andar Bandar is a game of skill rather than an outlawed game of chance. Today, Justice Govindraj expressed reservations about this view. The C",
-      "published_at": "Tue, 08 Sep 2026 15:59:23 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-08/uvajgrum/K-dealstreet-WEB-SITE-C-copy.jpg",
-      "suggested_category": "",
+      "raw_id": "3a041f542e82a53801",
+      "title": "India’s education gender gap four times wider in rural areas than urban",
+      "url": "https://www.thehindu.com/education/indias-education-gender-gap-four-times-wider-in-rural-areas-than-urban/article71422901.ece",
+      "summary": "In any State where secondary schooling has not been extended to the villages, it is the daughters who have been the first to be left out.",
+      "published_at": "Fri, 04 Sep 2026 00:25:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/od3kxz/article71423225.ece/alternates/LANDSCAPE_1200/DSC_6936.JPG",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -902,75 +589,265 @@
       }
     },
     {
-      "raw_id": "ab7553ecc140c29931",
-      "title": "Centre moves Supreme Court to transfer Anil Ambani Black Money Act petitions to Delhi HC",
-      "url": "https://www.barandbench.com/news/centre-moves-supreme-court-to-transfer-all-anil-ambani-black-money-act-petitions-to-delhi-hc",
-      "summary": "The Union government and the Income Tax department have moved the Supreme Court seeking directions to consolidate and transfer to Delhi High Court petitions challenging the Black Money (Undisclosed Foreign Income and Assets) and Imposition of Tax Act, 2015 [Union of India v Anil Dhirajlal Ambani]. The Union government has particularly sought the transfer of Industrialist Anil Ambani's petitions out of the Bombay High Court, arguing that the matter has been put in \"cold storage\" at the High Court. A Bench of Chief Justice of India (CJI) Surya Kant , Justice Joymalya Bagchi and Justice V Mohana today adjourned the matter after the government sought two more weeks to submit detailed information about similar challenges pending across different High Courts. Senior Advocate Zoheb Hossain , appearing for the Income Tax authorities, said that various similar petitions challenging the provisions of the 2015 law were pending before the Delhi High Court and Bombay High Court. CJI Kant remarked that the cases can be decided by the Delhi High Court first and then the decisions can be cited before the Bombay High Court. \"There is no delay in the Delhi High Court. So your effort should now be to",
-      "published_at": "Tue, 08 Sep 2026 12:37:53 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-11-18/l66kcgfx/SUPREME-COURT-OF-INDIA-reWEB-PAGE-1600x900-Copy-copy.jpg",
-      "suggested_category": "",
+      "raw_id": "0b2bb410283ecfa80f",
+      "title": "New York Mayor Zohran Mamdani announces ban on AI use for students until high school",
+      "url": "https://www.thehindu.com/sci-tech/technology/new-york-mayor-zohran-mamdani-announces-ban-on-ai-use-for-students-until-high-school/article71422209.ece",
+      "summary": "Only high school students, typically aged 14 and above, will be permitted to use artificial intelligence in limited pilot programmes",
+      "published_at": "Thu, 03 Sep 2026 10:40:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/kdevir/article71422215.ece/alternates/LANDSCAPE_1200/Education_AI_Ban_New_York_381_7.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
+          "Society, Rights & Justice": 16
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "9fb5ecbc68910731e1",
-      "title": "Company can face criminal trial even if guilty employee is not identified: Supreme Court",
-      "url": "https://www.barandbench.com/news/litigation/company-can-face-criminal-trial-even-if-guilty-employee-is-not-identified-supreme-court",
-      "summary": "The Supreme Court on Monday held that a company can face criminal prosecution even if the investigating agency has not identified or arraigned the particular employee or official through whom the concerned company acted [Sanofi India Ltd. Vs CBI]. A Bench of Justices JB Pardiwala and Manoj Misra made the ruling while dismissing an appeal by Sanofi India Ltd against the Karnataka High Court’s refusal to quash criminal proceedings arising from a CBI case. The Court said that at the stage of considering a petition to quash criminal proceedings under Section 482 of the Code of Criminal Procedure, the prosecution is not required in every case to identify the specific natural person through whom the company allegedly acted. “ What the chargesheet must disclose, on its face, is that the corporation itself has committed the offence, not that it has also identified the particular individual through whom it did so ,” the Court said. It added that a company’s role could be disclosed through allegations concerning its own conduct, decisions and dealings, even without naming the individual who carried them out. Pertinently, the Court also laid down a three-stage framework to determine when an i",
-      "published_at": "Mon, 07 Sep 2026 19:55:09 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-12-30/aqb61iav/IMG2706.JPG",
-      "suggested_category": "",
+      "raw_id": "dfc8ab19b27fd88af3",
+      "title": "Why theatre should be at the heart of holistic education in the AI age",
+      "url": "https://www.thehindu.com/education/why-theatre-should-be-at-the-heart-of-holistic-education-in-the-ai-age/article71436490.ece",
+      "summary": "Theatre teaches students to listen, improvise, collaborate, take decisions, and act when there is no predictable prescribed answer",
+      "published_at": "Tue, 08 Sep 2026 17:57:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/165h70/article71442092.ece/alternates/LANDSCAPE_1200/online%20theatre.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "996c041fdf12d73bd5",
+      "title": "Colleges must evolve in the era of AI and online education",
+      "url": "https://www.thehindu.com/education/colleges-must-evolve-in-the-era-of-ai-and-online-education/article71431866.ece",
+      "summary": "Today, the finest lectures on any difficult topic are available online, with AI now helping to explore and comprehend complex ideas. Therefore, students will have fewer reasons to attend conventional lectures in classrooms",
+      "published_at": "Mon, 07 Sep 2026 00:38:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/8yhrv9/article71431898.ece/alternates/LANDSCAPE_1200/iStock-2170568839.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "6806e36708bcfdf22d",
+      "title": "How the design of a university campus contributes to student wellbeing",
+      "url": "https://www.thehindu.com/education/colleges/how-the-design-of-a-university-campus-contributes-to-student-wellbeing/article71409808.ece",
+      "summary": "The right spaces can encourage connection, creativity, and curiosity in students",
+      "published_at": "Sat, 05 Sep 2026 14:23:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ucft5l/article71418632.ece/alternates/LANDSCAPE_1200/Amit%20Kundal.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9c72de84f0e79c591c",
+      "title": "Centre of Excellence for Tribal students in A.P.’s Marikavalasa to provide competitive exam coaching",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/centre-of-excellence-for-tribal-students-in-aps-marikavalasa-to-provide-competitive-exam-coaching/article71407808.ece",
+      "summary": "The Centre has adopted a co-educational format on the lines of Eklavya Model Residential Schools, while providing separate dormitories and classrooms for boys and girls, besides CCTV cameras, dedicated wardens and enhanced security arrangements",
+      "published_at": "Wed, 02 Sep 2026 10:36:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bstzwg/article71408083.ece/alternates/LANDSCAPE_1200/6726_30_8_2026_17_43_24_1_01CENTREOFEXCELLENCE.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "31bf6d43ea90ebed17",
+      "title": "Kandela Khap condemns restrictions on inspections of Haryana government schools",
+      "url": "https://www.thehindu.com/news/national/haryana/kandela-khap-condemns-restrictions-on-inspections-of-haryana-government-schools/article71407859.ece",
+      "summary": "The Sarv Jatiya Kandela Khap alleged that the move was aimed at hiding shortcomings in the education system",
+      "published_at": "Sun, 30 Aug 2026 22:55:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cjzcqh/article71407997.ece/alternates/LANDSCAPE_1200/KHAP%20PANCHAYAT%20GROUND%20ZERO.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "e645a63388c6b31192",
+      "title": "The incongruity of caste and science",
+      "url": "https://www.thehindu.com/opinion/op-ed/the-incongruity-of-caste-and-science/article71440072.ece",
+      "summary": "A student’s ability to understand thermodynamics or solve a differential equation has nothing to do with the ritual status of their ancestors",
+      "published_at": "Tue, 08 Sep 2026 14:32:08 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/njyq2k/article71440075.ece/alternates/LANDSCAPE_1200/HRcDaAqbcAAL7Mp.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12,
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
           "Environment, Health & Science",
           "Society, Rights & Justice"
         ]
+      }
+    },
+    {
+      "raw_id": "74cab8b08f9dab6ba1",
+      "title": "Ye Kya Answer Diya? 😂",
+      "url": "https://www.youtube.com/shorts/y18Ih15swC8",
+      "summary": "",
+      "published_at": "2026-09-08T13:00:11+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
@@ -1293,30 +1170,117 @@
       }
     },
     {
-      "raw_id": "bb145e5ac338bc6447",
-      "title": "Chor Calling Police? 😂",
-      "url": "https://www.youtube.com/shorts/U4Dqd-wblYE",
-      "summary": "",
-      "published_at": "2026-09-03T07:00:28+00:00",
+      "raw_id": "324149b49fce138b53",
+      "title": "NE journalists get first-hand look at Indian Navy operations during Kerala media tour",
+      "url": "https://eastmojo.com/meghalaya/2026/09/08/ne-journalists-get-first-hand-look-at-indian-navy-operations-during-kerala-media-tour/",
+      "summary": "Shillong: Journalists from Meghalaya and Sikkim got a first-hand look at Indian naval operations during a media tour of Kerala organised by the Press Information Bureau (PIB), visiting an Indian Naval vessel and key training and heritage facilities in Kochi on Tuesday. The journalists boarded INS Sunayana, where Lieutenant Naorem Nivash, the vessel’s Anti-Submarine Warfare […] The post NE journalists get first-hand look at Indian Navy operations during Kerala media tour appeared first on EastMojo .",
+      "published_at": "Tue, 08 Sep 2026 15:33:42 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b34bd79148b992746a",
+      "title": "Vice President of India visits Manipur",
+      "url": "https://eastmojo.com/manipur/2026/09/08/vice-president-of-india-visits-manipur/",
+      "summary": "Imphal: Vice President of India Chandrapuram Ponnusamy Radhakrishnan arrived today at Imphal as part of his four-day North East States tour. A warm welcome was accorded by the Governor of Manipur, Ajay Kumar Bhalla, Chief Minister of Manipur Y. Khemchand Singh, Deputy Chief Minister, Losii Dikho, Chief Secretary Rajeev Singh Thakur, DGP Manipur, Mukesh Singh […] The post Vice President of India visits Manipur appeared first on EastMojo .",
+      "published_at": "Tue, 08 Sep 2026 14:38:48 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "32adb4de5b06b011fe",
+      "title": "CM Khemchand condemns killing of Manipuri musician in Delhi",
+      "url": "https://eastmojo.com/manipur/2026/09/08/cm-khemchand-condemns-killing-of-manipuri-musician-in-delhi/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Tuesday condemned the killing of Chongtham Vikram, a musician and music teacher from Manipur, who died following a brutal assault at his residence in Kilokri, New Delhi. Expressing deep sorrow over the incident, Khemchand Singh said no one should have to face violence or lose their life […] The post CM Khemchand condemns killing of Manipuri musician in Delhi appeared first on EastMojo .",
+      "published_at": "Tue, 08 Sep 2026 14:28:27 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3cfa6cad558c8ec398",
+      "title": "Manipur Police commando dies after gunshot incident",
+      "url": "https://eastmojo.com/manipur/2026/09/08/manipur-police-commando-dies-after-gunshot-incident/",
+      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/01/dead.jpg?fit=780%2C439&ssl=1\" /> Imphal: A displaced Manipur Rifles havaldar, currently attached to the Imphal West Manipur Police Commando, died after allegedly shooting himself at a family quarter in Imphal West on Monday, an official said. According to a police official, the incident occurred at around 4.15 pm at a family quarter inside the Commando Complex under the jurisdiction […] The post Manipur Police commando dies after gunshot incident appeared first on EastMojo .",
+      "published_at": "Tue, 08 Sep 2026 08:10:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

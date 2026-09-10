@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-10T19:13:12.864573+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-09-10T22:42:29.585346+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 117,
-    "established_or_other": 83,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "7454dbaa8a003d0804",
+      "title": "Kharif sowing deficit narrows, but El Niño remains a risk",
+      "url": "https://india.mongabay.com/short-article/2026/09/kharif-sowing-deficit-narrows-but-el-nino-remains-a-risk/",
+      "summary": "Given the sowing data and the possibility of persistent El Niño conditions, the Department of Economic Affairs (DEA), in its monthly economic review released on August 31, said particular attention may be required for pulses, oilseeds, rice and other rainfall-sensitive crops in the months ahead. As per the review, kharif sowing stood at 105.67 million […]",
+      "published_at": "02 Sep 2026 15:03:51 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/02123259/IMG_20260724_082122378_HDR-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
     {
       "raw_id": "546c40401f6160bbef",
       "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
@@ -152,39 +185,6 @@
       }
     },
     {
-      "raw_id": "4f976463a4b1061183",
-      "title": "Three workers dead, 11 others injured as scaffolding collapses at under-construction church near Katpadi",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/three-workers-dead-11-others-injured-as-scaffolding-collapses-at-under-construction-church-near-katpadi/article71452716.ece",
-      "summary": "Scaffolding was erected at an height of 20 feet to allow 20 workers to work on the top of the structure at Manji Krishnapuram. Among the deceased are Samuel 67, and his son Immanuel alias Kutty, 32.",
-      "published_at": "Thu, 10 Sep 2026 21:59:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sjfga4/article71453063.ece/alternates/LANDSCAPE_1200/CHURCH%201.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
       "raw_id": "66bf2f07638bb7a8d6",
       "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
       "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
@@ -224,8 +224,43 @@
       "title": "Bring PG accommodation under a Board, bar politicians from the business",
       "url": "https://www.thehindu.com/opinion/op-ed/bring-pg-accommodation-under-a-board-bar-politicians-from-the-business/article71447964.ece",
       "summary": "Ownership of every such facility must be disclosed in the public domain, and allocation must be transparent by merit or lottery",
-      "published_at": "Thu, 10 Sep 2026 11:11:12 +0530",
+      "published_at": "Thu, 10 Sep 2026 17:35:39 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/3bhath/article71447978.ece/alternates/LANDSCAPE_1200/Building%20Collapse%20New%20Delhi5.JPEG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "17304c93ff6bf75e35",
+      "title": "PM Modi lauds SRCC for nurturing generations of leaders in business, public life",
+      "url": "https://www.thehindu.com/news/national/pm-modi-lauds-srcc-for-nurturing-generations-of-leaders-in-business-public-life/article71432623.ece",
+      "summary": "Prime Minister Narendra Modi released a commemorative ₹100 coin to mark the centenary celebrations",
+      "published_at": "Sat, 05 Sep 2026 20:33:18 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vdw0b2/article71432720.ece/alternates/LANDSCAPE_1200/PTI09_05_2026_000320B.jpg",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -861,6 +896,41 @@
       }
     },
     {
+      "raw_id": "056b22add2b7a4b435",
+      "title": "Rude lessons: On the U.S.-Canada trade dispute, lessons for India",
+      "url": "https://www.thehindu.com/opinion/editorial/rude-lessons-on-the-us-canada-trade-dispute-lessons-for-india/article71451767.ece",
+      "summary": "India should learn from Canada and be wary of deals with the U.S.",
+      "published_at": "Fri, 11 Sep 2026 01:33:02 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "93d231fdcddf343b01",
       "title": "Sri Lanka Supreme Court revokes controversial monk’s presidential pardon",
       "url": "https://www.thehindu.com/news/international/sri-lanka-supreme-court-revokes-controversial-monks-presidential-pardon/article71451913.ece",
@@ -1028,17 +1098,17 @@
       }
     },
     {
-      "raw_id": "7586749434516fec18",
-      "title": "Nepal floods death toll climbs to 1,377; search operations continue for more than 5,000 missing",
-      "url": "https://www.thehindu.com/news/international/nepal-floods-death-toll-climbs-to-1377-search-operations-continue-for-more-than-5000-missing/article71451283.ece",
-      "summary": "So far, 13,656 people have been rescued from the flood-affected areas.",
-      "published_at": "Thu, 10 Sep 2026 17:31:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p8iwys/article71451293.ece/alternates/LANDSCAPE_1200/2026-09-10T055157Z_232449583_RC22GNAYCC3Z_RTRMADP_3_NEPAL-FLOODS.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "cdf3a44208d11dc555",
+      "title": "Tamil Nadu goes to polls",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
+      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
+      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1053,10 +1123,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Politics & Elections": 1,
+          "States & Local": 9
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
@@ -1289,74 +1361,6 @@
         },
         "candidate_categories": [
           "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "47e87507b5c8ce38f4",
-      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
-      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
-      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "c31cb46924ed3cc2f0",
-      "title": "Congress asks why PM didn’t pay tribute to Garg during Assam visit",
-      "url": "https://www.thehindu.com/news/cities/Delhi/congress-asks-why-pm-didnt-pay-tribute-togargduring-assam-visit/article70427314.ece",
-      "summary": "",
-      "published_at": "Mon, 22 Dec 2025 22:46:19 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
           "States & Local"
         ]
       }

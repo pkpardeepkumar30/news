@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-10T22:42:29.585346+00:00",
-  "input_count": 428,
+  "prepared_at": "2026-09-11T04:50:28.080144+00:00",
+  "input_count": 402,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 107,
+    "established_or_other": 93,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "64f571bffddd16e123",
+      "title": "Chennai RWA shines in TN’s solar race",
+      "url": "https://www.thehindu.com/news/cities/chennai/chennairwashines-in-tnssolar-race/article70633195.ece",
+      "summary": "Bollineni Hillside, a 1295-unit gated community in Perumbakkam off Old Mahabalipuram Road, has bagged an award for the biggest solar rooftop installation in Tamil Nadu in the category for resident welfare associations",
+      "published_at": "Sun, 15 Feb 2026 16:28:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xyfnyz/article70633207.ece/alternates/LANDSCAPE_1200/15dcadyr_gatedcommunity.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "47e87507b5c8ce38f4",
       "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
@@ -113,37 +148,37 @@
       }
     },
     {
-      "raw_id": "04cea012cb47a26e4e",
-      "title": "Almost 60% of India’s elephants are in Karnataka, Assam, T.N.",
-      "url": "https://www.thehindu.com/news/states/almost-60-of-indias-elephants-are-in-karnataka-assam-tn/article70164209.ece",
-      "summary": "The Wildlife Institute of India released the first-ever DNA-based synchronous estimation of elephants across the country",
-      "published_at": "Wed, 15 Oct 2025 01:40:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ancn3j/article70164201.ece/alternates/LANDSCAPE_1200/IMG_WhatsApp_Image_2025-_2_1_06F05FLE.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "4151ddbe5321346c24",
+      "title": "Delhi High Court denies Vinesh Phogat interim relief to participate in World Wrestling Championships trials",
+      "url": "https://www.barandbench.com/news/delhi-high-court-denies-vinesh-phogat-interim-relief-to-participate-in-world-wrestling-championships-trials",
+      "summary": "The Delhi High Court on Thursday declined to grant wrestler Vinesh Phogat interim relief to participate in the selection trials for the 2026 Senior World Wrestling Championships starting on September 14. Justice Swarana Kanta Sharma said that the eligibility criteria prescribed by the Wrestling Federation of India (WFI) for the World Wrestling Championships could not be relaxed exclusively in Phogat’s favour at the interim stage. “The interest of the country in ensuring that its representatives are selected through a fair, uniform and performance- based process is of paramount importance. At this interim stage, therefore, this Court is of the view that the eligibility criteria applicable to all athletes ought not to be relaxed in favour of the petitioner alone, particularly when such relaxation may have consequences for other similarly situated athletes who are not before this Court,” the Court observed. The World Championships will take place in Kazakhstan's Astana from October 24 to November 1. Justice Swarana Kanta Sharma Vinesh Phogat case: Delhi HC says WFI must balance interests of nation and women athletes returning after childbirth Phogat moved the High Court challenging th",
+      "published_at": "Fri, 11 Sep 2026 07:55:34 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2024-08-09/ry016tfv/27.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
+          "Society, Rights & Justice": 1,
+          "Sports": 2
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
+          "Society, Rights & Justice",
+          "Sports"
         ]
       }
     },
@@ -511,72 +546,6 @@
       }
     },
     {
-      "raw_id": "f28b634d3460386639",
-      "title": "Chess | Gukesh needs to strike early in the title match against Sindarov:  Nepomniachtchi",
-      "url": "https://www.thehindu.com/sport/other-sports/chess-nepomniachtchibackssindarovfor-the-world-crown/article71443318.ece",
-      "summary": "",
-      "published_at": "Tue, 08 Sep 2026 20:49:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sewgk2/article71443705.ece/alternates/LANDSCAPE_1200/_JAI7654.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "e303a45325ab6dc981",
-      "title": "Inko Students Ne Kya Diya? 😂",
-      "url": "https://www.youtube.com/shorts/xkW2IybSdhY",
-      "summary": "",
-      "published_at": "2026-09-08T10:36:42+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 28,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "deb2e6643f47559346",
       "title": "Manipur CM visits family of late Chongtham Vikram, assures justice",
       "url": "https://eastmojo.com/manipur/2026/09/10/manipur-cm-visits-family-of-late-chongtham-vikram-assures-justice/",
@@ -664,6 +633,39 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "363508161cb00b83f7",
+      "title": "Mumbai court grants bail to TISS student arrested for slogans supporting Umar Khalid, Sharjeel Imam",
+      "url": "https://www.barandbench.com/news/mumbai-court-grants-bail-to-tiss-student-arrested-for-slogans-supporting-umar-khalid-sharjeel-imam",
+      "summary": "A Mumbai court has granted bail to Abhirup Ashim Paul, a student of the Tata Institute of Social Sciences (TISS), who was arrested for allegedly raising slogans supporting jailed activists Umar Khalid and Sharjeel Imam. [Abhirup Paul v. State of Maharashtra & Ors.] Additional Chief Judicial Magistrate Dattatray Shankarrao Khedekar observed that Paul had already undergone custodial interrogation for sufficient period. Pertinently, the Court also said that there was no evidence linking him to any Maoist or any other banned organisation. “Prima facie except suspicion, there is no material to link the activities of the accused with mind set of maoist or against the nation or associating with banned organization against India,” the judge noted. The Court observed that having soft copies of the Maoist books and raising campus slogans in support of jailed activists did not amount to anti-national activity and an inference of being a Moaist cannot be drawn from the same. \"Merely because of finding of pdf books (on Maoism), the inference of connection with the mind set of maoist can not be draw,\" the Court ruled. He determined that keeping Paul, a young offender, behind bars on mere suspici",
+      "published_at": "Fri, 11 Sep 2026 08:22:04 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2023-03/e335bbeb-6eb3-4853-8996-e59267c70691/15.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -869,6 +871,72 @@
       ]
     },
     {
+      "raw_id": "aac3b53884cfa5017e",
+      "title": "Education is key to preventing underage driving",
+      "url": "https://www.thehindu.com/education/education-is-key-to-preventing-underage-driving/article71450762.ece",
+      "summary": "Education on road safety should not be reduced to an occasional assembly, poster-making competition or annual awareness week. It must be taught progressively as an essential life skill and a part of citizenship education",
+      "published_at": "Thu, 10 Sep 2026 16:43:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/31djc/article71450826.ece/alternates/LANDSCAPE_1200/2786_9_1_2025_17_31_23_1_01PY09UNDEAGEDRIVE1.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "5b9314d877cea36344",
+      "title": "Why India’s schools should take note of New York’s AI ban",
+      "url": "https://www.thehindu.com/sci-tech/technology/why-indias-schools-should-take-note-of-new-yorks-ai-ban/article71450738.ece",
+      "summary": "Such a change can create better outcomes in schools. But it will only solve one part of the problem — devices in schools",
+      "published_at": "Thu, 10 Sep 2026 14:03:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5hi9az/article71450730.ece/alternates/LANDSCAPE_1200/2026-09-08T134558Z_954027014_RC20FNA4F30Z_RTRMADP_3_USA-SEPT-11.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "9bf0985360a2231732",
       "title": "Going beyond language proficiency to help students become confident communicators",
       "url": "https://www.thehindu.com/education/going-beyond-language-proficiency-to-help-students-become-confident-communicators/article71447342.ece",
@@ -902,415 +970,349 @@
       }
     },
     {
-      "raw_id": "09f570169c762edbbe",
-      "title": "Why the 4-year UG course at Delhi University failed",
-      "url": "https://www.thehindu.com/newsletter/thedge/why-the-4-year-ug-course-at-delhi-university-failed/article71446506.ece",
-      "summary": "",
-      "published_at": "Wed, 09 Sep 2026 16:37:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/am17wk/article71446955.ece/alternates/LANDSCAPE_1200/d2d2cfe1-041a-461f-8a5a-d37acc0f2c38.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "04eddaccd107ac0281",
+      "title": "Arunachal mountaineer Kino Yakap scales 7,077-metre Mount Kun in Ladakh",
+      "url": "https://eastmojo.com/arunachal-pradesh/2026/09/10/arunachal-mountaineer-kino-yakap-scales-7077-metre-mount-kun-in-ladakh/",
+      "summary": "Dibrugarh: Arunachal Pradesh mountaineer Kino Yakap has successfully scaled Mount Kun, one of the prominent high-altitude peaks in the Himalayan ranges of Ladakh, standing at 7,077 metres. Yakap’s achievement has been hailed as a testament to her grit, resilience, determination and unwavering spirit. Reaching the summit marks a significant milestone in her mountaineering journey. Her […] The post Arunachal mountaineer Kino Yakap scales 7,077-metre Mount Kun in Ladakh appeared first on EastMojo .",
+      "published_at": "Thu, 10 Sep 2026 13:43:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
-      "raw_id": "36b135602f6563f2d3",
-      "title": "What NEP 2020’s Outcome-Based Education gets wrong about learning",
-      "url": "https://www.thehindu.com/education/what-nep-2020s-outcome-based-education-gets-wrong-about-learning/article71444228.ece",
-      "summary": "",
-      "published_at": "Wed, 09 Sep 2026 12:08:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wrqseq/article71444272.ece/alternates/LANDSCAPE_1200/iStock-1429680602.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "bb4970f79c333bc5c2",
+      "title": "How two women in Assam and Tripura built businesses that support others",
+      "url": "https://eastmojo.com/assam/2026/09/10/how-two-women-in-assam-and-tripura-built-businesses-that-support-others/",
+      "summary": "Kanaklata Kalita (left) and Nirangkha Roy Sarkar \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/09/Codex-Image-10-Sept-2026-13_09_07.png?fit=780%2C390&ssl=1\" /> In 2016, soon after her wedding, Nirangkha Roy Sarkar was looking for a way to earn an income of her own while managing a new household. In a corner of her home in Tripura, she found her starting point in soft clay toys. At first, it was small. She made decorative pieces, ornaments and gift […] The post How two women in Assam and Tripura built businesses that support others appeared first on EastMojo .",
+      "published_at": "Thu, 10 Sep 2026 10:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "520bfb18b07ad5c22c",
-      "title": "Cheeni Se Desh Bachega? 😂",
-      "url": "https://www.youtube.com/shorts/lU4_5yMlBZY",
-      "summary": "",
-      "published_at": "2026-09-10T15:30:11+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "b91af8248ef1476cc6",
-      "title": "Do Meethi Chai Kitne Ki? 😭",
-      "url": "https://www.youtube.com/shorts/G2dg9ZcpQKU",
-      "summary": "",
-      "published_at": "2026-09-10T13:30:21+00:00",
+      "raw_id": "e705d7a78ac502725f",
+      "title": "Modified Lives: What does it take for Northeast Indians to feel safe in New Delhi?",
+      "url": "https://eastmojo.com/premium/2026/09/10/modified-lives-what-does-it-take-for-northeast-indians-to-feel-safe-in-new-delhi/",
+      "summary": "The word ‘capital’ usually evokes a sense of home, that is, a space defined by inclusivity, safety, and shared aspiration. As the political center of the nation, New Delhi draws people from every corner of India to live, work, and build their futures. Elected representatives assemble in Parliament to voice the concerns of their constituents. […] The post Modified Lives: What does it take for Northeast Indians to feel safe in New Delhi? appeared first on EastMojo .",
+      "published_at": "Thu, 10 Sep 2026 09:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "cea3fcaa17931c1a49",
-      "title": "Cheeni Khana Ab Gunaah Hai? 🤣",
-      "url": "https://www.youtube.com/shorts/pxqsEvCPVG0",
-      "summary": "",
-      "published_at": "2026-09-10T12:20:52+00:00",
+      "raw_id": "bce86042cb739057b1",
+      "title": "Manipur’s unending unrest: Is Biren Singh’s future part of the equation?",
+      "url": "https://eastmojo.com/premium/2026/09/10/manipurs-unending-unrest-is-biren-singhs-future-part-of-the-equation/",
+      "summary": "Manipur CM Biren Singh \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/08/Editorial-Workspace-27.jpg?fit=780%2C439&ssl=1\" /> Manipur appears to be entering a strange phase of its prolonged crisis. The intensity of violence has eased, movement between Imphal and Guwahati has begun to resume, some Kuki-Zo legislators have returned to the Assembly, and the government under Y. Khemchand Singh has begun efforts to restore political normalcy. Yet unrest continues to find new […] The post Manipur’s unending unrest: Is Biren Singh’s future part of the equation? appeared first on EastMojo .",
+      "published_at": "Thu, 10 Sep 2026 07:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "74cab8b08f9dab6ba1",
-      "title": "Ye Kya Answer Diya? 😂",
-      "url": "https://www.youtube.com/shorts/y18Ih15swC8",
-      "summary": "",
-      "published_at": "2026-09-08T13:00:11+00:00",
+      "raw_id": "450bc8d8fd1c9826c4",
+      "title": "CG Top 5 News: कांकेर में DEO सस्पेंड, हनुमान अंश टैक्स फ्री, पढ़ें छत्तीसगढ़ की बड़ी खबरें",
+      "url": "https://theruralpress.in/chhattisgarh/cg-top-5-news-kanker-excise-scam-deo-suspended-hanuman-ansh-tax-free-vishnu-deo-sai-bilaspur-ig-ndps-korba-nh-130-tanker-fire/",
+      "summary": "CG Top 5 News: छत्तीसगढ़ में आबकारी विभाग की कड़ी कार्रवाई से लेकर फिल्मों को टैक्स फ्री करने और नेशनल हाईवे पर दुर्घटना तक की 5 प्रमुख खबरें सामने आई हैं। कांकेर जिले के भानुप्रतापपुर में अवैध शराब सामग्री मिलने पर जिला आबकारी अधिकारी को निलंबित कर दिया गया है। वहीं रायपुर में मुख्यमंत्री विष्णु […]",
+      "published_at": "Fri, 11 Sep 2026 03:45:13 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "deab7d0e25e1723943",
-      "title": "Irony ho Rahi bohot bhayankar 🤣",
-      "url": "https://www.youtube.com/shorts/JLV8zThvOaw",
-      "summary": "",
-      "published_at": "2026-09-07T14:00:19+00:00",
+      "raw_id": "bc34015c716e59d90b",
+      "title": "Aaj Ka Rashifal: मेष और मिथुन राशियों के लिए खुलेंगे तरक्की के रास्ते, इनके रिश्तों में आ सकते हैं उतार-चढ़ाव, पढ़े अपना राशिफल",
+      "url": "https://theruralpress.in/religion-spirituality/aaj-ka-rashifal-horoscope-today-friday-zodiac-signs-mesh-rashi-career-money-love-health-predictions/",
+      "summary": "Aaj Ka Rashifal: आज शुक्रवार का दिन है और धार्मिक मान्यताओं में इसे माता लक्ष्मी की आराधना के लिए विशेष माना जाता है। ज्योतिषीय दृष्टि से ग्रहों और नक्षत्रों की स्थिति का प्रभाव सभी 12 राशियों पर अलग-अलग पड़ सकता है। किसी को करियर में नए मौके मिलेंगे तो किसी को खर्च और रिश्तों से […]",
+      "published_at": "Fri, 11 Sep 2026 00:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "7faf6204db8738d1c6",
-      "title": "Girls Get Special Treatment? 😂",
-      "url": "https://www.youtube.com/shorts/tZYIa8Skdh8",
-      "summary": "",
-      "published_at": "2026-09-07T09:40:22+00:00",
+      "raw_id": "9b4836247de7672f99",
+      "title": "Bhanupratappur Illegal Liquor: छत्तीसगढ़ में एक और शराब घोटाला, 4409 खाली बोतलें, हजारों ढक्कन और होलोग्राम, DEO सस्पेंड, आबकारी इंस्पेक्टर, प्लेसमेंट कर्मी और सेल्समैन पर FIR",
+      "url": "https://theruralpress.in/chhattisgarh/bhanupratappur-illegal-liquor-bottling-excise-officer-suspended/",
+      "summary": "कांकेर। छत्तीसगढ़ के कांकेर जिले के भानुप्रतापपुर में शराब से जुड़ी अनियमितता के मामले में सरकार ने सख्त रुख अपनाया है। किराए के मकान से बड़ी संख्या में शराब की खाली बोतल-पौवा, स्टीकर, होलोग्राम और ढक्कन बरामद होने के बाद आबकारी मंत्री लखनलाल देवांगन ने जिला आबकारी अधिकारी को सस्पेंड कर दिया है। साथ ही […]",
+      "published_at": "Thu, 10 Sep 2026 17:11:07 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "a1814669e4132011e5",
-      "title": "Teacher ki hypocrisy 🤣",
-      "url": "https://www.youtube.com/shorts/9DZcnlnzsFM",
-      "summary": "",
-      "published_at": "2026-09-06T14:30:14+00:00",
+      "raw_id": "730dbb2f5ce7e44446",
+      "title": "Major Action by IG: DSP व थाना प्रभारी सहित 3 पर कार्रवाई, NDPS केस डायरी में लापरवाही पर लगा ‘पुलिसिया’ दंड",
+      "url": "https://theruralpress.in/chhattisgarh/bilaspur-ig-ramgopal-garg-action-dsp-thana-prabhari-dongripali-ndps-case/",
+      "summary": "बिलासपुर। रेंज बिलासपुर के IG रामगोपाल गर्ग ने अनुशासन और वरिष्ठ कार्यालय के निर्देशों के पालन को लेकर सख्त रुख अपनाया है। उन्होंने थाना डोंगरीपाली (जिला सारंगढ़-बिलाईगढ़) के NDPS मामले की केस डायरी में गंभीर लापरवाही, निर्देशों की अवहेलना और पदीय कदाचरण पर थाना प्रभारी और विवेचक पर अर्थदंड लगाया है, वहीं DSP पर अप्रसन्नता […]",
+      "published_at": "Thu, 10 Sep 2026 17:01:10 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "53d7dfadf6caa87210",
-      "title": "Don’t miss the ending 🤣",
-      "url": "https://www.youtube.com/shorts/-A16f_BRQsM",
-      "summary": "",
-      "published_at": "2026-09-06T10:30:37+00:00",
+      "raw_id": "a6bd99605fa92374d4",
+      "title": "Korba: नेशनल हाईवे पर पेट्रोल-डीजल से भरे टैंकर में लगी आग, लोगों के बीच मची खलबली, सड़क पर लगा जाम",
+      "url": "https://theruralpress.in/chhattisgarh/korba-ambikapur-nh130-gursiya-petrol-diesel-tanker-fire-10k-litre-highway-jam/",
+      "summary": "massive fire a tanker loaded with petrol and diesel: कोरबा-अंबिकापुर नेशनल हाईवे-130 पर गुरसियां के पास पेट्रोल-डीजल से लोड टैंकर में अचानक आग लग गई। टैंकर में 2 हजार लीटर पेट्रोल और 8 हजार लीटर डीजल लोड था। लपटें उठते ही हड़कंप मच गया, टैंकर में विस्फोट की आशंका से हाईवे पर अफरा-तफरी फैल गई। […]",
+      "published_at": "Thu, 10 Sep 2026 16:15:34 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "e03b0f981abdac20eb",
-      "title": "Want to be Orry in my next life 🥲",
-      "url": "https://www.youtube.com/shorts/x13oXcfxhMg",
-      "summary": "",
-      "published_at": "2026-09-06T07:58:41+00:00",
+      "raw_id": "2986f35b1a82e5d518",
+      "title": "Apple के पहले फोल्ड iPhone Duo में क्या है खास? कीमत ने सबको किया हैरान, जानिए iPhone17 से कितना अलग",
+      "url": "https://theruralpress.in/tech/apple-iphone-duo-foldable-phone-price-in-india-specifications-display-camera-battery-storage-samsung/",
+      "summary": "Apple iPhone Duo Price in India: Apple ने आखिरकार फोल्डेबल स्मार्टफोन सेगमेंट में अपनी एंट्री कर दी है। कंपनी का नया iPhone Duo अपने डिजाइन, बड़ी फोल्डेबल स्क्रीन, प्रीमियम बिल्ड और दमदार हार्डवेयर के चलते चर्चा में है। इसकी शुरुआती कीमत 2,99,900 रुपये रखी गई है, जबकि टॉप 2TB मॉडल के लिए ग्राहकों को 4,49,900 […]",
+      "published_at": "Thu, 10 Sep 2026 16:01:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "7d4b5766a9a5ce91f8",
-      "title": "@ABHINAYMATHS & @JazbaatiSaxena React to Teacher Memes 🤣",
-      "url": "https://www.youtube.com/watch?v=QChJqRojSC4",
-      "summary": "",
-      "published_at": "2026-09-05T12:36:51+00:00",
+      "raw_id": "05533fea04bba78b2c",
+      "title": "Durg rape case: दुर्ग में मासूम से दुष्कर्म और हत्या, आरोपी चाचा को मौत की सजा, पड़ोस में खड़ी कार से मिला था बच्ची का शव",
+      "url": "https://theruralpress.in/chhattisgarh/durg-minor-girl-rape-murder-case-uncle-death-penalty/",
+      "summary": "दुर्ग। छत्तीसगढ़ के दुर्ग जिले में मासूम बच्ची से दुष्कर्म और हत्या के मामले में जिला न्यायालय ने बड़ा फैसला सुनाया है। घटना के करीब 17 महीने बाद कोर्ट ने आरोपी चाचा को मृत्यु दंड की सजा दी है। मामला मोहन नगर थाना क्षेत्र का है और घटना नवरात्रि के दौरान हुई थी। क्या है […]",
+      "published_at": "Thu, 10 Sep 2026 15:55:52 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8ff157fff2edbfd8a0",
-      "title": "Gali On National TV? 😳",
-      "url": "https://www.youtube.com/shorts/you_7gqTG0k",
-      "summary": "",
-      "published_at": "2026-09-05T11:59:46+00:00",
+      "raw_id": "b8d7ecdbd71727f36a",
+      "title": "Puri Bhubaneswar train timings: ट्रेन से पुरी जा रहे हैं तो ध्यान दें! उत्कल एक्सप्रेस समेत 10 ट्रेनों की टाइमिंग बदली, नोट कर लें शेड्यूल",
+      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-puri-bhubaneswar-10-trains-timing-changed/",
+      "summary": "रायपुर/बिलासपुर। छत्तीसगढ़ से पुरी और भुवनेश्वर जाने वाले रेल यात्रियों के लिए जरूरी अपडेट है। ईस्ट कोस्ट रेलवे ने परिचालन व्यवस्था और यात्रियों की सुविधा को ध्यान में रखते हुए पुरी और भुवनेश्वर पहुंचने वाली 10 ट्रेनों के आगमन समय में बदलाव किया है। इनमें 9 ट्रेनें पुरी और एक ट्रेन भुवनेश्वर पहुंचती है। रेलवे […]",
+      "published_at": "Thu, 10 Sep 2026 15:04:08 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "0c1e02375955834eb7",
-      "title": "Gorakhpur is Spain Now? 😭",
-      "url": "https://www.youtube.com/shorts/9ihN_3ZxyvY",
-      "summary": "",
-      "published_at": "2026-09-05T10:00:14+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 28,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

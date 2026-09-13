@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-12T22:25:45.289207+00:00",
-  "input_count": 429,
+  "prepared_at": "2026-09-13T04:57:59.383924+00:00",
+  "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 117,
+    "established_or_other": 83,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "11584f4a6c96312830",
+      "title": "केन बेतवा लिंक परियोजना: हरबाई का विस्थापन और KL के 25 साल",
+      "url": "https://khabarlahariya.org/ken-betwa-link-project-displacement-of-harbai-and-25-years-of-kl/",
+      "summary": "यह कहानी पन्ना जिले के कूडन गांव की रहने वाली हरबाई की कहानी है, जिनका घर केन-बेतवा लिंक परियोजना के कारण उजड़ गया। खबर लहरिया ने साल 2022 में उनके…",
+      "published_at": "Sun, 06 Sep 2026 10:00:35 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "0fa0db7c2f9235c35b",
       "title": "Patna News: इस्लामगंज गांव में 500 घरों में नाव, जीविका का एकमात्र साधन लकड़ी की नाव",
@@ -389,6 +418,53 @@
       }
     },
     {
+      "raw_id": "1ac6e8f366749b4483",
+      "title": "Dipke visits families in M.P.’s Balaghat, puts lens on tribal children’s deaths",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/balaghat-child-deaths-cjp-convernor-dipke-visits-tribal-villages-demands-accountability/article71459426.ece",
+      "summary": "Mr. Dipke’s visit comes days after the Madhya Pradesh High Court issued notices to the State government over the deaths of more than 30 children, allegedly due to infectious diseases",
+      "published_at": "Sun, 13 Sep 2026 01:28:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qpl92w/article71459438.ece/alternates/LANDSCAPE_1200/PTI09_12_2026_000077B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 1
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Dipke visits families in M.P.’s Balaghat, puts lens on tribal children’s deaths",
+          "url": "https://www.thehindu.com/news/national/madhya-pradesh/dipkevisits-families-in-mpsbalaghat-puts-lens-on-tribal-childrens-deaths/article71460823.ece",
+          "source": {
+            "id": "the-hindu-national",
+            "name": "The Hindu — National",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
       "raw_id": "ded6feb3192888c132",
       "title": "UP Home Guard PET Date 2026: यूपी होम गार्ड भर्ती में 8 सितंबर से शुरू होगी शारीरिक परीक्षा",
       "url": "https://khabarlahariya.org/up-home-guard-pet-date-2026-physical-test-for-up-home-guard-recruitment-to-begin-on-september-8/",
@@ -445,53 +521,6 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
-    },
-    {
-      "raw_id": "1ac6e8f366749b4483",
-      "title": "Dipke visits families in M.P.’s Balaghat, puts lens on tribal children’s deaths",
-      "url": "https://www.thehindu.com/news/national/madhya-pradesh/balaghat-child-deaths-cjp-convernor-dipke-visits-tribal-villages-demands-accountability/article71459426.ece",
-      "summary": "Mr. Dipke’s visit comes days after the Madhya Pradesh High Court issued notices to the State government over the deaths of more than 30 children, allegedly due to infectious diseases",
-      "published_at": "Sun, 13 Sep 2026 01:28:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qpl92w/article71459438.ece/alternates/LANDSCAPE_1200/PTI09_12_2026_000077B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Dipke visits families in M.P.’s Balaghat, puts lens on tribal children’s deaths",
-          "url": "https://www.thehindu.com/news/national/madhya-pradesh/dipkevisits-families-in-mpsbalaghat-puts-lens-on-tribal-childrens-deaths/article71460823.ece",
-          "source": {
-            "id": "the-hindu-national",
-            "name": "The Hindu — National",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
     },
     {
       "raw_id": "a889f31b4a692ae3e7",
@@ -900,12 +929,194 @@
       }
     },
     {
-      "raw_id": "7150b4e7d0dd719056",
-      "title": "Mehbooba Mufti welcomes BRICS condemnation of Pahalgam terror attack, but calls out ‘selective outrage’",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/mehbooba-mufti-welcomes-brics-condemnation-of-pahalgam-terror-attack-but-calls-out-selective-outrage/article71461116.ece",
-      "summary": "The former J&K chief said the suffering of civilians in Pahalgam, Gaza or Iran cannot be viewed through different moral or political lenses; “civilian blood has no nationality, and international justice cannot have double standards,” she added",
-      "published_at": "Sun, 13 Sep 2026 03:35:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/u1vow9/article71461491.ece/alternates/LANDSCAPE_1200/PTI08_20_2026_000228B.jpg",
+      "raw_id": "9e61fbe067fa54c520",
+      "title": "Bihar Opposition RJD, ruling JD(U) gear up for upcoming polls to eight legislative Council seats",
+      "url": "https://www.thehindu.com/news/national/bihar/bihar-opposition-rjd-ruling-jdu-gear-up-for-upcoming-polls-to-eight-legislative-council-seats/article71460130.ece",
+      "summary": "The newly-launched Jan Suraaj Party by Prashant Kishor too has announced its decision to contest the upcoming council poll on all eight seats",
+      "published_at": "Sun, 13 Sep 2026 10:18:55 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3b1a4317d870914c69",
+      "title": "BRICS Summit 2026 LIVE updates: Global leaders express concern about 'growing risks' of nuclear danger and conflict",
+      "url": "https://www.thehindu.com/news/national/brics-summit-2026-india-live-updates-narendra-modi-world-leaders-new-delhi-declaration-key-agenda-september-13-2026/article71462451.ece",
+      "summary": "The summit, attended by a galaxy of world leaders, assumed greater significance as it unfolded against a backdrop of escalating geopolitical headwinds",
+      "published_at": "Sun, 13 Sep 2026 10:08:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "0f25e60da34c930dcd",
+      "title": "Kolkata’s Bonedi Bari Durga Pujas stick to ‘non-veg’; reject Bageshwar Baba’s ‘veg only’ push",
+      "url": "https://www.thehindu.com/news/cities/kolkata/kolkatas-bonedi-bari-durga-pujas-stick-to-non-veg-reject-bageshwar-babas-veg-only-push/article71460094.ece",
+      "summary": "Since the self-styled godman’s diktat over non-veg food during Durga Pujas, Bengal has seen many heated political and social debates over the issue",
+      "published_at": "Sun, 13 Sep 2026 10:02:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/iqgcyo/article71462565.ece/alternates/LANDSCAPE_1200/Bonedi%20Bari%20Durga%20Puja.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "54665b025c6c250a3d",
+      "title": "Had West Bengal  not been created, we would have suffered fate of Chinmoy Das of Bangladesh, says Suvendu Adhikari",
+      "url": "https://www.thehindu.com/news/national/west-bengal/had-west-bengal-not-been-created-we-would-have-suffered-fate-of-chinmoy-das-of-bangladesh-says-suvendu-adhikari/article71460606.ece",
+      "summary": "Chief Minister Suvendu Adhikari targeted both the Left Front and Trinamool Congress government, accusing them of destroying the cultural traditions of Bengali Hindus in the State, and promised to restore the religious and cultural traditions",
+      "published_at": "Sun, 13 Sep 2026 09:54:31 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ysfbgq/article71462472.ece/alternates/LANDSCAPE_1200/20260909411L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "c6b5f5970b1be806a2",
+      "title": "BRICS 2026 beyond the Declaration: An Indian feast, Bollywood tunes by the Malaysian PM, and more",
+      "url": "https://www.thehindu.com/news/national/brics-2026-beyond-the-declaration-an-indian-feast-bollywood-tunes-by-the-malaysian-pm-and-more/article71462466.ece",
+      "summary": "With the diplomatic hurdles cleared early in the evening, the BRICS cohort returned to the decked-out Bharat Mandapam at night for the gala dinner",
+      "published_at": "Sun, 13 Sep 2026 09:51:31 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mh40by/article71462495.ece/alternates/LANDSCAPE_1200/PTI09_12_2026_000548B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "492a37c3f42431bfa1",
+      "title": "M.P. hooch tragedy: Wanted accused caught after brief encounter in Sagar",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/mp-hooch-tragedy-wanted-accused-caught-after-brief-encounter-in-sagar/article71462516.ece",
+      "summary": "The 21-year-old accused, Shivanjay Rajput, who was carrying a bounty of ₹30,000, suffered a gunshot wound to his leg during the face-off",
+      "published_at": "Sun, 13 Sep 2026 09:35:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5qj0vw/article71462526.ece/alternates/LANDSCAPE_1200/6744_12_9_2026_14_34_38_2_DSC_0537JPG.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "158dac74755ecdbd45",
+      "title": "Social media opening doors to child marriages?",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/social-media-opening-doors-to-child-marriages/article71459183.ece",
+      "summary": "On September 4, 2026, the United Nations General Assembly declared November 27 as the International Day for the Elimination of Child, Early and Forced Marriage. Child rights activists weigh in on what it takes, particularly in the online space, to counter the evil of child marriage",
+      "published_at": "Sun, 13 Sep 2026 09:35:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jt6eck/article71459188.ece/alternates/LANDSCAPE_1200/Del6330432.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -935,157 +1146,12 @@
       }
     },
     {
-      "raw_id": "4432a5dc426a20a6fe",
-      "title": "'Millet pulao', 'paneer lababdar', 'shahtoot phirni': BRICS Summit gala dinner menu",
-      "url": "https://www.thehindu.com/news/national/brics-summit-gala-dinner-menu/article71461293.ece",
-      "summary": "The dinner was hosted by Prime Minister Narendra Modi at the Bharat Mandapam on September 12, 2026",
-      "published_at": "Sun, 13 Sep 2026 02:29:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hz6iym/article71461314.ece/alternates/LANDSCAPE_1200/PTI09_12_2026_000577B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a2d29daeb367e465fa",
-      "title": "Chhattisgarh BJP Minister's brother Guru Dhaldas Saheb joins Congress",
-      "url": "https://www.thehindu.com/news/national/chhattisgarh/chhattisgarh-bjp-ministers-brother-guru-dhaldas-saheb-joins-congress/article71460770.ece",
-      "summary": "On his reasons to switch over, Guru Dhaldas Saheb said the BJP was not acting according to the principles of Guru Baba Ghasidas; expressed interest in contesting the 2028 Assembly polls",
-      "published_at": "Sun, 13 Sep 2026 02:13:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5t6lt7/article71461366.ece/alternates/LANDSCAPE_1200/HR6vdgdagAAfXkx.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "10cc693d86a0ee59c4",
-      "title": "Kerala Assistant Public Prosecutors Association gets new office-bearers",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-assistant-public-prosecutors-association-gets-new-office-bearers/article71459804.ece",
-      "summary": "",
-      "published_at": "Sun, 13 Sep 2026 01:04:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Kochi/6zssio/article71459791.ece/alternates/LANDSCAPE_1200/ZINA.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "d089892f768f3390d9",
-      "title": "Large stock of counterfeit medicines seized from private facility in Bengaluru",
-      "url": "https://www.thehindu.com/news/national/karnataka/large-stock-of-counterfeit-medicines-seized-from-private-facility-in-bengaluru/article71459863.ece",
-      "summary": "",
-      "published_at": "Sun, 13 Sep 2026 01:00:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dtmcau/article71461344.ece/alternates/LANDSCAPE_1200/IMG_US-FDA-and-DCA-_GHIC_2_1_45CN2P77.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "207860ae1430def173",
-      "title": "Namma Chennai app opens volunteer registration ahead of Northeast monsoon",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/namma-chennai-app-opens-volunteer-registration-ahead-of-northeast-monsoon/article71459922.ece",
-      "summary": "New users have to create an account using their name, mobile number, e-mail address, address and PIN code and log in using an OTP",
-      "published_at": "Sun, 13 Sep 2026 00:53:04 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "984dcadaff90122867",
-      "title": "GCC asks over six lakh property owners to clear ₹847 crore dues by Sept. 30",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/gcc-asks-over-six-lakh-property-owners-to-clear-847-crore-dues-by-sept-30/article71459996.ece",
-      "summary": "Of the 14,15,771 property owners in the city, 8,12,539 have, so far, paid their property tax without arrears",
-      "published_at": "Sun, 13 Sep 2026 00:48:54 +0530",
-      "image_url": "",
+      "raw_id": "053d71dd42f4ca3a54",
+      "title": "Nadda highlights need for a resilient healthcare system",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/nadda-highlights-need-for-a-resilient-healthcare-system/article71460059.ece",
+      "summary": "It represents two essential dimensions; the capacity to save life when a patient is critically ill and the capacity to detect and respond to disease threats before they become major public health emergencies, says the Union Health Minister",
+      "published_at": "Sun, 13 Sep 2026 09:31:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wq1jch/article71460757.ece/alternates/LANDSCAPE_1200/20260912376L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1105,20 +1171,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "311ed1b0d8ddc43bb8",
-      "title": "Medical students heal a broken footpath",
-      "url": "https://www.thehindu.com/news/national/karnataka/medical-students-heal-a-broken-footpath/article71460171.ece",
-      "summary": "",
-      "published_at": "Sun, 13 Sep 2026 00:45:31 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6aol7x/article71461323.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-12%20at%2018.26.47-3.jpeg",
+      "raw_id": "4fef2809375bfcdae5",
+      "title": "NMC revises MBBS seat matrix amid continuing approvals and appeals",
+      "url": "https://www.thehindu.com/news/national/nmc-revises-mbbs-seat-matrix-amid-continuing-approvals-and-appeals/article71459989.ece",
+      "summary": "The National Medical Commission has given clear instructions to colleges not to admit beyond sanctioned capacity",
+      "published_at": "Sun, 13 Sep 2026 09:30:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gykhox/article71460224.ece/alternates/LANDSCAPE_1200/SC_ST-quota-medGC7GFRNK5.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1138,71 +1204,11 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 4,
-          "Environment, Health & Science": 4
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
+          "Environment, Health & Science"
         ]
-      }
-    },
-    {
-      "raw_id": "355f7e1a9e6964ece0",
-      "title": "Backing ideas before they become enterprises",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/backing-ideas-before-they-become-enterprises/article71461009.ece",
-      "summary": "",
-      "published_at": "Sun, 13 Sep 2026 00:42:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ol7pvc/article71461329.ece/alternates/LANDSCAPE_1200/1693_12_9_2026_19_58_26_4_BVR_2166.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "f7539a1f7732d7e852",
-      "title": "Complainant in ED case has relations with Congress, but is a BJP voter: Jarkiholi",
-      "url": "https://www.thehindu.com/news/national/karnataka/complainant-in-ed-case-has-relations-with-congress-but-is-a-bjp-voter-jarkiholi/article71460379.ece",
-      "summary": "The Minister says the ED had only expressed suspicions and made allegations, which he will contest and fight legally with facts and documents",
-      "published_at": "Sun, 13 Sep 2026 00:40:27 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/j3nrus/article71460505.ece/alternates/LANDSCAPE_1200/Shivam-AssociatGR6G0BCN4.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
       }
     }
   ]

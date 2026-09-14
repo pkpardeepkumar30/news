@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-14T05:06:06.102262+00:00",
-  "input_count": 403,
+  "prepared_at": "2026-09-14T15:07:48.096350+00:00",
+  "input_count": 446,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 110,
-    "established_or_other": 90,
+    "independent_social": 135,
+    "established_or_other": 65,
     "independent_social_majority_required": true
   },
   "part": 2,
@@ -80,6 +80,41 @@
       }
     },
     {
+      "raw_id": "4a4806aed79af9c7c0",
+      "title": "Researchers rediscover an endemic plant after 180 years",
+      "url": "https://india.mongabay.com/2026/09/researchers-rediscover-an-endemic-plant-in-assam-after-180-years/",
+      "summary": "An endemic plant species Rungia mastersii was rediscovered in Assam, 180 years after its first discovery. The plant was not seen anywhere during this period. Kangkan Kumar Das, a doctoral researcher, and professor Debjyoti Bhattacharyya from the Department of Life Science and Bioinformatics at Assam University, Silchar, identified the species from Jatinga Hills in the […]",
+      "published_at": "14 Sep 2026 12:51:36 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/14103922/rungia-mastersii-pic-2-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "a4ac285207a82fd9a7",
       "title": "Snow leopards and their survival in changing times [Book Review]",
       "url": "https://india.mongabay.com/2026/09/snow-leopards-and-their-survival-in-changing-times-book-review/",
@@ -113,20 +148,20 @@
       }
     },
     {
-      "raw_id": "487952fa0cef93987d",
-      "title": "Mizoram doctor first in India to receive US Consulate volunteer award",
-      "url": "https://eastmojo.com/mizoram/2026/09/11/mizoram-doctor-first-in-india-to-receive-us-consulate-volunteer-award/",
-      "summary": "Aizawl: Dr Vanlalsiama Chhangte, Medical Director of Ebenezer Medical Center in Mizoram, has become the first recipient in India of the US Consulate Kolkata’s Citizen Liaison Volunteer of the Year Award, recognising his contribution to the treatment and care of US citizens in the state. The award was presented by US Vice Consul Warren Newton […] The post Mizoram doctor first in India to receive US Consulate volunteer award appeared first on EastMojo .",
-      "published_at": "Fri, 11 Sep 2026 09:53:23 +0000",
+      "raw_id": "7ef64466ba7191eaa8",
+      "title": "Hyderabad’s groundwater risky for kids, shows high nitrate and fluoride levels: Study",
+      "url": "https://www.thenewsminute.com/telangana/hyderabads-groundwater-risky-for-kids-shows-high-nitrate-and-fluoride-levels-study",
+      "summary": "Groundwater in several parts of Hyderabad has elevated levels of nitrate and fluoride, with children facing higher potential non-carcinogenic health risks, according to a recent study. The study analysed 44 groundwater samples collected during the pre-monsoon and post-monsoon seasons of 2023. According to a TNIE report , nitrate exceeded the permissible drinking-water limit of 45 mg/L in 36% of the samples collected before monsoon and 40% of the samples collected after monsoon. Nitrate concentrations ranged from 3 to 230 mg/L during the pre-monsoon period and from 5 to 797 mg/L post-monsoon, with higher levels mainly recorded in southwestern and central parts of the city. Researchers attributed nitrate contamination largely to fertiliser use, sewage infiltration, septic-tank leakage and urban wastewater. Monsoon rainfall can also carry nitrogen compounds from the soil into groundwater, the study noted. Fluoride exceeded the acceptable limit of 1 mg/L in 64% of pre-monsoon samples and 59% of post-monsoon samples. Concentrations ranged from 0.21 to 3.03 mg/L before the monsoon and 0.28 to 5.94 mg/L afterwards, with higher levels found in northern, southern and southwestern areas. Unl",
+      "published_at": "Mon, 14 Sep 2026 13:33:48 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
+        "id": "the-news-minute",
+        "name": "The News Minute",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -138,45 +173,49 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "6bd181234dc86b3fd6",
-      "title": "Tezpur Uni students seek answers over delayed enquiry",
-      "url": "https://eastmojo.com/national-news/2026/09/11/tezpur-uni-students-seek-answers-over-delayed-enquiry/",
-      "summary": "Tezpur: Nearly a year after the student movement at Tezpur University, students and research scholars are still awaiting a conclusive outcome from the Ministry of Education on the issues raised during the movement. In a consolidated letter dated 7 September 2026, the students have urged the Ministry to disclose the status and findings of the […] The post Tezpur Uni students seek answers over delayed enquiry appeared first on EastMojo .",
-      "published_at": "Fri, 11 Sep 2026 09:45:06 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 6,
-          "Environment, Health & Science": 1
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
           "Environment, Health & Science",
           "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "383f5787221ff3fdb8",
+      "title": "BRICS explained: The bloc’s origins, members and its challenge to the global order",
+      "url": "https://www.thenewsminute.com/news/brics-explained-the-blocs-origins-members-and-its-challenge-to-the-global-order",
+      "summary": "The flags of Brazil, Russia, India, China, South Africa and other countries were lined up in New Delhi this weekend as leaders gathered for the 18th BRICS Summit. Hosted by India on September 12 and 13, the summit came at a time of heightened geopolitical tensions, wars in West Asia and Ukraine, US tariffs and growing debates over who gets to shape the global economic and political order. The group adopted a 140-paragraph New Delhi Declaration, covering issues ranging from global trade and sanctions to artificial intelligence, critical minerals, health, climate change and reform of international institutions. The declaration also called for restraint in West Asia, criticised unilateral tariffs and sanctions, and backed reforms to the global financial and trading systems without naming the countries involved. But what exactly is BRICS? Why was it formed? And is it really a challenge to the US-led global order? What is BRICS? BRICS is a grouping of major emerging economies that cooperate on political, economic and development issues. The acronym BRIC was coined by Goldman Sachs in 2001 to describe Brazil, Russia, India and China as major emerging economies with the potential to becom",
+      "published_at": "Mon, 14 Sep 2026 12:00:14 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-14/pigo6rdk/BRICSsummit.jpg.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 2,
+          "Environment, Health & Science": 2,
+          "International & Geopolitics": 3
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
       }
     },
@@ -247,20 +286,53 @@
       }
     },
     {
-      "raw_id": "5292cd9b9fb325371e",
-      "title": "The tiger reserve with abundant prey but no resident tigers",
-      "url": "https://india.mongabay.com/2026/09/the-tiger-reserve-with-abundant-prey-but-no-resident-tigers/",
-      "summary": "Deep in northern Telangana, Kawal Tiger Reserve covers a thick forest of teak and bamboo near the Godavari river. Geographically, it sits in an ideal location, connecting major tiger landscapes. It links Tadoba-Andhari in Maharashtra to the west and Indravati in Chhattisgarh to the east. Kawal supports large populations of spotted deer, sambar, nilgai, and […]",
-      "published_at": "08 Sep 2026 11:23:33 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/07063530/Tara_in_Tadoba_Tiger_Reserve_AJTJ_P1090339-768x512.jpg",
+      "raw_id": "72daf62a1b069bcef5",
+      "title": "Wholesale Inflation August 2026:फिर बढ़ी थोक महंगाई, ईंधन और खाने-पीने की चीजें हुईं महंगी",
+      "url": "https://theruralpress.in/national/wholesale-inflation-rises-august-2026-wpi-mahangai/",
+      "summary": "Wholesale Inflation August 2026: देश में महंगाई का बोझ एक बार फिर बढ़ गया है। वाणिज्य एवं उद्योग मंत्रालय की ओर से सोमवार को जारी आंकड़ों के मुताबिक, अगस्त 2026 में थोक मूल्य सूचकांक (WPI) पर आधारित महंगाई दर बढ़कर 9.92 प्रतिशत पर पहुंच गई। इससे पिछले महीने जुलाई में यह दर 9.78 प्रतिशत दर्ज […]",
+      "published_at": "Mon, 14 Sep 2026 11:54:46 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "ddbb56d2d0497e7cae",
+      "title": "Shardul Amarchand Mangaldas & Co elevates 7 Partners to Equity Partnership",
+      "url": "https://www.barandbench.com/law-firms/corporate/shardul-amarchand-mangaldas-co-elevates-7-partners-to-equity-partnership",
+      "summary": "Shardul Amarchand Mangaldas & Co has announced the elevation of seven Partners to Equity Partnership. The following Lawyers have been elevated to Equity Partnership: Anurag Dwivedi | Infrastructure, Energy and Project Finance | Delhi Devesh Pandey | General Corporate | Delhi Manan Mehta | General Corporate | Mumbai Manita Doshi | General Corporate | Ahmedabad Manjari Tyagi | Capital Markets | Delhi Shubhangi Garg | Banking & Finance | Delhi Varun Pathak | Dispute Resolution | Delhi Commenting on the promotions, Dr. Shardul S. Shroff , Executive Chairman, said, “On behalf of the Firm, I am delighted to welcome them to the Equity Partnership. Each of them has demonstrated exceptional skill and impactful work in strengthening our Firm’s reputation. Their elevation reflects not only their individual achievements but also the confidence we have in their ability to contribute to the Firm’s long-term growth and success. I am confident that they will each play an important role in strengthening our institution, upholding our values, and delivering lasting value to our clients.” In a joint statement, Managing Partners Pallavi Shroff and Akshay Chudasama , said, “Our strength lies in the peo",
+      "published_at": "Mon, 14 Sep 2026 18:54:03 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-14/oda1netc/ViewPoint-MIddle-Single-Image-copy.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -272,10 +344,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 1
+          "Economy & Employment": 2
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Economy & Employment"
         ]
       }
     },
@@ -309,6 +381,146 @@
         },
         "candidate_categories": [
           "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "f0a9529cb881ebc55b",
+      "title": "Cyril Amarchand Mangaldas, Khaitan & Co, A&O Shearman act on Pernia's Pop Up Shop ₹680 crore IPO",
+      "url": "https://www.barandbench.com/law-firms/dealstreet/cam-khaitan-act-on-pernias-pop-up-shop-660-crore-ipo",
+      "summary": "Pernia’s Pop Up Shop (Purple Style Labs Limited) has raised ₹680 crore from an initial public offering of equity shares. Cyril Amarchand Mangaldas advised Pernia's Pop Up Shop on this IPO. The transaction was led by Manan Lahoty (Partner, Head - Capital Markets) and Priyadarshini Rao (Partner), with support from Radhika Pandey (Principal Associate), Associate Anomitra Debnath, Khushi Parekh and Nikshetaa Jain. Manan Lahoty, Priyadarshini Rao Khaitan & Co acted as the legal counsel to the book running lead managers Axis Capital Limited and IIFL Capital Services Limited on this IPO. The transaction team consisted of Subhayu Sen (Partner), Aparna Bagree (Partner), Ira Pandya (Senior Associate), Aayush Virani (Senior Associate), Associats Ria Chaudhary and Aayushi Poddar (Associate). Subhayu Sen, Aparna Bagree A&O Shearman acted as international counsel for the BRLMs. The transaction was led by Pallavi Gopinath Aney (Partner), along with Serena Upadhyay (Senior Associate). Pallavi Gopinath Aney Pernia’s Pop Up Shop is a vibrant and carefully curated design platform promoted by Abhishek Agarwal. Based in Mumbai, India, the platform offers a diverse range of products, including bridal tr",
+      "published_at": "Tue, 30 Sep 2025 12:20:35 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2025-09-27/3hwp3cbx/WhatsApp-Image-2025-09-27-at-6.26.54-PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Sports": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "397bbb7e0d55f05bd5",
+      "title": "Tamil Nadu government signs slew of MoUs during CM Vijay’s London visit to attract investment, create high-value jobs",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-signs-slew-of-mous-during-cm-vijays-london-visit-to-attract-investment-create-high-value-jobs/article71466094.ece",
+      "summary": "According to an official release, this investment will create employment opportunities for around 7,000 people across sectors including design, engineering, manufacturing, assembly and logistics facilities",
+      "published_at": "Mon, 14 Sep 2026 20:23:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/sd4nk1/article71466097.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-14%20at%205.52.44%20PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "e727541e6954cb7b22",
+      "title": "Carney, locked in U.S. trade war, pitches Canada to global investment titans",
+      "url": "https://www.thehindu.com/news/international/carney-locked-in-us-trade-war-pitches-canada-to-global-investment-titans/article71465884.ece",
+      "summary": "Attracting investment is crucial for ⁠Canada’s economy to weather mounting tariffs imposed by the United States, Canada’s top trade partner",
+      "published_at": "Mon, 14 Sep 2026 16:08:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/173o28/article71465892.ece/alternates/LANDSCAPE_1200/Canada_Carney_97229.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 5,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
         ]
       }
     },
@@ -348,17 +560,17 @@
       }
     },
     {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "9243729f1cace935c2",
+      "title": "‘PM says sab changa si, but sab mehenga si’ Congress on WPI inflation",
+      "url": "https://www.thehindu.com/news/national/pm-says-sab-changa-si-but-sab-mehenga-si-congress-on-wpi-inflation/article71465854.ece",
+      "summary": "To compound the misery, according to CMIE data, inflation-adjusted wages have also been consistently falling with a 5.7% drop since April, Jairam Ramesh said",
+      "published_at": "Mon, 14 Sep 2026 15:43:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/x2ki66/article71465860.ece/alternates/LANDSCAPE_1200/06_Jairam_Ramesh_Congress_Leaders_PC_13_08_Delhi.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -373,12 +585,45 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "ffa3e5479cf1badbbf",
+      "title": "India, Canada begin next round of talks on proposed trade pact: Official",
+      "url": "https://www.thehindu.com/business/Economy/india-canada-begin-next-round-of-talks-on-proposed-trade-pact-official/article71465752.ece",
+      "summary": "The negotiations are important as the two sides have targeted to increase bilateral trade to $50 billion by 2030.",
+      "published_at": "Mon, 14 Sep 2026 14:41:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ds1zar/article71465777.ece/alternates/LANDSCAPE_1200/iStock-1093161848.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "Economy & Employment",
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
@@ -453,17 +698,17 @@
       }
     },
     {
-      "raw_id": "17304c93ff6bf75e35",
-      "title": "PM Modi lauds SRCC for nurturing generations of leaders in business, public life",
-      "url": "https://www.thehindu.com/news/national/pm-modi-lauds-srcc-for-nurturing-generations-of-leaders-in-business-public-life/article71432623.ece",
-      "summary": "Prime Minister Narendra Modi released a commemorative ₹100 coin to mark the centenary celebrations",
-      "published_at": "Sat, 05 Sep 2026 20:33:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/vdw0b2/article71432720.ece/alternates/LANDSCAPE_1200/PTI09_05_2026_000320B.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "4a3fc4b8127984d3c1",
+      "title": "Asia Cup: Indian women's cricket team refuses to accept trophy from ACC head Mohsin Naqvi",
+      "url": "https://www.thehindu.com/sport/cricket/asia-cup-indian-womens-cricket-team-refuses-to-accept-trophy-from-acc-head-mohsin-naqvi/article71464494.ece",
+      "summary": "Harmanpreet Kaur-led India defeated Sri Lanka by 72 runs here to lift their record-extending eighth Asia Cup title, but the players did not come out on the field for post-tournament presentation ceremonies",
+      "published_at": "Mon, 14 Sep 2026 12:09:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r0cgb7/article71464512.ece/alternates/LANDSCAPE_1200/AP09_29_2025_000045B.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -478,134 +723,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
+          "Sports": 17
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "03a4bd7208c9adadbb",
-      "title": "Nepal flash floods: Rescue teams clear 70 metres of debris in tunnel as they close in on six trapped workers",
-      "url": "https://www.thehindu.com/news/international/nepal-flash-floods-rescue-teams-clear-70-metres-of-debris-in-tunnel-as-they-close-in-on-six-trapped-workers/article71462802.ece",
-      "summary": "According to the project manager, the powerhouse is about 60 metres further down the tunnel. The rescue teams were to continue working through the night to reach it, says India’s Ambassador to Nepal",
-      "published_at": "Sun, 13 Sep 2026 13:34:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/y2hid8/article71462820.ece/alternates/LANDSCAPE_1200/AFP_C83W78X.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "5c2324a3fe081ce874",
-      "title": "OpenAI's Altman says AI unlikely to lead to 'jobs apocalypse'",
-      "url": "https://www.thehindu.com/news/international/openais-altman-says-ai-unlikely-to-lead-to-jobs-apocalypse/article71024867.ece",
-      "summary": "A growing number of global companies, including HSBC, Amazon, Standard Chartered and CBA have announced some ⁠jobs within their companies were being replaced by AI",
-      "published_at": "Sun, 13 Sep 2026 11:42:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4j3nx7/article71024930.ece/alternates/LANDSCAPE_1200/2026-05-26T073711Z_1570248417_RC2UMCA6GNXA_RTRMADP_3_AUSTRALIA-OPENAI.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "1d9709b130b77b3c10",
-      "title": "AI industry needs to slow down for safety: Anthropic CEO",
-      "url": "https://www.thehindu.com/sci-tech/technology/ai-industry-needs-to-slow-down-for-safety-anthropic-ceo/article71461300.ece",
-      "summary": "To help rein in risks, Dario Amodei suggested that all companies at the frontier of AI commit to giving “ongoing, employee-like access” to a team of outside evaluators, who can monitor safety practices. He said Anthropic already plans to do so itself, including offering desks in its offices, access badges, and company laptops",
-      "published_at": "Sun, 13 Sep 2026 00:30:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8mgnv3/article71461318.ece/alternates/LANDSCAPE_1200/Anthropic_AI_Slowdown__7476.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Sports": 1,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics",
           "Sports"
         ]
       }
     },
     {
-      "raw_id": "324bc26bd68b64091a",
-      "title": "First batch of FYUP Honours students graduate this year. Are they ready for Ph.D.?",
-      "url": "https://www.thehindu.com/education/first-batch-of-fyup-honours-students-graduate-this-year-are-they-ready-for-phd/article71437864.ece",
-      "summary": "The problem with direct entry into a Ph.D. after the fourth year is that these students will eventually be competing in the job market with people who have completed postgraduate degrees",
-      "published_at": "Mon, 07 Sep 2026 23:05:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/cbsb3a/article71438021.ece/alternates/LANDSCAPE_1200/iStock-2214379051.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "f24c11cf51103e4f10",
+      "title": "Crash and burn: Pakistan cricket at a new low after England humiliation",
+      "url": "https://www.thehindu.com/sport/cricket/crash-and-burn-pakistan-cricket-at-a-new-low-after-england-humiliation/article71464674.ece",
+      "summary": "Described as the worst team to tour England in the last 50 years, Pakistan's cycle of chopping and changing continued when head coach Sarfaraz Ahmed and bowling chief Umar Gul were sacked from their posts",
+      "published_at": "Mon, 14 Sep 2026 03:52:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ujoq0h/article71464677.ece/alternates/LANDSCAPE_1200/England_Pakistan_Cricket_36665.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -620,27 +756,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 2,
-          "Society, Rights & Justice": 12
+          "Sports": 13
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "52b5512365673a5a47",
-      "title": "Why the BRICS summit was a major diplomatic win for India",
-      "url": "https://www.thehindu.com/videos/why-the-brics-summit-was-a-major-diplomatic-win-for-india/article71465371.ece",
-      "summary": "The 18th BRICS Summit in New Delhi is being seen as a significant diplomatic achievement for India. From pushing reforms in global governance to strengthening trade cooperation and facilitating dialogue among rival nations, the summit highlighted India’s growing role as a bridge between competing global powers. Here’s a look at the key outcomes and why the New Delhi Declaration matters.",
-      "published_at": "Mon, 14 Sep 2026 09:03:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dny8w3/article71465369.ece/alternates/LANDSCAPE_1200/Editorial%20-%20English%20%201.png",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "0a5b46aa585c5c4922",
+      "title": "Kranti Gaud fined 10% match fee for breaching ICC Code of Conduct",
+      "url": "https://www.thehindu.com/sport/kranti-gaud-fined-10-match-fee-for-breaching-icc-code-of-conduct/article71466065.ece",
+      "summary": "\"In addition to this, one demerit point has been added to the disciplinary record of Gaud, for whom it was the first offence in a 24-month period,\" ICC said",
+      "published_at": "Mon, 14 Sep 2026 18:39:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c0sd3e/article71213335.ece/alternates/LANDSCAPE_1200/GettyImages-2285034964.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -655,27 +789,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "International & Geopolitics": 12
+          "Sports": 12
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "9be67a27886cb6693d",
-      "title": "Civil works of Vattiyurkavu junction development project in Keralam to take off on September 14",
-      "url": "https://www.thehindu.com/news/national/kerala/civil-works-of-vattiyurkavu-junction-development-project-in-keralam-to-take-off-on-september-14/article71464103.ece",
-      "summary": "The works, which have been contracted by the Kerala Road Fund Board to the Uralungal Labour Contract Cooperative Society, involve construction of roads, culverts and retaining walls as well as shifting of utility lines",
-      "published_at": "Mon, 14 Sep 2026 02:00:09 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "93efdb2dd248658a74",
+      "title": "Pakistan to play in Asian Champions Trophy hockey in India: Punjab CM Mann",
+      "url": "https://www.thehindu.com/sport/pakistan-to-play-in-asian-champions-trophy-hockey-in-india-punjab-cm-mann/article71465976.ece",
+      "summary": "Hockey India secretary general Bhola Nath Singh, who was also in attendance at Monday's, September 14, event, said the relationship between the hockey federations of India and Pakistan is \"excellent\".",
+      "published_at": "Mon, 14 Sep 2026 17:56:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vn5d25/article71465986.ece/alternates/LANDSCAPE_1200/GettyImages-456538568.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -690,10 +822,274 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Sports": 12
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "86e578faf7c3e85290",
+      "title": "Tanvi Patri wins U17 title in all-Indian final at Badminton Asia Junior Championships",
+      "url": "https://www.thehindu.com/sport/tanvi-patri-wins-u17-title-in-all-indian-final-at-badminton-asia-junior-championships/article71464615.ece",
+      "summary": "The Odisha youngster notched up a 11-15, 15-10, 15-12 win over Shaina Manimuthu",
+      "published_at": "Mon, 14 Sep 2026 03:05:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/w5kn4f/article71464655.ece/alternates/LANDSCAPE_1200/Tanvi%20Patri%20after%20winning%20U17%20title%20at%20the%20Badminton%20Asia%20Junior%20Championships.jpeg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "0049b5da688243141e",
+      "title": "Hockey India strips Director General Srivastava of all powers",
+      "url": "https://www.thehindu.com/sport/hockey/hockey-india-strips-director-general-srivastava-of-all-powers/article71460896.ece",
+      "summary": "",
+      "published_at": "Sat, 12 Sep 2026 20:56:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nli7zv/article71460891.ece/alternates/LANDSCAPE_1200/PTI07_30_2026_000288B.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "05bd44c2548bd98b14",
+      "title": "CRICKET | Ibrahim Zadran keen to enjoy new responsibility as full-time skipper",
+      "url": "https://www.thehindu.com/sport/cricket/cricket-ibrahim-zadran-keen-to-enjoy-new-responsibility-as-full-time-skipper/article71460693.ece",
+      "summary": "",
+      "published_at": "Sat, 12 Sep 2026 20:14:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8ksg43/article71460707.ece/alternates/LANDSCAPE_1200/03_INDIA_TEAM_PRACTICE_SESSION_12_09_DELHI.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "e751f118d62866184d",
+      "title": "I am satisfied with being five-time World champion: Carlsen",
+      "url": "https://www.thehindu.com/sport/i-am-satisfied-with-beingfive-time-world-champion-carlsen/article71464168.ece",
+      "summary": "The Norwegian rules out a return to the classical championship cycle; heaps praise on Praggnanandhaa and his playing style; says India is the team to beat in the Open section in the Olympiad",
+      "published_at": "Mon, 14 Sep 2026 00:32:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p7tog/article71464196.ece/alternates/LANDSCAPE_1200/_JAI1361.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 10
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "67b9d24eb9761ba15e",
+      "title": "Varun Chakaravarthy ruled out of Afghanistan series due to injury",
+      "url": "https://www.thehindu.com/sport/cricket/varun-chakaravarthy-ruled-out-of-afghanistan-series-due-to-injury/article71466212.ece",
+      "summary": "With the Asian Games in Japan starting soon after, it isn’t yet clear whether Varun’s injury will rule him out of the multi-sport spectacle too.",
+      "published_at": "Mon, 14 Sep 2026 20:26:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xilcem/article71466220.ece/alternates/LANDSCAPE_1200/0007KKR.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "3c754f486d74e08438",
+      "title": "Ronaldo calls for lifetime bans after ‘Jota’ chants aimed at Neves",
+      "url": "https://www.thehindu.com/sport/football/ronaldo-calls-for-lifetime-bans-afterjota-chants-aimed-at-neves/article71465395.ece",
+      "summary": "This is no longer football, and there have to be limits; people who behave like ⁠this should never be allowed to enter a stadium again, said Cristiano Ronaldo",
+      "published_at": "Mon, 14 Sep 2026 14:35:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/u1qgp9/article71465398.ece/alternates/LANDSCAPE_1200/2026-09-12T192328Z_76878759_UP1EM9C1HV2XM_RTRMADP_3_SOCCER-SAUDI-KHA-NSR.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "9c1e507f400db457d1",
+      "title": "Conscious, institutional decision in prevailing circumstances: Saikia on Asia Cup trophy row",
+      "url": "https://www.thehindu.com/sport/cricket/conscious-institutional-decision-in-prevailing-circumstances-saikia-on-asia-cup-trophy-row/article71465588.ece",
+      "summary": "Secretary Saikia reiterated that all sporting commitments would always be fulfilled as government of India has allowed them to play the hostile neighbours in multi-nation tournament",
+      "published_at": "Mon, 14 Sep 2026 13:08:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vwgwgu/article71465631.ece/alternates/LANDSCAPE_1200/11908_3_9_2026_17_12_24_1_DSC_7145.JPEG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "046e0f618a21a77a16",
+      "title": "Position taken by BCCI and we stand by it: Muzumdar on not accepting Asia Cup trophy from Naqvi",
+      "url": "https://www.thehindu.com/sport/cricket/position-taken-by-bcci-and-we-stand-by-it-muzumdar-on-not-accepting-asia-cup-trophy-from-naqvi/article71465458.ece",
+      "summary": "For us, this tournament is over; We’re the champions — that’s good enough; it was on the big board that India champions of Asia Cup 2026, said head coach Amol Muzumdar",
+      "published_at": "Mon, 14 Sep 2026 12:50:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tjagqe/article71465473.ece/alternates/LANDSCAPE_1200/GettyImages-2283259257.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
         ]
       }
     },
@@ -962,406 +1358,6 @@
         },
         "candidate_categories": [
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "64f571bffddd16e123",
-      "title": "Chennai RWA shines in TN’s solar race",
-      "url": "https://www.thehindu.com/news/cities/chennai/chennairwashines-in-tnssolar-race/article70633195.ece",
-      "summary": "Bollineni Hillside, a 1295-unit gated community in Perumbakkam off Old Mahabalipuram Road, has bagged an award for the biggest solar rooftop installation in Tamil Nadu in the category for resident welfare associations",
-      "published_at": "Sun, 15 Feb 2026 16:28:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/xyfnyz/article70633207.ece/alternates/LANDSCAPE_1200/15dcadyr_gatedcommunity.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "47e87507b5c8ce38f4",
-      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
-      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
-      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "c31cb46924ed3cc2f0",
-      "title": "Congress asks why PM didn’t pay tribute to Garg during Assam visit",
-      "url": "https://www.thehindu.com/news/cities/Delhi/congress-asks-why-pm-didnt-pay-tribute-togargduring-assam-visit/article70427314.ece",
-      "summary": "",
-      "published_at": "Mon, 22 Dec 2025 22:46:19 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1063ea0a88c22b17bc",
-      "title": "Mob vandalises prayer hall over burial dispute in Bastar",
-      "url": "https://www.thehindu.com/news/national/chhattisgarh/mob-vandalises-prayer-hall-over-burial-dispute-in-bastar/article70412766.ece",
-      "summary": "Clashes in Kanker village follow opposition to Christian burial rites; police personnel among those injured in mob fury",
-      "published_at": "Thu, 18 Dec 2025 22:34:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/im4icd/article70412944.ece/alternates/LANDSCAPE_1200/03_Bastar_Story.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "b27e8d5f38d62b6daa",
-      "title": "Manipur: Tribal body calls shutdown on NH-37 over arrest of Naga women",
-      "url": "https://eastmojo.com/news/2026/09/11/manipur-tribal-body-calls-shutdown-on-nh-37-over-arrest-of-naga-women/",
-      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/07/Imphal-to-Jiribam-NH-37-.jpg?fit=780%2C407&ssl=1\" /> Imphal: The Joint Tribes’ Council Manipur (JTCM) on Friday announced a total shutdown along National Highway 37 with immediate effect, demanding the unconditional release of five Naga women allegedly arrested by a CRPF CoBRA team in Noney district. In a statement, the JTCM strongly condemned what it described as the “illegal, biased and unjust” arrest of […] The post Manipur: Tribal body calls shutdown on NH-37 over arrest of Naga women appeared first on EastMojo .",
-      "published_at": "Fri, 11 Sep 2026 11:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "854cf5cf90e5bff922",
-      "title": "Anagram Partners advises Actis on sale of highway assets to NXT-Infra Trust",
-      "url": "https://www.barandbench.com/law-firms/dealstreet/anagram-partners-advises-actis-on-sale-of-highway-assets-to-nxt-infra-trust",
-      "summary": "Actis has sold Darah Jhalawar Highway, Vadodara Kim Expressway, Calicut Expressway, Vindhyachal Expressway and Second Vivekananda Bridge Tollway to NXT-Infra Trust. Anagram Partners advised Actis on this transaction. The transaction team was led by Simone Reis (Partner) and Shwetank Chaubey (Partner), and comprised Anupam Nayak (Senior Associate), Associates Kavya Nagamangala, Rahil Arora and Kanishka Gunjiyal. Nxt-Infra Trust is a SEBI-registered Infrastructure Investment Trust (InvIT), sponsored by Actis Highway Infra Limited, focused on investing in and owning road infrastructure assets in India. Its portfolio comprises 14 road stretches spanning over 2,000 lane-km across Delhi, Haryana, Uttarakhand, Uttar Pradesh and Maharashtra, comprising both toll and annuity assets. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
-      "published_at": "Mon, 14 Sep 2026 09:32:56 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-12/01fdb9b2-487c-4b1e-8c59-55092b59f039/20.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "4a3fc4b8127984d3c1",
-      "title": "Asia Cup: Indian women's cricket team refuses to accept trophy from ACC head Mohsin Naqvi",
-      "url": "https://www.thehindu.com/sport/cricket/asia-cup-indian-womens-cricket-team-refuses-to-accept-trophy-from-acc-head-mohsin-naqvi/article71464494.ece",
-      "summary": "Harmanpreet Kaur-led India defeated Sri Lanka by 72 runs here to lift their record-extending eighth Asia Cup title, but the players did not come out on the field for post-tournament presentation ceremonies",
-      "published_at": "Mon, 14 Sep 2026 01:13:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r0cgb7/article71464512.ece/alternates/LANDSCAPE_1200/AP09_29_2025_000045B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 17
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "f24c11cf51103e4f10",
-      "title": "Crash and burn: Pakistan cricket at a new low after England humiliation",
-      "url": "https://www.thehindu.com/sport/cricket/crash-and-burn-pakistan-cricket-at-a-new-low-after-england-humiliation/article71464674.ece",
-      "summary": "Described as the worst team to tour England in the last 50 years, Pakistan's cycle of chopping and changing continued when head coach Sarfaraz Ahmed and bowling chief Umar Gul were sacked from their posts",
-      "published_at": "Mon, 14 Sep 2026 03:52:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ujoq0h/article71464677.ece/alternates/LANDSCAPE_1200/England_Pakistan_Cricket_36665.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "86e578faf7c3e85290",
-      "title": "Tanvi Patri wins U17 title in all-Indian final at Badminton Asia Junior Championships",
-      "url": "https://www.thehindu.com/sport/tanvi-patri-wins-u17-title-in-all-indian-final-at-badminton-asia-junior-championships/article71464615.ece",
-      "summary": "The Odisha youngster notched up a 11-15, 15-10, 15-12 win over Shaina Manimuthu",
-      "published_at": "Mon, 14 Sep 2026 03:05:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/w5kn4f/article71464655.ece/alternates/LANDSCAPE_1200/Tanvi%20Patri%20after%20winning%20U17%20title%20at%20the%20Badminton%20Asia%20Junior%20Championships.jpeg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "0049b5da688243141e",
-      "title": "Hockey India strips Director General Srivastava of all powers",
-      "url": "https://www.thehindu.com/sport/hockey/hockey-india-strips-director-general-srivastava-of-all-powers/article71460896.ece",
-      "summary": "",
-      "published_at": "Sat, 12 Sep 2026 20:56:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nli7zv/article71460891.ece/alternates/LANDSCAPE_1200/PTI07_30_2026_000288B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "05bd44c2548bd98b14",
-      "title": "CRICKET | Ibrahim Zadran keen to enjoy new responsibility as full-time skipper",
-      "url": "https://www.thehindu.com/sport/cricket/cricket-ibrahim-zadran-keen-to-enjoy-new-responsibility-as-full-time-skipper/article71460693.ece",
-      "summary": "",
-      "published_at": "Sat, 12 Sep 2026 20:14:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8ksg43/article71460707.ece/alternates/LANDSCAPE_1200/03_INDIA_TEAM_PRACTICE_SESSION_12_09_DELHI.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "e751f118d62866184d",
-      "title": "I am satisfied with being five-time World champion: Carlsen",
-      "url": "https://www.thehindu.com/sport/i-am-satisfied-with-beingfive-time-world-champion-carlsen/article71464168.ece",
-      "summary": "The Norwegian rules out a return to the classical championship cycle; heaps praise on Praggnanandhaa and his playing style; says India is the team to beat in the Open section in the Olympiad",
-      "published_at": "Mon, 14 Sep 2026 00:32:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p7tog/article71464196.ece/alternates/LANDSCAPE_1200/_JAI1361.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 10
-        },
-        "candidate_categories": [
-          "Sports"
         ]
       }
     }

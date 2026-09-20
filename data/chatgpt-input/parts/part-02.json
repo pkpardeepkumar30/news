@@ -1,49 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-19T22:25:44.968295+00:00",
-  "input_count": 426,
+  "prepared_at": "2026-09-20T05:02:36.611052+00:00",
+  "input_count": 400,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 104,
+    "established_or_other": 96,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "3620850294969850ea",
-      "title": "Nepal’s flood claim tests whether a nascent climate fund can deliver",
-      "url": "https://india.mongabay.com/2026/09/nepals-flood-claim-tests-whether-a-young-climate-fund-can-deliver/",
-      "summary": "More than 1,386 people have died and over 5,130 more missing, as of September 12, following the August 26 floods in Nepal. In the wreckage along the Bhote Koshi river lie two unresolved questions: Is climate change linked to the disaster? And, can a nascent global fund, built to help vulnerable countries in such crises, […]",
-      "published_at": "14 Sep 2026 15:25:51 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/14125738/AP26251387871560-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
     {
       "raw_id": "dc8440673ed0606fdf",
       "title": "Your exotic pet could be putting your health at risk",
@@ -80,12 +47,253 @@
       }
     },
     {
-      "raw_id": "c34af3517930b81b6c",
-      "title": "As exotic primates reach India, welfare concerns grow",
-      "url": "https://india.mongabay.com/2026/09/as-exotic-primates-reach-india-welfare-concerns-grow/",
-      "summary": "This is Part 2 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 elaborates on how the trade enables zoonoses or zoonotic disease spillovers. Recently, pictures and videos of five orangutan babies in a forest […]",
-      "published_at": "18 Sep 2026 15:55:59 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/18130613/PHOTO-2026-09-11-16-19-00-768x512.jpg",
+      "raw_id": "e10272d6572f0e87d0",
+      "title": "The Women Who Make Welfare Work",
+      "url": "https://khabarlahariya.org/the-women-who-make-welfare-work/",
+      "summary": "Meet the women whose labour keeps some of India’s largest government schemes running. India has over 1.4 million anganwadi centres providing early childhood care, education and nutrition for young children. …",
+      "published_at": "Tue, 15 Sep 2026 06:42:17 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "bbd08757901042656d",
+      "title": "Samrat Choudhary promises jobs to one crore women",
+      "url": "https://www.thehindu.com/news/national/bihar/samrat-choudhary-promises-jobs-to-one-crore-women/article71485207.ece",
+      "summary": "Addressing the gathering, Samrat Choudhary said that women in Bihar are moving forward rapidly, and their growing economic, social, and political participation reflects the State’s changing landscape",
+      "published_at": "Sun, 20 Sep 2026 07:05:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/11v2or/article71485936.ece/alternates/LANDSCAPE_1200/20260919223L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "03372afbfa7477d7b2",
+      "title": "Govt jobs to one lakh youth in Uttar Pradesh, says Adityanath",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/govt-jobs-to-one-lakh-youth-in-uttar-pradesh-says-adityanath/article71487054.ece",
+      "summary": "25-30 thousand more recruitments will take place through UPSSSC results and 20-25 thousand recruitments through the Uttar Pradesh Education Selection Commission",
+      "published_at": "Sun, 20 Sep 2026 09:53:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/rqr18s/article71487089.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-19%20at%206.19.28%20PM%201.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "b1e8cb51b627e87a56",
+      "title": "‘India is entering a period of economic growth that could be unparalleled in our history’",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu//article71485038.ece",
+      "summary": "",
+      "published_at": "Sun, 20 Sep 2026 00:30:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fu5lbq/article71485669.ece/alternates/LANDSCAPE_1200/9217_19_9_2026_13_36_54_1_IMG_20260919_133027.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "9adfca0a8a0167fe73",
+      "title": "Krishna AchutaRao, climate scientist who pioneered attribution research in India, dies at 62 [Obituary]",
+      "url": "https://india.mongabay.com/short-article/2026/09/krishna-achutarao-climate-scientist-who-pioneered-attribution-research-in-india-dies-at-62/",
+      "summary": "Krishna AchutaRao, the renowned climate scientist and a professor at IIT Delhi’s Centre for Atmospheric Sciences (CAS), died on September 4, aged 62. AchutaRao’s research helped strengthen the science of climate attribution, distinguishing climate change related events from ordinary ones. His sustained focus on the influence of anthropogenic forces over climate systems has helped put […]",
+      "published_at": "10 Sep 2026 16:21:45 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/10155254/krishna-achutarao-collage-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -105,14 +313,111 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 4,
-          "Environment, Health & Science": 3
+          "Environment, Health & Science": 9
         },
         "candidate_categories": [
-          "Economy & Employment",
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "2d44e67f0f8d91beef",
+      "title": "As tigers spill beyond reserves, India rethinks conservation",
+      "url": "https://india.mongabay.com/2026/09/as-tigers-spill-beyond-reserves-india-rethinks-conservation/",
+      "summary": "Forty-five-year-old Mahadeva Gowda was tending to his cotton farm in the village of Badagalapura in the southern Indian state of Karnataka when a tiger lunged at him from behind. He was caught unaware: He says he wasn’t aware that the forest department was trying to capture a tiger roaming through the areas. Before he realised […]",
+      "published_at": "18 Sep 2026 12:04:46 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/18110753/Copy-of-2-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "75dd734bf6e38d50ac",
+      "title": "How a village in Bastar is stopping forest fires",
+      "url": "https://india.mongabay.com/video/2026/09/how-a-village-in-bastar-is-stopping-forest-fires/",
+      "summary": "Every summer, the forests around Tiriya village in Bastar, Chhattisgarh, face the threat of fire. But before flames can spread, the residents are already on the move. Members of Tiriya’s gram sabha patrol the forest on bicycles, looking for fresh smoke or flames. They work in shifts, maintain firelines and coordinate with the Forest Department […]",
+      "published_at": "10 Sep 2026 18:15:22 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/10123046/fireline-banner-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "States & Local": 1,
+          "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
           "Environment, Health & Science",
-          "Society, Rights & Justice"
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3620850294969850ea",
+      "title": "Nepal’s flood claim tests whether a nascent climate fund can deliver",
+      "url": "https://india.mongabay.com/2026/09/nepals-flood-claim-tests-whether-a-young-climate-fund-can-deliver/",
+      "summary": "More than 1,386 people have died and over 5,130 more missing, as of September 12, following the August 26 floods in Nepal. In the wreckage along the Bhote Koshi river lie two unresolved questions: Is climate change linked to the disaster? And, can a nascent global fund, built to help vulnerable countries in such crises, […]",
+      "published_at": "14 Sep 2026 15:25:51 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/14125738/AP26251387871560-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
         ]
       }
     },
@@ -251,6 +556,76 @@
       }
     },
     {
+      "raw_id": "0a3528f5c5d46bc0c2",
+      "title": "Donald Trump seeks to bring health-research funding under his control, Politico reports",
+      "url": "https://www.thehindu.com/news/international/donald-trump-seeks-to-bring-health-research-funding-under-his-control-politico-reports/article71487082.ece",
+      "summary": "Donald Trump has directed his budget director, Russ Vought, ‌to draft an executive order to create a board that would ‌decide which grants would be funded ‌by ⁠the National Institutes of Health",
+      "published_at": "Sun, 20 Sep 2026 10:14:31 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r9fwzk/article71487095.ece/alternates/LANDSCAPE_1200/2026-09-20T010006Z_248475321_RC2RXGAGSVNA_RTRMADP_3_UN-ASSEMBLY.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 8,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "d5557d54808037294d",
+      "title": "Forest department prepares proposal to develop roads to Edamalakkudy panchayat in Keralam’s Idukki",
+      "url": "https://www.thehindu.com/news/national/kerala/forest-department-prepares-proposal-to-develop-roads-to-edamalakkudy-panchayat-in-keralams-idukki/article71484956.ece",
+      "summary": "As per the proposal, nine stretches will be developed into all-weather roads and a bridge will be constructed. Recurring incidents of people being carried on makeshift stretchers for medical emergencies were reported in Edamalakkudy",
+      "published_at": "Sat, 19 Sep 2026 23:07:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nw9hu9/article71485047.ece/alternates/LANDSCAPE_1200/80759_19_9_2026_18_5_11_2_BAMBOOPARAPPAYAR.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 4,
+          "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "a9af337288e5cc445d",
       "title": "Calicut varsity research scholars to have separate union; DSU on its way out",
       "url": "https://www.thehindu.com/news/national/kerala/calicut-varsity-research-scholars-to-have-separate-union-dsu-on-its-way-out/article71484848.ece",
@@ -284,113 +659,12 @@
       }
     },
     {
-      "raw_id": "b25a66b9b131b81929",
-      "title": "AI, Trading और Drone Technology… रायपुर ट्रेड फेयर के मेगा नॉलेज सेशन में क्या-क्या हुआ?",
-      "url": "https://theruralpress.in/tech/ai-trading-and-drone-technology-what-happened-at-the-raipur-trade-fairs-mega-knowledge-session/",
-      "summary": "Industry Trade Fair 2026: रायपुर के साइंस कॉलेज ग्राउंड में चल रहे Industry Trade Fair 2026 में शनिवार को मेगा नॉलेज सेशन का आयोजन किया गया। दोपहर 3 बजे से शाम 5 बजे तक चले इस दो घंटे के सेशन में Generative AI, AI & Trading, Drone Technology और Leadership जैसे विषयों पर चर्चा हुई। […]",
-      "published_at": "Sat, 19 Sep 2026 16:44:45 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 2
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "46e127396fb0a0627f",
-      "title": "Nepal’s flood disaster puts its hydropower-first strategy, exports to the test",
-      "url": "https://india.mongabay.com/2026/09/nepals-flood-disaster-puts-its-hydropower-first-strategy-exports-to-the-test/",
-      "summary": "Nepal’s long-held policy of harnessing hydroelectricity and using it for economic growth has met new challenges: potential catastrophic floods in the snow-fed rivers amid rising global temperatures. The August 26 floods that originated on the Nepal-China border, and that knocked out around 10% of installed power from the national grid, has prompted a debate on […]",
-      "published_at": "10 Sep 2026 15:00:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/10141820/nepal-flood-2026-3-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "e10272d6572f0e87d0",
-      "title": "The Women Who Make Welfare Work",
-      "url": "https://khabarlahariya.org/the-women-who-make-welfare-work/",
-      "summary": "Meet the women whose labour keeps some of India’s largest government schemes running. India has over 1.4 million anganwadi centres providing early childhood care, education and nutrition for young children. …",
-      "published_at": "Tue, 15 Sep 2026 06:42:17 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "bbd08757901042656d",
-      "title": "Samrat Choudhary promises jobs to one crore women",
-      "url": "https://www.thehindu.com/news/national/bihar/samrat-choudhary-promises-jobs-to-one-crore-women/article71485207.ece",
-      "summary": "Addressing the gathering, Samrat Choudhary said that women in Bihar are moving forward rapidly, and their growing economic, social, and political participation reflects the State’s changing landscape",
-      "published_at": "Sun, 20 Sep 2026 01:16:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/11v2or/article71485936.ece/alternates/LANDSCAPE_1200/20260919223L.jpg",
+      "raw_id": "c0a929708b6e2e0dc4",
+      "title": "Death of Anna University student was not due to Dengue, clarifies Public Health Department",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/death-of-anna-university-student-was-not-due-to-dengue-clarifies-public-health-department/article71484377.ece",
+      "summary": "The department posts on X that the student in question died of scrub typhus, and it was the only reported case. News of a dengue outbreak triggered alarm on campus, causing students to rush to a primary health centre for tests",
+      "published_at": "Sun, 20 Sep 2026 00:26:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9id7nc/article71485916.ece/alternates/LANDSCAPE_1200/DSC_2794.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -410,286 +684,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 5
+          "Society, Rights & Justice": 5,
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "b1e8cb51b627e87a56",
-      "title": "‘India is entering a period of economic growth that could be unparalleled in our history’",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu//article71485038.ece",
-      "summary": "",
-      "published_at": "Sun, 20 Sep 2026 00:30:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fu5lbq/article71485669.ece/alternates/LANDSCAPE_1200/9217_19_9_2026_13_36_54_1_IMG_20260919_133027.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
+          "Environment, Health & Science",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "0130848726c9b35a64",
-      "title": "After winning the exam battle, youth now have to face the jobs war",
-      "url": "https://www.thehindu.com/education/after-winning-the-exam-battle-youth-now-have-to-face-the-jobs-war/article71455333.ece",
-      "summary": "India’s skilling effort is largely supply-led: training happens where the people are, not where the jobs are",
-      "published_at": "Tue, 15 Sep 2026 00:22:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/empyqu/article71465560.ece/alternates/LANDSCAPE_1200/image%201.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "d131ad1e955917cacb",
-      "title": "Bring PG accommodation under a Board, bar politicians from the business",
-      "url": "https://www.thehindu.com/opinion/op-ed/bring-pg-accommodation-under-a-board-bar-politicians-from-the-business/article71447964.ece",
-      "summary": "Ownership of every such facility must be disclosed in the public domain, and allocation must be transparent by merit or lottery",
-      "published_at": "Thu, 10 Sep 2026 17:35:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3bhath/article71447978.ece/alternates/LANDSCAPE_1200/Building%20Collapse%20New%20Delhi5.JPEG",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "cbc3f8cf07c9e57eef",
-      "title": "Bank of Japan hikes rates to 31-year high to battle inflation",
-      "url": "https://www.thehindu.com/business/Economy/bank-of-japan-hikes-rates-to-31-year-high-to-battle-inflation/article71479482.ece",
-      "summary": "Pressure has increased on officials to further tighten monetary policy as a spike in oil prices caused by the West Asia crisis",
-      "published_at": "Fri, 18 Sep 2026 11:52:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7pfa7o/article71479521.ece/alternates/LANDSCAPE_1200/2026-09-16T091100Z_1239774366_RC25KNAAXL8Y_RTRMADP_3_JAPAN-BOJ.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "8f0ac89306cafbf6bb",
-      "title": "How to smartly market films at film festivals? Guneet Monga explains",
-      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
-      "summary": "",
-      "published_at": "2025-07-08T12:40:35+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "faye-dsouza-youtube",
-        "name": "Faye D'Souza",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     },
@@ -792,6 +792,41 @@
         },
         "candidate_categories": [
           "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
           "States & Local"
         ]
       }
@@ -1065,41 +1100,6 @@
       }
     },
     {
-      "raw_id": "04cea012cb47a26e4e",
-      "title": "Almost 60% of India’s elephants are in Karnataka, Assam, T.N.",
-      "url": "https://www.thehindu.com/news/states/almost-60-of-indias-elephants-are-in-karnataka-assam-tn/article70164209.ece",
-      "summary": "The Wildlife Institute of India released the first-ever DNA-based synchronous estimation of elephants across the country",
-      "published_at": "Wed, 15 Oct 2025 01:40:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ancn3j/article70164201.ece/alternates/LANDSCAPE_1200/IMG_WhatsApp_Image_2025-_2_1_06F05FLE.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "67b5455531124d3416",
       "title": "Manipur’s sporting legacy offers investment potential: Govt official",
       "url": "https://eastmojo.com/manipur/2026/09/18/manipurs-sporting-legacy-offers-investment-potential-govt-official/",
@@ -1267,74 +1267,6 @@
       }
     },
     {
-      "raw_id": "b979a62e928d5e1964",
-      "title": "Asian Games 2026 | Japan embracing the occasion of facing India in cricket rather than fearing it",
-      "url": "https://www.thehindu.com/sport/cricket/asian-games-2026-japan-embracing-the-occasion-of-facing-india-in-cricket-rather-than-fearing-it/article71476717.ece",
-      "summary": "India Women begin their Asian Games campaign against the host on September 18 at Korogi Sports Park in Nisshin",
-      "published_at": "Fri, 18 Sep 2026 09:32:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/sport/x0brc8/article71476731.ece/alternates/LANDSCAPE_1200/HSVUFe_bEAAYDPz.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "032b04816f8a51d173",
-      "title": "CCI clears Lakshmi Mittal family, Poonawalla's purchase of Rajasthan Royals, 2 other cricket franchises",
-      "url": "https://www.thehindu.com/sport/cricket/cci-clears-lakshmi-mittal-family-poonawallas-purchase-of-rajasthan-royals-2-other-cricket-franchises/article71479190.ece",
-      "summary": "Westview Cricket Ltd and Poonawalla Sports and Fitness Pvt Ltd will be buying Rajasthan Royals (India), Paarl Royals (South Africa) and Barbados Royals (Barbados).",
-      "published_at": "Fri, 18 Sep 2026 06:55:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qfurus/article71479193.ece/alternates/LANDSCAPE_1200/15_Index_RVM_6283.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
       "raw_id": "4824414350efb3a35f",
       "title": "Sports Ministry wants IPL owners to invest in HIL and other leagues",
       "url": "https://www.thehindu.com/sport/other-sports/sports-ministry-wants-ipl-owners-to-invest-in-hil-and-other-leagues/article71484826.ece",
@@ -1363,6 +1295,74 @@
           "Sports": 12
         },
         "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "29f84dba3ad50857b5",
+      "title": "Former Brazil, India stars for exhibition match in Kochi on September 23",
+      "url": "https://www.thehindu.com/sport/football/india-brazil-match/article71484642.ece",
+      "summary": "",
+      "published_at": "Sat, 19 Sep 2026 17:54:11 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "10d27c530b1adba825",
+      "title": "Indians living in Japan on stand-by to house Asian Games athletes",
+      "url": "https://www.thehindu.com/sport/indians-living-in-japan-on-stand-by-to-house-asian-games-athletes/article71484089.ece",
+      "summary": "Reports said the Indian embassy in Japan had helped reach out to around 2,000 families in Nagoya, some of whom are prepared to help",
+      "published_at": "Sat, 19 Sep 2026 14:50:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/57o36a/article71484107.ece/alternates/LANDSCAPE_1200/2026-09-15T033131Z_427182974_RC2FJNA1DXMQ_RTRMADP_3_GAMES-ASIA-JAPAN-CRUISESHIP.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
           "Sports"
         ]
       }

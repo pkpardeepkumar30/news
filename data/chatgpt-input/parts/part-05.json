@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-20T13:09:13.382002+00:00",
-  "input_count": 428,
+  "prepared_at": "2026-09-20T18:55:42.585665+00:00",
+  "input_count": 427,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 119,
-    "established_or_other": 81,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "07137314970d749342",
+      "title": "UP/Varanasi : वाराणसी का “विकास” क्यों कर रहा है किसानों को परेशान?",
+      "url": "https://khabarlahariya.org/up-varanasi-why-is-varanasis-development-troubling-farmers/",
+      "summary": "वाराणसी ज़िले में बन रहे बड़े विकास परियोजना के अंतर्गत पिंडरा ब्लॉक में कई किसानो की यह मांग है कि उनकी ज़मीन का मुआवज़ा सही रेट के हिसाब से नहीं…",
+      "published_at": "Thu, 17 Sep 2026 05:00:30 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "815bb2f432fd32d75e",
       "title": "Bihar Flood: बिहार बाढ़ में गिरे 5 लोगों के घर, पन्नी के नीचे कैसे कट रही परिवारों की रात?",
@@ -476,100 +505,6 @@
       }
     },
     {
-      "raw_id": "54dbb713dc951e4dc8",
-      "title": "Scholarships: September 19, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-september-19-2026/article71418576.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sat, 19 Sep 2026 13:03:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/l3zr4j/article71418596.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: September 12, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-september-12-2026/article71418519.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4f41471aa84e723d37",
-      "title": "Asian Games 2026: Full schedule, venue, events and more",
-      "url": "https://www.thehindu.com/sport/asian-games-2026-complete-schedule-events-and-venue-details/article71475763.ece",
-      "summary": "It will be the 20th edition of the Games and the third time Japan has hosted the event, following Tokyo in 1958 and Hiroshima in 1994",
-      "published_at": "Sat, 19 Sep 2026 12:33:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/9pqbfp/article71475805.ece/alternates/LANDSCAPE_1200/image%2018.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Asian Games 2026: Full India schedule with key events",
-          "url": "https://www.thehindu.com/sport/asian-games-2026-full-india-schedule-and-events/article71479441.ece",
-          "source": {
-            "id": "the-hindu-sport",
-            "name": "The Hindu - Sport",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "061dc038e8156904db",
       "title": "UP/Banda News: 5 साल से टेढ़ा बिजली का पोल, जर्जर तारों से हर समय हादसे का डर",
       "url": "https://khabarlahariya.org/up-banda-news-electricity-pole-leaning-for-5-years-constant-fear-of-accidents-due-to-dilapidated-wires/",
@@ -684,6 +619,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "54dbb713dc951e4dc8",
+      "title": "Scholarships: September 19, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-september-19-2026/article71418576.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sat, 19 Sep 2026 13:03:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/l3zr4j/article71418596.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: September 12, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-september-12-2026/article71418519.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "6051b8ccec3cdff2ae",
@@ -1092,45 +1074,12 @@
       }
     },
     {
-      "raw_id": "b3e89669248cfed016",
-      "title": "Ajmal is Assam CM’s ‘108’ service, says Gaurav Gogoi",
-      "url": "https://www.thehindu.com/news/national/assam/ajmal-is-assam-cms-108-service-says-gaurav-gogoi/article71487793.ece",
-      "summary": "Addressing a party rally for the Nagaon parliamentary by-election, the State Congress president alleges a ‘secret alliance’ between the BJP and the minority-based AIUDF",
-      "published_at": "Sun, 20 Sep 2026 18:20:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p0ewwj/article71487916.ece/alternates/LANDSCAPE_1200/09_Gogoi_Congress_Leaders_PC_13_08_Delhi.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "f02cecbb335e572a8f",
-      "title": "Activists accuse Mumbai cops of pressuring people, raiding venues to stop Umar Khalid film screening",
-      "url": "https://www.thehindu.com/news/cities/mumbai/activists-accuse-mumbai-cops-of-pressuring-people-raiding-venues-to-stop-umar-khalid-film-screening/article71487795.ece",
-      "summary": "Activists Shrishti Khanna alleged Mumbai police personnel are showing up in civilian clothes to intimidate venues to cancel the documentary screening in solidarity with Umar Khalid and Sharjeel Imam.",
-      "published_at": "Sun, 20 Sep 2026 18:20:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/akdfri/article71487849.ece/alternates/LANDSCAPE_1200/doc7d2j62t90awg32fx7st.jpg",
+      "raw_id": "fc67a2f2141a1cdbf0",
+      "title": "Experts discuss specific diagnosis and brain modulation in Alzheimer’s care",
+      "url": "https://www.thehindu.com/sci-tech/health/experts-discuss-specific-diagnosis-and-brain-modulation-in-alzheimers-care/article71487569.ece",
+      "summary": "Experts discuss the importance of accurate diagnosis and the potential of non-invasive brain stimulation in dementia care",
+      "published_at": "Mon, 21 Sep 2026 00:13:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/sci-tech/health/2q0psw/article71487787.ece/alternates/LANDSCAPE_1200/Buddhi%20Zoom%20Banner_Aug_Logo.jpg%201.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1154,12 +1103,12 @@
       }
     },
     {
-      "raw_id": "1b69ef50bce504a454",
-      "title": "Bengaluru: POCSO case accused found dead",
-      "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-pocso-case-accused-found-dead/article71487766.ece",
-      "summary": "According to the police, the deceased, a physical education teacher, was accused of sexually assaulting children at school",
-      "published_at": "Sun, 20 Sep 2026 18:20:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/zeepgr/article71487933.ece/alternates/LANDSCAPE_1200/iStock-1360341752.jpg",
+      "raw_id": "e65d7b49af19598ae5",
+      "title": "Village knowledge centre inaugurated in Villupuram district",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/village-knowledge-centre-inaugurated-in-villupuram-district/article71487748.ece",
+      "summary": "Officials said the Village Knowledge Centre would play a crucial role in enhancing access to education, skills training, and economic opportunities for the local community",
+      "published_at": "Mon, 21 Sep 2026 00:13:10 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1179,20 +1128,51 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 2
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
+          "Economy & Employment",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "796b2e2b98d4071de3",
-      "title": "CBFC asks for action against proposed screening of Umar Khalid documentary at IIIT Hyderabad",
-      "url": "https://www.thehindu.com/news/national/cbfc-asks-for-action-against-proposed-screening-of-umar-khalid-documentary-at-iiit-hyderabad/article71476830.ece",
-      "summary": "Public screening of a documentary film that has not been certified by the CBFC is a violation of the Cinematograph Act, says the film certifying body",
-      "published_at": "Sun, 20 Sep 2026 18:20:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gdkwyr/article71476935.ece/alternates/LANDSCAPE_1200/Umar-Khalid_G01GSFG8OCM3.3.jpg.jpg",
+      "raw_id": "6a6e814c0796f991c5",
+      "title": "Keralam Chief Minister to launch ₹93.22-crore coastal protection project for Pozhiyoor",
+      "url": "https://www.thehindu.com/news/national/kerala/keralam-chief-minister-to-launch-9322-crore-coastal-protection-project-for-pozhiyoor/article71488317.ece",
+      "summary": "Project seeks to provide Pozhiyoor with a robust defence against invading waves using a combination of groynes, seawall and tetrapods",
+      "published_at": "Sun, 20 Sep 2026 23:56:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ql4pqx/article71489039.ece/alternates/LANDSCAPE_1200/PTI06_13_2023_000236B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7a001a309cff1271af",
+      "title": "India’s NGOs at a new funding crossroads",
+      "url": "https://www.thehindu.com/opinion/lead/indias-ngos-at-a-new-funding-crossroads/article71488462.ece",
+      "summary": "India’s non-governmental organisations must navigate shifting foreign and domestic funding sources",
+      "published_at": "Sun, 20 Sep 2026 23:51:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/opinion/op-ed/x7eh0a/article71488463.ece/alternates/LANDSCAPE_1200/iStock-1193671253.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

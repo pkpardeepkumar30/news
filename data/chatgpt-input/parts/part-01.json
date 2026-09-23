@@ -1,16 +1,846 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-23T19:46:48.297861+00:00",
-  "input_count": 462,
+  "prepared_at": "2026-09-23T23:03:20.151517+00:00",
+  "input_count": 424,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 142,
-    "established_or_other": 58,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "79e8235aef38471c50",
+      "title": "Centre tightens grip over mineral taxation, states cry foul",
+      "url": "https://india.mongabay.com/2026/09/centre-tightens-grip-over-mineral-taxation-states-cry-foul/",
+      "summary": "Among the 12 bills passed during the Monsoon Session of Parliament concluded in August, the Mines and Minerals (Development and Regulation) Amendment Bill, 2026 (MMDR Amendment Bill) has drawn the most opposition. The bill — which has far-reaching implications for Centre-State relations and the federal structure — was introduced in the Lok Sabha on August […]",
+      "published_at": "11 Sep 2026 12:49:20 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/11112041/Alok-Putul-Hasdeo-coal-block-4-1200x800-1-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 3,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "89b53b110edcd40862",
+      "title": "Why has the Tamil Nadu Private Universities (Amendment) Bill, 2026, triggered a controversy? Explained",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/why-has-the-tamil-nadu-private-universities-amendment-bill-2026-triggered-a-controversy-explained/article71490233.ece",
+      "summary": "The Tamil Nadu government’s proposed amendments to regulations on private university reduce land and endowment requirements, sparking concerns over potential commercialisation and infrastructure adequacy in higher education.",
+      "published_at": "Wed, 23 Sep 2026 15:27:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/54blyq/article71490371.ece/alternates/LANDSCAPE_1200/9870_1_8_2025_13_3_34_1_ER02READING2.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 5,
+          "Society, Rights & Justice": 10
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "2162fbeb8e7b008419",
+      "title": "NALSAR tiff only latest in long history of conflict between BCI and law students",
+      "url": "https://www.thehindu.com/education/nalsar-tiff-only-latest-in-long-history-of-conflict-between-bci-and-law-students/article71463525.ece",
+      "summary": "Students have often opposed the BCI regulation when it has created hindrances to access, but at times students have also demanded a greater degree of regulation and control.",
+      "published_at": "Wed, 16 Sep 2026 13:04:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/riyv0a/article71423881.ece/alternates/LANDSCAPE_1200/PTI08_21_2026_000627A.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 5,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "df8358a43ebaca5070",
+      "title": "Malkajgiri police seize 730 kg suspected adulterated ginger-garlic paste, 500 kg paneer in food safety raids",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/malkajgiri-police-seize-730-kg-suspected-adulterated-ginger-garlic-paste-500-kg-paneer-in-food-safety-raids/article71500834.ece",
+      "summary": "",
+      "published_at": "Thu, 24 Sep 2026 00:34:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/m04hp3/article71500850.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-23%20at%208.15.21%20PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "0f29dfc9f5713aa557",
+      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
+      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
+      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
+      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Governance & Administration": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "9ecfdb65889c18bc34",
+      "title": "Macron urges world to choose UN over ‘law of the jungle’",
+      "url": "https://www.thehindu.com/news/international/macron-urges-world-to-choose-un-over-law-of-the-jungle/article71497347.ece",
+      "summary": "‘What is our credibility worth if we remain inactive on Gaza; some claim that peace has been achieved, but this has not opened up humanitarian deliveries; it is a spectacle that shames us all,’ said Emmanuel Macron",
+      "published_at": "Wed, 23 Sep 2026 06:53:08 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/57cwnl/article71497348.ece/alternates/LANDSCAPE_1200/2026-09-22T201651Z_1424024691_RC2IONA74OKZ_RTRMADP_3_UN-ASSEMBLY.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "25f14fce04a1b7eb7e",
+      "title": "Why India’s universities need a good ordinance and a good heart",
+      "url": "https://www.thehindu.com/education/colleges/why-indias-universities-need-a-good-ordinance-and-a-good-heart/article71445580.ece",
+      "summary": "A UGC regulation at one end and an essay on teaching as a vocation at the other; both have something to offer students, faculty, and administration",
+      "published_at": "Sat, 12 Sep 2026 17:53:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mh7pyg/article71445582.ece/alternates/LANDSCAPE_1200/Kakani.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "15456e180f5d0ecde7",
+      "title": "SIR is illegal and needs to be reversed: former CEC Quraishi",
+      "url": "https://www.thehindu.com/news/national/sir-is-illegal-and-needs-to-be-reversed-former-cec-quraishi/article71501241.ece",
+      "summary": "Delimitation and SIR are intertwined and tailored to favour BJP, say Opposition leaders at The Hindu event; government has not yet prorogued the Monsoon Session as it plans to bring the Bills around October 11, says Jairam Ramesh",
+      "published_at": "Thu, 24 Sep 2026 00:13:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/q0lguw/article71501306.ece/alternates/LANDSCAPE_1200/06_Book_Launch_The_Delimitation_Debate_The_Union_and_its_Units_23_09_Delhi.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "d022f3d39f544b61d3",
+      "title": "Front-of-pack nutrition labelling to be rolled out in single phase, FSSAI tells Supreme Court",
+      "url": "https://www.thehindu.com/sci-tech/health/front-of-pack-nutrition-labelling-to-be-rolled-out-in-single-phase-fssai-tells-supreme-court/article71501256.ece",
+      "summary": "The regulator sought a four-month period for issuing and finalising the draft regulations under the Food Safety and Standards Act",
+      "published_at": "Wed, 23 Sep 2026 23:09:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/cdwh10/article71501375.ece/alternates/LANDSCAPE_1200/iStock-1180990096%202.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "0aad0a7e24eddf94d9",
+      "title": "A Fundamental Right",
+      "url": "https://www.thehindu.com/features/education/a-fundamental-right/article60647223.ece",
+      "summary": "With its new law that makes education a fundamental right with effect from April 1, 2010, India joins a small group of countries with such a statutory provision. All children in the 6 to 14 age group can exercise the right under the Right of Children to Free and Compulsory Education Act, 2009. An estimated one crore children who do not go to school now are expected to benefit.",
+      "published_at": "Fri, 15 Nov 2024 16:35:57 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "1297ab6c9222938181",
+      "title": "National Testing Agency issues call for onboarding subject experts, translators in overhaul bid",
+      "url": "https://www.thehindu.com/education/national-testing-agency-issues-call-for-onboarding-subject-experts-translators-in-overhaul-bid/article71472303.ece",
+      "summary": "The move comes weeks after the NTA removed 600 subject matter experts following an investigation into the involvement of some of them in the NEET-UG 2026 leak",
+      "published_at": "Wed, 16 Sep 2026 19:40:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3pf0be/article71472966.ece/alternates/LANDSCAPE_1200/National%20Testing%20Agency%20NTA.png",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "82acbb3f32a2891367",
+      "title": "How Big Tech powers anti-immigration crackdowns",
+      "url": "https://www.thehindu.com/sci-tech/technology/how-big-tech-powers-anti-immigration-crackdowns/article71498972.ece",
+      "summary": "As the U.S. Immigration and Customs Enforcement (ICE) increases its presence, Big Tech companies are facing both internal and external pressure to take a stronger stance against the controversial agency",
+      "published_at": "Wed, 23 Sep 2026 13:56:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nw45xu/article71498919.ece/alternates/LANDSCAPE_1200/2026-09-22T021513Z_1485729263_RC21ONA2XHSZ_RTRMADP_3_USA-MIGRATION-SHOOTING.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "80cecd9bcb4eb80d6a",
+      "title": "Election Commission Controversy: कांग्रेस ने कहा— ज्ञानेश कुमार साबित हुए भाजपा की कठपुतली, दो चुनाव आयुक्तों की टिप्पणियों से खुलासा",
+      "url": "https://theruralpress.in/politics/congress-attack-cec-gyanesh-kumar-sushil-anand-shukla-rahul-gandhi-sir-controversy/",
+      "summary": "Election Commission Controversy: लोकसभा में नेता प्रतिपक्ष राहुल गांधी द्वारा मुख्य चुनाव आयुक्त ज्ञानेश कुमार पर लगाए गए गंभीर आरोप अब प्रमाणित होते नजर आ रहे हैं। छत्तीसगढ़ प्रदेश कांग्रेस संचार विभाग के अध्यक्ष सुशील आनंद शुक्ला ने रायपुर में एक बयान जारी करते हुए कहा कि दो चुनाव आयुक्तों सुखबीर सिंह संधू और विवेक […]",
+      "published_at": "Wed, 23 Sep 2026 13:39:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "9fbac565afde918306",
+      "title": "Manipur’s Roshibina Devi reaches Asian Games semi-final",
+      "url": "https://eastmojo.com/manipur/2026/09/23/manipurs-roshibina-devi-reaches-asian-games-semi-final/",
+      "summary": "Imphal: Manipur’s Wushu player Naorem Roshibina Devi has assured herself of a medal at the 20th Asian Games in Aichi-Nagoya after defeating Chu Man Sin of Macao, China, 5-0 in the women’s 60 kg Sanda quarter-final. The victory takes Roshibina into the semi-final, where she will continue her campaign for a place in the gold-medal […] The post Manipur’s Roshibina Devi reaches Asian Games semi-final appeared first on EastMojo .",
+      "published_at": "Wed, 23 Sep 2026 12:43:47 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "65e7505df9e8c855c9",
+      "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
+      "summary": "Srinagar district’s poll percentage was 27.9% in the 2014 Assembly election and recorded 29.24% this time; J&K Chief Electoral Officer says Srinagar saw an increase of 5% compared to voter turnout of the recent Lok Sabha polls",
+      "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 6,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ee649f3e087caa582d",
+      "title": "Prepared for another fight, says Hooda, seeks support\nfrom voters in his Assembly constituency",
+      "url": "https://www.thehindu.com/news/national/haryana/prepared-for-another-fight-says-hooda-seeks-support-from-voters-in-his-assembly-constituency/article71500848.ece",
+      "summary": "Former Haryana Chief Minister and Leader of the Opposition makes it clear that he is not ready to hang up his political boots",
+      "published_at": "Thu, 24 Sep 2026 01:41:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/ds6n6s/article71501523.ece/alternates/LANDSCAPE_1200/GetImageContent.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "0209739c28cc41748a",
+      "title": "After damning reports on CEC, Tejashwi Yadav seeks re-election in Bihar and West Bengal",
+      "url": "https://www.thehindu.com/news/national/bihar/after-damning-reports-on-cec-tejashwi-yadav-seeks-re-election-in-bihar-and-west-bengal/article71500387.ece",
+      "summary": "He also alleged that Prime Minister Narendra Modi and Union Home Minister Amit Shah are misusing constitutional institutions and treating them like wings of the Bharatiya Janata Party",
+      "published_at": "Wed, 23 Sep 2026 21:59:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vnzaip/article71501148.ece/alternates/LANDSCAPE_1200/PTI09_23_2026_000260B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "e409896708ec8a2ed1",
+      "title": "Data | How election fund was spent during 2021 State polls",
+      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
+      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
+      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa728bba3d7642bfb5",
+      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
+      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
+      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "7777f732d192431acd",
+      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
+      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
+      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2087c125a1444be430",
+      "title": "NC, PDP blame Centre for lower turnout in second phase of elections in J&K",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/nc-pdp-blame-centre-for-lower-turnout-in-second-phase-of-elections-in-jk/article68686806.ece",
+      "summary": "NC vice-president Omar Abdullah said the Centre was at fault to project the high poll percentage in the first phase as normalcy and call it the effect of Article 370 removal. “I think the low voter turnout was the reaction to it in Srinagar,” he said.",
+      "published_at": "Fri, 27 Sep 2024 18:57:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/jammu-and-kashmir-assembly/52j9e4/article68687550.ece/alternates/LANDSCAPE_1200/PTI09_25_2024_000335B.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "1708382ca54caa00c4",
+      "title": "ANALYSIS | Merz faces pressure after AfD’s recent electoral wins",
+      "url": "https://www.thehindu.com/news/international/analysis-merz-faces-pressure-after-afds-recent-electoral-wins/article71495638.ece",
+      "summary": "Major setback for Merz and his CDU party in recent State polls in Berlin and Mecklenburg-Western Pomerania; struggling economy and unpopular reforms become deciding factors",
+      "published_at": "Wed, 23 Sep 2026 01:33:03 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/li0epc/article71497039.ece/alternates/LANDSCAPE_1200/Nearby_Shape-wiGIDGIGHH9.3.jpg.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "Economy & Employment": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "d23893560730e7913f",
+      "title": "Omar, Mehbooba flag differences within ECI, seek course correction",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/omar-mehbooba-flag-differences-within-eci-seek-course-correction/article71499694.ece",
+      "summary": "The Election Commission and Government should consider the issue, particularly if eligible voters were prevented from exercising their franchise, Omar Abdullah said",
+      "published_at": "Thu, 24 Sep 2026 01:26:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vww6ye/article71501517.ece/alternates/LANDSCAPE_1200/20260921202L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "f29e8285a712d4c2be",
+      "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
+      "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
+      "summary": "Elections in Karnataka have increasingly become bipolar, with 77% of the seats recording bipolar contests in 2018",
+      "published_at": "Thu, 27 Mar 2025 17:24:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3wl5pw/article66758476.ece/alternates/LANDSCAPE_1200/uj.png",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "835675326855ec5e08",
       "title": "Left Groups Protest Workers' Repression in North India",
@@ -216,45 +1046,6 @@
       }
     },
     {
-      "raw_id": "cbd69229dfec632382",
-      "title": "Why ESMA not invoked against striking bus drivers? Delhi High Court asks government, DTC",
-      "url": "https://www.barandbench.com/news/litigation/why-esma-not-invoked-against-striking-bus-drivers-delhi-high-court-asks-government-dtc",
-      "summary": "The Delhi High Court on Wednesday questioned the Delhi government and the Delhi Transport Corporation (DTC) about why the provisions of the Essential Services Maintenance Act (ESMA) have not been invoked against DTC drivers who have been on strike for the past several days [Ami Sisodia vs Government of NCT of Delhi & Ors ]. A Division Bench of Chief Justice Devendra Kumar Upadhyaya and Justice Tejas Karia made the remark while hearing a public interest litigation (PIL) petition raising concerns over the disruption caused by the protests . Advocate Avneesh Ahlawat appeared for DTC and told the Bench that there is no union of the DTC drivers and that persons involved are sending WhatsApp messages calling for the strike and vandalising the buses. She stated that steps have been taken by the DTC to address the situation and nearly 96% of the buses are now back in service. Ahlawat stated that the DTC had sent a file to the Delhi government for invoking ESMA. The Court then disposed of the PIL while asking the government to take a decision on invoking ESMA. \"We expect the state will review and take a decision as per law to ensure that the plying of DTC buses is maintained on the roads,\" ",
-      "published_at": "Wed, 23 Sep 2026 16:53:46 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-02/0b515725-a5aa-4ee6-965b-da92eea1f760/25.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Protests": 2,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "dcf1a1f8fd67279831",
       "title": "Kalinga University: कलिंगा विश्वविद्यालय ने ‘युवा उत्सव 5.0’ में रचा इतिहास, 20 खिताब जीतकर ओवरऑल चैंपियनशिप अपने नाम की",
       "url": "https://theruralpress.in/chhattisgarh/kalinga-university-wins-top-position-yuva-utsav-50-champions-carnival-cii-young-indians/",
@@ -290,20 +1081,20 @@
       }
     },
     {
-      "raw_id": "ed8f13bac485bce2e0",
-      "title": "Supreme Court stays Allahabad HC order against Noida DM Medha Roopam for detention of Akriti Chaudhary",
-      "url": "https://www.barandbench.com/news/supreme-court-stays-allahabad-hc-order-reprimanding-noida-dm-medha-roopam-for-detention-of-akriti-chaudhary",
-      "summary": "The Supreme Court on Wednesday partly stayed an Allahabad High Court order which reprimanded Gautam Buddha Nagar District Magistrate Medha Roopam for ordering detention of Akriti Chaudhary, a History graduate from Delhi University, under the National Security Act (NSA) [ Medha Roopam v. Akriti Chaudhary & Ors. ]. A Bench of Justices Satish Chandra Sharma and NK Singh also stayed the High Court's directive asking Roopam to pay ₹5 lakh compensation to Chaudhary from her salary. Justice Satish Chandra Sharma and Justice NK Singh The matter is tied to the detention of student Akriti Chaudhary in connection with industrial workers' protests that took place in April at Noida. On September 2, a Division Bench of Justice Atul Sreedharan and Justice Achal Sachdev of Allahabad High Court had quashed Chaudhary's detention under NSA and directed the payment of ₹5 lakh as compensation to her . The amount was ordered to be recovered from the District Magistrate's salary and all such officers responsible for preparing the report leading to Chaudhary's detention under NSA. The High Court had said that when the police report against Chaudhary lacked any credible material, and that the officer was e",
-      "published_at": "Wed, 23 Sep 2026 19:45:59 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-09/wu9i41jj/I-WEB-SITE-C-copy.jpg",
+      "raw_id": "c6a9a5ede085f4be19",
+      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
+      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
+      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
+      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "newsclick",
+        "name": "Newsclick",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -315,108 +1106,30 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
           "Protests": 1,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 2
+          "Economy & Employment": 4
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Governance & Administration",
-          "Protests",
-          "Society, Rights & Justice"
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "ea5658554ce39861c1",
-      "title": "Did Odisha know of CBI request to question IPS officer when it forwarded his name for DGP post? Supreme Court",
-      "url": "https://www.barandbench.com/news/litigation/did-odisha-know-of-cbi-request-to-question-ips-officer-when-it-forwarded-his-name-for-dgp-post-supreme-court",
-      "summary": "The Supreme Court on Wednesday asked whether the Odisha government was aware of the Central Bureau of Investigation (CBI)'s request to question senior IPS officer Susanta Kumar Nath when it included his name in the panel of officers for appointment as Director General of Police (DGP). A Bench of Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana raised the question while hearing a petition against Nath's exclusion from the race due to an ongoing CBI probe into the sub-inspector (SI) recruitment scam. The State has withdrawn the integrity certificate issued to Nath for consideration for the DGP post in view of the CBI's request and is now sending a fresh list of IPS officers to the Union Public Service Commission (UPSC) as part of the DGP appointment process. Today, Justice Bagchi asked whether the State should not have informed the CBI beforehand about the pending CBI probe. \"We are not saying the integrity certificate should be withdrawn. We are not clear on that. But what we are asking is: if the FIR has already been registered, it refers to a certain role and names the person as an accused, then is it not the duty of the State Government to place t",
-      "published_at": "Wed, 23 Sep 2026 17:57:31 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-02/9c900119-2685-45ee-9cf8-6d2302aaa283/Supreme_court_2__2_.jpg",
+      "raw_id": "5fb97b29f24e2289f6",
+      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
+      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
+      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
+      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "newsclick",
+        "name": "Newsclick",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Protests": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Protests",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "f98db61e71aef91a80",
-      "title": "MLAs who stay silent during Assembly vote cannot challenge it in court later: Madras High Court",
-      "url": "https://www.barandbench.com/news/litigation/mlas-who-stay-silent-during-assembly-vote-cannot-challenge-it-in-court-later-madras-high-court",
-      "summary": "Members of a Legislature (MLAs) who remain silent when an amendment is proposed and put to vote cannot weeks later approach a court to challenge the manner in which it was adopted, the Madras High Court held on Wednesday [Agri Krishnamurthy Vs Secretary]. A Bench of Chief Justice Sushrut Arvind Dharmadhikari and Justice G Arul Murugan made the observation while dismissing a petition filed by AIADMK Official Whip Agri SS Krishnamurthy challenging a portion of a Tamil Nadu Legislative Assembly resolution concerning the Mekedatu dam dispute. The Court said legislators who had an opportunity to object when the amendment was proposed but chose to vote in favour or remain silent could not subsequently ask a court to disregard their conduct. Court said, “If members present in the House, who had the opportunity then and there to object, chose instead to vote ‘Aye’ or to remain silent, they cannot, weeks later, ask a court to treat their own silence as a nullity,\" the Court said. The Court added that the principle that a 'person who watches an act take place without protest cannot later complain', applies with as much force to the floor of a legislature as it does to any other public procee",
-      "published_at": "Wed, 23 Sep 2026 13:47:00 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/24216cd3-338e-4676-aee8-c0802f32121e/BOMBAY%20%20WEB%20PAGE%201600x900.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "281f96a11dfe23ea5a",
-      "title": "Delhi court seeks police reply on plea seeking FIR against activist Nishu Azad for posts on Hindu deities",
-      "url": "https://www.barandbench.com/news/delhi-court-seeks-police-reply-on-plea-seeking-fir-against-activist-nishu-azad-for-posts-on-hindu-deities",
-      "summary": "A Delhi court on Wednesday sought Delhi Police's reply to a plea seeking an FIR against student-activist Nishu Azad and her father Sanjay Azad for allegedly posting social media content containing objectionable references to Hindu deities. Chief Judicial Magistrate Mridul Gupta has asked the police to file an action taken report in the matter. The case will be heard next in January 2027. The Court was hearing a plea filed by advocate Amita Sachdeva. She had earlier approached the Delhi Police with her complaint. It referred to four posts allegedly uploaded between September 2023 and August 2026, concerning gods Shiva, Krishna and goddesses Saraswati and Durga. Sachdeva alleged that the posts were deliberately published and continued to remain accessible despite her request for their removal. Sachdeva has sought registration of an FIR under Sections 299 (outrating religious feeling) and 196 (promoting enmity, hatred) of the Bharatiya Nyaya Sanhita (BNS) as well as provisions of the Information Technology Act. Nishu Azad and Sanjay Azad were in news recently after another right wing influencer Swatantra Bhardwaj claimed on video that he had beaten up Sanjay Azad during the CJP protes",
-      "published_at": "Wed, 23 Sep 2026 11:49:42 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2023-09/dbf5a03a-ff15-4e84-b50b-2e61779e940f/41.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -436,88 +1149,20 @@
       }
     },
     {
-      "raw_id": "a4e67c2b1904be3b72",
-      "title": "Manan Kumar Mishra interfering in Bar Council elections: BCI member to Supreme Court",
-      "url": "https://www.barandbench.com/news/litigation/manan-kumar-mishra-interfering-in-bar-council-elections-bci-member-to-supreme-court",
-      "summary": "A sitting elected member of the Bar Council of India (BCI) has urged the Supreme Court to keep incumbent Chairman Manan Kumar Mishra away from office and the ongoing electoral process until the BCI is reconstituted. N Manoj Kumar, who was elected to represent the Bar Council of Kerala in the BCI in 2019 and 2026, made the request in a reply affidavit filed as part of the pending petition concerning the functioning and reconstitution of the lawyers' body. The Supreme Court had on September 2 ordered that Attorney General (AG) R Venkataramani and Solicitor General (SG) Tushar Mehta actively participate in every decision taken by BCI The Court had passed the direction after multiple petitions alleged gross illegality in Manan Kumar Mishra continuing as chairperson of Bar Council of India (BCI) without authority. Manoj Kumar has now echoed the concerns raised in those petitions. Kumar has alleged that Mishra is interfering in the process of constitution and election of office-bearers of State Bar Councils and attempting to influence members concerning the election of their representatives to the BCI. The affidavit said this assumes significance since the representatives elected by Stat",
-      "published_at": "Wed, 23 Sep 2026 07:47:46 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-14/9e0b818r/1000611596.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 6,
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "80cecd9bcb4eb80d6a",
-      "title": "Election Commission Controversy: कांग्रेस ने कहा— ज्ञानेश कुमार साबित हुए भाजपा की कठपुतली, दो चुनाव आयुक्तों की टिप्पणियों से खुलासा",
-      "url": "https://theruralpress.in/politics/congress-attack-cec-gyanesh-kumar-sushil-anand-shukla-rahul-gandhi-sir-controversy/",
-      "summary": "Election Commission Controversy: लोकसभा में नेता प्रतिपक्ष राहुल गांधी द्वारा मुख्य चुनाव आयुक्त ज्ञानेश कुमार पर लगाए गए गंभीर आरोप अब प्रमाणित होते नजर आ रहे हैं। छत्तीसगढ़ प्रदेश कांग्रेस संचार विभाग के अध्यक्ष सुशील आनंद शुक्ला ने रायपुर में एक बयान जारी करते हुए कहा कि दो चुनाव आयुक्तों सुखबीर सिंह संधू और विवेक […]",
-      "published_at": "Wed, 23 Sep 2026 13:39:00 +0000",
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "d03fd99b086ee757ea",
-      "title": "LoP reduced to ornamental role in selection of Election Commissioners: Justice Dipankar Datta in split verdict",
-      "url": "https://www.barandbench.com/news/lop-reduced-to-ornamental-role-in-selection-of-election-commissioners-justice-dipankar-datta-in-split-verdict",
-      "summary": "Justice Dipankar Datta of the Supreme Court on Wednesday said that the Leader of Opposition's (LoP) role in the selection of Election Commissioners of the Election Commission of India (ECI) is only ornamental as the Union government holds an overwhelming majority in the selection panel. Justice Datta made the observations in his separate opinion on petitions challenging the validity of the Chief Election Commissioner and Other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023. The 2023 Act is primarily under challenge before the top court for replacing the Chief Justice of India (CJI) with a cabinet minister on the selection panel. The panel at present comprises the Prime Minister, the Leader of the Opposition and a Union cabinet minister nominated by the Prime Minister. Justice Datta in his prima facie view said that it was highly unlikely that the cabinet minister would ever disagree with the Prime Minister. The judge stressed that it was not enough for the ECI to be independent but it must also appear to be independent. \"The Minister nominated by the Prime Minister to function as the third member of the selection committee, chaired by the P",
-      "published_at": "Wed, 23 Sep 2026 15:41:26 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-01/47f6c197-325e-4776-86e5-354fbb11fee1/Election__1_.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "newsclick",
+        "name": "Newsclick",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -529,312 +1174,22 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 4
+          "Protests": 1,
+          "Economy & Employment": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "a63c5f2265f17a3354",
-      "title": "Supreme Court delivers split verdict on Centre's demand to send Election Commissioner appointment case to larger bench",
-      "url": "https://www.barandbench.com/news/supreme-court-delivers-split-verdict-on-centres-demand-to-send-election-commissioner-appointment-case-to-larger-bench",
-      "summary": "The Supreme Court on Wednesday delivered a split verdict on the Union government's demand to refer the petitions challenging the Chief Election Commissioner and Other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023 to a larger bench. The 2023 Act is under challenge for replacing the Chief Justice of India (CJI) with a Cabinet Minister on the selection panel which appoints Election Commissioners. The Central government had requested the Court to refer the matter to a larger bench under Article 145(3) of the Constitution. A Bench of Justices Dipankar Datta and Satish Chandra Sharma had reserved its decision on the demand for reference on July 30. Justice Datta rejected the government's request for reference. He went on to deliver a prima facie opinion on the challenge to the 2023 Act. \"We heard these petitions for over 5 days, speaking in one voice would have served the voice of institutional cohesion. Unfortunately, we are divided in our opinion. It is a foundational principle of the constitutional scheme that rulers are bound by law and not above it,\" Justice Datta ruled. Justice Sharma disagreed with the observations made by Justice Datta. ",
-      "published_at": "Wed, 23 Sep 2026 14:40:03 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-05/6cc58530-52a3-4fd6-8f35-9b20201b9c7d/Supreme_Court_and_Election_Commission_of_india__1_.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Governance & Administration": 5,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "2da385b8e6688e9d49",
-      "title": "Past and present regimes have failed to abide by constitutional morality: Supreme Court Justice Dipankar Datta",
-      "url": "https://www.barandbench.com/news/past-and-present-regimes-have-failed-to-abide-by-constitutional-morality-supreme-court-justice-dipankar-datta",
-      "summary": "Justice Dipankar Datta of the Supreme Court on Wednesday said that the \"constitutional trust\" reposed in the country's political leadership has been betrayed in practice [ Dr. Jaya Thakur & Ors. v. Union of India & Ors. ] In his separate opinion on the validity of the Chief Election Commissioner and Other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023, Justice Datta pointed to the large number of parliamentarians and ministers with criminal antecedents across successive ruling dispensations. \"The misfortune of the people of India is that, the lofty ideals that the Constitution envisaged have remained largely unaccomplished owing to a lack of intent and non-abidance with constitutional morality by the ruling regime, past and present, resulting in substantial institutional erosion,\" he said. Justice Datta also sounded a stark historical warning regarding judicial caution in election-related matters, recalling that the last time the top court grappled with a subject as sensitive as elections without extreme restraint, it unintentionally caused \"an avalanche called the National Emergency.\" Justice Dipankar Datta Last time the top court grappled",
-      "published_at": "Wed, 23 Sep 2026 19:38:46 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-23/4m2zmr33/BOMBAY-WEB-PAGE-1600x900-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 2,
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9c42031f2c583dd8dc",
-      "title": "Supreme Court rejects objection to co-option of retired Justice Jaishree Thakur as P&H Bar Council member",
-      "url": "https://www.barandbench.com/news/supreme-court-rejects-objection-to-co-option-of-retired-justice-jaishree-thakur-as-ph-bar-council-member",
-      "summary": "The Supreme Court on Wednesday rejected the objections raised to the co-option of Punjab and Haryana High Court judge Justice Jaishree Thakur as a member of the Bar Council of Punjab and Haryana. A Bench of Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana took note of the objection while hearing matters concerning the implementation of its directives for the co-option of women members in State Bar Councils. A counsel pointed out that Justice Thakur was the returning officer for the Punjab and Haryana Bar Council elections. \" In the Punjab and Haryana Bar Council, the Returning Officer herself has been nominated as a member ,\" the counsel began to submit. The Court, however, was prompt to dismiss such objections. \"What is the problem with you people? One of the finest judges and the strongest judges has been nominated for Punjab. They are so happy that she is there. People are afraid of her,\" remarked CJI Kant. Justice Joymalya Bagchi, CJI Surya Kant and Justice V Mohana By an order passed on December 8, 2025 in the case of Yogamaya MG vs. Union of India and others , the top court had directed that women should have 30 per cent representation in Stat",
-      "published_at": "Wed, 23 Sep 2026 13:13:36 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-01-16/5l99fhdq/supreme-court-.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 2,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9fbac565afde918306",
-      "title": "Manipur’s Roshibina Devi reaches Asian Games semi-final",
-      "url": "https://eastmojo.com/manipur/2026/09/23/manipurs-roshibina-devi-reaches-asian-games-semi-final/",
-      "summary": "Imphal: Manipur’s Wushu player Naorem Roshibina Devi has assured herself of a medal at the 20th Asian Games in Aichi-Nagoya after defeating Chu Man Sin of Macao, China, 5-0 in the women’s 60 kg Sanda quarter-final. The victory takes Roshibina into the semi-final, where she will continue her campaign for a place in the gold-medal […] The post Manipur’s Roshibina Devi reaches Asian Games semi-final appeared first on EastMojo .",
-      "published_at": "Wed, 23 Sep 2026 12:43:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "436172e51d464a1273",
-      "title": "Is EC appointment law void solely because selection panel is executive heavy? Justice SC Sharma refers issue to larger bench",
-      "url": "https://www.barandbench.com/news/is-ec-appointment-law-void-solely-because-selection-panel-is-executive-heavy-justice-sc-sharma-refers-issue-to-larger-bench",
-      "summary": "Whether parliament was justified in omitting a neutral member from the panel appointing Election Commissioners is an important question arising for the first time before the Supreme Court, Justice Satish Chandra Sharma observed on Wednesday [Dr. Jaya Thakur & Ors. v. Union of India & Ors.]. In his separate opinion favouring the Centre’s stance that the matter be referred to a five-judge Constitution Bench, Justice Sharma held that the issues concerning parliament’s law-making powers under Article 324(2) of the Constitution raises a substantial question of law that could not be decided by a two-judge Bench. Justice Dipankar Datta, who delivered a non-concurring opinion, had strongly rejected Solicitor General Tushar Mehta ’s comparison between the executive’s role in the Election Commission selection process and the judicial Collegium system. Justice Datta had described the phrase “Judges appointing Judges” as a myth, noting that the executive exercises decisive control over judicial appointments and that the judiciary is left “playing second fiddle”. He held that the Supreme Court’s judgment in Anoop Baranwal had already established the need to insulate the Election Commission from",
-      "published_at": "Wed, 23 Sep 2026 21:47:14 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-23/2v2msyup/Karnataka-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 9,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "3225512023bb748534",
-      "title": "Judges appointing judges is a myth: Justice Dipankar Datta pulls up government for selectively clearing Collegium proposals",
-      "url": "https://www.barandbench.com/news/judges-appointing-judges-is-a-myth-justice-dipankar-datta-pulls-up-government-for-selectively-clearing-collegium-proposals",
-      "summary": "Justice Dipankar Datta of the Supreme Court on Wednesday said that it was wrong to claim that judges appoint judges in the country, and critcised the government for selectively clearing Collegium proposals for the appointment of judges. Justice Datta made the observation while addressing a submission made by Solicitor General Tushar Mehta during the hearing of petitions challenging a 2023 law that gave more say to the Executive in the selection of members of the Election Commission of India (ECI). The petitions raised concerns about the government Executive's dominance in the selection panel that appoints ECI members. One of the arguments raised by the Central government to counter this concern was that even in judicial appointments, existing judges have a predominant say in the appointment of future judges under the existing Collegium system. In a ruling pronounced today, Justice Datta took exception to this argument. He underscored that even under the Collegium system, there is a consultative process at play between the government and the judiciary before judges are appointed. \"The oft-repeated phrase that 'judges appoint judges' is a myth, which people have been fed by vested in",
-      "published_at": "Wed, 23 Sep 2026 15:13:49 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-23/9dtx92yr/Justice-Dipankar-Datta.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 3,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "255dcab08518640f53",
-      "title": "Delay in deciding Constitutional cases: Supreme Court urges CJI to constitute permanent 5-judge Constitution Bench",
-      "url": "https://www.barandbench.com/news/delay-in-deciding-constitutional-cases-supreme-court-urges-cji-to-constitute-permanent-5-judge-constitution-bench",
-      "summary": "Constitutional cases referred to larger benches remain pending for years and is an area of great concern, the Supreme Court candidly acknowledged on Wednesday as it urged the Chief Justice of India to constitute a permanent 5-judge bench to hear and decide Constitutional cases. A bench of Justices Dipankar Datta and Satish Chandra Sharma made the observation while delivering a split verdict on the Union government's demand to refer the petitions challenging the Chief Election Commissioner and Other Election Commissioners (Appointment, Conditions of Service and Term of Office) Act, 2023 to a larger bench. The petitioners before the Court had opposed the Centre's request citing delay by the Supreme Court in deciding larger bench matters. Such an apprehension was not unfounded, the Court today said. \"The petitioners seems to be justified in saying reference remain pending for years. Undisputedly this is an area of great concern. Self-introspection indeed is required. We request CJI to consider appointment a permanent 5 judge bench for deciding constitutional cases,\" the bench said. Supreme Court Self-introspection indeed is required. We request CJI to consider appointment a permanent ",
-      "published_at": "Wed, 23 Sep 2026 14:55:41 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-09/00f6ee8d-fb7e-4d3a-b796-fab5a61571d1/11.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 2,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "65e7505df9e8c855c9",
-      "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
-      "summary": "Srinagar district’s poll percentage was 27.9% in the 2014 Assembly election and recorded 29.24% this time; J&K Chief Electoral Officer says Srinagar saw an increase of 5% compared to voter turnout of the recent Lok Sabha polls",
-      "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 6,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1dfebbd7d2e6544903",
-      "title": "Opposition calls for CEC Gyanesh Kumar’s removal after report on Election Commissioners’ dissent",
-      "url": "https://www.thehindu.com/news/national/election-commission-dissent-sparks-opposition-call-for-cec-gyanesh-kumars-removal/article71498434.ece",
-      "summary": "Both ECs recorded formal objections regarding centralisation of poll roll database, “illegal” changes in Form 6, removal of voters in West Bengal, Goa; terming the CEC the “chief architect of vote chori”, Congress calls for SC-monitored probe",
-      "published_at": "Wed, 23 Sep 2026 21:50:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pw1nmv/article71498570.ece/alternates/LANDSCAPE_1200/ELECTION%20COMMISSION%20PC%20DELHI%202025_17_08_26.jpg",
+      "raw_id": "82552ba2e1c934d56c",
+      "title": "Ladakh bodies hold protests ahead of Sep. 24 violence anniversary; Ladakh L-G withdraws cases against 20 locals",
+      "url": "https://www.thehindu.com/news/national/ladakh/ladakh-lg-withdraws-cases-against-20-booked-over-2025-leh-violence/article71500522.ece",
+      "summary": "Sonam Wangchuk led a symbolic padyatra in Leh to mark the first anniversary of the September 24, 2025, violence during protests seeking statehood and Sixth Schedule safeguards for Ladakh",
+      "published_at": "Thu, 24 Sep 2026 00:02:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3gl5vp/article71500568.ece/alternates/LANDSCAPE_1200/12205_2_10_2025_22_37_11_4_34_GROUND_ZER0_LEH_02_10_2025.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -854,10 +1209,45 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 5
+          "Protests": 4
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
         ]
       }
     },
@@ -996,436 +1386,6 @@
         },
         "candidate_categories": [
           "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "7b57e8d3ba13e699c8",
-      "title": "Bombay High Court orders total ban on firecrackers on streets, laser lights during festivals",
-      "url": "https://www.barandbench.com/news/bombay-high-court-orders-total-ban-on-firecrackers-on-streets-laser-lights-during-festivals",
-      "summary": "The Bombay High Court has issued directives to curb severe noise and air pollution during festive processions across Maharashtra [In Re: Noise and Environmental Pollution] By way of an order passed on September 22, a division bench of Justices GS Kulkarni and Neela Gokhale ordered a complete ban on bursting firecrackers on public streets and roads during festivities. Further, laser lights, high-intensity lumen lights and beams have also been completely prohibited during celebrations. The Court also imposed a slew of obligations on organisers of such festivities/ celebrations. They have to instal internal sound limiters and decibel meters at festival venues and processions and must also submit security deposits of ₹1 lakh. The Court passed the order in a suo motu public interest litigation petition initiated by it to address unchecked pollution during festivals like Ganeshotsav. Justices GS Kulkarni and Neela Gokhale During the hearing, the Court had orally remarked that celebrations are not meant for people to die or suffer health-wise. The bench emphasised that enforcement must be preventive rather than relying on minor fines after the damage to citizens' health is already done. T",
-      "published_at": "Wed, 23 Sep 2026 15:09:07 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2017/10/Firecracker.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "c34af3517930b81b6c",
-      "title": "As exotic primates reach India, welfare concerns grow",
-      "url": "https://india.mongabay.com/2026/09/as-exotic-primates-reach-india-welfare-concerns-grow/",
-      "summary": "This is Part 2 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 elaborates on how the trade enables zoonoses or zoonotic disease spillovers. Recently, pictures and videos of five orangutan babies in a forest […]",
-      "published_at": "18 Sep 2026 15:55:59 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/18130613/PHOTO-2026-09-11-16-19-00-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 4,
-          "Environment, Health & Science": 3
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "7b77d976ba1bd14ef2",
-      "title": "High-altitude bird hotspots remain outside protected areas",
-      "url": "https://india.mongabay.com/2026/09/high-altitude-bird-hotspots-remain-outside-protected-areas/",
-      "summary": "In the high-altitude landscapes of Himachal Pradesh, conservation efforts have long revolved around the charismatic snow leopard (Panthera uncia). But a new study suggests this focus may be leaving a host of other ecologically vital species outside the conservation umbrella. The study, led by scientists from the Nature Conservation Foundation and partner institutions, mapped the […]",
-      "published_at": "17 Sep 2026 14:15:03 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/17130909/RCNX0076-e1789630907282-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 3
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "fab6a88378177fd876",
-      "title": "The ghost of the mountains",
-      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
-      "published_at": "23 Sep 2026 13:41:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "4a4806aed79af9c7c0",
-      "title": "Researchers rediscover an endemic plant after 180 years",
-      "url": "https://india.mongabay.com/2026/09/researchers-rediscover-an-endemic-plant-in-assam-after-180-years/",
-      "summary": "An endemic plant species Rungia mastersii was rediscovered in Assam, 180 years after its first discovery. The plant was not seen anywhere during this period. Kangkan Kumar Das, a doctoral researcher, and professor Debjyoti Bhattacharyya from the Department of Life Science and Bioinformatics at Assam University, Silchar, identified the species from Jatinga Hills in the […]",
-      "published_at": "14 Sep 2026 12:51:36 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/14103922/rungia-mastersii-pic-2-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "00888f8dd437e463d6",
-      "title": "Delhi High Court grants bail to ex-Reliance executive Amitabh Jhunjhunwala in ED case",
-      "url": "https://www.barandbench.com/news/delhi-high-court-grants-bail-to-ex-reliance-executive-amitabh-jhunjhunwala-in-ed-case",
-      "summary": "The Delhi High Court on Tuesday granted bail to former Reliance Anil Dhirubhai Ambani Group senior executive Amitabh Jhunjhunwala in a money laundering case being probed by the Enforcement Directorate (ED) [Amitabh Jhunjhunwala v Directorate of Enforcement] . Justice Madhu Jain observed that his medical condition brought him within the “sick or infirm” exception under the Prevention of Money Laundering Act (PMLA). \"The medical record, when considered cumulatively, discloses a condition which materially affects the petitioner’s physical functioning and requires structured and continuing medical care. The Court is therefore of the view that the petitioner is entitled to the benefit of the statutory exception,\" the Court observed. Justice Madhu Jain The Court was hearing Jhunjhunwala's bail plea in an Enforcement Case Information Report (ECIR) registered on the basis of two CBI FIRs concerning alleged diversion of funds involving Reliance Commercial Finance Ltd (RCFL) and Reliance Home Finance Ltd (RHFL). The ED has alleged that ₹15,933.65 crore was disbursed to shell and group entities and subsequently diverted and layered through various entities. Jhunjhunwala was arrested in the ED",
-      "published_at": "Wed, 23 Sep 2026 07:22:08 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/10b728de-b6b8-48c4-8f8a-56359bb99906/23.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "485128051d38a3c8a8",
-      "title": "National security trumps personal rights: Karnataka High Court upholds land acquisition for DRDO",
-      "url": "https://www.barandbench.com/news/litigation/national-security-trumps-personal-rights-karnataka-high-court-upholds-land-acquisition-for-drdo",
-      "summary": "The Karnataka High Court recently observed that the interests of national security must take precedence over personal rights, while restoring the acquistion of land for a Defence Research and Development Organisation (DRDO) AI/ robotics centre [ Defence Research and Development Organisation v. Special Land Acquisition Officer ] . A Division Bench comprising Justice DK Singh and Justice H Shanthi Bhushan on September 21 set aside a 2014 single-judge Bench ruling that had earlier quashed the land acquisition proceedings. The single-judge had reasoned that objections raised by the original landowners had not been properly considered by the relevant authorities during the land acquisition proceedings. The DRDO and the Union government had challenged this ruling by way of appeals, which have now been allowed by the High Court's Division Bench. The Division Bench found that the original landowners’ objections had, in fact, been properly considered and that they failed to show any real prejudice. Notably, the Court also highlighted that the acquired land would be used for research into defence measures. In such matters, national interest takes precedence over personal rights, it said. \"Na",
-      "published_at": "Wed, 23 Sep 2026 16:47:53 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-23/x6dqscxw/1.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 5,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "98acd25927ab6b86eb",
-      "title": "Duty-free shops not exempt from domestic regulatory laws: Bombay High Court on nicotine pouches ban",
-      "url": "https://www.barandbench.com/news/duty-free-shops-not-exempt-from-domestic-regulatory-laws-bombay-high-court-on-nicotine-pouches-ban",
-      "summary": "The Bombay High Court has declined to interfere with the Drugs Control Department's decision to ban the sale of imported nicotine pouches by Adani Group's Mumbai Travel Retail Limited at Mumbai's Chhatrapati Shivaji Maharaj International Airport for lack of an import license [Mumbai Travel Retail Ltd v. Union of India & Ors.] A Division Bench of Justice Suman Shyam and Justice Advait M Sethna held that duty-free shops (DFS) operating at international departure terminals do not enjoy blanket immunity from domestic regulatory and public health statutes such as the Drugs and Cosmetics Act, 1940. The Court added that such shops may be exempted from fiscal levies like customs duties and indirect taxes but the exemption does not extend to the non-fiscal regulatory oversight. “The exemption, if any, would be limited to the fiscal measures such as levy of customs duty/tax/MVAT etc. As such, if an item is restricted or prohibited under 'any other law for the time being in force' it would constitute 'prohibited goods' under Section 2(33) of the (Custom) Act of 1962 and hence, the domestic regulatory regime will apply in full force,” the Bench held. However, the Court refrained from deciding ",
-      "published_at": "Wed, 23 Sep 2026 10:46:11 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/cf61541b-f5a4-42d8-ade1-e19c50101d65/BOMBAY%20%20WEB%20PAGE%201600x900lk.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 6,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "79e8235aef38471c50",
-      "title": "Centre tightens grip over mineral taxation, states cry foul",
-      "url": "https://india.mongabay.com/2026/09/centre-tightens-grip-over-mineral-taxation-states-cry-foul/",
-      "summary": "Among the 12 bills passed during the Monsoon Session of Parliament concluded in August, the Mines and Minerals (Development and Regulation) Amendment Bill, 2026 (MMDR Amendment Bill) has drawn the most opposition. The bill — which has far-reaching implications for Centre-State relations and the federal structure — was introduced in the Lok Sabha on August […]",
-      "published_at": "11 Sep 2026 12:49:20 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/11112041/Alok-Putul-Hasdeo-coal-block-4-1200x800-1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 3,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "c6a9a5ede085f4be19",
-      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
-      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
-      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
-      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "9a06ff5fbbaa5b45f3",
-      "title": "Five Karnataka auto, taxi driver bodies move Supreme Court against HC verdict permitting bike taxis",
-      "url": "https://www.barandbench.com/news/litigation/five-karnataka-auto-taxi-driver-bodies-move-supreme-court-against-hc-verdict-permitting-bike-taxis",
-      "summary": "Five auto and taxi driver associations in Karnataka have moved the Supreme Court against a Karnataka High Court verdict permitting bike taxis in the State. They have challenged the January 23 judgment directing the State to consider applications for registering motorcycles as transport vehicles and granting permits to operate them as contract carriages. The petition has also been filed by an individual driver, Sathish KS. The five associations are Nadaprabhu Kempegowda Auto Chalakara Sanghatane, Karnataka Venkategowda Auto Mathu Taxi Chalakara Sangha, Greater Bangalore Chalakara Sangha, Karnataka Sarathigala Mahasangha and Jai Karnataka Sarathi Sene Trust. An individual driver, Sathish KS, has also filed a separate petition. According to their plea, the High Court effectively created a regulatory pathway for bike taxis in a field that falls within the domain of the State government and statutory transport authorities A constitutional court cannot compel the State to create or implement a particular transport policy to suit the business interests of aggregators, the plea has contended. A key ground in the plea concerns the impact on existing auto-rickshaw and taxi operators. As per ",
-      "published_at": "Wed, 23 Sep 2026 16:33:55 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "States & Local": 1,
-          "Economy & Employment": 2
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "657eaa737466facf55",
-      "title": "SEBI settles Hindenburg-linked disclosure cases against five Adani companies for ₹1.5 crore",
-      "url": "https://www.barandbench.com/news/litigation/sebi-settles-hindenburg-linked-disclosure-cases-against-five-adani-companies-for-15-crore",
-      "summary": "The Securities and Exchange Board of India (SEBI) has settled adjudication proceedings against five Adani Group companies for a cumulative amount of about ₹1.5 crore in cases arising from its examination of allegations highlighted in the Hindenburg Research report. The companies are Adani Enterprises Limited, Adani Total Gas Limited, AWL Agri Business Limited (formerly Adani Wilmar Limited), Adani Green Energy Limited and Adani Energy Solutions Limited (formerly Adani Transmission Limited). SEBI examined allegations concerning disclosure of alleged related-party transactions (RPTs) and corporate governance issues flagged in the Hindenburg report, and possible violations of the SEBI Listing Obligations and Disclosure Requirements Regulations and the erstwhile Equity Listing Agreement. The examination covered seven Adani Group companies, including Adani Ports and Special Economic Zone Limited and Adani Power Limited. Based on its findings, SEBI initiated adjudication proceedings against the five companies for alleged violations relating to disclosures and financial statements. In the case of Adani Enterprises, SEBI alleged that related-party transactions between its subsidiary Adani ",
-      "published_at": "Wed, 23 Sep 2026 09:36:01 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-23/njcmhhuq/Karnataka-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 3,
-          "Economy & Employment": 2,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Governance & Administration"
         ]
       }
     }

@@ -1,46 +1,87 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-27T05:27:33.487206+00:00",
-  "input_count": 398,
+  "prepared_at": "2026-09-27T14:06:05.881742+00:00",
+  "input_count": 432,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 102,
-    "established_or_other": 98,
+    "independent_social": 118,
+    "established_or_other": 82,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "5c4c0f97c8518fe5ae",
-      "title": "What does the law say about CEC’s removal? | Explained",
-      "url": "https://www.thehindu.com/news/national/what-does-the-law-say-about-cecs-removal-explained/article71512663.ece",
-      "summary": "How are the CEC and ECs appointed? Why did the Supreme Court intervene in appointments? What did the Anoop Baranwal judgment prescribe? Who was on the appointment panel prescribed by the Supreme Court? What protection does a CEC have against removal?",
-      "published_at": "Sun, 27 Sep 2026 00:12:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wuyeae/article71513899.ece/alternates/LANDSCAPE_1200/YOUTH%20CONGRESS%20PROTEST%20AGAINST%20GYANESH%20CEC%2027.JPG",
+      "raw_id": "b6ea38d6dbd0844566",
+      "title": "Law Student moves Supreme Court alleging UP govt misled court, no action taken against Executive Magistrate who issued notice over CJP protest",
+      "url": "https://www.barandbench.com/news/litigation/law-student-moves-supreme-court-alleging-up-govt-misled-court-no-action-taken-against-executive-magistrate-who-issued-notice-over-cjp-protest",
+      "summary": "Law student Akshat Tripathi has moved the Supreme Court alleging that the Uttar Pradesh government misled the court on the action taken over the Rs 5 lakh bond notice issued to him in connection with the Cockroach Janta Party (CJP) protest. His writ petition was mentioned on September 10 before a Bench of Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana, which is hearing petitions arising out of the July protests at Jantar Mantar and other parts of the country. On that day, Solicitor General Tushar Mehta, on instructions from the State of UP, told the Court that the notice was issued not by the District Magistrate but by the Executive Magistrate, and that the official responsible had been suspended. \"It was not the District Magistrate. It was some other official who has been suspended,\" Mehta had said, adding, \"Let's not sensationalise it.\" In the fresh application, Tripathi has relied on an Indian Express report which states that UP DGP Headquarters later clarified that only Sub-Inspector Shiva Pandey, whose report formed the basis of the notice, was suspended. The ACP (Executive Magistrate) who actually issued the notice was not. \"It is pertinent to men",
+      "published_at": "Sun, 27 Sep 2026 19:01:43 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-05-25/ouhrm90z/137727.png",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 6
+          "Governance & Administration": 4,
+          "Protests": 6,
+          "Society, Rights & Justice": 2
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "59b775c403a2615c6a",
+      "title": "Veeramani POCSO case: Directors Vetrimaaran, Ameer demand thorough probe",
+      "url": "https://www.thenewsminute.com/tamil-nadu/veeramani-pocso-case-directors-vetrimaaran-ameer-demand-thorough-probe",
+      "summary": "Directors Vetrimaaran and Ameer issued a joint statement on Sunday, September 27, condemning the alleged sexual abuse of minor girls by Gem Granites chairman R Veeramani and called for an impartial investigation without any pressure. The directors said the crimes against the girls were “shocking” and “unforgivable” and demanded that everyone who attempted to protect Veeramani be thoroughly investigated and punished under the law. They also called for the survivors to be provided with legal and psychological counselling and social rehabilitation, while stressing that their identities and dignity must be protected. Addressing criticism that they had remained silent on the issue until now, Vetrimaaran and Ameer said in their statement: “Whoever commits sexual offences, our voice will always be raised against them.” They also called for stringent punishment for sexual offenders without any concessions and said the Special Investigation Team (SIT) investigating the Veeramani case should conduct its probe honestly and without being subjected to pressure. The case came to light in October 2025, when a child rights volunteer approached the Chennai police with a pen drive containing a video",
+      "published_at": "Sun, 27 Sep 2026 10:52:26 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-27/kuoujzf8/vetrimaaranameerveeramanipocso.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 1,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice",
+          "Sports"
         ]
       }
     },
@@ -80,11 +121,11 @@
       }
     },
     {
-      "raw_id": "b528db48ed2128ef7b",
-      "title": "Tamil Nadu government exempts Public (Law and Order) Department from RTI Act",
+      "raw_id": "b063c3391029c6603f",
+      "title": "After backlash, Tamil Nadu government withdraws G.O. exempting Public (Law and Order) Department from RTI Act",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-government-exempts-public-law-and-order-department-from-rti-act/article71515196.ece",
-      "summary": "Govt. issued an order to exempt information on subjects such as communal and caste clashes; all matters relating to NSA detentions, reports into deaths in police custody, agitations by students, farmers from ambit of the RTI Act",
-      "published_at": "Sun, 27 Sep 2026 10:44:08 +0530",
+      "summary": "According to the Government Order dated September 21, 2026, information on communal and caste clashes, inquiry reports on police firing, custodial deaths, details on handling of agitations by students and farmers; and matters relating to National Security Act detentions, were excluded from the ambit of RTI Act",
+      "published_at": "Sun, 27 Sep 2026 17:27:04 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/jge7fk/article71515238.ece/alternates/LANDSCAPE_1200/FORT%20ST%20GEORGE%20LEGISLATIVE%20ASSEMBLY%20HALL%20SECRETARIAT_07.jpg",
       "suggested_category": "",
       "priority_discovery": false,
@@ -111,109 +152,6 @@
         "candidate_categories": [
           "Governance & Administration",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "261d0dc8bf7487d685",
-      "title": "NDA-ruled Andhra Pradesh refuses to defend changes to trans rights law in SC; Uttarakhand says law beneficial",
-      "url": "https://www.thehindu.com/news/national/nda-ruled-andhra-pradesh-refuses-to-defend-changes-to-trans-rights-law-in-sc-uttarakhand-says-law-beneficial/article71512778.ece",
-      "summary": "State had no role in enacting the Act and it has not taken any action that is discriminatory towards transgender persons, A.P. tells court",
-      "published_at": "Sun, 27 Sep 2026 07:58:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/khvwvn/article71513935.ece/alternates/LANDSCAPE_1200/6744_19_8_2025_16_15_17_2_18_08_2025_SUPREME_COURT04%202.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "611b86543ec34e6d7a",
-      "title": "Change in transgender law cannot take away rights already given, Supreme Court tells Centre",
-      "url": "https://www.thehindu.com/news/national/change-in-transgender-law-cannot-take-away-rights-already-given-supreme-court-tells-centre/article71301650.ece",
-      "summary": "The petitioners, representing members of the community, urged the court to prevent authorities from cancelling transgender ID cards",
-      "published_at": "Sun, 27 Sep 2026 07:57:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yohz1x/article71302415.ece/alternates/LANDSCAPE_1200/SC-bars-unauthoG99GA15UQ.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9b653ad0101fa69045",
-      "title": "Congress accuses CEC of law violation over Form 6 changes, urges Supreme Court to hold him accountable",
-      "url": "https://www.thehindu.com/news/national/congress-accuses-cec-of-law-violation-over-form-6-changes-urges-supreme-court-to-hold-him-accountable/article71511770.ece",
-      "summary": "Congress leader Jairam Ramesh asserted that CEC Gyanesh Kumar can still redeem himself by resigning and turning approver",
-      "published_at": "Sun, 27 Sep 2026 07:14:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mcpqga/article71511801.ece/alternates/LANDSCAPE_1200/31th-SOBHANA-17GDUGFFC9V.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration"
         ]
       }
     },
@@ -290,6 +228,43 @@
       }
     },
     {
+      "raw_id": "41588cf6698376accd",
+      "title": "South Korean military, UN command launch investigation into DMZ explosion",
+      "url": "https://www.thehindu.com/news/international/south-korean-military-un-command-launch-investigation-into-dmz-explosion/article71515934.ece",
+      "summary": "The investigative team ‌of ⁠about 40 officials searched an area ⁠near the site where the blast happened on September 21, says South Korea’s Joint Chiefs of ​Staff",
+      "published_at": "Sun, 27 Sep 2026 18:21:15 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Sports": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics",
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "e31bdf191d17a7b689",
       "title": "DDCA joint secy. questions appointment of selector, u-19 coach",
       "url": "https://www.thehindu.com/sport/cricket/ddca-joint-secy-questions-appointments-of-selector-u-19-coach/article71512963.ece",
@@ -325,12 +300,12 @@
       }
     },
     {
-      "raw_id": "29574b0f95ed6dfb4e",
-      "title": "In Bihar, criminal escapes police custody by jumping into river",
-      "url": "https://www.thehindu.com/news/national/bihar/in-bihar-criminal-escapes-police-custody-by-jumping-into-river/article71513454.ece",
-      "summary": "According to police, there has been no trace of the criminal since he jumped into the river. Police teams are conducting raids at all his possible hideouts.",
-      "published_at": "Sun, 27 Sep 2026 07:05:58 +0530",
-      "image_url": "",
+      "raw_id": "558e0b9d1a97ecba17",
+      "title": "When AI agents go rogue: Australia breach offers warning for countries like India",
+      "url": "https://www.thehindu.com/news/national/when-ai-agents-go-rogue-australia-breach-offers-warning-for-countries-like-india/article71515799.ece",
+      "summary": "“India should bring in regulations. It could become horrible when one major incident happens, and somebody steals the secrets of one of the major departments or, say, atomic energy,” says Dr. Srinivas Padmanabuni",
+      "published_at": "Sun, 27 Sep 2026 17:10:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/d7bfr5/article71515872.ece/alternates/LANDSCAPE_1200/2026-09-23T174215Z_370648953_RC25PNAONPDG_RTRMADP_3_AI-TECHNOLOGY.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -354,41 +329,6 @@
         },
         "candidate_categories": [
           "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "c4d806232cb758c1fa",
-      "title": "Sukhbir Singh Sandhu and Vivek Joshi | Dissent in the Election Commission",
-      "url": "https://www.thehindu.com/news/national/sukhbir-singh-sandhu-and-vivek-joshi-dissent-in-the-commission/article71513848.ece",
-      "summary": "The two Election Commissioner, both appointed by the government under the new 2023 law, have raised questions about changes to electoral rolls, centralised control and the Election Commission’s decision-making process",
-      "published_at": "Sat, 26 Sep 2026 23:39:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/e1qe07/article71513844.ece/alternates/LANDSCAPE_1200/ECI_artx.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5,
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections"
         ]
       }
     },
@@ -426,6 +366,492 @@
           "Governance & Administration",
           "Society, Rights & Justice",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "4406a27a299bd3deea",
+      "title": "Supreme Court to examine Bar Council’s authority to regulate legal education",
+      "url": "https://www.thehindu.com/news/national/supreme-court-to-examine-bar-councils-authority-to-regulate-legal-education/article71498890.ece",
+      "summary": "The Bench said the BCI could formulate general guidelines like the duration of a law course, but had no authority to dictate the nuances of legal education.",
+      "published_at": "Thu, 24 Sep 2026 11:56:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qn9bav/article71499031.ece/alternates/LANDSCAPE_1200/Supreme%20Court.JPG",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "48b32fd034025923a1",
+      "title": "UN Security Council condemns Houthi attacks on Saudi Arabia",
+      "url": "https://www.thehindu.com/news/international/un-security-council-condemns-houthi-attacks-on-saudi-arabia/article71510183.ece",
+      "summary": "The council stressed the importance of upholding international law and freedom of navigation",
+      "published_at": "Fri, 25 Sep 2026 23:07:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/m8gzvr/article71510228.ece/alternates/LANDSCAPE_1200/UN_General_Assembly_AI_17214.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "2d727d83849411f2cc",
+      "title": "Meghalaya BJP’s UDP gains to be tested in 2028 polls: Congress chief Pala",
+      "url": "https://eastmojo.com/meghalaya/2026/09/26/meghalaya-bjps-udp-gains-to-be-tested-in-2028-polls-congress-chief-pala/",
+      "summary": "Representational image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2022/12/Untitled-design-2-4.png?fit=780%2C439&ssl=1\" /> Shillong: Meghalaya Congress president Vincent Pala on Friday questioned whether the BJP’s recent gain of eight UDP MLAs would translate into support from voters in the 2028 Assembly elections. Reacting to the MLAs’ move to the BJP, Pala said winning over elected representatives was different from winning an election and securing the people’s mandate. “The […] The post Meghalaya BJP’s UDP gains to be tested in 2028 polls: Congress chief Pala appeared first on EastMojo .",
+      "published_at": "Sat, 26 Sep 2026 09:50:23 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 3
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "687dd4e98caff9abb7",
+      "title": "Meghalaya: Khasi Christian leaders criticise eight MLAs joining BJP",
+      "url": "https://eastmojo.com/meghalaya/2026/09/25/meghalaya-khasi-christian-leaders-criticise-eight-mlas-joining-bjp/",
+      "summary": "Shillong: The Khasi Jaintia Christian Leaders Forum (KJCLF) has criticised the decision of eight Meghalaya MLAs to join the Bharatiya Janata Party (BJP), describing the move as a “tragic betrayal” of the electorate. KJCLF secretary Rev Edwin Kharkongor said while individuals or groups were free to join any political party, the decision by elected MLAs […] The post Meghalaya: Khasi Christian leaders criticise eight MLAs joining BJP appeared first on EastMojo .",
+      "published_at": "Fri, 25 Sep 2026 14:50:42 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "65e7505df9e8c855c9",
+      "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
+      "summary": "Srinagar district’s poll percentage was 27.9% in the 2014 Assembly election and recorded 29.24% this time; J&K Chief Electoral Officer says Srinagar saw an increase of 5% compared to voter turnout of the recent Lok Sabha polls",
+      "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 6,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3143fbb6d4ee661870",
+      "title": "M.A. Baby meets Kejriwal ahead of INDIA bloc meeting on Election Commission",
+      "url": "https://www.thehindu.com/news/national/ma-baby-meets-kejriwal-ahead-of-india-bloc-meeting-on-election-commission/article71516130.ece",
+      "summary": "CPI(M) general secretary seeks wider Opposition coordination against SIR and invites AAP leader to join protests against alleged misuse of Central agencies in Keralam",
+      "published_at": "Sun, 27 Sep 2026 19:14:18 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rc1u6b/article71516299.ece/alternates/LANDSCAPE_1200/PTI09_27_2026_000296B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "e409896708ec8a2ed1",
+      "title": "Data | How election fund was spent during 2021 State polls",
+      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
+      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
+      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa728bba3d7642bfb5",
+      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
+      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
+      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "7777f732d192431acd",
+      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
+      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
+      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2087c125a1444be430",
+      "title": "NC, PDP blame Centre for lower turnout in second phase of elections in J&K",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/nc-pdp-blame-centre-for-lower-turnout-in-second-phase-of-elections-in-jk/article68686806.ece",
+      "summary": "NC vice-president Omar Abdullah said the Centre was at fault to project the high poll percentage in the first phase as normalcy and call it the effect of Article 370 removal. “I think the low voter turnout was the reaction to it in Srinagar,” he said.",
+      "published_at": "Fri, 27 Sep 2024 18:57:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/jammu-and-kashmir-assembly/52j9e4/article68687550.ece/alternates/LANDSCAPE_1200/PTI09_25_2024_000335B.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2140570ee5c590fb9e",
+      "title": "Sri Lankan ruling party delegation to visit India, meet BJP leaders",
+      "url": "https://www.thehindu.com/news/national/delegation-of-sri-lankas-ruling-party-to-visit-india-under-know-bjp-initiative/article71513152.ece",
+      "summary": "The Janatha Vimukthi Peramuna delegation will also interact with External Affairs Minister S. Jaishankar and Delhi Chief Minister Rekha Gupta",
+      "published_at": "Sat, 26 Sep 2026 21:40:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/6jngtp/article71513329.ece/alternates/LANDSCAPE_1200/20260206348L.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "af16f06d34a67f582c",
+      "title": "PM Modi’s SCO visit is loaded with expectations on BRICS Summit and UNSC election",
+      "url": "https://www.thehindu.com/news/national/pms-sco-visit-is-loaded-with-expectations-on-brics-summit-and-unsc-election/article71404574.ece",
+      "summary": "PM’s visit will focus on strengthening ties with Iran, Tajikistan, and other Central Asian countries; the agenda will include engagements aimed at the upcoming BRICS Summit in September, the two-year UN Security Council term of 2028-2029, and planning for the long-pending India-Central Asia Summit, which has not met since 2022",
+      "published_at": "Sat, 26 Sep 2026 10:34:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ssjw83/article71404856.ece/alternates/LANDSCAPE_1200/PTI09_01_2025_000105A.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "05d9f09de2d31a003c",
+      "title": "Thailand declares two-day civil service holiday amid floods, could affect court ruling",
+      "url": "https://www.thehindu.com/news/international/thailand-declares-two-day-civil-service-holiday-amid-floods-could-affect-court-ruling/article71515944.ece",
+      "summary": "The move could however delay a ‌court decision over electoral ballots ​used in February's election — which could put the election ⁠results in doubt",
+      "published_at": "Sun, 27 Sep 2026 17:39:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/77ollm/article71515981.ece/alternates/LANDSCAPE_1200/2026-09-27T101536Z_293780761_RC2IRNAXXOZF_RTRMADP_3_ASIA-WEATHER-THAILAND-FLOODS.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "930ee7ddcdf7a6760a",
+      "title": "United Russia | The ‘party of power’",
+      "url": "https://www.thehindu.com/news/international/united-russia-the-party-of-power/article71513878.ece",
+      "summary": "The political party affiliated with President Vladimir Putin is the big bear that continues to win almost all elections in the country",
+      "published_at": "Sat, 26 Sep 2026 22:48:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fgu2rn/article71513871.ece/alternates/LANDSCAPE_1200/Russia_Presidential_Election_29842.jpg-913bb.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
@@ -529,41 +955,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "c963022fa44ba6ef9d",
-      "title": "बैंक हड़ताल के बीच छात्रों को बड़ी राहत, माशिमं ने बढ़ाई फीस जमा करने की तारीख; अब इस दिन तक मौका",
-      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-board-of-secondary-education-fee-submission-deadline-extended-october-7-bank-strike/",
-      "summary": "Chhattisgarh Education News: राष्ट्रीयकृत बैंकों की 28 से 30 सितंबर तक प्रस्तावित हड़ताल के बीच छत्तीसगढ़ माध्यमिक शिक्षा मंडल (Chhattisgarh Board of Secondary Education) ने प्रदेश के नियमित विद्यार्थियों और स्कूलों को बड़ी राहत दी है। शैक्षणिक सत्र 2026-27 के लिए नामांकन, मुख्य परीक्षा और परीक्षा आवेदन पत्र शुल्क के ऑनलाइन भुगतान की अंतिम तारीख […]",
-      "published_at": "Sat, 26 Sep 2026 13:23:02 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
         ]
       }
     },
@@ -770,6 +1161,41 @@
       }
     },
     {
+      "raw_id": "dbb08bda9d0eecf610",
+      "title": "‘Why are our films denied screening?’ Filmmakers at Kerala docu film fest ask",
+      "url": "https://www.thenewsminute.com/kerala/why-are-our-films-denied-screening-filmmakers-at-kerala-docu-film-fest-ask",
+      "summary": "Standing in a group at the Kairali Theatre complex in Thiruvananthapuram, wearing black and looking dejected, are filmmakers and crew members of some of the films that were not allowed screening at the International Documentary and Short Film Festival of Kerala (IDSFFK) this year. They are hoping to meet the newly appointed chairperson of the Kerala Chalachitra Academy, actor Ravindran, to present their case. No reason has been given for not allowing the screening of eight films, including five in the competition section, at the IDSFFK. The Union Ministry of Information and Broadcasting had initially denied censor exemption to 31 films selected at the fest, but after the government of Kerala wrote seeking permission, 23 of these were approved . “We hope to meet the chairperson and ask for an explanation on why our films were denied approval. The IDSFFK is very important for us, and two of my previous films have won awards at the festival. This year I finished my film on time for the IDSFFK because this is the only place – if my film is good enough – it will be shown, it is almost like an Indian stamp that gives you confidence. It was last Sunday that I got an email saying that the ",
+      "published_at": "Sun, 27 Sep 2026 10:27:25 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-27/s7fmoafr/idsffkfilmmakerscancelled.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Protests"
+        ]
+      }
+    },
+    {
       "raw_id": "c6a9a5ede085f4be19",
       "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
       "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
@@ -838,140 +1264,6 @@
       }
     },
     {
-      "raw_id": "c9fdc85acd63f85b94",
-      "title": "Sacred groves are better at growing future forests in the Western Ghats",
-      "url": "https://india.mongabay.com/2026/09/sacred-groves-are-better-at-growing-future-forests-in-the-western-ghats/",
-      "summary": "In the villages of the Western Ghats, some of the oldest and tallest trees do not grow inside a national park. They grow in sacred groves, small patches of old, mostly untouched forest that local communities have protected for generations, because they believe the trees belong to their deities and ancestors. A new study published […]",
-      "published_at": "21 Sep 2026 11:31:52 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/20201344/Durgawadi_ambe_hatvij_Junnar_pune_2_07-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 5
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "2d44e67f0f8d91beef",
-      "title": "As tigers spill beyond reserves, India rethinks conservation",
-      "url": "https://india.mongabay.com/2026/09/as-tigers-spill-beyond-reserves-india-rethinks-conservation/",
-      "summary": "Forty-five-year-old Mahadeva Gowda was tending to his cotton farm in the village of Badagalapura in the southern Indian state of Karnataka when a tiger lunged at him from behind. He was caught unaware: He says he wasn’t aware that the forest department was trying to capture a tiger roaming through the areas. Before he realised […]",
-      "published_at": "18 Sep 2026 12:04:46 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/18110753/Copy-of-2-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 5
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "d2a4fb0597999d056d",
-      "title": "NEET-UG 2026: 5 MBBS seats at Sikkim’s Helen Lepcha Medical College",
-      "url": "https://eastmojo.com/sikkim/2026/09/26/neet-ug-2026-5-mbbs-seats-at-sikkims-helen-lepcha-medical-college/",
-      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/09/MBBS-story.png?fit=780%2C439&ssl=1\" /> Eligible NEET-UG 2026 candidates have a limited opportunity to secure admission to the MBBS programme at Helen Lepcha Sikkim Government Medical College (HLSGMC), Gangtok, for the 2026–27 academic session. The Government of Sikkim has invited applications for five Society Seats in the MBBS programme at the state’s first government medical college. The online application process […] The post NEET-UG 2026: 5 MBBS seats at Sikkim’s Helen Lepcha Medical College appeared first on EastMojo .",
-      "published_at": "Sat, 26 Sep 2026 07:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bcfe18f777fead52d3",
-      "title": "Five orangutans found in Odisha forest face long road back home to Indonesia",
-      "url": "https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/",
-      "summary": "The five infant orangutans found roaming a woodland in Odisha earlier this month may have been trafficked across several international borders — and now face a long journey home through the different legal and bureaucratic systems of India and Indonesia, conservationists say. “This starts with hunting in the wild, separating babies from their mothers, and […]",
-      "published_at": "24 Sep 2026 10:11:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23144141/Orangutan-Sumatera-di-SRA-7-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
       "raw_id": "047407e8442567a236",
       "title": "From the Wild, For Trade",
       "url": "https://india.mongabay.com/specials/2026/09/from-wild-for-trade/",
@@ -1005,6 +1297,41 @@
           "Economy & Employment",
           "Environment, Health & Science",
           "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "3e9c13190ed2e33650",
+      "title": "Abandoning exotic pets raises ecological concerns",
+      "url": "https://india.mongabay.com/2026/09/hard-to-resist-harder-to-keep/",
+      "summary": "This is Part 3 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 explores how the trade enables zoonoses, while Part 2 observes how India is emerging as a link in the global primate trade. […]",
+      "published_at": "25 Sep 2026 14:22:57 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23190133/PHOTO-2026-09-11-16-17-19-2-1-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science"
         ]
       }
     },
@@ -1046,274 +1373,6 @@
       }
     },
     {
-      "raw_id": "7b77d976ba1bd14ef2",
-      "title": "High-altitude bird hotspots remain outside protected areas",
-      "url": "https://india.mongabay.com/2026/09/high-altitude-bird-hotspots-remain-outside-protected-areas/",
-      "summary": "In the high-altitude landscapes of Himachal Pradesh, conservation efforts have long revolved around the charismatic snow leopard (Panthera uncia). But a new study suggests this focus may be leaving a host of other ecologically vital species outside the conservation umbrella. The study, led by scientists from the Nature Conservation Foundation and partner institutions, mapped the […]",
-      "published_at": "17 Sep 2026 14:15:03 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/17130909/RCNX0076-e1789630907282-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 3
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "2e16d61b762ff7ba7d",
-      "title": "India postpones Cambodia tiger reintroduction",
-      "url": "https://india.mongabay.com/short-article/2026/09/india-postpones-cambodia-tiger-reintroduction/",
-      "summary": "India and Cambodia have postponed a plan to reintroduce Bengal tigers into Cambodia, moving the target from 2025 to 2028 after a review found that the available prey base in the proposed release landscape remains too low to support a viable tiger population. The delay comes months after Mongabay reported concerns among conservation scientists about […]",
-      "published_at": "24 Sep 2026 13:03:37 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/24115921/3646793728_c8315f30a0_o-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bd69bda0e6588b8d5d",
-      "title": "Odours offer new clues in monitoring big cats",
-      "url": "https://india.mongabay.com/2026/09/odours-offer-new-clues-in-monitoring-big-cats/",
-      "summary": "Camera trapping and genetic sampling are big cat monitoring techniques that can estimate population size, density and identify individuals. But they often provide limited information about an animal’s age, sex, reproductive status or health. A new study now suggests that the animal’s urine and scat could reveal more than its presence in a forest. Researchers […]",
-      "published_at": "24 Sep 2026 10:17:35 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23180257/Tiger_spray_marking._DavidRaju_1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "fab6a88378177fd876",
-      "title": "The ghost of the mountains",
-      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
-      "published_at": "23 Sep 2026 13:41:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "e81fadb8b0db631ab7",
-      "title": "Nagaland intensifies measles response after cases detected in Mon’s Tizit",
-      "url": "https://eastmojo.com/nagaland/2026/09/26/nagaland-intensifies-measles-response-after-cases-detected-in-mons-tizit/",
-      "summary": "Kohima: The Nagaland Health Department has intensified measures to contain a measles outbreak in Tizit block of Mon district following the detection of laboratory-confirmed cases. The response includes enhanced surveillance, vaccination, public awareness and coordination among departments, officials said. A block-level meeting was held on September 21 at the Community Health Centre (CHC), Tizit, under […] The post Nagaland intensifies measles response after cases detected in Mon’s Tizit appeared first on EastMojo .",
-      "published_at": "Sat, 26 Sep 2026 09:08:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "20a239a7faf565d9c5",
-      "title": "Meghalaya stresses awareness for effective implementation of Solid Waste Management Rules",
-      "url": "https://eastmojo.com/meghalaya/2026/09/26/meghalaya-stresses-awareness-for-effective-implementation-of-solid-waste-management-rules/",
-      "summary": "Shillong: Greater public awareness, sustained media outreach and coordinated action among government agencies, Urban Local Bodies, Pollution Control Boards and citizens were emphasised for effective implementation of the Solid Waste Management Rules, 2026. Speaking at a Vartalap – Media Workshop held in Shillong in the spirit of Swachhata Hi Seva 2026, Dr. Mazel Ampareen Lyngdoh, […] The post Meghalaya stresses awareness for effective implementation of Solid Waste Management Rules appeared first on EastMojo .",
-      "published_at": "Sat, 26 Sep 2026 08:59:37 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "57c19826bc2948e1a9",
-      "title": "Telangana CM Revanth Reddy demands Bharat Ratna for late PM Manmohan Singh",
-      "url": "https://www.thenewsminute.com/telangana/telangana-cm-revanth-reddy-demands-bharat-ratna-for-late-pm-manmohan-singh",
-      "summary": "Telangana Chief Minister A Revanth Reddy demanded that the Union government confer the Bharat Ratna on former Prime Minister Manmohan Singh while unveiling his statue at Wipro Circle in Hyderabad on September 26, his birth anniversary, citing the former PM’s contribution to the formation of Telangana. Revanth said that Manmohan Singh upheld the self-respect of the people of Telangana by facilitating the formation of the state when he was Prime Minister. CM Revanth criticised the Union government for not taking steps to create a memorial for the former PM in Delhi. He said that the Union government’s decisions must be beyond the realm of politics. He also demanded that the Union government establish a ‘knowledge centre’ in Delhi in Manmohan Singh’s honour. CM Revanth instructed Congress MPs to raise the issue of conferring the Bharat Ratna, India’s highest civilian honour, on Manmohan Singh in Parliament. Unveiling the statue of Manmohan Singh in Hyderabad’s Financial District, the Chief Minister said, “We also displayed the signature Manmohan Singh affixed to the order creating the state of Telangana here today. We unveiled the former PM's statue with the resolve to pass on his ins",
-      "published_at": "Sun, 27 Sep 2026 04:30:56 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-27/85tdfbww/Manmohansinghstatue.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 3,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "3e9c13190ed2e33650",
-      "title": "Abandoning exotic pets raises ecological concerns",
-      "url": "https://india.mongabay.com/2026/09/hard-to-resist-harder-to-keep/",
-      "summary": "This is Part 3 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 explores how the trade enables zoonoses, while Part 2 observes how India is emerging as a link in the global primate trade. […]",
-      "published_at": "25 Sep 2026 14:22:57 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23190133/PHOTO-2026-09-11-16-17-19-2-1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
       "raw_id": "e10272d6572f0e87d0",
       "title": "The Women Who Make Welfare Work",
       "url": "https://khabarlahariya.org/the-women-who-make-welfare-work/",
@@ -1345,41 +1404,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
         ]
       }
     }

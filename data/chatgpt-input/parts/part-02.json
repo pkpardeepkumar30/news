@@ -1,49 +1,47 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-09-27T05:27:33.487206+00:00",
-  "input_count": 398,
+  "prepared_at": "2026-09-27T14:06:05.881742+00:00",
+  "input_count": 432,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 102,
-    "established_or_other": 98,
+    "independent_social": 118,
+    "established_or_other": 82,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "8577845c24480c0b9e",
-      "title": "Trade unions, farm outfits join chorus to remove CEC Gyanesh Kumar",
-      "url": "https://www.thehindu.com/news/national/trade-unions-farm-outfits-join-chorus-to-remove-cec-gyanesh-kumar/article71513513.ece",
-      "summary": "Left parties, workers and farmers’ groups step up protests; CPI(M) claims survey found deleted voters still residing in Bihar villages",
-      "published_at": "Sun, 27 Sep 2026 02:12:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nm4yzj/article71514099.ece/alternates/LANDSCAPE_1200/20260926162L.jpg",
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
           "Protests": 1,
-          "Economy & Employment": 5
+          "Economy & Employment": 1
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Politics & Elections",
           "Protests"
         ]
       }
@@ -119,12 +117,12 @@
       }
     },
     {
-      "raw_id": "e46c6f4d3c38a38f58",
-      "title": "Sanitation workers to receive ₹50 as food allowance daily",
-      "url": "https://www.thehindu.com/news/cities/chennai/sanitation-workers-to-receive-50-as-food-allowance-daily/article71513707.ece",
-      "summary": "",
-      "published_at": "Sun, 27 Sep 2026 00:40:05 +0530",
-      "image_url": "",
+      "raw_id": "195912e34fa68d34d6",
+      "title": "Kovur sugar factory workers to receive ₹22 crore in pending wages after 11 years",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/kovur-sugar-factory-workers-to-receive-22-crore-in-pending-wages-after-11-years/article71515681.ece",
+      "summary": "Kovur MLA shows copies of the order issued by the government, says it reiterates the government’s resolve in solving long-term problems",
+      "published_at": "Sun, 27 Sep 2026 19:18:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ckf0ee/article71516295.ece/alternates/LANDSCAPE_1200/10745_27_9_2026_15_20_2_1_IMG_20260927_WA0043.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -148,6 +146,111 @@
         },
         "candidate_categories": [
           "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "c9748c43f747de7c6a",
+      "title": "KLU hosts two-day ‘skill Palaver’ hackathon to make students industry-ready",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/klu-hosts-two-day-skill-palaver-hackathon-to-make-students-industry-ready/article71516113.ece",
+      "summary": "The event witnessed the participation of 1,642 students from III-Year B.Tech programmes in CSE, CS&IT, AI&DS, ECE, EEE and IoT, along with II-Year BCA students",
+      "published_at": "Sun, 27 Sep 2026 18:53:16 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "f1dec75f6b57f40390",
+      "title": "‘Need to work in tandem’: Telangana Chief Justice on trafficking, bonded labour",
+      "url": "https://www.thehindu.com/news/national/telangana/need-to-work-in-tandem-telangana-chief-justice-on-trafficking-bonded-labour/article71513756.ece",
+      "summary": "",
+      "published_at": "Sun, 27 Sep 2026 18:50:28 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/telangana/lt289m/article71513750.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-26%20at%2021.15.16.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "2db6c73e3c77220383",
+      "title": "Belagavi: Technology Business Incubator inaugurated at Visvesvaraya Technological University",
+      "url": "https://www.thehindu.com/news/national/karnataka/tech-incubator-in-vtu-campus/article71515962.ece",
+      "summary": "",
+      "published_at": "Sun, 27 Sep 2026 18:28:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/txbku2/article71516149.ece/alternates/LANDSCAPE_1200/9727_27_9_2026_17_32_15_1_28BGMVTUINCUBATOR1.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -187,125 +290,20 @@
       }
     },
     {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "f2eaea2bf32431a654",
-      "title": "Are industry-academia collaborations practical partnerships or a romantic dream?",
-      "url": "https://www.thehindu.com/education/are-industry-academia-collaborations-practical-partnerships-or-a-romantic-dream/article71483818.ece",
-      "summary": "The future of higher education will depend not merely on increasing collaborations between universities and industry, but on designing models that are realistic, scalable, and aligned with the needs of both",
-      "published_at": "Sat, 26 Sep 2026 14:26:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p8r82g/article71491292.ece/alternates/LANDSCAPE_1200/lead.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "fba277bf415f71fe61",
-      "title": "Why has Andhra Pradesh raised the age limit for govt. jobs, and who is still left out? | Explained",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/why-has-andhra-pradesh-raised-the-age-limit-for-government-jobs-and-who-is-still-left-out-explained/article71504070.ece",
-      "summary": "Age relief rekindles hopes of job aspirants a year before the relaxation lapses; uniform-service candidates seek a wider window",
-      "published_at": "Thu, 24 Sep 2026 19:24:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qzl197/article71357011.ece/alternates/LANDSCAPE_1200/vjkvg-group_2.JPG",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "993d8823c44d231271",
-      "title": "SIR did not affect electoral results; ECI opposes TMC plea for fresh polls in 31 West Bengal seats",
-      "url": "https://www.barandbench.com/news/litigation/sir-did-not-affect-electoral-results-eci-opposes-tmc-plea-for-fresh-polls-in-31-west-bengal-seats",
-      "summary": "The Election Commission of India (ECI) has told the Supreme Court that 37,05,235 appeals arising out of the Special Intensive Revision (SIR) of electoral rolls in West Bengal are pending before the Appellate Tribunals. Out of the only 1,26,194 appeals have been decided so far. The disclosure came in the ECI's reply to an application by Trinamool Congress (TMC) MP Derek O'Brien. Pertinently, the ECI opposed O'Brien's plea for fresh polls in 31 West Bengal assembly seats. A bench of Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana had earlier directed the ECI to specify how many appeals were presently pending before election tribunals. According to the data furnished by ECI: - Total appeals filed: 38,31,429 - Filed by voters whose names were excluded or deleted: 22,21,118 - Appeals against inclusion: 16,10,311 - Decided: 1,26,194 - Pending: 37,05,235 Murshidabad and Malda account for the most appeals, with 7,48,216 and 5,31,617 respectively. Murshidabad has decided 595 of its appeals. CJI Surya Kant, Justice Joymalya Bagchi, Justice V Mohana O'Brien moved the Court to have the results in 31 assembly constituencies declared void, and fresh polls held once al",
-      "published_at": "Sun, 27 Sep 2026 09:13:33 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-03-23/t5suknk8/Karnataka-copy.jpg",
+      "raw_id": "c9fdc85acd63f85b94",
+      "title": "Sacred groves are better at growing future forests in the Western Ghats",
+      "url": "https://india.mongabay.com/2026/09/sacred-groves-are-better-at-growing-future-forests-in-the-western-ghats/",
+      "summary": "In the villages of the Western Ghats, some of the oldest and tallest trees do not grow inside a national park. They grow in sacred groves, small patches of old, mostly untouched forest that local communities have protected for generations, because they believe the trees belong to their deities and ancestors. A new study published […]",
+      "published_at": "21 Sep 2026 11:31:52 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/20201344/Durgawadi_ambe_hatvij_Junnar_pune_2_07-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -317,23 +315,52 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 6,
-          "Society, Rights & Justice": 1,
-          "Sports": 1
+          "Environment, Health & Science": 5
         },
         "candidate_categories": [
-          "Politics & Elections",
-          "Society, Rights & Justice",
-          "Sports"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "2d727d83849411f2cc",
-      "title": "Meghalaya BJP’s UDP gains to be tested in 2028 polls: Congress chief Pala",
-      "url": "https://eastmojo.com/meghalaya/2026/09/26/meghalaya-bjps-udp-gains-to-be-tested-in-2028-polls-congress-chief-pala/",
-      "summary": "Representational image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2022/12/Untitled-design-2-4.png?fit=780%2C439&ssl=1\" /> Shillong: Meghalaya Congress president Vincent Pala on Friday questioned whether the BJP’s recent gain of eight UDP MLAs would translate into support from voters in the 2028 Assembly elections. Reacting to the MLAs’ move to the BJP, Pala said winning over elected representatives was different from winning an election and securing the people’s mandate. “The […] The post Meghalaya BJP’s UDP gains to be tested in 2028 polls: Congress chief Pala appeared first on EastMojo .",
-      "published_at": "Sat, 26 Sep 2026 09:50:23 +0000",
+      "raw_id": "2d44e67f0f8d91beef",
+      "title": "As tigers spill beyond reserves, India rethinks conservation",
+      "url": "https://india.mongabay.com/2026/09/as-tigers-spill-beyond-reserves-india-rethinks-conservation/",
+      "summary": "Forty-five-year-old Mahadeva Gowda was tending to his cotton farm in the village of Badagalapura in the southern Indian state of Karnataka when a tiger lunged at him from behind. He was caught unaware: He says he wasn’t aware that the forest department was trying to capture a tiger roaming through the areas. Before he realised […]",
+      "published_at": "18 Sep 2026 12:04:46 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/18110753/Copy-of-2-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "d2a4fb0597999d056d",
+      "title": "NEET-UG 2026: 5 MBBS seats at Sikkim’s Helen Lepcha Medical College",
+      "url": "https://eastmojo.com/sikkim/2026/09/26/neet-ug-2026-5-mbbs-seats-at-sikkims-helen-lepcha-medical-college/",
+      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/09/MBBS-story.png?fit=780%2C439&ssl=1\" /> Eligible NEET-UG 2026 candidates have a limited opportunity to secure admission to the MBBS programme at Helen Lepcha Sikkim Government Medical College (HLSGMC), Gangtok, for the 2026–27 academic session. The Government of Sikkim has invited applications for five Society Seats in the MBBS programme at the state’s first government medical college. The online application process […] The post NEET-UG 2026: 5 MBBS seats at Sikkim’s Helen Lepcha Medical College appeared first on EastMojo .",
+      "published_at": "Sat, 26 Sep 2026 07:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -354,19 +381,186 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 3
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "687dd4e98caff9abb7",
-      "title": "Meghalaya: Khasi Christian leaders criticise eight MLAs joining BJP",
-      "url": "https://eastmojo.com/meghalaya/2026/09/25/meghalaya-khasi-christian-leaders-criticise-eight-mlas-joining-bjp/",
-      "summary": "Shillong: The Khasi Jaintia Christian Leaders Forum (KJCLF) has criticised the decision of eight Meghalaya MLAs to join the Bharatiya Janata Party (BJP), describing the move as a “tragic betrayal” of the electorate. KJCLF secretary Rev Edwin Kharkongor said while individuals or groups were free to join any political party, the decision by elected MLAs […] The post Meghalaya: Khasi Christian leaders criticise eight MLAs joining BJP appeared first on EastMojo .",
-      "published_at": "Fri, 25 Sep 2026 14:50:42 +0000",
+      "raw_id": "bcfe18f777fead52d3",
+      "title": "Five orangutans found in Odisha forest face long road back home to Indonesia",
+      "url": "https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/",
+      "summary": "The five infant orangutans found roaming a woodland in Odisha earlier this month may have been trafficked across several international borders — and now face a long journey home through the different legal and bureaucratic systems of India and Indonesia, conservationists say. “This starts with hunting in the wild, separating babies from their mothers, and […]",
+      "published_at": "24 Sep 2026 10:11:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23144141/Orangutan-Sumatera-di-SRA-7-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "7b77d976ba1bd14ef2",
+      "title": "High-altitude bird hotspots remain outside protected areas",
+      "url": "https://india.mongabay.com/2026/09/high-altitude-bird-hotspots-remain-outside-protected-areas/",
+      "summary": "In the high-altitude landscapes of Himachal Pradesh, conservation efforts have long revolved around the charismatic snow leopard (Panthera uncia). But a new study suggests this focus may be leaving a host of other ecologically vital species outside the conservation umbrella. The study, led by scientists from the Nature Conservation Foundation and partner institutions, mapped the […]",
+      "published_at": "17 Sep 2026 14:15:03 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/17130909/RCNX0076-e1789630907282-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 3
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "2e16d61b762ff7ba7d",
+      "title": "India postpones Cambodia tiger reintroduction",
+      "url": "https://india.mongabay.com/short-article/2026/09/india-postpones-cambodia-tiger-reintroduction/",
+      "summary": "India and Cambodia have postponed a plan to reintroduce Bengal tigers into Cambodia, moving the target from 2025 to 2028 after a review found that the available prey base in the proposed release landscape remains too low to support a viable tiger population. The delay comes months after Mongabay reported concerns among conservation scientists about […]",
+      "published_at": "24 Sep 2026 13:03:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/24115921/3646793728_c8315f30a0_o-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "bd69bda0e6588b8d5d",
+      "title": "Odours offer new clues in monitoring big cats",
+      "url": "https://india.mongabay.com/2026/09/odours-offer-new-clues-in-monitoring-big-cats/",
+      "summary": "Camera trapping and genetic sampling are big cat monitoring techniques that can estimate population size, density and identify individuals. But they often provide limited information about an animal’s age, sex, reproductive status or health. A new study now suggests that the animal’s urine and scat could reveal more than its presence in a forest. Researchers […]",
+      "published_at": "24 Sep 2026 10:17:35 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23180257/Tiger_spray_marking._DavidRaju_1-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "fab6a88378177fd876",
+      "title": "The ghost of the mountains",
+      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
+      "published_at": "23 Sep 2026 13:41:58 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "e81fadb8b0db631ab7",
+      "title": "Nagaland intensifies measles response after cases detected in Mon’s Tizit",
+      "url": "https://eastmojo.com/nagaland/2026/09/26/nagaland-intensifies-measles-response-after-cases-detected-in-mons-tizit/",
+      "summary": "Kohima: The Nagaland Health Department has intensified measures to contain a measles outbreak in Tizit block of Mon district following the detection of laboratory-confirmed cases. The response includes enhanced surveillance, vaccination, public awareness and coordination among departments, officials said. A block-level meeting was held on September 21 at the Community Health Centre (CHC), Tizit, under […] The post Nagaland intensifies measles response after cases detected in Mon’s Tizit appeared first on EastMojo .",
+      "published_at": "Sat, 26 Sep 2026 09:08:53 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -387,156 +581,86 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "acc35d7c8aa08f41b0",
-      "title": "Election Commission stops physical hearings for voters, to start enrolment drive",
-      "url": "https://www.thehindu.com/news/national/election-commission-new-special-intensive-revision-rules/article71512646.ece",
-      "summary": "Days after reports of rift within EC, it announces several steps to address SIR concerns; new voters seeking inclusion in rolls after SIR need not submit declaration with Form 6; it extends deadline for filing claims and objections in Delhi and Maharashtra",
-      "published_at": "Sun, 27 Sep 2026 07:13:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/slrmb/article71512672.ece/alternates/LANDSCAPE_1200/IMG_INDEXELECTIONCOMMISS_2_1_B6EB6NQQ.jpg",
+      "raw_id": "20a239a7faf565d9c5",
+      "title": "Meghalaya stresses awareness for effective implementation of Solid Waste Management Rules",
+      "url": "https://eastmojo.com/meghalaya/2026/09/26/meghalaya-stresses-awareness-for-effective-implementation-of-solid-waste-management-rules/",
+      "summary": "Shillong: Greater public awareness, sustained media outreach and coordinated action among government agencies, Urban Local Bodies, Pollution Control Boards and citizens were emphasised for effective implementation of the Solid Waste Management Rules, 2026. Speaking at a Vartalap – Media Workshop held in Shillong in the spirit of Swachhata Hi Seva 2026, Dr. Mazel Ampareen Lyngdoh, […] The post Meghalaya stresses awareness for effective implementation of Solid Waste Management Rules appeared first on EastMojo .",
+      "published_at": "Sat, 26 Sep 2026 08:59:37 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 8
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "65e7505df9e8c855c9",
-      "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
-      "summary": "Srinagar district’s poll percentage was 27.9% in the 2014 Assembly election and recorded 29.24% this time; J&K Chief Electoral Officer says Srinagar saw an increase of 5% compared to voter turnout of the recent Lok Sabha polls",
-      "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 6,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "92abb0c83963dc68ef",
-      "title": "Nandigram and Rejinagar bypoll: Ballot without the battle",
-      "url": "https://www.thehindu.com/news/national/west-bengal/nandigram-and-rejinagar-bypoll-ballot-without-the-battle/article71512622.ece",
-      "summary": "Bypolls for two Assembly constituencies in West Bengal Nandigram and Rejinagar scheduled for October 6, are turning out to be an electoral exercise without much contest on the ground. Shrabana Chatterjee and Senjuti Sengupta report on the dropouts and intimidation that candidates from non-BJP parties are allegedly facing",
-      "published_at": "Sun, 27 Sep 2026 03:23:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/18zyeq/article71512637.ece/alternates/LANDSCAPE_1200/12015_24_9_2026_14_26_5_3_7CONGRESSCAMPAIGNSFORTHEIRARRESTEDCANDIDATEMILANPRADHAN.JPG",
+      "raw_id": "cc63f9be6a0d2db6e6",
+      "title": "NGOs call for permanent moratorium on animal imports to Vantara",
+      "url": "https://india.mongabay.com/2026/09/ngos-call-for-permanent-moratorium-on-animal-imports-to-vantara/",
+      "summary": "A group of 27 global conservation organisations have written to Vantara calling for a permanent halt on wild animal imports to the facility. The letter was written in response to Vantara’s own statement announcing a temporary moratorium on animal imports till June 2027. Vantara is a private zoo and animal rescue centre owned by India’s Ambani […]",
+      "published_at": "25 Sep 2026 17:14:27 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/25151638/13353495075_e4b2bdfa0d_4k-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 5
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "9763ad7d4a57f4293f",
-      "title": "Byelections in Madurantakam and Dharapuram may test AIADMK’s sway over Scheduled Caste voters",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/byelections-in-madurantakam-and-dharapuram-may-test-aiadmks-sway-over-scheduled-caste-voters/article71513064.ece",
-      "summary": "Of the 44 reserved seats in the State, the party had won 32 in 2016 Assembly elections, while it could manage only eight seats 10 years later",
-      "published_at": "Sun, 27 Sep 2026 00:04:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3op29/article71514017.ece/alternates/LANDSCAPE_1200/two%20leaves%203.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "3c6977b7cd68bb8b69",
-      "title": "Full results from Russia's parliamentary election confirm Kremlin's dominance",
-      "url": "https://www.thehindu.com/news/international/full-results-from-russias-parliamentary-election-confirm-kremlins-dominance/article71510124.ece",
-      "summary": "Nearly 60% of the 111 million eligible voters turned out, the most for a parliamentary election in over a decade.",
-      "published_at": "Fri, 25 Sep 2026 22:35:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mnax5c/article71510147.ece/alternates/LANDSCAPE_1200/Russia_Election__364.jpg",
+      "raw_id": "1de59bd47992d8552d",
+      "title": "French ruling spotlights breast cancer as an occupational disease",
+      "url": "https://www.thehindu.com/news/international/french-ruling-spotlights-breast-cancer-as-an-occupational-diseasei-explained/article71399727.ece",
+      "summary": "A flight attendant’s legal battle highlights the health risks of night shifts and exposure to cosmic radiation, after a French court recognises breast cancer as an occupational disease",
+      "published_at": "Sat, 26 Sep 2026 10:33:51 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/73mzxm/article71399787.ece/alternates/LANDSCAPE_1200/000_1U55D8.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -556,150 +680,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 5,
+          "Environment, Health & Science": 5,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "8a50b2056b6d9e5a8a",
-      "title": "A ‘superior’ CEC renders Election Commissioners ‘non-functional’, Supreme Court had warned",
-      "url": "https://www.thehindu.com/news/national/a-superior-cec-renders-election-commissioners-non-functional-supreme-court-had-warned/article71513102.ece",
-      "summary": "Judgement stressed collegial functioning of poll panel and said ECs must have a say in decision-making",
-      "published_at": "Sun, 27 Sep 2026 06:31:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lgipce/article71513353.ece/alternates/LANDSCAPE_1200/DSC_0779.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "e409896708ec8a2ed1",
-      "title": "Data | How election fund was spent during 2021 State polls",
-      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
-      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
-      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa728bba3d7642bfb5",
-      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
-      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
-      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
-      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "7777f732d192431acd",
-      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
-      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
-      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
       }
     },
@@ -1176,12 +1162,12 @@
       }
     },
     {
-      "raw_id": "75a18f4f44a31f2236",
-      "title": "Iran suggests deal to reopen Strait of Hormuz in seven days; Trump rejects proposal",
-      "url": "https://www.thehindu.com/news/international/iran-suggests-deal-to-reopen-the-strait-of-hormuz-in-seven-days/article71510004.ece",
-      "summary": "Iran's Foreign Minister Abbas Araghchi, who detailed the proposal in a private gathering on September 24 on the sidelines of the UN General Assembly, suggested that a speedy agreement would help U.S. President Trump ahead of November’s midterm elections",
-      "published_at": "Sun, 27 Sep 2026 07:08:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2ob9c0/article71510110.ece/alternates/LANDSCAPE_1200/PTI05_15_2026_000155B.jpg",
+      "raw_id": "207496f0e09f56911a",
+      "title": "Iran insists on diplomatic solution after Trump rejects peace plan",
+      "url": "https://www.thehindu.com/news/international/trump-rejects-iran-proposal-for-deal-to-reopen-hormuz/article71514089.ece",
+      "summary": "\"They want to make a deal where they open the Strait immediately because they're losing so badly. They want to make a deal and I think that's fine. I like making a deal too,\" the U.S. President said.",
+      "published_at": "Sun, 27 Sep 2026 09:51:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9a9js0/article71514093.ece/alternates/LANDSCAPE_1200/2026-09-26T154616Z_1311439009_RC23RNAITTIN_RTRMADP_3_USA-TRUMP.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1192,8 +1178,8 @@
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -1201,35 +1187,87 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "bb70527618bfca3247",
+      "title": "Palestinian death toll in Gaza war crosses 74,000: Health Ministry",
+      "url": "https://www.thehindu.com/news/international/palestinian-death-toll-in-gaza-war-crosses-74000-health-ministry/article71515541.ece",
+      "summary": "A ceasefire that took effect on October 10 has halted the heaviest fighting, Israeli strikes have continued, with the military saying they are in response to threats or attacks",
+      "published_at": "Sun, 27 Sep 2026 15:15:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/n699jn/article71515601.ece/alternates/LANDSCAPE_1200/Israel_Palestinians_Gaza_62671.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4,
           "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
+      }
+    },
+    {
+      "raw_id": "af1f9d5b0611fab9a9",
+      "title": "Russia backs India’s candidature for UNSC permanent seat",
+      "url": "https://www.thehindu.com/news/international/russia-backs-indias-candidature-for-unsc-permanent-seat/article71515381.ece",
+      "summary": "“We are in favour of broadening the representation of Asia, Africa, and Latin America. We support Brazil's and India's candidatures for a permanent seat, and at the same time, I wish to emphasise this: we must satisfy the interests of the African continent,” Russian Foreign Minister Sergey Lavrov said.",
+      "published_at": "Sun, 27 Sep 2026 12:28:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/k6gj0d/article71515388.ece/alternates/LANDSCAPE_1200/UN_General_Assembly_Russia_58747.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
-      "related_reports": [
-        {
-          "title": "Trump rejects Iran proposal for deal to reopen Hormuz",
-          "url": "https://www.thehindu.com/news/international/trump-rejects-iran-proposal-for-deal-to-reopen-hormuz/article71514089.ece",
-          "source": {
-            "id": "the-hindu-international",
-            "name": "The Hindu - International",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
     },
     {
       "raw_id": "1bbed14b55b36a6767",
       "title": "Russia's top diplomat rejects German calls to ease off its 'dangerous' escalation toward it",
       "url": "https://www.thehindu.com/news/international/russias-top-diplomat-rejects-german-calls-to-ease-off-its-dangerous-escalation-toward-it/article71515190.ece",
       "summary": "Does Berlin understand what this could lead to? Didn't they not learn the lessons of World War II? Russian Foreign Minister Sergey Lavrov asked in his speech at the UN General Assembly's annual gathering of world leaders",
-      "published_at": "Sun, 27 Sep 2026 09:37:45 +0530",
+      "published_at": "Sun, 27 Sep 2026 11:29:05 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/v4b4o/article71515203.ece/alternates/LANDSCAPE_1200/UN_General_Assembly_Russia_85_38.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -1258,12 +1296,12 @@
       }
     },
     {
-      "raw_id": "48b32fd034025923a1",
-      "title": "UN Security Council condemns Houthi attacks on Saudi Arabia",
-      "url": "https://www.thehindu.com/news/international/un-security-council-condemns-houthi-attacks-on-saudi-arabia/article71510183.ece",
-      "summary": "The council stressed the importance of upholding international law and freedom of navigation",
-      "published_at": "Fri, 25 Sep 2026 23:07:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m8gzvr/article71510228.ece/alternates/LANDSCAPE_1200/UN_General_Assembly_AI_17214.jpg",
+      "raw_id": "75a18f4f44a31f2236",
+      "title": "Iran suggests deal to reopen Strait of Hormuz in seven days; Trump rejects proposal",
+      "url": "https://www.thehindu.com/news/international/iran-suggests-deal-to-reopen-the-strait-of-hormuz-in-seven-days/article71510004.ece",
+      "summary": "Iran's Foreign Minister Abbas Araghchi, who detailed the proposal in a private gathering on September 24 on the sidelines of the UN General Assembly, suggested that a speedy agreement would help U.S. President Trump ahead of November’s midterm elections",
+      "published_at": "Sun, 27 Sep 2026 07:08:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2ob9c0/article71510110.ece/alternates/LANDSCAPE_1200/PTI05_15_2026_000155B.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1283,113 +1321,45 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
+          "Politics & Elections": 1,
           "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "ba9ce2c8870857fd46",
-      "title": "Watch: Telegram under fire: NTA’s crackdown explained | Above the Fold | 17.06.2026",
-      "url": "https://www.thehindu.com/videos/shows/watch-telegram-under-fire-ntas-crackdown-explained-above-the-fold-17062026/article71114722.ece",
-      "summary": "Telegram challenges its temporary NEET block, fresh details emerge on the U.S.-Iran ceasefire deal, and Messi makes World Cup history with a hat-trick - Top stories of the day.",
-      "published_at": "Fri, 25 Sep 2026 15:20:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/v9gfl7/article71114630.ece/alternates/LANDSCAPE_1200/June%2016%20THUMB%201.png",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "5cb19ea705017db917",
-      "title": "At UNGA, Jaishankar hits back at Pakistan PM on terrorism, Indus Waters Treaty",
-      "url": "https://www.thehindu.com/news/international/arguments-by-serial-practitioner-of-terrorism-will-not-stand-eam-jaishankar-slams-pakistan-at-unga/article71514019.ece",
-      "summary": "EAM Jaishankar told world leaders that a persistent threat to peace has been the scourge of terrorism.",
-      "published_at": "Sun, 27 Sep 2026 01:19:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7ev93e/article71514024.ece/alternates/LANDSCAPE_1200/UN_General_Assembly_India_5582_.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "9ab7f3c74c097730df",
-      "title": "Why is New York City pausing some AI tools in schools? | Explained",
-      "url": "https://www.thehindu.com/news/international/why-is-new-york-city-pausing-some-ai-tools-in-schools-explained/article71431327.ece",
-      "summary": "The Mayor of New York Zohran Mamdani and Schools Chancellor Kamar H. Samuels on September 2 imposed a one-year moratorium on student-facing generative AI for pupils up to eighth grade for the 2026–27 academic year",
-      "published_at": "Fri, 25 Sep 2026 17:16:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cccz31/article71431324.ece/alternates/LANDSCAPE_1200/2026-09-01T002353Z_1057454928_RC2Z9NACQU2O_RTRMADP_3_USA-SHOOTING-NEW-YORK.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4,
-          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics",
-          "Society, Rights & Justice"
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "fb82042c24e24f1e44",
+      "title": "12 dead, dozens missing after vessel capsizes in eastern Congo’s Lake Kivu",
+      "url": "https://www.thehindu.com/news/international/many-dead-and-missing-missing-after-vessel-capsizes-in-eastern-congos-lake-kivu/article71515830.ece",
+      "summary": "The vessel, carrying more than 50 fish traders and their goods, capsized near Idjwi Island in South Kivu province, with about 15 people rescued",
+      "published_at": "Sun, 27 Sep 2026 18:24:57 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
         ]
       }
     }

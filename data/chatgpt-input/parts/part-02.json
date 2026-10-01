@@ -1,397 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-01T15:33:50.290497+00:00",
-  "input_count": 445,
+  "prepared_at": "2026-10-01T21:08:13.917446+00:00",
+  "input_count": 431,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 131,
-    "established_or_other": 69,
+    "independent_social": 116,
+    "established_or_other": 84,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "69f815c2f795387c4a",
-      "title": "Thanks to social media post, Andhra HRD Minister Lokesh helps save eight-year-old boy from child labour",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/thanks-to-viral-social-media-post-andhra-hrd-minister-lokesh-helps-save-eight-year-old-boy-from-child-labour/article71532988.ece",
-      "summary": "In the viral post, the boy, left in the care of his uncle by poverty-stricken parents, is found grazing animals and crying to be taken home; on the Minister’s instructions, authorities are preparing to admit the boy in tribal welfare hostel; Maddipadu police book case against the boy’s uncle",
-      "published_at": "Thu, 01 Oct 2026 20:50:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/x2gqql/article71457264.ece/alternates/LANDSCAPE_1200/PTI09_08_2026_000157B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "77124e23f97861d15c",
-      "title": "Garment workers block Hubballi-Dharwad road over new PF withdrawal rules",
-      "url": "https://www.thehindu.com/news/national/karnataka/garment-workers-block-hubballi-dharwad-road-over-new-pf-withdrawal-rules/article71533494.ece",
-      "summary": "Hundreds of woman employees of Shahi Export Garments at Rayapur blocked the Hubballi-Dharwad road on Thursday, protesting against the waiting periods for withdrawal of provident fund and Employees’ Pension Scheme savings under the new provisions",
-      "published_at": "Thu, 01 Oct 2026 20:43:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ulekbg/article71533867.ece/alternates/LANDSCAPE_1200/2699_1_10_2026_20_25_23_1_02HUBLIGARMENTWORKERS.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "20c42cd737e30e6fd2",
-      "title": "In a first, students will learn about new tax regime in Class 9 NCERT textbook",
-      "url": "https://www.thehindu.com/news/national/in-a-first-students-will-learn-about-new-tax-regime-in-class-9-ncert-textbook/article71532472.ece",
-      "summary": "Calculating tax liability has been introduced as a section under a chapter titled ‘Managing Your Personal Finances’ that also teaches students about investment options like fixed deposits, mutual funds and equity stocks",
-      "published_at": "Thu, 01 Oct 2026 20:13:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/zhq9j2/article71532780.ece/alternates/LANDSCAPE_1200/e3afdb97-c821-4375-8eaf-5c1d1ad44831.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "f2eaea2bf32431a654",
-      "title": "Are industry-academia collaborations practical partnerships or a romantic dream?",
-      "url": "https://www.thehindu.com/education/are-industry-academia-collaborations-practical-partnerships-or-a-romantic-dream/article71483818.ece",
-      "summary": "The future of higher education will depend not merely on increasing collaborations between universities and industry, but on designing models that are realistic, scalable, and aligned with the needs of both",
-      "published_at": "Sat, 26 Sep 2026 14:26:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p8r82g/article71491292.ece/alternates/LANDSCAPE_1200/lead.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "c9fdc85acd63f85b94",
-      "title": "Sacred groves are better at growing future forests in the Western Ghats",
-      "url": "https://india.mongabay.com/2026/09/sacred-groves-are-better-at-growing-future-forests-in-the-western-ghats/",
-      "summary": "In the villages of the Western Ghats, some of the oldest and tallest trees do not grow inside a national park. They grow in sacred groves, small patches of old, mostly untouched forest that local communities have protected for generations, because they believe the trees belong to their deities and ancestors. A new study published […]",
-      "published_at": "21 Sep 2026 11:31:52 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/20201344/Durgawadi_ambe_hatvij_Junnar_pune_2_07-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 5
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "cf2b15345a44b0efec",
-      "title": "New toad species described in northeast mountain tops",
-      "url": "https://india.mongabay.com/short-article/2026/09/new-toad-species-described-in-northeastern-sky-islands/",
-      "summary": "A May 2026 study describes a new species of toad (Duttaphyrnus phawngpui sp. nov.) from Phawngpui National Park, located in southeastern Mizoram along the border with Myanmar. Researchers studied two individuals found at the hilltops. The species was named after Phawngpui, Mizoram’s highest mountain peak at 2,157 metres above sea level. True toads of the […]",
-      "published_at": "30 Sep 2026 14:12:22 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/28102153/Screenshot-2026-09-28-000301-e1790571133998-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bcfe18f777fead52d3",
-      "title": "Five orangutans found in Odisha forest face long road back home to Indonesia",
-      "url": "https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/",
-      "summary": "The five infant orangutans found roaming a woodland in Odisha earlier this month may have been trafficked across several international borders — and now face a long journey home through the different legal and bureaucratic systems of India and Indonesia, conservationists say. “This starts with hunting in the wild, separating babies from their mothers, and […]",
-      "published_at": "24 Sep 2026 10:11:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23144141/Orangutan-Sumatera-di-SRA-7-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
     {
       "raw_id": "2e16d61b762ff7ba7d",
       "title": "India postpones Cambodia tiger reintroduction",
@@ -525,34 +144,36 @@
       }
     },
     {
-      "raw_id": "668d9161055978de21",
-      "title": "स्मार्टवॉच से कैसे अलग है Fitbit Air? बिना स्क्रीन के ऐसे रखेगा हेल्थ का हिसाब",
-      "url": "https://theruralpress.in/tech/google-fitbit-air-india-launch-price-features-screenless-fitness-tracker-vs-smartwatch/",
-      "summary": "Google Fitbit Air भारत में लॉन्च हो गया है। यह कंपनी का स्क्रीनलेस फिटनेस ट्रैकर है, जिसमें कोई डिस्प्ले, नोटिफिकेशन या ऑन-डिवाइस ऐप्स नहीं मिलते। इसके बावजूद यह 24/7 हार्ट रेट, हार्ट रिदम, SpO2, HRV, स्लीप और एक्टिविटी जैसे डेटा को ट्रैक करता है। यह जानकारी कनेक्टेड फोन में Google Health ऐप के जरिए देखी […]",
-      "published_at": "Thu, 01 Oct 2026 12:07:27 +0000",
-      "image_url": "",
+      "raw_id": "21e4f428353e5eabf3",
+      "title": "Legal system fails to keep pace with India’s growing exotic pet industry",
+      "url": "https://india.mongabay.com/2026/10/legal-system-fails-to-keep-pace-with-indias-growing-exotic-pet-industry/",
+      "summary": "This is Part 4 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 explores how the trade enables zoonoses; Part 2 observes how India is emerging as a link in the global primate trade; and […]",
+      "published_at": "01 Oct 2026 11:52:13 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/30223805/African_Grey_Parrot-3-The_regent_hill-yercaud-salem-India-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
+          "Economy & Employment": 5,
           "Environment, Health & Science": 1
         },
         "candidate_categories": [
+          "Economy & Employment",
           "Environment, Health & Science"
         ]
       }
@@ -624,20 +245,20 @@
       }
     },
     {
-      "raw_id": "32aa04cc4a6b98b46c",
-      "title": "Sabarimala halal jaggery row: Kerala High Court tells Devaswom Board to exercise greater care",
-      "url": "https://www.barandbench.com/news/sabarimala-halal-jaggery-row-kerala-high-court-tells-devaswom-board-to-exercise-greater-care",
-      "summary": "The Kerala High Court on Tuesday told the Travancore Devaswom Board (TDB) to exercise greater care while procuring supplies for making Nivedyam/ Prasadam at the Sabarimala temple after a plea raised objections to the use of halal certified jaggery in the preparations [SJR Kumar v The Travancore Devaswom Board & ors]. A Division Bench of Justices Raja Vijayaraghavan V and KV Jayakumar said that the board should have ensured that the supplies for the temple did not carry symbols or declaration that could create concerns over whether the materials complied with the religious customs followed at Sabarimala. \" Ideally, the Travancore Devaswom Board ought to have exercised greater care to ensure that the quantity of jaggery supplied by the manufacturer did not bear symbols, markings or declarations that could give rise to an apprehension of conflict with the religious customs and practices followed at the Temple, \" the Court added. The Court, however, found no issue with the quality of the jaggery as the laboratory reports showed that it was satisfactory and did not contain any substance or element that made it unsuitable for preparing Prasadam. Justice Raja Vijayaraghavan V and Justice ",
-      "published_at": "Thu, 01 Oct 2026 20:16:37 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-11-23/tc484ser/SUPREME-COURT-OF-INDIA-WEB-PAGE-1600x900.jpg",
+      "raw_id": "3e9c13190ed2e33650",
+      "title": "Abandoning exotic pets raises ecological concerns",
+      "url": "https://india.mongabay.com/2026/09/hard-to-resist-harder-to-keep/",
+      "summary": "This is Part 3 of a series on exotic pet trade. The series looks at the health impacts, legal challenges and the ecological consequences of keeping exotic wild animals as pets. Part 1 explores how the trade enables zoonoses, while Part 2 observes how India is emerging as a link in the global primate trade. […]",
+      "published_at": "25 Sep 2026 14:22:57 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23190133/PHOTO-2026-09-11-16-17-19-2-1-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -649,22 +270,57 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
+          "Economy & Employment": 1,
           "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "03bd9d1713aa093e26",
-      "title": "Confidential blood donor records stolen from Kidwai hospital",
-      "url": "https://www.thehindu.com/news/national/karnataka/confidential-blood-donor-records-stolen-from-kidwai-hospital/article71532866.ece",
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "0ac00f04ac095c82ca",
+      "title": "Food and beverages industry maintaining a growth rate of 10% annually",
+      "url": "https://www.thehindu.com/news/cities/chennai/food-and-beverages-industry-maintaining-a-growth-rate-of-10-annually/article71533185.ece",
       "summary": "",
-      "published_at": "Thu, 01 Oct 2026 20:35:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4yhbxy/article71533820.ece/alternates/LANDSCAPE_1200/Many-colorectalG8UFMF9Q7.3.jpg.jpg",
+      "published_at": "Fri, 02 Oct 2026 00:48:08 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -684,91 +340,58 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "2bab6870c3bc3b5c46",
-      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
-      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
-      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
-      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "raw_id": "60e1e17b13bff8d0b8",
+      "title": "APPCB chief directs Nellore industries to develop greenbelt",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/appcb-chief-directs-nellore-industries-to-develop-greenbelt/article71533128.ece",
+      "summary": "",
+      "published_at": "Thu, 01 Oct 2026 23:05:20 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 4
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "e633d0ec8ee953cdc3",
-      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
-      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
-      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
-      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
       "image_url": "",
-      "suggested_category": "",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "5bab12d9a813a63e5c",
-      "title": "Modi, Trump review bilateral ties amid concerns over Russia sanctions",
-      "url": "https://www.thehindu.com/news/national/modi-trump-discuss-bilateral-cooperation-in-trade-defence-energy-critical-technologies/article71529219.ece",
-      "summary": "‘We agreed to maintain close engagement to take our Comprehensive Global Strategic Partnership forward’, said Prime Minister Narendra Modi in a post on X",
-      "published_at": "Wed, 30 Sep 2026 23:49:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gc2mek/article71529252.ece/alternates/LANDSCAPE_1200/AP06_17_2026_000763A.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -783,25 +406,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 12
+          "States & Local": 8,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment",
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "c6fe391a4aa23e59ac",
-      "title": "Nepal PM Shah to make ‘meaningful’ visit to India, date yet to be finalised: Foreign Minister Khanal",
-      "url": "https://www.thehindu.com/news/international/nepal-pm-shah-to-make-meaningful-visit-to-india-date-yet-to-be-finalised-foreign-minister-khanal/article71527885.ece",
-      "summary": "Foreign Minister Shishir Khanal says Nepal received India’s invitation for Prime Minister Balendra Shah’s visit soon after the government’s formation, with preparations under way",
-      "published_at": "Wed, 30 Sep 2026 16:13:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/archsu/article71528028.ece/alternates/LANDSCAPE_1200/20260607047L.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -816,25 +441,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 12
+          "States & Local": 8,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment",
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "f619030a11c138c5f4",
-      "title": "Lack of understanding about cross-border terror concerns impacts bilateral ties: Jaishankar on India-U.S. relations",
-      "url": "https://www.thehindu.com/news/national/lack-of-understanding-about-cross-border-terror-concerns-impacts-bilateral-ties-jaishankar-on-india-us-relations/article71522626.ece",
-      "summary": "External Affairs Minister S. v says terrorism from Pakistan is a primary Indian concern, and its lack of full appreciation by partners affects ties, amid warming Washington-Islamabad relations",
-      "published_at": "Wed, 30 Sep 2026 11:34:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3zl0vx/article71522678.ece/alternates/LANDSCAPE_1200/PTI09_29_2026_000012B.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "20c42cd737e30e6fd2",
+      "title": "In a first, students will learn about new tax regime in Class 9 NCERT textbook",
+      "url": "https://www.thehindu.com/news/national/in-a-first-students-will-learn-about-new-tax-regime-in-class-9-ncert-textbook/article71532472.ece",
+      "summary": "Calculating tax liability has been introduced as a section under a chapter titled ‘Managing Your Personal Finances’ that also teaches students about investment options like fixed deposits, mutual funds and equity stocks",
+      "published_at": "Thu, 01 Oct 2026 20:13:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/zhq9j2/article71532780.ece/alternates/LANDSCAPE_1200/e3afdb97-c821-4375-8eaf-5c1d1ad44831.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -849,25 +476,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 12
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "ef5bfa01c89c66fda4",
-      "title": "Flydubai pilot attack: UAE probes possible 'terror' link",
-      "url": "https://www.thehindu.com/news/international/uae-investigates-possible-terrorist-link-in-flydubai-incident/article71532445.ece",
-      "summary": "The UAE Foreign Ministry affirmed that their judicial authorities have jurisdiction to investigate the incident as the aircraft is registered in the UAE and bears is flags",
-      "published_at": "Thu, 01 Oct 2026 17:13:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2ma9b6/article71532580.ece/alternates/LANDSCAPE_1200/Israel_Mideast_Emergency_Landing_37551.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "f2eaea2bf32431a654",
+      "title": "Are industry-academia collaborations practical partnerships or a romantic dream?",
+      "url": "https://www.thehindu.com/education/are-industry-academia-collaborations-practical-partnerships-or-a-romantic-dream/article71483818.ece",
+      "summary": "The future of higher education will depend not merely on increasing collaborations between universities and industry, but on designing models that are realistic, scalable, and aligned with the needs of both",
+      "published_at": "Sat, 26 Sep 2026 14:26:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p8r82g/article71491292.ece/alternates/LANDSCAPE_1200/lead.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -882,25 +511,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 9
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "b8851232a253add437",
-      "title": "Daily Quiz | On all things coffee",
-      "url": "https://www.thehindu.com/news/international/daily-quiz-on-all-things-coffee/article71531961.ece",
-      "summary": "A quiz on all things coffee on the occasion of International Coffee Day",
-      "published_at": "Thu, 01 Oct 2026 13:30:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6w06t4/article71531967.ece/alternates/LANDSCAPE_1200/2026-08-28T181450Z_2089688162_RC2OXGAYQK10_RTRMADP_3_COFFEE-ROBUSTA-CLIMATE-CHANGE.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "fba277bf415f71fe61",
+      "title": "Why has Andhra Pradesh raised the age limit for govt. jobs, and who is still left out? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/why-has-andhra-pradesh-raised-the-age-limit-for-government-jobs-and-who-is-still-left-out-explained/article71504070.ece",
+      "summary": "Age relief rekindles hopes of job aspirants a year before the relaxation lapses; uniform-service candidates seek a wider window",
+      "published_at": "Thu, 24 Sep 2026 19:24:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qzl197/article71357011.ece/alternates/LANDSCAPE_1200/vjkvg-group_2.JPG",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -915,76 +546,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 8
         },
         "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "029682532da790f006",
-      "title": "Iran receives U.S. feedback on seven-day trust-building plan",
-      "url": "https://www.thehindu.com/news/international/iran-receives-us-feedback-on-seven-day-trust-building-plan/article71527525.ece",
-      "summary": "Iranian Foreign Minister Abbas Araqchi received the feedback via Qatari mediators in Doha, with the sequencing of steps the main sticking point",
-      "published_at": "Wed, 30 Sep 2026 14:59:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2j8xnd/article71527629.ece/alternates/LANDSCAPE_1200/2026-08-01T222845Z_750578348_RC2X2MAL56FJ_RTRMADP_3_IRAN-CRISIS.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "58853d0b7183588f5e",
-      "title": "Israeli settlers attack West Bank village, blocking family's return home",
-      "url": "https://www.thehindu.com/news/international/israeli-settlers-attack-west-bank-village-blocking-familys-return-home/article71525097.ece",
-      "summary": "Two houses belonging ⁠to the Tubasi family in Jalud village were seized by settlers weeks ago, amid a surge of settler violence and land seizures that have drawn international condemnation.",
-      "published_at": "Tue, 29 Sep 2026 21:03:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5pph92/article71525131.ece/alternates/LANDSCAPE_1200/2026-09-29T090520Z_1803415936_RC2WSNAD56IP_RTRMADP_3_ISRAEL-PALESTINIANS-SETTLERS-ATTACK.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -1024,12 +591,12 @@
       }
     },
     {
-      "raw_id": "012b150cb46cca22b1",
-      "title": "Netanyahu says flydubai flight attacker underwent radical indoctrination",
-      "url": "https://www.thehindu.com/news/international/netanyahu-says-flydubai-flight-attacker-underwent-radical-indoctrination/article71533277.ece",
-      "summary": "Video shot inside the plane by Shota Musayev, a dentist who treated the captain, shows the copilot on his knees, with his hands tied behind his back",
-      "published_at": "Thu, 01 Oct 2026 19:28:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m40s4q/article71533334.ece/alternates/LANDSCAPE_1200/2296974324.jpg",
+      "raw_id": "7b5cf3d144b6a9d2c1",
+      "title": "Commerce Minister Piyush Goyal meets U.S. Trade Representative Greer, discusses trade deal",
+      "url": "https://www.thehindu.com/business/Economy/productive-discussion-with-ustr-greer-on-early-conclusion-of-trade-deal-goyal/article71531414.ece",
+      "summary": "While Mr. Goyal did not mention discussing the proposed 100% tariffs the U.S. is looking to levy on India, Commerce Secretary Rajesh Agrawal had earlier said “all trade issues” would be discussed during the Minister’s visit to the U.S.",
+      "published_at": "Thu, 01 Oct 2026 18:02:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/65wg6d/article71531424.ece/alternates/LANDSCAPE_1200/PTI10_01_2026_000019B.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1049,25 +616,60 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
+          "Economy & Employment": 4,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
+          "Economy & Employment",
           "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "a7f83858bacb0c5ae1",
-      "title": "Smit Machchhar: Who is the Indian flydubai pilot hailed a ‘hero’",
-      "url": "https://www.thehindu.com/news/international/smit-machchhar-flydubai-pilot-who-is-he/article71531666.ece",
-      "summary": "Flydubai plane FZ1073, piloted by Smit Machhar and his co-pilot, lost nearly 14,000 feet in less than 30 seconds.",
-      "published_at": "Thu, 01 Oct 2026 19:10:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7s2ki3/article71531541.ece/alternates/LANDSCAPE_1200/2026-10-01T041756Z_780811303_RC22UNAS3SOF_RTRMADP_3_ISRAEL-GULF-FLIGHT-PILOT.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "8f0ac89306cafbf6bb",
+      "title": "How to smartly market films at film festivals? Guneet Monga explains",
+      "url": "https://www.youtube.com/watch?v=qCME46bsPLM",
+      "summary": "",
+      "published_at": "2025-07-08T12:40:35+00:00",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "faye-dsouza-youtube",
+        "name": "Faye D'Souza",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Independent journalist; treated as an established reference source for portfolio selection"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "15cceb77b149b1346c",
+      "title": "No subsidised refill norm for non-eKYC LPG users comes into force",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/no-subsidised-refill-norm-for-non-ekyc-lpg-users-comes-into-force/article71533811.ece",
+      "summary": "Only 5 or 10 kg cylinders at market price for households unwilling or unable to do biometric authorisation, those not responding will not get even those refills",
+      "published_at": "Thu, 01 Oct 2026 21:39:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wlb128/article71534250.ece/alternates/LANDSCAPE_1200/PTI04_17_2026_000313A.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1082,10 +684,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Economy & Employment": 1
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Economy & Employment"
         ]
       }
     },
@@ -1360,6 +962,402 @@
         "candidate_categories": [
           "Protests",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ce5e84ffc7c68f6982",
+      "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
+      "url": "https://www.thehindu.com/videos/watch-maratha-reservation-stir-what-are-its-implications-of-the-obc-backlash/article67576436.ece",
+      "summary": "In this episode of Talking Politics, we discuss the implications of the OBC backlash over the Maratha reservation stir and its impact on the domestic politics of the state.",
+      "published_at": "Wed, 29 Jul 2026 12:07:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/957hu8/article67576418.ece/alternates/LANDSCAPE_1200/Nistula%20Thumb%202.png",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa2d94dc291e5880c2",
+      "title": "The controversy over the proposed Mekedatu water project",
+      "url": "https://www.thehindu.com/news/national/karnataka/the-controversy-over-the-proposed-mekedatu-water-project/article65252631.ece",
+      "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
+      "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "5a537d850bb260c224",
+      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
+      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
+      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
+      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "cf4c55e5970c63b712",
+      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
+      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
+      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
+      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "8c08c5f81b7ce2819f",
+      "title": "World undergoing profound structural changes: Japan Foreign Minister Motegi",
+      "url": "https://www.thehindu.com/news/international/world-undergoing-profound-structural-changes-japan-foreign-minister-motegi/article71533256.ece",
+      "summary": "Japanese Foreign Minister Toshimitsu Motegi warned about the worldwide impact of generative AI and said under these circumstances, responding to disinformation and misinformation have become an “urgent challenge” for the international community",
+      "published_at": "Thu, 01 Oct 2026 23:39:03 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ur3j0b/article71534387.ece/alternates/LANDSCAPE_1200/2026-09-17T061617Z_1851457914_RC2SKNAHS5VY_RTRMADP_3_JAPAN-POLITICS.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 13
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "5bab12d9a813a63e5c",
+      "title": "Modi, Trump review bilateral ties amid concerns over Russia sanctions",
+      "url": "https://www.thehindu.com/news/national/modi-trump-discuss-bilateral-cooperation-in-trade-defence-energy-critical-technologies/article71529219.ece",
+      "summary": "‘We agreed to maintain close engagement to take our Comprehensive Global Strategic Partnership forward’, said Prime Minister Narendra Modi in a post on X",
+      "published_at": "Wed, 30 Sep 2026 23:49:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gc2mek/article71529252.ece/alternates/LANDSCAPE_1200/AP06_17_2026_000763A.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "c6fe391a4aa23e59ac",
+      "title": "Nepal PM Shah to make ‘meaningful’ visit to India, date yet to be finalised: Foreign Minister Khanal",
+      "url": "https://www.thehindu.com/news/international/nepal-pm-shah-to-make-meaningful-visit-to-india-date-yet-to-be-finalised-foreign-minister-khanal/article71527885.ece",
+      "summary": "Foreign Minister Shishir Khanal says Nepal received India’s invitation for Prime Minister Balendra Shah’s visit soon after the government’s formation, with preparations under way",
+      "published_at": "Wed, 30 Sep 2026 16:13:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/archsu/article71528028.ece/alternates/LANDSCAPE_1200/20260607047L.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "f619030a11c138c5f4",
+      "title": "Lack of understanding about cross-border terror concerns impacts bilateral ties: Jaishankar on India-U.S. relations",
+      "url": "https://www.thehindu.com/news/national/lack-of-understanding-about-cross-border-terror-concerns-impacts-bilateral-ties-jaishankar-on-india-us-relations/article71522626.ece",
+      "summary": "External Affairs Minister S. v says terrorism from Pakistan is a primary Indian concern, and its lack of full appreciation by partners affects ties, amid warming Washington-Islamabad relations",
+      "published_at": "Wed, 30 Sep 2026 11:34:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3zl0vx/article71522678.ece/alternates/LANDSCAPE_1200/PTI09_29_2026_000012B.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "ef5bfa01c89c66fda4",
+      "title": "Flydubai pilot attack: UAE probes possible 'terror' link",
+      "url": "https://www.thehindu.com/news/international/uae-investigates-possible-terrorist-link-in-flydubai-incident/article71532445.ece",
+      "summary": "The UAE Foreign Ministry affirmed that their judicial authorities have jurisdiction to investigate the incident as the aircraft is registered in the UAE and bears is flags",
+      "published_at": "Thu, 01 Oct 2026 17:13:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2ma9b6/article71532580.ece/alternates/LANDSCAPE_1200/Israel_Mideast_Emergency_Landing_37551.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "b8851232a253add437",
+      "title": "Daily Quiz | On all things coffee",
+      "url": "https://www.thehindu.com/news/international/daily-quiz-on-all-things-coffee/article71531961.ece",
+      "summary": "A quiz on all things coffee on the occasion of International Coffee Day",
+      "published_at": "Thu, 01 Oct 2026 13:30:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/6w06t4/article71531967.ece/alternates/LANDSCAPE_1200/2026-08-28T181450Z_2089688162_RC2OXGAYQK10_RTRMADP_3_COFFEE-ROBUSTA-CLIMATE-CHANGE.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
         ]
       }
     }

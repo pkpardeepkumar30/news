@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-02T14:50:57.466102+00:00",
-  "input_count": 436,
+  "prepared_at": "2026-10-02T20:52:05.213872+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 122,
-    "established_or_other": 78,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 4,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "003c1e45e2d7fa2730",
+      "title": "Dhruv Bhai Ki Masterclass?! 👀",
+      "url": "https://www.youtube.com/shorts/kE1qVRKo704",
+      "summary": "",
+      "published_at": "2026-09-16T13:07:58+00:00",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": true,
+      "source": {
+        "id": "sarthak-goswami-youtube",
+        "name": "Sarthak Goswami",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent journalist and digital video publisher"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 28,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "4199c6d30aa005e3b9",
       "title": "Old Monk Isn’t Rum?! 😭🥃",
@@ -46,35 +75,6 @@
       "url": "https://www.youtube.com/shorts/2-ruiN2yinQ",
       "summary": "",
       "published_at": "2026-09-16T07:46:02+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 28,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "32c4faf1225bfdcd2b",
-      "title": "Gossip Se ₹21K?! 👀",
-      "url": "https://www.youtube.com/shorts/LUv2e9XCVvc",
-      "summary": "",
-      "published_at": "2026-09-15T13:40:24+00:00",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": true,
@@ -244,6 +244,122 @@
       }
     },
     {
+      "raw_id": "be022f74096d772de9",
+      "title": "Mohla-Manpur: जिला पंचायत अध्यक्ष नम्रता सिंह के खिलाफ अविश्वास प्रस्ताव का नोटिस, भाजपा-कांग्रेस एकजुट",
+      "url": "https://theruralpress.in/chhattisgarh/notice-of-no-confidence-motion-against-zila-panchayat-president-namrata-singh/",
+      "summary": "no-confidence motion against ZP President: प्रदेश के गृहमंत्री विजय शर्मा के प्रभार जिले वनांचल मोहला-मानपुर जिले की जिला पंचायत अध्यक्ष नम्रता सिंह को अपने ही पार्टी के सदस्यों के बागी तेवर का सामना करना पड़ रहा है। नम्रता सिंह की कार्यप्रणाली से खफा भाजपा समर्पित सदस्यों ने बगावती मुहिम में कांग्रेस सदस्यों को भी साथ […]",
+      "published_at": "Fri, 02 Oct 2026 16:36:50 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "92b58183ec5056f26c",
+      "title": "Raipur: मंदिर जमीन की बिक्री अवैध, प्रशासन ने नामांतरण किया निरस्त, 2.5 करोड़ की जमीन बेची थी 21 लाख में",
+      "url": "https://theruralpress.in/scam/raipur-mandir-jameen-bikri-avaidh-namantaran-nirast-fir/",
+      "summary": "Sale of temple land declared illegal: राजधानी के पुरानी बस्ती स्थित श्री बिरंचीनारायण मंदिर एवं नरसिंहनाथ मंदिर ट्रस्ट की जमीन के विक्रय से जुड़े मामले में पंजीयक, सार्वजनिक न्यास एवं एसडीएम ने बड़ा आदेश दिया है। उन्होंने कलेक्टर की अनुमति के बिना जमीन की बिक्री को अवैध ठहराया है, और नामांतरण निरस्त करने के आदेश […]",
+      "published_at": "Fri, 02 Oct 2026 16:01:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e11d502f8298fe205b",
+      "title": "KORBA: स्वर्ग में पीएम आवास बांटने वाले कोरबा जनपद के 5 कर्मचारी बर्खास्त, सचिव समेत 6 के खिलाफ FIR, बचा लिया गया सरपंच को",
+      "url": "https://theruralpress.in/scam/korba-pm-awas-scam-gram-panchayat-tilkeja-5-employees-dismissed/",
+      "summary": "कोरबा। सांसद आदर्श ग्राम तिलकेजा में मृतकों और अपात्रों को पीएम आवास स्वीकृत करके पहली किश्त की राशि का गबन करने वाले 6 कर्मचारियों की सेवाएं समाप्त कर दी गई हैं। वहीं इस मामले में उरगा पुलिस थाने में सचिव समेत 6 दोषियों के खिलाफ एफआईआर दर्ज करा दिया गया है। हालांकि इस मामले में […]",
+      "published_at": "Fri, 02 Oct 2026 15:28:29 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6db8a8654cdb10da6d",
+      "title": "GST Collection September 2026: सितंबर में सरकार की बल्ले-बल्ले, GST कलेक्शन 2.03 लाख करोड़ के पार,देखें टॉप पर कौन",
+      "url": "https://theruralpress.in/business/gst-collection-september-2026-2-03-lakh-crore/",
+      "summary": "नई दिल्ली। फेस्टिव सीजन से पहले देश के GST कलेक्शन के आंकड़े सरकार के लिए राहत देने वाले रहे हैं। सितंबर 2026 में देश का सकल GST कलेक्शन 2,03,521 करोड़ रुपए रहा। पिछले साल सितंबर के मुकाबले इसमें 14.7 प्रतिशत की बढ़ोतरी दर्ज की गई है। वित्त वर्ष 2026-27 की पहली छमाही यानी अप्रैल से […]",
+      "published_at": "Fri, 02 Oct 2026 15:13:59 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "7e1ea0817fac0d69f9",
       "title": "Flydubai Flight: पायलट स्मित मच्छर पर कुल्हाड़ी से हुआ था हमला? जानिए प्लेन में क्यों रखा जाता है Crash Axe, सुरक्षा में चूक या जरूरी",
       "url": "https://theruralpress.in/national/flydubai-pilot-smit-machchhar-crash-axe-attack-why-aircraft-carries-axe/",
@@ -336,122 +452,6 @@
       "url": "https://theruralpress.in/chhattisgarh/deepak-bais-attack-chhattisgarh-government-bastar-flood-congress-politics/",
       "summary": "Bastar Flood Crisis: छत्तीसगढ़ का पूरा बस्तर संभाग लगातार दूसरे वर्ष भी भीषण बाढ़ की चपेट में आ गया है, जिससे आम जनजीवन पूरी तरह से ठप हो गया है। इस आपदा के कारण लोगों के मकान, गृहस्थी का सामान, पशुधन और लाखों एकड़ में फैली तैयार फसलें पूरी तरह से बर्बाद हो चुकी हैं। […]",
       "published_at": "Fri, 02 Oct 2026 12:29:52 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a7e699a1035e913a8f",
-      "title": "कभी था ‘जन अदालतों’ का डर, अब ग्राम सभा में ग्रामीणों की आवाज, जानें क्या बदला बस्तर में",
-      "url": "https://theruralpress.in/chhattisgarh/naxal-affected-bastar-kachchapal-gram-sabha-village-development-plan/",
-      "summary": "Naxal Affected Bastar: नारायणपुर के ओरछा विकासखंड की ग्राम पंचायत कच्चापाल में गांधी जयंती पर आयोजित विशेष ग्राम सभा में बड़ी संख्या में ग्रामीण जुटे। पेड़ की छांव में हुई इस ग्राम सभा में ग्रामीणों ने गांव की जरूरतों और विकास कार्यों पर चर्चा की। प्रदेशभर में हुई विशेष ग्राम सभाओं के जरिए विकसित ग्राम […]",
-      "published_at": "Fri, 02 Oct 2026 12:11:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6bcfa30f7f489d54f0",
-      "title": "Puja Special Train: त्योहारी भीड़ को देखते हुए रेलवे ने चलाई स्पेशल ट्रेन, जानें समय-सारिणी और स्टॉपेज",
-      "url": "https://theruralpress.in/chhattisgarh/ltt-santragachi-puja-special-train-2026-irctc-indian-railways-chhattisgarh/",
-      "summary": "Puja Special Train:त्योहारी सीजन के दौरान ट्रेनों में लगातार बढ़ने वाली यात्रियों की भारी भीड़ और कंफर्म टिकट की समस्या को ध्यान में रखते हुए रेलवे प्रशासन ने एक महत्वपूर्ण निर्णय लिया है। यात्रियों को सुरक्षित और सुगम यात्रा का विकल्प उपलब्ध कराने के लिए लोकमान्य तिलक टर्मिनस (LTT) और सांतरागाछी के मध्य पूजा स्पेशल […]",
-      "published_at": "Fri, 02 Oct 2026 12:08:55 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "728e6f683e083c1d06",
-      "title": "Bastar Flood: किसानों के मुआवजे से लेकर जोरा नाला तक, किरण देव ने राज्य और केंद्र सरकार से की ये मांग",
-      "url": "https://theruralpress.in/chhattisgarh/bastar-flood-kiran-deo-letter-relief-package-48-hour-warning/",
-      "summary": "Bastar Flood Relief Package: बस्तर संभाग में आई भीषण बाढ़ के बाद भाजपा प्रदेश अध्यक्ष किरण देव ने केंद्र और राज्य सरकार से विशेष राहत पैकेज के साथ दीर्घकालिक बाढ़ प्रबंधन की मांग की है। उन्होंने केंद्रीय जल शक्ति मंत्री एवं राष्ट्रीय आपदा प्रबंधन प्राधिकरण के अध्यक्ष सीआर पाटिल, मुख्यमंत्री विष्णुदेव साय और राजस्व एवं […]",
-      "published_at": "Fri, 02 Oct 2026 12:02:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "44e02d49a6ab9f8d3f",
-      "title": "किसानों के लिए जरुरी की खबर! धान कटाई के लिए कौन सी मशीन सबसे काम की? जानें पूरी जानकारी",
-      "url": "https://theruralpress.in/agriculture/paddy-harvester-machine-for-small-farmers-types-capacity-price-buying-guide-farming-tips/",
-      "summary": "Agriculture Tips: धान देश की प्रमुख फसलों में शामिल है। वहीं छत्तीसगढ़ की बात करें तो यहां आधी से ज्यादा आबादी धान की फसल पर ही निर्भर है। छत्तीसगढ़ में दिवाली त्यौहार के बाद से धान की कटाई शुरू हो जाती है। जानकार बताते है कि समय पर कटाई किसान की पूरी खेती की लागत […]",
-      "published_at": "Fri, 02 Oct 2026 11:40:11 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

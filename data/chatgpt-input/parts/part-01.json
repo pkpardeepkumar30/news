@@ -1,51 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-04T19:45:34.326710+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-10-04T23:18:23.035757+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "5ca275ae2ef916f18e",
-      "title": "NLU Tripura students flag safety, governance lapses; demand Registrar from outside State",
-      "url": "https://www.barandbench.com/Law-School/nlu-tripura-students-flag-safety-governance-lapses-demand-registrar-from-outside-state",
-      "summary": "Students of National Law University, Tripura (NLUT) have accused the University administration of safety and governance lapses. On September 14, students wrote anonymously to the President of Consortium of National Law Universities, with copies to the Chancellor, the Vice-Chancellor (VC) the Bar Council of India (BCI), the University Grants Commission (UGC) and Tripura's Higher Education department seeking a reply within 10 days. VC Prof (Dr) Yogesh Pratap Singh's response called several of the students' concerns \"routine\" issues faced by every university. Yogesh NLU Tripura VC The letter alleged that the in-charge Registrar, Dr Jayanta Dhar , then an Assistant Professor, had been appointed without any disclosed statutory basis. It further said that financial disclosures fell short of Right to Information (RTI) Act requirements and that faculty on the roster had not been on campus in four years. The students claimed that venomous snakes had been found in the Girls Hostel, with no remedial action taken thereafter. They also claimed that answer scripts were not being anonymized and evaluated answer scripts were being withheld from students. The letter also mentioned that no grievance",
-      "published_at": "Tue, 15 Sep 2026 20:09:43 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-15/6x8lndgx/ViewPoint-MIddle-Single-Image-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 3,
-          "Society, Rights & Justice": 6
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
     {
       "raw_id": "efa1b327df94ac9251",
       "title": "After UCC, West Bengal will have laws against ‘love jihad’, ‘land jihad’, religious conversion: Suvendu Adhikari",
@@ -255,6 +220,41 @@
           "Governance & Administration",
           "Society, Rights & Justice",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "33867f11e855647859",
+      "title": "U.S. Air Force removes all bombers from British air base targeted by a suspected terror attack",
+      "url": "https://www.thehindu.com/news/international/us-air-force-removes-all-bombers-from-british-air-base-targeted-by-a-suspected-terror-attack/article71544899.ece",
+      "summary": "The U.S. Air Force has brought home its bombers stationed at a U.S.-run military air base in England used to strike Iran following an investigation into a planned terror attack at the RAF Fairford base",
+      "published_at": "Mon, 05 Oct 2026 04:00:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/kfm4e8/article71545019.ece/alternates/LANDSCAPE_1200/2026-09-29T121509Z_481150564_RC2ZSNAGWLWC_RTRMADP_3_BRITAIN-USA-FAIRFORD.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
         ]
       }
     },
@@ -601,39 +601,6 @@
       }
     },
     {
-      "raw_id": "b643621f40ef9bd64d",
-      "title": "B.P. Yatnal: I am convinced that Muslims are bogus voters",
-      "url": "https://www.thehindu.com/news/national/karnataka/bp-yatnal-i-am-convinced-that-muslims-are-bogus-voters/article71543948.ece",
-      "summary": "",
-      "published_at": "Sun, 04 Oct 2026 20:56:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/412kin/article71544489.ece/alternates/LANDSCAPE_1200/25bg_belagavi_KG06FBRHQG.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
       "raw_id": "e409896708ec8a2ed1",
       "title": "Data | How election fund was spent during 2021 State polls",
       "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
@@ -770,6 +737,41 @@
         "candidate_categories": [
           "Politics & Elections",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "4fd961791c399a42bf",
+      "title": "Pro-Ukraine governing coalition wins 35% in Latvian election",
+      "url": "https://www.thehindu.com/news/international/latvia-election-2026-pro-ukraine-governing-coalition-win/article71543639.ece",
+      "summary": "Latvian lawmakers plan to start negotiations to form a new government after a parliamentary election",
+      "published_at": "Sun, 04 Oct 2026 18:04:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ny5fjv/article71543662.ece/alternates/LANDSCAPE_1200/2026-10-03T092519Z_1802573636_RC2KVNAQBDL2_RTRMADP_3_LATVIA-ELECTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
@@ -1196,176 +1198,178 @@
       }
     },
     {
-      "raw_id": "f6ca7b3eb56a3d1699",
-      "title": "TGT-PGT भर्ती: 19 दिन बाद आमरण अनशन खत्म, पुरानी नियमावली पर छात्रों का आंदोलन जारी",
-      "url": "https://khabarlahariya.org/tgt-pgt-recruitment-hunger-strike-ends-after-19-days-students-agitation-over-old-recruitment-rules-continues/",
-      "summary": "उत्तर प्रदेश में TGT-PGT भर्ती पुरानी नियमावली और पुराने परीक्षा पैटर्न से कराने की मांग को लेकर प्रयागराज में चल रहा था। प्रदर्शन के दौरान 19 दिन का आमरण अनशन…",
-      "published_at": "Thu, 24 Sep 2026 11:04:09 +0000",
-      "image_url": "",
+      "raw_id": "cf2b15345a44b0efec",
+      "title": "New toad species described in northeast mountain tops",
+      "url": "https://india.mongabay.com/short-article/2026/09/new-toad-species-described-in-northeastern-sky-islands/",
+      "summary": "A May 2026 study describes a new species of toad (Duttaphyrnus phawngpui sp. nov.) from Phawngpui National Park, located in southeastern Mizoram along the border with Myanmar. Researchers studied two individuals found at the hilltops. The species was named after Phawngpui, Mizoram’s highest mountain peak at 2,157 metres above sea level. True toads of the […]",
+      "published_at": "30 Sep 2026 14:12:22 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/28102153/Screenshot-2026-09-28-000301-e1790571133998-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 5
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "925fbe0cc053b237db",
-      "title": "Asian Games 2026 India Medals: अलविदा आइची-नागोया, अब दोहा में मिलेंगे, एशियन गेम्स में भारत का रहा दूसरा सर्वश्रेष्ठ प्रदर्शन",
-      "url": "https://theruralpress.in/sports/asian-games-2026-closing-ceremony-india-wins-85-medals-4th-position/",
-      "summary": "आइची-नागोया/नई दिल्ली। जापान के शहर आइची-नागोया में 19 सितंबर 2026 को शुरू हुए 20वें एशियाई खेलों का अब 4 अक्तूबर 2026 को आधिकारिक समापन हो गया है। एशियाई ओलंपिक परिषद (ओसीए) के अध्यक्ष शेख जुआन बिन हमद अल थानी ने इन खेलों के समापन की औपचारिक घोषणा की। वर्ष 2030 में होने वाले एशियाई खेलों […]",
-      "published_at": "Sun, 04 Oct 2026 15:46:27 +0000",
-      "image_url": "",
+      "raw_id": "bcfe18f777fead52d3",
+      "title": "Five orangutans found in Odisha forest face long road back home to Indonesia",
+      "url": "https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/",
+      "summary": "The five infant orangutans found roaming a woodland in Odisha earlier this month may have been trafficked across several international borders — and now face a long journey home through the different legal and bureaucratic systems of India and Indonesia, conservationists say. “This starts with hunting in the wild, separating babies from their mothers, and […]",
+      "published_at": "24 Sep 2026 10:11:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23144141/Orangutan-Sumatera-di-SRA-7-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 1
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "c6d88ca652a080a070",
-      "title": "CEC ज्ञानेश कुमार के इस्तीफे की मांग पर देशभर में प्रदर्शन, जंतर मंतर पर AISA अध्यक्ष नेहा बोरा डिटेन और पटना में कांग्रेस कार्यकर्ताओं पर चला वॉटर कैनन",
-      "url": "https://khabarlahariya.org/nationwide-protests-demanding-the-resignation-of-cec-gyanesh-kumar-aisa-president-neha-bora-detained-at-jantar-mantar-and-water-cannons-used-on-congress-workers-in-patna/",
-      "summary": "मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार (Gyanesh Kumar) के खिलाफ विपक्ष का विरोध अब सड़क से संसद तक पहुंच गया है। शुक्रवार 25 सितम्बर 2026 को दिल्ली के जंतर-मंतर पर…",
-      "published_at": "Sat, 26 Sep 2026 05:35:08 +0000",
-      "image_url": "",
+      "raw_id": "2e16d61b762ff7ba7d",
+      "title": "India postpones Cambodia tiger reintroduction",
+      "url": "https://india.mongabay.com/short-article/2026/09/india-postpones-cambodia-tiger-reintroduction/",
+      "summary": "India and Cambodia have postponed a plan to reintroduce Bengal tigers into Cambodia, moving the target from 2025 to 2028 after a review found that the available prey base in the proposed release landscape remains too low to support a viable tiger population. The delay comes months after Mongabay reported concerns among conservation scientists about […]",
+      "published_at": "24 Sep 2026 13:03:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/24115921/3646793728_c8315f30a0_o-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "5387e575111dee5782",
-      "title": "Chitrakoot News: 25 अक्टूबर को होगा बड़ा प्रदर्शन, लखनऊ में पुलिस बर्बरता के बाद बोलीं मीरा भारती",
-      "url": "https://khabarlahariya.org/chitrakoot-news-major-protest-to-be-held-on-october-25-meera-bharti-speaks-out-following-police-brutality-in-lucknow/",
-      "summary": "लखनऊ में टीचर सहायक पद पर आरक्षण न मिलने पर प्रदर्शन करती हुई जिला पंचायत सदस्य मीरा भारती और उनके साथियों के साथ पुलिस ने बर्बरता दिखाई, जिसके बाद उन्हें…",
-      "published_at": "Thu, 24 Sep 2026 08:39:07 +0000",
-      "image_url": "",
+      "raw_id": "bd69bda0e6588b8d5d",
+      "title": "Odours offer new clues in monitoring big cats",
+      "url": "https://india.mongabay.com/2026/09/odours-offer-new-clues-in-monitoring-big-cats/",
+      "summary": "Camera trapping and genetic sampling are big cat monitoring techniques that can estimate population size, density and identify individuals. But they often provide limited information about an animal’s age, sex, reproductive status or health. A new study now suggests that the animal’s urine and scat could reveal more than its presence in a forest. Researchers […]",
+      "published_at": "24 Sep 2026 10:17:35 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23180257/Tiger_spray_marking._DavidRaju_1-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "54363caa00dc04d270",
-      "title": "केन-बेतवा लिंक परियोजना: मुआवजे की मांग को लेकर ग्रामीणों का आंदोलन जारी",
-      "url": "https://khabarlahariya.org/ken-betwa-link-project-villagers-agitation-over-compensation-demands-continues/",
-      "summary": "पन्ना जिले के अजयगढ़ ब्लॉक के बनहरी कला क्षेत्र के मुढालया गांव में मुआवजे की मांग को लेकर ग्रामीणों का आंदोलन लगातार जारी है। झगरहा, बालूपुर, विश्रामगंज, मुढालया, कुंवरपुर और…",
-      "published_at": "Sat, 19 Sep 2026 08:00:12 +0000",
-      "image_url": "",
+      "raw_id": "fab6a88378177fd876",
+      "title": "The ghost of the mountains",
+      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
+      "published_at": "23 Sep 2026 13:41:58 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "09163b510882ed4330",
-      "title": "Meghalaya HC Bar split deepens over AG row",
-      "url": "https://eastmojo.com/meghalaya/2026/10/02/meghalaya-hc-bar-split-deepens-over-ag-row/",
-      "summary": "File picture of protests against Meghalaya AG Amit Kumar \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/10/IMG_3001.jpeg?fit=780%2C418&ssl=1\" /> Shillong: The dispute over Meghalaya Advocate General Amit Kumar has widened into an internal rift within the High Court of Meghalaya Bar Association, with its president disowning a court boycott call and questioning the secretary’s unilateral actions on the issue. In a letter to Bar Association Secretary Kishore Ch Gautam on October 1, President KS […] The post Meghalaya HC Bar split deepens over AG row appeared first on EastMojo .",
-      "published_at": "Fri, 02 Oct 2026 08:16:52 +0000",
+      "raw_id": "f80802d718ac14fac0",
+      "title": "When the community becomes the destination: Rethinking tourism in Nagaland",
+      "url": "https://eastmojo.com/news/2026/10/04/when-the-community-becomes-the-destination-rethinking-tourism-in-nagaland/",
+      "summary": "When we speak about tourism in Nagaland, our minds often go to mountains, forests, festivals and beautiful villages. We speak of Dzukou Valley, the Hornbill Festival, Khonoma, Saramati Mountain, and many places that have slowly found their way onto the travel map. But perhaps there is another way of looking at tourism in Nagaland. What […] The post When the community becomes the destination: Rethinking tourism in Nagaland appeared first on EastMojo .",
+      "published_at": "Sun, 04 Oct 2026 08:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1386,10 +1390,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     }

@@ -1,440 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-04T19:45:34.326710+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-10-04T23:18:23.035757+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "5fb97b29f24e2289f6",
-      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
-      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
-      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
-      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "637918d08d6ce5ee99",
-      "title": "AMU protests: Students block four entry gates, proctor says ‘outsider’ detained from hostel",
-      "url": "https://www.thehindu.com/news/national/amu-protests-students-block-four-entry-gates-proctor-says-outsider-detained-from-hostel/article71543198.ece",
-      "summary": "Tensions escalated at Aligarh Muslim University after protesters blocked all four entry gates amid an ongoing agitation demanding students’ union elections",
-      "published_at": "Sun, 04 Oct 2026 15:35:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tg6rq2/article71543229.ece/alternates/LANDSCAPE_1200/TH25-Mayank-SchGFVFBSER0.3.jpg.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 6,
-          "Society, Rights & Justice": 13
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "1d2bed329ba07a8f01",
-      "title": "Why are French students protesting | Explained",
-      "url": "https://www.thehindu.com/news/international/france-student-protests-over-school-conditions-and-funding/article71536574.ece",
-      "summary": "When did the protest begin? What are students protesting for? How has the government responded to the protest?",
-      "published_at": "Sat, 03 Oct 2026 12:15:02 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m64ezl/article71536618.ece/alternates/LANDSCAPE_1200/2026-10-02T094747Z_446302160_RC2XUNAG2VEE_RTRMADP_3_FRANCE-PROTEST.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 32,
-        "observed_report_count": 2,
-        "distinct_source_count": 2,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "2 distinct source desks report a similar event",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "Society, Rights & Justice": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "Why are students protesting at IIT-Bombay? | Explained",
-          "url": "https://www.thehindu.com/news/national/maharashtra/why-are-students-protesting-at-iit-bombay-explained/article71513061.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "873da5047c06218f93",
-      "title": "500 detained in Delhi on Day 3 of protests seeking CEC’s exit; Thackerays lead Mumbai march",
-      "url": "https://www.thehindu.com/news/national/500-detained-in-delhi-on-day-3-of-protests-seeking-cecs-exit-thackerays-lead-mumbai-march/article71544629.ece",
-      "summary": "Delhi Police stop protesters as they try to march towards heavily barricaded Jantar Mantar; in Mumbai, Uddhav Thackeray describes CEC as BJP’s 'weapon', Raj Thackeray calls for use of ballot papers instead of EVMs",
-      "published_at": "Sun, 04 Oct 2026 23:38:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/aj0xka/article71544722.ece/alternates/LANDSCAPE_1200/STUDENT%20PROTEST%20AGAINST%20GYANESH%20CEC%2031.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 5
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "a002ecd90975ae2545",
-      "title": "Hundreds, including Neha, woman journalist who alleged sexual harassment by cop, detained as Delhi protest demanding Gyanesh Kumar’s removal enters third day",
-      "url": "https://www.thehindu.com/news/cities/Delhi/aisa-neha-detained-jantar-mantar-protest-cec-removal/article71543780.ece",
-      "summary": "AISA-backed march against alleged SIR irregularities stopped at Shangri-La intersection; protesters allege manhandling as police make mass detentions",
-      "published_at": "Sun, 04 Oct 2026 22:03:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p5seen/article71543737.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-04%20at%2018.10.32.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "ff939dc4a0e7de3ae6",
-      "title": "Iran executes man linked to anti-government protests",
-      "url": "https://www.thehindu.com/news/international/iran-executes-man-linked-to-anti-government-protests/article71541461.ece",
-      "summary": "Siavash Jamshidi was accused of targeting security personnel during mass demonstrations that peaked in January in which thousands of people were killed.",
-      "published_at": "Sat, 03 Oct 2026 21:09:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gsjpi5/article71541468.ece/alternates/LANDSCAPE_1200/Iran_War_61611.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "cf2b15345a44b0efec",
-      "title": "New toad species described in northeast mountain tops",
-      "url": "https://india.mongabay.com/short-article/2026/09/new-toad-species-described-in-northeastern-sky-islands/",
-      "summary": "A May 2026 study describes a new species of toad (Duttaphyrnus phawngpui sp. nov.) from Phawngpui National Park, located in southeastern Mizoram along the border with Myanmar. Researchers studied two individuals found at the hilltops. The species was named after Phawngpui, Mizoram’s highest mountain peak at 2,157 metres above sea level. True toads of the […]",
-      "published_at": "30 Sep 2026 14:12:22 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/28102153/Screenshot-2026-09-28-000301-e1790571133998-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bcfe18f777fead52d3",
-      "title": "Five orangutans found in Odisha forest face long road back home to Indonesia",
-      "url": "https://india.mongabay.com/2026/09/five-orangutans-found-in-odisha-forest-face-long-road-back-home-to-indonesia/",
-      "summary": "The five infant orangutans found roaming a woodland in Odisha earlier this month may have been trafficked across several international borders — and now face a long journey home through the different legal and bureaucratic systems of India and Indonesia, conservationists say. “This starts with hunting in the wild, separating babies from their mothers, and […]",
-      "published_at": "24 Sep 2026 10:11:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23144141/Orangutan-Sumatera-di-SRA-7-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "2e16d61b762ff7ba7d",
-      "title": "India postpones Cambodia tiger reintroduction",
-      "url": "https://india.mongabay.com/short-article/2026/09/india-postpones-cambodia-tiger-reintroduction/",
-      "summary": "India and Cambodia have postponed a plan to reintroduce Bengal tigers into Cambodia, moving the target from 2025 to 2028 after a review found that the available prey base in the proposed release landscape remains too low to support a viable tiger population. The delay comes months after Mongabay reported concerns among conservation scientists about […]",
-      "published_at": "24 Sep 2026 13:03:37 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/24115921/3646793728_c8315f30a0_o-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bd69bda0e6588b8d5d",
-      "title": "Odours offer new clues in monitoring big cats",
-      "url": "https://india.mongabay.com/2026/09/odours-offer-new-clues-in-monitoring-big-cats/",
-      "summary": "Camera trapping and genetic sampling are big cat monitoring techniques that can estimate population size, density and identify individuals. But they often provide limited information about an animal’s age, sex, reproductive status or health. A new study now suggests that the animal’s urine and scat could reveal more than its presence in a forest. Researchers […]",
-      "published_at": "24 Sep 2026 10:17:35 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23180257/Tiger_spray_marking._DavidRaju_1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "fab6a88378177fd876",
-      "title": "The ghost of the mountains",
-      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
-      "published_at": "23 Sep 2026 13:41:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "f80802d718ac14fac0",
-      "title": "When the community becomes the destination: Rethinking tourism in Nagaland",
-      "url": "https://eastmojo.com/news/2026/10/04/when-the-community-becomes-the-destination-rethinking-tourism-in-nagaland/",
-      "summary": "When we speak about tourism in Nagaland, our minds often go to mountains, forests, festivals and beautiful villages. We speak of Dzukou Valley, the Hornbill Festival, Khonoma, Saramati Mountain, and many places that have slowly found their way onto the travel map. But perhaps there is another way of looking at tourism in Nagaland. What […] The post When the community becomes the destination: Rethinking tourism in Nagaland appeared first on EastMojo .",
-      "published_at": "Sun, 04 Oct 2026 08:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
     {
       "raw_id": "d1b6c7c30a9131ee5a",
       "title": "Unclear records leave villages in limbo over irrigation project displacement",
@@ -632,6 +208,426 @@
         },
         "candidate_categories": [
           "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "f6ca7b3eb56a3d1699",
+      "title": "TGT-PGT भर्ती: 19 दिन बाद आमरण अनशन खत्म, पुरानी नियमावली पर छात्रों का आंदोलन जारी",
+      "url": "https://khabarlahariya.org/tgt-pgt-recruitment-hunger-strike-ends-after-19-days-students-agitation-over-old-recruitment-rules-continues/",
+      "summary": "उत्तर प्रदेश में TGT-PGT भर्ती पुरानी नियमावली और पुराने परीक्षा पैटर्न से कराने की मांग को लेकर प्रयागराज में चल रहा था। प्रदर्शन के दौरान 19 दिन का आमरण अनशन…",
+      "published_at": "Thu, 24 Sep 2026 11:04:09 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "925fbe0cc053b237db",
+      "title": "Asian Games 2026 India Medals: अलविदा आइची-नागोया, अब दोहा में मिलेंगे, एशियन गेम्स में भारत का रहा दूसरा सर्वश्रेष्ठ प्रदर्शन",
+      "url": "https://theruralpress.in/sports/asian-games-2026-closing-ceremony-india-wins-85-medals-4th-position/",
+      "summary": "आइची-नागोया/नई दिल्ली। जापान के शहर आइची-नागोया में 19 सितंबर 2026 को शुरू हुए 20वें एशियाई खेलों का अब 4 अक्तूबर 2026 को आधिकारिक समापन हो गया है। एशियाई ओलंपिक परिषद (ओसीए) के अध्यक्ष शेख जुआन बिन हमद अल थानी ने इन खेलों के समापन की औपचारिक घोषणा की। वर्ष 2030 में होने वाले एशियाई खेलों […]",
+      "published_at": "Sun, 04 Oct 2026 15:46:27 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "c6d88ca652a080a070",
+      "title": "CEC ज्ञानेश कुमार के इस्तीफे की मांग पर देशभर में प्रदर्शन, जंतर मंतर पर AISA अध्यक्ष नेहा बोरा डिटेन और पटना में कांग्रेस कार्यकर्ताओं पर चला वॉटर कैनन",
+      "url": "https://khabarlahariya.org/nationwide-protests-demanding-the-resignation-of-cec-gyanesh-kumar-aisa-president-neha-bora-detained-at-jantar-mantar-and-water-cannons-used-on-congress-workers-in-patna/",
+      "summary": "मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार (Gyanesh Kumar) के खिलाफ विपक्ष का विरोध अब सड़क से संसद तक पहुंच गया है। शुक्रवार 25 सितम्बर 2026 को दिल्ली के जंतर-मंतर पर…",
+      "published_at": "Sat, 26 Sep 2026 05:35:08 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "5387e575111dee5782",
+      "title": "Chitrakoot News: 25 अक्टूबर को होगा बड़ा प्रदर्शन, लखनऊ में पुलिस बर्बरता के बाद बोलीं मीरा भारती",
+      "url": "https://khabarlahariya.org/chitrakoot-news-major-protest-to-be-held-on-october-25-meera-bharti-speaks-out-following-police-brutality-in-lucknow/",
+      "summary": "लखनऊ में टीचर सहायक पद पर आरक्षण न मिलने पर प्रदर्शन करती हुई जिला पंचायत सदस्य मीरा भारती और उनके साथियों के साथ पुलिस ने बर्बरता दिखाई, जिसके बाद उन्हें…",
+      "published_at": "Thu, 24 Sep 2026 08:39:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "54363caa00dc04d270",
+      "title": "केन-बेतवा लिंक परियोजना: मुआवजे की मांग को लेकर ग्रामीणों का आंदोलन जारी",
+      "url": "https://khabarlahariya.org/ken-betwa-link-project-villagers-agitation-over-compensation-demands-continues/",
+      "summary": "पन्ना जिले के अजयगढ़ ब्लॉक के बनहरी कला क्षेत्र के मुढालया गांव में मुआवजे की मांग को लेकर ग्रामीणों का आंदोलन लगातार जारी है। झगरहा, बालूपुर, विश्रामगंज, मुढालया, कुंवरपुर और…",
+      "published_at": "Sat, 19 Sep 2026 08:00:12 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "09163b510882ed4330",
+      "title": "Meghalaya HC Bar split deepens over AG row",
+      "url": "https://eastmojo.com/meghalaya/2026/10/02/meghalaya-hc-bar-split-deepens-over-ag-row/",
+      "summary": "File picture of protests against Meghalaya AG Amit Kumar \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/10/IMG_3001.jpeg?fit=780%2C418&ssl=1\" /> Shillong: The dispute over Meghalaya Advocate General Amit Kumar has widened into an internal rift within the High Court of Meghalaya Bar Association, with its president disowning a court boycott call and questioning the secretary’s unilateral actions on the issue. In a letter to Bar Association Secretary Kishore Ch Gautam on October 1, President KS […] The post Meghalaya HC Bar split deepens over AG row appeared first on EastMojo .",
+      "published_at": "Fri, 02 Oct 2026 08:16:52 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "5fb97b29f24e2289f6",
+      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
+      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
+      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
+      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "9be8c0113977cc6a66",
+      "title": "Fadnavis fires ‘Ghajini’ barb at Thackeray cousins over protest march",
+      "url": "https://www.thehindu.com/news/national/maharashtra/fadnavis-fires-ghajini-barb-at-thackeray-cousins-over-protest-march/article71544836.ece",
+      "summary": "In a dig, he said one should try to sound believable while speaking lies",
+      "published_at": "Mon, 05 Oct 2026 00:31:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bga57s/article71544844.ece/alternates/LANDSCAPE_1200/20260702193L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "637918d08d6ce5ee99",
+      "title": "AMU protests: Students block four entry gates, proctor says ‘outsider’ detained from hostel",
+      "url": "https://www.thehindu.com/news/national/amu-protests-students-block-four-entry-gates-proctor-says-outsider-detained-from-hostel/article71543198.ece",
+      "summary": "Tensions escalated at Aligarh Muslim University after protesters blocked all four entry gates amid an ongoing agitation demanding students’ union elections",
+      "published_at": "Sun, 04 Oct 2026 15:35:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tg6rq2/article71543229.ece/alternates/LANDSCAPE_1200/TH25-Mayank-SchGFVFBSER0.3.jpg.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 6,
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "1d2bed329ba07a8f01",
+      "title": "Why are French students protesting | Explained",
+      "url": "https://www.thehindu.com/news/international/france-student-protests-over-school-conditions-and-funding/article71536574.ece",
+      "summary": "When did the protest begin? What are students protesting for? How has the government responded to the protest?",
+      "published_at": "Sat, 03 Oct 2026 12:15:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/m64ezl/article71536618.ece/alternates/LANDSCAPE_1200/2026-10-02T094747Z_446302160_RC2XUNAG2VEE_RTRMADP_3_FRANCE-PROTEST.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Society, Rights & Justice": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Why are students protesting at IIT-Bombay? | Explained",
+          "url": "https://www.thehindu.com/news/national/maharashtra/why-are-students-protesting-at-iit-bombay-explained/article71513061.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "873da5047c06218f93",
+      "title": "500 detained in Delhi on Day 3 of protests seeking CEC’s exit; Thackerays lead Mumbai march",
+      "url": "https://www.thehindu.com/news/national/500-detained-in-delhi-on-day-3-of-protests-seeking-cecs-exit-thackerays-lead-mumbai-march/article71544629.ece",
+      "summary": "Delhi Police stop protesters as they try to march towards heavily barricaded Jantar Mantar; in Mumbai, Uddhav Thackeray describes CEC as BJP’s 'weapon', Raj Thackeray calls for use of ballot papers instead of EVMs",
+      "published_at": "Sun, 04 Oct 2026 23:38:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/aj0xka/article71544722.ece/alternates/LANDSCAPE_1200/STUDENT%20PROTEST%20AGAINST%20GYANESH%20CEC%2031.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "a002ecd90975ae2545",
+      "title": "Hundreds, including Neha, woman journalist who alleged sexual harassment by cop, detained as Delhi protest demanding Gyanesh Kumar’s removal enters third day",
+      "url": "https://www.thehindu.com/news/cities/Delhi/aisa-neha-detained-jantar-mantar-protest-cec-removal/article71543780.ece",
+      "summary": "AISA-backed march against alleged SIR irregularities stopped at Shangri-La intersection; protesters allege manhandling as police make mass detentions",
+      "published_at": "Sun, 04 Oct 2026 22:03:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p5seen/article71543737.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-04%20at%2018.10.32.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Protests"
         ]
       }
     },
@@ -1042,20 +1038,86 @@
       }
     },
     {
-      "raw_id": "2bab6870c3bc3b5c46",
-      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
-      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
-      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
-      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "raw_id": "997d73f3e9688e1a97",
+      "title": "Manipur CM lauds local clubs’ role in sports development",
+      "url": "https://eastmojo.com/manipur/2026/10/01/manipur-cm-lauds-local-clubs-role-in-sports-development/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Thursday highlighted the role of local clubs in nurturing young talent and promoting sports across the state. Speaking at the Golden Jubilee celebration of the Chingamathak College Road Youths’ Development Association (CRYDA) at Ima Chinga Lairembi Meetin Shang in Chingamathak, Imphal, Khemchand said local clubs operating across […] The post Manipur CM lauds local clubs’ role in sports development appeared first on EastMojo .",
+      "published_at": "Thu, 01 Oct 2026 12:00:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 4
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "c23a4266bb73781497",
+      "title": "‘We know who is behind it, let police find out’: Sikkim rapper’s manager on assault",
+      "url": "https://eastmojo.com/sikkim/2026/10/01/we-know-who-is-behind-it-let-police-find-out-sikkim-rappers-manager-on-assault/",
+      "summary": "Gangtok: Sikkimese rapper Ugen Namgyal Bhutia, popularly known as UNB, and his manager Deep Dhar were allegedly attacked by a group of men in Arunachal Pradesh’s Lower Dibang Valley on September 21, with Dhar saying the team has an idea about who may be behind the incident but has chosen not to publicly identify anyone. […] The post ‘We know who is behind it, let police find out’: Sikkim rapper’s manager on assault appeared first on EastMojo .",
+      "published_at": "Thu, 01 Oct 2026 16:51:23 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "be276c1fa5d1a3a236",
+      "title": "Community-based mangrove monitoring should compliment satellite data [Commentary]",
+      "url": "https://india.mongabay.com/2026/09/community-based-mangrove-monitoring-should-compliment-satellite-data-commentary/",
+      "summary": "Early one morning at Kudikadu, a small fishing hamlet on the Uppanar river in Cuddalore district, a forester and their team members walked the mangrove nursery before the tide turned. They carried no satellite receiver or drones; only notebooks and pencils. They counted saplings, noted which ones survived the last spring tide and which did […]",
+      "published_at": "22 Sep 2026 10:56:45 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/22101938/02_Kudikadu_UM-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1067,58 +1129,25 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "International & Geopolitics": 4
+          "Sports": 1
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "e633d0ec8ee953cdc3",
-      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
-      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
-      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
-      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "raw_id": "f4ef7981c003ab89f7",
+      "title": "Asian Games 2026 highlights: Indian men's hockey team defends gold, qualifies for LA Olympics",
+      "url": "https://www.thehindu.com/sport/asian-games-2026-live-updates-on-october-3-2026/article71539094.ece",
+      "summary": "Indian men's cricket team defeated Pakistan by nineteen runs to win gold",
+      "published_at": "Sat, 03 Oct 2026 18:54:54 +0530",
       "image_url": "",
-      "suggested_category": "",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a071685cba45aca440",
-      "title": "Ukraine ready to consider India’s ceasefire proposal: FM Sybiha",
-      "url": "https://www.thehindu.com/news/international/ukraine-ready-to-consider-indias-ceasefire-proposal-fm-sybiha/article71541373.ece",
-      "summary": "‘We have four proposals; the broadest one is India’s proposal; we are ready for an energy and Black Sea ceasefire, but only in this combination,’ said Ukrainian Foreign Minister Andrii Sybiha",
-      "published_at": "Sat, 03 Oct 2026 20:54:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4xneqz/article71541381.ece/alternates/LANDSCAPE_1200/2026-09-23T165448Z_33047402_RC24PNAUOWUQ_RTRMADP_3_UKRAINE-CRISIS-UN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1133,25 +1162,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 13
+          "Sports": 17
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "ffc911e1d8deb01a5e",
-      "title": "Iran's Foreign Minister tells U.S. there is no military solution to their conflict",
-      "url": "https://www.thehindu.com/news/international/irans-foreign-minister-tells-us-there-is-no-military-solution-to-their-conflict/article71543286.ece",
-      "summary": "\"If our enemies again choose the path of military confrontation, our response will be stronger than before, and we will defend ourselves with even more force,\" Mr. Araghchi said at a gathering of foreign ambassadors",
-      "published_at": "Sun, 04 Oct 2026 17:22:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pivcnv/article71543314.ece/alternates/LANDSCAPE_1200/International.EGKHFJQPTN.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "1becdc7bfc8c3a068e",
+      "title": "U-23 cricket | Andre Siddarth backs Tamil Nadu team to extend its dominance",
+      "url": "https://www.thehindu.com/sport/cricket/andre-siddarth-backs-tamil-nadu-team-to-extend-its-dominance/article71544745.ece",
+      "summary": "",
+      "published_at": "Sun, 04 Oct 2026 23:13:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/919vub/article71544752.ece/alternates/LANDSCAPE_1200/_DSC3991.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1166,25 +1195,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 12
+          "Sports": 16
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "1bfad17bd86a6583cc",
-      "title": "Israeli strike kills five, including four women, in Gaza, health officials say",
-      "url": "https://www.thehindu.com/news/international/israeli-strike-kills-five-including-four-women-in-gaza-health-officials-say/article71541408.ece",
-      "summary": "Israel, which says Hamas has been rearming and launching attacks in violation of the ceasefire, ‌has stepped up strikes on the group in recent weeks",
-      "published_at": "Sat, 03 Oct 2026 20:55:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/iw8lg3/article71541417.ece/alternates/LANDSCAPE_1200/2026-10-03T055915Z_570113879_RC2HVNAFPGFA_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "9344537be6de668e11",
+      "title": "Odisha government announces ₹11 lakh each for women's hockey team players for Asian Games win",
+      "url": "https://www.thehindu.com/news/national/odisha/odisha-government-announces-11-lakh-each-for-womens-hockey-team-players-for-asian-games-win/article71539866.ece",
+      "summary": "The Indian women's hockey team had last won the gold medal at the Asian Games in 1982",
+      "published_at": "Sat, 03 Oct 2026 13:01:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mn5yf5/article71539872.ece/alternates/LANDSCAPE_1200/joyafter44.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1199,27 +1228,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 9
+          "Sports": 16
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "fed0071226fe8b0351",
-      "title": "At least 5,700 killed, wounded in Haiti gang crisis this year: UN",
-      "url": "https://www.thehindu.com/news/international/at-least-5700-killed-wounded-in-haiti-gang-crisis-this-year-un/article71538621.ece",
-      "summary": "Addressing the UN Human Rights Council, Mr. Turk warned that gangs continue to expand despite the deployment of an international security force intended to help Haitian authorities restore order.",
-      "published_at": "Sat, 03 Oct 2026 04:07:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/w992jh/article71538622.ece/alternates/LANDSCAPE_1200/2026-09-29T174335Z_1383141441_RC25BNAS7IYK_RTRMADP_3_HAITI-VIOLENCE-UN.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "ba28f6c9822e48960e",
+      "title": "Ireland soccer players again wear black armbands and refuse handshakes with Israel team",
+      "url": "https://www.thehindu.com/sport/football/ireland-soccer-players-again-wear-black-armbands-and-refuse-handshakes-with-israel-team/article71544858.ece",
+      "summary": "Ireland players have again worn black armbands and bowed their heads during the Israeli national anthem before the teams’ second Nations League soccer match",
+      "published_at": "Mon, 05 Oct 2026 01:22:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/kwo8pg/article71544871.ece/alternates/LANDSCAPE_1200/2026-10-04T192854Z_1194488684_UP1EMA41I44J6_RTRMADP_3_SOCCER-UEFANATIONS-IRL-ISR.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1234,27 +1261,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 2,
-          "International & Geopolitics": 9
+          "Sports": 14
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "7ae8f81be660e04ca6",
-      "title": "Co-pilot accused of trying to hijack flydubai plane likely acted alone: Reports",
-      "url": "https://www.thehindu.com/news/international/co-pilot-accused-of-trying-to-hijack-flydubai-plane-likely-acted-alone-reports/article71544657.ece",
-      "summary": "The co-pilot has been identified by multiple media outlets as Hamam al-Hammami, an Omani national, although his identity has not been officially confirmed",
-      "published_at": "Sun, 04 Oct 2026 22:16:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/l528kx/article71544685.ece/alternates/LANDSCAPE_1200/TH01-Vijaita-PMG56GK0FMQ.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "21e181ae81671768db",
+      "title": "Asian Games 2026 review: Aichi-Nagoya should be the springboard for Indian athletes",
+      "url": "https://www.thehindu.com/sport/other-sports/asian-games-2026-review-aichi-nagoya-should-be-the-springboard-for-indian-athletes/article71543714.ece",
+      "summary": "Teen archer Kumkum, the women’s hockey team, markswoman Neeru and wrestlers Aman and Sujeet stood out with their exploits; the biggest areas of concern would be the below-par performance of the shuttlers and shooters",
+      "published_at": "Sun, 04 Oct 2026 18:11:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rfqp9d/article71543683.ece/alternates/LANDSCAPE_1200/2026-10-02T035531Z_1719090402_UP1EMA20AWHQK_RTRMADP_3_GAMES-ASIA.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1269,25 +1294,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Sports": 14
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "2d9c62f4b377a8f9f6",
-      "title": "Ethiopia controls Tigray capital as regional rivals meet in Egypt",
-      "url": "https://www.thehindu.com/news/international/ethiopia-controls-tigray-capital-as-regional-rivals-meet-in-egypt/article71544478.ece",
-      "summary": "The presidents of Egypt, Somalia, Sudan and Eritrea — all of whom have difficult relations with Ethiopia — were set to meet in the Egyptian city of Alamein on Sunday to discuss the conflict.",
-      "published_at": "Sun, 04 Oct 2026 20:58:27 +0530",
+      "raw_id": "13ca943e736565c098",
+      "title": "U-19 cricket | India keen to get the job done in second game against Australia",
+      "url": "https://www.thehindu.com/sport/cricket/india-keen-to-get-the-job-done-in-second-game-against-australia/article71544383.ece",
+      "summary": "",
+      "published_at": "Sun, 04 Oct 2026 20:30:36 +0530",
       "image_url": "",
-      "suggested_category": "International & Geopolitics",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1302,25 +1327,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Sports": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "582f50cbce46b12516",
-      "title": "China says 'divergent opinions' contributed to lack of G20 consensus",
-      "url": "https://www.thehindu.com/news/international/china-says-divergent-opinions-contributed-to-lack-of-g20-consensus/article71544457.ece",
-      "summary": "The draft called on all countries to move to eliminate structural excess capacity in their economies, among other actions",
-      "published_at": "Sun, 04 Oct 2026 20:50:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bah920/article71544465.ece/alternates/LANDSCAPE_1200/2025-11-13T205117Z_893673833_RC2MVHA2J102_RTRMADP_3_G20-SUMMIT.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "1ce33175a816f0c614",
+      "title": "Panchkula TT tournament retains National-ranking status",
+      "url": "https://www.thehindu.com/sport/other-sports/panchkula-tt-tournament-retains-national-ranking-status/article71543307.ece",
+      "summary": "The ad hoc committee strips the ranking status of the remaining two proposed tournaments at Phagwara and Dehradun",
+      "published_at": "Sun, 04 Oct 2026 18:24:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tool06/article71543777.ece/alternates/LANDSCAPE_1200/IMG_MANJIT_DUA_TABLE_TEN_2_1_DKAJK56E.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1335,43 +1360,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 8
+          "Sports": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "39ec419949b5115713",
-      "title": "Yemen presidency announces military drive to retake all Houthi territory",
-      "url": "https://www.thehindu.com/news/international/yemen-presidency-announces-military-drive-to-retake-all-houthi-territory/article71544431.ece",
-      "summary": "I announce today the start of military operations to retake the remaining territories of the republic and extend the authority of the state and its institutions across the entire national territory, says Rashad al-Alimi, the head of Yemen's presidential council",
-      "published_at": "Sun, 04 Oct 2026 20:45:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mjxx71/article71544437.ece/alternates/LANDSCAPE_1200/2026-10-04T135416Z_2043846249_RC2DWNAEDWQD_RTRMADP_3_IRAN-CRISIS-YEMEN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     }

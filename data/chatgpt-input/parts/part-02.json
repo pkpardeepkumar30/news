@@ -1,49 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-06T18:30:17.683676+00:00",
-  "input_count": 434,
+  "prepared_at": "2026-10-06T23:56:08.108369+00:00",
+  "input_count": 429,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 120,
-    "established_or_other": 80,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "c6d88ca652a080a070",
-      "title": "CEC ज्ञानेश कुमार के इस्तीफे की मांग पर देशभर में प्रदर्शन, जंतर मंतर पर AISA अध्यक्ष नेहा बोरा डिटेन और पटना में कांग्रेस कार्यकर्ताओं पर चला वॉटर कैनन",
-      "url": "https://khabarlahariya.org/nationwide-protests-demanding-the-resignation-of-cec-gyanesh-kumar-aisa-president-neha-bora-detained-at-jantar-mantar-and-water-cannons-used-on-congress-workers-in-patna/",
-      "summary": "मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार (Gyanesh Kumar) के खिलाफ विपक्ष का विरोध अब सड़क से संसद तक पहुंच गया है। शुक्रवार 25 सितम्बर 2026 को दिल्ली के जंतर-मंतर पर…",
-      "published_at": "Sat, 26 Sep 2026 05:35:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
     {
       "raw_id": "5387e575111dee5782",
       "title": "Chitrakoot News: 25 अक्टूबर को होगा बड़ा प्रदर्शन, लखनऊ में पुलिस बर्बरता के बाद बोलीं मीरा भारती",
@@ -298,6 +265,43 @@
         "candidate_categories": [
           "Politics & Elections",
           "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "d819ecb8caac03c6fe",
+      "title": "Teenager loses hand picking up grenade in France school protests",
+      "url": "https://www.thehindu.com/news/international/teenager-loses-hand-picking-up-grenade-in-france-school-protests/article71549735.ece",
+      "summary": "France has been shaken by a wave of demonstrations by teenage students at high schools, or lycees, since late September demanding better classroom conditions",
+      "published_at": "Tue, 06 Oct 2026 05:32:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/52jicx/article71549741.ece/alternates/LANDSCAPE_1200/2026-10-05T130926Z_2088726062_RC2YWNAAMQOU_RTRMADP_3_FRANCE-PROTEST.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Society, Rights & Justice": 6,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },

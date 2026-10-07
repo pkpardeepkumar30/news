@@ -1,38 +1,71 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-07T06:10:09.354422+00:00",
-  "input_count": 425,
+  "prepared_at": "2026-10-07T15:40:28.633551+00:00",
+  "input_count": 448,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 125,
-    "established_or_other": 75,
+    "independent_social": 133,
+    "established_or_other": 67,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "ec43b6c12a75b731d5",
-      "title": "GPS study tracks elephant movement across Assam, highlights key habitats",
-      "url": "https://eastmojo.com/assam/2026/10/06/gps-study-tracks-elephant-movement-across-assam-highlights-key-habitats/",
-      "summary": "Guwahati: A five-year GPS tracking study by the Assam Forest Department and WWF-India has shed light on the movement patterns and habitat use of wild elephants across forests, tea plantations, agricultural areas and riverine landscapes in Assam. Between 2021 and 2026, researchers fitted GPS collars on four female-led elephant herds and one solitary male in […] The post GPS study tracks elephant movement across Assam, highlights key habitats appeared first on EastMojo .",
-      "published_at": "Tue, 06 Oct 2026 15:24:35 +0000",
-      "image_url": "",
+      "raw_id": "cf2b15345a44b0efec",
+      "title": "New toad species described in northeast mountain tops",
+      "url": "https://india.mongabay.com/short-article/2026/09/new-toad-species-described-in-northeastern-sky-islands/",
+      "summary": "A May 2026 study describes a new species of toad (Duttaphyrnus phawngpui sp. nov.) from Phawngpui National Park, located in southeastern Mizoram along the border with Myanmar. Researchers studied two individuals found at the hilltops. The species was named after Phawngpui, Mizoram’s highest mountain peak at 2,157 metres above sea level. True toads of the […]",
+      "published_at": "30 Sep 2026 14:12:22 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/28102153/Screenshot-2026-09-28-000301-e1790571133998-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "dfadbe4b2233a8dbf5",
+      "title": "The giants with one horn",
+      "url": "https://india.mongabay.com/short-article/2026/10/the-giants-with-one-horn/",
+      "summary": "Conservation efforts have re-established the greater one-horned rhinoceros in Assam’s Manas National Park. The species had once been wiped out from the park but was brought back through wild-to-wild translocation and rhino rehabilitation programmes. A recent study of the re-established population offers encouraging signs of adaptation in its restored habitat. The greater one-horned rhino (Rhinoceros […]",
+      "published_at": "07 Oct 2026 15:25:42 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/06021738/harrier-1-768x512.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -84,39 +117,6 @@
       "summary": "Camera trapping and genetic sampling are big cat monitoring techniques that can estimate population size, density and identify individuals. But they often provide limited information about an animal’s age, sex, reproductive status or health. A new study now suggests that the animal’s urine and scat could reveal more than its presence in a forest. Researchers […]",
       "published_at": "24 Sep 2026 10:17:35 +0000",
       "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23180257/Tiger_spray_marking._DavidRaju_1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "fab6a88378177fd876",
-      "title": "The ghost of the mountains",
-      "url": "https://india.mongabay.com/short-article/2026/09/the-ghost-of-the-mountains/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Ladakh is planning to introduce guided wildlife safaris along snow-leopard trails. Conservationists warn that opening fragile high-altitude wilderness routes to tourists could disturb the species and other wildlife. The union territory is home to the country’s largest contiguous snow leopard habitat. The snow leopard (Panthera […]",
-      "published_at": "23 Sep 2026 13:41:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/23004525/snow-leopard-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -276,6 +276,39 @@
       }
     },
     {
+      "raw_id": "0ff9a7425a7ed1d696",
+      "title": "India Alliance Protest: राहुल-प्रियंका हिरासत में, दिल्ली में ‘इंडिया’ गठबंधन का उग्र प्रदर्शन",
+      "url": "https://theruralpress.in/national/india-alliance-protest-rahul-gandhi-priyanka-gandhi-delhi-police-mahua-moitra/",
+      "summary": "India Alliance Protest : राजधानी दिल्ली में बुधवार को राजनीतिक सरगर्मी अपने चरम पर पहुंच गई। चुनाव आयोग की ओर से हाल ही में निकाले गए विपक्षी मार्च के अगले दिन ‘इंडिया’ (INDIA) गठबंधन के सांसदों और नेताओं ने एक बार फिर जोरदार प्रदर्शन किया। इस प्रदर्शन के दौरान दिल्ली की सड़कों पर भारी पुलिस […]",
+      "published_at": "Wed, 07 Oct 2026 13:45:51 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
       "raw_id": "ff670323808532a09e",
       "title": "Protests over dam heat up as crackdown on activists continues",
       "url": "https://india.mongabay.com/2026/10/protests-over-dam-heat-up-as-crackdown-on-activists-continues/",
@@ -309,20 +342,20 @@
       }
     },
     {
-      "raw_id": "78357ee043fec8d99a",
-      "title": "Balod: एसिड अटैक के विरोध में Gen Z का हंगामेदार प्रदर्शन, पुलिस ने आरोपियों का कराया मुंडन, कोर्ट ले जाते समय छात्रों ने फेंकी स्याही",
-      "url": "https://theruralpress.in/chhattisgarh/balod-acid-attack-gen-z-protest-accused-tonsured-ink-thrown-court/",
-      "summary": "Gen Z protest against acid attack: जिले में 22 वर्षीय युवती पर हुए एसिड अटैक के मामले में गिरफ्तार दोनों आरोपियों को पुलिस ने कड़ी सुरक्षा के बीच न्यायालय में पेश किया। आरोपियों को दल्लीराजहरा चौक से न्यायालय तक पैदल ले जाया गया। इस दौरान बड़ी संख्या में Gen Z छात्र-छात्राएं और स्थानीय लोग मौके […]",
-      "published_at": "Wed, 07 Oct 2026 03:34:29 +0000",
+      "raw_id": "2dac556236d40fb37e",
+      "title": "Meghalaya lawyers intensify protest against Advocate General",
+      "url": "https://eastmojo.com/meghalaya/2026/10/07/meghalaya-lawyers-intensify-protest-against-advocate-general/",
+      "summary": "Shillong: The demand for the removal of Meghalaya Advocate General Amit Kumar intensified on Wednesday as the Meghalaya High Court Bar Association and Shillong Bar Association staged a protest, with lawyers from several district bar associations joining the agitation. The peaceful march began at the Woh Kiang Nangbah Monument and passed through Barik, Malki and […] The post Meghalaya lawyers intensify protest against Advocate General appeared first on EastMojo .",
+      "published_at": "Wed, 07 Oct 2026 09:50:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
+        "id": "eastmojo",
+        "name": "EastMojo",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -330,6 +363,76 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "6ed93fc97f5103e5ad",
+      "title": "Students have right to agitate if something is hanky-panky: Bombay High Court on agitation over MPSC exam",
+      "url": "https://www.barandbench.com/news/students-have-right-to-agitate-if-something-is-hanky-panky-bombay-high-court-on-agitation-over-mpsc-exam",
+      "summary": "The State government is duty-bound to ensure that public recruitment examinations are conducted impartially and without malpractices, the Bombay High Court observed on Wednesday while hearing a plea regarding ongoing student agitations in Pune [Amit Supekar & Anr v. State of Maharashtra & Ors.] A division bench comprising Chief Justice Mahesh Chandra Tripathi and Justice Advait Sethna made these observations while hearing a write petition filed over the ongoing agitations in Pune regarding the Maharashtra Public Service Commission (MPSC) drug inspector recruitment examinations. “The State has to give an assurance that whatever examinations are conducted, is impartial, fair and there should be no malpractices. There should be sincere effort in restoring trust,” the bench said. Chief Justice Mahesh Chandra Tripathi and Justice Advait Sethna The Court highlighted the responsibility of State authorities to ensure recruitment happens. “The onus is on the State to ensure recruitment happens and it should be streamlined.” The bench also said that students have a right to agitate if they are aggrieved. “If students are agitated, there are some things that need to be considered. In case the",
+      "published_at": "Wed, 07 Oct 2026 15:33:54 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-03/fb375361-a988-400d-8160-0be33a5d2844/Bombay_HC.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "States & Local": 1,
+          "Society, Rights & Justice": 5
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3cd47cf5f866c9f0e0",
+      "title": "Delhi court grants regular bail to Swatantra Bhardwaj in CJP protest assault case",
+      "url": "https://www.barandbench.com/news/litigation/delhi-court-grants-regular-bail-to-swatantra-bhardwaj-in-cjp-protest-assault-case",
+      "summary": "A Delhi court on Tuesday granted right-wing influencer Swatantra Bhardwaj regular bail in a case related to the assault of the father of a student-activist during the Cockroach Janta Party's (CJP) protests at Jantar Mantar. Additional Sessions Judge (ASJ) Saurabh Pratap Singh Laler of the Patiala House Court passed the order. The judge had earlier granted him interim bail for three weeks . The Court had then said that it would observe his conduct before considering his plea for regular bail. Bhardwaj was arrested from Uttar Pradesh on September 5 for allegedly assaulting the father of a Dalit student-activist during the CJP protests at Jantar Mantar in July. He was booked for offences of assault and provisions under the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act [SC/ST Act]. A separate FIR invoking provisions of the Protection of Children from Sexual Offences Act (POCSO Act) has also been registered against him. In the first FIR, Bhardwaj was initially booked only for the offences under Sections 115(2) (causing simple hurt) and 126(2) (wrongful restraint) of the Bharatiya Nyaya Sanhita (BNS). He later took to social media and claimed that he had cracked th",
+      "published_at": "Tue, 06 Oct 2026 12:01:27 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-09-05/32rizb4c/WhatsApp-Image-2026-09-05-at-4.15.54-PM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -441,41 +544,6 @@
       }
     },
     {
-      "raw_id": "6b07c58e2978018846",
-      "title": "Inside Chautari, the Jangpura cafe where Sikkim’s food and politics share a table",
-      "url": "https://eastmojo.com/news/2026/10/06/inside-chautari-the-jangpura-cafe-where-sikkims-food-and-politics-share-a-table/",
-      "summary": "Some of my favourite conversations have happened over a plate of momos at the Chautari cafe. I remember coming back from a protest site with my friends, and the conversations that followed. Somewhere between the first plate and the last sip of Sikkimese green tea, conversations about politics, home, justice, and the future stretched on […] The post Inside Chautari, the Jangpura cafe where Sikkim’s food and politics share a table appeared first on EastMojo .",
-      "published_at": "Tue, 06 Oct 2026 07:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "5fb97b29f24e2289f6",
       "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
       "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
@@ -504,76 +572,6 @@
           "Protests": 1
         },
         "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "5a187c9759a678165e",
-      "title": "CEC row LIVE: CJP’s Saurav Das to submit ‘intimation letter’ to Delhi Police ahead of October 10 Jantar Mantar protest; security tightened",
-      "url": "https://www.thehindu.com/news/national/cec-row-gyanesh-kumar-india-bloc-march-election-commission-sir-delhi-police-cjp-jantar-mantar-protest-live-updates-october-7-2026/article71554188.ece",
-      "summary": "The move comes hours after Delhi Police detained around 260 INDIA bloc protesters, including 10 MPs, during a demonstration demanding Chief Election Commissioner Gyanesh Kumar’s resignation",
-      "published_at": "Wed, 07 Oct 2026 11:10:44 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 6
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "75e90f87c680300422",
-      "title": "Not a single traitor will be spared: Rahul after his forcible removal from sit-in, detention",
-      "url": "https://www.thehindu.com/news/national/opposition-march-to-election-commission-of-india-demanding-gyanesh-kumars-resignation-on-october-6-2026/article71550384.ece",
-      "summary": "Congress chief Mallikarjun Kharge said Mr. Gandhi was peacefully sitting on a dharna, demanding a meeting with the Election Commission (EC) and asserted that registering a peaceful protest is his constitutional right",
-      "published_at": "Tue, 06 Oct 2026 23:47:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/csb70h/article71550389.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-06%20at%2012.43.53%20PM.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 6
-        },
-        "candidate_categories": [
-          "Politics & Elections",
           "Protests"
         ]
       }
@@ -665,17 +663,17 @@
       ]
     },
     {
-      "raw_id": "d819ecb8caac03c6fe",
-      "title": "Teenager loses hand picking up grenade in France school protests",
-      "url": "https://www.thehindu.com/news/international/teenager-loses-hand-picking-up-grenade-in-france-school-protests/article71549735.ece",
-      "summary": "France has been shaken by a wave of demonstrations by teenage students at high schools, or lycees, since late September demanding better classroom conditions",
-      "published_at": "Tue, 06 Oct 2026 05:32:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/52jicx/article71549741.ece/alternates/LANDSCAPE_1200/2026-10-05T130926Z_2088726062_RC2YWNAAMQOU_RTRMADP_3_FRANCE-PROTEST.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "f02860dab84c092866",
+      "title": "Textile merchants stage protest against UPI charge move in Kochi",
+      "url": "https://www.thehindu.com/news/national/kerala/textile-merchants-stage-protest-against-upi-charge-move-in-kochi/article71556183.ece",
+      "summary": "KTGA members protest reported proposal to impose a 0.4% merchant discount rate on UPI transactions from October 15",
+      "published_at": "Wed, 07 Oct 2026 21:01:17 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -690,80 +688,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 5,
-          "Society, Rights & Justice": 6,
-          "International & Geopolitics": 8
+          "Protests": 4
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "abc26b45ae459b5523",
-      "title": "Manipur Govt working tirelessly to facilitate return of IDPs: CM Khemchand",
-      "url": "https://eastmojo.com/manipur/2026/10/05/manipur-govt-working-tirelessly-to-facilitate-return-of-idps-cm-khemchand/",
-      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh said that since the formation of the new Government on 4th February, 2026, the State Government has been working tirelessly to facilitate the return of IDPs to their respective homes. The Government has held several rounds of talks with representatives of various civil society organisations (CSOs) to bridge […] The post Manipur Govt working tirelessly to facilitate return of IDPs: CM Khemchand appeared first on EastMojo .",
-      "published_at": "Mon, 05 Oct 2026 14:17:20 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "b8a887ba403f5a14c2",
-      "title": "Bilaspur: कोर्ट ने साफ किया-जनपद पंचायत कर्मचारी सरकारी सेवक नहीं, उन्हें पेंशन का हक भी नहीं, एक साथ 21 याचिकाएं खारिज कीं",
-      "url": "https://theruralpress.in/chhattisgarh/bilaspur-high-court-janpad-panchayat-employee-not-government-servant-no-pension/",
-      "summary": "Janpad Panchayat employees are not government servants: छत्तीसगढ़ हाईकोर्ट ने जनपद पंचायतों से रिटायर कर्मचारियों को राज्य सरकार के कर्मचारियों के बराबर पेंशन देने की मांग खारिज कर दी है। जस्टिस बिभू दत्ता गुरु ने 21 से ज्यादा याचिकाओं पर एक साथ फैसला सुनाते हुए साफ किया कि जनपद पंचायत के कर्मचारी राज्य सरकार के […]",
-      "published_at": "Wed, 07 Oct 2026 02:51:24 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "States & Local"
+          "Protests"
         ]
       }
     },
@@ -1110,99 +1038,99 @@
       }
     },
     {
-      "raw_id": "2bab6870c3bc3b5c46",
-      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
-      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
-      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
-      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "fa2d94dc291e5880c2",
+      "title": "The controversy over the proposed Mekedatu water project",
+      "url": "https://www.thehindu.com/news/national/karnataka/the-controversy-over-the-proposed-mekedatu-water-project/article65252631.ece",
+      "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
+      "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 4
+          "States & Local": 8
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "e633d0ec8ee953cdc3",
-      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
-      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
-      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
-      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "5a537d850bb260c224",
+      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
+      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
+      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
+      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 4
+          "States & Local": 8
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "00b70c720972d2de0a",
-      "title": "Trilegal, TT&A, Hogan Lovells Cadwalader act on Dosti Realty proposed IPO",
-      "url": "https://www.barandbench.com/law-firms/dealstreet/trilegal-tta-hogan-lovells-cadwalader-act-on-dosti-realty-proposed-ipo",
-      "summary": "Dosti Realty Limited has filed confidential draft red herring prospectus for an initial public offering of its equity shares of face value of INR 5 each comprising a fresh issue and an offer for sale. Trilegal is advising Dosti Realty on this IPO. The transaction is being led by Albin Thomas (Partner), with support from Arsh Sinha (Senior Associate) and Associates Snehal Kaushal, Anand Kumar, Mohak Agarwal and Rishab Taori. Albin George Thomas TT&A is advising JM Financial Limited, Motilal Oswal Investment Advisors Limited and ITI Capital Limited, the book running lead managers acting on this IPO. The transaction team consists of Abhinav Kumar (Partner), Shubham Sancheti (Managing Associate), Abhishek Iyer (Senior Associate), Associates Daniyal Khan, Basil Gupta and Mihika Ambikar. Abhinav Kumar Hogan Lovells Cadwalader is serving as the international legal counsel to the BRLMs. The transaction is being led by Biswajit Chatterjee (Head of the India Practice and Dubai Office Managing Partner), with support from Suchisubhra Sarkar (Senior Associate) and Purva Mishra (Associate). Biswajit Chatterjee Dosti Realty is Mumbai-based real estate developer with over four decades of experienc",
-      "published_at": "Wed, 07 Oct 2026 09:23:13 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-03/0h5jvvxm/1.jpg",
-      "suggested_category": "",
+      "raw_id": "26427d08e5df0859fc",
+      "title": "Messi retires from international football as Argentina defeats Benin in friendly match",
+      "url": "https://www.thehindu.com/sport/football/messi-retires-from-international-football-as-argentina-defeat-benin-in-friendly-match/article71554139.ece",
+      "summary": "The 39-year-old, widely regarded as the greatest player in football history, had announced his decision to retire in August following Argentina’s World Cup defeat to Spain",
+      "published_at": "Wed, 07 Oct 2026 11:40:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3ocd4p/article71554145.ece/alternates/LANDSCAPE_1200/2026-10-07T020642Z_1851721920_UP1EMA705V3RH_RTRMADP_3_SOCCER-FRIENDLY-ARG-BEN.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 1,
-          "International & Geopolitics": 1
+          "Sports": 16,
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
           "International & Geopolitics",
@@ -1211,17 +1139,17 @@
       }
     },
     {
-      "raw_id": "00be0a6e48753f10a9",
-      "title": "UN chief calls for Gaza ceasefire ahead of October 7 anniversary",
-      "url": "https://www.thehindu.com/news/international/un-chief-calls-for-gaza-ceasefire-ahead-of-october-7-anniversary/article71549809.ece",
-      "summary": "Antonio Guterres also said Palestinians in Gaza have faced a “massive loss of life, displacement and destruction,” without specifying their death toll",
-      "published_at": "Tue, 06 Oct 2026 08:26:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/i386sa/article71549814.ece/alternates/LANDSCAPE_1200/2026-09-25T180857Z_1149407713_RC2DQNAFYW90_RTRMADP_3_UN-ASSEMBLY.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "bc1b73f59fbc2b371f",
+      "title": "Smriti Mandhana appointed Indian women’s cricket team captain",
+      "url": "https://www.thehindu.com/sport/cricket/smriti-mandhana-appointed-indian-womens-cricket-team-captain/article71552721.ece",
+      "summary": "Earlier in the day, Harmanpreet announced her decision to step down as India captain in a social media post",
+      "published_at": "Wed, 07 Oct 2026 09:54:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g11n7y/article71552734.ece/alternates/LANDSCAPE_1200/51_RVM_2784.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1236,25 +1164,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 12
+          "Sports": 16
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "c7bfeba015fe1b9466",
-      "title": "Trump says nobody knows who is running Iran",
-      "url": "https://www.thehindu.com/news/international/trump-says-nobody-knows-who-is-running-iran/article71553329.ece",
-      "summary": "Iran’s Foreign Ministry ‌spokesman ⁠said on October 4 that Washington knows very well ⁠who its counterpart is in Iran and how the decision-making system in Iran works",
-      "published_at": "Wed, 07 Oct 2026 07:37:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/iafptv/article71554109.ece/alternates/LANDSCAPE_1200/2026-10-06T214724Z_330839450_RC2XXNATYW4Y_RTRMADP_3_USA-TRUMP.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "c47f07a41d608f771d",
+      "title": "West Indies spinner Hosein confident team will push India in the T20 series",
+      "url": "https://www.thehindu.com/sport/cricket/west-indies-spinner-hosein-confident-team-will-push-india-in-the-t20-series/article71547572.ece",
+      "summary": "The 33-year-old is set to play in his 100th T20I match, and the Trinidadian hoped he could continue for another five years",
+      "published_at": "Mon, 05 Oct 2026 19:22:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/a00q6r/article71547680.ece/alternates/LANDSCAPE_1200/11908_23_2_2026_21_38_4_3_DSC_8405.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1269,25 +1197,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Sports": 13
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "fdeb3ef7123e4f79bc",
-      "title": "Iran must cut enrichment to end war, U.S. Vice-President Vance says",
-      "url": "https://www.thehindu.com/news/international/iran-must-cut-enrichment-to-end-war-us-vice-president-vance-says/article71554105.ece",
-      "summary": "J.D. Vance, in an interview, said the U.S. was in talks with Iranian President Masoud Pezeshkian and Foreign Minister Abbas Araqchi. But it was unclear ‌how much authority they wield within Iran’s power structure, he said",
-      "published_at": "Wed, 07 Oct 2026 07:16:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fee7kt/article71554108.ece/alternates/LANDSCAPE_1200/2026-10-06T222836Z_162530340_RC2EXNANCE0Z_RTRMADP_3_USA-VANCE-INTERVIEW.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "88ad66c1ee56aca52a",
+      "title": "Archery Premier League | All set for the second season",
+      "url": "https://www.thehindu.com/sport/other-sports/archery-premier-league-season-2-hyderabad-asian-games-chikitha-kumkum-mohod-deepika-atanu-jyothi-surekha/article71556517.ece",
+      "summary": "",
+      "published_at": "Wed, 07 Oct 2026 20:43:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/48cug5/article71556511.ece/alternates/LANDSCAPE_1200/Archery%20Premier%20League%20Season%202%20kicks%20off%20in%20Hyderabad%20as%20Olympic%20medallists%20Asian%20Games%20medallists%20and%20World%20Champions%20come%20together%20for%20the%20mascot%20reveal%20and%20anthem%20launch.jpeg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1302,25 +1230,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Sports": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "9862fc6a66bd0b74bf",
-      "title": "‘Targeting of commercial shipping must end’: India condemns latest attack on vessels",
-      "url": "https://www.thehindu.com/news/national/targeting-of-commercial-shipping-must-end-india-condemns-latest-attack-on-vessels/article71551531.ece",
-      "summary": "Expressing grave concern for the safety of global commerce, MEA said that it will continue to call for dialogue and diplomacy to bring an end to the ongoing conflicts.",
-      "published_at": "Tue, 06 Oct 2026 19:29:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/k9d71f/article71551848.ece/alternates/LANDSCAPE_1200/Iran_Strait_of_Hormuz_62397.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "2eebbaa961ec731af8",
+      "title": "Mikel Arteta signs new contract at Arsenal to 2030 after leading club to Premier League title",
+      "url": "https://www.thehindu.com/sport/football/mikel-arteta-signs-new-contract-at-arsenal-to-2030-after-leading-club-to-premier-league-title/article71556491.ece",
+      "summary": "The 44-year-old Spanish coach took charge in December 2019 and is now comfortably the longest-serving coach in the Premier League.",
+      "published_at": "Wed, 07 Oct 2026 20:20:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9f35z6/article71556526.ece/alternates/LANDSCAPE_1200/2026-09-22T123329Z_873899200_RC2UFLAUUWH8_RTRMADP_3_SOCCER-ENGLAND-ARS-ARTETA.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1335,25 +1263,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Sports": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "fc9ad9256121702ec0",
-      "title": "UN chief, Pakistan’s Deputy PM hold talks; discuss regional and global issues",
-      "url": "https://www.thehindu.com/news/international/un-chief-antonio-guterres-pakistan-visit/article71550966.ece",
-      "summary": "UN chief Antonio Guterres’s stop in Islamabad centres on multilateral diplomacy, regional security, and disaster preparedness efforts",
-      "published_at": "Tue, 06 Oct 2026 16:29:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rcli3q/article71551018.ece/alternates/LANDSCAPE_1200/AFP__20261006__D2CD69E__v1__HighRes__PakistanUnDiplomacy.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "6e94efdaaa7d29ce68",
+      "title": "CRICKET | History will be kinder to you: Gambhir to Agarkar",
+      "url": "https://www.thehindu.com/sport/cricket/cricket-history-will-be-kinder-to-you-gambhir-to-agarkar/article71556263.ece",
+      "summary": "",
+      "published_at": "Wed, 07 Oct 2026 19:47:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/unku8p/article71556292.ece/alternates/LANDSCAPE_1200/11908_22_7_2024_10_57_40_4_DSC_5960.JPG",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1368,10 +1296,76 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "Sports": 12
         },
         "candidate_categories": [
-          "International & Geopolitics"
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "f9705f04d6e12a7598",
+      "title": "Harmanpreet Kaur steps down as captain of India women's team",
+      "url": "https://www.thehindu.com/sport/cricket/harmanpreet-kaur-steps-down-as-captain-of-india-womens-team/article71550199.ece",
+      "summary": "The 37-year-old Harmanpreet led the Indian T20 side for a decade, taking over the position in 2016, and was elevated to ODI captaincy in 2022 before becoming the all-format leader in 2023",
+      "published_at": "Tue, 06 Oct 2026 14:00:40 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/q8wjrc/article71550207.ece/alternates/LANDSCAPE_1200/GettyImages-2282073178.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "43175cdaecb0c4b2dc",
+      "title": "An opportunity for the ‘A’ team players to stake claim in ODIs",
+      "url": "https://www.thehindu.com/sport/an-opportunity-for-the-a-team-players-to-stake-claim-in-odis/article71547706.ece",
+      "summary": "",
+      "published_at": "Mon, 05 Oct 2026 20:26:07 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
         ]
       }
     }

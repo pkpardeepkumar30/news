@@ -1,45 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-08T15:45:25.527300+00:00",
-  "input_count": 445,
+  "prepared_at": "2026-10-08T21:26:40.658303+00:00",
+  "input_count": 429,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 131,
-    "established_or_other": 69,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "7f7aa5a372282da3f6",
-      "title": "Ayodhya News: 6 महीने से विधवा पेंशन बंद, बैंक-दफ्तर के चक्कर काट रहीं महिलाएं",
-      "url": "https://khabarlahariya.org/ayodhya-news-widow-pensions-stopped-for-6-months-women-making-repeated-rounds-of-banks-and-offices/",
-      "summary": "अयोध्या के हनुमान कुंड वार्ड 43 की महिलाओं का कहना है कि उन्हें करीब छह महीने से विधवा पेंशन नहीं मिली है। पेंशन के लिए उन्हें बार-बार बैंक और पेंशन…",
-      "published_at": "Sat, 03 Oct 2026 05:00:04 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "f39ac7e4010111b3ed",
       "title": "कभी खदान, कभी जंगल तो कभी खेत में मजदूरी के बीच परिवार की जिम्मेदारी: मिथला की एक अलग कहानी",
@@ -68,53 +39,6 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
-    },
-    {
-      "raw_id": "238d3b228c3666987d",
-      "title": "News from the world of Education: October 7, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-7-2026/article71554814.ece",
-      "summary": "Information on colleges, admissions, scholarships, events, MoUs, and more",
-      "published_at": "Wed, 07 Oct 2026 13:56:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/nsutn9/article71554781.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "News from the world of Education: September 30, 2026",
-          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-september-30-2026/article71527627.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
     },
     {
       "raw_id": "489aecb3c3904a9c5a",
@@ -581,6 +505,53 @@
       }
     },
     {
+      "raw_id": "238d3b228c3666987d",
+      "title": "News from the world of Education: October 7, 2026",
+      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-7-2026/article71554814.ece",
+      "summary": "Information on colleges, admissions, scholarships, events, MoUs, and more",
+      "published_at": "Wed, 07 Oct 2026 13:56:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/nsutn9/article71554781.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "News from the world of Education: September 30, 2026",
+          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-september-30-2026/article71527627.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
       "raw_id": "cd39b0bf9c8bdf7d40",
       "title": "महंगी सब्जियों का सहारा बनी सरपुतिया, गांव में घर-घर उगाते हैं लोग",
       "url": "https://khabarlahariya.org/sarputia-emerges-as-a-reliable-alternative-to-expensive-vegetables-villagers-grow-it-in-every-household/",
@@ -987,41 +958,12 @@
       }
     },
     {
-      "raw_id": "a717e25ea044860791",
-      "title": "Kochi Corporation rules out land transfer for Brahmapuram waste-to-energy plant",
-      "url": "https://www.thehindu.com/news/national/kerala/kochi-corporation-rules-out-land-transfer-for-brahmapuram-waste-to-energy-plant/article71559639.ece",
-      "summary": "Corporation open to leasing land but insists on retaining ownership; Councillors oppose regional plant and want only waste generated within the district treated at Brahmapuram; Council seeks clarity on lease period, viability gap funding and Corporation’s liabilities",
-      "published_at": "Thu, 08 Oct 2026 21:03:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2h8alu/article71560844.ece/alternates/LANDSCAPE_1200/Overspending-atGGHFEQAIT.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "737fd0fb89b5cf5a26",
-      "title": "Faeces found in government school water tank in Dindigul",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/faeces-found-in-government-school-water-tank-in-dindigul/article71560549.ece",
-      "summary": "The incident was reported when the school reopened on October 5 after the quarterly examination break",
-      "published_at": "Thu, 08 Oct 2026 21:01:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/j66b0l/article71560765.ece/alternates/LANDSCAPE_1200/10216_8_10_2026_17_18_56_2_08_10_2026_SIEGE_1.JPG",
+      "raw_id": "ec671a6950e3f546f0",
+      "title": "Madras High Court permits observance of first death anniversary of prime accused Nagendran in BSP leader Armstrong murder case",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-permits-observance-of-first-death-anniversary-of-prime-accused-nagendran-in-bsp-leader-armstrong-murder-case/article71560558.ece",
+      "summary": "Justice V. Lakshminarayanan permitted the event to take place at Vysarpadi in Chennai on October 9, 2026",
+      "published_at": "Fri, 09 Oct 2026 01:33:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/h1cybg/article71557266.ece/alternates/LANDSCAPE_1200/Nearby1--5-_GNRGLJGJU9CM.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1041,7 +983,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 4
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -1049,12 +991,12 @@
       }
     },
     {
-      "raw_id": "d4c78cf97585d0e242",
-      "title": "CSIR-CCMB distributes climate-resilient rice seeds to farmers in Yadadri Bhuvanagiri",
-      "url": "https://www.thehindu.com/news/national/telangana/csir-ccmb-distributes-climate-resilient-rice-seeds-to-farmers-in-yadadri-bhuvanagiri/article71560571.ece",
-      "summary": "",
-      "published_at": "Thu, 08 Oct 2026 20:57:52 +0530",
-      "image_url": "",
+      "raw_id": "51c2734ab4b92cec4b",
+      "title": "Madras High Court Registry lodges police complaint for forging its proceedings to get Bangladesh nationals deported",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-registry-lodges-police-complaint-for-forging-its-proceedings-to-get-bangladesh-nationals-deported/article71560093.ece",
+      "summary": "Justice V. Lakshminarayanan has directed the police to investigate the matter and submit a status report by November 10, 2026",
+      "published_at": "Fri, 09 Oct 2026 01:15:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/h1cybg/article71557266.ece/alternates/LANDSCAPE_1200/Nearby1--5-_GNRGLJGJU9CM.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1074,19 +1016,48 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Society, Rights & Justice": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "e578cb6985d90548fa",
-      "title": "Navaratri Sargotsavam in Kozhikode from October 9",
-      "url": "https://www.thehindu.com/news/national/kerala/navaratri-sargotsavam-in-kozhikode-from-october-9/article71559862.ece",
-      "summary": "Vice-President C.P. Radhakrishnan and Keralam Governor Rajendra Vishwanath Arlekar are expected to attend as chief guests",
-      "published_at": "Thu, 08 Oct 2026 20:57:15 +0530",
+      "raw_id": "8022a15910cd2b31e6",
+      "title": "World Sight Day: glaucoma awareness camp for elderly held in Srikakulam on",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/world-sight-day-glaucoma-awareness-camp-for-elderly-held-in-srikakulam-on/article71559203.ece",
+      "summary": "",
+      "published_at": "Fri, 09 Oct 2026 01:13:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/v65f0f/article71560452.ece/alternates/LANDSCAPE_1200/10215_8_10_2026_15_5_45_1_WHATSAPPIMAGE2026_10_08AT25719PM.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "48097317f878536307",
+      "title": "Robbers kill man for phone, steal device already stolen by  deceased",
+      "url": "https://www.thehindu.com/news/national/telangana/robbers-kill-man-for-phone-steal-device-already-stolen-by-deceased/article71560446.ece",
+      "summary": "",
+      "published_at": "Fri, 09 Oct 2026 01:08:27 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1111,12 +1082,12 @@
       }
     },
     {
-      "raw_id": "51c08b491eebb8762e",
-      "title": "Dasara festivities at Srisailam to commence from October 11",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/dasara-festivities-at-srisailam-to-commence-from-october-11/article71560437.ece",
-      "summary": "During the festivities, special ‘archanas’ will be held for Lord Mallikarjuna Swamy and special pujas for Goddess Bhramaramba will be performed daily, along with ‘Rudra Yagam’ and ‘Chandi Yagam’",
-      "published_at": "Thu, 08 Oct 2026 20:54:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/41r9tc/article71560825.ece/alternates/LANDSCAPE_1200/10215_8_10_2026_20_27_57_1_IMG_20261008_WA0056.JPG",
+      "raw_id": "3fc8ea468674553fc4",
+      "title": "Haryana CEO launches three-day drive to clear pending SIR notices",
+      "url": "https://www.thehindu.com/news/national/haryana/haryana-ceo-launches-three-day-drive-to-clear-pending-sir-notices/article71560408.ece",
+      "summary": "As part of the drive, 57,339 pending hearing cases were disposed on October 7 and 8, reducing the number of cases awaiting hearings to 2,85,834 of the total notices generated in the State",
+      "published_at": "Fri, 09 Oct 2026 01:05:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/x5stlg/article71561299.ece/alternates/LANDSCAPE_1200/123.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1140,12 +1111,12 @@
       }
     },
     {
-      "raw_id": "8a0f6ea2683b1cb131",
-      "title": "Speakers call for stronger R&D push, innovation at CII A.P. conclave in Tirupati",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/speakers-call-for-stronger-rd-push-innovation-at-cii-ap-conclave-in-tirupati/article71560566.ece",
+      "raw_id": "55737ed572cc14bf7f",
+      "title": "CPI(M) seeks registration documents for Mulagada residents",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/cpim-seeks-registration-documents-for-mulagada-residents/article71560580.ece",
       "summary": "",
-      "published_at": "Thu, 08 Oct 2026 20:52:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/vaj8x/article71560788.ece/alternates/LANDSCAPE_1200/10215_8_10_2026_20_28_44_1_IMG_20261008_WA0057.JPG",
+      "published_at": "Fri, 09 Oct 2026 01:01:12 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1169,12 +1140,45 @@
       }
     },
     {
-      "raw_id": "fbe6f1ee959f106f98",
-      "title": "II PU and SSLC annual exam-1 and 2 from February 27 to May 31, 2027",
-      "url": "https://www.thehindu.com/news/national/karnataka/ii-pu-and-sslc-annual-exam-1-and-2-from-february-27-to-may-31-2027/article71560552.ece",
+      "raw_id": "fa526824b0e61ddb98",
+      "title": "Flawed by design, exclusionary in impact",
+      "url": "https://www.thehindu.com/opinion/lead/flawed-by-design-exclusionary-in-impact/article71560731.ece",
+      "summary": "The Gyanesh Kumar-led Election Commission of India, emboldened by a deferential Supreme Court judgment, has already disenfranchised lakhs of genuine electors through its Special Intensive Revision (SIR) of electoral rolls and risks excluding many more",
+      "published_at": "Fri, 09 Oct 2026 01:00:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c3p9vj/article71560737.ece/alternates/LANDSCAPE_1200/_DSC6634A.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "d6cb6bad2271bd225a",
+      "title": "ISCCM to hold critical care awareness walkathon on Friday",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/isccm-to-hold-critical-care-awareness-walkathon-on-friday/article71560673.ece",
       "summary": "",
-      "published_at": "Thu, 08 Oct 2026 20:48:45 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/j3aq9k/article71560802.ece/alternates/LANDSCAPE_1200/_JAI1139.JPG",
+      "published_at": "Fri, 09 Oct 2026 00:58:11 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

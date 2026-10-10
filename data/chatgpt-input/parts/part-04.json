@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-10T14:34:37.662046+00:00",
-  "input_count": 451,
+  "prepared_at": "2026-10-10T20:10:45.471266+00:00",
+  "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 137,
-    "established_or_other": 63,
+    "independent_social": 119,
+    "established_or_other": 81,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -115,6 +115,50 @@
         "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
+        "dynamic_rank_score": 40,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "local",
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event; includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      },
+      "related_reports": [
+        {
+          "title": "At least five killed in fresh Manipur violence",
+          "url": "https://www.thehindu.com/news/national/manipur/at-least-five-killed-in-fresh-manipur-violence/article71568845.ece",
+          "source": {
+            "id": "the-hindu-national",
+            "name": "The Hindu — National",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "aa47fd48acbfec5a32",
+      "title": "Nagaland: Tension in Kiphire prompts imposition of Section 163",
+      "url": "https://eastmojo.com/nagaland/2026/10/10/nagaland-tension-in-kiphire-prompts-imposition-of-section-163/",
+      "summary": "Representational Image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2021/08/Tripura-curfew-1.jpg?fit=780%2C447&ssl=1\" /> Kohima: Authorities have imposed prohibitory restrictions under Section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023, across Pungro Sub-Division in Nagaland’s Kiphire district, amid reports of rising tensions between members of the Yimkhiung and Tikhir communities. The order, issued in view of apprehensions of a possible escalation and breach of peace, covers the entire […] The post Nagaland: Tension in Kiphire prompts imposition of Section 163 appeared first on EastMojo .",
+      "published_at": "Sat, 10 Oct 2026 16:28:03 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
@@ -186,214 +230,214 @@
       }
     },
     {
+      "raw_id": "b236944938cc0f39b5",
+      "title": "Sahib Hasi Devi: 22 अक्टूबर को छत्तीसगढ़ के लिए खास दिन, राष्ट्रपति द्रौपदी मुर्मू जारी करेंगी 200 रुपये का स्मारक सिक्का, जानें कौन हैं माता साहिब हासी देवी",
+      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-mata-sahib-hasi-devi-200-rupee-commemorative-coin/",
+      "summary": "रायपुर। छत्तीसगढ़ में 22 अक्टूबर को एक विशेष कार्यक्रम में राष्ट्रपति द्रौपदी मुर्मू के रायपुर स्थित लोकभवन में शदाणी दरबार की पीठाधीश माता साहिब हासी देवी की 200वीं जयंती के अवसर पर 200 रुपये का स्मारक सिक्का जारी करेंगी। इस मौके पर विशेष डाक टिकट भी जारी होगा। सिंधी समाज की प्रमुख आध्यात्मिक विभूति माता […]",
+      "published_at": "Sat, 10 Oct 2026 16:56:46 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ca6cdb49d4e8ec7fba",
+      "title": "Chhattisgarh E-Bus Service : छत्तीसगढ़ के 4 शहरों में दौड़ेंगी 240 इलेक्ट्रिक बसें, कल होगा एग्रीमेंट, जानें रायपुर को कितनी मिलेंगी",
+      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-240-electric-buses-concession-agreement/",
+      "summary": "रायपुर। छत्तीसगढ़ के चार प्रमुख शहरों में इलेक्ट्रिक बसों के संचालन का रास्ता साफ होने जा रहा है। प्रधानमंत्री ई-बस सेवा योजना के तहत 240 इलेक्ट्रिक बसें चलाने के लिए 11 अक्टूबर 2026 को कंसेशन एग्रीमेंट किया जाएगा। उप मुख्यमंत्री एवं नगरीय प्रशासन और विकास मंत्री अरुण साव की मौजूदगी में रायपुर, बिलासपुर, भिलाई और […]",
+      "published_at": "Sat, 10 Oct 2026 16:39:40 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ab65b94d30bba1135c",
+      "title": "Dongargarh Navratri Mela: मां बम्लेश्वरी के दर्शन पर जा रहे हैं? यहां जान लें डोंगरगढ़ मेला में सुरक्षा और ट्रैफिक का मेगा प्लान",
+      "url": "https://theruralpress.in/chhattisgarh/dongargarh-navratri-mela-security-plan/",
+      "summary": "रायपुर/राजनांदगांव। नवरात्रि में मां बम्लेश्वरी के दर्शन के लिए डोंगरगढ़ जाने की तैयारी कर रहे श्रद्धालुओं के लिए सुरक्षा और यातायात को लेकर बड़ी तैयारी की गई है। राजनांदगांव पुलिस ने मेले में उमड़ने वाली भीड़ को संभालने के लिए 1100 से अधिक पुलिस अधिकारियों और जवानों की तैनाती की योजना बनाई है। रात में […]",
+      "published_at": "Sat, 10 Oct 2026 15:45:25 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "8da98cd46d638d3a60",
+      "title": "Mahasamund: राजस्व कार्यों में लापरवाही पड़ी भारी, पांच पटवारी निलंबित, दो पर फर्जीवाड़े का भी आरोप",
+      "url": "https://theruralpress.in/bureaucracy/mahasamund-5-patwari-suspended-negligence-digital-crop-survey-land-fraud-collector-vinay-langeh/",
+      "summary": "Suspension of negligent Patwaris: जिले में राजस्व कार्यों में लापरवाही बरतने वाले पटवारियों पर कलेक्टर विनय कुमार लंगेह ने कड़ी कार्रवाई की है। डिजिटल फसल सर्वेक्षण (Digital Crop Survey) का लक्ष्य पूरा नहीं करने और अभिलेखों में गड़बड़ी के आरोप में पांच पटवारियों को तत्काल प्रभाव से निलंबित कर दिया गया है। प्रशासन के अनुसार, […]",
+      "published_at": "Sat, 10 Oct 2026 15:31:18 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "f6a810f35a2de72e20",
+      "title": "Aadhaar Card Mobile Number Update: मोबाइल नंबर बदलने के बाद आधार में नहीं कराया अपडेट? बैंकिंग से लेकर ITR तक अटक सकते हैं ये काम",
+      "url": "https://theruralpress.in/public-interest/aadhaar-mobile-number-update-banking-itr/",
+      "summary": "नई दिल्ली। अगर आपने अपना मोबाइल नंबर बदल लिया है, लेकिन आधार कार्ड में नया नंबर अपडेट नहीं कराया है, तो आपको कई ऑनलाइन सेवाओं का इस्तेमाल करने में परेशानी हो सकती है। बैंकिंग से जुड़े कुछ काम, इनकम टैक्स रिटर्न (ITR) का वेरिफिकेशन और ई-आधार डाउनलोड करने जैसी सुविधाओं में आधार से लिंक मोबाइल […]",
+      "published_at": "Sat, 10 Oct 2026 15:26:28 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "2874b0c34e58e5d5fc",
+      "title": "Starlink India: क्या एलन मस्क की सैटेलाइट इंटरनेट सेवा से भारत की सुरक्षा को खतरा? DRDO के पूर्व वैज्ञानिक ने क्यों दी चेतावनी",
+      "url": "https://theruralpress.in/national/starlink-india-national-security-drdo-scientist/",
+      "summary": "नई दिल्ली। Starlink India News: एलन मस्क की सैटेलाइट इंटरनेट सेवा स्टारलिंक को भारत में अनुमति देने का मुद्दा सिर्फ तेज इंटरनेट तक सीमित नहीं है। इसके साथ राष्ट्रीय सुरक्षा, डेटा की गोपनीयता और संवेदनशील जानकारियों की सुरक्षा जैसे सवाल भी जुड़े हैं। रक्षा अनुसंधान एवं विकास संगठन (DRDO) के पूर्व वैज्ञानिक डॉ. रवि कुमार […]",
+      "published_at": "Sat, 10 Oct 2026 14:36:50 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "1994f5db1578aea881",
+      "title": "Bilaspur: धर्म स्वातंत्र्य कानून 2026 को हाईकोर्ट में चुनौती, सरकार से तीन हफ्ते में मांगा जवाब",
+      "url": "https://theruralpress.in/chhattisgarh/bilaspur-chhattisgarh-dharm-swatantrya-act-2026-high-court-challenge/",
+      "summary": "Challenge to the Freedom of Religion Act: छत्तीसगढ़ धर्म स्वातंत्र्य अधिनियम, 2026 की संवैधानिक वैधता को चुनौती देने वाली याचिका पर छत्तीसगढ़ हाईकोर्ट, बिलासपुर ने राज्य सरकार को तीन हफ्ते के भीतर जवाब दाखिल करने का निर्देश दिया है। चीफ जस्टिस कृष्णा राम महापात्र और जस्टिस संतोष शर्मा की डिवीजन बेंच ने याचिकाकर्ता वी.एन. प्रसाद […]",
+      "published_at": "Sat, 10 Oct 2026 14:33:42 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "fe130c7fa515effccc",
       "title": "Liquor scam: ED का एक और आरोप पत्र, बताया- रामगोपाल अग्रवाल तक पहुंचे 52 करोड़, 20 नवंबर को होगी सुनवाई",
       "url": "https://theruralpress.in/scam/chhattisgarh-liquor-scam-ed-chargesheet-ramgopal-agrawal-52-crore-20-november-hearing/",
       "summary": "रायपुर। छत्तीसगढ़ के 3400 करोड़ रुपये के बहुचर्चित शराब घोटाले में प्रवर्तन निदेशालय (ED) ने कांग्रेस प्रदेश कोषाध्यक्ष रामगोपाल अग्रवाल के खिलाफ एक और सप्लीमेंट्री चार्जशीट दाखिल की है। ED ने आरोप पत्र में दावा किया है कि इस घोटाले के मुख्य आरोपी अनवर ढेबर के सहयोगी दीपेन चावड़ा के जरिए करीब 52 करोड़ रुपये […]",
       "published_at": "Sat, 10 Oct 2026 13:37:42 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6cae9c7ce095e7635d",
-      "title": "Bastar Dhokra Craft: बस्तर के पारंपरिक ढोकरा शिल्प को मिलेगी राष्ट्रीय पहचान, चिलकुटी में बनेगा मॉडल प्रीमियम क्लस्टर",
-      "url": "https://theruralpress.in/chhattisgarh/bastar-dhokra-craft-national-recognition-chilikuti/",
-      "summary": "Bastar Dhokra Craft: छत्तीसगढ़ के बस्तर की प्राचीन और सुप्रसिद्ध पारंपरिक ढोकरा (बेलमेटल) कला को अब राष्ट्रीय और अंतरराष्ट्रीय स्तर पर एक नई व सशक्त पहचान मिलने जा रही है। भारत सरकार के जनजातीय कार्य मंत्रालय द्वारा देश भर के ट्राइबल आर्टिजन क्लस्टरों को प्रीमियम क्लस्टर के रूप में विकसित करने की महत्वाकांक्षी योजना तैयार […]",
-      "published_at": "Sat, 10 Oct 2026 13:30:38 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "f852071900fb644e8c",
-      "title": "Ram Van Gaman Path: राम वन गमन पथ पर राजनीति का आरोप, कांग्रेस ने कहा-पौने तीन साल में भाजपा सरकार ने नहीं लगवाई एक भी ईंट",
-      "url": "https://theruralpress.in/chhattisgarh/congress-slams-bjp-ram-van-gaman-path-delay-sushil-anand-shukla-mata-kausalya/",
-      "summary": "Ram Van Gaman Path: छत्तीसगढ़ में राम वन गमन पथ के विकास को लेकर राजनीतिक सरगर्मी तेज हो गई है। प्रदेश कांग्रेस कमेटी ने भाजपा सरकार पर कड़ा प्रहार करते हुए आरोप लगाया है कि वर्तमान सरकार के कार्यकाल में राम वन गमन पथ के कार्यों को ठप कर दिया गया है। कांग्रेस का कहना […]",
-      "published_at": "Sat, 10 Oct 2026 13:09:46 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "eb814cf3e11353c4b5",
-      "title": "CG Tourism: मध्य प्रदेश ट्रैवल मार्ट में छत्तीसगढ़ पर्यटन की गूंज, नई संभावनाओं को मिला आयाम",
-      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-tourism-mp-travel-mart-2026-bastar-eco/",
-      "summary": "CG Tourism: देश के पर्यटन मानचित्र पर छत्तीसगढ़ को एक आकर्षक और विशिष्ट गंतव्य के रूप में स्थापित करने की दिशा में छत्तीसगढ़ टूरिज्म बोर्ड लगातार प्रभावी कदम उठा रहा है। इसी कड़ी में 7 से 10 अक्टूबर 2026 तक आयोजित मध्य प्रदेश ट्रैवल मार्ट में छत्तीसगढ़ टूरिज्म बोर्ड ने सक्रिय सहभागिता की। इस दौरान […]",
-      "published_at": "Sat, 10 Oct 2026 12:51:35 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "10a202a2d4e48d1cb0",
-      "title": "Amitabh Bachchan Birthday Special: अमिताभ बच्चन का 84वां जन्मदिन, ‘एंग्री यंग मैन’ से लेकर महानायक बनने तक की अनकही कहानियाँ और संघर्ष",
-      "url": "https://theruralpress.in/entertainment/amitabh-bachchan-84th-birthday-special-struggle-success-story-kbc-bollywood-superstar/",
-      "summary": "Amitabh Bachchan Birthday: भारतीय सिनेमा के दिग्गज अभिनेता अमिताभ बच्चन 11 अक्टूबर को अपना 84वां जन्मदिन मना रहे हैं। उन्होंने अपनी बेजोड़ अदाकारी और विविध किरदारों के माध्यम से देशवासियों के दिलों में एक विशेष स्थान बना लिया है। आज भी उनकी ऊर्जा और अभिनय के प्रति समर्पण युवाओं के लिए एक बड़ी मिसाल है। […]",
-      "published_at": "Sat, 10 Oct 2026 12:12:54 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6748509ceeeff4ca97",
-      "title": "Infinix GT 50 Pro भारत में जल्द होगा लॉन्च, गेमिंग के लिए मिलेगा ये खास सिस्टम, जानिए और क्या होगा खास ?",
-      "url": "https://theruralpress.in/tech/infinix-gt-50-pro-india-launch-date-price-specifications-gaming-phone-liquid-cooling-display-camera-battery/",
-      "summary": "Infinix GT 50 Pro Launch Date: गेमिंग स्मार्टफोन पसंद करने वालों के लिए बड़ी खबर है। कंपनी Infinix GT 50 Pro फोन को 27 अक्टूबर 2026 को भारतीय बाजार में पेश करने जा रही है। इसकी बिक्री Flipkart के जरिए होने की जानकारी दी गई है। फोन को Infinix GT 30 Pro के अपग्रेड के […]",
-      "published_at": "Sat, 10 Oct 2026 12:05:06 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "dd546b514049379a7b",
-      "title": "राहुल गांधी फिर आएंगे छत्तीसगढ़, इस बार बस्तर में किन लोगों से करेंगे मुलाकात?",
-      "url": "https://theruralpress.in/chhattisgarh/rahul-gandhi-bastar-visit-bodhghat-project-congress-deepak-baij/",
-      "summary": "Rahul Gandhi Bastar Visit: लोकसभा में नेता प्रतिपक्ष राहुल गांधी का छत्तीसगढ़ के बस्तर संभाग में दौरा प्रस्तावित है। इस दौरान वे बोधघाट बहुउद्देशीय परियोजना से प्रभावित होने वाले ग्रामीणों और किसानों से मुलाकात कर उनकी समस्याएं सुनेंगे। प्रदेश कांग्रेस अध्यक्ष दीपक बैज ने रायपुर में पत्रकार वार्ता के दौरान यह जानकारी दी। दौरे की […]",
-      "published_at": "Sat, 10 Oct 2026 11:33:46 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "f89bf3e96755482f18",
-      "title": "80 साल पार बुजुर्गों को बड़ी राहत, पूरे छत्तीसगढ़ में मुफ्त बस सफर की मिलेगी सुविधा, जानें कैसे बनवाएं पास?",
-      "url": "https://theruralpress.in/chhattisgarh/free-bus-travel-senior-citizens-above-80-years-siyan-seva-bus-pass-scheme-cg-news/",
-      "summary": "Chhattisgarh News: छत्तीसगढ़ में 80 वर्ष या उससे अधिक उम्र के बुजुर्गों के लिए मुफ्त बस यात्रा की सुविधा शुरू की गई है। राज्य सरकार की इस पहल के तहत अब तक 8 हजार से अधिक वरिष्ठ नागरिकों को बस पास जारी किए जा चुके हैं। रायपुर में सबसे ज्यादा करीब 2 हजार पास बनाए […]",
-      "published_at": "Sat, 10 Oct 2026 11:08:57 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -635,35 +679,6 @@
         "type": "independent",
         "selection_group": "independent_social",
         "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2a9a19b6fc5a491d38",
-      "title": "Delhi court says Sharjeel Imam violated interim bail condition by interacting with media",
-      "url": "https://www.barandbench.com/news/litigation/delhi-court-says-sharjeel-imam-violated-interim-bail-condition-by-interacting-with-media",
-      "summary": "A Delhi court on Saturday said that Sharjeel Imam violated his interim bail condition in the Delhi riots conspiracy case by interacting with the media. However, Additional Sessions Judge Sameer Bajpai of Karkardooma courts said he was not cancelling Imam's bail since he has to surrender by today evening. The Court had granted Imam bail for seven days from October 4 to October 10 to attend the wedding functions of his cousin brothers. One of the conditions imposed in the interim bail order was that Imam must not come in contact with the media or use social media. Special Public Prosecutor (SPP) Madhukar Pandey appeared for the prosecution and argued that Imam violated this condition. He relied on videos uploaded on YouTube and social media platform X to argue that Imam was present in a room when his brother gave an interview to news agency ANI. Pandey also referred to the ANI videos in which Sharjeel Imam was sitting in his living room, talking to people present in the room. Pandey said that such a video could not have been shot without Imam’s knowledge. Advocate Talib Mustafa appeared for Imam and contended that he had neither interacted with any journalist nor given an interview. ",
-      "published_at": "Sat, 10 Oct 2026 16:45:09 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-08/c968a65e-76ca-4172-b753-aeb0b8ebd55a/Sharjeel_Imam.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1056,53 +1071,6 @@
       }
     },
     {
-      "raw_id": "238d3b228c3666987d",
-      "title": "News from the world of Education: October 7, 2026",
-      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-7-2026/article71554814.ece",
-      "summary": "Information on colleges, admissions, scholarships, events, MoUs, and more",
-      "published_at": "Wed, 07 Oct 2026 13:56:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/nsutn9/article71554781.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "News from the world of Education: September 30, 2026",
-          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-september-30-2026/article71527627.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
       "raw_id": "db5b06768c048253aa",
       "title": "India vs West Indies T20 Series 2026: भारत बनाम वेस्टइंडीज टी20 (T20I) मैच आज से शुरू, जानें आगे होने वाले मैचों की जानकारी",
       "url": "https://khabarlahariya.org/india-vs-west-indies-t20-series-2026-india-vs-west-indies-t20i-series-begins-today-here-are-the-details-of-the-upcoming-matches/",
@@ -1166,6 +1134,35 @@
       "url": "https://khabarlahariya.org/adivasi-women-daily-forest-journey-panna-livelihood/",
       "summary": "पन्ना जिले के मनकी गांव में करीब 150–200 आदिवासी परिवार रहते हैं। यहां की कई महिलाएं रोज जंगल से लकड़ी लाकर बेचती हैं। इसी कमाई से घर का राशन, सब्जी…",
       "published_at": "Mon, 05 Oct 2026 11:31:55 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6ce974ec8ffedcbbee",
+      "title": "UP,Mahoba/कजरी मेला : आल्हा मंच ने बदली कलाकार की जिंदगी, 40 साल से बांसुरी बजा रहे नंदू जी",
+      "url": "https://khabarlahariya.org/up-mahoba-kajari-fair-alha-manch-transformed-an-artists-life-nandu-ji-has-been-playing-the-flute-for-40-years/",
+      "summary": "महोबा जिले के कबरई ब्लॉक के छिकहरा गांव के रहने वाले 65 वर्षीय नंदू जी पिछले करीब 40 वर्षों से बांसुरी बजाकर लोगों को मंत्रमुग्ध कर रहे हैं। महज 10…",
+      "published_at": "Mon, 05 Oct 2026 05:00:33 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

@@ -1,254 +1,110 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-11T05:57:29.055588+00:00",
-  "input_count": 402,
+  "prepared_at": "2026-10-11T15:01:24.900157+00:00",
+  "input_count": 440,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 105,
-    "established_or_other": 95,
+    "independent_social": 124,
+    "established_or_other": 76,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "890e1e6acf6701b3f1",
-      "title": "As El Niño strengthens, coral reefs face narrow windows for recovery",
-      "url": "https://india.mongabay.com/2026/10/as-el-nino-strengthens-coral-reefs-face-narrow-windows-for-recovery/",
-      "summary": "As UN Secretary-General António Guterres says, El Niño is being “supersized” by a warming climate. The UN Environment Programme (UNEP) warns that coral reefs are being hit by new bleaching events before they have had time to recover from earlier ones. UNEP likened reefs to “an overmatched boxer” taking repeated blows, citing findings from the […]",
-      "published_at": "09 Oct 2026 13:33:33 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/09121449/AP26239555635896-768x512.jpg",
+      "raw_id": "6587ce44afc18a297e",
+      "title": "‘Protests to continue till Gyanesh Kumar resigns’: CJP leaders after release from custody",
+      "url": "https://www.newslaundry.com/2026/10/11/protests-to-continue-till-gyanesh-kumar-resigns-cjp-leaders-after-release-from-custody",
+      "summary": "Leaders of the Cockroach Janta Party (CJP) said that India has seen a brazen display of dictatorship in the past 72 hours when protesters gathered for a march in Delhi to demand the resignation of Chief Election Commissioner (CEC) Gyanesh Kumar. The leaders were addressing the media on Sunday, October 11, soon after they were released from police custody a day after they were detained to stop them from attending the protest march. CJP conveners Abhijeet Dipke, Ashutosh Ranka and Saurav Das were taken into custody from inside their flight as soon as they landed at the Delhi airport on October 10, and were released by the Special Executive Magistrate Court at the Delhi Cantt Police Station the next day, on the condition of “maintaining peace and good behaviour” for a year. Ashutosh and Saurav addressed the media, along with the CJP legal affairs head Ratna Singh. Abhijeet returned to his village in Maharashtra to attend the final rites of his grandmother who passed away on October 10, soon after he was taken into custody. Saurav said that the three of them were “abducted” by the Delhi police from the flight immediately after it landed. “We were not shown any paperwork or grounds for ",
+      "published_at": "Sun, 11 Oct 2026 11:24:23 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
+        "id": "newslaundry",
+        "name": "Newslaundry",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 40,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "independent",
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event; includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 7,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "‘Protests to continue till Gyanesh Kumar resigns’: CJP leaders after release from custody",
+          "url": "https://www.thenewsminute.com/news/protests-to-continue-till-gyanesh-kumar-resigns-cjp-leaders-after-release-from-custody",
+          "source": {
+            "id": "the-news-minute",
+            "name": "The News Minute",
+            "type": "local",
+            "selection_group": "independent_social",
+            "ownership": "Independent regional digital newsroom"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "65e7505df9e8c855c9",
+      "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
+      "summary": "Srinagar district’s poll percentage was 27.9% in the 2014 Assembly election and recorded 29.24% this time; J&K Chief Electoral Officer says Srinagar saw an increase of 5% compared to voter turnout of the recent Lok Sabha polls",
+      "published_at": "Fri, 27 Sep 2024 18:59:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nlgxh2/article68683101.ece/alternates/LANDSCAPE_1200/2024-09-25T052721Z_1949721276_RC2F7AA9JWYJ_RTRMADP_3_INDIA-KASHMIR-ELECTION.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 2
+          "Politics & Elections": 6,
+          "States & Local": 8
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
     {
-      "raw_id": "dfadbe4b2233a8dbf5",
-      "title": "The giants with one horn",
-      "url": "https://india.mongabay.com/short-article/2026/10/the-giants-with-one-horn/",
-      "summary": "Conservation efforts have re-established the greater one-horned rhinoceros in Assam’s Manas National Park. The species had once been wiped out from the park but was brought back through wild-to-wild translocation and rhino rehabilitation programmes. A recent study of the re-established population offers encouraging signs of adaptation in its restored habitat. The greater one-horned rhino (Rhinoceros […]",
-      "published_at": "07 Oct 2026 15:25:42 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/06021738/harrier-1-768x512.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "b58e2c1c338063cf2b",
-      "title": "Study identifies rare case of moth and lichen association",
-      "url": "https://india.mongabay.com/short-article/2026/10/study-identifies-rare-case-of-moth-and-lichen-association/",
-      "summary": "A new paper documents the first known record of a moth using the umbilicate lichen, Lasallia pertusa, as a camouflage background. Published in the journal Arthropod-Plant Interactions, the observation was made in July 2025 at Duggi, in Kugti Wildlife Sanctuary, Chamba district, Himachal Pradesh, at about 3,200 m elevation. Lichen-associated camouflage has been documented before, […]",
-      "published_at": "08 Oct 2026 15:19:26 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/08145759/7979f652-7be7-40eb-91e7-d31b07a381f2-scaled-e1791452511429-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "57c54daffb0d42935b",
-      "title": "Forgotten vegetables could help make our diets more resilient",
-      "url": "https://india.mongabay.com/2026/10/forgotten-vegetables-could-help-make-our-diets-more-resilient/",
-      "summary": "The clove bean is fondly known as mookuthi avarai in Tamil, an ode to its nose-pin-like appearance. Clove bean belongs to the same family as the morning glory, perennial fast-growing vines that are known for their brightly coloured flowers, and is not a true bean species. Once a common vegetable in south Indian kitchens, clove […]",
-      "published_at": "06 Oct 2026 15:06:04 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/06005737/KJK3139-2-scaled-e1791228498437-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "d99d1926680054ae55",
-      "title": "India needs a just adaptation agenda [Commentary]",
-      "url": "https://india.mongabay.com/2026/10/india-needs-a-just-adaptation-agenda-commentary/",
-      "summary": "Climate impacts in India are becoming increasingly visible. As parts of the country, including Assam and Bihar, faced floods, drought was declared in Maharashtra, while others like Rajasthan, Gujarat, Andhra Pradesh and Tamil Nadu are facing drought-like situations. Even India’s cities have not been spared by these climate impacts. The Reserve Bank of India has […]",
-      "published_at": "06 Oct 2026 14:19:01 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/06100254/1-1-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "d1b6c7c30a9131ee5a",
-      "title": "Unclear records leave villages in limbo over irrigation project displacement",
-      "url": "https://india.mongabay.com/2026/10/polavarams-missing-map-leaves-villages-in-limbo/",
-      "summary": "Manglu Dorla’s house stands where the forest opens into the Sabari river in Konta, a village in the Sukma district of southern Chhattisgarh. Dorla’s family has farmed the land for generations. The forest supplies the fuel, fodder, and food. Now, he fears that he may be forced to abandon his home, along with other residents […]",
-      "published_at": "02 Oct 2026 12:04:56 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/01194159/Polavaram-2-768x425.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "ccabd7d4119ed7eb0f",
-      "title": "The visiting grassland gardeners",
-      "url": "https://india.mongabay.com/short-article/2026/09/the-visiting-grassland-gardeners/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Flying thousands of kilometres circumventing the mighty Himalayas, harriers arrive in India’s grasslands around July every year, when winter sets in across their breeding grounds in Central Asia and Russia. Mated pairs perform a suave mid-air food pass, with the male dropping prey for the […]",
-      "published_at": "30 Sep 2026 14:19:42 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/09/30122053/harrier-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "045c117018b7a92adc",
-      "title": "Why research literacy matters in medical education",
-      "url": "https://www.thehindu.com/education/why-research-literacy-matters-in-medical-education/article71515384.ece",
-      "summary": "Research literacy involves asking better questions, recognising the limits of available knowledge, and making evidence-based, patient-centred decisions.",
-      "published_at": "Mon, 05 Oct 2026 14:49:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1bcw4r/article71515400.ece/alternates/LANDSCAPE_1200/medical%20research.jpg",
+      "raw_id": "f45553dba4ac6fbb71",
+      "title": "Odisha government announces to hold student union election after a gap of eight years",
+      "url": "https://www.thehindu.com/news/national/odisha/odisha-government-announces-to-hold-student-union-election-after-a-gap-of-eight-years/article71546217.ece",
+      "summary": "Process of elections to be completed in next 10 days; will begin from October 7 and come to end on October 16, 2026",
+      "published_at": "Mon, 05 Oct 2026 14:44:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4vyqax/article71546280.ece/alternates/LANDSCAPE_1200/20260925180L.jpg",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -268,45 +124,187 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 12,
-          "Environment, Health & Science": 8
+          "Politics & Elections": 5,
+          "Society, Rights & Justice": 8
         },
         "candidate_categories": [
-          "Environment, Health & Science",
+          "Politics & Elections",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "bbf45475b174bf44be",
-      "title": "CJP Protest Delhi : रविवार को फिर जंतर-मंतर कूच करेगी CJP, ज्ञानेश कुमार के इस्तीफे तक आंदोलन जारी रखने का ऐलान",
-      "url": "https://theruralpress.in/national/cjp-protest-delhi-jantar-mantar-cec-gyanesh-kumar/",
-      "summary": "नई दिल्ली। मुख्य चुनाव आयुक्त (CEC) ज्ञानेश कुमार के इस्तीफे और स्पेशल इंटेंसिव रिवीजन (SIR) प्रक्रिया को वापस लेने की मांग को लेकर कॉकरोच जनता पार्टी (CJP) ने आंदोलन जारी रखने का ऐलान किया है। संगठन के मुताबिक, रविवार को एक बार फिर जंतर-मंतर की ओर कूच किया जाएगा। शनिवार को आयोजित प्रेस कॉन्फ्रेंस में […]",
-      "published_at": "Sat, 10 Oct 2026 16:02:49 +0000",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "8280f689616259d344",
+      "title": "Brazil’s Lula accuses Meta of election interference",
+      "url": "https://www.thehindu.com/news/international/brazils-lula-accuses-meta-of-election-interference/article71571012.ece",
+      "summary": "The campaign claimed that in recent days, Meta ‘prevented President Lula’s profile from promoting Instagram feed posts’",
+      "published_at": "Sun, 11 Oct 2026 14:31:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2wv8r0/article71571018.ece/alternates/LANDSCAPE_1200/2026-10-09T161516Z_15004819_RC2OZNAN4ONM_RTRMADP_3_BRAZIL-ELECTION.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 8
+          "Politics & Elections": 5,
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Protests"
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "c29054a6716ed2b72e",
+      "title": "From raising students’ concerns, CJP has suddenly shifted to electoral issues: BJP",
+      "url": "https://www.thehindu.com/news/national/from-raising-students-concerns-cjp-has-suddenly-shifted-to-electoral-issues-bjp/article71572050.ece",
+      "summary": "Perhaps you wouldn't see such a fast mutation (change) even in radioactive decay, BJP Rajya Sabha MP Sudhanshu Trivedi jibed",
+      "published_at": "Sun, 11 Oct 2026 20:08:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cx4ymj/article71572093.ece/alternates/LANDSCAPE_1200/20261006354L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "7afa5788d38d7a124c",
+      "title": "TDP will give up to 40% reservations for BCs in local body elections, says Chandrababu Naidu",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/tdp-will-give-up-to-40-reservations-for-bcs-in-local-body-elections-says-chandrababu-naidu/article71571376.ece",
+      "summary": "The results will be the yardstick of the leaders’ performance, and hence they should leave no stone unturned to ensure NDA’s victory and teach a fitting lesson to the YSRCP for doing grave injustice to the BCs",
+      "published_at": "Sun, 11 Oct 2026 19:08:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/c4mhwo/article71571742.ece/alternates/LANDSCAPE_1200/20261008335L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "e409896708ec8a2ed1",
+      "title": "Data | How election fund was spent during 2021 State polls",
+      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
+      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
+      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa728bba3d7642bfb5",
+      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
+      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
+      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
@@ -410,41 +408,6 @@
       }
     },
     {
-      "raw_id": "3eea8fb1bffba745c7",
-      "title": "CJP protest crackdown, detentions: LIVE UPDATES from Supreme Court's Sunday hearing",
-      "url": "https://www.barandbench.com/news/cjp-protest-crackdown-detentions-live-updates-from-supreme-courts-sunday-hearing",
-      "summary": "Senior Advocate Gopal Sankarnarayan : I have not moved a separate petition. It is raised in that petition. It is raised in that petition. It is unfortunate. These are lawyers, practising lawyers, who have lost their right to even move around in the city. It is that bad. The pictures are self-explanatory. Justice Joymalya Bagchi : We know you all are aggrieved by what happened yesterday. We are not here to trivialise what happened. Senior Advocate Shadan Farasat : I was also brutalised yesterday, along with a large number of lawyers. But our question was not only in respect of lawyers. The question we are raising is that we are part of a larger subset of citizens of this country. We don't have any separate special rights as lawyers. So all we are submitting is this. Yesterday, the situation in the city was, I can say, remarkably suppressive. A person was not even allowed to stand on the street. They were just picking and throwing people. My specific instance was, I was thrown into a moving bus after being picked up. That is what happened to me. But this is not about individuals or lawyers. It's about the citizens' right to protest. And what we are saying, I say this with all respons",
-      "published_at": "Sun, 11 Oct 2026 10:10:40 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-11/g6724cci/246178.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "e80326b4b5198d6ea8",
       "title": "SIR के विरोध में 10 अक्टूबर को दिल्ली जंतर-मंतर में प्रदर्शन: 23 हजार जवान तैनात, धारा 163 लागू, मेट्रो स्टेशन बंद हुए, लोगों को ट्रेन से उतारने का आरोप, सुप्रीम कोर्ट का आदेश, LIVE",
       "url": "https://khabarlahariya.org/protest-against-sir-at-delhis-jantar-mantar-on-october-10-23000-personnel-deployed-section-163-imposed-metro-stations-closed-allegations-of-passengers-being-forced-off-trains-supreme-court-ord/",
@@ -544,12 +507,12 @@
       }
     },
     {
-      "raw_id": "d80ded6b70ea57d0ed",
-      "title": "Anti-CEC protest: Right-wing group members assault protesters at Connaught Place",
-      "url": "https://www.thehindu.com/news/cities/Delhi/anti-cec-protest-right-wing-group-members-assault-protesters-at-connaught-place/article71569132.ece",
-      "summary": "A group of men raised slogans backing the police, chased and allegedly assaulted demonstrators in Connaught Place amid mass detentions ahead of the planned CJP protest at Jantar Mantar; videos of the incidents drew sharp reactions from the AAP and Congress.",
-      "published_at": "Sat, 10 Oct 2026 23:38:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/thofpr/article71569125.ece/alternates/LANDSCAPE_1200/right%20wing%20chase%201.jpeg",
+      "raw_id": "bd468a16ccac1b0725",
+      "title": "CJP protest in Goa: Police detain several demonstrators, block entry to Azad Maidan",
+      "url": "https://www.thehindu.com/news/national/cjp-protest-in-goa-police-detain-several-demonstrators-block-entry-to-azad-maidan/article71571651.ece",
+      "summary": "We don't know how many of them are detained because they were lifting everyone who was heading to Azad Maidan, one of the protesters said.",
+      "published_at": "Sun, 11 Oct 2026 19:04:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nue4li/article71571741.ece/alternates/LANDSCAPE_1200/cjp%20goa.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -577,44 +540,11 @@
       }
     },
     {
-      "raw_id": "f12026187f5baaf632",
-      "title": "INDIA bloc to hold protest march in Delhi on October 12, submit memorandum to CJI",
-      "url": "https://www.thehindu.com/news/national/india-bloc-to-hold-protest-march-in-delhi-on-october-12-submit-memorandum-to-cji/article71570717.ece",
-      "summary": "On October 12, 2026, the Congress and the entire INDIA bloc and the country's youth will again take to the streets in massive numbers",
-      "published_at": "Sun, 11 Oct 2026 10:48:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uf0mw4/article71570730.ece/alternates/LANDSCAPE_1200/20261009501L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 8
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "fd927dfd653824f30a",
-      "title": "Anti-CEC protest Highlights, Oct 10: CJP calls for another protest on Sunday amid police crackdown; UNHRC demands immediate release of demonstrators",
-      "url": "https://www.thehindu.com/news/cities/Delhi/cjp-protests-jantar-mantar-new-delhi-election-commissioner-gyanesh-kumar-resignation-sir-cec-row-october-10-2026-live-news/article71566021.ece",
-      "summary": "Supreme Court to hold special hearing on contempt petition against shutdown of transit corridors, metro stations across Delhi; Delhi Metro reopens 45 stations after 25-hour closure",
-      "published_at": "Sun, 11 Oct 2026 05:20:10 +0530",
+      "raw_id": "1161878df071449fa3",
+      "title": "Anti-CEC protest LIVE: Delhi Police detain women protesters after 6 p.m.",
+      "url": "https://www.thehindu.com/news/national/cjp-protests-delhi-police-abhijeet-dipke-neha-bora-congress-rahul-gandhi-detentions-cec-gyanesh-kumar-resignation-live-updates/article71570231.ece",
+      "summary": "CJP leaders vow to protest till CEC resigns, urge all parties to unite ahead of INDIA bloc march",
+      "published_at": "Sun, 11 Oct 2026 20:09:34 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -643,12 +573,12 @@
       }
     },
     {
-      "raw_id": "863faece2f2de15fb2",
-      "title": "‘Will not go back till CEC resigns’: CJP calls for fresh protest at Jantar Mantar on October 11",
-      "url": "https://www.thehindu.com/news/cities/Delhi/will-not-go-back-till-cec-resigns-cjp-calls-for-fresh-protest-at-jantar-mantar-on-october-11/article71569391.ece",
-      "summary": "Addressing a press conference after police detained protesters, activists and political leaders during the October 10 demonstrations, Ajinkya Shinde, the CJP's national organisation in-charge, said the party would not retreat despite the detentions",
-      "published_at": "Sat, 10 Oct 2026 23:05:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7iwfok/article71569409.ece/alternates/LANDSCAPE_1200/AFP__20261010__D2UQ4JJ__v1__HighRes__IndiaPoliticsProtestPresser.jpg",
+      "raw_id": "bbb2d96a2b5ff50f39",
+      "title": "Demonstration staged in Hyderabad against police crackdown on protesters in Delhi",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/demonstration-staged-in-hyderabad-against-police-crackdown-on-protesters-in-delhi/article71571443.ece",
+      "summary": "",
+      "published_at": "Sun, 11 Oct 2026 19:14:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vq25ig/article71571789.ece/alternates/LANDSCAPE_1200/_DSC0724.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -668,7 +598,112 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 6
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "637918d08d6ce5ee99",
+      "title": "AMU protests: Students block four entry gates, proctor says ‘outsider’ detained from hostel",
+      "url": "https://www.thehindu.com/news/national/amu-protests-students-block-four-entry-gates-proctor-says-outsider-detained-from-hostel/article71543198.ece",
+      "summary": "Tensions escalated at Aligarh Muslim University after protesters blocked all four entry gates amid an ongoing agitation demanding students’ union elections",
+      "published_at": "Sun, 04 Oct 2026 15:35:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tg6rq2/article71543229.ece/alternates/LANDSCAPE_1200/TH25-Mayank-SchGFVFBSER0.3.jpg.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 6,
+          "Society, Rights & Justice": 13
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "ad4ca903f73d60d1fc",
+      "title": "Karnataka Chief Minister, Congress legislators to join Delhi protest against SIR on October 12",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-cm-shivakumar-congress-legislators-to-join-delhi-protest-against-sir-on-oct-12/article71570839.ece",
+      "summary": "Shivakumar says the Centre should allow protesters to meet the Chief Election Commissioner, stressing that criticism was part of public life",
+      "published_at": "Sun, 11 Oct 2026 20:00:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ancr4i/article71570843.ece/alternates/LANDSCAPE_1200/-For-state--CM-GCUGIA2HF.3.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "f0b2fb14fcdd74e1dc",
+      "title": "Organisations protest against arrest of anti-SIR activists",
+      "url": "https://www.thehindu.com/news/national/karnataka/organisations-protest-against-arrest-of-anti-sir-activists/article71571612.ece",
+      "summary": "The protesters in Dharwad condemned the ‘repressive policies of the Union government and the police against anti-SIR activists in New Delhi’.",
+      "published_at": "Sun, 11 Oct 2026 19:01:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xsnng1/article71571715.ece/alternates/LANDSCAPE_1200/9727_11_10_2026_18_41_0_1_12BGMDHARWADADISOSIR1.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 5
         },
         "candidate_categories": [
           "Protests"
@@ -913,6 +948,41 @@
       }
     },
     {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "1bc9d993aa59c66eda",
       "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
       "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
@@ -1022,39 +1092,6 @@
       "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
       "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "5a537d850bb260c224",
-      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
-      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
-      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
-      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
       "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {

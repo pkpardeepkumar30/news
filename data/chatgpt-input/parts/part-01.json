@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-13T19:24:32.246495+00:00",
-  "input_count": 432,
-  "supplied_count": 200,
+  "prepared_at": "2026-10-13T23:49:38.660972+00:00",
+  "input_count": 399,
+  "supplied_count": 199,
   "source_mix": {
-    "independent_social": 118,
-    "established_or_other": 82,
+    "independent_social": 100,
+    "established_or_other": 99,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "a34924dcc361fa129e",
+      "title": "CEC protests: Bombay High Court says won’t allow detentions that violate law",
+      "url": "https://www.thehindu.com/news/cities/mumbai/cec-protests-bombay-high-court-says-wont-allow-detentions-that-violate-law/article71580830.ece",
+      "summary": "The Bench asked the petitioner to document detentions in Mumbai CEC protests, lists matter for October 19",
+      "published_at": "Wed, 14 Oct 2026 03:21:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/eymm1p/article71581316.ece/alternates/LANDSCAPE_1200/20261011396L_thp460g.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      }
+    },
     {
       "raw_id": "f84e89dcd97e065900",
       "title": "Andhra University invites applications for self-support law courses",
@@ -154,6 +189,41 @@
       }
     },
     {
+      "raw_id": "c7a0d7a4857c8ba382",
+      "title": "Patna High Court acquits 13 accused in 1996 Jehanabad quadruple murder case",
+      "url": "https://www.thehindu.com/news/national/bihar/patna-high-court-acquits-13-accused-in-1996-jehanabad-quadruple-murder-case/article71580349.ece",
+      "summary": "A Division Bench comprising Justice Rajeev Ranjan Prasad and Justice Kumar Manish delivered the ruling, citing grave lapses in the police investigation",
+      "published_at": "Wed, 14 Oct 2026 03:09:09 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "bd02f54ac3005cdbe1",
       "title": "Former Supreme Court judge calls for constitutional safeguards to ensure ECI’s independence",
       "url": "https://www.thehindu.com/news/national/kerala/former-supreme-court-judge-calls-for-constitutional-safeguards-to-ensure-ecis-independence/article71580390.ece",
@@ -189,41 +259,6 @@
           "Politics & Elections",
           "Protests",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e013d8b47933f5b49f",
-      "title": "Karnataka to explore legal options to challenge High Court verdict striking down reservation enhancement",
-      "url": "https://www.thehindu.com/news/cities/bangalore/karnataka-to-explore-legal-options-to-challenge-high-court-verdict-striking-down-reservation-enhancement/article71578334.ece",
-      "summary": "Congress leaders question hurried introduction of law by the previous BJP government before the Assembly elections in 2023, Veerashaiva Mahasabha welcomes the ruling",
-      "published_at": "Tue, 13 Oct 2026 21:36:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jxnf7u/article71578589.ece/alternates/LANDSCAPE_1200/IMG_BG_HIGH_COURT_2020_1_1_QVGLG48U.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections"
         ]
       }
     },
@@ -411,113 +446,6 @@
       }
     },
     {
-      "raw_id": "c4ab0cfeda82566c9c",
-      "title": "Delhi SIR: Plea in Supreme Court challenges ECI directive requiring deleted voters to enrol afresh",
-      "url": "https://www.barandbench.com/news/delhi-sir-plea-in-supreme-court-challenges-eci-directive-requiring-deleted-voters-to-enrol-afresh",
-      "summary": "An application has been filed before the Supreme Court challenging the Election Commission of India's (ECI) requirement that voters excluded from Delhi's draft electoral rolls during the Special Intensive Revision (SIR) must declare themselves as first-time applicants to secure restoration of their names. The application has been moved by RTI activist Anjali Bhardwaj and another petitioner in their pending petition against the Election Commission. They have sought directions to provide a separate mechanism for restoring the names of previously enrolled voters. The petitioners have pointed out that 47,56,722 electors, constituting 32.78% of Delhi's electorate before the SIR, were excluded from the draft electoral rolls published on August 31. Of these, 31,59,213 were classified as permanently shifted. According to the application, these voters must submit Form 6 to seek re-inclusion, although the form requires applicants to declare that they are seeking enrolment for the first time. The petitioners argue that this places previously enrolled voters in an untenable position, particularly because Section 31 of the Representation of the People Act, 1950 makes knowingly false declaration",
-      "published_at": "Tue, 13 Oct 2026 21:04:23 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-01/hrlyo17b/1000656869.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 6
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "dc0ed7f8f67ad21a04",
-      "title": "Credibility of institutions shaken; street coming to democracy's rescue: Former Supreme Court Justice Kurian Joseph",
-      "url": "https://www.barandbench.com/news/credibility-of-institutions-shaken-street-coming-to-democracys-rescue-former-supreme-court-justice-kurian-joseph",
-      "summary": "Former Supreme Court Justice Kurian Joseph on Tuesday said that shaken public faith in constitutional institutions has made it imperative for citizens to take to the streets to defend democracy when the parliament and the courts have failed to protect it. Citing socialist leader Dr Ram Manohar Lohia, Justice Joseph said, “When the Parliament and courts fail, then the street would come to our rescue.” He held that people were taking to the streets because public faith in constitutional institutions has been shaken. “The credibility of the institutions, there is a perception which is very grossly shaken, and that is the reason what we see in the street. As Dr. Ram Manohar Lohia said, now the street is coming to the rescue of democracy,” said Justice Joseph. Speaking at a constitutional convention on the theme “Independence of Election Commission of India – Compromised?” organised by the Indian Association of Lawyers (IAL) of Kerala at the Kerala High Court Chamber Complex, Justice Joseph said citizens have a duty to protest peacefully when constitutional institutions failed to uphold their responsibilities. “They have a duty to come out in an informed way and in a civil way to protes",
-      "published_at": "Tue, 13 Oct 2026 20:30:33 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/05/Kurian-Joseph-2.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 2,
-          "Protests": 3,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "35ac6a31e206f06a7d",
-      "title": "​No, Neha didn’t use a guerrilla tactic, romanticising the term hurts dissent",
-      "url": "https://www.thenewsminute.com/news/no-neha-didnt-use-a-guerrilla-tactic-romancing-the-term-hurts-dissent",
-      "summary": "Did the All India Students’ Association (AISA) leader Neha Bora use a doppelganger to evade Delhi police during the October 11 protests? Neha clarified that she hadn’t set out to do that at all. “It was not a strategy but a simple coincidence,\" she said later the same day on Instagram. But social media and news platforms had already rushed to characterise a case of mistaken identities as a “strategy” or \"battlefield tactic”. Neha was immediately showered in praise for cleverly “ outsmarting ” authorities. To call a coincidence a manoeuvre of war is a dangerous misrepresentation of facts. It leaves peaceful civilian protesters, most of them in their 20s and 30s, vulnerable to a narrative that frames nonviolent dissent as active combat. What happened? On October 11, the Cockroach Janata Party (CJP) and various Left student bodies, including AISA, called for protests amid the demand for Chief Election Commissioner (CEC) Gyanesh Kumar’s resignation. Neha asked protestors to gather at RK Ashram Marg in New Delhi at 2.30 pm. “See you there. Don’t be late,” she signed off. The number of protesters and journalists swelled at RK Ashram. As police tried to stop movement towards Jantar Mantar",
-      "published_at": "Tue, 13 Oct 2026 12:25:33 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-13/y3apkdh5/NehaBoraTwitterScreenGrabProtests.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Protests": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
       "raw_id": "65e7505df9e8c855c9",
       "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
       "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/people-of-srinagar-remain-reluctant-voters-as-district-records-2924-turnout/article68682811.ece",
@@ -553,39 +481,6 @@
       }
     },
     {
-      "raw_id": "ad7d6250fd10821006",
-      "title": "Insta reels a hit as campaigning for college union polls concludes in Calicut varsity",
-      "url": "https://www.thehindu.com/news/national/kerala/insta-reels-a-hit-as-campaigning-for-college-union-polls-concludes-in-calicut-varsity/article71579549.ece",
-      "summary": "The elections are scheduled for October 15",
-      "published_at": "Tue, 13 Oct 2026 21:32:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m9o4yf/article71580737.ece/alternates/LANDSCAPE_1200/14tv%20election%20poster.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
       "raw_id": "f45553dba4ac6fbb71",
       "title": "Odisha government announces to hold student union election after a gap of eight years",
       "url": "https://www.thehindu.com/news/national/odisha/odisha-government-announces-to-hold-student-union-election-after-a-gap-of-eight-years/article71546217.ece",
@@ -617,39 +512,6 @@
         "candidate_categories": [
           "Politics & Elections",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "1d0ce4323e9321baa6",
-      "title": "SIR: Special camps on October 15, 16 to help enrol omitted voters in Telangana",
-      "url": "https://www.thehindu.com/news/national/telangana/sir-special-camps-on-october-15-16-to-help-enrol-omitted-voters-in-telangana/article71580414.ece",
-      "summary": "First-time electors can also apply for enrolment through Form-6; though the claims and objections period has ended, enrolment will remain open until November 7",
-      "published_at": "Tue, 13 Oct 2026 21:37:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5e4e8p/article71580750.ece/alternates/LANDSCAPE_1200/SIR-enumerationG9DGB4NGU.4.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
         ]
       }
     },
@@ -825,6 +687,177 @@
         "candidate_categories": [
           "Politics & Elections",
           "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "d87e3be80422d19219",
+      "title": "Muslims disproportionately flagged in Delhi SIR",
+      "url": "https://www.thehindu.com/data/muslims-disproportionately-flagged-in-delhi-sir/article71580772.ece",
+      "summary": "Muslims, who form 13.6% of electors on Delhi’s draft roll, made up 20.3% of those flagged for ‘logical discrepancies’ and 30% of those flagged under five reasons indicative of family size by the Election Commission’s ERONET software; in Bihar, which didn’t have ‘logical discrepancy’ checks, Muslims accounted for 18.4% of deleted electors, in line with their 17.7% share in population",
+      "published_at": "Wed, 14 Oct 2026 00:52:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/zruy1/article71581147.ece/alternates/LANDSCAPE_1200/Election15.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "a5fcd0db09138e8c4d",
+      "title": "Supreme Court Registry clears, numbers Rahul Gandhi’s plea against SIR-CEC within 24 hours",
+      "url": "https://www.thehindu.com/news/national/rahul-gandhis-plea-not-listed-for-hearing-on-october-13-faces-routine-clerical-hurdles/article71577862.ece",
+      "summary": "The petition has sought a complete disclosure of records and decisions of Election Commission on Special Intensive Revision and an independent probe into allegations of unilateral exercise of power by Chief Election Commissioner Gyanesh Kumar",
+      "published_at": "Tue, 13 Oct 2026 21:52:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rr9u44/article71577874.ece/alternates/LANDSCAPE_1200/PTI10_12_2026_000402B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "f29e8285a712d4c2be",
+      "title": "Data | BJP had the edge in the recent bipolar contests in Karnataka",
+      "url": "https://www.thehindu.com/data/data-bjp-had-the-edge-in-the-recent-bipolar-contests-in-karnataka/article66758460.ece",
+      "summary": "Elections in Karnataka have increasingly become bipolar, with 77% of the seats recording bipolar contests in 2018",
+      "published_at": "Thu, 27 Mar 2025 17:24:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3wl5pw/article66758476.ece/alternates/LANDSCAPE_1200/uj.png",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "cdf3a44208d11dc555",
+      "title": "Tamil Nadu goes to polls",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
+      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
+      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 9
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "5135a5e751d0c122ea",
+      "title": "Those supporting terrorism will meet fate of Afzal Guru: Amit Shah",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/terrorism-wont-be-allowed-to-stage-comeback-it-has-been-buried-amit-shah-in-udhampur-rally/article68685621.ece",
+      "summary": "The Union Home Minister said, “Even generations after Rahul (Gandhi) would not be able to restore it (Article 370). Elections are being held here for the first time without Article 370 and a separate flag”",
+      "published_at": "Sat, 28 Sep 2024 02:30:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wex2nb/article68685658.ece/alternates/LANDSCAPE_1200/PTI09_26_2024_000103B.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
@@ -1363,39 +1396,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "6c3cd53b1634de940e",
-      "title": "Meghalaya plans dedicated tourist transit point at Umtyngar",
-      "url": "https://eastmojo.com/meghalaya/2026/10/12/meghalaya-plans-dedicated-tourist-transit-point-at-umtyngar/",
-      "summary": "Shillong: The Meghalaya government plans to develop Umtyngar as a dedicated transit point for tourists and has brought tourism and transport stakeholders together to address concerns over the share of business going to local taxi operators. The decisions were taken at a meeting chaired by Deputy Chief Minister in-charge of Transport Sniawbhalang Dhar on Monday, […] The post Meghalaya plans dedicated tourist transit point at Umtyngar appeared first on EastMojo .",
-      "published_at": "Mon, 12 Oct 2026 15:02:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
         ]
       }
     }

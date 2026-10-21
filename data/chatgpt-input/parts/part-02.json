@@ -1,22 +1,55 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-21T13:55:50.681944+00:00",
-  "input_count": 444,
+  "prepared_at": "2026-10-21T20:19:49.911417+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 130,
-    "established_or_other": 70,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "835675326855ec5e08",
-      "title": "Left Groups Protest Workers' Repression in North India",
-      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
-      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
-      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "raw_id": "00426e3d9e838bde7c",
+      "title": "Why Northeast India’s tourism boom needs a reality check",
+      "url": "https://eastmojo.com/premium/2026/10/21/why-northeast-indias-tourism-boom-needs-a-reality-check/",
+      "summary": "For several decades now, tourism has been a buzzword in discussions about Northeast India. It is regarded as a potential source of economic growth for the region. Tourism is one of the focus areas of the Government of India’s Act East Policy, renamed in 2014 from the Look East Policy, which was launched in 1991. […] The post Why Northeast India’s tourism boom needs a reality check appeared first on EastMojo .",
+      "published_at": "Wed, 21 Oct 2026 09:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -37,11 +70,349 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 5,
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3dc26b42741afd8b31",
+      "title": "Pakistan cuts GDP growth estimate to 3.65 per cent in fiscal year 2026",
+      "url": "https://www.thehindu.com/news/international/pakistan-cuts-gdp-growth-estimate-to-365-per-cent-in-fiscal-year-2026/article71603525.ece",
+      "summary": "The National Accounts Committee’s downward revision, attributed to a slowdown in industry and services, places Pakistan’s per capita income at the lowest in the region",
+      "published_at": "Tue, 20 Oct 2026 12:39:18 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/njuz2h/article71603586.ece/alternates/LANDSCAPE_1200/S_P-Global-FitGDIGIO7UL.4.jpg.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 5,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "4b6a41784efc20602a",
+      "title": "Trade, defence and the Russia-Ukraine conflict to dominate Modi-Tusk talks on October 22",
+      "url": "https://www.thehindu.com/news/national/trade-defence-and-the-russia-ukraine-conflict-to-dominate-modi-tusk-talks-on-october-22/article71607872.ece",
+      "summary": "Polish PM to hold meetings Delhi and Bengaluru, both sides finalising a confidentiality agreement for defence tech sensitivities on Russia",
+      "published_at": "Thu, 22 Oct 2026 00:38:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/pvtapd/article71608918.ece/alternates/LANDSCAPE_1200/IMG_India_PM_Modi_meets__2_1_IOD7UJD5.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "8767f396b864d48fcb",
+      "title": "BJP chief calls for renewed commitment from party workers",
+      "url": "https://www.thehindu.com/news/national/bjp-chief-calls-for-renewed-commitment-from-party-workers/article71607537.ece",
+      "summary": "At the 75th foundation day of the Bharatiya Jana Sangh, Mr. Nabin said the BJP would continue along the path established by its ideological and political predecessor",
+      "published_at": "Wed, 21 Oct 2026 21:37:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/13gw9n/article71608628.ece/alternates/LANDSCAPE_1200/20261021267L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
           "Economy & Employment": 4
         },
         "candidate_categories": [
           "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "c53beda482d48a9bae",
+      "title": "Ankita Bhandari Case: क्या है अंकिता भंडारी का मामला? इंडिया गेट में प्रदर्शन के बाद भूख हड़ताल में बैठेने की चेतावनी",
+      "url": "https://khabarlahariya.org/ankita-bhandari-case-what-is-the-ankita-bhandari-case-warning-issued-about-starting-a-hunger-strike-following-a-protest-at-india-gate/",
+      "summary": "14 अक्टूबर 2026 को अंकिता भंडारी के माता-पिता द्वारा बीजेपी नेता दुष्यंत कुमार गौतम को सिक्किम का राज्यपाल नियुक्त किए जाने का विरोध करते हुए दिल्ली के इंडिया गेट पर…",
+      "published_at": "Thu, 15 Oct 2026 09:45:14 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "6791f01b88ba630aa0",
+      "title": "LIVE ग्राउंड रिपोर्टिंग: ज्ञानेश कुमार के नाम से किया अस्थि विसर्जन, दिल्ली के अलावा UP और Bihar में SIR को लेकर आज विरोध प्रदर्शन तेज",
+      "url": "https://khabarlahariya.org/live-ground-report-ashes-immersed-in-the-name-of-gyanesh-kumar-protests-against-sir-intensify-today-in-up-and-bihar-in-addition-to-delhi/",
+      "summary": "दिल्ली के अलावा उत्तर प्रदेश और बिहार में भी SIR और मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग को लेकर विरोध प्रदर्शन हो रहे हैं। दोनों राज्यों में…",
+      "published_at": "Sat, 10 Oct 2026 07:39:08 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 8
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "b95d54bba9ab084164",
+      "title": "UP/Mahoba: आशा कार्यकर्ताओं का प्रदर्शन, मानदेय बढ़ाने की मांग को लेकर सौंपा ज्ञापन",
+      "url": "https://khabarlahariya.org/up-mahoba-asha-workers-stage-a-protest-submit-a-memorandum-demanding-an-increase-in-their-honorarium/",
+      "summary": "उत्तर प्रदेश के महोबा जिले में आशा कार्यकर्ताओं ने मानदेय बढ़ाने की मांग को लेकर कलेक्ट्रेट परिसर में धरना-प्रदर्शन किया। प्रदर्शन के बाद कार्यकर्ताओं ने डीएम कार्यालय पहुंचकर अपनी मांगों…",
+      "published_at": "Fri, 16 Oct 2026 12:03:35 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "b99484f30a1d440c2d",
+      "title": "Struck Off the Rolls, Then Out-Policed: The Protest Against SIR",
+      "url": "https://khabarlahariya.org/struck-off-the-rolls-then-out-policed-the-protest-against-sir/",
+      "summary": "Notes from a journalist on the ground in New Delhi, where heavy police deployment and detentions silenced a demonstration before it could even begin. 5:04 a.m. I leave Malviya Nagar…",
+      "published_at": "Sat, 10 Oct 2026 18:31:49 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5
+        },
+        "candidate_categories": [
           "Protests"
         ]
       }
@@ -245,55 +616,53 @@
       }
     },
     {
-      "raw_id": "9bcfe1ff8ff9d820cc",
-      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
-      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
-      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
-      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "raw_id": "bbc81ca51aaa46cea0",
+      "title": "The Kavita Show: पत्रकारों को हिरासत में लेने, मारपीट और कैमरे तोड़ने के आरोपों पर सवाल",
+      "url": "https://khabarlahariya.org/the-kavita-show-questions-regarding-allegations-of-detaining-journalists-assaulting-them-and-breaking-their-cameras/",
+      "summary": "10 अक्टूबर को दिल्ली में मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग और विशेष गहन मतदाता सूची पुनरीक्षण (SIR) के विरोध में प्रदर्शन हुआ। इस दौरान पत्रकारों ने…",
+      "published_at": "Fri, 16 Oct 2026 14:10:46 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
+          "Protests": 1
         },
         "candidate_categories": [
-          "Economy & Employment",
           "Protests"
         ]
       }
     },
     {
-      "raw_id": "6c79b6d40305076b07",
-      "title": "Share Market Crash: पहले सेंसेक्स 829 अंक चढ़ा, फिर 1400 अंक फिसला; आखिर हुआ क्या?",
-      "url": "https://theruralpress.in/business/share-market-crash-sensex-nifty-bse-market-cap-bajaj-finance-eternal-india-vix-crude-oil/",
-      "summary": "Share Market Crash: शेयर बाजार में शुरुआती तेजी के बाद सेंसेक्स और निफ्टी में बड़ी गिरावट देखने को मिली। सेंसेक्स दिन के उच्चतम स्तर 74,682.19 से 1,400.41 अंक नीचे आ गया, जबकि निफ्टी अपने पीक से 448.65 अंक फिसल गया। इस गिरावट के दौरान बॉम्बे स्टॉक एक्सचेंज (BSE) का मार्केट कैप 8.78 लाख करोड़ रुपये […]",
-      "published_at": "Wed, 21 Oct 2026 10:22:39 +0000",
+      "raw_id": "24ac90d6bb0fe76757",
+      "title": "आज पूरे दिन का LIVE अपडेट: CJP का आरोप, बंगला साहिब गुरुद्वारे में घुसी पुलिस, कई कार्यकर्ता हिरासत में",
+      "url": "https://khabarlahariya.org/live-updates-for-the-day-cjp-alleges-police-entered-bangla-sahib-gurudwara-several-activists-detained/",
+      "summary": "responsivevoice_button voice=”Hindi Female” buttontext=”इसको सुने़”] आज 10 अक्टूबर को दिल्ली के जंतर-मंतर पर SIR के विरोध में होने वाले प्रदर्शन से जुड़ी हर अपडेट यहां मिलेगी। प्रदर्शन स्थल पर पुलिस…",
+      "published_at": "Sat, 10 Oct 2026 05:05:30 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -305,389 +674,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Protests": 1
         },
         "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "91f2a03af7c325bb8a",
-      "title": "India International Trade Fair 2026: नई दिल्ली के भारत मंडपम में सजेगा छत्तीसगढ़ का पवेलियन, दिखेगी ‘विकास और विरासत’ की झलक",
-      "url": "https://theruralpress.in/national/chhattisgarh-pavilion-india-international-trade-fair-2026-bharat-mandapam-iitf-delhi/",
-      "summary": "India International Trade Fair 2026: राष्ट्रीय राजधानी नई दिल्ली के प्रगति मैदान स्थित अत्याधुनिक भारत मंडपम में आगामी 14 से 27 नवंबर 2026 तक आयोजित होने वाले 45वें ‘भारत अंतर्राष्ट्रीय व्यापार मेले’ (IITF) में छत्तीसगढ़ की भागीदारी को लेकर प्रशासनिक तैयारियां जोरों पर शुरू हो गई हैं। इस प्रतिष्ठित वैश्विक मंच पर राज्य की कला, […]",
-      "published_at": "Wed, 21 Oct 2026 10:09:45 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "f73fb2614a60f1b26b",
-      "title": "MP Government Jobs 2026: एमपी में सरकारी नौकरी की तैयारी कर रहे युवाओं के लिए खुशखबरी, मोहन सरकार करेगी 20 हजार नई नियुक्तियां",
-      "url": "https://theruralpress.in/madhya-pradesh/mp-school-education-20000-government-jobs-sandipani-schools-2026/",
-      "summary": "MP Government Jobs 2026: मध्य प्रदेश में सरकारी नौकरी की तैयारी कर रहे युवाओं के लिए मुख्यमंत्री डॉ. मोहन यादव ने बड़ा ऐलान किया है। राज्य के स्कूल शिक्षा विभाग में 20 हजार नई नियुक्तियां की जाएंगी। इसके साथ ही प्रदेश में 200 से ज्यादा नए सांदीपनि विद्यालय भी खोले जाएंगे। मुख्यमंत्री ने एक कार्यक्रम […]",
-      "published_at": "Wed, 21 Oct 2026 10:05:13 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "c6a9a5ede085f4be19",
-      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
-      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
-      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
-      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
           "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "2a25090f84e0207e53",
-      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
-      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
-      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
-      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "b382bc0d3d8d72fc82",
-      "title": "‘People scared of economics’: Sarthak Pradhan on your money, GST and Fiscal Fables",
-      "url": "https://www.newslaundry.com/2026/10/21/people-scared-of-economics-sarthak-pradhan-on-your-money-gst-and-fiscal-fables",
-      "summary": "Why does it cost the government Rs 3 to raise Rs 1 in tax? Why does India spend only about 3 percent of its money at the local level, when China spends around 50 percent? And should governments be in the business of making soap and selling alcohol? Abhinandan Sekhri talks to Sarthak Pradhan, co-author of Fiscal Fables: A Citizen’s Guide to Public Finance (with Pranay Kotasthane), about how the government earns and spends your money. The book explains public finance through stories, movies and pop culture, with no equations. They cover taxes, GST, freebies, the Planning Commission, trade, and the cost of Delhi’s traffic and pollution. Whether you’ve read an economics book or not, this conversation is about your money. If you liked this video, let our reporters tell you why you should subscribe to Newslaundry .",
-      "published_at": "Wed, 21 Oct 2026 13:30:00 +0000",
-      "image_url": "https://cf-images.assettype.com/newslaundry/2026-10-21/b4f75yg5/AI-interview-.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 3,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "00426e3d9e838bde7c",
-      "title": "Why Northeast India’s tourism boom needs a reality check",
-      "url": "https://eastmojo.com/premium/2026/10/21/why-northeast-indias-tourism-boom-needs-a-reality-check/",
-      "summary": "For several decades now, tourism has been a buzzword in discussions about Northeast India. It is regarded as a potential source of economic growth for the region. Tourism is one of the focus areas of the Government of India’s Act East Policy, renamed in 2014 from the Look East Policy, which was launched in 1991. […] The post Why Northeast India’s tourism boom needs a reality check appeared first on EastMojo .",
-      "published_at": "Wed, 21 Oct 2026 09:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "da4e42e30e4fcff40e",
-      "title": "Chennai rains: T Nagar, Velachery and other areas face waterlogging",
-      "url": "https://www.thenewsminute.com/tamil-nadu/chennai-rains-t-nagar-velachery-and-other-areas-face-waterlogging",
-      "summary": "Heavy intermittent rainfall since Tuesday night, October 20, has caused waterlogging in several Chennai neighbourhoods, including T Nagar, Velachery, Nungambakkam, Ashok Nagar, and West Mambalam. The Greater Chennai Corporation (GCC) has deployed motor pumps, tractors, and other machinery to remove stagnant rainwater. Civic workers have also been working on clearing blockages in drains and directing the water into the stormwater drain network. In T Nagar, rainwater accumulated on several major roads, including Panagal Park Road and Habibullah Road, as well as streets adjoining Thirumalai Road. Panagal Park Road, an important stretch connecting Anna Salai to T Nagar, was severely waterlogged. Two-wheelers, buses, autorickshaws, and cars struggled to navigate the road, with water reaching halfway up some vehicles. Traffic along this stretch has also been affected by ongoing Metro Rail construction on one side and stormwater drain works on the other. Bazullah Road and streets adjoining Thirumalai Road were also affected. Waterlogging was reported on GN Chetty Road too, where infrastructure works had been undertaken under the Smart City project. Water resources Minister and T Nagar MLA",
-      "published_at": "Wed, 21 Oct 2026 10:38:40 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/import/sites/default/files/bengaluru_rains_0.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "3dc26b42741afd8b31",
-      "title": "Pakistan cuts GDP growth estimate to 3.65 per cent in fiscal year 2026",
-      "url": "https://www.thehindu.com/news/international/pakistan-cuts-gdp-growth-estimate-to-365-per-cent-in-fiscal-year-2026/article71603525.ece",
-      "summary": "The National Accounts Committee’s downward revision, attributed to a slowdown in industry and services, places Pakistan’s per capita income at the lowest in the region",
-      "published_at": "Tue, 20 Oct 2026 12:39:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/njuz2h/article71603586.ece/alternates/LANDSCAPE_1200/S_P-Global-FitGDIGIO7UL.4.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 5,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
         ]
       }
     },
@@ -698,39 +688,6 @@
       "summary": "Interior Minister Laurent Nuñez said the possibility of calling off planned events was discussed, including football matches, ‘but this does not apply to tomorrow’s match between PSG and FC Barcelona’",
       "published_at": "Tue, 20 Oct 2026 13:20:15 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/bluvm1/article71602896.ece/alternates/LANDSCAPE_1200/France_Protests_893_9.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 17
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ab2f579b7a4993abb3",
-      "title": "FIBA Women’s Basketball League Asia: Railways to become first Indian team at the event",
-      "url": "https://www.thehindu.com/sport/fiba-womens-basketball-league-asia-railways-to-become-first-indian-team-at-the-event/article71602949.ece",
-      "summary": "Four club champions from China, South Korea (KB Stars), Chinese Taipei (Cathay Life Tigers) and Japan (Denso Iris), along with Indian National champion Indian Railways and wild-card entrant Akari Sports from the Philippines, make up the six-team competition",
-      "published_at": "Mon, 19 Oct 2026 20:41:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1x2d9j/article71602944.ece/alternates/LANDSCAPE_1200/IMG_0805.jpeg",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
@@ -824,11 +781,44 @@
       }
     },
     {
+      "raw_id": "d5405901ca450225a9",
+      "title": "FIBA Women’s Basketball League Asia: KB Stars’ thumping win dashes Railways’ hopes",
+      "url": "https://www.thehindu.com/sport/fiba-womens-basketball-league-asia-kb-stars-thumping-win-dashes-railways-hopes/article71608492.ece",
+      "summary": "",
+      "published_at": "Wed, 21 Oct 2026 22:13:40 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3dug9c/article71608733.ece/alternates/LANDSCAPE_1200/_DSC2879.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "bb1f9513a1a991511a",
       "title": "Ten teams to vie for 97th All-India MCC-Murugappa Gold Cup hockey title",
       "url": "https://www.thehindu.com/sport/hockey/ten-teams-to-vie-for-97th-all-india-mcc-murugappa-gold-cup-hockey-title/article71607212.ece",
       "summary": "",
-      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
+      "published_at": "Wed, 21 Oct 2026 20:06:16 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/rv2j6u/article71607661.ece/alternates/LANDSCAPE_1200/4871_21_10_2026_17_51_13_1_20261021_115934.JPG",
       "suggested_category": "Sports",
       "priority_discovery": false,
@@ -1088,120 +1078,116 @@
       }
     },
     {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
       "image_url": "",
-      "suggested_category": "States & Local",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "d90e759a3f3b1c487b",
-      "title": "MCD starts demolition drive in Bhalswa colony in north-west Delhi",
-      "url": "https://www.thehindu.com/news/cities/Delhi/mcd-starts-demolition-drive-in-bhalswa-colony-in-north-west-delhi/article68519463.ece",
-      "summary": "The Municipal Corporation of Delhi on August 13 began a demolition drive in north-west Delhi's Bhalswa Dairy colony; heavy deployment of security personnel has been made at the site",
-      "published_at": "Tue, 13 Aug 2024 12:35:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/s5onwe/article68519486.ece/alternates/LANDSCAPE_1200/06_RVM4466.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "States & Local": 9
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "458ce3d13594308d47",
-      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
-      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
-      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
-      "suggested_category": "States & Local",
+      "raw_id": "8218f21124ceb14231",
+      "title": "Guwahati among cities seeing rise in coworking space usage",
+      "url": "https://eastmojo.com/news/2026/10/21/guwahati-among-cities-seeing-rise-in-coworking-space-usage/",
+      "summary": "View of Guwahati city by Surajit Sharma (File photo) \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2023/11/guwahati.jpg?fit=780%2C439&ssl=1\" /> Guwahati is among the Tier-II and Tier-III cities in India that have recorded a double-digit increase in visits to flexible office and coworking spaces, according to data released by International Workplace Group (IWG) on Wednesday. The city recorded a rise in workspace visits between December 2025 and May 2026 compared with the preceding six-month period, […] The post Guwahati among cities seeing rise in coworking space usage appeared first on EastMojo .",
+      "published_at": "Wed, 21 Oct 2026 08:00:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 8
+          "International & Geopolitics": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "4bdbc67592fd4016b3",
-      "title": "Fishing for ghost nets: How TREE Foundation and HCLFoundation are cleaning the seas",
-      "url": "https://www.thehindu.com/sci-tech/energy-and-environment/fishing-for-ghost-nets-how-tree-foundation-and-hclfoundation-are-cleaning-the-seas/article71513837.ece",
-      "summary": "Through its Sea Turtle Protection Force, TREE Foundation has built an army of fishers who retrieve ghost nets from the sea",
-      "published_at": "Mon, 28 Sep 2026 22:12:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/eu4z2o/article71513839.ece/alternates/LANDSCAPE_1200/27dc_tree1.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "55dffb6e6495c3d854",
+      "title": "Putin agrees to resume three-way peace talks with Ukraine and U.S.",
+      "url": "https://www.thehindu.com/news/international/putin-xi-trump-summit-being-prepared-kremlin/article71608186.ece",
+      "summary": "The latest talks also came more than two years since Mr. Trump promised in his successful election campaign to end the Ukraine war within 24 hours",
+      "published_at": "Wed, 21 Oct 2026 23:28:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/w8a3dy/article71608190.ece/alternates/LANDSCAPE_1200/2026-10-17T012836Z_455791147_RC2R7GACNKD8_RTRMADP_3_USA-TRUMP-SANCTIONS.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1216,25 +1202,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "Politics & Elections": 2,
+          "International & Geopolitics": 12
         },
         "candidate_categories": [
-          "States & Local"
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
     {
-      "raw_id": "375c7b06292deffa75",
-      "title": "Hope flows anew with revival of Andhra’s Veligonda project",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/hope-flows-anew-with-revival-of-andhras-veligonda-project/article71479450.ece",
-      "summary": "Conceived as a long-term response to the nearly four-decade fight of the people against chronic drought, depleted water resources, and fluoride contamination in parts of the region, the project aims to create a large irrigation network spanning four districts and 30 mandals, while extending drinking water facilities to drought-prone populations.",
-      "published_at": "Sun, 20 Sep 2026 11:58:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uy5isz/article71481936.ece/alternates/LANDSCAPE_1200/10215_18_9_2026_15_12_50_1_DSC_5155.JPG",
-      "suggested_category": "States & Local",
+      "raw_id": "bb0adf95af659d27f0",
+      "title": "Russia, Iran have ‘never’ worked so closely, says Iran’s Foreign Minister Araghchi",
+      "url": "https://www.thehindu.com/news/international/russia-iran-have-never-worked-so-closely-says-irans-foreign-minister-araghchi/article71603310.ece",
+      "summary": "Araghchi hosted his Russian counterpart Sergey Lavrov in Iran on Monday (October 19, 2026), in his first visit since the outbreak of the conflict",
+      "published_at": "Tue, 20 Oct 2026 10:30:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nvtmm2/article71603314.ece/alternates/LANDSCAPE_1200/Iran_Russia__357.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1249,25 +1237,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "International & Geopolitics": 12
         },
         "candidate_categories": [
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "6b060528c9f6aa9001",
-      "title": "Protected on paper: how private schoolteachers fall through the cracks in three Southern States",
-      "url": "https://www.thehindu.com/education/protected-on-paper-how-private-schoolteachers-fall-through-the-cracks-in-three-southern-states/article71473761.ece",
-      "summary": "Salaries for teachers in mid-tier private schools often range between ₹8,000 and ₹15,000 a month, rarely crossing ₹25,000",
-      "published_at": "Thu, 17 Sep 2026 00:52:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/bixfxp/article71474134.ece/alternates/LANDSCAPE_1200/iStock-1344985960.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "07d81f19929962b61a",
+      "title": "India asks its nationals in Italy to exercise caution, avoid crowded areas amid protests",
+      "url": "https://www.thehindu.com/news/international/india-asks-its-nationals-in-italy-to-exercise-caution-avoid-crowded-areas-amid-protests/article71603147.ece",
+      "summary": "It further said that in case of an emergency, Indian nationals could contact the embassy office in Rome at +39 331 614 2085 and the Consulate General of India in Milan at +39 3881647527.",
+      "published_at": "Tue, 20 Oct 2026 11:59:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rkpqnc/article71603153.ece/alternates/LANDSCAPE_1200/2026-10-18T190248Z_792733592_RC27U98R5E1R_RTRMADP_3_ITALY-PROTEST.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1282,34 +1270,34 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Society, Rights & Justice": 1
+          "Protests": 4,
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
+          "International & Geopolitics",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "5afd734520ae05a25b",
-      "title": "APPSC Group 1 notification 2026 out: 163 posts, apply from October 6 to 27; 729 other vacancies notified too",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/appsc-group-1-notification-2026-out-163-posts-apply-from-october-6-to-27-729-other-vacancies-notified-too/article71466673.ece",
-      "summary": "Applications for Group-I open October 6 to 27; statistical and tribal welfare posts October 13 to November 2; Legislature, Endowments, probation and industrial promotion posts October 16 to November 5",
-      "published_at": "Wed, 16 Sep 2026 16:31:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qzl197/article71357011.ece/alternates/LANDSCAPE_1200/vjkvg-group_2.JPG",
-      "suggested_category": "States & Local",
+      "raw_id": "c085724f4420a41480",
+      "title": "Death toll from Houthi strike on Yemen government camp rises to 73",
+      "url": "https://www.thehindu.com/news/international/death-toll-from-houthi-strike-on-yemen-government-camp-rises-to-73/article71605335.ece",
+      "summary": "It marked the deadliest attack in weeks as fighting between the Iran-backed Houthis and Yemen’s internationally recognised",
+      "published_at": "Tue, 20 Oct 2026 22:18:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/t6u82x/article71605334.ece/alternates/LANDSCAPE_1200/2026-10-19T124409Z_1208167972_RC2C6OA1CJT1_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-SHABWA.JPG",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -1317,27 +1305,39 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Society, Rights & Justice": 1
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
+          "International & Geopolitics"
         ]
-      }
+      },
+      "related_reports": [
+        {
+          "title": "Death toll rises to 60 in Houthi strike on Yemen training camp in deadliest attack in months",
+          "url": "https://www.thehindu.com/news/international/death-toll-rises-to-60-in-houthi-strike-on-yemen-training-camp-in-deadliest-attack-in-months/article71604054.ece",
+          "source": {
+            "id": "the-hindu-international",
+            "name": "The Hindu - International",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
-      "raw_id": "1bc9d993aa59c66eda",
-      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
-      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
-      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
-      "suggested_category": "States & Local",
+      "raw_id": "92e1564f55b9ac51b9",
+      "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+      "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
+      "summary": "The visit comes as India and the U.S. seek to deepen commercial and strategic ties, with energy security, manufacturing and technology among the areas of potential cooperation.",
+      "published_at": "Wed, 21 Oct 2026 22:16:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/onl0yl/article71606846.ece/alternates/LANDSCAPE_1200/Rubio_Central_Asia_794_7.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1352,12 +1352,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
+          "International & Geopolitics"
         ]
       }
     }

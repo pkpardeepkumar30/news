@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-21T13:55:50.681944+00:00",
-  "input_count": 444,
+  "prepared_at": "2026-10-21T20:19:49.911417+00:00",
+  "input_count": 428,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 130,
-    "established_or_other": 70,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 5,
@@ -360,37 +360,110 @@
       }
     },
     {
-      "raw_id": "24ac90d6bb0fe76757",
-      "title": "आज पूरे दिन का LIVE अपडेट: CJP का आरोप, बंगला साहिब गुरुद्वारे में घुसी पुलिस, कई कार्यकर्ता हिरासत में",
-      "url": "https://khabarlahariya.org/live-updates-for-the-day-cjp-alleges-police-entered-bangla-sahib-gurudwara-several-activists-detained/",
-      "summary": "responsivevoice_button voice=”Hindi Female” buttontext=”इसको सुने़”] आज 10 अक्टूबर को दिल्ली के जंतर-मंतर पर SIR के विरोध में होने वाले प्रदर्शन से जुड़ी हर अपडेट यहां मिलेगी। प्रदर्शन स्थल पर पुलिस…",
-      "published_at": "Sat, 10 Oct 2026 05:05:30 +0000",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "9320520b526dc076b5",
+      "title": "Scholarships: October 17, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Mon, 19 Oct 2026 06:14:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/klqn3m/article71522462.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 22,
+        "observed_report_count": 3,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: October 10, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-october-10-2026/article71498519.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        },
+        {
+          "title": "Scholarships: October 3, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-october-3-2026/article71498477.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "091ff7d6d93d4a2e3d",
+      "title": "Ranji scores - Round Two, Day Four",
+      "url": "https://www.thehindu.com/sport/ranji-scores-round-two-day-four/article71607830.ece",
+      "summary": "",
+      "published_at": "Wed, 21 Oct 2026 23:51:13 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
-        "observed_report_count": 1,
+        "observed_report_count": 2,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 1
+          "Sports": 8
         },
         "candidate_categories": [
-          "Protests"
+          "Sports"
         ]
-      }
+      },
+      "related_reports": [
+        {
+          "title": "Ranji scores - Round Two, Day Three",
+          "url": "https://www.thehindu.com/sport/ranji-scores-round-two-day-three/article71605043.ece",
+          "source": {
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "38320ef9883cf4adb7",
@@ -712,35 +785,6 @@
       }
     },
     {
-      "raw_id": "f6a2105e102ade7587",
-      "title": "Telangana CM Revanth hikes ex gratia for families of police personnel killed on duty",
-      "url": "https://www.thenewsminute.com/telangana/telangana-cm-revanth-hikes-ex-gratia-for-families-of-police-personnel-killed-on-duty",
-      "summary": "Follow TNM ’ s WhatsApp channel for news updates and story links. Telangana Chief Minister Revanth Reddy on Wednesday, October 21, announced an increase in ex-gratia payments for families of police personnel killed in the line of duty. Speaking at the Police Martyrs Memorial in Goshamahal, CM Revanth directed Director General of Police (DGP) CV Anand to increase the ex-gratia payment for the families of Home Guards from Rs 5 lakh to Rs 10 lakh. The ex-gratia amount for families of Superintendents of Police (SPs) and IPS officers was increased from Rs 1 crore to Rs 2 crore, while the ex-gratia amount for families of head constables and Additional SPs will be between Rs 1 crore and Rs 1.5 crore, compared with the Rs 45 lakh they received earlier. “The increase was not merely financial assistance but is a marker of respect for the families of the martyrs,” CM Revanth said. He also announced that all vacant posts in the state police department would be filled by 2028. Revanth also spoke of the induction of 112 Deputy Superintendents of Police (DSPs) as an unprecedented initiative in the history of the state, marking the single largest batch of direct-recruit DSPs to join the Telangana ",
-      "published_at": "Wed, 21 Oct 2026 11:53:36 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-21/tbquumjy/Untitled-design-2026-10-21T172152.355.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "5fb97b29f24e2289f6",
       "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
       "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
@@ -832,12 +876,70 @@
       }
     },
     {
-      "raw_id": "e01e2103cedfc36023",
-      "title": "PM Modi to visit Bihar’s Bhagalpur on November 20 to launch projects",
-      "url": "https://www.thehindu.com/news/national/bihar/pm-modi-to-visit-bihars-bhagalpur-on-november-20-to-launch-projects/article71607423.ece",
-      "summary": "Sources in the BJP say the Prime Minister may inaugurate the 2,400 MW Pirpainti thermal power project and lay foundation stones for the Vikramshila Central University and the Ajgaibinath Greenfield Airport",
-      "published_at": "Wed, 21 Oct 2026 19:14:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/h0yfdt/article71607749.ece/alternates/LANDSCAPE_1200/2026-05-20T111934Z_1512095426_RC2ZCLA5LFJR_RTRMADP_3_ITALY-INDIA.jpg",
+      "raw_id": "b1a3531948542796e6",
+      "title": "Student killed after being hit by train in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/student-run-over-by-train-in-kozhikode/article71607225.ece",
+      "summary": "Police say she was attempting to cross the railway tracks when the Vande Bharat Express, travelling towards Thiruvananthapuram, struck her",
+      "published_at": "Thu, 22 Oct 2026 01:11:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e67sdd/article71608251.ece/alternates/LANDSCAPE_1200/80692_10_9_2025_18_31_47_1_11TVKZVANTHEBARATH.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e3690e11fbab797de1",
+      "title": "Man booked for allegedly defaming Aluva MLA on social media",
+      "url": "https://www.thehindu.com/news/national/kerala/man-booked-for-alleged-defamatory-remarks-against-aluva-mla/article71607227.ece",
+      "summary": "The accused has been booked on charges including criminal defamation",
+      "published_at": "Thu, 22 Oct 2026 01:09:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/y3hzln/article71608363.ece/alternates/LANDSCAPE_1200/ALUVA%20_%20ANWAR%20SADATH.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6bf5b0d149f061fade",
+      "title": "J&K HC summons Srinagar Deputy Commissioner over detention order under PSA passed ‘without application of mind’",
+      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-hc-summons-srinagar-deputy-commissioner-over-detention-order-under-psa-passed-without-application-of-mind/article71608260.ece",
+      "summary": "In the present case, the nature of the allegations, the apparent absence of specific material particulars on the grounds of detention and the prima facie concern regarding the manner in which the detention order has been formulated warrant further examination, Justice Nargal observes",
+      "published_at": "Thu, 22 Oct 2026 01:08:55 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -865,41 +967,12 @@
       }
     },
     {
-      "raw_id": "6eb1f9150623848d2b",
-      "title": "Woman killed, one injured in cracker godown blast in Vellore",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/woman-killed-one-injured-in-cracker-godown-blast-in-vellore/article71607156.ece",
-      "summary": "Special teams were formed to nab the godown owner, who fled the spot after the incident",
-      "published_at": "Wed, 21 Oct 2026 19:13:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/l46eww/article71607866.ece/alternates/LANDSCAPE_1200/9712_21_10_2026_14_8_49_5__DSC1348.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "3b870719e41efc8d49",
-      "title": "Elampalloor panchayat expands ‘Poshakatottam’ project to anganwadis",
-      "url": "https://www.thehindu.com/news/national/kerala/elampalloor-panchayat-expands-poshakatottam-project-to-anganwadis/article71607086.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 19:13:51 +0530",
-      "image_url": "",
+      "raw_id": "2df3428e013c0344a5",
+      "title": "Kuki-Zo groups demand reimposition of President’s Rule in Manipur",
+      "url": "https://www.thehindu.com/news/national/manipur/manipur-crisis-is-political-not-a-security-issue-says-kuki-zo-womens-forum-seeks-presidents-rule/article71607642.ece",
+      "summary": "President’s Rule was last imposed in the State from February 2025 to February 2026; Kuki-Zo groups say 32 members of their community have died in ethnic violence since March, while economic embargoes hurt Kuki-Zo villages",
+      "published_at": "Thu, 22 Oct 2026 01:07:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/2ccyn0/article71608943.ece/alternates/LANDSCAPE_1200/IMG_4539.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -919,48 +992,19 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 4
+          "Economy & Employment": 1
         },
         "candidate_categories": [
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "ec66ca813a66e2e9c7",
-      "title": "Rahul’s foreign trip to seek guidance from Soros-linked body to bring regime change: BJP",
-      "url": "https://www.thehindu.com/news/national/rahuls-foreign-trip-to-seek-guidance-from-soros-linked-body-to-bring-regime-change-bjp/article71607463.ece",
-      "summary": "BJP national spokesperson Sambit Patra says attempts were made to create an impression that the Union Government was so dictatorial that it was preventing people from unfurling the National Flag",
-      "published_at": "Wed, 21 Oct 2026 19:12:45 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uqe15o/article71607759.ece/alternates/LANDSCAPE_1200/PTI10_06_2026_000073B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "cd7461aa56323a0055",
-      "title": "Police martyrs remembered, commemorative parades held",
-      "url": "https://www.thehindu.com/news/national/telangana/police-martyrs-remembered-commemorative-parades-held/article71607503.ece",
+      "raw_id": "99ab0c3498b98dd636",
+      "title": "23rd Kaladarshini cultural festival from October 26 in Vijayawada",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/23rd-kaladarshini-cultural-festival-from-october-26-in-vijayawada/article71608523.ece",
       "summary": "",
-      "published_at": "Wed, 21 Oct 2026 19:12:34 +0530",
+      "published_at": "Thu, 22 Oct 2026 00:48:22 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -985,12 +1029,12 @@
       }
     },
     {
-      "raw_id": "a7031ff55a8cb9cb26",
-      "title": "District admn. carries out repairs to Channamma statue in Kittur",
-      "url": "https://www.thehindu.com/news/national/karnataka/district-admn-carries-out-repairs-to-channamma-statue-in-kittur/article71607043.ece",
-      "summary": "The repairs were taken up immediately after news came that the right hand of the equestrian statue accidentally fell off",
-      "published_at": "Wed, 21 Oct 2026 19:11:38 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yuerz2/article71607843.ece/alternates/LANDSCAPE_1200/9727_21_10_2026_15_31_41_1_22BGMKITTURCHANNAMMASTATUEREPAIR1.JPEG",
+      "raw_id": "249125b4eb4562fd29",
+      "title": "AAP alleges corruption in DJB on spraying of anti-frothing agent in Yamuna",
+      "url": "https://www.thehindu.com/news/cities/Delhi/aap-alleges-corruption-in-djb-on-spraying-of-anti-frothing-agent-in-yamuna/article71608548.ece",
+      "summary": "“The container belonging to a company is marked ‘Defoamer Stock’, which means the tanks and all the equipment used to spray chemicals to remove foam from the Yamuna have already been set up,” says AAP Delhi president",
+      "published_at": "Thu, 22 Oct 2026 00:48:13 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4toa6u/article71608932.ece/alternates/LANDSCAPE_1200/If-three-time-CGM2GIBM9F.4.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1014,12 +1058,12 @@
       }
     },
     {
-      "raw_id": "38ec61818cb15d6693",
-      "title": "TDB under fire from employees’ union over Sabarimala road repair delay",
-      "url": "https://www.thehindu.com/news/national/kerala/tdb-under-fire-from-employees-union-over-sabarimala-road-repair-delay/article71604525.ece",
-      "summary": "Traffic gridlocks have persisted along the Pampa-Chalakkayam route since the temple opened for the monthly puja season on October 17, 2026. Travancore Devaswom Employees Front flays TDB for alleged delay in granting permission for the Public Works department to repair the 4.5-km stretch",
-      "published_at": "Wed, 21 Oct 2026 19:11:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hghxwk/article71607848.ece/alternates/LANDSCAPE_1200/State_StandalonGIDGMDHNR.3.jpg.jpg",
+      "raw_id": "99f47c615fca9a1c2e",
+      "title": "T.N. government fixes car purchase ceiling at ₹26 lakh for Ministers, other key Assembly functionaries; sets ₹15-lakh cap for other MLAs",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-government-fixes-car-purchase-ceiling-at-26-lakh-for-ministers-other-key-assembly-functionaries-sets-15-lakh-cap-for-other-mlas/article71608722.ece",
+      "summary": "",
+      "published_at": "Thu, 22 Oct 2026 00:46:39 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1043,12 +1087,70 @@
       }
     },
     {
-      "raw_id": "dec946a7d2358eda87",
-      "title": "Congress alleges voter roll manipulation in UP's Pilibhit, seeks probe into SIR process",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/congress-alleges-voter-roll-manipulation-in-ups-pilibhit-seeks-probe-into-sir-process/article71607804.ece",
-      "summary": "UP Congress president Aradhana Mishra 'Mona' asserted that the disappearance of names from electoral rolls was a serious issue",
-      "published_at": "Wed, 21 Oct 2026 19:11:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5ka36c/article71607849.ece/alternates/LANDSCAPE_1200/PTI10_21_2026_000129B.jpg",
+      "raw_id": "3341c7580d7839b2e8",
+      "title": "Vijay congratulates Kasthuri Rajamani for clinching silver medal in 5th Asian Para Games",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vijay-congratulates-kasthuri-rajamani-for-clinching-silver-medal-in-5th-asian-para-games/article71606546.ece",
+      "summary": "",
+      "published_at": "Thu, 22 Oct 2026 00:38:13 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4acc12b7514c86dd9b",
+      "title": "IIT-Madras to train bio-tech graduates in practical skills",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/iit-madras-to-train-bio-tech-graduates-in-practical-skills/article71608464.ece",
+      "summary": "",
+      "published_at": "Thu, 22 Oct 2026 00:32:52 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "f42e1f140e5cb831ae",
+      "title": "Parvinder Singh Jhota murder case: CBI takes over probe; opposition demands Punjab CM’s resignation",
+      "url": "https://www.thehindu.com/news/national/punjab/parvinder-singh-jhota-murder-case-cbi-takes-over-probe-punjab-mansa/article71606264.ece",
+      "summary": "The anti-drug activist’s family is expected to be examined by the CBI team, led by senior DIG, in Mansa",
+      "published_at": "Thu, 22 Oct 2026 00:27:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/x0zqtg/article71606317.ece/alternates/LANDSCAPE_1200/PTI10_21_2026_000013B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1068,112 +1170,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 1
+          "Sports": 1
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "f3e4f12845a9dec981",
-      "title": "Dasara festivities end with Teppotsavam of goddess Kanaka Durga in Vijayawada",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/dasara-end-on-indrakeeladri-with-teppotsavam-of-goddess-kanaka-durga/article71607353.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 19:09:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/94ntrk/article71607726.ece/alternates/LANDSCAPE_1200/vjkvg-hamsa%204.JPG",
+      "raw_id": "0601c28d3dee8b6ec6",
+      "title": "Tribal held for possession of country-made gun, explosives in Jawadhu Hills",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tribal-held-for-possession-of-country-made-gun-explosives-in-jawadhu-hills/article71607782.ece",
+      "summary": "The team apprehended one of the suspects and seized the country-made gun and explosives from him",
+      "published_at": "Thu, 22 Oct 2026 00:23:57 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
         "id": "the-hindu-national",
         "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e8b81584240e03a2a9",
-      "title": "Traffic diversions around Tank Bund in Hyderabad for Durga idol immersion till October 24",
-      "url": "https://www.thehindu.com/news/cities/Hyderabad/traffic-diversions-around-tank-bund-in-hyderabad-for-durga-idol-immersion-till-october-24/article71606661.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 19:08:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6faqbg/article71606662.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-21%20at%2012.00.42%20PM.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "63f69bba5920848093",
-      "title": "Fake cash offer link: Milma files police complaint",
-      "url": "https://www.thehindu.com/news/national/kerala/fake-cash-offer-link-milma-files-police-complaint/article71607540.ece",
-      "summary": "Milma officials said they have filed a police complaint and has also moved legally to take down the fake links that are being circulated.",
-      "published_at": "Wed, 21 Oct 2026 19:07:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ek877t/article71607790.ece/alternates/LANDSCAPE_1200/IMG_MILMAKB_2_1_1JGBVKJS.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1188,15 +1203,40 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
+          "Sports": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "States & Local"
+          "Sports"
         ]
+      }
+    },
+    {
+      "raw_id": "c3d82217176077abb3",
+      "title": "Will get support of 275 MLAs in 294 member Assembly, says West Bengal CM",
+      "url": "https://www.thehindu.com/news/national/west-bengal/will-get-support-of-275-mlas-in-294-member-assembly-says-west-bengal-cm/article71608418.ece",
+      "summary": "Chief Minister Suvendu Adhikari gave hints that 64 of the MLAs of the rebel TMC faction will support him. BJP has 209 elected MLAs in the WB Legislative Assembly",
+      "published_at": "Thu, 22 Oct 2026 00:23:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/7he3k2/article71608906.ece/alternates/LANDSCAPE_1200/20261018089L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     }
   ]

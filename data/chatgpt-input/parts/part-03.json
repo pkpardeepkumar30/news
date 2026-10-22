@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-22T20:15:30.807742+00:00",
-  "input_count": 431,
-  "supplied_count": 200,
+  "prepared_at": "2026-10-22T23:30:56.790392+00:00",
+  "input_count": 400,
+  "supplied_count": 199,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 100,
+    "established_or_other": 99,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "ce5e84ffc7c68f6982",
       "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
@@ -111,17 +146,17 @@
       }
     },
     {
-      "raw_id": "cf4c55e5970c63b712",
-      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
-      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
-      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
-      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "f06c13ca5154083b2c",
+      "title": "Sindhu, Ashmita enter quarterfinals of French Open badminton",
+      "url": "https://www.thehindu.com/sport/sindhu-ashmita-enter-quarterfinals-of-french-open-badminton/article71613491.ece",
+      "summary": "Unseeded Ashmita was the star of the day, upsetting world No. 2 and third seed Yamaguchi 21-19 21-18 in a second-round match that lasted 37 minutes",
+      "published_at": "Fri, 23 Oct 2026 03:47:15 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/749xq0/article71613494.ece/alternates/LANDSCAPE_1200/TH10-INSTA-CITYGLPGL3RU7.3.jpg.jpg",
+      "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -136,10 +171,43 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8
+          "Sports": 13
         },
         "candidate_categories": [
-          "States & Local"
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "1d5effd9b94a6fdc6d",
+      "title": "Sri Lanka trumps Brook's fastest double century to beat England by two wickets in cricket tri-series",
+      "url": "https://www.thehindu.com/sport/cricket/sri-lanka-trumps-brooks-fastest-double-century-to-beat-england-by-two-wickets-in-cricket-tri-series/article71613490.ece",
+      "summary": "Brook's 116-ball 202 propelled England to its fourth highest ODI score of 429-4 before it ran into Sri Lanka's super counterpunch to lose by two wickets",
+      "published_at": "Fri, 23 Oct 2026 03:52:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yrsd8p/article71613495.ece/alternates/LANDSCAPE_1200/Pakistan_Tri-Series_Cricket_23877.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
         ]
       }
     },
@@ -467,72 +535,6 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "c622284cfdf41c9eb6",
-      "title": "Promising Indian sprinter Dondapati Jayaram dies in road accident",
-      "url": "https://www.thehindu.com/sport/promising-indian-sprinter-dondapati-jayaram-dies-in-road-accident/article71612145.ece",
-      "summary": "Jayaram along with Malay Barik, another athlete, was going to Kataka for Dussehra celebration by bike on Wednesday evening when the accident occurred",
-      "published_at": "Fri, 23 Oct 2026 00:49:55 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "23de4ec4af6d5a4857",
-      "title": "Asian Para Games 2026: Anjanaben Bumbadiya strikes gold ; silver for Jayanti Behera in women’s 400m T47",
-      "url": "https://www.thehindu.com/sport/athletics/asian-para-games-2026-anjanaben-bumbadiya-strikes-gold-silver-for-jayanti-behera-in-womens-400m-t47/article71610787.ece",
-      "summary": "Bumbadia clocked 59.97sec to be the only runner in the four-athlete race with a sub one minute performance",
-      "published_at": "Thu, 22 Oct 2026 14:37:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/bcc5zq/article71610811.ece/alternates/LANDSCAPE_1200/Anjanaben.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
         },
         "candidate_categories": [
           "Sports"
@@ -964,349 +966,349 @@
       }
     },
     {
-      "raw_id": "53960a745ad618203e",
-      "title": "Chapri Bolke Galti Kar Di! 💀",
-      "url": "https://www.youtube.com/shorts/ouuvQRKzBg0",
-      "summary": "",
-      "published_at": "2026-10-19T13:00:19+00:00",
+      "raw_id": "2bc4b5931dc50a82f2",
+      "title": "Racist India, romanticised Northeast: This hypocrisy must end",
+      "url": "https://eastmojo.com/premium/2026/10/22/racist-india-romanticised-northeast-this-hypocrisy-must-end/",
+      "summary": "The continued existence of racism creates a sense of ‘alienation’ and ‘fear’ among Northeast Indians \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2020/03/Racism.jpg?fit=780%2C519&ssl=1\" /> The word “Tripuram” is ringing in the ears of many people from Northeast India today, after a reel by a Delhi-based “creator” went viral. In the video, the creator, Amir Shokeen, asks a youth from Tripura whether he is the “president” of a neighbouring country, and mocks him when he says he is Indian. The […] The post Racist India, romanticised Northeast: This hypocrisy must end appeared first on EastMojo .",
+      "published_at": "Thu, 22 Oct 2026 11:17:59 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "3c5863d500084b4a0d",
-      "title": "Ladki Hasi, Banda Fasa! 🤣",
-      "url": "https://www.youtube.com/shorts/tT8ydDjDfy8",
-      "summary": "",
-      "published_at": "2026-10-19T10:00:10+00:00",
+      "raw_id": "7e734fa1ffad87f585",
+      "title": "Manipur CM assures action on Maring villages’ key demands",
+      "url": "https://eastmojo.com/manipur/2026/10/22/manipur-cm-assures-action-on-maring-villages-key-demands/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Thursday met representatives of villages under Machi Block in Tengnoupal district and assured them of necessary action on key development issues. The delegation, led by Jajo Sylvester Headman, Wairok Hangshing, president of the Maring Uparap Assembly, and Bosco Maring, chairman of Machi Village, met the Chief Minister […] The post Manipur CM assures action on Maring villages’ key demands appeared first on EastMojo .",
+      "published_at": "Thu, 22 Oct 2026 08:30:59 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "588001215a9a035693",
-      "title": "Puneet Bhai Ab Sudhar Gaye? 😂",
-      "url": "https://www.youtube.com/shorts/y5HQEsprH08",
-      "summary": "",
-      "published_at": "2026-10-19T07:00:03+00:00",
+      "raw_id": "7dd204377a12422a71",
+      "title": "Manipur: Three arrested over Khongbal killings, 12 firearms recovered",
+      "url": "https://eastmojo.com/manipur/2026/10/20/manipur-three-arrested-over-khongbal-killings-12-firearms-recovered/",
+      "summary": "Imphal: In a major crackdown amid the ongoing crisis, security forces arrested three individuals involved in the killing of three Meitei civilians at Sunurok Uyok (Sunulok Hill) in Khongbal on Monday, an official said. Addressing the media at the Manipur Police headquarters in Mantripukhri, Imphal, on Tuesday evening, Additional Director General (ADGP) Lhari Dorjee Lhatoo […] The post Manipur: Three arrested over Khongbal killings, 12 firearms recovered appeared first on EastMojo .",
+      "published_at": "Tue, 20 Oct 2026 14:23:43 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "0664334122d272804d",
-      "title": "Girlfriend Chhodne Ke ₹2 Lakh? 💀",
-      "url": "https://www.youtube.com/shorts/SdrgbYbb2Io",
-      "summary": "",
-      "published_at": "2026-10-18T15:00:05+00:00",
+      "raw_id": "1d540c27366a008d39",
+      "title": "Chhattisgarh CTET Update: साल में दो बार होगी सीबीटी टीईटी की परीक्षा, गैर-टीईटी उत्तीर्ण शिक्षकों को मिलेगा मौका",
+      "url": "https://theruralpress.in/chhattisgarh/raipur/chhattisgarh-tet-exam-twice-a-year-cbt-mode-teachers-update/",
+      "summary": "रायपुर। Chhattisgarh CTET Update: छत्तीसगढ़ के सेवारत शिक्षकों के लिए राहत की खबर है। स्कूल शिक्षा विभाग ने कक्षा पहली से आठवीं तक के शिक्षकों के लिए शिक्षक पात्रता परीक्षा (टीईटी) कंप्यूटर बेस्ड टेस्ट (सीबीटी) के माध्यम से साल में कम से कम दो बार आयोजित करने की व्यवस्था की है। इससे गैर-टीईटी उत्तीर्ण शिक्षकों […]",
+      "published_at": "Thu, 22 Oct 2026 16:37:37 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "9d87604c327c463a3a",
-      "title": "Puneet Bhai Ne Dara Diya! 💀",
-      "url": "https://www.youtube.com/shorts/T_F1RuR58Vc",
-      "summary": "",
-      "published_at": "2026-10-18T13:00:25+00:00",
+      "raw_id": "a86b4f424afcedf170",
+      "title": "Dhamtari Smart City: धमतरी होगा हाईटेक, सुरक्षा होगी स्मार्ट! महापौर रामू रोहरा की बड़ी पहल, आधुनिक AI कैमरों से लैस होंगे शहर के प्रमुख चौक-चौराहे",
+      "url": "https://theruralpress.in/chhattisgarh/dhamtari-smart-city-iccc-ai-cameras-traffic-mayor-ramu-rohra/",
+      "summary": "धमतरी/देवेंद्र कुमार​ मिश्रा। शहर में यातायात व्यवस्था को आधुनिक बनाने, सड़क दुर्घटनाओं पर अंकुश लगाने और नागरिकों की सुरक्षा मजबूत करने की दिशा में महापौर रामू रोहरा की पहल पर महत्वपूर्ण कदम उठाया जा रहा है अब धमतरी की सड़कों पर यातायात नियमों का उल्लंघन करने वाले वाहन चालकों पर आधुनिक तकनीक के जरिए नजर […]",
+      "published_at": "Thu, 22 Oct 2026 16:19:36 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "a73b50895eb29870ea",
-      "title": "Ladai Ke Baad Dosti? 🤣",
-      "url": "https://www.youtube.com/shorts/8V7I1OJlZVo",
-      "summary": "",
-      "published_at": "2026-10-18T10:00:16+00:00",
+      "raw_id": "ef85a970ea9d64c759",
+      "title": "Raipur: मंत्रालय स्टाफ बस सेवा 1 नवंबर के बाद भी जारी रहेगी, नई निविदा तक संचालन बरकरार, कर्मचारियों के लिए राहत भरी खबर",
+      "url": "https://theruralpress.in/chhattisgarh/mantralaya-staff-bus-service-to-continue-beyond-november-1-operations-maintained/",
+      "summary": "Secretariat Staff Bus Service to Continue: छत्तीसगढ़ मंत्रालय और नवा रायपुर स्थित संचालनालयों में काम करने वाले हजारों कर्मचारियों के लिए राहत भरी खबर है। मंत्रालय स्टाफ बस सेवा 1 नवंबर के बाद भी जारी रहेगी।बंद होने की ख़बरों के बीच मंत्रालयीन कर्मचारी संघ के अध्यक्ष चंद्रकांत पांडे और सचिव ने वित्त विभाग एवं रजिस्ट्रार […]",
+      "published_at": "Thu, 22 Oct 2026 15:47:40 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "ae5d127d6fb0f95ea0",
-      "title": "Puneet Bhai Exposes Samay? 💀",
-      "url": "https://www.youtube.com/shorts/D_NZqYs0ST8",
-      "summary": "",
-      "published_at": "2026-10-18T07:00:31+00:00",
+      "raw_id": "acd1c4dcff70c67fe2",
+      "title": "Surajpur Double Murder Case: टीचर और बेटे की हत्या का सनसनीखेज खुलासा, पुलिस ने क्राइम सीन का कराया री-क्रिएशन, जानें किसने की हत्या",
+      "url": "https://theruralpress.in/chhattisgarh/surajpur-double-murder-case-teacher-son-killed-accused-arrested/",
+      "summary": "सूरजपुर। छत्तीसगढ़ के सूरजपुर जिले में हुए चर्चित स्कूल टीचर रजनी बरेठ और उनके 12वीं में पढ़ने वाले बेटे सुजल बरेठ हत्याकांड में पुलिस ने बड़ा खुलासा किया है। अंबिकापुर साइबर सेल और सूरजपुर पुलिस की संयुक्त टीम ने त्वरित कार्रवाई करते हुए मुख्य आरोपी को दूसरे राज्य से हिरासत में ले लिया है। गुरुवार […]",
+      "published_at": "Thu, 22 Oct 2026 15:20:43 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "56ea0cdf821fa8d928",
-      "title": "Samay Raina Ka Naam Liya? 💀",
-      "url": "https://www.youtube.com/shorts/nJyBohS5K40",
-      "summary": "",
-      "published_at": "2026-10-17T15:01:00+00:00",
+      "raw_id": "9f6c48d25309932831",
+      "title": "Chhattisgarh RSS Organization Change: बिलासपुर पहुंचे मोहन भागवत, छत्तीसगढ़ संघ में बड़े बदलाव की तैयारी, खत्म हो सकता है प्रांत प्रमुख का पद!",
+      "url": "https://theruralpress.in/chhattisgarh/raipur/mohan-bhagwat-bilaspur-visit-rss-chhattisgarh-organization-changes/",
+      "summary": "बिलासपुर। राष्ट्रीय स्वयंसेवक संघ (RSS) के प्रमुख डॉ. मोहन भागवत दो दिवसीय प्रवास पर गुरुवार शाम बिलासपुर पहुंच चुके हैं। कड़ी सुरक्षा के बीच वे रेलवे स्टेशन पहुंचे और सीधे कोनी स्थित सरस्वती आवासीय विद्यालय के लिए रवाना हुए। उनके इस दौरे को छत्तीसगढ़ में संघ संगठन के बड़े बदलाव और भविष्य की रणनीतियों के […]",
+      "published_at": "Thu, 22 Oct 2026 14:47:57 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "d941de4d0967ecd000",
-      "title": "Puneet Superstar Ki Copy? 🤣",
-      "url": "https://www.youtube.com/shorts/Rvve-A3JE3o",
-      "summary": "",
-      "published_at": "2026-10-17T13:00:14+00:00",
+      "raw_id": "6af99dd59e39657b9e",
+      "title": "Suspension Breaking: स्वास्थ्य विभाग के अफसर डॉ गहवई को किया गया निलंबित, सरकारी आचरण के नियमों के उल्लंघन का आरोप, जानें क्या है निलंबन की असली वजह",
+      "url": "https://theruralpress.in/bureaucracy/dr-dharmendra-gahwai-suspended-civil-seva-aacharan-niyam-ayushman-bharat-hatae/",
+      "summary": "RAIPUR: स्वास्थ्य संचालनालय में उप संचालक के पद पर पदस्थ डॉ. धर्मेन्द्र कुमार गहवई को निलंबित किया गया है। हालांकि विभाग ने उन पर अनुशासनहीनता का आरोप लगाया है, मगर पता चला है कि इस कार्यवाही के पीछे की कहानी कुछ और ही है। स्वास्थ्य संचालनालय में उप संचालक के पद पर पदस्थ डॉ. धर्मेन्द्र […]",
+      "published_at": "Thu, 22 Oct 2026 14:46:04 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "09285f9518025ebbd2",
-      "title": "Birthday Batane Ke ₹5100? 💀",
-      "url": "https://www.youtube.com/shorts/IHSYVtWcMuA",
-      "summary": "",
-      "published_at": "2026-10-17T10:00:21+00:00",
+      "raw_id": "2d2e0c5d0be3cae34e",
+      "title": "Railway Recruitment 2026: रेलवे में 195 वैकेंसी, आवेदन की तारीख और योग्यता जानें",
+      "url": "https://theruralpress.in/jobs-and-education/railway-recruitment-2026-rrb-isolated-ministerial-categories-195-posts-online-application-date-eligibility/",
+      "summary": "Railway Recruitment 2026: लवे में सरकारी नौकरी की तैयारी कर रहे युवाओं के लिए अच्छी खबर है। रेलवे भर्ती बोर्ड (RRB) ने आइसोलेटेड एंड मिनिस्ट्रियल कैटेगरी के विभिन्न पदों पर भर्ती के लिए संक्षिप्त नोटिस जारी किया है। इस भर्ती के तहत कुल 195 पदों पर नियुक्तियां की जाएंगी। ऑनलाइन आवेदन की प्रक्रिया 5 नवंबर […]",
+      "published_at": "Thu, 22 Oct 2026 13:09:06 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "07b7c64f7e116f5a47",
-      "title": "Puneet Bhai Ko Gussa Aaya! 💀",
-      "url": "https://www.youtube.com/shorts/rp5ej2wyvkQ",
-      "summary": "",
-      "published_at": "2026-10-17T07:00:31+00:00",
+      "raw_id": "d4341bc92b1d11507b",
+      "title": "Chhattisgarh Bus Accident: तेज रफ्तार बस पेड़ से टकराई बस मालिक समेत 5 की मौत, 15 घायलों की हालत नाजुक",
+      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-bus-accident-mcb-manendragarh-kelhari-5-dead/",
+      "summary": "Chhattisgarh Bus Accident: छत्तीसगढ़ के मनेंद्रगढ़-चिरमिरी-भरतपुर (MCB) जिले में गुरुवार को एक भीषण सड़क हादसा हो गया, जिसमें 5 लोगों की दर्दनाक मौत हो गई और 32 अन्य यात्री गंभीर रूप से घायल हो गए। हादसे का शिकार हुई यात्रियों से भरी तेज रफ्तार बस अनियंत्रित होकर एक पेड़ से जा टकराई, जिससे बस के […]",
+      "published_at": "Thu, 22 Oct 2026 12:47:40 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c2ed6ffb644933f55e",
-      "title": "Bigg Boss Can't Afford Puneet! 🤣",
-      "url": "https://www.youtube.com/shorts/u8kgT5IaHx8",
-      "summary": "",
-      "published_at": "2026-10-16T14:00:17+00:00",
-      "image_url": "",
+      "raw_id": "6c6b618a69d9d2fb5a",
+      "title": "The toxic tyre chemical no one is measuring",
+      "url": "https://india.mongabay.com/2026/10/the-toxic-tyre-chemical-no-one-is-measuring/",
+      "summary": "Every time a vehicle moves, its tyres shed tiny particles. Some of these particles carry a chemical that, in the U.S., was found killing salmon in urban streams after rain. India is selling more vehicles than ever before, yet experts say there is no data on how much of this chemical reaches the country’s rivers. […]",
+      "published_at": "22 Oct 2026 15:47:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/22133553/pexels-dharamveer-14178831-scaled-e1792656381455-768x512.jpg",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

@@ -1,74 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-23T13:34:40.553843+00:00",
-  "input_count": 444,
+  "prepared_at": "2026-10-23T20:03:20.196529+00:00",
+  "input_count": 430,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 130,
-    "established_or_other": 70,
+    "independent_social": 117,
+    "established_or_other": 83,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "cc79913b1d811cf271",
-      "title": "MP/Tikamgarh: बारिश में रास्ता कटता है, ग्रामीणों ने ड्रम से बनाया पुल",
-      "url": "https://khabarlahariya.org/mp-tikamgarh-path-gets-cut-off-during-rains-villagers-build-a-bridge-using-drums/",
-      "summary": "टीकमगढ़ जिले के मोहनगढ़ तहसील के रानीपुरा गांव में बारिश के दौरान सीसी रोड डूबने से रास्ता कट जाता है। ग्रामीणों और सरपंच मुन्नी यादव ने 30–40 हजार रुपये खर्च…",
-      "published_at": "Sun, 18 Oct 2026 10:00:28 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "af4796f335f0fb51b1",
-      "title": "UP/Chitrakoot: एक ही रात में 3 घरों में चोरी की कोशिश, 2 घरों से लाखों के जेवर गायब",
-      "url": "https://khabarlahariya.org/up-chitrakoot-attempted-burglaries-at-3-houses-in-a-single-night-jewellery-worth-lakhs-stolen-from-2-of-them/",
-      "summary": "उत्तर प्रदेश के चित्रकूट जिले के मऊ ब्लॉक के सेमरा गांव में एक ही रात में तीन घरों को निशाना बनाए जाने का मामला सामने आया है। ग्रामीणों के मुताबिक,…",
-      "published_at": "Sat, 17 Oct 2026 10:00:34 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "c80f9819c2a70612b3",
       "title": "भोपाल की तालों की एक तस्वीरी कहानी ..  सौंदर्य, जीवन और एक ख़ामोश संकट की",
@@ -333,6 +275,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "9320520b526dc076b5",
+      "title": "Scholarships: October 17, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Mon, 19 Oct 2026 06:14:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/klqn3m/article71522462.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: October 10, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-october-10-2026/article71498519.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "adae7e25c7f9f3a72d",
@@ -716,35 +705,6 @@
       }
     },
     {
-      "raw_id": "3c097295c13a5a3d09",
-      "title": "UP/Mahoba: गाय ने बच्ची को जन्म दिया, महोबा में फैली अफवाह—करवा चौथ से पहले महिलाएं लगा रहीं रंग!",
-      "url": "https://khabarlahariya.org/up-mahoba-a-cow-gave-birth-to-a-female-calf-sparking-rumors-in-mahoba-women-are-flocking-to-see-it-ahead-of-karwa-chauth/",
-      "summary": "महोबा के अलग-अलग गांवों में करीब एक महीने से महिलाओं के रंग लगाने और चूड़ी पहनाने को लेकर तरह-तरह की अफवाहें फैल रही हैं। महिलाएं मोबाइल वीडियो और रिश्तेदारों से…",
-      "published_at": "Fri, 09 Oct 2026 07:00:43 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
       "raw_id": "5fb97b29f24e2289f6",
       "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
       "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
@@ -836,12 +796,12 @@
       }
     },
     {
-      "raw_id": "5f15ee242e153ed55f",
-      "title": "Karnataka High Court issues additional guidelines to prevent arbitrary use of power by police for registering FIRs based on social media posts",
-      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-issues-additional-guidelines-to-prevent-arbitrary-use-of-power-by-police-for-registering-firs-based-on-social-media-posts/article71616002.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 18:53:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8v8lbj/article71616391.ece/alternates/LANDSCAPE_1200/Karnataka-HC-diGUOGMQFFG.1.jpg.jpg",
+      "raw_id": "98dfab85d5fc5b44c6",
+      "title": "Local body polls: 14 cases booked on the last day of nominations, says Andhra Pradesh DGP",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/local-body-polls-14-cases-booked-on-the-last-day-of-nominations-says-andhra-pradesh-dgp/article71617034.ece",
+      "summary": "36 platoons of Andhra Pradesh Special Police have been deployed as part of election bandobust",
+      "published_at": "Sat, 24 Oct 2026 01:10:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/o6sjud/article71617309.ece/alternates/LANDSCAPE_1200/vjkvg-dgp%207.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -860,16 +820,22 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "States & Local": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
       }
     },
     {
-      "raw_id": "d8edfc6b0c92d5aa8b",
-      "title": "Wind energy generation in T.N. remains almost the same as last year",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/wind-energy-generation-in-tn-remains-almost-the-same-as-last-year/article71616356.ece",
+      "raw_id": "9d1715e189d0d26e93",
+      "title": "Three arrested for allegedly stealing two-wheelers in Amberpet",
+      "url": "https://www.thehindu.com/news/national/telangana/three-arrested-for-allegedly-stealing-two-wheelers-in-amberpet/article71616901.ece",
       "summary": "",
-      "published_at": "Fri, 23 Oct 2026 18:53:57 +0530",
+      "published_at": "Sat, 24 Oct 2026 01:08:10 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -894,12 +860,12 @@
       }
     },
     {
-      "raw_id": "9fcfd79a9b3c19538f",
-      "title": "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA",
-      "url": "https://www.thehindu.com/news/national/mea-india-china-lac-border-situation-itbp-dg-remarks-arunachal/article71616229.ece",
-      "summary": "India’s statement comes following ITBP D-G’s remarks on ongoing confrontations with Chinese troops in Arunachal Pradesh; MEA stresses on “maintenance of peace and tranquillity” in border areas for overall development of bilateral ties",
-      "published_at": "Fri, 23 Oct 2026 18:52:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bmu3ay/article71616236.ece/alternates/LANDSCAPE_1200/20261014308L.jpg",
+      "raw_id": "02ce1caf8fa51493a2",
+      "title": "Cyclonic storm likely to hit North Andhra Pradesh coast on October 28, says IMD",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclonic-storm-likely-to-hit-north-andhra-pradesh-coast-on-october-28-says-imd/article71617203.ece",
+      "summary": "Red warnings for extremely heavy rain issued for October 27 and 28; fishermen who have ventured into the sea asked to return to shore",
+      "published_at": "Sat, 24 Oct 2026 01:07:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/rvq3cu/article71617353.ece/alternates/LANDSCAPE_1200/004AClouds.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -923,70 +889,12 @@
       }
     },
     {
-      "raw_id": "33b61707ab7387ced0",
-      "title": "BC Commission to study modernisation of traditional occupations",
-      "url": "https://www.thehindu.com/news/national/telangana/bc-commission-to-study-modernisation-of-traditional-occupations/article71615998.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 18:52:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/telangana/p7une4/article71616000.ece/alternates/LANDSCAPE_1200/BC%20Commission.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "32bcf0fd71fcc55c40",
-      "title": "Paddy prices offer relief to farmers in drought-hit Yadgir",
-      "url": "https://www.thehindu.com/news/national/karnataka/paddy-prices-offer-relief-to-farmers-in-drought-hit-yadgir/article71611776.ece",
-      "summary": "A severe rainfall deficit has devastated rain-fed crops this kharif season",
-      "published_at": "Fri, 23 Oct 2026 18:51:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rrt0zn/article71612260.ece/alternates/LANDSCAPE_1200/YDRKN_22_10_2026_16_44_6_2_IMG20261016161438.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "37d0e3bbda40695385",
-      "title": "Keralam to adopt calendar-based infectious disease prevention strategy",
-      "url": "https://www.thehindu.com/news/national/kerala/keralam-to-adopt-calendar-based-infectious-disease-prevention-strategy/article71616038.ece",
-      "summary": "The epidemic calendar gives a clear idea of the seasonal trend of diseases, which will help plan disease prevention measures; it has been prepared by the experts in the high-power committee constituted by the Health department for surveillance and prevention of infectious diseases",
-      "published_at": "Fri, 23 Oct 2026 18:50:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/46zn41/article71616300.ece/alternates/LANDSCAPE_1200/IMG_iStock-1314471030_2_1_36A6T7N8.jpg",
+      "raw_id": "0deb78d15663a4d1f7",
+      "title": "M.P. receives investment proposals of over ₹15,400 crore at semiconductor summit",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/mp-receives-investment-proposals-of-over-15400-crore-at-semiconductor-summit/article71617335.ece",
+      "summary": "Chief Minister Mohan Yadav said that the government also received proposals worth around ₹5,800 that have potential to generate around 10,000 employment opportunities",
+      "published_at": "Sat, 24 Oct 2026 01:05:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/szgm7p/article71617779.ece/alternates/LANDSCAPE_1200/20261015230L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1006,7 +914,160 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 5
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "bf7d66ba4fa28eac61",
+      "title": "CSR funds for sports development, better infrastructure on the anvil, says Minister",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/csr-funds-for-sports-development-better-infrastructure-on-the-anvil-says-minister/article71617240.ece",
+      "summary": "",
+      "published_at": "Sat, 24 Oct 2026 00:58:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/mjtbfe/article71617611.ece/alternates/LANDSCAPE_1200/csr.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 4
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "2ed1fcff96226d019f",
+      "title": "MPSC paper ‘leak’: Fourth Commission official arrested, total arrests rise to 13",
+      "url": "https://www.thehindu.com/news/national/maharashtra/mpsc-paper-leak-fourth-commission-official-arrested-total-arrests-rise-to-13/article71617247.ece",
+      "summary": "The accused, identified as Rohit Kolatakke, an assistant section officer with the MPSC, allegedly obtained the confidential question set from Abhijit Lendve, an under-secretary with the commission, who was arrested earlier in the case",
+      "published_at": "Sat, 24 Oct 2026 00:54:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/s75rj8/article71617760.ece/alternates/LANDSCAPE_1200/PTI09_07_2026_000324B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "89175f23f7f16844d3",
+      "title": "Karnataka braces for 21,000 MW power demand in summer next year",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-braces-for-21000-mw-power-demand-in-summer-next-year/article71612483.ece",
+      "summary": "According to Energy Department data, Karnataka’s power demand peaked at 18,650 MW during the summer of 2025. It subsequently touched 20,000 MW in September 2026.",
+      "published_at": "Sat, 24 Oct 2026 00:54:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8xr9bw/article71616631.ece/alternates/LANDSCAPE_1200/_DSC1468.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "0d7c5a5f007e0712b8",
+      "title": "Agriculture pumpset power load increases by 25-50%, other categories by 18% amidst rain deficit in Karnataka",
+      "url": "https://www.thehindu.com/news/national/karnataka/agriculture-pumpset-power-load-increases-by-25-50-other-categories-by-18-amidst-rain-deficit-in-karnataka/article71606908.ece",
+      "summary": "According to sources in the Energy Department, Karnataka’s average daily electricity consumption rose to 349-362 Million Units (MU) in the first two weeks of October 2026, surpassing the record of 340 MU recorded in September.",
+      "published_at": "Sat, 24 Oct 2026 00:53:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jbbnwr/article71616402.ece/alternates/LANDSCAPE_1200/MDMTS_2-8-2015_15-37-12_MANDYA_ILLEGAL_PUMPSETS_02.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6408b57857d8c08fd6",
+      "title": "Shankarpally police deny forcing minor girl to undergo medical examination",
+      "url": "https://www.thehindu.com/news/national/telangana/shankarpally-police-deny-forcing-minor-girl-to-undergo-medical-examination/article71617130.ece",
+      "summary": "",
+      "published_at": "Sat, 24 Oct 2026 00:08:14 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -1014,12 +1075,12 @@
       }
     },
     {
-      "raw_id": "3de2a4150d27e945d4",
-      "title": "Panic at Shivamogga Dasara: Residents suggest ‘religious remedy’",
-      "url": "https://www.thehindu.com/news/national/karnataka/panic-at-shivamogga-dasara-residents-suggest-religious-remedy/article71615799.ece",
-      "summary": "The speculation doing the rounds is that the intervention of a few over-enthusiastic elected representatives led to the chaos",
-      "published_at": "Fri, 23 Oct 2026 18:48:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3dtvk9/article71615833.ece/alternates/LANDSCAPE_1200/9911_21_10_2026_18_53_47_4_DASARA12.JPG",
+      "raw_id": "a5d307ab328293d5a2",
+      "title": "Kerala artist Tom Vattakuzhy’s shows in London and Paris reflect the frailty of the human condition",
+      "url": "https://www.thehindu.com/entertainment/art/kerala-artist-tom-vattakuzhys-shows-in-london-and-paris-reflect-the-frailty-of-the-human-condition/article71615481.ece",
+      "summary": "Artist Tom Vattakuzhy on showing his works in strife-torn Paris, the excitement of Frieze Week in London and how he views his practice post the controversy surrounding his work at the Kochi Muziris Biennale",
+      "published_at": "Sat, 24 Oct 2026 00:05:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qyl3vy/article71617707.ece/alternates/LANDSCAPE_1200/ki24-painting%201.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1043,12 +1104,45 @@
       }
     },
     {
-      "raw_id": "b72c0230a691661ad2",
-      "title": "Diljit Dosanjh’s October 30 Delhi concert back on after police grant permission",
-      "url": "https://www.thehindu.com/news/cities/Delhi/bookmyshow-confirms-diljit-dosanjhs-delhi-concert-on-october-30-after-police-permission/article71615389.ece",
-      "summary": "The organisers said they had presented a detailed plan addressing the safety, traffic and crowd-management measures sought by the authorities and assured them of compliance with all applicable requirements.",
-      "published_at": "Fri, 23 Oct 2026 18:47:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rl8zm/article71615402.ece/alternates/LANDSCAPE_1200/IMG_Diljit_Dosanjh_2_1_68EHFLE8.jpg",
+      "raw_id": "88b38b4661c4531a40",
+      "title": "‘Gem Granites’ Veeramani’s daughter detained from aircraft by SIT",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/gem-granites-veeramanis-daughter-detained-from-aircraft-by-sit/article71615725.ece",
+      "summary": "Investigators took custody of Archana Veeramani after she boarded a flight at Chennai International Airport",
+      "published_at": "Sat, 24 Oct 2026 00:02:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gaks3g/article71615838.ece/alternates/LANDSCAPE_1200/gem1_20.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "4e49fa38ec54718cba",
+      "title": "Bharat Biotech slashes malaria vaccine price on GAVI-backed pact with UNICEF",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/bharat-biotech-slashes-malaria-vaccine-price-on-gavi-backed-pact-with-unicef/article71616771.ece",
+      "summary": "",
+      "published_at": "Sat, 24 Oct 2026 00:02:02 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1072,12 +1166,12 @@
       }
     },
     {
-      "raw_id": "2b8c35ed6e1a55856d",
-      "title": "Court extends overseas stay of U.S. national and six Ukrainians in arms training case",
-      "url": "https://www.thehindu.com/news/national/court-extends-overseas-stay-of-us-national-and-six-ukrainians-in-arms-training-case/article71616045.ece",
-      "summary": "VanDyke appeared before the court in person, while the six Ukrainian nationals participated through video conferencing, citing health concerns",
-      "published_at": "Fri, 23 Oct 2026 18:46:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ycywu1/article71616351.ece/alternates/LANDSCAPE_1200/20261023059L_rQc93ed.jpg",
+      "raw_id": "39306ab846f6db49b2",
+      "title": "Proposed driving licence rules raise the bar for learner’s test",
+      "url": "https://www.thehindu.com/news/national/government-plans-colour-coded-driving-licences-for-citizens-foreign-nationals/article71615858.ece",
+      "summary": "As per draft amendments, applicants should secure 75% to pass preliminary test; licence-seekers will have to disclose more health information; there will be no fee to change licensee’s name, address",
+      "published_at": "Fri, 23 Oct 2026 23:59:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lv3qgo/article71615884.ece/alternates/LANDSCAPE_1200/iStock-1307527527%201.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1105,12 +1199,12 @@
       }
     },
     {
-      "raw_id": "346c114f58b46ce0e0",
-      "title": "Karnataka sting operation: Siddaramaiah seeks fair probe to unmask those behind ‘concocted’ case",
-      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-sting-operation-siddaramaiah-seeks-fair-probe-to-unmask-those-behind-concocted-case/article71616055.ece",
-      "summary": "The former Chief Minister said that the video featured Congress leader Kripa Alva and Power TV owner Rakesh Shetty. However, the allegations against him were baseless, he maintained.",
-      "published_at": "Fri, 23 Oct 2026 18:45:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/4330c3/article71616133.ece/alternates/LANDSCAPE_1200/DSC_8883A.JPG",
+      "raw_id": "f89f06b221b5f8eca3",
+      "title": "CoE on green skills, Applied AI opened",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/coe-on-green-skills-applied-ai-opened/article71617390.ece",
+      "summary": "",
+      "published_at": "Fri, 23 Oct 2026 23:59:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/telangana/281ufu/article71617382.ece/alternates/LANDSCAPE_1200/23.10.2026%20CoE%20AI.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1131,80 +1225,6 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "d8bdc8ec8541c9fa65",
-      "title": "IMA to set up ‘School Health Brigade’",
-      "url": "https://www.thehindu.com/news/national/kerala/ima-to-set-up-school-health-brigade/article71616051.ece",
-      "summary": "To promote healthy habits among students",
-      "published_at": "Fri, 23 Oct 2026 18:45:47 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 5,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "4429e24bdbb0b2f31e",
-      "title": "Poland’s abortion law: What will the new bills change? | Explained",
-      "url": "https://www.thehindu.com/news/international/polands-abortion-law-what-will-the-new-bills-change-explained/article71615436.ece",
-      "summary": "Poland’s restrictive abortion law faces two new bills aiming to ease limits, amid protests and political uncertainty ahead of elections.",
-      "published_at": "Fri, 23 Oct 2026 15:10:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9zjhkd/article71615454.ece/alternates/LANDSCAPE_1200/2026-10-22T234026Z_1873875729_RC2G8OADFJHX_RTRMADP_3_POLAND-ABORTION.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 8,
-          "Protests": 1,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics",
-          "Politics & Elections",
-          "Protests"
-        ]
       }
     }
   ]

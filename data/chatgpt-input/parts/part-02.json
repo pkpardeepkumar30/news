@@ -1,57 +1,22 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-22T23:30:56.790392+00:00",
-  "input_count": 400,
-  "supplied_count": 199,
+  "prepared_at": "2026-10-23T05:01:51.400969+00:00",
+  "input_count": 406,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 108,
+    "established_or_other": 92,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "2a25090f84e0207e53",
-      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
-      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
-      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
-      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "00426e3d9e838bde7c",
-      "title": "Why Northeast India’s tourism boom needs a reality check",
-      "url": "https://eastmojo.com/premium/2026/10/21/why-northeast-indias-tourism-boom-needs-a-reality-check/",
-      "summary": "For several decades now, tourism has been a buzzword in discussions about Northeast India. It is regarded as a potential source of economic growth for the region. Tourism is one of the focus areas of the Government of India’s Act East Policy, renamed in 2014 from the Look East Policy, which was launched in 1991. […] The post Why Northeast India’s tourism boom needs a reality check appeared first on EastMojo .",
-      "published_at": "Wed, 21 Oct 2026 09:30:00 +0000",
+      "raw_id": "f92fe0d3e90f462072",
+      "title": "Manipur records Asian golden cat for first time in Ukhrul",
+      "url": "https://eastmojo.com/manipur/2026/10/22/manipur-records-asian-golden-cat-for-first-time-in-ukhrul/",
+      "summary": "Ukhrul: The elusive Asian golden cat (Catopuma temminckii) has been recorded for the first time in Manipur through a camera trap in Shirui village of Ukhrul district. The record, documented by ENFOGAL (Environmental Force at Grass Root Level), adds a new entry to the documented wildlife of Manipur and highlights the ecological importance of the […] The post Manipur records Asian golden cat for first time in Ukhrul appeared first on EastMojo .",
+      "published_at": "Thu, 22 Oct 2026 09:10:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -72,28 +37,63 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "raw_id": "e539dac5bd2c0448b2",
+      "title": "Nagaland University holds lecture on solid waste management",
+      "url": "https://eastmojo.com/nagaland/2026/10/21/nagaland-university-holds-lecture-on-solid-waste-management/",
+      "summary": "Nagaland University’s Committee for Mission LiFE organised a lecture on solid waste management in hybrid mode at its Lumami campus on October 21, 2026. The lecture was held at the Conference Hall of the Department of Environmental Science (EVS), with participants also joining online. Prof. Ligy Philip, Institute Chair Professor in the Department of Civil […] The post Nagaland University holds lecture on solid waste management appeared first on EastMojo .",
+      "published_at": "Wed, 21 Oct 2026 13:28:25 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "7d870f6fd0ff6e58cc",
+      "title": "New study maps India’s diverging fire regimes",
+      "url": "https://india.mongabay.com/short-article/2026/10/new-study-maps-indias-diverging-fire-regimes/",
+      "summary": "New research from the Centre for Wildlife Studies evaluated changing fire regimes in wildlife reserves across three Indian landscapes, finding that burned area rose most steeply in the Eastern Ghats between 2002 and 2022, at 9.3% per year. The rising fires in the Eastern Ghats show that it has a more fire-prone combination of vegetation, […]",
+      "published_at": "21 Oct 2026 15:41:15 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/21153215/Bandipur_fires_2019-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -105,181 +105,175 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "dc35b8c374bc10bc8d",
-      "title": "Development without jobs, unemployment remains a challenge in Jammu and Kashmir",
-      "url": "https://www.thehindu.com/education/development-without-jobs-unemployment-remains-a-challenge-in-jammu-and-kashmir/article71606783.ece",
-      "summary": "Policy observers say prolonged unemployment is placing growing economic and social pressure on Jammu and Kashmir’s educated youth, with delayed recruitment and limited private-sector opportunities deepening uncertainty among graduates and professionals.",
-      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sbhjxu/article71606880.ece/alternates/LANDSCAPE_1200/India_Kashmir_Protest_59253.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 9,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "c67878b2f6ac7ba981",
-      "title": "Delhi conference to explore new markets for Indian rice",
-      "url": "https://www.thehindu.com/news/national/delhi-conference-to-explore-new-markets-for-indian-rice/article71612504.ece",
-      "summary": "Trade and business representatives from over 150 countries to attend the meet to assess the 2027 price outlook and identify ways to earn more from rice",
-      "published_at": "Thu, 22 Oct 2026 23:04:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gzp9sq/article71613132.ece/alternates/LANDSCAPE_1200/mustafah.JPG",
+      "raw_id": "e764b855b7d0680580",
+      "title": "The bear that evolved to hunt ants",
+      "url": "https://india.mongabay.com/short-article/2026/10/the-bear-that-evolved-to-hunt-ants/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. During the monsoon this year, sloth bears seemed to quite literally unearth an unusual prey in the forest floor of Amrabad Tiger Reserve, Telangana: shield-tailed snakes. Researchers studying over a hundred scat samples found the remains of the snake in a handful – potentially the […]",
+      "published_at": "14 Oct 2026 14:44:33 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/14135111/sloth-bear-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 6
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "170bc8f7f50e234aad",
-      "title": "Industries in Chennai’s SIPCOT parks flag infrastructure gaps",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/industries-in-chennais-sipcot-parks-flag-infrastructure-gaps/article71612678.ece",
-      "summary": "Industrial units at Vallam Vadagal and Irungattukottai raise concern over frequent power cuts, faulty streetlights, and interruptions in water supply",
-      "published_at": "Fri, 23 Oct 2026 00:25:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qlfsys/article71612936.ece/alternates/LANDSCAPE_1200/BVR_0148.JPG",
+      "raw_id": "890e1e6acf6701b3f1",
+      "title": "As El Niño strengthens, coral reefs face narrow windows for recovery",
+      "url": "https://india.mongabay.com/2026/10/as-el-nino-strengthens-coral-reefs-face-narrow-windows-for-recovery/",
+      "summary": "As UN Secretary-General António Guterres says, El Niño is being “supersized” by a warming climate. The UN Environment Programme (UNEP) warns that coral reefs are being hit by new bleaching events before they have had time to recover from earlier ones. UNEP likened reefs to “an overmatched boxer” taking repeated blows, citing findings from the […]",
+      "published_at": "09 Oct 2026 13:33:33 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/09121449/AP26239555635896-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "2ebc58f3dfd0952495",
-      "title": "‘No conflict of interest’: Tusk and Modi discuss expanding trade, defence and India’s proposal for Ukraine-Russia war",
-      "url": "https://www.thehindu.com/news/national/prime-minister-narendra-modi-meets-poland-pm-donald-tusk/article71610641.ece",
-      "summary": "India and Poland to target double bilateral trade by 2030, sign agreement on protecting classified information",
-      "published_at": "Thu, 22 Oct 2026 22:44:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/5145sx/article71610649.ece/alternates/LANDSCAPE_1200/Modi-Tusk.jpg",
+      "raw_id": "2f8f79c2dcc433dd12",
+      "title": "From Kerala’s fishing villages to CBD COP17: The fight to recognise traditional knowledge",
+      "url": "https://www.thenewsminute.com/kerala/from-keralas-fishing-villages-to-cbd-cop17-the-fight-to-recognise-traditional-knowledge",
+      "summary": "Twelve-year-old Gabriel’s painting depicts two men at sea, practising kanicham , a traditional method of visual triangulation used by artisanal fishers along the coast of Kerala’s Thiruvananthapuram to navigate and locate fishing grounds. Nearby, 10-year-old Joe’s artwork captures women carrying their catch, while 13-year-old Lena takes viewers beneath the waves, bringing the biodiversity of the underwater world to life. The paintings, along with several others portraying the lives, livelihoods and knowledge of south Kerala’s coastal communities, found a place in two pavilions at the 17th Conference of the Parties (COP17) to the United Nations Convention on Biological Diversity (CBD), which began in Yerevan, Armenia, on October 19. The children themselves were not present at the conference, but their work drew appreciation from delegates from across the world. Beyond their colours and detail, the paintings carried a larger message from the fishing communities of Thiruvananthapuram: their knowledge of the sea, passed down through generations, is an essential part of conserving marine biodiversity, yet it remains insufficiently recognised in scientific research and global conservatio",
+      "published_at": "Fri, 23 Oct 2026 03:59:34 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "ce47651de127967324",
+      "title": "One orangutan goes home. Will the five babies follow?",
+      "url": "https://india.mongabay.com/2026/10/one-orangutan-goes-home-will-the-five-babies-follow/",
+      "summary": "Two years since an infant orangutan was seized from a Mumbai apartment, the procedures are finally complete to repatriate him to his homeland, Indonesia. The animal will fly out of India on October 19, 2026, after a long bilateral process, delayed by procedural hurdles and poor health condition of the animal, according to Yogesh Nilkand […]",
+      "published_at": "19 Oct 2026 16:02:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/19154019/8840925140_14f5ffcc1b_o-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "1ddb7dbe536f4d278d",
+      "title": "Light may influence morning basking behaviour in captive gharials",
+      "url": "https://india.mongabay.com/2026/10/light-may-influence-morning-basking-behaviour-in-captive-gharials/",
+      "summary": "Like all crocodilians, Gangetic gharials regulate their body temperature using external heat sources. They warm their enormous bodies, which can grow to 15 to 20 feet in length, by basking on sandbanks, making it an important daily activity. Both temperature and light are important environmental cues for basking. However, a recent study on captive Gangetic […]",
+      "published_at": "16 Oct 2026 13:15:40 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/16110458/dc1724dd-feb1-4d01-9e4e-4353349e9041-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
         ]
       }
     },
@@ -847,11 +841,110 @@
       }
     },
     {
-      "raw_id": "84cf6acef95e8f998a",
-      "title": "Tibet earthquake LIVE | At least sixteen dead, 32 injured after 7.0 quake strikes Tibet: China's state media",
-      "url": "https://www.thehindu.com/news/international/70-magnitude-earthquake-hit-chinas-tibet-region-on-october-22-killing-many/article71613335.ece",
+      "raw_id": "27fe39400183fc5910",
+      "title": "Trying to establish 'facts' about incident 'apparently' involving Indians on yacht off Yemen coast: India",
+      "url": "https://www.thehindu.com/news/national/indian-embassy-seeks-facts-on-october-yacht-incident-off-yemen/article71614503.ece",
+      "summary": "The incident comes amid an escalation of hostilities between Iran-backed Houthis and Saudi Arabia, with both sides targeting each other's facilities and infrastructure",
+      "published_at": "Fri, 23 Oct 2026 10:05:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/f2ntt0/article71614577.ece/alternates/LANDSCAPE_1200/iStock-1493034941.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "25838daa3876feed93",
+      "title": "Indian killed as Houthis attack Saudi Arabia’s Dammam airport",
+      "url": "https://www.thehindu.com/news/national/indian-national-killed-in-saudi-dammam-airport-attack-others-injured/article71610871.ece",
+      "summary": "Separately, the Houthis (Ansar Allah) claimed that Saudi Arabia had attacked a yacht carrying Indians in the Red Sea, adding that they were conducting rescue operations",
+      "published_at": "Fri, 23 Oct 2026 06:54:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/60oroq/article71610977.ece/alternates/LANDSCAPE_1200/iStock-1206608929.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "02561ede7e9ef5b25e",
+      "title": "Trump says Starshield restored in Ukraine, declines to say if he contacted Musk",
+      "url": "https://www.thehindu.com/news/international/trump-claims-starshield-is-back-in-ukraine/article71614563.ece",
+      "summary": "Musk had previously said that \"any limits on speed or usage\" of Starshield systems — which are operated by his SpaceX company — were \"decided by the U.S. military and ultimately POTUS,\" referring to Trump.",
+      "published_at": "Fri, 23 Oct 2026 10:24:28 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/l4mydc/article71614585.ece/alternates/LANDSCAPE_1200/2026-10-23T043220Z_1890310979_RC2S8OAE5FPM_RTRMADP_3_USA-TRUMP.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "e59be4cc8a2489f84d",
+      "title": "Tibet earthquake LIVE | Injuries in Tibet rise to 65 after 7.0 earthquake, death toll at 16",
+      "url": "https://www.thehindu.com/news/international/70-magnitude-earthquake-hit-chinas-tibet-region-killing-many/article71613335.ece",
       "summary": "Search and rescue efforts continued following the collapse of at least 339 homes, the Nagqu media office said, citing city government officials. Among the injured, 11 people were in serious condition, and the other 21 sustained minor injuries, the media office said",
-      "published_at": "Fri, 23 Oct 2026 02:40:27 +0530",
+      "published_at": "Fri, 23 Oct 2026 10:04:50 +0530",
       "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -863,53 +956,6 @@
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media",
-          "url": "https://www.thehindu.com/news/international/tibet-earthquake-nagqu-updates-october-22-2026/article71612585.ece",
-          "source": {
-            "id": "the-hindu-international",
-            "name": "The Hindu - International",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "8632c9a4a4108f3583",
-      "title": "Russia ready for talks on plans for final Ukraine deal, not truce: Putin",
-      "url": "https://www.thehindu.com/news/international/russia-ready-for-talks-on-plans-for-final-ukraine-deal-not-truce-putin/article71613329.ece",
-      "summary": "\"The goal of these discussions will be to address the issue of ensuring security for both Ukraine and Russia... within the framework of a final agreement, not after some kind of short pause in fighting,\" President Putin told a reporter from state TV",
-      "published_at": "Fri, 23 Oct 2026 03:14:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pkr4t4/article71613330.ece/alternates/LANDSCAPE_1200/2026-10-22T192121Z_1485514791_RC2I8OAGF185_RTRMADP_3_RUSSIA-PUTIN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
         "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
@@ -927,12 +973,12 @@
       }
     },
     {
-      "raw_id": "bf55a52fe33bb83db6",
-      "title": "Thousands gather in Paris after court lifts protest ban despite fears of new violence",
-      "url": "https://www.thehindu.com/news/international/thousands-gather-in-paris-after-court-lifts-protest-ban-despite-fears-of-new-violence/article71613320.ece",
-      "summary": "The Paris prefecture previously said the ban was necessary, given the risk of street violence after groups of masked youth clashed with officers, looted shops and torched cars over the weekend",
-      "published_at": "Fri, 23 Oct 2026 01:45:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sio6tp/article71613325.ece/alternates/LANDSCAPE_1200/AP10_21_2026_000256B.jpg",
+      "raw_id": "44867c99343c51e939",
+      "title": "Mark Zuckerberg makes deal with Meta to help him pay billionaire tax if it passes",
+      "url": "https://www.thehindu.com/sci-tech/technology/mark-zuckerberg-makes-deal-with-meta-to-help-him-pay-billionaire-tax-if-it-passes/article71614441.ece",
+      "summary": "Mark Zuckerberg has made a deal with Meta to help him pay a proposed billionaire tax that is on the ballot in California",
+      "published_at": "Fri, 23 Oct 2026 10:01:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8yvaq7/article71614451.ece/alternates/LANDSCAPE_1200/2026-10-20T090237Z_301680648_RC2CPNAF785Z_RTRMADP_3_ESSILORLUXOTTICA-AI-GLASSES.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -952,148 +998,86 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 4,
+          "Politics & Elections": 1,
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "fb312d2eadd9c374fe",
+      "title": "Estonia on the edge as Russia-NATO tensions rise",
+      "url": "https://www.thehindu.com/news/international/estonia-on-the-edge-as-russia-nato-tensions-rise/article71612139.ece",
+      "summary": "The NATO member is overhauling its military strategy, moving troops closer to the border and investing in long-range arms as Russia is carrying out grey-zone tactics in NATO’s eastern flank; the country’s defence spending is set to rise by 42% in 2026, reaching €2.4 billion, or around 5.4% of its GDP; the U.K. has maintained some 1,200 troops in Estonia as part of NATO’s forward defence",
+      "published_at": "Fri, 23 Oct 2026 09:59:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/aezg40/article71613119.ece/alternates/LANDSCAPE_1200/2026-09-17T100414Z_1594700211_RC2NVLALYFWQ_RTRMADP_3_USA-TRUMP-NATO-FUTURE.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "92cce38540fef25718",
+      "title": "How is a leaderless group challenging the Serbian President? Explained",
+      "url": "https://www.thehindu.com/news/international/how-is-a-leaderless-group-challenging-the-serbian-presidentexplained/article71614470.ece",
+      "summary": "While the movement had called for snap parliamentary protests during the protests in 2025, it was Mr. Vucic’s desire to hold on to power that ultimately led to the coming election",
+      "published_at": "Fri, 23 Oct 2026 09:29:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/18jrx4/article71614493.ece/alternates/LANDSCAPE_1200/2026-10-22T195717Z_799413672_RC2I8OAFZZDD_RTRMADP_3_SERBIA-ELECTION-STUDENTS-RALLY.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Protests": 1,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics",
+          "Politics & Elections",
           "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "15e15ce73bd51ac14e",
-      "title": "UN climate damages fund earmarks $20 million to Nepal for August disaster",
-      "url": "https://www.thehindu.com/sci-tech/energy-and-environment/un-climate-damages-fund-earmarks-20-million-to-nepal-for-august-disaster/article71612344.ece",
-      "summary": "This is the first time that the Fund, set up in 2022, has allocated money to a specific country; amount is a fraction of Nepal’s own $5 billion loss estimate; so far, Fund has pledges for $820 million while fielding requests worth $2.8 billion",
-      "published_at": "Thu, 22 Oct 2026 23:10:28 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/h07sfl/article71613180.ece/alternates/LANDSCAPE_1200/2026-10-20T100319Z_1470784485_RC268NA06SCB_RTRMADP_3_CLIMATE-HEAT-STORMS-SCIENCE.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "0fd1995dc4f3f3b1df",
-      "title": "American detained in Russia arrives in U.S.: lawyer",
-      "url": "https://www.thehindu.com/news/international/american-detained-in-russia-arrives-in-us-lawyer/article71613018.ece",
-      "summary": "Stephen Hubbard’s family and lawyers have said he was living in the Ukrainian city of Izium when he was taken captive by Russia in 2022. He was sentenced to almost seven years in prison, accused of acting as a \"mercenary\" for Kyiv",
-      "published_at": "Thu, 22 Oct 2026 23:00:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3q2f7i/article71613151.ece/alternates/LANDSCAPE_1200/2026-10-21T125452Z_1224147023_RC2O7OAA6KJD_RTRMADP_3_RUSSIA-USA-HUBBARD.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "1e71b8c8b8df34b2b6",
-      "title": "Albanian lawmakers scuffle in parliament as protests continue",
-      "url": "https://www.thehindu.com/news/international/albanian-lawmakers-scuffle-in-parliament-as-protests-continue/article71613106.ece",
-      "summary": "Only minor sporadic incidents occurred on the streets of Tirana on October 22, but the student-led protest movement has called for a national rally on October 24",
-      "published_at": "Thu, 22 Oct 2026 22:56:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sxqk2w/article71613134.ece/alternates/LANDSCAPE_1200/2026-10-22T115737Z_1634486770_RC2A8OA9MW6K_RTRMADP_3_ALBANIA-PROTEST-PARLIAMENT.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "4ec7ae1028acf7ab5e",
-      "title": "Russia pounds Kyiv with missiles as Moscow says 808 drones downed in Russian cities",
-      "url": "https://www.thehindu.com/news/international/russia-pounds-kyiv-with-missiles-as-moscow-says-808-drones-downed-in-russian-cities/article71612964.ece",
-      "summary": "The Russian bombardment showed “there has been no real change in (Moscow's) attitude toward everything that is happening,” Ukraine President Zelenskyy said",
-      "published_at": "Thu, 22 Oct 2026 22:42:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tbvujo/article71613087.ece/alternates/LANDSCAPE_1200/Russia_Daily_Life_13_12.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
         ]
       }
     },
@@ -1161,6 +1145,41 @@
           "States & Local": 9
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "458ce3d13594308d47",
+      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
+      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
+      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -1332,41 +1351,6 @@
         },
         "candidate_categories": [
           "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1bc9d993aa59c66eda",
-      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
-      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
-      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
           "States & Local"
         ]
       }

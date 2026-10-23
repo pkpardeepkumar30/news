@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-22T23:30:56.790392+00:00",
-  "input_count": 400,
-  "supplied_count": 199,
+  "prepared_at": "2026-10-23T05:01:51.400969+00:00",
+  "input_count": 406,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 108,
+    "established_or_other": 92,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "1bc9d993aa59c66eda",
+      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
+      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
+      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "71d8d0af4c37fd3761",
       "title": "Thousands protest 'encounter' killing",
@@ -113,39 +148,6 @@
       }
     },
     {
-      "raw_id": "5a537d850bb260c224",
-      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
-      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
-      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
-      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "f06c13ca5154083b2c",
       "title": "Sindhu, Ashmita enter quarterfinals of French Open badminton",
       "url": "https://www.thehindu.com/sport/sindhu-ashmita-enter-quarterfinals-of-french-open-badminton/article71613491.ece",
@@ -172,6 +174,105 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Sports": 13
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "16e13f45dc3d868dff",
+      "title": "Asian Para Games 2026: Indian para-athletes’ medal tally crosses 100",
+      "url": "https://www.thehindu.com/sport/athletics/asian-para-games-2026-indian-para-athletes-medal-tally-crosses-100/article71614468.ece",
+      "summary": "India finished fifth in the 2023 Asian Para Games with a medal tally of 111 (29 gold, 31 silver, 51 bronze)",
+      "published_at": "Fri, 23 Oct 2026 10:03:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/sport/athletics/oc1j8s/article71614560.ece/alternates/LANDSCAPE_1200/ParaAsianGames.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "86207e8f9418c337dc",
+      "title": "Asian Para Games 2026: Nitesh, Naveen triumph gold in badminton; Thulasimathi, Nitya claim silver",
+      "url": "https://www.thehindu.com/sport/asian-para-games-2026-nitesh-naveen-triumph-gold-in-badminton-thulasimathi-nitya-claim-silver/article71614418.ece",
+      "summary": "While Nitesh Kumar produced a clinical performance to beat Pramod Bhagat, Naveen Sivakumar showcased his prowess to beat Indonesia’s Fredy Setiawan",
+      "published_at": "Fri, 23 Oct 2026 08:39:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/v3cu6v/article71614432.ece/alternates/LANDSCAPE_1200/Naveen-Nitesh.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "17f2f17e7b86b8976f",
+      "title": "USA to host women's football Club World Cup in 2028 - FIFA",
+      "url": "https://www.thehindu.com/sport/usa-to-host-inaugural-2028-womens-club-world-cup/article71614376.ece",
+      "summary": "The U.S. has a proven track record of staging large sporting events, notably co-hosting the men's World Cup earlier this year",
+      "published_at": "Fri, 23 Oct 2026 07:25:40 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/4glk8t/article71614382.ece/alternates/LANDSCAPE_1200/iStock-475991108.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
         },
         "candidate_categories": [
           "Sports"
@@ -443,101 +544,37 @@
       }
     },
     {
-      "raw_id": "bb1f9513a1a991511a",
-      "title": "Ten teams to vie for 97th All-India MCC-Murugappa Gold Cup hockey title",
-      "url": "https://www.thehindu.com/sport/hockey/ten-teams-to-vie-for-97th-all-india-mcc-murugappa-gold-cup-hockey-title/article71607212.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 20:06:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rv2j6u/article71607661.ece/alternates/LANDSCAPE_1200/4871_21_10_2026_17_51_13_1_20261021_115934.JPG",
-      "suggested_category": "Sports",
+      "raw_id": "dfa1be2d4d7d7fbba3",
+      "title": "Coimbatore Dalit student dies by suicide over caste discrimination, teacher arrested",
+      "url": "https://www.thenewsminute.com/tamil-nadu/coimbatore-dalit-student-dies-by-suicide-over-caste-discrimination-teacher-arrested",
+      "summary": "A 16-year-old Dalit Class 11 student at a government-aided school in Coimbatore died by suicide at his home on Wednesday, October 21, after allegedly facing caste-based harassment by his classmates. The Peelamedu police have arrested a teacher and booked the school headmaster and two students in connection with the death. According to reports, the deceased, A Akilan, lived at AT Colony in Peelamedu and was studying in KK Naidu Higher Secondary School. His father Ashok Kumar (45) works at a resort in Munnar, Kerala, while his mother Kowsalyadevi (40) is employed as a domestic worker. His 19-year-old sister is pursuing an engineering degree at a college in the city. According to the complaint filed by Kowsalyadevi, the alleged harassment began after Akilan and four other students responded to a teacher’s questions about their food choices in the classroom. The teacher, identified as P Vijayakumar (42), had asked students how many of them ate beef, following a discussion about enrolling Scheduled Caste students for a scholarship. Akilan had enrolled for the scheme and when Vijayakumar asked who among the students ate beef, he and four others subsequently raised their hands. Kowsalyade",
+      "published_at": "Fri, 23 Oct 2026 03:55:22 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-23/i0nnmrwm/WhatsApp-Image-2026-10-23-at-8.46.00-AM.jpeg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 12
+          "Society, Rights & Justice": 10,
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ee5385a21c6a476d17",
-      "title": "Ranji Trophy: Skipper Vishnu and coach Asnodkar laud total team effort",
-      "url": "https://www.thehindu.com/sport/cricket/ranji-trophy-skipper-vishnu-and-coach-asnodkar-laud-total-team-effort/article71607407.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 18:37:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yne3g5/article71607651.ece/alternates/LANDSCAPE_1200/NH21Ranji076.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "059ed9402de02a6731",
-      "title": "Champions League: PSG beats Barcelona in thriller; Liverpool completes comeback against Villareal",
-      "url": "https://www.thehindu.com/sport/football/champions-league-psg-beats-barcelona-in-thriller-liverpool-completes-comeback-against-villareal/article71606287.ece",
-      "summary": "Barcelona needs to bounce back quickly ahead of a Clasico against Real Madrid on Sunday; Scott McTominay scores two in Napoli win",
-      "published_at": "Wed, 21 Oct 2026 10:43:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5lje0i/article71606289.ece/alternates/LANDSCAPE_1200/2026-10-20T212250Z_352959507_UP1EMAK1LEJIG_RTRMADP_3_SOCCER-CHAMPIONS-PSG-BAR.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -568,6 +605,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Society, Rights & Justice": 5
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "d778d68415d468b603",
+      "title": "Karnataka High Court quashes FIR against persons who put up posters terming Supreme Court judgment a \"denial of justice\"",
+      "url": "https://www.barandbench.com/news/litigation/karnataka-high-court-quashes-fir-against-persons-who-put-up-posters-terming-supreme-court-judgment-a-denial-of-justice",
+      "summary": "The Karnataka High Court recently quashed a criminal case registered against 13 people for allegedly putting up posters in Mangaluru describing a Supreme Court judgment as a “denial of justice\" and calling on people to raise their voices for justice [ Mahammed Hanif & others Vs State of Karnataka ]. Justice HP Sandesh held that the slogans amounted to an expression of dissent against the judgment, which fell within the limits of the freedom of speech and expression guaranteed under the Constitution of India. \"The same is dissent about the judgment and the same is not in the term of creating disharmony and only it is stated that justice is denied and raise voice and the same is within the scope of Articles 19 and 21 of the Constitution of India,\" the Court's October 15 ruling said. The Court concluded that such slogans did not attract the cited criminal offences under Sections 153A (promoting enmity) and 295A (deliberate and malicious acts intended to outrage religious feelings) of the Indian Penal Code (IPC). Justice HP Sandesh The case involved allegations that posters bearing slogans stating that a Supreme Court judgment was a \"denial of justice\", and urging people to raise their",
+      "published_at": "Fri, 23 Oct 2026 09:36:12 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2020-09/50399d20-2ed9-446a-a325-3f80999da70e/Karnataka_High_Court_Vijay_Mallya.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -841,8 +911,8 @@
       },
       "related_reports": [
         {
-          "title": "News from the world of Education: October 7, 2026",
-          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-7-2026/article71554814.ece",
+          "title": "News from the world of Education: October 14, 2026",
+          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-14-2026/article71582463.ece",
           "source": {
             "id": "the-hindu-education",
             "name": "The Hindu - Education",
@@ -853,8 +923,8 @@
           "social_attention": null
         },
         {
-          "title": "News from the world of Education: October 14, 2026",
-          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-14-2026/article71582463.ece",
+          "title": "News from the world of Education: October 7, 2026",
+          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-7-2026/article71554814.ece",
           "source": {
             "id": "the-hindu-education",
             "name": "The Hindu - Education",
@@ -871,74 +941,8 @@
       "title": "Addressing discrimination: building safer, inclusive campuses",
       "url": "https://www.thehindu.com/education/addressing-discrimination-building-safer-inclusive-campuses/article71611002.ece",
       "summary": "",
-      "published_at": "Thu, 22 Oct 2026 15:36:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pkzjgb/article71610997.ece/alternates/LANDSCAPE_1200/THG%20-%20Sustainable%20Business%201920%20x%201080%205.png",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9d842841f372c2b8d3",
-      "title": "How providing livelihood to parents helped boost retention rate in Sunderbans school",
-      "url": "https://www.thehindu.com/education/how-providing-livelihood-to-parents-helped-boost-retention-rate-in-sunderbans-school/article71604659.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 21:38:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yke4lr/article71604662.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-16%20at%2015.43.00.jpeg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b0da58e6e2958e03c6",
-      "title": "Pink booths, empty posts: DU women students question safety near colleges",
-      "url": "https://www.thehindu.com/education/pink-booths-empty-posts-du-women-students-question-safety-near-colleges/article71603879.ece",
-      "summary": "",
-      "published_at": "Wed, 21 Oct 2026 11:45:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wk6z98/article71604191.ece/alternates/LANDSCAPE_1200/Pink%20Booth%20Miranda%20House.jpg",
+      "published_at": "Thu, 22 Oct 2026 17:27:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9rqx1u/article71611426.ece/alternates/LANDSCAPE_1200/THG%20-%20Sustainable%20Business%201920%20x%201080%206.png",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -1038,6 +1042,64 @@
         "type": "local",
         "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e1481ff8e56fd90efd",
+      "title": "कोरबा: नाबालिग को मेले में भेजकर नकली नोट खपा रहा था युवक, दुकानदार की एक नजर ने खोल दी पोल",
+      "url": "https://theruralpress.in/crime/korba-fake-currency-notes-racket-busted-mela-minor-used-notes-printer-seized-crime-news/",
+      "summary": "कोरबा। त्योहार और मेले की भीड़ में नकली नोट खपाने के खेल का कोरबा पुलिस ने पर्दाफाश कर दिया है। सिविल लाइन रामपुर पुलिस ने मेले में 200 रुपये के जाली नोट चलाने वाले रैकेट को पकड़ा है। कार्रवाई में 200 के 15 जाली नोट (कुल 3000 रुपये) और नोट छापने वाला प्रिंटर जब्त किया […]",
+      "published_at": "Fri, 23 Oct 2026 03:09:50 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4938ea1664888c9923",
+      "title": "Aaj Ka Rashifal: कन्या-वृश्चिक समेत इन राशियों को मिल सकती है खुशखबरी, जानें सभी 12 राशियों का हाल",
+      "url": "https://theruralpress.in/religion-spirituality/aaj-ka-rashifal-friday-horoscope-today-twelve-virgo-scorpio-zodiac-signs-career-money-predictions/",
+      "summary": "Aaj Ka Rashifal 23 October 2026: आज शुक्रवार है। शुक्रवार का दिन हिंदू धर्म में माता लक्ष्मी की पूजा के लिए विशेष माना जाता है। मान्यता है कि इस दिन माता लक्ष्मी की पूजा करने से सुख-समृद्धि और खुशहाली का आशीर्वाद मिलता है। ज्योतिषीय गणनाओं के अनुसार, ग्रहों और नक्षत्रों की स्थिति का प्रभाव सभी […]",
+      "published_at": "Fri, 23 Oct 2026 00:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1203,64 +1265,6 @@
       "url": "https://theruralpress.in/bureaucracy/dr-dharmendra-gahwai-suspended-civil-seva-aacharan-niyam-ayushman-bharat-hatae/",
       "summary": "RAIPUR: स्वास्थ्य संचालनालय में उप संचालक के पद पर पदस्थ डॉ. धर्मेन्द्र कुमार गहवई को निलंबित किया गया है। हालांकि विभाग ने उन पर अनुशासनहीनता का आरोप लगाया है, मगर पता चला है कि इस कार्यवाही के पीछे की कहानी कुछ और ही है। स्वास्थ्य संचालनालय में उप संचालक के पद पर पदस्थ डॉ. धर्मेन्द्र […]",
       "published_at": "Thu, 22 Oct 2026 14:46:04 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2d2e0c5d0be3cae34e",
-      "title": "Railway Recruitment 2026: रेलवे में 195 वैकेंसी, आवेदन की तारीख और योग्यता जानें",
-      "url": "https://theruralpress.in/jobs-and-education/railway-recruitment-2026-rrb-isolated-ministerial-categories-195-posts-online-application-date-eligibility/",
-      "summary": "Railway Recruitment 2026: लवे में सरकारी नौकरी की तैयारी कर रहे युवाओं के लिए अच्छी खबर है। रेलवे भर्ती बोर्ड (RRB) ने आइसोलेटेड एंड मिनिस्ट्रियल कैटेगरी के विभिन्न पदों पर भर्ती के लिए संक्षिप्त नोटिस जारी किया है। इस भर्ती के तहत कुल 195 पदों पर नियुक्तियां की जाएंगी। ऑनलाइन आवेदन की प्रक्रिया 5 नवंबर […]",
-      "published_at": "Thu, 22 Oct 2026 13:09:06 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "d4341bc92b1d11507b",
-      "title": "Chhattisgarh Bus Accident: तेज रफ्तार बस पेड़ से टकराई बस मालिक समेत 5 की मौत, 15 घायलों की हालत नाजुक",
-      "url": "https://theruralpress.in/chhattisgarh/chhattisgarh-bus-accident-mcb-manendragarh-kelhari-5-dead/",
-      "summary": "Chhattisgarh Bus Accident: छत्तीसगढ़ के मनेंद्रगढ़-चिरमिरी-भरतपुर (MCB) जिले में गुरुवार को एक भीषण सड़क हादसा हो गया, जिसमें 5 लोगों की दर्दनाक मौत हो गई और 32 अन्य यात्री गंभीर रूप से घायल हो गए। हादसे का शिकार हुई यात्रियों से भरी तेज रफ्तार बस अनियंत्रित होकर एक पेड़ से जा टकराई, जिससे बस के […]",
-      "published_at": "Thu, 22 Oct 2026 12:47:40 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

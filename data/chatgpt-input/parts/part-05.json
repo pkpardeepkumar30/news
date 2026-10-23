@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-22T23:30:56.790392+00:00",
-  "input_count": 400,
-  "supplied_count": 199,
+  "prepared_at": "2026-10-23T05:01:51.400969+00:00",
+  "input_count": 406,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 108,
+    "established_or_other": 92,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "3f5204aecbc22c2cab",
+      "title": "UP/Prayagraj News : शून्य से बदलाव तक, बिहारिया गांव के 24 साल की कहानी | 25 Years of Khabar Lahariya",
+      "url": "https://khabarlahariya.org/up-prayagraj-news-from-zero-to-transformation-the-24-year-story-of-the-bihariya-village-25-years-of-khabar-lahariya/",
+      "summary": "प्रयागराज जिले का बिहारिया गांव, जहां कभी विकास सिर्फ एक उम्मीद था। कच्ची सड़कें, बिजली की परेशानी, पानी का संकट और पक्के घरों का इंतजार—गांव के लोगों के सामने कई…",
+      "published_at": "Sun, 11 Oct 2026 04:38:46 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "24ac90d6bb0fe76757",
       "title": "आज पूरे दिन का LIVE अपडेट: CJP का आरोप, बंगला साहिब गुरुद्वारे में घुसी पुलिस, कई कार्यकर्ता हिरासत में",
@@ -130,6 +159,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "9320520b526dc076b5",
+      "title": "Scholarships: October 17, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Mon, 19 Oct 2026 06:14:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/klqn3m/article71522462.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: October 10, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-october-10-2026/article71498519.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "3c097295c13a5a3d09",
@@ -339,24 +415,53 @@
       }
     },
     {
-      "raw_id": "9320520b526dc076b5",
-      "title": "Scholarships: October 17, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Mon, 19 Oct 2026 06:14:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/klqn3m/article71522462.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "b4dc8df1b53a9da275",
+      "title": "Mortal remains of two Keralam residents killed in Germany fire brought home",
+      "url": "https://www.thehindu.com/news/national/kerala/mortal-remains-of-two-keralam-residents-killed-in-germany-fire-brought-home/article71614596.ece",
+      "summary": "Body of the third victim is expected to be brought home on Friday night",
+      "published_at": "Fri, 23 Oct 2026 10:21:40 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bf29944b185ca1c08f",
+      "title": "How did 37 people declare themselves dead in Karnataka’s voter rolls?",
+      "url": "https://www.thehindu.com/videos/how-did-37-people-declare-themselves-dead-in-karnatakas-voter-rolls/article71612278.ece",
+      "summary": "At least 37 people have reportedly filed forms seeking the deletion of their own names from Karnataka’s electoral rolls on the ground that they were “dead”.",
+      "published_at": "Fri, 23 Oct 2026 10:11:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/videos/35pspb/article71612261.ece/alternates/LANDSCAPE_1200/SIR-Dead-list-issue-in-Karnataka-thumbnail.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -364,26 +469,599 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 9
+          "Politics & Elections": 1
         },
         "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "88804d58e2b97b92fa",
+      "title": "A greying population, a strained care system",
+      "url": "https://www.thehindu.com/news/national/telangana/a-greying-population-a-strained-care-system/article71613250.ece",
+      "summary": "Gaps in geriatric healthcare and support systems leave many older people struggling to access medical care, find reliable caregivers, and cope with mental health concerns and social isolation. These challenges threaten their independence and quality of life, particularly among those from economically weaker backgrounds. With Telangana’s population aged 60 and above projected to grow over the next decade, the shortcomings in healthcare, mental health support and community services need urgent attention, finds K. Shiva Shanker",
+      "published_at": "Fri, 23 Oct 2026 10:02:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sor12r/article71613249.ece/alternates/LANDSCAPE_1200/19102024_Group%20I%20mains%20exam%2010.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "051acf16b0989cbfab",
+      "title": "Karnataka to set up committee to boost deceased donor organ transplants",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-to-set-up-committee-to-boost-deceased-donor-organ-transplants/article71612841.ece",
+      "summary": "Panel will recommend measures to strengthen organ donation network, says Health Minister",
+      "published_at": "Fri, 23 Oct 2026 10:02:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2cfov7/article71613081.ece/alternates/LANDSCAPE_1200/Namma%20metro.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "3792b44b16f079d09a",
+      "title": "SAT Hospital in Keralam rejects charges of ‘clinical trial drugs’ given to SMA-afflicted children",
+      "url": "https://www.thehindu.com/news/national/kerala/sat-hospital-in-keralam-rejects-charges-of-clinical-trial-drugs-given-to-sma-afflicted-children/article71612808.ece",
+      "summary": "Hospital Superintendent says decision to provide SMA patients with a less expensive, generic version of the original molecule against SMA, in place of the imported original drug costing several lakhs of rupees for a single vial, was taken by a technical committee comprising experts in the field",
+      "published_at": "Fri, 23 Oct 2026 10:02:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/705fo/article71612966.ece/alternates/LANDSCAPE_1200/SAT%20Hospital.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "7029c8982520055231",
+      "title": "Good-quality diets associated with better cholesterol levels even among those with genetic load",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/good-quality-diets-associated-with-better-cholesterol-levels-even-among-those-with-genetic-load/article71612633.ece",
+      "summary": "Chennai-based study reveals the essential link between the quality of diet and cholesterol levels in Asian Indians",
+      "published_at": "Fri, 23 Oct 2026 10:02:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vv0h1a/article71613292.ece/alternates/LANDSCAPE_1200/IMG_iStock-1301565375_2_1_RLGDS76M.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "691660b6c7dbef7c55",
+      "title": "Administrative chaos grips Rajampet Lok Sabha constituency after district reorganisation",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/administrative-chaos-grips-rajampet-lok-sabha-constituency-after-district-reorganisation/article71611380.ece",
+      "summary": "At present, Rajampet has four Collectors, four SPs, four different political ecosystems, and remains a seat that everyone claims but no district currently owns; officials claim the 2022 decision to carve the districts along parliamentary-constituency lines has backfired in Rajampet’s case",
+      "published_at": "Fri, 23 Oct 2026 09:59:56 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "72104d5b53642bd8b0",
+      "title": "Why are Andhra Pradesh’s civic poll nominations under the Supreme Court’s scrutiny? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/why-are-andhra-pradeshs-civic-poll-nominations-under-the-supreme-courts-scrutiny-explained/article71610915.ece",
+      "summary": "The Supreme Court has asked the State Election Commission to decide where candidates were unable to file nominations",
+      "published_at": "Fri, 23 Oct 2026 09:47:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/8ktjfk/article71607297.ece/alternates/LANDSCAPE_1200/6744_19_8_2025_16_15_17_2_18_08_2025_SUPREME_COURT04.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "08e66759540cb573a2",
+      "title": "Parvinder Singh Jhota: Who was the anti-drug activist, why was he killed",
+      "url": "https://www.thehindu.com/news/national/punjab/parvinder-singh-jhota-anti-drug-activist-killed-punjab/article71606765.ece",
+      "summary": "Known for raising his voice against the illegal sale of addictive substances at chemist shops, Jhota was shot in broad daylight inside a medical store at a busy marketplace in Punjab’s Mansa",
+      "published_at": "Fri, 23 Oct 2026 09:40:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/igg3ha/article71606744.ece/alternates/LANDSCAPE_1200/5331_24_8_2023_19_13_58_1_JHOTA.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "92c9883588b10ca221",
+      "title": "CM Satheesan offers to host Raihan Vadra's exhibition in Keralam",
+      "url": "https://www.thehindu.com/news/national/kerala/cm-satheesan-offers-to-host-raihan-vadras-no-idea-is-final-exhibition-in-kerala/article71614478.ece",
+      "summary": "Raihan Vadra said the Bikaner House administration in Delhi pulled down many of his pictures of the protests at his solo exhibition, 'No Idea Is Final'",
+      "published_at": "Fri, 23 Oct 2026 09:32:21 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fpglso/article71614498.ece/alternates/LANDSCAPE_1200/2026-10-22T122135Z_203128000_RC2A8OA1TOVK_RTRMADP_3_INDIA-POLITICS-ART.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "ee02a6c490a65e406a",
+      "title": "POCSO survivor cannot be denied compensation solely due to absence of injury marks: Allahabad HC",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/pocso-survivor-cannot-be-denied-compensation-solely-due-to-absence-of-injury-marks-allahabad-hc/article71614495.ece",
+      "summary": "The case relates to an FIR registered at Sarojini Nagar police station in Lucknow on December 7, 2022. A chargesheet in this connection was filed on January 13, 2023.",
+      "published_at": "Fri, 23 Oct 2026 09:31:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/t9stno/article71614499.ece/alternates/LANDSCAPE_1200/Nearby_Shape-wiGUOGEQHGR.3.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3619bc037372b32a67",
+      "title": "Bihar MLC polls begin for 8 seats, 150 candidates in fray",
+      "url": "https://www.thehindu.com/news/national/bihar/bihar-mlc-polls-begin-for-eight-seats-with-150-candidates/article71614458.ece",
+      "summary": "The combined electorate stands at 5,32,847, including 1,46,611 women and 37 third-gender voters, across 933 polling stations",
+      "published_at": "Fri, 23 Oct 2026 09:06:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hofzf/article71614461.ece/alternates/LANDSCAPE_1200/20261022501L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
           "Society, Rights & Justice"
         ]
+      }
+    },
+    {
+      "raw_id": "99a79d137efb7dce52",
+      "title": "What are the powers and functions of Special Executive Magistrates? | Explained",
+      "url": "https://www.thehindu.com/news/national/what-are-the-powers-and-functions-of-special-executive-magistrates-explained/article71610056.ece",
+      "summary": "State governments appoint Special Executive Magistrates for specific areas or purposes and give them the powers exercised by the Executive Magistrates under the BNSS, 2023",
+      "published_at": "Fri, 23 Oct 2026 08:16:08 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/f3qohm/article71610555.ece/alternates/LANDSCAPE_1200/PTI10_21_2026_000360A.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
-      "related_reports": [
-        {
-          "title": "Scholarships: October 10, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-october-10-2026/article71498519.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "92d6cff0a0a59a9fac",
+      "title": "What does eMudhra’s web security key leak mean for internet users? | Explained",
+      "url": "https://www.thehindu.com/sci-tech/technology/what-does-emudhras-web-security-key-leak-mean-for-internet-users-explained/article71610069.ece",
+      "summary": "The exposure of eMudhra’s private keys could allow for man-in-the-middle attacks if left unpatched on all devices",
+      "published_at": "Fri, 23 Oct 2026 07:41:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/itg4ey/article71610067.ece/alternates/LANDSCAPE_1200/iStock-1350595566.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bed6160d8a6cacd281",
+      "title": "‘Game boards’ carved on rocks in Kasaragod hint at age-old yen for leisure",
+      "url": "https://www.thehindu.com/news/national/kerala/board-games-carved-on-rocks-in-kasaragod-hint-at-historical-leisure-spots/article71610866.ece",
+      "summary": "Six such ‘games,’ resembling the Manjadippala or Kadippala boards, were found carved on rocks, hinting that people engaged in recreational activities thousands of years ago. However, doubts have been raised about their antiquity and purpose. Further studies and scientific dating are required to determine their precise age",
+      "published_at": "Fri, 23 Oct 2026 07:33:19 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5jsy2r/article71612313.ece/alternates/LANDSCAPE_1200/11435_22_10_2026_19_4_50_1_IMG_20261020_WA0030.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "0e7ca29a85100702cf",
+      "title": "How India thwarted Pakistan’s bid to steal crucial defence data",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/how-india-thwarted-pakistans-bid-to-steal-crucial-defence-data/article71612709.ece",
+      "summary": "Officers of the Counter Intelligence Cell of Andhra Pradesh, intrigued by a slew of messaging patterns across various social media platforms, busted a major digital honey-trap racket, including the Indian conduits, whose motive was to leak sensitive defence details, specifically Naval intelligence, to the neighbouring country’s Inter-Services Intelligence, writes Sumit Bhattacharjee",
+      "published_at": "Fri, 23 Oct 2026 07:11:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mairsm/article71613269.ece/alternates/LANDSCAPE_1200/Cyber.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "73dacbb5535ad7883f",
+      "title": "Cabinet Secretary had copied acknowledgement sent to letters by two ECs to CEC for ‘information’: RTI reply",
+      "url": "https://www.thehindu.com/news/national/cabinet-secretary-had-copied-acknowledgement-sent-to-letters-by-two-ecs-to-cec-for-information-rti-reply/article71612629.ece",
+      "summary": "Election Commissioners S.S. Sandhu and Vivek Joshi wrote to Cabinet Secretary T.V. Somanathan on July 29 regarding the working of Senior Deputy Election Commissioner Maneesh Garg",
+      "published_at": "Fri, 23 Oct 2026 06:54:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ow30sk/article71613004.ece/alternates/LANDSCAPE_1200/SIR%20ELECTION%20COMMISSION%20PC%20%20DELHI%202025_27_10_3.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "5f7ad5c1e9a48ea31c",
+      "title": "Face-off with China continues at multiple locations along Arunachal border: ITBP D-G",
+      "url": "https://www.thehindu.com/news/national/face-off-with-china-continues-at-multiple-locations-along-arunachal-border-itbp-d-g/article71612994.ece",
+      "summary": "ITBP chief says drones are the future of warfare, warning that India cannot face China with traditional weapons alone; says underground shelters are a priority in the new style of border warfare",
+      "published_at": "Fri, 23 Oct 2026 06:53:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/fqqn0z/article71613115.ece/alternates/LANDSCAPE_1200/06th-SAURABH-AmG6HGGDGP2.4.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "bfae61497732371b43",
+      "title": "The grandmothers hitting patriarchy and weights",
+      "url": "https://www.thehindu.com/news/national/haryana/the-grandmothers-hitting-patriarchy-and-weights/article71608262.ece",
+      "summary": "Grandmothers in areas surrounding Delhi are rewriting the rules of engagement, one reel at a time. From challenging patriarchy and lifting weights to dancing to Haryanvi pop and inspiring other seniors to embrace fitness, they are turning social media into a platform for self-expression, defiance, and a new-found freedom, finds Ashok Kumar",
+      "published_at": "Fri, 23 Oct 2026 06:48:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/reakcb/article71608276.ece/alternates/LANDSCAPE_1200/6744_21_10_2026_16_46_5_1_01_HARYANA.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "caa6552559acb8980f",
+      "title": "An ironclad resolve in the national interest",
+      "url": "https://www.thehindu.com/news/national/an-ironclad-resolve-in-the-national-interest/article71613326.ece",
+      "summary": "Home Minister Amit Shah’s decision-making ability, commitment to national security, and role as one of the architects of modern India’s development will ensure that his name occupies a prominent place in the country’s political history",
+      "published_at": "Fri, 23 Oct 2026 06:43:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/r0zk1d/article71613327.ece/alternates/LANDSCAPE_1200/22_BM_Eknath%20Shinde.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "8e2e0dc5b1f2121599",
+      "title": "SEBI cautions investors against fraudulent stock-tip WhatsApp groups",
+      "url": "https://www.thehindu.com/business/sebi-cautions-investors-against-fraudulent-stock-tip-whatsapp-groups/article71613503.ece",
+      "summary": "“To make these calls look credible, certain members, acting in concert with the operators, post false claims of profit and praise the 'expert'. This practice, known as astroturfing, creates a false impression of genuine support and induces unsuspecting investors to act on the call,” says SEBI",
+      "published_at": "Fri, 23 Oct 2026 04:44:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nj0vrm/article71613504.ece/alternates/LANDSCAPE_1200/SEBI-waives-marGBIGMQ6QF.4.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
     },
     {
       "raw_id": "60c6fae05a0b9ccf04",
@@ -419,12 +1097,12 @@
       }
     },
     {
-      "raw_id": "bfae61497732371b43",
-      "title": "The grandmothers hitting patriarchy and weights",
-      "url": "https://www.thehindu.com/news/national/haryana/the-grandmothers-hitting-patriarchy-and-weights/article71608262.ece",
-      "summary": "Grandmothers in areas surrounding Delhi are rewriting the rules of engagement, one reel at a time. From challenging patriarchy and lifting weights to dancing to Haryanvi pop and inspiring other seniors to embrace fitness, they are turning social media into a platform for self-expression, defiance, and a new-found freedom, finds Ashok Kumar",
-      "published_at": "Fri, 23 Oct 2026 02:02:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/reakcb/article71608276.ece/alternates/LANDSCAPE_1200/6744_21_10_2026_16_46_5_1_01_HARYANA.JPG",
+      "raw_id": "ba790ffc6a8ebb06d9",
+      "title": "Legal action ordered against officials over irregularities in voter list in Pilibhit",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/legal-action-ordered-against-officials-over-irregularities-in-voter-list-in-pilibhit/article71613043.ece",
+      "summary": "Legal action will be taken against both the current and former election officials responsible for the discrepancies found in the voter list for constituency 127 – Pilibhit, reads an official statement by the State election commission",
+      "published_at": "Fri, 23 Oct 2026 02:17:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8yuyth/article71613328.ece/alternates/LANDSCAPE_1200/TH30-nearby0_G6GTKGJQ13J.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -443,8 +1121,12 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
       }
     },
     {
@@ -481,12 +1163,12 @@
       }
     },
     {
-      "raw_id": "caa6552559acb8980f",
-      "title": "An ironclad resolve in the national interest",
-      "url": "https://www.thehindu.com/news/national/an-ironclad-resolve-in-the-national-interest/article71613326.ece",
-      "summary": "Home Minister Amit Shah’s decision-making ability, commitment to national security, and role as one of the architects of modern India’s development will ensure that his name occupies a prominent place in the country’s political history",
-      "published_at": "Fri, 23 Oct 2026 01:54:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/cities/Delhi/swwrju/article71613327.ece/alternates/LANDSCAPE_1200/22_BM_Eknath%20Shinde.jpg",
+      "raw_id": "83fa06eae48f929094",
+      "title": "UDF govt. shielding Pinarayi Vijayan in CMRL-Exalogic payoff, hawala cases: P.K. Krishnadas",
+      "url": "https://www.thehindu.com/news/national/kerala/udf-govt-shielding-pinarayi-vijayan-in-cmrl-exalogic-payoff-hawala-cases-pk-krishnadas/article71612233.ece",
+      "summary": "The recent Supreme Court verdict has exposed the alleged understanding between the Congress and the CPI(M) in corruption cases, alleges BJP leader",
+      "published_at": "Fri, 23 Oct 2026 01:40:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/osjdoa/article71613322.ece/alternates/LANDSCAPE_1200/6742_10-4-2019_20-3-49_1_11TVKZBJP_PKKRISHNADAS.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -545,649 +1227,6 @@
       "summary": "Energy Minister K.J. George, who also holds the Tourism portfolio, says the initiatives had enhanced Dasara’s global visibility and strengthened Mysuru’s position as a major tourism destination.",
       "published_at": "Fri, 23 Oct 2026 01:04:29 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/z80egr/article71611780.ece/alternates/LANDSCAPE_1200/IMG_0002.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "3d9381eca0592367ae",
-      "title": "MNM asks cadres to step up groundwork ahead of local body polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/mnm-asks-cadres-to-step-up-groundwork-ahead-of-local-body-polls/article71611793.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:53:18 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 4
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "a6db5faf4c756c44a6",
-      "title": "High Court relief for police sub-inspector",
-      "url": "https://www.thehindu.com/news/national/telangana/high-court-relief-for-police-sub-inspector/article71612772.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:52:25 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "9b01ca8c98a59d3bba",
-      "title": "Tenders floated for elevated corridor from Lighthouse to Thiru. Vi. Ka. Bridge",
-      "url": "https://www.thehindu.com/news/cities/chennai/tenders-floated-for-elevated-corridor-from-lighthouse-to-thiru-vi-ka-bridge/article71612422.ece",
-      "summary": "Highways Department calls for consultants to prepare a detailed project report. The corridor will run via Santhome High Road, Greenways Road, and Durgabai Deshmukh Road. It will have two lanes up to 1.8 km, and four lanes for the remaining stretch. The project will take 2 years to complete",
-      "published_at": "Fri, 23 Oct 2026 00:51:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/98upti/article71612953.ece/alternates/LANDSCAPE_1200/21dc%20Intelligent%20signalling%20system%202.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5211abced9f55c0cc4",
-      "title": "Collective urges recognised political parties to boycott CEO‘s meeting on SSR",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/collective-urges-recognised-political-parties-to-boycott-ceos-meeting-on-ssr/article71611606.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:45:22 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5fc469261b7b25e5fc",
-      "title": "IIT-Madras announces research projects on AI, seeks to study feasibility of small data centres",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/iit-madras-announces-research-projects-on-ai-seeks-to-study-feasibility-of-small-data-centres/article71612148.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:41:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/i7vftf/article71612264.ece/alternates/LANDSCAPE_1200/2501_22_10_2026_13_44_55_1_DSC_6680.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "8906e73878c0df8325",
-      "title": "Rape of elderly woman in Thrissur: Kerala High Court upholds prison term of convict",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-high-court-upholds-10-year-jail-term-for-man-convicted-of-raping-73-year-old-woman/article71612594.ece",
-      "summary": "The court also cancelled his bail and directed him to surrender before the trial court to serve the sentence",
-      "published_at": "Fri, 23 Oct 2026 00:37:54 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c0a2f633f2e3137884",
-      "title": "Two men returning from Mysuru Dasara die as bike hits electric pole",
-      "url": "https://www.thehindu.com/news/cities/bangalore/two-men-returning-from-mysuru-dasara-die-as-bike-hits-electric-pole/article71613037.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:37:41 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e011938fdc4425e656",
-      "title": "FDA suspends eight Mumbai eateries, seizes 38 tonnes of food stock across Maharashtra",
-      "url": "https://www.thehindu.com/news/national/maharashtra/fda-suspends-eight-mumbai-eateries-seizes-38-tonnes-of-food-stock-across-maharashtra/article71612725.ece",
-      "summary": "The FDA said inspections uncovered unhygienic kitchens and drainage systems, rusted racks and utensils, returned bread being mixed with fresh bread, incomplete temperature records, employees without medical certificates and the use of unauthorised food colours in sweets",
-      "published_at": "Fri, 23 Oct 2026 00:36:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tbmrmk/article71613299.ece/alternates/LANDSCAPE_1200/2026-08-24T020008Z_1123646610_RC2A2NA9IYJM_RTRMADP_3_INDIA-FOOD-OFFICER.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "e700b21bfb2108343d",
-      "title": "₹60-crore annual fund to keep T.N. police stations clean",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/60-crore-annual-fund-to-keep-tn-police-stations-clean/article71612406.ece",
-      "summary": "State approves proposal of DGP to engage outsourced sanitary workers to ensure cleanliness",
-      "published_at": "Fri, 23 Oct 2026 00:34:15 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "c06fc4c99a20966d75",
-      "title": "21-year-old arrested for murdering wife, dumping body in stormwater drain in Bengaluru",
-      "url": "https://www.thehindu.com/news/cities/bangalore/21-year-old-arrested-for-murdering-wife-dumping-body-in-stormwater-drain-in-bengaluru/article71613005.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:31:01 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "216d8a424dd33a57f1",
-      "title": "ULB polls: Andhra Pradesh SEC extends nomination window for Kadapa, Rajampet, Mydukur and Tirupati after SC order",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ulb-polls-andhra-pradesh-sec-extends-nomination-window-for-kadapa-rajampet-mydukur-and-tirupati-after-sc-order/article71613049.ece",
-      "summary": "Candidates can now file their nomination papers on October 23 and 24, from 11 am to 3 pm, at the designated locations and respective Collectorates",
-      "published_at": "Fri, 23 Oct 2026 00:27:36 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/im902f/article71613105.ece/alternates/LANDSCAPE_1200/10215_22_10_2026_21_16_24_1_IMG_20261022_WA0061.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "fec389fdd2654d44e1",
-      "title": "Dasara festivities: 18.29 lakh devotees visit Vijayawada Kanaka Durga temple",
-      "url": "https://www.thehindu.com/news/cities/Vijayawada/dasara-festivities-1829-lakh-devotees-visit-vijayawada-kanaka-durga-temple/article71611582.ece",
-      "summary": "The temple has distributed 39.84 lakh laddus to devotees since the commencement of Dasara festivities and annaprasadam has been served to 8,37,385 people so far, says temple EO",
-      "published_at": "Fri, 23 Oct 2026 00:23:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/x385ao/article71612814.ece/alternates/LANDSCAPE_1200/DSC_7372.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a8fd7daa70c3e33110",
-      "title": "‘IFP’s priorities at the moment are built around  preservation of our collections’",
-      "url": "https://www.thehindu.com/news/cities/puducherry/ifps-priorities-at-the-moment-are-built-around-preservation-of-our-collections/article71606650.ece",
-      "summary": "The French Institute of Pondicherry’s Director, Renaud Colson, reflects on the institute’s research legacy and its priorities for the future on the occasion of its 70th anniversary",
-      "published_at": "Fri, 23 Oct 2026 00:22:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/d2aqyu/article71613280.ece/alternates/LANDSCAPE_1200/2786_21_10_2026_13_0_36_5_10PY21FRENCHDIRECTOR5.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "c1fae620616e4a0cec",
-      "title": "Visually impaired students of Andhra Loyola College trained in assistive technology",
-      "url": "https://www.thehindu.com/news/cities/Vijayawada/visually-impaired-students-of-loyola-college-trained-in-assistive-technology/article71612580.ece",
-      "summary": "",
-      "published_at": "Fri, 23 Oct 2026 00:20:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/k4pvy3/article71612882.ece/alternates/LANDSCAPE_1200/10215_22_10_2026_21_17_39_1_IMG_20261022_WA0062.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "1e57aca1f8d1f05ed2",
-      "title": "Guntur team reports phage therapy success against drug-resistant infections",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/guntur-team-reports-phage-therapy-success-against-drug-resistant-infections/article71611169.ece",
-      "summary": "",
-      "published_at": "Thu, 22 Oct 2026 23:55:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9hzel9/article71613260.ece/alternates/LANDSCAPE_1200/10215_22_10_2026_17_27_51_1_IMG_20261022_WA0036.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 4
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "d3665f9a1b0d951d50",
-      "title": "16 poll-related cases registered in A.P.",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/16-poll-related-cases-registered-in-ap/article71613109.ece",
-      "summary": "",
-      "published_at": "Thu, 22 Oct 2026 23:46:32 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "e09ed8adee8bcbc804",
-      "title": "Kuttippuram panchayat member found dead near railway tracks",
-      "url": "https://www.thehindu.com/news/national/kerala/kuttippuram-panchayat-member-killed-after-being-hit-by-train/article71609980.ece",
-      "summary": "Ahmed Kutty was chairman of the panchayat welfare standing committee",
-      "published_at": "Thu, 22 Oct 2026 23:26:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/itgktz/article71612167.ece/alternates/LANDSCAPE_1200/6702_4_2_2024_17_48_16_1_TRACKCURVATURE.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "060547fb17ff4acf23",
-      "title": "Delay in reconstruction of Tagore Centenary Hall in Kozhikode worries cultural activists",
-      "url": "https://www.thehindu.com/news/national/kerala/delay-in-reconstruction-of-tagore-centenary-hall-in-kozhikode-worries-cultural-activists/article71611535.ece",
-      "summary": "The hall was demolished in 2025 to make way for a modern, multi-purpose cultural complex",
-      "published_at": "Thu, 22 Oct 2026 23:26:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hbsldd/article71612194.ece/alternates/LANDSCAPE_1200/80692_22_10_2026_19_24_49_1_23TVKZTAGORHALL1.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ca5c70b65c4810d75d",
-      "title": "BJP worker killed in Malda; clashes break out in places during Durga immersion",
-      "url": "https://www.thehindu.com/news/national/west-bengal/bjp-worker-killed-in-malda-clashes-break-out-in-places-during-durga-immersion/article71611602.ece",
-      "summary": "BJP leader blames Trinamool Congress for the worker death; Trinamool denies allegations",
-      "published_at": "Thu, 22 Oct 2026 23:18:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wk6moa/article71612173.ece/alternates/LANDSCAPE_1200/PTI10_22_2026_000195B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a50f16056d9f418658",
-      "title": "Drunk teen behind wheel of SUV rams car, crashes into  electricity pole",
-      "url": "https://www.thehindu.com/news/national/telangana/drunk-teen-behind-wheel-of-suv-rams-car-crashes-into-electricity-pole/article71612998.ece",
-      "summary": "",
-      "published_at": "Thu, 22 Oct 2026 23:15:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/telangana/tc3hsw/article71613039.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-22%20at%2022.16.15.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "52381f642756ccb467",
-      "title": "Special screening of Return of the Jungle in Mysuru on October 24 and 25",
-      "url": "https://www.thehindu.com/news/national/karnataka/special-screening-of-return-of-the-jungle-in-mysuru-on-october-24-and-25/article71612615.ece",
-      "summary": "The film will be screened at 6 p.m. on October 24 and at 11 a.m. on October 25. Entry is free and seating will be available on a first-come, first-served basis, the statement said.",
-      "published_at": "Thu, 22 Oct 2026 23:08:25 +0530",
-      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {

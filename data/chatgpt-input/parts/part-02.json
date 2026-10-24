@@ -1,16 +1,86 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-24T18:53:54.744391+00:00",
-  "input_count": 428,
+  "prepared_at": "2026-10-24T22:36:30.662192+00:00",
+  "input_count": 427,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "835675326855ec5e08",
+      "title": "Left Groups Protest Workers' Repression in North India",
+      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
+      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
+      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "9bcfe1ff8ff9d820cc",
+      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
+      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
+      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
+      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
     {
       "raw_id": "2a25090f84e0207e53",
       "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
@@ -1220,39 +1290,6 @@
       }
     },
     {
-      "raw_id": "14ac93436d0dadbfe9",
-      "title": "All 14 Indians in yacht incident off Yemen coast reported safe: Embassy",
-      "url": "https://www.thehindu.com/news/national/indian-embassy-seeks-facts-on-october-yacht-incident-off-yemen/article71614503.ece",
-      "summary": "Some Arab media quoted Yemen’s Houthi spokesman Yahya Saree as claiming that Saudi forces targeted the Indian yacht near Yuqar Island near the Yemeni coast in the Red Sea",
-      "published_at": "Fri, 23 Oct 2026 16:27:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/f2ntt0/article71614577.ece/alternates/LANDSCAPE_1200/iStock-1493034941.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 12
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
       "raw_id": "89a36568a8bffb306d",
       "title": "Iran Speaker to skip BRICS meet, as Iran seeks bilateral air route for ‘humanitarian aid’ from India",
       "url": "https://www.thehindu.com/news/national/irans-ghalibaf-will-not-attend-brics-parliamentary-forum-in-delhi-embassy/article71619999.ece",
@@ -1286,45 +1323,12 @@
       }
     },
     {
-      "raw_id": "e33c8f338568b37ac9",
-      "title": "U.S. spy chief warns Iran has ramped up efforts to target Americans",
-      "url": "https://www.thehindu.com/news/international/us-spy-chief-warns-iran-has-ramped-up-efforts-to-target-americans/article71619239.ece",
-      "summary": "The warning comes after Washington ordered non-essential U.S. embassy staff and their families to leave Saudi Arabia this week, following increasing attacks from Yemen’s Houthis",
-      "published_at": "Sat, 24 Oct 2026 13:58:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ag5wsy/article71619241.ece/alternates/LANDSCAPE_1200/2026-10-20T213438Z_352065645_RC217OA6DLYE_RTRMADP_3_HEDGEFUNDS-ACTIVISTS.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e1bdb8024fcd8f2a01",
-      "title": "U.S. could strike Iran this weekend, envoy says",
-      "url": "https://www.thehindu.com/news/international/us-could-strike-iran-this-weekend-envoy-says/article71617954.ece",
-      "summary": "\"Could there be a strike this weekend? Absolutely,\" Tom Barrack, the U.S. ambassador to Turkey and point man on Syria who does not have a direct role on Iran, told podcast host Mario Nawfal",
-      "published_at": "Sat, 24 Oct 2026 03:53:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rbsszz/article71617956.ece/alternates/LANDSCAPE_1200/Lebanon_US_56231.jpg",
+      "raw_id": "bf981c55b916cd60d1",
+      "title": "Houthis say attacked Saudi Arabia, Yemen’s Aden after deadly strikes",
+      "url": "https://www.thehindu.com/news/international/houthis-attack-yemens-aden-say-saudi-strikes-kill-16/article71620895.ece",
+      "summary": "Over the past 24 hours, the Yemeni fighters said they targeted three Saudi airports, including the international airport in capital Riyadh, energy installations, a pipeline and an air base",
+      "published_at": "Sun, 25 Oct 2026 02:47:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/59tf2y/article71620888.ece/alternates/LANDSCAPE_1200/Mideast_Yemen-Siege_of_Taiz_85852.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {

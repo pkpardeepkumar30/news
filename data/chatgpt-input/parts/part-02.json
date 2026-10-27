@@ -1,543 +1,303 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-27T14:39:16.614758+00:00",
-  "input_count": 486,
+  "prepared_at": "2026-10-27T20:49:09.038208+00:00",
+  "input_count": 427,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 149,
-    "established_or_other": 51,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "c6a9a5ede085f4be19",
-      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
-      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
-      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
-      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
-      "image_url": "",
+      "raw_id": "e82fed95c49aca773e",
+      "title": "U.P. Chief Electoral Officer apologises for ‘tone, language and sharpness’ of social media posts",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-chief-electoral-officer-apologises-for-tone-language-and-sharpness-of-social-media-posts/article71632474.ece",
+      "summary": "When AAP leader Sanjay Singh questioned CEC Gyanesh Kumar on how ‘Ramhit Yadav’ became ‘Ram ne Yadav ko Maara’ in the U.P. Legislative Council election voter list, the Chief Electoral Officer admitted his responses had not been ‘the kind of communication expected from an official handle’",
+      "published_at": "Tue, 27 Oct 2026 22:54:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/andwnr/article71633088.ece/alternates/LANDSCAPE_1200/PTI01_06_2026_000202A.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 4
+          "Politics & Elections": 5
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "363bacbfb06f62a0f2",
-      "title": "Here's what Jio Platforms paid in legal fees for its ₹30,000 crore IPO",
-      "url": "https://www.barandbench.com/news/heres-what-jio-platforms-paid-in-legal-fees-for-its-30000-crore-ipo",
-      "summary": "Jio Platforms Limited, the digital services arm of Reliance Industries, has earmarked ₹30 crore towards legal fees in connection with its ₹30,187 crore initial public offering (IPO), according to the company's prospectus dated October 24, 2026. Jio Platforms' allocation towards legal fees accounts for 6.39 percent of its total estimated IPO expenses, a higher proportion than several other major public offerings in India. For context, legal fees accounted for approximately 5.88 percent of Swiggy's IPO expenses in 2024 and 5.02 percent of Vishal Mega Mart's issue expenses in the same year. The corresponding proportion was 3.60 percent for Life Insurance Corporation of India's IPO in 2022 and 1.02 percent for Hyundai Motor India's public offering in 2024. Legal Fees IPOs Five law firms advised on the public issue, including three representing Jio Platforms and two advising the book-running lead managers (BRLMs). Shardul Amarchand Mangaldas & Co acted as the lead Indian legal counsel to Jio Platforms, while Cyril Amarchand Mangaldas served as another Indian legal counsel. International law firm Latham & Watkins LLP advised the company on international law. Khaitan & Co advised the book",
-      "published_at": "Tue, 27 Oct 2026 17:50:15 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-06-20/p8vdbox1/ChatGPT-Image-Jun-20-2026-013635-PM.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 3,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e36cc481af091c0538",
-      "title": "Can you justify this loot? Supreme Court slams hospitals, government for 1,000% mark-up on cancer drugs",
-      "url": "https://www.barandbench.com/news/can-you-justify-this-loot-supreme-court-slams-hospitals-government-for-1000-mark-up-on-cancer-drugs",
-      "summary": "The Supreme Court on Tuesday reserved its verdict on a plea seeking price regulations and trade margin caps on non-scheduled medicines and medical consumables [Kishan Chand Jain vs Ethics And Medical Registration Board (EMRB) (Erstwhile Medical Council Of India) And Ors.]. During the hearing of the matter, a bench of Justices Vikram Nath and Sandeep Mehta posed sharp questions to the Central government and private hospitals over massive mark-ups on essential drugs. The Court slammed the prevailing pricing regime, describing exorbitant hospital margins as \"loot\" and \"dacoity\" that prey on vulnerable patients with zero bargaining power. The Court also shared a disturbing incident involving a drug dealer whose wife was undergoing cancer treatment at a renowned private hospital. \"The dealer requested the hospital authorities, 'Sir, I am myself a dealer and to me the (chemotherapy) injection comes at ₹11,000 dealer price.' The hospital refused to administer that injection and charged ₹1,30,000 for that same injection. Can you show any justification for this loot, please? Why this difference? Where does the money go?\" the Court asked. When Additional Solicitor General (ASG) Aishwarya Bha",
-      "published_at": "Tue, 27 Oct 2026 17:05:49 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-11/fb509097-601c-4c42-b327-cb7cdaf9ad7d/Medicines_1.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 2,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "7b2ee5412fc621c330",
-      "title": "Explained: What Keralam’s new Senior Citizens’ Rights Bill covers",
-      "url": "https://www.thenewsminute.com/kerala/explained-what-keralams-new-senior-citizens-rights-bill-covers",
-      "summary": "The Keralam Assembly, on October 26, unanimously passed the Keralam Senior Citizens’ (Care and Protection of Rights) Bill, 2026, which seeks to establish a legal framework for protecting the rights, dignity and social security of people aged 60 and above. The Bill provides for the registration, regulation and monitoring of senior citizen care centres, caregiver training and certification, and measures to prevent abuse and exploitation of the elderly. It also seeks to promote healthy and active ageing and ensure support to families and caregivers. The Bill also proposes dedicated protection units at the state and district levels, a public register of certified caregivers, specialised cyber cells to address fraud targeting senior citizens, a State Reserve Fund for their welfare, and penalties for offences including abuse, abandonment and the illegal possession of an elderly resident’s property. The legislation had been referred to the Finance Subject Committee for scrutiny before being taken up in the Assembly. Chief Minister VD Satheesan said the Bill focused on the care and protection of senior citizens’ rights, with its main thrust being the development of a “silver economy”. He s",
-      "published_at": "Tue, 27 Oct 2026 14:05:15 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-27/a3lyc5uq/MainImageLME.jpg.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 6,
-          "Economy & Employment": 2,
-          "Society, Rights & Justice": 7
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "cb6785ab6e3408e3ab",
-      "title": "One bite at the cherry: Henderson comes to India and finds it was already here",
-      "url": "https://www.barandbench.com/columns/one-bite-at-the-cherry-henderson-comes-to-india-and-finds-it-was-already-here",
-      "summary": "Every judge recognises a certain kind of litigant. He loses on one ground and, after judgment, discovers another. When that fails, he changes the forum, recasts the relief, or presents an old controversy as a new cause of action. Litigation becomes less a means of resolving a dispute than a means of keeping it alive. The law calls this abuse of process. In Henderson v Henderson (1843) , Sir James Wigram V-C articulated a principle later developed into a broader inquiry into successive proceedings: parties should ordinarily advance matters which, exercising reasonable diligence, ought to have been raised earlier. This does not mean every omitted argument is lost forever. The question is whether a later proceeding unfairly reopens a controversy that ought to have ended. Finality is indispensable to justice, but must not defeat a genuine claim. India already has safeguards Explanation IV to Section 11 of the Code of Civil Procedure (CPC), 1908 embodies constructive res judicata . A matter which might and ought to have been raised as a ground of attack or defence in the former suit is deemed to have been directly and substantially in issue. Order II Rule 2 CPC addresses omitted claims ",
-      "published_at": "Tue, 27 Oct 2026 18:29:56 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-12/8f3ba570-06ec-4c78-ac40-7af84a1d1c71/court_room_02.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "0b403fdb78e6d2277a",
-      "title": "Supreme Court pulls up Centre over rising acid attacks; says guidelines to curb sales have failed",
-      "url": "https://www.barandbench.com/news/litigation/supreme-court-pulls-up-centre-over-rising-acid-attacks-says-guidelines-to-curb-sales-have-failed",
-      "summary": "The Supreme Court on Tuesday came down heavily on the Central government over the continuing incidents of acid attacks, observing that its guidelines to curb the illegal sale of acid have failed. A bench of Chief Justice of India (CJI) Surya Kant , Justice Joymalya Bagchi and Justice V Mohana was hearing pleas concerning the rehabilitation of acid attack survivors and regulation of the sale of acid. \"Despite your guidelines, unfortunate incidents are taking place. In fact, such incidents are increasing. That means there is something wrong. Your guidelines have not achieved the object for which they were framed. That itself is a reason to revisit them,\" t he CJI said. The Court said that guidelines alone will not be sufficient to tackle the menace, and enforcement accountability of concerned officers would be the key. \"You cannot remain happy and satisfied merely because guidelines have been issued and the burden has been passed on to the States,\" CJI Kant said. CJI Surya Kant, Justice Joymalya Bagchi, Justice V Mohana The CJI also asked whether the Central government had sought explanations from States and fixed accountability on officers and enforcement agencies. \"Merely issuing c",
-      "published_at": "Tue, 27 Oct 2026 18:17:26 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-10-03/sievs798/ViewPoint-MIddle-Single-Image.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 3,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1,
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "9a9edc0a9ee295d198",
-      "title": "Call for Papers: Journal of Intellectual Property Laws, CIPR, Institute of Law, Nirma University",
-      "url": "https://www.barandbench.com/Law-School/call-for-papers-journal-of-intellectual-property-laws-cipr-institute-of-law-nirma-university",
-      "summary": "The Centre for Intellectual Property Rights (CIPR), Institute of Law, Nirma University is inviting submissions for Volume X of the Journal of Intellectual Property Laws (JIPL) (ISSN: 2455-0361). Theme Intellectual Property Rights in the Digital Economy: Data Protection, Cybersecurity, and Digital Personality in the age of Big Data and Artificial Intelligence. Sub Theme Intellectual Property Protection in the Data Economy with Copyright, Database Rights, Data Ownership and Commercial Access to Information. Intellectual Property Protection of Proprietary Information and Commercial Knowledge in the Digital Economy. Intellectual Property Enforcement in the Digital Environment through Online Infringement, Intermediary Liability and Cross-Border Protection. Personal Data Protection and Its Intersection with Intellectual Property Rights. Intellectual Property Rights in Digital Platforms with Ownership, Licensing, Content Creation and Commercial Exploitation. Intellectual Property Protection in Emerging Technologies across Copyright, Trademarks, Patents and Designs. Intellectual Property Protection against Cybersecurity Threats and Digital Misappropriation of Creative Works and Technologic",
-      "published_at": "Tue, 27 Oct 2026 15:56:16 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-27/5ymqneto/1000679288.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 10,
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 6,
-          "Environment, Health & Science": 2,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "ce39d6410eab9b602a",
-      "title": "Supreme Court Collegium recommends elevation of CESTAT judicial member as Bombay High Court judge",
-      "url": "https://www.barandbench.com/news/supreme-court-collegium-recommends-elevation-of-cestat-judicial-member-as-bombay-high-court-judge",
-      "summary": "The Supreme Court Collegium has recommended two names for appointment as judges of the Bombay High Court, including a judicial member of the Customs, Excise and Service Tax Appellate Tribunal (CESTAT) in Mumbai. The Collegium cleared the proposal during its meeting held today, October 26, 2026. The two persons recommended for elevation are: Ajay Sharma , judicial member at the Customs, Excise and Service Tax Appellate Tribunal (CESTAT) in Mumbai. Vaibhav Anant Sugdare , a practising advocate. If these recommendations are cleared by the Central government, the working strength of the Bombay High Court will increase to 77 judges. [Read Collegium Resolution] Supreme Court Collegium recommends elevation of CESTAT judicial member as Bombay High Court judge https://t.co/p7s3NKRqWH — Bar and Bench (@barandbench) October 26, 2026",
-      "published_at": "Mon, 26 Oct 2026 23:22:11 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-08-26/i8mh2yh4/B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "376bf72a7414f1bb16",
-      "title": "NCLT should not become a dumping ground for retired bureaucrats: UK Chaudhary",
-      "url": "https://www.barandbench.com/interviews/nclt-should-not-become-a-dumping-ground-for-retired-bureaucrats-uk-chaudhary",
-      "summary": "When the Supreme Court questions the quality of National Company Law Tribunal (NCLT) judgments, it must also consider that the Chief Justice of India (CJI) or a nominee is part of the committee selecting tribunal members, NCLT Bar Association President Dr UK Chaudhary has said. In an interview with Bar & Bench's SN Thyagarajan, Chaudhary questioned accountability in NCLT appointments and spoke about judicial vacancies, inadequate infrastructure and recent amendments to the Insolvency and Bankruptcy Code (IBC). Edited excerpts follow. SN Thyagarajan (SNT): The Supreme Court recently set aside an NCLT judgment for relying on non-existent, AI-generated judgments. Does this raise concerns about the quality of members being appointed to the tribunal? UK Chaudhary When the Supreme Court says that the quality (of NCLT members) is bad, I ask myself who is responsible. Members are appointed by a committee which includes the Chief Justice of India or his nominee. UK Chaudhary (UKC): I am quite aware of that judgment. There are several other judgments which have been questioned on grounds including language, research and sometimes even non-application of mind. This is a very alarming situatio",
-      "published_at": "Mon, 26 Oct 2026 21:28:14 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-26/pu9ubf5s/1000678950.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 6,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e199c94f8b8db763ce",
-      "title": "Supreme Court Collegium recommends appointment of 7 advocates as Madhya Pradesh High Court judges",
-      "url": "https://www.barandbench.com/news/law-policy/supreme-court-collegium-recommends-appointment-of-7-advocates-as-madhya-pradesh-high-court-judges",
-      "summary": "The Supreme Court Collegium has recommended the appointment of seven advocates as judges of the Madhya Pradesh High Court. The decision was taken at a meeting of the Collegium held on October 26, 2026. The advocates recommended for elevation are: Vivek Sharan Rajesh Kumar Shukla Kanak Gaharwar alias Kanak Lata Singh Bhakti Vyas Shreyas Pandit Mrinal Elker alias Mrinal Mazumdar Avinash Zargar The Collegium's recommendations will now be forwarded to the Central government for further processing. The appointments will take effect once the Central government clears the recommendations and the President of India issues the necessary warrants of appointment. The Madhya Pradesh High Court has a sanctioned strength of 53 judges. According to data for September 2026, the High Court was functioning with 38 judges, leaving 15 posts vacant, representing a vacancy rate of approximately 28 per cent. [Read Collegium Resolution] Supreme Court Collegium recommends appointment of 7 advocates as Madhya Pradesh High Court judges https://t.co/0fJpTeXqxg — Bar and Bench (@barandbench) October 26, 2026",
-      "published_at": "Mon, 26 Oct 2026 23:19:43 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2020-10/19a27037-e3e5-4647-b008-ba5bd56f4851/Madhya_pradesh_HC.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 5
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "78c1f6abe4e700fcb5",
-      "title": "Plea before Supreme Court against Tripura customary law allowing settlement of rape cases by paying fine",
-      "url": "https://www.barandbench.com/news/litigation/plea-before-supreme-court-against-tripura-customary-law-allowing-settlement-of-rape-cases-by-paying-fine",
-      "summary": "The Supreme Court on Monday issued notice to the State of Tripura on a public interest litigation (PIL) petition challenging the constitutional validity of a provision of Tripura’s Jamatia Customary Laws Act, 2017, which allegedly allows rape cases to be settled through payment of a fine of up to ₹1 lakh. [Madhumita Bhattacharya v. State of Tripura and Another] A Bench of the Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana sought responses from the Tripura government and the Tripura Tribal Areas Autonomous District Council (TTAADC) on the plea filed by one Madhumita Bhattacharya. The petition has challenged Section 143 of the Act, contending that it permits the private settlement and compounding of serious offences such as rape through payment of a fine of up to ₹1 lakh. The PIL has sought a declaration that Section 143 is unconstitutional and has also prayed for a direction requiring the respondents to place all relevant records concerning the Act before the Court. As per the plea, “Section 143 of the Act, read with Section 164 (Penalties and Fines), essentially places a price tag on a woman's dignity. By permitting an accused to be absolved of gr",
-      "published_at": "Mon, 26 Oct 2026 21:35:33 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-03-17/wdudwud6/10.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 5,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "2fddc6a0f87cb1ccda",
-      "title": "SC seeks Union govt response to media body’s petition challenging data protection law",
-      "url": "https://www.thenewsminute.com/news/sc-seeks-union-govt-response-to-media-bodys-petition-challenging-data-protection-law",
-      "summary": "The Supreme Court has issued notice on a petition challenging the provisions of the Digital Personal Data Protection Act, 2023, filed by the Digital News Publishers Association. “This is the first comprehensive petition by ‘legacy media’. We are the traditional, conventional legacy media. This will change the whole concept of news. If I am left to the mercy of the data principal on whether he or she will give consent, the concept of news will be gone... News has to be new. It will close down the newsroom. What’s the point if I have to ask for permission and consent?” said Senior Advocate Madhavi Divan, representing the digital wings of 21 mainstream news outlets, according to LiveLaw . Others raised similar concerns before. When the Digital Personal Data Protection Rules, 2025 were notified on November 15 last year, the DIGIPUB News India Foundation said the Act and the Rules “endanger source confidentiality, hinder public-interest investigations, obstruct anti-corruption disclosures”. DIGIPUB said it had earlier submitted formal objections to the removal of the journalistic carve-out from the DPDPA, 2023 and also highlighted that Section 44(3) substitutes Section 8(1)(j) of the RT",
-      "published_at": "Tue, 27 Oct 2026 11:03:31 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-27/98aubzx1/DNPASCNL27102026.webp",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 5,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "af4828de51523eebc1",
-      "title": "Madhya Pradesh High Court reserves order on Giribala Singh's bail plea in Twisha Sharma death case",
-      "url": "https://www.barandbench.com/news/madhya-pradesh-high-court-reserves-order-on-giribala-singhs-bail-plea-in-twisha-sharma-death-case",
-      "summary": "The Madhya Pradesh High Court on Monday reserved its order on the bail plea moved by former judicial officer Giribala Singh who is in judicial custody in a case accusing her of subjecting her daughter-in-law Twisha Sharma to cruelty and abetting her suicide. Noida-based Twisha Sharma had married Bhopal-based lawyer Samarth Singh after the two met through a dating app. Barely five months into the marriage, Sharma was found hanging at her matrimonial home in Bhopal on May 12. Justice Ajay Kumar Nirankari heard detailed arguments in Giribala Singh's bail plea since this morning and concluded the hearing around 4:40 pm. \"Thank you! I will pass the order,\" the judge said. Justice Ajay Kumar Nirankari Twisha Sharma's family have accused her husband and in-laws of subjecting her to persistent domestic violence and harassment over dowry demands, leading to the registration of an FIR at Katara Hills police station under various provisions of Bharatiya Nyaya Sanhita (BNS) and Dowry Prohibition Act. Giribala Singh, former President of the District Consumer Disputes Redressal Commission in Madhya Pradesh, was initially granted anticipatory bail by a sessions court. The Madhya Pradesh High Cour",
-      "published_at": "Mon, 26 Oct 2026 17:09:04 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-06/489673fe-af73-48cb-9492-5daefe9ca5ba/14.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "d930866ce1f93e2eae",
-      "title": "No change to Form 6; members' approval obtained electronically in urgent matters: ECI to Supreme Court",
-      "url": "https://www.barandbench.com/news/litigation/no-change-to-form-6-members-approval-obtained-electronically-in-urgent-matters-eci-to-supreme-court",
-      "summary": "The Election Commission of India (ECI) has strongly opposed the plea filed before the Supreme Court in which it has been alleged that the poll body's decisions are being taken by the Chief Election Commissioner Gyanesh Kumar (CEC) in the name of ECI without the approval of other two Election Commissioners, Sukhbir Singh Sandhu and Vivek Joshi. In its affidavit filed in response to the petition, the ECI has said that the petition is based solely on a single newspaper report and is not maintainable. \"In the eyes of law, a newspaper report is not treated as evidence of the facts it narrates. The Commission has neither released nor authorized the release of any internal note / file to any news agency,\" the affidavit said. Interestingly, the ECI also said that its affidavit has been approved by a unanimous decision of all three members of the Commission. According to the poll body, files in ECI go first to one Election Commissioner, then to the other and finally to the CEC. As per the affidavit, a suggestion, observation or query by any Election Commissioner during this process does not constitute a decision of the Election Commission under Section 18 of the Chief Election Commissioner ",
-      "published_at": "Mon, 26 Oct 2026 20:45:23 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-15/xd9km27d/E3487636-7B0B-41EF-8A8E-27CFA62D79B0.PNG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
           "Politics & Elections"
         ]
       }
     },
     {
-      "raw_id": "eeaab7125e9c4e5089",
-      "title": "Classic case of how not to investigate: Supreme Court slams UP Police again for botched murder probe",
-      "url": "https://www.barandbench.com/news/classic-case-of-how-not-to-investigate-supreme-court-slams-up-police-again-for-botched-murder-probe",
-      "summary": "The Supreme Court on Monday slammed the Uttar Pradesh Police for carrying out a slipshod and compromised probe in a murder case, terming it an egregious example of how a criminal inquiry should never be conducted [ Arun @ Deepak v. State of UP ]. A Bench of Justices JB Pardiwala and K Vinod Chandran censured the State police for fabricating a case without basic investigative steps. \"The State Police would do well to educate their officers in the process of investigation...Six years have been erased from the life of a man on the strength of a concocted story built on mere surmises and conjectures. Not even a rudimentary investigation was carried out...The investigation and prosecuting agencies exist not merely to, and by whatever means bring in a conviction,\" the Bench remarked. It observed that the botched investigation put an innocent citizen’s life and liberty into serious jeopardy. \"This is a classic case of how an investigation should not be proceeded with, resulting in the prosecution putting into jeopardy a person’s life and liberty...We were appalled at the manner in which the investigation was carried out,\" the Bench noted. It directed the Uttar Pradesh government to pay ₹6",
-      "published_at": "Mon, 26 Oct 2026 18:32:14 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/bbeae2f8-1c98-42f9-87a1-9df5aea55263/35.jpg",
+      "raw_id": "96ca5d7403d8f70ae3",
+      "title": "Record turnout as Israeli voters deliver verdict on Netanyahu",
+      "url": "https://www.thehindu.com/news/international/record-turnout-as-israeli-voters-deliver-verdict-on-netanyahu/article71632993.ece",
+      "summary": "Israelis are casting their ballots in the shadow of October 7 and the multi-front regional wars that it sparked, with the trauma from the attack still fresh and questions over accountability and security central to the campaign",
+      "published_at": "Tue, 27 Oct 2026 22:36:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yj26hv/article71633032.ece/alternates/LANDSCAPE_1200/2026-10-27T154608Z_1843233146_RC2NBOAG3Z5N_RTRMADP_3_ISRAEL-ELECTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 5,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "aa7e482a426baa0af3",
+      "title": "CITU urges voters to support Left party candidates in GVMC polls",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/citu-urges-voters-to-support-left-party-candidates-in-gvmc-polls/article71632867.ece",
+      "summary": "",
+      "published_at": "Tue, 27 Oct 2026 23:27:49 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "cc29fc1e3b666a9b68",
+      "title": "Total voters in Mysuru district down to 22.80 lakh from 27.99 lakh prior to SIR",
+      "url": "https://www.thehindu.com/news/national/karnataka/total-voters-in-mysuru-district-down-to-2280-lakh-from-2799-prior-to-sir/article71632036.ece",
+      "summary": "",
+      "published_at": "Tue, 27 Oct 2026 22:22:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nwymm7/article71632236.ece/alternates/LANDSCAPE_1200/_JAI6997.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "141948352c7a18f01c",
+      "title": "The Hindu’s promotional campaign  wins seven laurels at Love of Advertising Awards",
+      "url": "https://www.thehindu.com/news/national/kerala/the-hindu-group-wins-seven-laurels-at-love-of-advertising-awards/article71632361.ece",
+      "summary": "The Hindu’s promotional campaign titled ‘Written by Journalists’, bagged six honours and its impactful experiential initiative named ‘Kerala for ALL’, created for Kerala Tourism, won another laurel at the LoA Awards",
+      "published_at": "Tue, 27 Oct 2026 21:50:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gilkt7/article71632571.ece/alternates/LANDSCAPE_1200/LOA%20-%20Hall%20of%20Fame.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "e409896708ec8a2ed1",
+      "title": "Data | How election fund was spent during 2021 State polls",
+      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
+      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
+      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa728bba3d7642bfb5",
+      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
+      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
+      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "7777f732d192431acd",
+      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
+      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
+      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2a9a98e68763eb44ca",
+      "title": "New-to-science seahorse is one of three long-misidentified species",
+      "url": "https://india.mongabay.com/2026/10/new-to-science-seahorse-is-one-of-three-long-misidentified-species/",
+      "summary": "Scientists have identified a new-to-science seahorse species from the Indian waters, which has helped resolve the taxonomy of a group misidentified for over a century. In 1856, zoologist Johann Jakob Kaup described the thorny or spiny seahorse, Hippocampus histrix, based on samples from Japan. Since then, this seahorse has been thought to be a single, […]",
+      "published_at": "20 Oct 2026 12:39:40 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/19235416/1000458221-e1792466952876-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -549,30 +309,129 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Society, Rights & Justice": 1
+          "Environment, Health & Science": 9
         },
         "candidate_categories": [
-          "Governance & Administration",
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "34ade3ea8717a12ba2",
+      "title": "The Sundarbans at the crossroads of climate change and human survival [Commentary]",
+      "url": "https://india.mongabay.com/2026/10/the-sundarbans-at-the-crossroads-of-climate-change-and-human-survival-commentary/",
+      "summary": "Spanning India and Bangladesh, with India comprising 40% of its area, a vast and ever-shifting mangrove forest stretches across the Bay of Bengal. This vast delta derives its name from the Sundari (Heritiera fomes), the tall mangrove species that flourishes here in abundance. The name “Sundarbans” is a modern rendering of “Sunderbunds,” a term coined […]",
+      "published_at": "26 Oct 2026 14:28:19 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/26122422/AP967442025283-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 6
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "ca8357777ff097d614",
+      "title": "CG Forest Transfer List: छत्तीसगढ़ वन विभाग में 32 अधिकारियों की नई पदस्थापना, देखें पूरी लिस्ट",
+      "url": "https://theruralpress.in/chhattisgarh/cg-forest-department-transfer-list-2026-chhattisgarh-32-officers-new-posting-order/",
+      "summary": "CG Forest Transfer List: छत्तीसगढ़ में वन एवं जलवायु परिवर्तन विभाग ने अधिकारियों की पदस्थापना में बदलाव किया है। विभाग की ओर से जारी आदेश में सहायक वन संरक्षकों समेत विभिन्न पदों पर कार्यरत अधिकारियों की नई जिम्मेदारियां तय की गई हैं। आदेश के अनुसार, अधिकारियों को प्रशासनिक दृष्टिकोण से अस्थायी रूप से आगामी आदेश […]",
+      "published_at": "Tue, 27 Oct 2026 14:14:10 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "9a91f7e613ae3eda2f",
+      "title": "Centre says tribal leaders are not ‘necessary’ parties to Great Nicobar forest rights dispute",
+      "url": "https://india.mongabay.com/2026/10/centre-says-tribal-leaders-are-not-necessary-parties-to-great-nicobar-forest-rights-dispute/",
+      "summary": "The Union Tribal Affairs Ministry has said that Nicobarese leaders seeking to join a petition challenging the settlement of forest rights on Great Nicobar Island are “neither necessary nor proper parties,” in the case, court documents show. The Nicobarese are one of two major tribes affected by the development of the Island, and primary claimants […]",
+      "published_at": "27 Oct 2026 17:03:23 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/27160248/pexels-nabilnaidu-10671403-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
           "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "a7cf537b3b82d2ad5b",
-      "title": "CMRL-Exalogic case: Kerala High Court stays FIR against ex-CM Pinarayi Vijayan, daughter Veena, others",
-      "url": "https://www.barandbench.com/news/cmrl-exalogic-case-kerala-high-court-stays-fir-against-ex-cm-pinarayi-vijayan-daughter-veena-others",
-      "summary": "The Kerala High Court on Monday stayed further investigation in a criminal case registered against CPI (M) leader and former Chief Minister Pinarayi Vijayan, his daugher Veena Thaikkandiyil, her husband and MLA Mohammed Riyas, and others in connection with the CMRL-Exalogic case [ Pinarayi Vijayan v. Adv KM Shajahan & Ors. ]. A Bench of Justices KM Natarajan and Johnson John passed the interim order on appeals filed by Vijayan and others (appellants) challenging a single-judge's directive to register a first information report (FIR) in the CMRL-Exalogic case. Another Division Bench of the High Court had previously declined to hear their appeals without delving into its merits and dismissed their applications seeking permission to appeal the single-judge order. Subsequently, the appellants moved the Supreme Court for relief. The top court last week said that the Division Bench of the High Court ought to to hear the appeals in detail. The top court, therefore, stayed the probe against the appellants for a week so that the High Court can hear the appeal. Following this development, the High Court heard appeals today and stayed the single-judge ruling. It has also ordered a stay on the",
-      "published_at": "Mon, 26 Oct 2026 16:16:20 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-23/u8dlvoeb/WEB-SITE-B-copy.jpg",
+      "raw_id": "35147121a248b62555",
+      "title": "India’s new climate targets must navigate geopolitical uncertainty [Commentary]",
+      "url": "https://india.mongabay.com/2026/10/indias-new-climate-targets-must-navigate-geopolitical-uncertainty-commentary/",
+      "summary": "Well past the summer peak, India’s power system remains under strain. The country met daytime demand of over 267 GW even in September, yet fell short by more than 7.7 GW after sunset, when solar generation tapers off. India may have withdrawn its bid to host COP33 in 2028, but COP31, which opens in Antalya […]",
+      "published_at": "20 Oct 2026 14:09:45 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/20110833/AP26258745441318-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -584,32 +443,199 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Society, Rights & Justice": 1,
-          "Sports": 1
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "353751e2ef6de4a8a5",
+      "title": "Two new-to-science subterranean fishes reveal a hidden world underneath",
+      "url": "https://india.mongabay.com/2026/10/two-new-to-science-subterranean-fishes-reveal-a-hidden-world-underneath/",
+      "summary": "A decade ago, Wimarithy K. Marak, a resident of Assam’s Goalpara district, often used to encounter a small pink creature in her neighbourhood’s wells. She simply thought of it as a worm infesting her locality. In 2021, after she became a researcher, she stumbled upon the creature again while drawing water from a well. “This […]",
+      "published_at": "19 Oct 2026 11:35:36 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/18132354/Image-16-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "6e907a82530b3d0e9a",
+      "title": "Primate Watch in Assam spotlights India’s only ape",
+      "url": "https://eastmojo.com/assam/2026/10/26/primate-watch-in-assam-spotlights-indias-only-ape/",
+      "summary": "Guwahati: The third edition of Primate Watch brought together 19 participants at Hollongapar Gibbon Sanctuary in Assam’s Jorhat district on Saturday to raise awareness about primate conservation, with a focus on the Western Hoolock Gibbon, India’s only ape species. Organised on October 25, the programme aimed to familiarise participants with the threats facing primates and […] The post Primate Watch in Assam spotlights India’s only ape appeared first on EastMojo .",
+      "published_at": "Mon, 26 Oct 2026 12:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "a027036cbc9f1a5628",
+      "title": "Community models could help conserve the disappearing migratory freshwater fish [Commentary]",
+      "url": "https://india.mongabay.com/2026/10/migratory-freshwater-fish-disappearing-in-the-himalayas-needs-attention-commentary/",
+      "summary": "When the United Nations Convention on the Conservation of Migratory Species of Wild Animals (CMS) published its Global Assessment of Migratory Freshwater Fishes report earlier this year, the numbers confirmed what riverine communities had suspected for decades. Migratory freshwater fish populations have dropped 81% globally since the 1970s. Nearly all (97%) of the 58 fish […]",
+      "published_at": "23 Oct 2026 17:00:06 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/23145903/A-golden-mahseer-in-a-free-flowing-stretch-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "7d870f6fd0ff6e58cc",
+      "title": "New study maps India’s diverging fire regimes",
+      "url": "https://india.mongabay.com/short-article/2026/10/new-study-maps-indias-diverging-fire-regimes/",
+      "summary": "New research from the Centre for Wildlife Studies evaluated changing fire regimes in wildlife reserves across three Indian landscapes, finding that burned area rose most steeply in the Eastern Ghats between 2002 and 2022, at 9.3% per year. The rising fires in the Eastern Ghats show that it has a more fire-prone combination of vegetation, […]",
+      "published_at": "21 Oct 2026 15:41:15 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/21153215/Bandipur_fires_2019-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "d3d69807607ae3daf5",
+      "title": "Nagaland University hosts East Zone women’s table tennis tournament",
+      "url": "https://eastmojo.com/nagaland/2026/10/27/nagaland-university-hosts-east-zone-womens-table-tennis-tournament/",
+      "summary": "Lumami: Nagaland University inaugurated the East Zone Inter-University Women’s Table Tennis Tournament 2026–27 at its headquarters in Lumami on Monday, bringing together women players from universities across different states. The inaugural ceremony was held at the I. Ihoshe Kinimi Hall, with Prof Bendang Ao, director of the university’s Research and Development Cell, attending as the […] The post Nagaland University hosts East Zone women’s table tennis tournament appeared first on EastMojo .",
+      "published_at": "Tue, 27 Oct 2026 06:45:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 1,
+          "Sports": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
           "Society, Rights & Justice",
           "Sports"
         ]
       }
     },
     {
-      "raw_id": "5a74b4a1f8da4788f3",
-      "title": "Supreme Court rejects plea against AIADMK MLAs who resigned to join Vijay's TVK",
-      "url": "https://www.barandbench.com/news/supreme-court-rejects-plea-against-aiadmk-mlas-who-resigned-to-join-vijays-tvk",
-      "summary": "The Supreme Court on Monday dismissed a writ petition challenging the resignations of former All India Anna Dravida Munnetra Kazhagam (AIADMK) members of legislative assembly (MLAs) who crossed over to join the Tamilaga Vettri Kazhagam (TVK) following the 2026 State Assembly elections. A Bench of Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana observed that an elected representative resigning from their legislative seat and taking up ministerial office forms part of the standard political process. During the hearing, counsel for the petitioner pressed for judicial intervention under extraordinary writ jurisdiction, arguing that a constitutional vacuum exists within the Tenth Schedule (anti-defection law). Counsel contended that legislators were actively bypassing disqualification penalties by submitting tactical resignations under Article 190(3)(b) of the Constitution and subsequently securing berths in the ruling government. Pointing to a First Information Report (FIR) already registered regarding allegations of horse-trading and inducement surrounding the crossover, the counsel submitted that the resignations could not be viewed in isolation. The",
-      "published_at": "Mon, 26 Oct 2026 13:14:25 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-10-10/idlcmfti/SUPREME-COURT-OF-INDIA-WEB-PAGE-1600x900-Copy-copy.jpg",
+      "raw_id": "ce47651de127967324",
+      "title": "One orangutan goes home. Will the five babies follow?",
+      "url": "https://india.mongabay.com/2026/10/one-orangutan-goes-home-will-the-five-babies-follow/",
+      "summary": "Two years since an infant orangutan was seized from a Mumbai apartment, the procedures are finally complete to repatriate him to his homeland, Indonesia. The animal will fly out of India on October 19, 2026, after a long bilateral process, delayed by procedural hurdles and poor health condition of the animal, according to Yogesh Nilkand […]",
+      "published_at": "19 Oct 2026 16:02:37 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/19154019/8840925140_14f5ffcc1b_o-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -621,34 +647,28 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 2,
-          "States & Local": 1,
-          "Society, Rights & Justice": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "Society, Rights & Justice",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "21ceb938c7ae33f0ae",
-      "title": "Lakhimpur Kheri violence: Supreme Court allows Ashish Mishra to go home for Diwali",
-      "url": "https://www.barandbench.com/news/lakhimpur-kheri-violence-supreme-court-allows-ashish-mishra-to-go-home-for-diwali",
-      "summary": "The Supreme Court permitted Ashish Mishra, the prime accused in the 2021 Lakhimpur Kheri violence case, to visit his hometown in Lucknow district to celebrate Diwali with his family, subject to conditions imposed in its March 2025 order [Ashish Mishra Alias Monu v. State of UP] . A Bench of Chief Justice of India (CJI) Surya Kant and Justices Joymalya Bagchi and V Mohana reviewed the progress of the ongoing trial and emphasised that the prosecution must strike a balance between timely disposal and fair procedure. \"Your duty is to ensure that your witnesses are present. Let the trial be timely concluded. We do not want such a hurry that witnesses, cross-examinations or material evidence are left out. At the same time, we do not want prolonged delay. This balance has to be maintained by the prosecution,\" the CJI observed. During the hearing, the Additional Advocate General for Uttar Pradesh informed the Bench that a special public prosecutor had been appointed to steer the trial, adding that 90 out of 131 prosecution witnesses had already been examined, leaving around 41 witnesses. Advocate Prashant Bhushan, representing the victims, submitted that he was satisfied with these develop",
-      "published_at": "Mon, 26 Oct 2026 12:58:44 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2021-10/89986460-152e-4567-baf9-ef9d4219a3bf/44.jpg",
+      "raw_id": "1ddb7dbe536f4d278d",
+      "title": "Light may influence morning basking behaviour in captive gharials",
+      "url": "https://india.mongabay.com/2026/10/light-may-influence-morning-basking-behaviour-in-captive-gharials/",
+      "summary": "Like all crocodilians, Gangetic gharials regulate their body temperature using external heat sources. They warm their enormous bodies, which can grow to 15 to 20 feet in length, by basking on sandbanks, making it an important daily activity. Both temperature and light are important environmental cues for basking. However, a recent study on captive Gangetic […]",
+      "published_at": "16 Oct 2026 13:15:40 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/16110458/dc1724dd-feb1-4d01-9e4e-4353349e9041-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -660,531 +680,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 2,
-          "Protests": 2,
-          "Society, Rights & Justice": 1
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "94da8d3a26fce74d01",
-      "title": "Bengaluru Court orders Kannada news channel to pay ₹1 lakh for defaming Karnataka Bank",
-      "url": "https://www.barandbench.com/news/litigation/bengaluru-court-orders-kannada-news-channel-to-pay-1-lakh-for-defaming-karnataka-bank",
-      "summary": "A Court in Bengaluru has directed Kannada news channel BTV News to pay ₹1 lakh in damages to Karnataka Bank Limited for broadcasting defamatory statements about the bank following the resignation of its Managing Director and Chief Executive Officer in June 2025. [Karnataka Bank Vs BTV] Additional City Civil and Sessions Judge RY Shashidhara also directed the channel to broadcast an apology to Karnataka Bank and permanently restrained it from publishing defamatory statements concerning the bank and its officials in relation to the dispute. In the judgment delivered on October 1, the Court held that the channel had broadcast the allegations without verifying information from credible sources. \" The defendant has not followed norms of journalistic conduct issued by press council of India. The defendant has not followed principles and ethics while publishing statement against plaintiff bank ,\" the Court added. The dispute arose following the resignation of Karnataka Bank's Managing Director and CEO Srikrishnan Hari Hara Sarma on June 29, 2025. According to the bank, an audit for the financial year 2024-25 revealed that Sarma had incurred expenditure amounting to ₹1.16 crore towards con",
-      "published_at": "Mon, 26 Oct 2026 10:44:09 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-11-25/6ejexye7/SUPREME-COURT-OF-INDIA-yuWEB-PAGE-1600x900-Copy-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "377ade75ea72af0e05",
-      "title": "ED probe shows drug money flow from India’s cities to Myanmar via Northeast",
-      "url": "https://eastmojo.com/mizoram/2026/10/27/ed-probe-shows-drug-money-flow-from-indias-cities-to-myanmar-via-northeast/",
-      "summary": "For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/10/Representational-image-1.png?fit=780%2C439&ssl=1\" /> On paper, a homemaker in Champhai lived on about Rs 27,000 a month. Her bank account, operated by her husband, a bank employee, received Rs 15.48 crore. That account is one of the details in a money-laundering case the Directorate of Enforcement (ED) says it has now cracked open. In a press release dated October […] The post ED probe shows drug money flow from India’s cities to Myanmar via Northeast appeared first on EastMojo .",
-      "published_at": "Tue, 27 Oct 2026 08:00:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "2bab6870c3bc3b5c46",
-      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
-      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
-      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
-      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e633d0ec8ee953cdc3",
-      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
-      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
-      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
-      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "6fcbc59a930cf4f387",
-      "title": "Hybrid working emerges as key talent strategy, study finds",
-      "url": "https://eastmojo.com/national-news/2026/10/27/hybrid-working-emerges-as-key-talent-strategy-study-finds/",
-      "summary": "New Delhi: Hybrid working is emerging as a key strategy for businesses to attract and retain skilled employees, with improved staff retention alone potentially generating productivity gains worth $204.7 billion in the US and £10.8 billion in the UK over five years, according to a new analysis by International Workplace Group (IWG) and Arup. The […] The post Hybrid working emerges as key talent strategy, study finds appeared first on EastMojo .",
-      "published_at": "Tue, 27 Oct 2026 08:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "15d1ac1a18bf264324",
-      "title": "Preaching religion without prior permission can lead to cancellation of OCI registration: Madras High Court",
-      "url": "https://www.barandbench.com/news/litigation/preaching-religion-without-prior-permission-can-lead-to-cancellation-of-oci-registration-madras-high-court",
-      "summary": "The Madras High Court recently held that preaching one's religion without prior permission from the Central government is sufficient grounds for cancelling a foreign national's Overseas Citizen of India (OCI) registration, even if no religious conversions take place [John Daniel Vs UOI] Justice D Bharatha Chakravarthy observed that missionary activities are not limited to religious conversions and that OCI cardholders are required to obtain prior permission even to preach or spread their religion. \" It is not only for conversion, but even to be a missionary preaching his religion, it is only a prior permission that is mandated, \" the Court said. Justice D Bharatha Chakravarthy The Court made the observation while dismissing a petition filed by American citizen John Daniel, challenging the cancellation of his OCI registration by the Foreigners Regional Registration Officer (FRRO), Chennai, on September 4. Daniel was granted OCI registration in February 2015. He challenged its cancellation, maintaining that his visits to India were primarily to meet his 92-year-old mother and other relatives. The Central government, however, alleged that Daniel had been undertaking missionary activit",
-      "published_at": "Tue, 27 Oct 2026 17:55:51 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2024-06/24216cd3-338e-4676-aee8-c0802f32121e/BOMBAY%20%20WEB%20PAGE%201600x900.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "db4818163885ff8e4d",
-      "title": "Two IIULER Goa students die in motor accident; University to hold end-sems as scheduled",
-      "url": "https://www.barandbench.com/Law-School/two-iiuler-goa-students-die-in-motor-accident-university-to-hold-end-sems-as-scheduled",
-      "summary": "Two students of the India International University of Legal Education and Research (IIULER), Goa died in a motor accident in the early hours of October 26. The University has said that end-semester examinations will go ahead as per schedule, from October 28. In an email in the early hours of October 27, Controller of Examinations Dr Abhishek Mishra said that students who feel unable to appear may choose not to. He added that no student should feel compelled to appear while in profound distress. Second-year students emailed the administration at 2:25 AM on October 27, seeking postponement of the exams to January 2027. They also asked for counselling on campus and a memorial for the two students. The email stated that several batchmates had to go to the hospital and endure an experience that no student should ever have to face. A student informed Bar & Bench that those at the hospital saw grave injuries and had to help move the bodies themselves. Many students are struggling to eat, sleep or focus, the email said. Mishra replied at 5:19 AM, urging students to appear as scheduled. He cited Sardar Vallabhbhai Patel, Sachin Tendulkar and Virat Kohli, who carried on with their duties aft",
-      "published_at": "Tue, 27 Oct 2026 17:54:21 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-07/f284cd05-7a57-4bb5-a07f-878474f7e442/12.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 9,
-          "Environment, Health & Science": 2,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "274ae860339b8ddf41",
-      "title": "Karnataka HC refuses to quash case against man accused of sending bomb threats to Bengaluru airport, malls",
-      "url": "https://www.barandbench.com/news/litigation/karnataka-hc-refuses-to-quash-case-against-man-accused-of-sending-bomb-threats-to-bengaluru-airport-malls",
-      "summary": "The Karnataka High Court recently declined to quash criminal proceedings against a 22-year-old man accused of sending emails with threats of bomb blasts at Kempegowda International Airport and several shopping malls in Bengaluru [ Abhay Shee v. State of Karnataka ]. The accused youth is alleged to have impersonated another person and invoked the name of the banned terrorist organisation Jaish-e-Mohammed in the bomb threat emails. The Court held that the accused man's claim that his internet connection was not working on the date of the alleged incident could not, by itself, justify quashing the criminal case before trial. “Such a proposition, in the realm of electronic communications, is far too fragile to sustain the weight of quashment,\" the Court observed. Justice M Nagaprasanna The case arose from an email allegedly sent to the Bengaluru City Police Commissioner's office on November 30, 2025, threatening explosions at the airport and malls, including Orion Mall, Lulu Mall, Forum South Mall and Mantri Square Mall. The email allegedly threatened blasts from 7 PM onwards and included a mobile number seeking payment to avert the attacks. A man named Abhay Shee was booked in the cas",
-      "published_at": "Mon, 26 Oct 2026 15:48:41 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-07-08/a0f18hp5/Bomb-threat.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "128afc45100a022b11",
-      "title": "UN-commissioned experts say Gaza ceasefire has not stopped Israel from committing genocide",
-      "url": "https://www.thehindu.com/news/international/un-commissioned-experts-say-gaza-ceasefire-has-not-stopped-israel-from-committing-genocide/article71627202.ece",
-      "summary": "The findings by the Commission of Inquiry on the Occupied Palestinian Territory could be used by prosecutors at the International Criminal Court or in other jurisdictions to try to bring justice to victims and their relatives",
-      "published_at": "Mon, 26 Oct 2026 20:00:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7li2t7/article71627288.ece/alternates/LANDSCAPE_1200/Israel_Palestinians_Gaza_59521.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "International & Geopolitics": 13
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "4f6ce074ea901652ba",
-      "title": "Lula’s win gives Brazil an opportunity to cement its climate leadership, but challenges remain",
-      "url": "https://www.thehindu.com/sci-tech/science/lulas-win-gives-brazil-an-opportunity-to-cement-its-climate-leadership-but-challenges-remain/article71631670.ece",
-      "summary": "On a global level, Brazil has come to play a major role in climate negotiations because of its simultaneous status as a major oil producer and, especially under Lula, a strong advocate of international climate cooperation",
-      "published_at": "Tue, 27 Oct 2026 19:28:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/hlot6i/article71632014.ece/alternates/LANDSCAPE_1200/2026-10-09T161516Z_15004819_RC2OZNAN4ONM_RTRMADP_3_BRAZIL-ELECTION.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "3905b630afdaa5e64b",
-      "title": "Russia says open to mini Ukraine ceasefires, but no letup in war",
-      "url": "https://www.thehindu.com/news/international/russia-says-open-to-mini-ukraine-ceasefires-but-no-let-up-in-war/article71628518.ece",
-      "summary": "A ceasefire is to start in the southern Ukrainian city early October 27, brokered by U.S. First Lady Melania Trump after months of reports that residents faced dire food, water and medicine shortages",
-      "published_at": "Mon, 26 Oct 2026 22:58:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9dctvu/article71628593.ece/alternates/LANDSCAPE_1200/Kremlin-signalsG3TGIOK3B.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1,
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "243f30ccc53604ffe1",
-      "title": "Iran says resumption of war would not change its stances",
-      "url": "https://www.thehindu.com/news/international/iran-says-resumption-of-war-would-not-change-its-stances/article71622921.ece",
-      "summary": "To achieve peace and stability, the region must move towards complete absence of foreign forces, says Iran's Foreign Minister Abbas Araghchi",
-      "published_at": "Mon, 26 Oct 2026 15:56:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/olsuea/article71622960.ece/alternates/LANDSCAPE_1200/Iran_Russia__1121.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "151ce5a184878eeddb",
-      "title": "Intercepted missile after Houthis hit Riyadh airport, says Saudi coalition",
-      "url": "https://www.thehindu.com/news/international/intercepted-missile-after-houthis-hit-riyadh-airport-says-saudi-coalition/article71625586.ece",
-      "summary": "The Houthis have carried out waves of strikes on the King Khalid International Airport in Riyadh, including an attack this month that killed 13 people and injured more than 300",
-      "published_at": "Mon, 26 Oct 2026 15:55:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3xbk87/article71625592.ece/alternates/LANDSCAPE_1200/2026-10-25T131533Z_501958587_RC28MNAMI4AL_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e0d98fb67d98eec216",
-      "title": "Why Poland wants a stronger relationship with India | The Hindu Editorial",
-      "url": "https://www.thehindu.com/videos/why-poland-wants-a-stronger-relationship-with-india-the-hindu-editorial/article71626195.ece",
-      "summary": "Why is Poland seeking a closer partnership with India? Polish Prime Minister Donald Tusk’s visit to India highlighted growing cooperation in trade, technology, defence, critical minerals, renewable energy and geopolitical coordination. With India and the European Union preparing to finalise a landmark Free Trade Agreement, Poland is positioning itself as a key European partner for New Delhi. This editorial explores what both countries stand to gain, the challenges that remain, and why the India-Poland relationship could become increasingly important in Europe’s engagement with India.",
-      "published_at": "Mon, 26 Oct 2026 15:04:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6lcm4h/article71626186.ece/alternates/LANDSCAPE_1200/Trinamool%20Congress%20ECI%2014.png",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "413dd54bd39c4cb4c2",
-      "title": "RPNLU Prayagraj finance controller removed after refusing VC’s ₹70,000 academic incentive",
-      "url": "https://www.barandbench.com/Law-School/rpnlu-prayagraj-finance-controller-removed-after-refusing-vcs-70000-academic-incentive",
-      "summary": "The finance controller (FC) of Dr Rajendra Prasad National Law University, Prayagraj (RPNLUP) was removed after he refused to approve a ₹70,000 academic incentive for the Vice-Chancellor (VC) Usha Tandon , a Dainik Bhaskar report has claimed. The report from September 8 claims that the University has replaced 9 FCs in the past two years. It further claims that the latest removal, that of Siddharth S Tripathi, followed his refusal to approve a ₹70,000 academic incentive to the VC. Tripathi reportedly claimed that the VC could not be entitled to this incentive. When contacted, Tripathi refused to comment on the matter. In a telephonic conversation with Bar & Bench, the University's public relations officer (PRO) Prakash Tripathi said that the power to remove or appoint the FC rests with the State government and not the VC. A perusal of the University Act, however, reveals that the Executive Council appoints the FC in consultation with the State government. The Executive Council comprises the VC, two faculty members nominated by the VC, and various other government representatives. When asked whether the VC was drawing such an incentive and the basis for the same, the PRO last week re",
-      "published_at": "Tue, 27 Oct 2026 18:03:20 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-08-20/137lvi6z/07.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -1252,41 +751,6 @@
           "States & Local": 9
         },
         "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "458ce3d13594308d47",
-      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
-      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
-      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -1424,6 +888,480 @@
         "candidate_categories": [
           "Society, Rights & Justice",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "1bc9d993aa59c66eda",
+      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
+      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
+      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "71d8d0af4c37fd3761",
+      "title": "Thousands protest 'encounter' killing",
+      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "summary": "",
+      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ce5e84ffc7c68f6982",
+      "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
+      "url": "https://www.thehindu.com/videos/watch-maratha-reservation-stir-what-are-its-implications-of-the-obc-backlash/article67576436.ece",
+      "summary": "In this episode of Talking Politics, we discuss the implications of the OBC backlash over the Maratha reservation stir and its impact on the domestic politics of the state.",
+      "published_at": "Wed, 29 Jul 2026 12:07:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/957hu8/article67576418.ece/alternates/LANDSCAPE_1200/Nistula%20Thumb%202.png",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa2d94dc291e5880c2",
+      "title": "The controversy over the proposed Mekedatu water project",
+      "url": "https://www.thehindu.com/news/national/karnataka/the-controversy-over-the-proposed-mekedatu-water-project/article65252631.ece",
+      "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
+      "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "5a537d850bb260c224",
+      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
+      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
+      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
+      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "cf4c55e5970c63b712",
+      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
+      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
+      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
+      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "6fcbc59a930cf4f387",
+      "title": "Hybrid working emerges as key talent strategy, study finds",
+      "url": "https://eastmojo.com/national-news/2026/10/27/hybrid-working-emerges-as-key-talent-strategy-study-finds/",
+      "summary": "New Delhi: Hybrid working is emerging as a key strategy for businesses to attract and retain skilled employees, with improved staff retention alone potentially generating productivity gains worth $204.7 billion in the US and £10.8 billion in the UK over five years, according to a new analysis by International Workplace Group (IWG) and Arup. The […] The post Hybrid working emerges as key talent strategy, study finds appeared first on EastMojo .",
+      "published_at": "Tue, 27 Oct 2026 08:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "128afc45100a022b11",
+      "title": "UN-commissioned experts say Gaza ceasefire has not stopped Israel from committing genocide",
+      "url": "https://www.thehindu.com/news/international/un-commissioned-experts-say-gaza-ceasefire-has-not-stopped-israel-from-committing-genocide/article71627202.ece",
+      "summary": "The findings by the Commission of Inquiry on the Occupied Palestinian Territory could be used by prosecutors at the International Criminal Court or in other jurisdictions to try to bring justice to victims and their relatives",
+      "published_at": "Mon, 26 Oct 2026 20:00:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/7li2t7/article71627288.ece/alternates/LANDSCAPE_1200/Israel_Palestinians_Gaza_59521.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 1,
+          "International & Geopolitics": 13
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "0b33fe6c75e37ecbbe",
+      "title": "India’s ‘balancing act’ risks eroding Russia’s trust",
+      "url": "https://www.thehindu.com/opinion/lead/indias-balancing-act-risks-eroding-russias-trust/article71632551.ece",
+      "summary": "New Delhi’s performative diplomacy could undermine its longstanding friendship with Moscow",
+      "published_at": "Wed, 28 Oct 2026 01:32:07 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bioemo/article71632557.ece/alternates/LANDSCAPE_1200/2026-09-12T134140Z_1399024278_RC2PHNAJ1813_RTRMADP_3_BRICS-SUMMIT.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "4f6ce074ea901652ba",
+      "title": "Lula’s win gives Brazil an opportunity to cement its climate leadership, but challenges remain",
+      "url": "https://www.thehindu.com/sci-tech/science/lulas-win-gives-brazil-an-opportunity-to-cement-its-climate-leadership-but-challenges-remain/article71631670.ece",
+      "summary": "In his fourth term, the President can potentially negotiate across the divides that currently frustrate climate agreements, given his country’s status as Latin America’s largest economy, host to most of the Amazon, and its diplomatic relationships with the EU, the U.S., China, the BRICS countries and other devel",
+      "published_at": "Tue, 27 Oct 2026 20:09:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hlot6i/article71632014.ece/alternates/LANDSCAPE_1200/2026-10-09T161516Z_15004819_RC2OZNAN4ONM_RTRMADP_3_BRAZIL-ELECTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "3905b630afdaa5e64b",
+      "title": "Russia says open to mini Ukraine ceasefires, but no letup in war",
+      "url": "https://www.thehindu.com/news/international/russia-says-open-to-mini-ukraine-ceasefires-but-no-let-up-in-war/article71628518.ece",
+      "summary": "A ceasefire is to start in the southern Ukrainian city early October 27, brokered by U.S. First Lady Melania Trump after months of reports that residents faced dire food, water and medicine shortages",
+      "published_at": "Mon, 26 Oct 2026 22:58:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9dctvu/article71628593.ece/alternates/LANDSCAPE_1200/Kremlin-signalsG3TGIOK3B.3.jpg.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "243f30ccc53604ffe1",
+      "title": "Iran says resumption of war would not change its stances",
+      "url": "https://www.thehindu.com/news/international/iran-says-resumption-of-war-would-not-change-its-stances/article71622921.ece",
+      "summary": "To achieve peace and stability, the region must move towards complete absence of foreign forces, says Iran's Foreign Minister Abbas Araghchi",
+      "published_at": "Mon, 26 Oct 2026 15:56:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/olsuea/article71622960.ece/alternates/LANDSCAPE_1200/Iran_Russia__1121.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
         ]
       }
     }

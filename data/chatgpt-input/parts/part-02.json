@@ -1,23 +1,93 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-27T20:49:09.038208+00:00",
-  "input_count": 427,
+  "prepared_at": "2026-10-28T05:52:53.983746+00:00",
+  "input_count": 417,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 119,
+    "established_or_other": 81,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "e82fed95c49aca773e",
-      "title": "U.P. Chief Electoral Officer apologises for ‘tone, language and sharpness’ of social media posts",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/up-chief-electoral-officer-apologises-for-tone-language-and-sharpness-of-social-media-posts/article71632474.ece",
-      "summary": "When AAP leader Sanjay Singh questioned CEC Gyanesh Kumar on how ‘Ramhit Yadav’ became ‘Ram ne Yadav ko Maara’ in the U.P. Legislative Council election voter list, the Chief Electoral Officer admitted his responses had not been ‘the kind of communication expected from an official handle’",
-      "published_at": "Tue, 27 Oct 2026 22:54:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/andwnr/article71633088.ece/alternates/LANDSCAPE_1200/PTI01_06_2026_000202A.jpg",
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "dc35b8c374bc10bc8d",
+      "title": "Development without jobs, unemployment remains a challenge in Jammu and Kashmir",
+      "url": "https://www.thehindu.com/education/development-without-jobs-unemployment-remains-a-challenge-in-jammu-and-kashmir/article71606783.ece",
+      "summary": "Policy observers say prolonged unemployment is placing growing economic and social pressure on Jammu and Kashmir’s educated youth, with delayed recruitment and limited private-sector opportunities deepening uncertainty among graduates and professionals.",
+      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sbhjxu/article71606880.ece/alternates/LANDSCAPE_1200/India_Kashmir_Protest_59253.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 9,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "8d3276d79a1d577502",
+      "title": "Rupee rises 4 paise to 95.03 against U.S. dollar in early trade",
+      "url": "https://www.thehindu.com/business/markets/rupee-rises-against-usd-in-early-trade-on-wednesday/article71634342.ece",
+      "summary": "At the interbank foreign exchange market, the rupee recorded marginal gains and touched 95.03, registering a rise of 4 paise over its previous close",
+      "published_at": "Wed, 28 Oct 2026 11:02:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/itxqc3/article71634370.ece/alternates/LANDSCAPE_1200/rupee%20rises.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -37,20 +107,160 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 5
+          "Economy & Employment": 5
         },
         "candidate_categories": [
-          "Politics & Elections"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "96ca5d7403d8f70ae3",
-      "title": "Record turnout as Israeli voters deliver verdict on Netanyahu",
-      "url": "https://www.thehindu.com/news/international/record-turnout-as-israeli-voters-deliver-verdict-on-netanyahu/article71632993.ece",
-      "summary": "Israelis are casting their ballots in the shadow of October 7 and the multi-front regional wars that it sparked, with the trauma from the attack still fresh and questions over accountability and security central to the campaign",
-      "published_at": "Tue, 27 Oct 2026 22:36:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yj26hv/article71633032.ece/alternates/LANDSCAPE_1200/2026-10-27T154608Z_1843233146_RC2NBOAG3Z5N_RTRMADP_3_ISRAEL-ELECTION.JPG",
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fec948b2c133626961",
+      "title": "Is higher education preparing students for careers in the creator economy?",
+      "url": "https://www.thehindu.com/education/careers/is-higher-education-preparing-students-for-careers-in-the-creator-economy/article71577929.ece",
+      "summary": "The emerging domain demands storytellers, innovators, and multidisciplinary thinkers who can combine artistic vision with technological capability and entrepreneurial thinking",
+      "published_at": "Mon, 19 Oct 2026 05:38:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xtvcd7/article71577931.ece/alternates/LANDSCAPE_1200/Abdur%20rahman.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "eb2f581883cc1712c1",
+      "title": "Federal Reserve likely to skip rate hike despite elevated inflation",
+      "url": "https://www.thehindu.com/news/international/federal-reserve-likely-to-skip-rate-hike-despite-elevated-inflation/article71634402.ece",
+      "summary": "The Fed, led by Chairman Kevin Warsh, wants to return inflation to its 2% target, which it typically does by raising its short-term interest rate. Higher borrowing costs, over time, can cool spending and slow inflation",
+      "published_at": "Wed, 28 Oct 2026 11:02:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/9kflu3/article71634442.ece/alternates/LANDSCAPE_1200/iStock-1308151210.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -70,216 +280,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 5,
+          "Economy & Employment": 4,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "aa7e482a426baa0af3",
-      "title": "CITU urges voters to support Left party candidates in GVMC polls",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/citu-urges-voters-to-support-left-party-candidates-in-gvmc-polls/article71632867.ece",
-      "summary": "",
-      "published_at": "Tue, 27 Oct 2026 23:27:49 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "cc29fc1e3b666a9b68",
-      "title": "Total voters in Mysuru district down to 22.80 lakh from 27.99 lakh prior to SIR",
-      "url": "https://www.thehindu.com/news/national/karnataka/total-voters-in-mysuru-district-down-to-2280-lakh-from-2799-prior-to-sir/article71632036.ece",
-      "summary": "",
-      "published_at": "Tue, 27 Oct 2026 22:22:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/nwymm7/article71632236.ece/alternates/LANDSCAPE_1200/_JAI6997.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "141948352c7a18f01c",
-      "title": "The Hindu’s promotional campaign  wins seven laurels at Love of Advertising Awards",
-      "url": "https://www.thehindu.com/news/national/kerala/the-hindu-group-wins-seven-laurels-at-love-of-advertising-awards/article71632361.ece",
-      "summary": "The Hindu’s promotional campaign titled ‘Written by Journalists’, bagged six honours and its impactful experiential initiative named ‘Kerala for ALL’, created for Kerala Tourism, won another laurel at the LoA Awards",
-      "published_at": "Tue, 27 Oct 2026 21:50:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gilkt7/article71632571.ece/alternates/LANDSCAPE_1200/LOA%20-%20Hall%20of%20Fame.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "e409896708ec8a2ed1",
-      "title": "Data | How election fund was spent during 2021 State polls",
-      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
-      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
-      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa728bba3d7642bfb5",
-      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
-      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
-      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
-      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "7777f732d192431acd",
-      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
-      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
-      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
+          "Economy & Employment",
+          "International & Geopolitics"
         ]
       }
     },
@@ -343,39 +349,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Environment, Health & Science": 6
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "ca8357777ff097d614",
-      "title": "CG Forest Transfer List: छत्तीसगढ़ वन विभाग में 32 अधिकारियों की नई पदस्थापना, देखें पूरी लिस्ट",
-      "url": "https://theruralpress.in/chhattisgarh/cg-forest-department-transfer-list-2026-chhattisgarh-32-officers-new-posting-order/",
-      "summary": "CG Forest Transfer List: छत्तीसगढ़ में वन एवं जलवायु परिवर्तन विभाग ने अधिकारियों की पदस्थापना में बदलाव किया है। विभाग की ओर से जारी आदेश में सहायक वन संरक्षकों समेत विभिन्न पदों पर कार्यरत अधिकारियों की नई जिम्मेदारियां तय की गई हैं। आदेश के अनुसार, अधिकारियों को प्रशासनिक दृष्टिकोण से अस्थायी रूप से आगामी आदेश […]",
-      "published_at": "Tue, 27 Oct 2026 14:14:10 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -486,20 +459,20 @@
       }
     },
     {
-      "raw_id": "6e907a82530b3d0e9a",
-      "title": "Primate Watch in Assam spotlights India’s only ape",
-      "url": "https://eastmojo.com/assam/2026/10/26/primate-watch-in-assam-spotlights-indias-only-ape/",
-      "summary": "Guwahati: The third edition of Primate Watch brought together 19 participants at Hollongapar Gibbon Sanctuary in Assam’s Jorhat district on Saturday to raise awareness about primate conservation, with a focus on the Western Hoolock Gibbon, India’s only ape species. Organised on October 25, the programme aimed to familiarise participants with the threats facing primates and […] The post Primate Watch in Assam spotlights India’s only ape appeared first on EastMojo .",
-      "published_at": "Mon, 26 Oct 2026 12:30:00 +0000",
-      "image_url": "",
+      "raw_id": "71299ab48136ccbc49",
+      "title": "Police file case after Mangaluru medical college students allege ragging, threats",
+      "url": "https://www.thenewsminute.com/karnataka/police-file-case-after-mangaluru-medical-college-students-allege-ragging-threats",
+      "summary": "A 21-year-old student from Kollam has accused seniors at Kanachur Medical College in Mangaluru of repeatedly ragging him and his classmates, confining them in a hotel room and threatening them with violence. Ullal police have registered a case following the complaint, and seven students have been issued notices, according to reports. The complainant is a first-year BSc Neuroscience Technology student at the college in Deralakatte. His complaint describes three incidents on October 2, October 15 and October 22, involving alleged threats, forced singing and the humiliation of a junior student. On October 2, senior students Ashab and Asfaq allegedly confronted the complainant near a restaurant opposite the college after he went outside the campus without wearing his uniform. One of them threatened to break his limbs and said he would complain to the college authorities, according to the complaint. On October 15, Ashab allegedly called the student repeatedly and asked him and six classmates to meet near the Clock Tower. The group was then taken to a room at a nearby hotel and prevented from leaving until they sang songs, the complaint alleged. Ashab allegedly recorded their performance",
+      "published_at": "Wed, 28 Oct 2026 04:17:34 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-09-18/cdfzzkmt/WhatsApp-Image-2026-09-18-at-2.13.19-PM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
+        "id": "the-news-minute",
+        "name": "The News Minute",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -511,10 +484,14 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 2
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Environment, Health & Science",
+          "Governance & Administration",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -688,6 +665,74 @@
       }
     },
     {
+      "raw_id": "ad3a4026d61c0d4aa0",
+      "title": "Invaders get better at competition in introduced ranges: Study",
+      "url": "https://india.mongabay.com/short-article/2026/10/invaders-get-better-at-competition-in-introduced-ranges-study/",
+      "summary": "Are invasive plants better at competing with species in places they invade than species in their native range? A paper investigated this using Erigeron canadensis, commonly known as Canadian horseweed, to find that plants from non-native populations had 19.2% higher competitive ability than those from native populations. In the study, that advantage was evident across […]",
+      "published_at": "15 Oct 2026 12:35:52 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/15121801/42907108244_3a3f8a8a1b_3k-scaled-e1792046907690-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "64f297d4553a8a87a1",
+      "title": "Cyclone Arnab makes landfall near Andhra coast, brings destructive winds and heavy rain",
+      "url": "https://www.thenewsminute.com/andhra-pradesh/cyclone-arnab-makes-landfall-near-andhra-coast-brings-destructive-winds-and-heavy-rain",
+      "summary": "Very severe cyclonic storm Arnab continued to cross the Andhra Pradesh coast on October 28 morning, bringing destructive winds and torrential rain that uprooted trees, damaged electricity infrastructure and inundated low-lying areas. The India Meteorological Department (IMD) said the landfall process was expected to continue for several more hours. The storm began crossing the coast in the early hours of October 28, near the stretch between Bapatla and Visakhapatnam, close to south of Yanam. The IMD reported sustained wind speeds of 125 to 135 kmph, with gusts reaching 150 kmph. Its northern spiral band had moved further inland, while the centre remained close to the coastline. North coastal Andhra Pradesh recorded extremely heavy rainfall overnight. Kannuripalem in Anakapalli district received around 263 mm of rain in the 24 hours ending at 8 am on October 28, according to the state Directorate of Economics and Statistics. Bhogapuram in Vizianagaram district recorded a similar amount, while a police battalion campus in Visakhapatnam received around 260 mm. Thirty-nine automatic weather stations across Anakapalli, Visakhapatnam and Vizianagaram districts recorded more than 204.5 mm",
+      "published_at": "Wed, 28 Oct 2026 05:01:58 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-28/zktkz1nc/Screenshot-2026-10-28-10.30.20-AM.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "States & Local": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "cdf3a44208d11dc555",
       "title": "Tamil Nadu goes to polls",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
@@ -751,6 +796,41 @@
           "States & Local": 9
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "458ce3d13594308d47",
+      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
+      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
+      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -1028,72 +1108,6 @@
       }
     },
     {
-      "raw_id": "5a537d850bb260c224",
-      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
-      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
-      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
-      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "cf4c55e5970c63b712",
-      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
-      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
-      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
-      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -1193,12 +1207,12 @@
       }
     },
     {
-      "raw_id": "128afc45100a022b11",
-      "title": "UN-commissioned experts say Gaza ceasefire has not stopped Israel from committing genocide",
-      "url": "https://www.thehindu.com/news/international/un-commissioned-experts-say-gaza-ceasefire-has-not-stopped-israel-from-committing-genocide/article71627202.ece",
-      "summary": "The findings by the Commission of Inquiry on the Occupied Palestinian Territory could be used by prosecutors at the International Criminal Court or in other jurisdictions to try to bring justice to victims and their relatives",
-      "published_at": "Mon, 26 Oct 2026 20:00:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7li2t7/article71627288.ece/alternates/LANDSCAPE_1200/Israel_Palestinians_Gaza_59521.jpg",
+      "raw_id": "3260f0f8ad168d380d",
+      "title": "Houthis claim attack on Saudi oil refinery, blasts shake Riyadh",
+      "url": "https://www.thehindu.com/news/international/houthis-claim-attack-on-saudi-oil-refinery-blasts-shake-riyadh/article71633247.ece",
+      "summary": "Saudi Arabia, West Asia's largest economy, has suffered weeks of strikes from the Iran-backed Houthis against oil and civilian sites including Riyadh's international airport",
+      "published_at": "Wed, 28 Oct 2026 01:42:41 +0530",
+      "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1218,12 +1232,12 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "International & Geopolitics": 13
+          "Economy & Employment": 1,
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Society, Rights & Justice"
+          "Economy & Employment",
+          "International & Geopolitics"
         ]
       }
     },
@@ -1333,12 +1347,12 @@
       }
     },
     {
-      "raw_id": "243f30ccc53604ffe1",
-      "title": "Iran says resumption of war would not change its stances",
-      "url": "https://www.thehindu.com/news/international/iran-says-resumption-of-war-would-not-change-its-stances/article71622921.ece",
-      "summary": "To achieve peace and stability, the region must move towards complete absence of foreign forces, says Iran's Foreign Minister Abbas Araghchi",
-      "published_at": "Mon, 26 Oct 2026 15:56:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/olsuea/article71622960.ece/alternates/LANDSCAPE_1200/Iran_Russia__1121.jpg",
+      "raw_id": "0048d01a2805eb5891",
+      "title": "BRICS parliamentary forum expresses ‘deep concern’ about West Asian hostilities",
+      "url": "https://www.thehindu.com/news/national/brics-parliamentary-forum-expresses-deep-concern-about-west-asian-hostilities/article71632561.ece",
+      "summary": "Joint declaration calls for a two-state solution to Israel-Palestinan conflict; asserts the right of the Palestinian people to self-determination, freedom, and an independent, sovereign state",
+      "published_at": "Wed, 28 Oct 2026 01:35:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8vveuw/article71632907.ece/alternates/LANDSCAPE_1200/20261027338L.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -1358,7 +1372,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "International & Geopolitics": 9
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics"

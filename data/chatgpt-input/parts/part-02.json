@@ -1,16 +1,257 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-28T21:13:15.500858+00:00",
-  "input_count": 427,
+  "prepared_at": "2026-10-29T05:58:00.783244+00:00",
+  "input_count": 407,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 112,
+    "established_or_other": 88,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "dc35b8c374bc10bc8d",
+      "title": "Development without jobs, unemployment remains a challenge in Jammu and Kashmir",
+      "url": "https://www.thehindu.com/education/development-without-jobs-unemployment-remains-a-challenge-in-jammu-and-kashmir/article71606783.ece",
+      "summary": "Policy observers say prolonged unemployment is placing growing economic and social pressure on Jammu and Kashmir’s educated youth, with delayed recruitment and limited private-sector opportunities deepening uncertainty among graduates and professionals.",
+      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sbhjxu/article71606880.ece/alternates/LANDSCAPE_1200/India_Kashmir_Protest_59253.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 9,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "abfafdb0015d11b23e",
+      "title": "Rupee rises 11 paise to 95.17 against U.S. dollar in early trade",
+      "url": "https://www.thehindu.com/business/markets/rupee-rises-11-paise-against-us-dollar-in-early-trade-on-thursday/article71639047.ece",
+      "summary": "The U.S. Fed kept interest rates unchanged at 3.75%–4.00% as widely expected, but the market reaction turned mildly dollar-negative, forex traders said",
+      "published_at": "Thu, 29 Oct 2026 10:52:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hsaj71/article71639072.ece/alternates/LANDSCAPE_1200/istockphoto-1257153929-612x612.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "5f4186ce567befa411",
+      "title": "SAD-AAP trade barbs on drug menace issue in Punjab",
+      "url": "https://www.thehindu.com/news/national/punjab/sad-aap-trade-barbs-on-drug-menace-issue-in-punjab/article71636923.ece",
+      "summary": "SAD leader Bikram Singh Majithia accused Arvind Kejriwal of misleading Punjabis by giving the disproportionate assets case the label of a drug case to suppress the issue",
+      "published_at": "Thu, 29 Oct 2026 01:17:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/v6i0wv/article71637842.ece/alternates/LANDSCAPE_1200/20261010193L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "fec948b2c133626961",
       "title": "Is higher education preparing students for careers in the creator economy?",
@@ -43,76 +284,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e92c58e3fd7444d9a7",
-      "title": "Pioneering U.S. labour leader Dolores Huerta dies at 96",
-      "url": "https://www.thehindu.com/news/international/pioneering-us-labour-leader-dolores-huerta-dies-at-96/article71637847.ece",
-      "summary": "Dolores Huerta took the reins of the U.S. farmworker movement in the 1960s with Chavez",
-      "published_at": "Thu, 29 Oct 2026 01:36:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qcnzw1/article71637850.ece/alternates/LANDSCAPE_1200/APTOPIX_Obit_Dolores_Huerta_14745.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "011ac746e9c2d6ee8c",
-      "title": "U.S. Fed holds interest rates steady despite surging inflation",
-      "url": "https://www.thehindu.com/business/Economy/federal-reserve-likely-to-skip-rate-hike-despite-elevated-inflation/article71634402.ece",
-      "summary": "The 12-member FOMC voted 10-2 to hold rates at a target range between 3.75 and 4.00%, citing the need for more data in the fight against inflation",
-      "published_at": "Thu, 29 Oct 2026 00:08:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/9kflu3/article71634442.ece/alternates/LANDSCAPE_1200/iStock-1308151210.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
         ]
       }
     },
@@ -150,6 +321,41 @@
       }
     },
     {
+      "raw_id": "d22405cd0d616705e8",
+      "title": "We are yet to decide on validity of logical discrepancy in SIR: Supreme Court",
+      "url": "https://www.barandbench.com/news/we-are-yet-to-decide-on-validity-of-logical-discrepancy-in-sir-supreme-court",
+      "summary": "The Supreme Court orally said on Wednesday that it has not rendered any final decision on the validity of Election Commission of India (ECI) employing 'logical discrepancy' to weed out electors in its special intensive revision (SIR) of electoral rolls in various States. While the Court had earlier upheld the validity of SIR exercise in Bihar, the Court today said that the logical discrepancy issue was not decided in that matter. The Court had later permitted ECI to employ 'logical discrepancy' prior to the West Bengal assembly polls but the same was only an interim measure and not a final decision, the apex court said today. The remarks were made by a bench of Chief Justice of India Surya Kant and Justices Joymalya Bagchi and V Mohana after the ECI counsel argued today that the apex court has examined every step of SIR and upheld it. \"Ever since the SIR process was initiated, Your Lordships have been seized of the matter and have examined every step. Your Lordships may recall what happened in Bihar,\" the counsel said. \"Bihar is not a final determination of every question arising in these proceedings. In Bihar, the Election Commission had not initially undertaken logical discrepanc",
+      "published_at": "Wed, 28 Oct 2026 16:06:02 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-10-01/hrlyo17b/1000656869.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 3,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
       "raw_id": "67a05d270bf69c86e6",
       "title": "Editorial: Which version of ‘Save Indian Democracy’ will save Manipur?",
       "url": "https://eastmojo.com/premium/2026/10/28/editorial-which-version-of-save-indian-democracy-will-save-manipur/",
@@ -183,12 +389,12 @@
       }
     },
     {
-      "raw_id": "cf8f38dbdf6d51877c",
-      "title": "PM questions Congress over party’s MLC election results",
-      "url": "https://www.thehindu.com/news/national/pm-modi-taunts-congress-for-dismal-show-in-mlc-polls-despite-use-of-paper-ballots/article71635894.ece",
-      "summary": "‘MLC elections in 28 seats across four big States — Uttar Pradesh, Maharashtra, Bihar and Karnataka. Elections held using ballot papers. Guess how many seats Congress won? said Narendra Modi in a post on X",
-      "published_at": "Wed, 28 Oct 2026 21:47:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7anyfc/article71635922.ece/alternates/LANDSCAPE_1200/PM-Modi-to-inauGBHGNH1DC.5.jpg.jpg",
+      "raw_id": "b7d8edc38de9f5fa92",
+      "title": "Maharashtra MLC election: Congress trumps BJP in Nagpur, MVA leads 3-2 in State",
+      "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-mlc-election-congress-bjp-nagpur/article71638769.ece",
+      "summary": "While the NCP SP called for going back to ballot papers for holding elections, the BJP called for introspection among the alliance partners",
+      "published_at": "Thu, 29 Oct 2026 09:53:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/ybl8ez/article71638773.ece/alternates/LANDSCAPE_1200/HJdELZ6aYAAcnFf.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -286,39 +492,6 @@
       }
     },
     {
-      "raw_id": "f6d4207fe12a0414bc",
-      "title": "Ashok accuses State Election Commission of printing 90 lakh voter cards after announcement of SIR; SEC denies charge",
-      "url": "https://www.thehindu.com/news/national/karnataka/ashok-accuses-state-election-commission-of-printing-90-lakh-voter-cards-after-announcement-of-sir-sec-denies-charge/article71637340.ece",
-      "summary": "Leader of Opposition in the Assembly R. Ashok has accused the State Election Commission of violating norms to facilitate irregularities in the proposed GBA polls by printing 90 lakh voters’ identity cards in Bengaluru at a cost of ₹20 crore after the announcement of Special Intensive Revision by the Election Commission of India",
-      "published_at": "Wed, 28 Oct 2026 22:38:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/exns8x/article71637695.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-09-23%20at%2012.56.26.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
       "raw_id": "96ca5d7403d8f70ae3",
       "title": "Record turnout as Israeli voters deliver verdict on Netanyahu",
       "url": "https://www.thehindu.com/news/international/record-turnout-as-israeli-voters-deliver-verdict-on-netanyahu/article71632993.ece",
@@ -389,45 +562,12 @@
       }
     },
     {
-      "raw_id": "5c3833cea7cc1d3256",
-      "title": "Delhi High Court issues notice on plea against blocking ‘Bring Back Ballot’ Instagram account",
-      "url": "https://www.thehindu.com/news/national/delhi-high-court-issues-notice-on-plea-against-blocking-bring-back-ballot-instagram-account/article71636187.ece",
-      "summary": "The petition alleged that withholding the entire account with over 50,000 followers was disproportionate, unreasoned and without any notice",
-      "published_at": "Wed, 28 Oct 2026 22:38:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uahtc6/article71602601.ece/alternates/LANDSCAPE_1200/INDEX%20DELHI%20HIGH%20COURT%20%20DELHI%202025_09_04_20%202.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "8209e87251a94b8b78",
-      "title": "GBA to launch new campaign focusing on infra fix from November 1",
-      "url": "https://www.thehindu.com/news/cities/bangalore/gba-to-launch-new-campaign-focusing-infra-fix-from-november-1/article71636546.ece",
-      "summary": "Under the campaign, the corporations would undertake a month-long drive to address local civic issues, with priority given to repairing roads and improving junctions",
-      "published_at": "Wed, 28 Oct 2026 21:50:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/tscy51/article71637023.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-10-26%20at%205.14.23%20PM%201.JPEG",
+      "raw_id": "ac9c02a71c3d45e0d1",
+      "title": "Karnataka SIR: 64.5 lakh voters potentially missing in rolls, majority of them young",
+      "url": "https://www.thehindu.com/data/karnataka-sir-645-lakh-voters-potentially-missing-in-rolls-majority-of-them-young/article71638758.ece",
+      "summary": "Elector-to-population ratio released officially by Karnataka CEO shows under-enrolment of about 64.5 lakh electors, of whom roughly 38.41 lakh are in the 18 to 29 age group.",
+      "published_at": "Thu, 29 Oct 2026 07:01:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ye8c0j/article71638762.ece/alternates/LANDSCAPE_1200/SIR-adds-48513GFAGNH16I.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -525,6 +665,41 @@
       }
     },
     {
+      "raw_id": "7777f732d192431acd",
+      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
+      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
+      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "cdf3a44208d11dc555",
       "title": "Tamil Nadu goes to polls",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
@@ -588,6 +763,41 @@
           "States & Local": 9
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "458ce3d13594308d47",
+      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
+      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
+      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -898,39 +1108,6 @@
       }
     },
     {
-      "raw_id": "cf4c55e5970c63b712",
-      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
-      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
-      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
-      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -1168,44 +1345,11 @@
       }
     },
     {
-      "raw_id": "25273238c0b187a848",
-      "title": "S. Jaishankar holds talks with Austrian counterpart Meinl-Reisinger",
-      "url": "https://www.thehindu.com/news/national/s-jaishankar-holds-talks-with-austrian-counterpart-meinl-reisinger/article71637593.ece",
-      "summary": "The EAM said he and Meinl-Reisinger exchanged views on global developments and their impacts",
-      "published_at": "Wed, 28 Oct 2026 22:11:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/n7hw38/article71637622.ece/alternates/LANDSCAPE_1200/HVtdYfobsAAlwkT.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "0192dbec40ef5c87bd",
-      "title": "Clinging on: On Netanyahu and the Israel elections",
-      "url": "https://www.thehindu.com/opinion/editorial/clinging-on-on-netanyahu-and-the-israel-elections/article71636497.ece",
-      "summary": "Netanyahu’s continuance will be bad news for Israel and the region",
-      "published_at": "Thu, 29 Oct 2026 01:22:56 +0530",
+      "raw_id": "8926994d5cea7109a4",
+      "title": "‘RSS Friends’ registers in U.S. to step up outreach, correct inaccuracies",
+      "url": "https://www.thehindu.com/news/international/rss-friends-registers-in-us-to-step-up-outreach-correct-inaccuracies/article71638780.ece",
+      "summary": "The RSS Friends, which provided a Georgia address in the registration document, listed Rashtriya Swayamsevak Sangh, Keshavkunj, New Delhi as its “foreign principal”",
+      "published_at": "Thu, 29 Oct 2026 07:23:56 +0530",
       "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -1226,148 +1370,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "67f0b51aaed0970ece",
-      "title": "What has driven the high Arab turnout in Israel’s elections?",
-      "url": "https://www.thehindu.com/news/international/news-analysis-what-has-driven-the-high-arab-turnout-in-israels-elections/article71637664.ece",
-      "summary": "Arab voter turnout is estimated to be nearly 80%, the highest in at least a decade, according to exit polls",
-      "published_at": "Thu, 29 Oct 2026 00:45:27 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/vmg3xj/article71637669.ece/alternates/LANDSCAPE_1200/AFP_D4LX4AF.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "4697eff763a76dfca9",
-      "title": "Iran warns of 'devastating' economic fallout from any new Israeli attack",
-      "url": "https://www.thehindu.com/news/international/iran-warns-of-devastating-economic-fallout-from-any-new-israeli-attack/article71637747.ece",
-      "summary": "Under Israeli Prime Minister Benjamin Netanyahu, who has vowed to topple Iran's government, the two countries have directly fought a war for the first time in their history after decades of enmity",
-      "published_at": "Wed, 28 Oct 2026 23:17:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3cdcge/article71637760.ece/alternates/LANDSCAPE_1200/2026-10-27T173026Z_635877314_RC2TBOA9T55I_RTRMADP_3_RUSSIA-ENERGY-SUMMIT-BILATS-IRAN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "b5533467448c48c0f0",
-      "title": "Netanyahu bloc leads Israel vote, falls short of majority",
-      "url": "https://www.thehindu.com/news/international/israel-election-results-counting-trends-netanyahu-eisenkot-arab-parties/article71634899.ece",
-      "summary": "With more than three quarters of the vote counted, Mr. Netanyahu’s right-wing bloc was slightly ahead but short of a majority",
-      "published_at": "Wed, 28 Oct 2026 23:01:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/npg05o/article71634921.ece/alternates/LANDSCAPE_1200/Israel_Elections_53352.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
           "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a98fe255248cfe011f",
-      "title": "Meghalaya clears 45-year land lease for NorthEast United FC academy",
-      "url": "https://eastmojo.com/meghalaya/2026/10/28/meghalaya-clears-45-year-land-lease-for-northeast-united-fc-academy/",
-      "summary": "Shillong: The Meghalaya Cabinet has approved a 45-year lease of 19.99 acres of land at Mawkhanu in New Shillong to NorthEast United FC to set up a football academy, with the club expected to invest Rs 40-50 crore in sports infrastructure. Announcing the decision, Cabinet Minister Wailadmiki Shylla said the academy would help bridge the […] The post Meghalaya clears 45-year land lease for NorthEast United FC academy appeared first on EastMojo .",
-      "published_at": "Wed, 28 Oct 2026 04:50:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 2
-        },
-        "candidate_categories": [
-          "Sports"
         ]
       }
     }

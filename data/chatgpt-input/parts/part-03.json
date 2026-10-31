@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-31T20:05:22.971964+00:00",
-  "input_count": 429,
-  "supplied_count": 200,
+  "prepared_at": "2026-10-31T23:30:22.812406+00:00",
+  "input_count": 398,
+  "supplied_count": 199,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 100,
+    "established_or_other": 99,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "64dde89390762f4971",
+      "title": "Asian Champions Trophy needs a total overhaul",
+      "url": "https://www.thehindu.com/sport/hockey/asian-champions-trophy-needs-a-revamp/article71649624.ece",
+      "summary": "One way of raising the tournament’s profile and make it more competitive could be expanding it beyond Asia",
+      "published_at": "Sat, 31 Oct 2026 19:03:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/7gi93h/article71649613.ece/alternates/LANDSCAPE_1200/TH01-INDIA.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
     {
       "raw_id": "afb896a66765d4f115",
       "title": "IND vs NZ 4th T20I: Phillips, Duffy power Black Caps to 87-run win over India",
@@ -84,39 +117,6 @@
       "summary": "Kotian claimed eight for 84 to finish with a match haul of 11 wickets as Haryana was bowled out for 256 at the stroke of tea",
       "published_at": "Fri, 30 Oct 2026 02:43:15 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/tfzsd1/article71642357.ece/alternates/LANDSCAPE_1200/11908_29_10_2026_17_5_40_2_DSC_2756.JPEG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 9
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "00add8834a50c56c90",
-      "title": "Vaishnavi — India’s new orchestrator",
-      "url": "https://www.thehindu.com/sport/cricket/vaishnavi-indias-new-orchestrator/article71642289.ece",
-      "summary": "The left-arm spinner may not have burst onto the scene but is making a case for herself with stellar performances for the National team. Those who have followed her from close quarters believe that the 20-year-old is just getting started",
-      "published_at": "Fri, 30 Oct 2026 00:03:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cfy3s6/article71642291.ece/alternates/LANDSCAPE_1200/VAISHNAVI%20MAIN.jpg",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
@@ -272,6 +272,41 @@
         },
         "candidate_categories": [
           "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "f73d53d51f0ab7fa8d",
+      "title": "London police arrest 139 people outside U.S. Embassy for supporting banned pro-Palestinian group",
+      "url": "https://www.thehindu.com/news/international/london-police-arrest-many-outside-us-embassy-for-supporting-banned-pro-palestinian-group/article71650821.ece",
+      "summary": "Many of those protesting were retirees and were holding signs reading: “I oppose genocide, I support Palestine Action”",
+      "published_at": "Sun, 01 Nov 2026 02:11:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4cji6f/article71650822.ece/alternates/LANDSCAPE_1200/2026-10-31T182639Z_335685639_RC2EEOA22GMJ_RTRMADP_3_ISRAEL-PALESTINIANS-BRITAIN-PALESTINE-ACTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Protests"
         ]
       }
     },
@@ -486,39 +521,6 @@
       "summary": "Bolsonaro, who lost his bid to be president in the October 25 run-off vote, arrived with his family in the U.S. on October 28",
       "published_at": "Sun, 01 Nov 2026 00:35:09 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/9ia9co/article71650789.ece/alternates/LANDSCAPE_1200/G2__Foreign_Ministers_1682_.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "19dd844ee2cf035e9c",
-      "title": "Polish crisis could help PM Tusk or backfire against him and President Nawrocki in 2027 polls, says expert",
-      "url": "https://www.thehindu.com/news/international/current-crisis-could-help-pm-tusk-in-2027-polls-but-it-may-also-backfire-both-against-him-and-president-nawrocki-polish-expert-krzysztof-marcin-zalewski/article71649669.ece",
-      "summary": "Polish Expert Krzysztof Marcin Zalewski on the trajectory of the current political crisis and the way ahead for the Donald Tusk government",
-      "published_at": "Sun, 01 Nov 2026 00:16:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/yw6clx/article71650785.ece/alternates/LANDSCAPE_1200/IMG-20261031-WA0067.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -962,349 +964,349 @@
       }
     },
     {
-      "raw_id": "ce67a9e53b1f4dad7d",
-      "title": "Soan Papdi Same Day Return? 😂",
-      "url": "https://www.youtube.com/shorts/fh83VRYI1kY",
-      "summary": "",
-      "published_at": "2026-10-30T12:00:18+00:00",
+      "raw_id": "7be1ac8db89da6a00a",
+      "title": "Cyclone Arnab effect: Gangtok maximum temperature plunges 11.4°C",
+      "url": "https://eastmojo.com/sikkim/2026/10/30/cyclone-arnab-effect-gangtok-maximum-temperature-plunges-11-4c/",
+      "summary": "Representational Image \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2023/05/cyclone.jpg?fit=780%2C439&ssl=1\" /> Gangtok: The impact of Cyclone Arnab, which has weakened into a low-pressure area, has brought rainfall and a sharp fall in temperatures across Sikkim, with Gangtok recording an 11.4-degree Celsius drop in its maximum temperature compared to October 28. The India Meteorological Department (IMD) has forecast further rainfall across the state over the next two […] The post Cyclone Arnab effect: Gangtok maximum temperature plunges 11.4°C appeared first on EastMojo .",
+      "published_at": "Fri, 30 Oct 2026 14:21:36 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "7bdcbda0d74972b5f9",
-      "title": "Jhaadu Ne Gold Ko Hara Diya? 😂",
-      "url": "https://www.youtube.com/shorts/KLRboDzAnsE",
-      "summary": "",
-      "published_at": "2026-10-30T10:00:13+00:00",
+      "raw_id": "2f15853ccff24ee077",
+      "title": "Meghalaya asks KHADC to unlock Shillong Peak ropeway site",
+      "url": "https://eastmojo.com/meghalaya/2026/10/30/meghalaya-asks-khadc-to-unlock-shillong-peak-ropeway-site/",
+      "summary": "Shillong: The Meghalaya government has asked the Khasi Hills Autonomous District Council (KHADC) to remove locks and seals from the Lower Terminal Point of the Shillong Peak Ropeway project at Madan Laban and return materials seized from the site on 27 October. In a letter dated 30 October, the Tourism Department also sought the withdrawal […] The post Meghalaya asks KHADC to unlock Shillong Peak ropeway site appeared first on EastMojo .",
+      "published_at": "Fri, 30 Oct 2026 08:20:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "5172b492e4e63be694",
-      "title": "Real Indian Movie Kaunsi? 🇮🇳",
-      "url": "https://www.youtube.com/shorts/T1t1fB1mAVA",
-      "summary": "",
-      "published_at": "2026-10-30T07:00:35+00:00",
+      "raw_id": "9916f9eb1e878319a2",
+      "title": "CG Bus Accident: बीजापुर से रायपुर आ रही यात्री बस भैरमगढ़ के पास पलटी, 5 लोगों की मौत की आशंका, मौके पर पुलिस मौजूद",
+      "url": "https://theruralpress.in/chhattisgarh/raipur/bijapur-bus-accident-bhairamgarh-cg/",
+      "summary": "बीजापुर। छत्तीसगढ़ के बीजापुर जिले में शनिवार को यात्रियों से भरी एक तेज रफ्तार बस अनियंत्रित होकर पलट गई। इस दर्दनाक हादसे में 5 लोगों की मौत की आशंका जताई जा रही है, हालांकि प्रशासनिक तौर पर अभी आधिकारिक पुष्टि होना बाकी है। रायपुर-दुर्ग जा रही थी मनीष ट्रेवल्स की बस प्राप्त जानकारी के मुताबिक, […]",
+      "published_at": "Sat, 31 Oct 2026 16:48:36 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8a0836a9a37eb29d00",
-      "title": "@aayushsapra2  Explained Samosa Controversy 😭",
-      "url": "https://www.youtube.com/shorts/NKbq3Yxz9WY",
-      "summary": "",
-      "published_at": "2026-10-29T15:00:36+00:00",
+      "raw_id": "d8cec63d5ec5757e3d",
+      "title": "आयुष्मान योजना में लापरवाही पर कलेक्टर सख्त, जिला अस्पताल के दो ऑपरेटरों की होगी बर्खास्तगी",
+      "url": "https://theruralpress.in/bureaucracy/cg-gpm-ayushman-yojana-laparwahi-collector-action-operator-barkhast-jila-hospital/",
+      "summary": "Gaurela-Pendra-Marwahi: जिला अस्पताल में IPD में भर्ती मरीजों के अनुपात में आयुष्मान योजना का लाभ नहीं मिलने पर जिला प्रशासन ने बड़ी कार्रवाई की है। कलेक्टर विजय दयाराम के. ने कड़ा रुख अपनाते हुए दो आयुष्मान ऑपरेटरों को बर्खास्त करने के निर्देश दिए हैं। दरअसल, जिला चिकित्सालय के सभाकक्ष में जीवन दीप समिति की कार्यकारिणी […]",
+      "published_at": "Sat, 31 Oct 2026 16:41:08 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "b3681934ddb9c9b1c2",
-      "title": "Sorry Bolke Bach Gaye? 😭",
-      "url": "https://www.youtube.com/shorts/1X3Ucaf2tCo",
-      "summary": "",
-      "published_at": "2026-10-29T12:00:03+00:00",
+      "raw_id": "6770a27f030651b747",
+      "title": "Mungeli Murder Case:1.20 लाख में सुपारी देकर कराई थी तुलसी साहू की हत्या, मुख्य आरोपी समेत 5 गिरफ्तार, जानें क्या है मामला",
+      "url": "https://theruralpress.in/chhattisgarh/mungeli-tulsi-sahu-murder-case-5-arrested/",
+      "summary": "मुंगेली। छत्तीसगढ़ के मुंगेली जिले में सरपंच चुनाव की पुरानी रंजिश के चलते एक दिल दहला देने वाली वारदात का खुलासा हुआ है। वर्ष 2025 में हुए सरपंच चुनाव में हार की खुन्नस निकालते हुए मुख्य आरोपी ने 1.20 लाख रुपये की सुपारी देकर तुलसी साहू की निर्मम हत्या करवा दी थी। पुलिस ने इस […]",
+      "published_at": "Sat, 31 Oct 2026 16:36:52 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "f15076cf48fdb42f1e",
-      "title": "College Life = Hairfall? 😭",
-      "url": "https://www.youtube.com/shorts/dy1ZrmZiIzQ",
-      "summary": "",
-      "published_at": "2026-10-29T10:00:07+00:00",
+      "raw_id": "21be55136d4a86508f",
+      "title": "Balodabazar: शिक्षक की करतूत पर कोर्ट का हथौड़ा, नाबालिग छात्राओं से छेड़छाड़ पर 6 साल की कठोर सजा",
+      "url": "https://theruralpress.in/crime/balodabazar-bhatapara-teacher-tilak-verma-molestation-minor-girls-6-year-jail-pocso-court-crime-news/",
+      "summary": "Court sentences teacher in a POCSO case: शासकीय स्कूल की मासूम बच्चियों के साथ अश्लील हरकत और छेड़छाड़ करने वाले शिक्षक को न्यायालय ने कठोर सजा सुनाई है। विशेष न्यायाधीश पॉक्सो एक्ट गिर्जेश प्रताप सिंह ने आरोपी शिक्षक को 6 वर्ष के सश्रम कारावास से दंडित किया है। यह कार्रवाई महिलाओं और बालिकाओं के विरुद्ध […]",
+      "published_at": "Sat, 31 Oct 2026 16:18:05 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8a7020515bdfefccdb",
-      "title": "E85 Se Car Ka Kya Hoga? ⛽",
-      "url": "https://www.youtube.com/shorts/nP1dYWA2vZA",
-      "summary": "",
-      "published_at": "2026-10-29T07:45:29+00:00",
+      "raw_id": "4418c8ecc8fe364f48",
+      "title": "BSP scrap theft CBI probe case : 250 टन स्क्रैप चोरी की जांच करेगी CBI के 35 अफसरों की स्पेशल टीम, हाईप्रोफाइल मामले के जांच में लोकल स्टाफ की नो इंट्री",
+      "url": "https://theruralpress.in/chhattisgarh/bhilai-steel-plant-scrap-theft-cbi-probe-01/",
+      "summary": "रायपुर। छत्तीसगढ़ के बहुचर्चित भिलाई स्टील प्लांट (BSP) से जुड़े करीब 250 टन लौह स्क्रैप की संगठित चोरी के मामले में अब केंद्रीय जांच ब्यूरो (CBI) की एंट्री हो गई है। राज्य शासन से हरी झंडी मिलने के बाद CBI ने इस हाई-प्रोफाइल मामले की गहराई से पड़ताल के लिए 35 सदस्यीय विशेष टीम का […]",
+      "published_at": "Sat, 31 Oct 2026 16:15:27 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "3499eb35b97c47051d",
-      "title": "₹500 Gym Playlist 😭",
-      "url": "https://www.youtube.com/shorts/yV52YPhiUgY",
-      "summary": "",
-      "published_at": "2026-10-28T17:00:39+00:00",
+      "raw_id": "56c71a92142015545b",
+      "title": "Ramayana Advance Booking: रिलीज से 5 दिन पहले रामायण का जलवा! बिके 3 लाख से ज्यादा टिकट, विदेशों में भी तूफानी कमाई",
+      "url": "https://theruralpress.in/bollywood/ramayana-part-advance-booking-box-office/",
+      "summary": "मुंबई। नितेश तिवारी के निर्देशन में बनी बहुचर्चित फिल्म ‘रामायण: पार्ट वन’ ने रिलीज से पहले ही बॉक्स ऑफिस पर गदर मचाना शुरू कर दिया है। रणबीर कपूर, यश और साई पल्लवी स्टारर इस फिल्म की रिलीज में अभी 5 दिन बाकी हैं, लेकिन एडवांस बुकिंग के आंकड़े होश उड़ाने वाले हैं। भारत ही नहीं, […]",
+      "published_at": "Sat, 31 Oct 2026 15:55:19 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c5254d09e70c559725",
-      "title": "Height Pe Kalesh? 😭",
-      "url": "https://www.youtube.com/shorts/4RtzLZOf3AE",
-      "summary": "",
-      "published_at": "2026-10-28T15:00:18+00:00",
+      "raw_id": "f79e63005ce16d660e",
+      "title": "Azam Khan ED Custody: जेल से बाहर आते ही आजम खान को ED ने किया गिरफ्तार, किस मामले में हुई कार्रवाई?",
+      "url": "https://theruralpress.in/politics/azam-khan-arrested-by-ed-rampur-jail/",
+      "summary": "रामपुर। समाजवादी पार्टी के वरिष्ठ नेता और पूर्व मंत्री आजम खान की मुश्किलें कम होने का नाम नहीं ले रही हैं। रामपुर जेल से रिहाई के ठीक बाद प्रवर्तन निदेशालय (ED) ने उन्हें अपनी कस्टडी में ले लिया है। दो पैन कार्ड मामले में इलाहाबाद हाईकोर्ट से जमानत मिलने के बाद शनिवार को आजम खान […]",
+      "published_at": "Sat, 31 Oct 2026 15:22:32 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "2f76bf964b41b98482",
-      "title": "What’s happening there?🤣",
-      "url": "https://www.youtube.com/shorts/-T3W45_6eNA",
-      "summary": "",
-      "published_at": "2026-10-28T12:25:18+00:00",
+      "raw_id": "e01dbef8681bcae5ea",
+      "title": "Mainpat Land Scam: मैनपाट जमीन फर्जीवाड़ा, 9 साल के बच्चे को बना दिया भू-स्वामी! एक गिरफ्तार, जानें कैसे हुई दस्तावेजों में हेराफरी",
+      "url": "https://theruralpress.in/chhattisgarh/mainpat-land-scam-surguja-accused-arrested-01/",
+      "summary": "अंबिकापुर। छत्तीसगढ़ के सरगुजा जिले के प्रसिद्ध पर्यटन स्थल मैनपाट में बेशकीमती सरकारी जमीन की खरीद-बिक्री के बड़े फर्जीवाड़े का खुलासा हुआ है। राजस्व रिकॉर्ड में भारी हेराफेरी कर सरकारी जमीन को निजी लोगों के नाम चढ़ाने के मामले में पुलिस ने एक आरोपी को गिरफ्तार कर लिया है, जबकि अन्य की तलाश जारी है। […]",
+      "published_at": "Sat, 31 Oct 2026 14:56:28 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "3f1e5db45e076c1741",
-      "title": "₹50 Ya ₹500? 👀",
-      "url": "https://www.youtube.com/shorts/RV_c_bRjKNc",
-      "summary": "",
-      "published_at": "2026-10-28T10:00:26+00:00",
+      "raw_id": "2b4020c9a230a15845",
+      "title": "Chhattisgarh Rajyotsav Awards: छत्तीसगढ़ राज्य अलंकरण पुरस्कारों की घोषणा से पहले विवाद, यति यतनलाल सम्मान के चयन पर उठे गंभीर सवाल",
+      "url": "https://theruralpress.in/chhattisgarh/rajyotsav-awards-yati-yatanlal-award-chhattisgarh-government-omresh-bisen-raipur-news-cg-controversy/",
+      "summary": "Chhattisgarh Rajyotsav Awards: छत्तीसगढ़ में हर साल दिए जाने वाले प्रतिष्ठित ‘राज्य अलंकरण पुरस्कारों’ की घोषणा से ठीक पहले ही विवादों का दौर शुरू हो गया है। इस बार विवाद का मुख्य केंद्र अहिंसा और गोसेवा के क्षेत्र में दिया जाने वाला ‘यति यतनलाल सम्मान’ बना हुआ है। हालांकि सरकार की ओर से अभी तक […]",
+      "published_at": "Sat, 31 Oct 2026 14:20:09 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "3b5e8745ec5a5337f6",
-      "title": "₹350 For Water Bottel? 😭",
-      "url": "https://www.youtube.com/shorts/WN3HpQEg928",
-      "summary": "",
-      "published_at": "2026-10-27T16:20:37+00:00",
-      "image_url": "",
+      "raw_id": "3cd7f0d2b37cadc230",
+      "title": "Citizens push back infrastructure projects that threaten green cover",
+      "url": "https://india.mongabay.com/2026/10/citizens-push-back-infrastructure-projects-that-threaten-green-cover/",
+      "summary": "Bengaluru, a city rapidly losing its green cover to infrastructure projects, had an important job to do: count its trees. In August 2019, the Karnataka High Court mandated the exercise under the Karnataka Preservation of Trees Act, 1976, setting a three-year deadline which wasn’t completed even seven years later. Residents in some neighbourhoods decided to […]",
+      "published_at": "29 Oct 2026 13:04:16 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/29100614/Volunteers-mapping-avenue-trees-as-part-of-I-Change-Induranagar_s-tree-mapping-exercise_Photy-by-Kannan-AS-768x512.jpeg",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

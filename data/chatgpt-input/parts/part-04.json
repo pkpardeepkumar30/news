@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-31T23:30:22.812406+00:00",
-  "input_count": 398,
-  "supplied_count": 199,
+  "prepared_at": "2026-11-01T06:17:56.956672+00:00",
+  "input_count": 405,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 106,
+    "established_or_other": 94,
     "independent_social_majority_required": true
   },
   "part": 4,
@@ -302,6 +302,35 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "61e1dd5481658ecfe5",
+      "title": "Madhya Pradesh News: बाँस से चलता है परिवारों का गुज़ारा, जानिए सिवनी के बसोड़ समुदाय की कहानी",
+      "url": "https://khabarlahariya.org/madhya-pradesh-news-families-sustain-their-livelihoods-through-bamboo-discover-the-story-of-the-basod-community-in-seoni/",
+      "summary": "जंगल सिर्फ पेड़-पौधों और वन्यजीवों तक सीमित नहीं है, बल्कि कई समुदायों की आजीविका और पारंपरिक हुनर का आधार भी है। मध्य प्रदेश के सिवनी जिले के कुरई टोला में…",
+      "published_at": "Sun, 01 Nov 2026 05:00:07 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -1127,35 +1156,6 @@
       "url": "https://khabarlahariya.org/mp-chhatarpur-news-students-health-put-at-risk-at-a-girls-hostel-in-chhatarpur-allegations-include-the-discovery-of-insects-in-food-and-complaints-regarding-contaminated-water/",
       "summary": "मध्य प्रदेश के छतरपुर जिले के एक शासकीय महाविद्यालय बालिका छात्रावास में खाने, पीने के पानी और रहने की व्यवस्था को लेकर शिकायत का मामला सामने आया है। छात्राओं का…",
       "published_at": "Wed, 21 Oct 2026 12:16:29 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c12f308981d288b9c1",
-      "title": "Bihar Salary Scam: बिहार में शिक्षकों की सैलरी भुगतान का घोटाला और गड़बड़ी, जानें क्या है पूरा मामला",
-      "url": "https://khabarlahariya.org/scam-and-irregularities-in-the-payment-of-teachers-salaries-in-bihar-heres-the-full-story/",
-      "summary": "बिहार में सरकारी शिक्षकों के वेतन भुगतान को लेकर इन दिनों चर्चा तेज है। 9 अक्टूबर 2026 को वेतन से जुड़े रिकॉर्ड में गड़बड़ी की आशंका के बाद सरकार ने…",
-      "published_at": "Wed, 21 Oct 2026 10:53:29 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,

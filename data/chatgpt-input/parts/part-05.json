@@ -1,16 +1,45 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-31T23:30:22.812406+00:00",
-  "input_count": 398,
-  "supplied_count": 199,
+  "prepared_at": "2026-11-01T06:17:56.956672+00:00",
+  "input_count": 405,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 106,
+    "established_or_other": 94,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "c12f308981d288b9c1",
+      "title": "Bihar Salary Scam: बिहार में शिक्षकों की सैलरी भुगतान का घोटाला और गड़बड़ी, जानें क्या है पूरा मामला",
+      "url": "https://khabarlahariya.org/scam-and-irregularities-in-the-payment-of-teachers-salaries-in-bihar-heres-the-full-story/",
+      "summary": "बिहार में सरकारी शिक्षकों के वेतन भुगतान को लेकर इन दिनों चर्चा तेज है। 9 अक्टूबर 2026 को वेतन से जुड़े रिकॉर्ड में गड़बड़ी की आशंका के बाद सरकार ने…",
+      "published_at": "Wed, 21 Oct 2026 10:53:29 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
     {
       "raw_id": "37f1a7b6a40f6f3729",
       "title": "Mahoba News: खरका गांव में बुनियादी सुविधाओं का अभाव, ग्रामीणों का दर्द कौन सुनेगा?",
@@ -331,6 +360,53 @@
       }
     },
     {
+      "raw_id": "1543047bcd0bca8785",
+      "title": "Scholarships: October 24, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-october-24-2026/article71567072.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sat, 24 Oct 2026 15:43:30 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/qx4vxy/article71567069.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: October 17, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
       "raw_id": "62f5dd02864365698d",
       "title": "UP/Mahoba News: गांव में एक महीने से बीमारी, ग्रामीण परेशान",
       "url": "https://khabarlahariya.org/up-mahoba-news-illness-persists-in-village-for-a-month-residents-distressed/",
@@ -360,20 +436,20 @@
       }
     },
     {
-      "raw_id": "779692bdd2ba8bb900",
-      "title": "मुजफ्फरपुर में 19 वर्षीय महिला की मौत, मायके वालों ने लगाया दहेज हत्या का आरोप",
-      "url": "https://khabarlahariya.org/19-year-old-woman-dies-in-muzaffarpur-her-family-alleges-dowry-death/",
-      "summary": "मुजफ्फरपुर के रजवाड़ा गांव में 19 वर्षीय महिला का शव उसके ससुराल में मिलने से हड़कंप मच गया। मायके वालों ने दहेज प्रताड़ना और हत्या का आरोप लगाया है। वहीं,…",
-      "published_at": "Thu, 15 Oct 2026 14:41:45 +0000",
-      "image_url": "",
+      "raw_id": "57e6ed5d7af9afefe2",
+      "title": "Rift among organising Hindu groups: Two ‘Kumbh Melas’ now possible in Kerala in 2027",
+      "url": "https://www.thenewsminute.com/kerala/rift-among-organising-hindu-groups-two-kumbh-melas-now-possible-in-kerala-in-2027",
+      "summary": "​Having successfully imported the grand scale of the North Indian Kumbh Mela to the banks of the Bharathapuzha in Malappuram district, the organisers of Kerala’s ‘Maha Magha Mahotsavam’ are now split. Festival committees of Thavanur and Thirunavaya, representing two banks of the river Bharathapuzha, who had been organising the event since 2016 and Varanasi’s Sri Panch Dasnam Juna Akhada, who made their entry in 2025 assuming a leadership role, are now locked in a bitter feud. The rift has been caused by concerns regarding financial transparency, and allegations of one-upmanship and sidelining of Kerala-based sanyasins against Juna Akhada’s Maha Mandaleshwar Swami Anandavanam Bharati. Mahamandaleshwar Swami Anandavanam Bharati In 2025, Anandavanam Bharati, the oldest and the most influential Shaivite monastic order from North India, which plays a significant role in Kumbh Mela, took over the chairmanship of the event. With Anandavanam Bharati declaring a 51-day event from January 15, 2027 and the local committees, which has allegiance with Swami Chidanandapuri vowing to run their own, Kerala is likely to witness two competing Kumbh Melas on the same riverbanks, unless the issues are",
+      "published_at": "Sun, 01 Nov 2026 05:00:38 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-01/qbsa8en3/WhatsApp-Image-2026-11-01-at-9.32.52-AM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
+        "id": "the-news-minute",
+        "name": "The News Minute",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -386,6 +462,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "29c66c8349221cff31",
+      "title": "Bengaluru police book Conrad Hotel Management after electrocution deaths",
+      "url": "https://www.thenewsminute.com/karnataka/bengaluru-police-book-conrad-hotel-management-after-electrocution-deaths",
+      "summary": "The Halasuru police have registered a case against the management of Conrad Hotel in Bengaluru for alleged negligence following the deaths of two foreign nationals in a suspected electrocution incident at the hotel's swimming pool on October 30. The incident, which occurred at the swimming pool on the third floor of the five-star hotel, also left two others injured while attempting to rescue the victims. The deceased have been identified as Alexander Maximilian Theiss (57), a German national and crew member of Lufthansa Airlines, and Juraj Horvat (45), a Slovakian national working as a project manager with IBM. The injured persons have been identified as Mathew Desantis (41), an American national staying at the hotel, and Rahul Tiwari (28), a hotel employee working as a pool attendant and lifeguard. Both sustained injuries while attempting to rescue the victims and were shifted to Manipal Hospital for treatment. According to the complaint filed by Silvia Hotuatova (47), wife of Horvat, the couple had arrived in India on October 20 for a holiday and checked into Conrad Hotel on October 30. Horvat went swimming in the hotel's pool at around 5.15 pm when Silvia heard a loud noise from",
+      "published_at": "Sun, 01 Nov 2026 04:48:20 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -447,24 +556,57 @@
       }
     },
     {
-      "raw_id": "1543047bcd0bca8785",
-      "title": "Scholarships: October 24, 2026",
-      "url": "https://www.thehindu.com/education/scholarships-october-24-2026/article71567072.ece",
-      "summary": "Information on financial aid for students",
-      "published_at": "Sat, 24 Oct 2026 15:43:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/qx4vxy/article71567069.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "10aed72eaa38c51dd2",
+      "title": "‘Chalo Delhi’ posters dominate as INDIA bloc prepares for mega rally at Ramlila Maidan | LIVE",
+      "url": "https://www.thehindu.com/news/national/india-bloc-mega-delhi-rally-cec-gyanesh-kumar-impeachment-anti-cec-protests-sir-row-live-updates-november-1-2026/article71651970.ece",
+      "summary": "INDA bloc's 'public impeachment' of CEC Gyanesh Kumar featured accounts from voters who alleged that their names had been deleted from electoral rolls",
+      "published_at": "Sun, 01 Nov 2026 11:31:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "8b5f44d22dfdb03128",
+      "title": "How significant is the TVK-led regime’s move to hold Social Justice Survey? | Explained",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/how-significant-is-the-tvk-led-regimes-move-to-hold-social-justice-survey-explained/article71649252.ece",
+      "summary": "The feature of an ‘open column’, where respondents can state their caste during the second phase of the Census, to be carried out in most parts of the country during February next year, has forced many parties and other stakeholders to express concerns over the utility of the whole exercise",
+      "published_at": "Sun, 01 Nov 2026 11:29:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qjut1u/article71649246.ece/alternates/LANDSCAPE_1200/2085_16_10_2026_16_54_50_2_DSC_2762.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -477,62 +619,15 @@
         "candidate_categories": [
           "Society, Rights & Justice"
         ]
-      },
-      "related_reports": [
-        {
-          "title": "Scholarships: October 17, 2026",
-          "url": "https://www.thehindu.com/education/scholarships-october-17-2026/article71522458.ece",
-          "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Hindu Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "f55e5925df0a23e40f",
-      "title": "In Punjab, the highway to 2027",
-      "url": "https://www.thehindu.com/news/national/punjab/in-punjab-the-highway-to-2027/article71649073.ece",
-      "summary": "The drug menace in Punjab has stayed at the centre of political and social attention over the past decade or more. With the killing of anti-drug crusader Parvinder Singh Jhota, public emotions are running high. Political parties are hoping to capitalise on this, with the Assembly election due in early 2027, finds Vikas Vasudeva",
-      "published_at": "Sun, 01 Nov 2026 04:50:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/77lhy6/article71649084.ece/alternates/LANDSCAPE_1200/SPOTLIGHT%20MANSA%20PUNJAB%20%2022.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
       }
     },
     {
-      "raw_id": "d773a89fb547015685",
-      "title": "Ajay Devgn moves Bombay High Court against FDA notice over Vimal Elaichi advertisements",
-      "url": "https://www.thehindu.com/news/national/maharashtra/actor-ajay-devgn-moves-high-court-against-fda-notice-over-vimal-elaichi-ads/article71648172.ece",
-      "summary": "The FDA said on October 30 that its proceedings against three actors had ended and that the matter would go before the Joint Commissioner for adjudication",
-      "published_at": "Sun, 01 Nov 2026 03:51:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dcpgod/article71648188.ece/alternates/LANDSCAPE_1200/still%20-%202026-10-02T095902.813.jpg",
+      "raw_id": "b47fb0fcbfbcd7e9b4",
+      "title": "PM Modi greets people of six States on foundation day",
+      "url": "https://www.thehindu.com/news/national/pm-modi-greets-people-of-six-states-on-foundation-day/article71652205.ece",
+      "summary": "Six States celebrating Foundation Day on November 1 are: Madhya Pradesh, Chhattisgarh, Haryana, Karnataka, Tamil Nadu and Keralam",
+      "published_at": "Sun, 01 Nov 2026 11:15:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/muufvf/article71652218.ece/alternates/LANDSCAPE_1200/PTI10_31_2026_000279B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -556,40 +651,11 @@
       }
     },
     {
-      "raw_id": "934bf337fac601367d",
-      "title": "In his first visit, BJP’s Bihar in-charge Harish Dwivedi stresses on strengthening the party",
-      "url": "https://www.thehindu.com/news/national/bihar/in-his-first-visit-bjps-bihar-in-charge-harish-dwivedi-stresses-on-strengthening-the-party/article71649638.ece",
-      "summary": "Dwivedi gave guidance on strengthening the organisation through regular meetings and effective public outreach campaigns",
-      "published_at": "Sun, 01 Nov 2026 02:28:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7uc8z0/article71650823.ece/alternates/LANDSCAPE_1200/20261031643L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "226f587ae8b806b3e6",
-      "title": "Devotees worried over conduct of Kandasashti festival at Kandakottam temple",
-      "url": "https://www.thehindu.com/news/cities/chennai/devotees-worried-over-conduct-of-kandasashti-festival-at-kandakottam-temple/article71650165.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 01:35:01 +0530",
+      "raw_id": "6b5983d22367c6e4b3",
+      "title": "Vehicles torched ahead of polls in Pulivendula",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/vehicles-torched-ahead-of-polls-in-pulivendula/article71652147.ece",
+      "summary": "The incident happened around midnight near the orchard belonging to Madhusudhan Reddy, where three cars, ten motorcycles and a tractor were fully burnt",
+      "published_at": "Sun, 01 Nov 2026 11:14:36 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -614,12 +680,12 @@
       }
     },
     {
-      "raw_id": "bf327bf003345e7525",
-      "title": "We did not buy peace; we established peace in J&K: L-G Manoj Sinha on UT Foundation Day",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/we-did-not-buy-peace-we-established-peace-in-jk-l-g-manoj-sinha-on-ut-foundation-day/article71650210.ece",
-      "summary": "L-G Manoj Sinha said terror, separatism and stone-pelting have given way to democracy, development and public participation after Article 370 was removed",
-      "published_at": "Sun, 01 Nov 2026 01:21:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/piwi7p/article71650808.ece/alternates/LANDSCAPE_1200/PTI10_31_2026_000246B.jpg",
+      "raw_id": "72fee78363b4107b5b",
+      "title": "Visakhapatnam reports 3.34% voting in first two hours; Voter participation in core urban areas yet to gather pace",
+      "url": "https://www.thehindu.com/news/cities/Visakhapatnam/vizag-reports-334-voting-in-first-two-hours-voter-participation-in-core-urban-areas-yet-to-gather-pace-pics-by-raju/article71652100.ece",
+      "summary": "According to booth-level officials, voter turnout was thin between 7 a.m. and 8 a.m., with only a handful of people visiting several polling stations during the first hour",
+      "published_at": "Sun, 01 Nov 2026 11:11:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/on7no2/article71652169.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-01%20at%2010.23.31%20AM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -643,12 +709,12 @@
       }
     },
     {
-      "raw_id": "692d0cf626f35940fc",
-      "title": "Slovakian couple had come for a holiday to India, man died hours after checking into Conrad",
-      "url": "https://www.thehindu.com/news/national/karnataka/slovakian-couple-had-come-for-a-holiday-to-india-man-died-hours-after-checking-into-conrad/article71650525.ece",
-      "summary": "Wife says that she rushed to check on him after hearing a loud noise from near the pool, but found him motionless in the water.",
-      "published_at": "Sun, 01 Nov 2026 01:19:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/zfbg3a/article71650809.ece/alternates/LANDSCAPE_1200/Conrad%202.JPEG",
+      "raw_id": "e6033eb2fccdac7f4c",
+      "title": "Maharashtra FDA issues order to curb sale, repackaging of expired food items",
+      "url": "https://www.thehindu.com/news/national/maharashtra/maharashtra-fda-issues-order-to-curb-sale-repackaging-of-expired-food-items/article71650559.ece",
+      "summary": "Speaking at a press conference in October 30, Mr. Mundhe says that instead of destroying stale and expired food items properly, they are being “disposed of only on paper.” These goods are brought back after being repacked by some agents and then sold to citizens. In some cases, even the production dates are being manipulated",
+      "published_at": "Sun, 01 Nov 2026 11:05:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/gn5ta7/article71652015.ece/alternates/LANDSCAPE_1200/PTI09_23_2026_000187B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -672,12 +738,12 @@
       }
     },
     {
-      "raw_id": "de6e1779c1af38246e",
-      "title": "IIM-Bangalore records 100% summer placements,  with median stipend at ₹2 lakh per month",
-      "url": "https://www.thehindu.com/news/national/karnataka/iim-bangalore-records-100-summer-placements-with-median-stipend-at-2-lakh-per-month/article71650178.ece",
-      "summary": "Consulting accounts for 50.7% of offers; first-time recruiters account for 40% of participating organisations",
-      "published_at": "Sun, 01 Nov 2026 01:18:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/s9ismg/article71650328.ece/alternates/LANDSCAPE_1200/31bg_bgmini_IIMGMUGB6G2T.3.jpg.jpg",
+      "raw_id": "2539969f7348857873",
+      "title": "Two newly-elected Bihar Independent MLCs now support BJP",
+      "url": "https://www.thehindu.com/news/national/bihar/two-newly-elected-bihar-independent-mlcs-now-support-bjp/article71652125.ece",
+      "summary": "Both the Independent candidates, significantly, had defeated the ruling alliance partner Janata Dal-United candidates from their respective constituencies",
+      "published_at": "Sun, 01 Nov 2026 11:04:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1p3ip/article71652195.ece/alternates/LANDSCAPE_1200/20261031353L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -701,12 +767,103 @@
       }
     },
     {
-      "raw_id": "300a070777203060c6",
-      "title": "Rahul Gandhi appeals to Delhi rally goers to do festival shopping from local traders",
-      "url": "https://www.thehindu.com/news/national/rahul-gandhi-appeals-to-delhi-rally-goers-to-do-festival-shopping-from-local-traders/article71650790.ece",
-      "summary": "The Congress leader’s request comes after a traders body in central Delhi urged him to postpone the rally until Deepavali as they expressed concern over its impact on their business.",
-      "published_at": "Sun, 01 Nov 2026 01:04:33 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pow1uk/article71650802.ece/alternates/LANDSCAPE_1200/PTI10_31_2026_000384B.jpg",
+      "raw_id": "8aef22a50c2ba03df0",
+      "title": "PM Modi cites World Bank report to highlight ‘historic’ fall in India’s extreme poverty",
+      "url": "https://www.thehindu.com/news/national/pm-modi-cities-world-bank-report-to-highlight-historic-fall-in-indias-extreme-poverty/article71652106.ece",
+      "summary": "In a post on Instagram featuring the inspiring and energetic song ‘Thaan Liya’ from the Bollywood movie ‘Dasvi’ as background music, Mr. Modi highlighted that the “historic\" drop in poverty represents a generational surge in opportunities",
+      "published_at": "Sun, 01 Nov 2026 11:01:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5zjv28/article71652113.ece/alternates/LANDSCAPE_1200/PTI10_31_2026_000370B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4b3d9f667431949ca8",
+      "title": "INDIA bloc rally today: What to know about the Ramlila Maidan protest",
+      "url": "https://www.thehindu.com/news/national/india-bloc-mega-rally-ramilila-maidan-protest-today-cec-gyanesh-kumar-resignation-sir-row-chalo-dilli-march-november-1/article71652047.ece",
+      "summary": "Here’s what to know about the INDIA bloc mega rally in New Delhi, demanding the resignation of CEC Gyanesh Kumar.",
+      "published_at": "Sun, 01 Nov 2026 10:56:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hu9sr7/article71652096.ece/alternates/LANDSCAPE_1200/2026-11-01T035548Z_1613921979_RC2REOA9VYXB_RTRMADP_3_INDIA-POLITICS.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "483cacc665f1912378",
+      "title": "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more",
+      "url": "https://www.thehindu.com/news/cities/Delhi/india-bloc-rally-ramlila-maidan-november-1-traffic-curbs-roads-to-avoid-timings/article71648423.ece",
+      "summary": "For the INDIA bloc Ramlila Maidan rally on November 1, Delhi Traffic Police impose restrictions from 10 a.m. to 5 p.m., including key diversions and curbs on bus movements",
+      "published_at": "Sun, 01 Nov 2026 10:53:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bex7h8/article71648422.ece/alternates/LANDSCAPE_1200/PTI10_29_2026_000051A.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6233e7570d27428436",
+      "title": "1,172 candidates receive offer letters at job fair held in Villupuram",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/1172-candidates-receive-offer-letters-at-job-fair-held-in-villupuram/article71652132.ece",
+      "summary": "More than 167 companies interviewed 4,214 candidates at the fair. Besides those selected for employment, as many as 163 candidates qualified for the second round of selection",
+      "published_at": "Sun, 01 Nov 2026 10:38:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tq7v7u/article71652164.ece/alternates/LANDSCAPE_1200/DSC_4983.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -734,12 +891,12 @@
       }
     },
     {
-      "raw_id": "c6f9f326f63297173a",
-      "title": "Rajasthan IPS officer removed after ACB probe ordered against IAS husband",
-      "url": "https://www.thehindu.com/news/national/rajasthan/rajasthan-ips-officer-removed-after-acb-probe-ordered-against-ias-husband/article71650040.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:52:51 +0530",
-      "image_url": "",
+      "raw_id": "79d16e423b507ad004",
+      "title": "Seven Rameswaram fishermen detained by Sri Lankan Navy near Katchatheevu islet",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/seven-rameswaram-fishermen-detained-by-sri-lankan-navy-near-katchatheevu-islet/article71652111.ece",
+      "summary": "Fishermen leaders have condemned the incident and urged the governments to get them released at the earliest",
+      "published_at": "Sun, 01 Nov 2026 10:33:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qgbp63/article68476643.ece/alternates/LANDSCAPE_1200/10217_16_6_2023_19_54_16_2_DSC_1728.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -763,128 +920,12 @@
       }
     },
     {
-      "raw_id": "05d6fbc2010001c788",
-      "title": "Two persons held for possession of country-made guns, explosives",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-persons-held-for-possession-of-country-made-guns-explosives/article71649177.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:44:21 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "03cab480c133b3c847",
-      "title": "New bridge to be opened near Sholinghur to replace British-era structure",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/new-bridge-to-be-opened-near-sholinghur-to-replace-british-era-structure/article71649181.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:43:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/jrut3x/article71650301.ece/alternates/LANDSCAPE_1200/bridge-17.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "bc5d1e48b9a9936241",
-      "title": "Two arrested for attempting to determine sex of foetus in Tirupattur",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/two-arrested-for-attempting-to-determine-sex-of-foetus-in-tirupattur/article71649171.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:38:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "48492429a233d5ba14",
-      "title": "Rajyotsava: Dasara illumination extended till Sunday",
-      "url": "https://www.thehindu.com/news/national/karnataka/rajyotsava-dasara-illumination-extended-till-sunday/article71650032.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:36:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kuu43q/article71650796.ece/alternates/LANDSCAPE_1200/20261013_190638.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5fd4e574cd7ae5ec79",
-      "title": "Attappady tribal hospital to get more specialists, newborn care facilities",
-      "url": "https://www.thehindu.com/news/national/kerala/attappady-tribal-hospital-to-get-more-specialists-newborn-care-facilities/article71649589.ece",
-      "summary": "A new block with facilities for newborn care and an emergency operation theatre will be constructed with NABARD assistance, says Health Minister",
-      "published_at": "Sun, 01 Nov 2026 00:33:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/p88qhv/article71649572.ece/alternates/LANDSCAPE_1200/Murali%201.jpeg",
+      "raw_id": "c91b9fd7304a1cceb0",
+      "title": "INDIA bloc’s ‘Chalo Dilli’ protest: Supporters gather at Ramlila Maidan, across capital",
+      "url": "https://www.thehindu.com/news/national/india-blocs-chalo-dilli-protest-supporters-gather-at-ramlila-maidan-across-capital/article71652142.ece",
+      "summary": "Many supporters arrived in Delhi, while several others had reached the national capital on October 31, 2026 or earlier as parties mobilised their cadres from different states for the protest",
+      "published_at": "Sun, 01 Nov 2026 10:31:37 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1r8x2t/article71652153.ece/alternates/LANDSCAPE_1200/PTI11_01_2026_000025B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -904,20 +945,53 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 5
+          "Protests": 4
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "495b23af6d2194cb9b",
-      "title": "American tourist among three persons injured in road accident in Tiruvannamalai",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/american-tourist-among-three-persons-injured-in-road-accident-in-tiruvannamalai/article71649174.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:27:51 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/mchr9h/article71650259.ece/alternates/LANDSCAPE_1200/accident-28.jpeg",
+      "raw_id": "4d80b0474ce228ab8a",
+      "title": "Steady turnout marks peaceful polling in Andhra’s Madhurawada zone",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/steady-turnout-marks-peaceful-polling-in-andhras-madhurawada-zone/article71652101.ece",
+      "summary": "Officials overseeing the polling said residents of neighbouring habitations accounted for most of the early turnout, while voters from apartment complexes in the vicinity were yet to turn up in significant numbers",
+      "published_at": "Sun, 01 Nov 2026 10:18:29 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r9a3z8/article71652138.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-01%20at%209.36.26%20AM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "0072a8263a2a7cc6b7",
+      "title": "Minister inaugurates modern paddy storage facilities in Cuddalore district",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/minister-inaugurates-modern-paddy-storage-facilities-in-cuddalore-district/article71652117.ece",
+      "summary": "The facilities, constructed with financial assistance under the National Bank for Agriculture and Rural Development (NABARD), have a combined storage capacity of 7,000 tonnes",
+      "published_at": "Sun, 01 Nov 2026 10:17:03 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/60ty9w/article71652134.ece/alternates/LANDSCAPE_1200/HG5A0385.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -941,12 +1015,47 @@
       }
     },
     {
-      "raw_id": "a791f3d44ae9b93f96",
-      "title": "Krishna Byre Gowda launches ‘Ward One’ initiative",
-      "url": "https://www.thehindu.com/news/cities/bangalore/kbg-launches-ward-one-initiative/article71650634.ece",
-      "summary": "",
-      "published_at": "Sun, 01 Nov 2026 00:10:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7m57al/article71650728.ece/alternates/LANDSCAPE_1200/_JAI2075.JPG",
+      "raw_id": "4f8843aac7c82e146e",
+      "title": "Team of counselors deployed to instil confidence among students of Raptadu ZPHS",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/team-of-counselors-deployed-to-instil-confidence-among-students-of-raptadu-zphs/article71652093.ece",
+      "summary": "The Education Department has made arrangements to ensure ongoing support, allowing students to focus on their studies without any sense of fear",
+      "published_at": "Sun, 01 Nov 2026 10:12:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/photos/hmszn2/article71652128.ece/alternates/LANDSCAPE_1200/COunsellors.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 5,
+          "Sports": 4
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "52d77d71ec3ca998ca",
+      "title": "Mudalur, Tamil Nadu’s first Christian settlement, stands tall with its magnificent church tower",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/mudalur-tamil-nadus-first-christian-settlement-stands-tall-with-its-magnificent-church-tower/article71632109.ece",
+      "summary": "Established in 1799, Mudalur was the first exclusive settlement created for newly converted Christians in Tamil Nadu. Some claim it was the first Christian village in India and Asia.",
+      "published_at": "Sun, 01 Nov 2026 10:10:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/f9ikq/article71632080.ece/alternates/LANDSCAPE_1200/_DSC0325.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -970,185 +1079,11 @@
       }
     },
     {
-      "raw_id": "1ccc836a2314b57a8e",
-      "title": "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
-      "url": "https://www.thehindu.com/news/national/india-bloc-holds-symbolic-public-impeachment-of-cec-gyanesh-kumar-on-six-charges/article71650457.ece",
-      "summary": "Move reflects the closure of institutional avenues, says LoP Rahul Gandhi; terms it a political weapon against all who colluded to destroy votes; warns ECI officials that they are first target; says CEC should be tried for treason",
-      "published_at": "Sun, 01 Nov 2026 00:07:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/c1zixu/article71650669.ece/alternates/LANDSCAPE_1200/20261031534L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ebdeee620be4c1c3c1",
-      "title": "T.N. govt. raises DA for its employees from 60% to 63%",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-raises-da-for-its-employees-from-60-to-63/article71649806.ece",
-      "summary": "A total of 16 lakh government employees, teachers, pensioners, and family pensioners will benefit from the increase",
-      "published_at": "Sat, 31 Oct 2026 23:55:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r0q18n/article71650773.ece/alternates/LANDSCAPE_1200/Rupee.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a508eaca3828b25cba",
-      "title": "Cabinet approves site for Uppara community hall in Kalaburagi",
-      "url": "https://www.thehindu.com/news/national/karnataka/cabinet-approves-site-for-uppara-community-hall-in-kalaburagi/article71645743.ece",
-      "summary": "",
-      "published_at": "Sat, 31 Oct 2026 23:53:19 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/66hrf6/article71650772.ece/alternates/LANDSCAPE_1200/10258_30_10_2026_19_43_16_1_PRIYANK_KHARGE.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "c06b1bcaf30e78d9e5",
-      "title": "Man escapes from police custody before being lodged in Coimbatore Central Prison",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/convict-escapes-from-police-custody-before-being-lodged-in-coimbatore-central-prison/article71648346.ece",
-      "summary": "This is the second time Raghavan, a theft case convict, has escaped from police custody; four personnel suspended",
-      "published_at": "Sat, 31 Oct 2026 23:51:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/x3mm1a/article71648387.ece/alternates/LANDSCAPE_1200/Coimbatore%20Central%20Prison%202.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "bcb2c0a9163545919c",
-      "title": "Take action against officials who arrested MIDS professor, Stalin urges T.N. government",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/take-action-against-officials-who-arrested-mids-professor-stalin-urges-tn-government/article71650394.ece",
-      "summary": "He says creating a society in which there is no room for questions is not a sign of good governance",
-      "published_at": "Sat, 31 Oct 2026 23:50:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1p2jn1/article71650404.ece/alternates/LANDSCAPE_1200/Stalin%203.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2f79aac9dd1448ebda",
-      "title": "‘Administrative incompetence’ characterises TVK’s reign in the State, says Palaniswami",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/administrative-incompetence-characterises-tvks-reign-in-the-state-says-palaniswami/article71650235.ece",
-      "summary": "Addressing a meeting in Maraimalai Nagar amid the 55th formation day celebrations of the AIADMK, the leader says even schemes launched by it, such as the marriage assistance scheme for women, were originally implemented during his party’s regime",
-      "published_at": "Sat, 31 Oct 2026 23:46:04 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/oud7g/article71650556.ece/alternates/LANDSCAPE_1200/9868_15_8_2026_13_37_23_2_PRESSMEET_1.JPEG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "57b76e689c73e8ca28",
-      "title": "Higher Education Department wants HoDs to prepare students for placement; activists cry foul",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/higher-education-department-wants-hods-to-prepare-students-for-placement-activists-cry-foul/article71649062.ece",
-      "summary": "",
-      "published_at": "Sat, 31 Oct 2026 23:41:21 +0530",
+      "raw_id": "8f786427f9fca27d4f",
+      "title": "Polling begins peacefully, police on high alert in Chittoor, Annamayya",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/polling-begins-peacefully-police-on-high-alert-in-chittoor-annamayya/article71652025.ece",
+      "summary": "Voters turned up in large numbers at polling stations in Chittoor, showing keen interest in choosing their municipal representatives. In Annamayya district, the response was moderate, while polling centres in Sri Sathya Sai district witnessed a relatively slow flow of voters",
+      "published_at": "Sun, 01 Nov 2026 09:51:15 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1169,7 +1104,133 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 8
+          "Politics & Elections": 1,
+          "States & Local": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "90116db7ce81e6bc2e",
+      "title": "How were the States formed and how has the Indian map changed since 1947?",
+      "url": "https://www.thehindu.com/news/national/india-at-75-how-were-the-states-formed-and-how-has-the-indian-map-changed-since-1947/article65761062.ece",
+      "summary": "The last transformation of the Indian map happened in 2019 with the creation of the Union Territories of J&K and Ladakh",
+      "published_at": "Sun, 01 Nov 2026 09:26:16 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "01eb377161d9149280",
+      "title": "Clear skies after Arnab cyclone expected to ensure decent poll percentage in North Andhra districts",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/clear-skies-after-arnab-cyclone-expected-to-ensure-decent-poll-percentage-in-north-andhra-districts/article71651947.ece",
+      "summary": "As many as 229 polling stations have been set up across 62 divisions in the Fort City.",
+      "published_at": "Sun, 01 Nov 2026 09:24:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ijrqov/article71652071.ece/alternates/LANDSCAPE_1200/9774_1_11_2026_8_47_49_1_SCREENSHOT_20261101_084645.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "0113854dd3f8534507",
+      "title": "Global criticism during COVID-19 hardened China’s attitude towards world: Foreign Secretary Misri",
+      "url": "https://www.thehindu.com/news/national/global-criticism-during-covid-19-hardened-chinas-attitude-towards-world-foreign-secretary-misri/article71652042.ece",
+      "summary": "Misri also recalled that he faced a major challenge during his posting in China as Ambassador, when India and China had an unprecedented confrontation in eastern Ladakh's Galwan Valley",
+      "published_at": "Sun, 01 Nov 2026 09:00:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dvbml3/article71652050.ece/alternates/LANDSCAPE_1200/20260709387L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "ab56f7b1fccd7e65f1",
+      "title": "Justice Sanjay Kishan Kaul on his memoir ‘Without Fear or Favour ‘and the executive’s growing influence over the collegium system",
+      "url": "https://www.thehindu.com/books/justice-sanjay-kishan-kaul-on-his-memoir-without-fear-or-favour-and-the-executives-growing-influence-over-the-collegium-system/article71643731.ece",
+      "summary": "The former Supreme Court judge on delays in clearing collegium recommendations and the need for reform",
+      "published_at": "Sun, 01 Nov 2026 08:59:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e36fb8/article71650267.ece/alternates/LANDSCAPE_1200/JUSTICE_SK_KAUL.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
           "Society, Rights & Justice"

@@ -1,16 +1,53 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-10-31T23:30:22.812406+00:00",
-  "input_count": 398,
-  "supplied_count": 199,
+  "prepared_at": "2026-11-01T06:17:56.956672+00:00",
+  "input_count": 405,
+  "supplied_count": 200,
   "source_mix": {
-    "independent_social": 100,
-    "established_or_other": 99,
+    "independent_social": 106,
+    "established_or_other": 94,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "db44068d5e3f34c695",
+      "title": "People’s tribunal indicts Delhi Police over handling of July protest",
+      "url": "https://www.thenewsminute.com/news/peoples-tribunal-indicts-delhi-police-over-handling-of-july-protest",
+      "summary": "A report by a people’s tribunal has concluded that the Delhi Police and paramilitary forces used force that was neither necessary nor proportionate against the July 20 student march to Parliament. The Constitutional Conduct Group, an informal collective of former bureaucrats, released the report at the Press Club of India on Friday. The report argues that the state treated a constitutionally protected assembly as a threat to pre-empt, skipping the dialogue, warning and graded force that law and police orders require. It also warns that the pattern is repeating, citing reported detentions during the October anti-SIR protests, and says the law on protest policing, not just individual officers, needs to change. The tribunal was chaired by Justice Anjana Prakash, a senior advocate and former Patna High Court judge. Its members were former Union Home Secretary Gopal Krishna Pillai, former civil servant Aditi Mehta, former National Judicial Academy director Mohan Gopal, academic Radha Kumar and historian Tanika Sarkar. Harsh Mander convened it. The tribunal heard 25 people, including injured protesters, lawyers, doctors, journalists and retired police officers. The Delhi Police and the R",
+      "published_at": "Sun, 01 Nov 2026 05:29:55 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-01/4ykxsluj/newslaundry2026-10-31ump36lltReport.webp",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 6,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
     {
       "raw_id": "02759a82f6716433a5",
       "title": "Meghalaya: No blanket ban on fishing competitions, stricter rules introduced",
@@ -84,6 +121,43 @@
       }
     },
     {
+      "raw_id": "b92130d393b6b98dd8",
+      "title": "Legal requests, automated takedowns, shrinking reach: How Meta is restricting content",
+      "url": "https://www.thenewsminute.com/news/legal-requests-automated-takedowns-shrinking-reach-how-meta-is-restricting-content",
+      "summary": "Eight Instagram posts in 48 hours. For independent journalist and educator Raghav Trivedi, who has 772,000 followers, the takedowns came in quick succession, leaving him questioning why his content was being removed. “I have had eight videos taken down. Whenever I upload a video, it gets blocked in India within 30 to 35 minutes. I uploaded six videos yesterday and tried uploading two more, but those were blocked as well,” Trivedi told Newslaundry . He is among several independent journalists, content creators and media organisations who have reported their posts being taken down and accounts restricted on Meta platforms, often without a clear explanation. In this report, a post described as “restricted” or “blocked in India” cannot be viewed by users in India. Data compiled by the Software Freedom Law Centre (SFLC.in) records 268 instances of content restrictions and 83 instances of account restrictions across Meta platforms, X, Reddit and YouTube in October. Instagram accounted for the highest number of content restrictions among these platforms with 174 posts and 59 accounts restricted, according to SFLC.in. This is what a digital emergency looks like. In just 29 days, https://t.",
+      "published_at": "Sun, 01 Nov 2026 05:31:30 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-01/vygx2tpe/newslaundry2026-10-319glmt6u9INSTA-TAKEDOWN.webp",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "Governance & Administration": 1,
+          "Protests": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "Protests"
+        ]
+      }
+    },
+    {
       "raw_id": "75ad579e5a1ee62367",
       "title": "IIT Bombay student death: Parents seek CBI investigation",
       "url": "https://www.thehindu.com/news/cities/mumbai/iit-student-death-sahil-wakodes-parents-move-bombay-hc-seeking-cbi-sit-probe/article71649160.ece",
@@ -123,39 +197,6 @@
       "summary": "Says, the 1965 decision came to its notice only in 2025 pursuant to details obtained by a lawyer under the Right to Information Act, 2005",
       "published_at": "Sun, 01 Nov 2026 02:27:53 +0530",
       "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/rjithk/article71650824.ece/alternates/LANDSCAPE_1200/image.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "340f41e74ba7c97008",
-      "title": "Three from Prajwal Revanna SIT awarded MHA medals for investigation",
-      "url": "https://www.thehindu.com/news/national/karnataka/three-from-prajwal-revanna-sit-awarded-mha-medals-for-investigation/article71649917.ece",
-      "summary": "(Pls take photos of 3 officers, filed by Murali)",
-      "published_at": "Sat, 31 Oct 2026 21:49:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ac67n7/article71650473.ece/alternates/LANDSCAPE_1200/Police%201.JPEG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -292,6 +333,41 @@
       }
     },
     {
+      "raw_id": "c079afad358fc55b46",
+      "title": "Taiwan says China harassing shipping with east coast patrol",
+      "url": "https://www.thehindu.com/news/international/taiwan-says-china-harassing-shipping-with-east-coast-patrol/article71652011.ece",
+      "summary": "Taiwan's Coast Guard said China's \"attempts to harass ships at sea through radio ‌communications are a clear expansion of power that violate international law, undermine regional peace and stability, and deviate from reality\"",
+      "published_at": "Sun, 01 Nov 2026 08:47:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tepaej/article71652036.ece/alternates/LANDSCAPE_1200/2026-11-01T010917Z_147202233_RC2SQIAQ0ESL_RTRMADP_3_TAIWAN-CHINA-SECURITY.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "c440ccaf846ab1f13e",
       "title": "UN ends its Somalia political mission after three decades",
       "url": "https://www.thehindu.com/news/international/un-ends-its-somalia-political-mission-after-three-decades/article71650522.ece",
@@ -362,52 +438,297 @@
       }
     },
     {
-      "raw_id": "c31a348a670501a2f9",
-      "title": "Flavio Bolsonaro says he left Brazil because he is the victim of 'persecution'",
-      "url": "https://www.thehindu.com/news/international/flavio-bolsonaro-says-he-left-brazil-because-he-is-the-victim-of-persecution/article71648100.ece",
-      "summary": "\"The persecution began even sooner than I imagined,\" Mr. Bolsonaro said during an Instagram livestream in which he discussed his decision to flee after his Brazilian passports were cancelled as part of a money laundering investigation",
-      "published_at": "Sat, 31 Oct 2026 09:59:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8ahhp1/article71648113.ece/alternates/LANDSCAPE_1200/2026-10-30T100011Z_620004563_RC2ECOAK2QK5_RTRMADP_3_USA-TRUMP-BRAZIL-BOLSONARO.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "c6a9a5ede085f4be19",
+      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
+      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
+      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
+      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "International & Geopolitics": 8
+          "Protests": 1,
+          "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
+          "Economy & Employment",
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "5925a7d2eabba16efb",
-      "title": "Bolsonaro's getaway plane paid for from U.S. bank: Airline",
-      "url": "https://www.thehindu.com/news/international/bolsonaros-getaway-plane-paid-for-from-us-bank-airline/article71645876.ece",
-      "summary": "Following the vote, the 45-year-old snuck out of Brazil via Argentina and Ecuador in a cloak-and-dagger operation, after being ordered to surrender his passports due to several ongoing investigations against him",
-      "published_at": "Fri, 30 Oct 2026 20:53:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/js4mf6/article71646169.ece/alternates/LANDSCAPE_1200/2026-10-28T145818Z_134357008_RC2DCOAOYAG4_RTRMADP_3_BRAZIL-USA.JPG",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "835675326855ec5e08",
+      "title": "Left Groups Protest Workers' Repression in North India",
+      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
+      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
+      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "9bcfe1ff8ff9d820cc",
+      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
+      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
+      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
+      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2a25090f84e0207e53",
+      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
+      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
+      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
+      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "6b09be335301ba9a35",
+      "title": "Apply for a Personal Loan – Eligibility and Steps",
+      "url": "https://www.thenewsminute.com/partner/apply-for-a-personal-loan-eligibility-and-steps",
+      "summary": "When you approach any lender for a Personal Loan, they assess two main things – your creditworthiness and your capacity to repay the borrowed sums on time. To ascertain your creditworthiness, they ask you to fulfil certain conditions known as their eligibility criteria. If you fulfil these conditions, you can apply for the loan. Today, let’s learn about Personal Loan eligibility criteria and the methods to apply for Personal Loans online and offline. Personal Loan Eligibility Criteria Here are some general but crucial factors lenders consider while evaluating your Personal Loan application. · Your age: Lenders set minimum and maximum age limits based on your employment status – whether you are a salaried professional or a self-employed individual. As a salaried professional, you should be in the 18-60 years age group, but if you are self-employed, you should be between 23 and 65 years of age. Some lenders also take your retirement age and adjust loan repayment tenures accordingly. · Your income The monthly income you earn is another critical eligibility criterion lenders consider when you apply for Personal Loans. Your net (in-hand) monthly income, after the applicable tax deductio",
+      "published_at": "Sun, 01 Nov 2026 03:31:45 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-01/21eg4u0m/ploste.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 3
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "8698171758d296706c",
+      "title": "Manas farmers trained in beekeeping for income and conservation",
+      "url": "https://eastmojo.com/assam/2026/10/30/manas-farmers-trained-in-beekeeping-for-income-and-conservation/",
+      "summary": "Baksa: Eleven farmers and rural youths from villages near Manas National Park have completed hands-on training in scientific beekeeping, honey production and market access, Aaranyak said. The two-day programme was held on 24 and 25 October at the Manas Conservation and Outreach Centre in Bhuyanpara, Baksa. It was organised as part of an IUCN-KfW-supported project […] The post Manas farmers trained in beekeeping for income and conservation appeared first on EastMojo .",
+      "published_at": "Fri, 30 Oct 2026 08:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "b88b6ab373b306195e",
+      "title": "IIT Guwahati, Tata Electronics to set up semiconductor training centre",
+      "url": "https://eastmojo.com/assam/2026/10/30/iit-guwahati-tata-electronics-to-set-up-semiconductor-training-centre/",
+      "summary": "Guwahati: IIT Guwahati and Tata Electronics have signed an agreement to establish a Centre of Excellence on the institute’s campus, focused on semiconductor assembly, testing, marking and packaging (ATMP). The centre will offer industry-aligned education, practical training and research opportunities in semiconductor packaging. IIT Guwahati will lead the development and delivery of diploma-level and BTech […] The post IIT Guwahati, Tata Electronics to set up semiconductor training centre appeared first on EastMojo .",
+      "published_at": "Fri, 30 Oct 2026 07:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "dc35b8c374bc10bc8d",
+      "title": "Development without jobs, unemployment remains a challenge in Jammu and Kashmir",
+      "url": "https://www.thehindu.com/education/development-without-jobs-unemployment-remains-a-challenge-in-jammu-and-kashmir/article71606783.ece",
+      "summary": "Policy observers say prolonged unemployment is placing growing economic and social pressure on Jammu and Kashmir’s educated youth, with delayed recruitment and limited private-sector opportunities deepening uncertainty among graduates and professionals.",
+      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sbhjxu/article71606880.ece/alternates/LANDSCAPE_1200/India_Kashmir_Protest_59253.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -422,12 +743,113 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "International & Geopolitics": 8
+          "Economy & Employment": 9,
+          "Society, Rights & Justice": 8
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "75c8a1518bf8819a70",
+      "title": "Andhra civic polls: TDP, YSRCP workers clash in Pulivendula; slow turnout in cities | LIVE",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-urban-local-body-elections-polling-municipalities-corporation-results-november-1-2026-live-updates/article71651965.ece",
+      "summary": "Fourteen vehicles were set on fire in Pulivendula, Kadapa district, Andhra Pradesh hours before polling began on Sunday",
+      "published_at": "Sun, 01 Nov 2026 11:29:42 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "bfaaa73fb714913a85",
+      "title": "Akhilesh pitches Gorakhpur vs Kashi narrative, eyes inroads among Brahmins, business community",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/akhilesh-pitches-gorakhpur-vs-kashi-narrative-eyes-inroads-among-brahmins-business-community/article71650006.ece",
+      "summary": "Akhilesh Yadav is attempting to make inroads among Brahmins and the Bania community by accusing the Chief Minister and his regime of being anti-Brahmins and Banias",
+      "published_at": "Sun, 01 Nov 2026 01:57:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/2vscqh/article71650819.ece/alternates/LANDSCAPE_1200/PTI10_30_2026_000277A.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -500,6 +922,78 @@
       }
     },
     {
+      "raw_id": "2a805c5ab6853117fc",
+      "title": "Urban local body elections begin in Andhra Pradesh",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-urban-local-body-elections/article71651976.ece",
+      "summary": "State Election Commissioner Anil Chandra Punetha and his team of officers are personally monitoring the conduct of the elections, for which elaborate arrangements were made, including the installation of CCTV cameras and deployment of drones at places where clashes are anticipated",
+      "published_at": "Sun, 01 Nov 2026 11:30:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/fv96c0/article71652230.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-01%20at%2010.43.27%20AM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 5,
+          "States & Local": 4,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Sports",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "6e6d53aa2ab2cdaee1",
+      "title": "Who are the Indian-origin candidates in U.S. midterm elections?",
+      "url": "https://www.thehindu.com/news/international/who-are-the-indian-origin-candidates-in-us-midterm-elections/article71644803.ece",
+      "summary": "Democratic lawmakers Ro Khanna, Pramila Jayapal, Ami Bera and Suhas Subramanyam are seeking re-election to the U.S. Congress",
+      "published_at": "Sun, 01 Nov 2026 06:56:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ya4vwi/article71646380.ece/alternates/LANDSCAPE_1200/Election_2_26_California_Billionaires_Tax_49766.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 5,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
       "raw_id": "e94b9ea7cfa7a79d73",
       "title": "IOA’s election Code of Conduct bars criticism of ‘private life’ of candidates, publicity",
       "url": "https://www.thehindu.com/sport/ioas-election-code-of-conduct-bars-criticism-of-private-life-of-candidates-publicity/article71650830.ece",
@@ -541,39 +1035,6 @@
       "summary": "Student leaders and activists also spoke at the event, which was held at Congress president Mallikarjun Kharge’s residence in New Delhi",
       "published_at": "Sun, 01 Nov 2026 00:51:07 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/5iy9i0/article71650800.ece/alternates/LANDSCAPE_1200/20261031531L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "5248ff3edb0fe5cd0c",
-      "title": "Rahul Gandhi claims 2024 Lok Sabha elections ‘illegal’ over voter deletions | HIGHLIGHTS",
-      "url": "https://www.thehindu.com/news/national/india-bloc-public-impeachment-cec-gyanesh-kumar-sir-protest-chalo-dilli-march-rahul-gandhi-live-updates-october-31-2026/article71648094.ece",
-      "summary": "Congress president Mallikarjun Kharge lists six charges against Gyanesh Kumar, including facilitating vote theft, deleting 13.2 crore voter names and changing Form 6 without parliamentary oversight",
-      "published_at": "Sat, 31 Oct 2026 22:26:08 +0530",
-      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -813,121 +1274,20 @@
       }
     },
     {
-      "raw_id": "4d41085234a854dfe2",
-      "title": "What are U.S. midterm elections?",
-      "url": "https://www.thehindu.com/news/international/what-are-united-states-midterm-elections-2026-democrats-vs-republicans-donald-trump-what-it-means-for-india/article71643628.ece",
-      "summary": "The U.S. midterm elections on November 3 determine control of Congress, with all 435 House seats, about one-third of the 100 Senate seats, and numerous state governorships up for grabs, in a nationwide vote that weakens or strengthens the President’s agenda depending on which party prevails.",
-      "published_at": "Sat, 31 Oct 2026 07:11:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m63a7j/article71623156.ece/alternates/LANDSCAPE_1200/2026-10-25T100020Z_1074407280_RC299OAF6V9Y_RTRMADP_3_USA-TRUMP-MICHIGAN.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "db66623322bf48e4f5",
-      "title": "Arunachal Pradesh Protest: अरुणाचल प्रदेश में क्यों हो रहा विरोध प्रदर्शन, क्या है सियांग बांध परियोजना, जानें",
-      "url": "https://khabarlahariya.org/arunachal-pradesh-protests-why-are-there-protests-in-arunachal-pradesh-and-what-is-the-siang-dam-project-find-out/",
-      "summary": "अरुणाचल प्रदेश के ईस्ट सियांग, सियांग और अपर सियांग जिलों में हिंसा के बाद स्थिति तनावपूर्ण बनी हुई है। यह प्रदर्शन सियांग नदी पर प्रस्तावित सियांग अपर मल्टीपर्पस प्रोजेक्ट (SUMP)…",
-      "published_at": "Mon, 26 Oct 2026 09:55:45 +0000",
-      "image_url": "",
+      "raw_id": "2a9a98e68763eb44ca",
+      "title": "New-to-science seahorse is one of three long-misidentified species",
+      "url": "https://india.mongabay.com/2026/10/new-to-science-seahorse-is-one-of-three-long-misidentified-species/",
+      "summary": "Scientists have identified a new-to-science seahorse species from the Indian waters, which has helped resolve the taxonomy of a group misidentified for over a century. In 1856, zoologist Johann Jakob Kaup described the thorny or spiny seahorse, Hippocampus histrix, based on samples from Japan. Since then, this seahorse has been thought to be a single, […]",
+      "published_at": "20 Oct 2026 12:39:40 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/19235416/1000458221-e1792466952876-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 12
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "b95d54bba9ab084164",
-      "title": "UP/Mahoba: आशा कार्यकर्ताओं का प्रदर्शन, मानदेय बढ़ाने की मांग को लेकर सौंपा ज्ञापन",
-      "url": "https://khabarlahariya.org/up-mahoba-asha-workers-stage-a-protest-submit-a-memorandum-demanding-an-increase-in-their-honorarium/",
-      "summary": "उत्तर प्रदेश के महोबा जिले में आशा कार्यकर्ताओं ने मानदेय बढ़ाने की मांग को लेकर कलेक्ट्रेट परिसर में धरना-प्रदर्शन किया। प्रदर्शन के बाद कार्यकर्ताओं ने डीएम कार्यालय पहुंचकर अपनी मांगों…",
-      "published_at": "Fri, 16 Oct 2026 12:03:35 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 5
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "835675326855ec5e08",
-      "title": "Left Groups Protest Workers' Repression in North India",
-      "url": "https://www.newsclick.in/left-groups-protest-workers-repression-north-india",
-      "summary": "Left groups held strong protests in Delhi’s Jantar Mantar in support of the workers' movement and against police repression in North India.",
-      "published_at": "Sat, 25 Apr 2026 12:18:47 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -939,361 +1299,52 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Protests": 5,
-          "Economy & Employment": 4
+          "Environment, Health & Science": 9
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "11864a2d4abe2c97bb",
-      "title": "UP News: आलू की कीमत से परेशान किसान, महंगे बीज ने बढ़ाई चिंता, महोबा में भी खाद के लिए प्रदर्शन",
-      "url": "https://khabarlahariya.org/up-news-farmers-troubled-by-potato-prices-high-cost-of-seeds-adds-to-their-concerns-protests-over-fertilizer-also-reported-in-mahoba/",
-      "summary": "खेती में लागत बढ़ने और फसलों का सही दाम नहीं मिलने से किसानों की मुश्किलें बढ़ रही हैं। अमर उजाला की रिपोर्ट में सामने आया कि आगरा में आलू की…",
-      "published_at": "Mon, 19 Oct 2026 11:26:13 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "662952a13a1516aba5",
-      "title": "Sealed Centre, Opaque Vans: Reporting the Anti-SIR Protests in a Closed-Off Delhi",
-      "url": "https://khabarlahariya.org/sealed-centre-opaque-vans-reporting-the-anti-sir-protests-in-a-closed-off-delhi/",
-      "summary": "When the Cockroach Janta Party (CJP) marched towards Parliament on July 20, thousands joined the CJP-led march through central Delhi despite barricades and movement restrictions, and police stopped them with…",
-      "published_at": "Mon, 19 Oct 2026 06:32:54 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "9bcfe1ff8ff9d820cc",
-      "title": "Countrywide Solidarity Protests With Delhi NCR Workers by CITU",
-      "url": "https://www.newsclick.in/countrywide-solidarity-protests-delhi-ncr-workers-citu",
-      "summary": "CITU leader A R Sindhu condemns police repression, demands the release of arrested workers.",
-      "published_at": "Fri, 17 Apr 2026 13:17:36 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "2a25090f84e0207e53",
-      "title": "‘Farmers Khalistani, Workers Pakistani?’ CITU to Protest",
-      "url": "https://www.newsclick.in/farmers-khalistani-workers-pakistani-citu-protest",
-      "summary": "Police crackdown on workers' protest in Noida; CITU calls nationwide protest on April 16.",
-      "published_at": "Thu, 16 Apr 2026 11:50:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "7ebb01ab57967c076f",
-      "title": "‘Enough is enough’: Indigenous communities in Manipur demand end to ‘proxy war’",
-      "url": "https://eastmojo.com/manipur/2026/10/31/enough-is-enough-indigenous-communities-in-manipur-demand-end-to-proxy-war/",
-      "summary": "Imphal: All roads led to Tiddim ground in Imphal on Saturday as thousands of indigenous communities of Manipur joined the mega rally expressing their resentment and frustration over the Government of India’s failure to solve the prolonged conflict in the state. This marks one of the biggest gatherings of the indigenous communities protesting to safeguard […] The post ‘Enough is enough’: Indigenous communities in Manipur demand end to ‘proxy war’ appeared first on EastMojo .",
-      "published_at": "Sat, 31 Oct 2026 15:17:14 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "bbc81ca51aaa46cea0",
-      "title": "The Kavita Show: पत्रकारों को हिरासत में लेने, मारपीट और कैमरे तोड़ने के आरोपों पर सवाल",
-      "url": "https://khabarlahariya.org/the-kavita-show-questions-regarding-allegations-of-detaining-journalists-assaulting-them-and-breaking-their-cameras/",
-      "summary": "10 अक्टूबर को दिल्ली में मुख्य चुनाव आयुक्त ज्ञानेश कुमार के इस्तीफे की मांग और विशेष गहन मतदाता सूची पुनरीक्षण (SIR) के विरोध में प्रदर्शन हुआ। इस दौरान पत्रकारों ने…",
-      "published_at": "Fri, 16 Oct 2026 14:10:46 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "c6a9a5ede085f4be19",
-      "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
-      "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
-      "summary": "At a joint convention held in Delhi recently, farmer and worker organisations announced a countrywide ‘Jail Bharo’ agitation to voice their longstanding demands.",
-      "published_at": "Fri, 07 Aug 2026 13:41:58 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "5fb97b29f24e2289f6",
-      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
-      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
-      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
-      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "8698171758d296706c",
-      "title": "Manas farmers trained in beekeeping for income and conservation",
-      "url": "https://eastmojo.com/assam/2026/10/30/manas-farmers-trained-in-beekeeping-for-income-and-conservation/",
-      "summary": "Baksa: Eleven farmers and rural youths from villages near Manas National Park have completed hands-on training in scientific beekeeping, honey production and market access, Aaranyak said. The two-day programme was held on 24 and 25 October at the Manas Conservation and Outreach Centre in Bhuyanpara, Baksa. It was organised as part of an IUCN-KfW-supported project […] The post Manas farmers trained in beekeeping for income and conservation appeared first on EastMojo .",
-      "published_at": "Fri, 30 Oct 2026 08:30:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
           "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "b88b6ab373b306195e",
-      "title": "IIT Guwahati, Tata Electronics to set up semiconductor training centre",
-      "url": "https://eastmojo.com/assam/2026/10/30/iit-guwahati-tata-electronics-to-set-up-semiconductor-training-centre/",
-      "summary": "Guwahati: IIT Guwahati and Tata Electronics have signed an agreement to establish a Centre of Excellence on the institute’s campus, focused on semiconductor assembly, testing, marking and packaging (ATMP). The centre will offer industry-aligned education, practical training and research opportunities in semiconductor packaging. IIT Guwahati will lead the development and delivery of diploma-level and BTech […] The post IIT Guwahati, Tata Electronics to set up semiconductor training centre appeared first on EastMojo .",
-      "published_at": "Fri, 30 Oct 2026 07:30:00 +0000",
+      "raw_id": "34ade3ea8717a12ba2",
+      "title": "The Sundarbans at the crossroads of climate change and human survival [Commentary]",
+      "url": "https://india.mongabay.com/2026/10/the-sundarbans-at-the-crossroads-of-climate-change-and-human-survival-commentary/",
+      "summary": "Spanning India and Bangladesh, with India comprising 40% of its area, a vast and ever-shifting mangrove forest stretches across the Bay of Bengal. This vast delta derives its name from the Sundari (Heritiera fomes), the tall mangrove species that flourishes here in abundance. The name “Sundarbans” is a modern rendering of “Sunderbunds,” a term coined […]",
+      "published_at": "26 Oct 2026 14:28:19 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/26122422/AP967442025283-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 6
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "0ec18905b2bb173120",
+      "title": "Nagaland CM flags off ambulance, hearse van for Mokokchung hospital",
+      "url": "https://eastmojo.com/nagaland/2026/10/30/nagaland-cm-flags-off-ambulance-hearse-van-for-mokokchung-hospital/",
+      "summary": "Kohima: Chief Minister Dr Neiphiu Rio on Friday flagged off an Advanced Life Support (ALS) ambulance and a hearse van for Imkongliba Memorial District Hospital, Mokokchung, provided by National Thermal Power Corporation (NTPC) Limited, Eastern Region-II Headquarters, Bhubaneswar, under its Corporate Social Responsibility (CSR) initiative. The vehicles were handed over at a ceremony held at […] The post Nagaland CM flags off ambulance, hearse van for Mokokchung hospital appeared first on EastMojo .",
+      "published_at": "Fri, 30 Oct 2026 13:47:19 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1314,84 +1365,43 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1,
-          "Environment, Health & Science": 1
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "dc35b8c374bc10bc8d",
-      "title": "Development without jobs, unemployment remains a challenge in Jammu and Kashmir",
-      "url": "https://www.thehindu.com/education/development-without-jobs-unemployment-remains-a-challenge-in-jammu-and-kashmir/article71606783.ece",
-      "summary": "Policy observers say prolonged unemployment is placing growing economic and social pressure on Jammu and Kashmir’s educated youth, with delayed recruitment and limited private-sector opportunities deepening uncertainty among graduates and professionals.",
-      "published_at": "Wed, 21 Oct 2026 18:38:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/sbhjxu/article71606880.ece/alternates/LANDSCAPE_1200/India_Kashmir_Protest_59253.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "35f9209b595dacac7c",
+      "title": "Scientists explore whether Himalayan disasters can be anticipated",
+      "url": "https://india.mongabay.com/2026/10/scientists-explore-whether-himalayan-disasters-can-be-anticipated/",
+      "summary": "On October 11, 2026, a flash flood tore through Nepal’s Budhi Gandaki river basin in Gorkha district, hurling sediment and debris downstream, destroying homes and roads, and leaving many others homeless. The disaster struck less than seven weeks after a catastrophic collapse of rock and glacier ice on Langtang Lirung on August 26, which unleashed […]",
+      "published_at": "30 Oct 2026 15:34:23 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/10/30122931/AP26249582364362-768x512.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 9,
-          "Society, Rights & Justice": 8
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Environment, Health & Science"
         ]
       }
     }

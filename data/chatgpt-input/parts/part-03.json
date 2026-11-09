@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-08T20:35:19.595342+00:00",
-  "input_count": 427,
+  "prepared_at": "2026-11-09T06:46:47.772337+00:00",
+  "input_count": 404,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 107,
+    "established_or_other": 93,
     "independent_social_majority_required": true
   },
   "part": 3,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "69607ea78279a652b3",
+      "title": "Indian skeet shooters miss individual medal rounds, finish outside team podium",
+      "url": "https://www.thehindu.com/sport/indian-skeet-shooters-miss-individual-medal-rounds-finish-outside-team-podium/article71677145.ece",
+      "summary": "Their hopes of securing a quota place for the 2028 Los Angeles Olympics also ended without success",
+      "published_at": "Sat, 07 Nov 2026 06:42:56 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
     {
       "raw_id": "5fdeb10da70e9fa828",
       "title": "Mohammed Shami retires from Test cricket, to continue playing white-ball formats",
@@ -113,39 +146,6 @@
       }
     },
     {
-      "raw_id": "4e7bfd5ba106e8c98c",
-      "title": "Cristiano Ronaldo retires from Portuguese national team",
-      "url": "https://www.thehindu.com/sport/football/cristiano-ronaldo-retires-from-portuguese-national-team/article71669565.ece",
-      "summary": "Ronaldo has ‌made 234 appearances for Portugal and scored ‌146 goals",
-      "published_at": "Fri, 06 Nov 2026 13:25:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/erklzz/article71669570.ece/alternates/LANDSCAPE_1200/2026-11-05T104156Z_1690166689_RC2WPNALTJ2O_RTRMADP_3_SOCCER-RONALDO.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -216,7 +216,7 @@
       "title": "19 Indian seafarers stranded in Yemen evacuated, Embassy says",
       "url": "https://www.thehindu.com/news/national/indian-seafarers-stranded-in-yemen-evacuated/article71681203.ece",
       "summary": "The evacuation comes days after India said 14 Indian nationals aboard a yacht involved in an incident off the Yemeni coast were safe",
-      "published_at": "Mon, 09 Nov 2026 00:43:45 +0530",
+      "published_at": "Mon, 09 Nov 2026 07:39:49 +0530",
       "image_url": "https://th-i.thgim.com/public/news/national/79m8go/article71681209.ece/alternates/LANDSCAPE_1200/Yemen.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -240,6 +240,74 @@
           "International & Geopolitics": 12
         },
         "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "9c79afd5debce08420",
+      "title": "What to know about upcoming peace talks involving Russian, Ukrainian and U.S. officials",
+      "url": "https://www.thehindu.com/news/international/russia-ukraine-us-peace-talks-in-abu-dhabi-on-november-10-2026/article71681520.ece",
+      "summary": "The upcoming Abu Dhabi talks focus on security guarantees amid stalled peace efforts and ongoing fighting",
+      "published_at": "Mon, 09 Nov 2026 11:46:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hxlnbl/article71681581.ece/alternates/LANDSCAPE_1200/iStock-1667646812.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "2f92fb748cc55cd819",
+      "title": "COP31 opens as climate and geopolitical pressures mount",
+      "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cop31-in-turkiye-climate-and-geopolitical-pressures-mount/article71681273.ece",
+      "summary": "More than 100,000 people are expected to attend COP31 in a sprawling expo centre in the Mediterranean seaside city of Antalya over the next two weeks",
+      "published_at": "Mon, 09 Nov 2026 07:18:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/sci-tech/energy-and-environment/beh6rf/article71681274.ece/alternates/LANDSCAPE_1200/Antalya.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
           "International & Geopolitics"
         ]
       }
@@ -271,6 +339,39 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "d05c6a2dfbe3924905",
+      "title": "Who is Alice Huang, Chinese executive  accused of spying on Nvidia CEO?",
+      "url": "https://www.thehindu.com/news/international/who-is-alice-huang-chinese-executive-accused-of-spying-on-nvidia-ceo/article71681625.ece",
+      "summary": "Public details are sparse about the woman, also known as Huang Le, who had reportedly been a top figure at a Singapore-based data centre company called Megaspeed International",
+      "published_at": "Mon, 09 Nov 2026 11:55:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/international/ns5xxr/article71681627.ece/alternates/LANDSCAPE_1200/Nvidia.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
           "International & Geopolitics"
@@ -350,12 +451,12 @@
       }
     },
     {
-      "raw_id": "35180d7fd4931d7424",
-      "title": "Democrats eye Musk, Miller probes after midterm rout",
-      "url": "https://www.thehindu.com/news/international/democrats-eye-musk-miller-probes-after-midterm-rout/article71681171.ece",
-      "summary": "California Representative Robert Garcia ‌said investigations will focus on Musk's involvement in the Department of Government Efficiency's firing of federal workers last year, and Miller's role in Trump's ‌hardline immigration crackdown",
-      "published_at": "Sun, 08 Nov 2026 23:12:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lejopg/article71681184.ece/alternates/LANDSCAPE_1200/2026-10-13T133141Z_1205178318_RC2JSEAAP0OR_RTRMADP_3_USA-COURT-TRUMP-DOGE.JPG",
+      "raw_id": "fd4b898382a63234d8",
+      "title": "Krakow shooting suspect dies: Poland police",
+      "url": "https://www.thehindu.com/news/international/krakow-shooting-suspect-dies-poland-police/article71681652.ece",
+      "summary": "The gunman was wounded in a shootout with police and had been in critical condition in hospital",
+      "published_at": "Mon, 09 Nov 2026 12:05:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/62egdn/article71681672.ece/alternates/LANDSCAPE_1200/2026-11-08T195738Z_797653751_RC2TJOAJM7VR_RTRMADP_3_POLAND-SHOOTING.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -375,182 +476,79 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
+          "Environment, Health & Science": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "ab5eb16bf67a021e90",
+      "title": "Russia hits power stations in Ukraine, vessel in Black Sea",
+      "url": "https://www.thehindu.com/news/international/russia-hits-power-stations-in-ukraine-vessel-in-black-sea/article71681628.ece",
+      "summary": "",
+      "published_at": "Mon, 09 Nov 2026 12:05:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4rbked/article71681665.ece/alternates/LANDSCAPE_1200/2026-11-08T131109Z_1197263964_RC2PJOAYNRTL_RTRMADP_3_UKRAINE-CRISIS-ATTACK-DNIPRO.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "f86e2fdc768bb69334",
+      "title": "Nvidia investigating reports that CEO Jensen Huang was targeted by Chinese intelligence",
+      "url": "https://www.thehindu.com/sci-tech/technology/nvidia-investigating-reports-that-ceo-jensen-huang-was-targeted-by-chinese-intelligence/article71681239.ece",
+      "summary": "The announcement came after Jensen Huang acknowledged to the board that he had been intimate with a business executive whom U.S. intelligence determined was gathering information for Beijing",
+      "published_at": "Mon, 09 Nov 2026 11:48:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/7psgdl/article71681247.ece/alternates/LANDSCAPE_1200/2026-11-08T210407Z_472327232_RC2N7OAA6IYH_RTRMADP_3_NVIDIA-PROBE-CEO.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
           "Economy & Employment": 1,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "1442270452057b0fd5",
-      "title": "Eisenkot warns of Israel crisis as he seeks to replace Netanyahu’s government",
-      "url": "https://www.thehindu.com/news/international/eisenkot-warns-of-israel-crisis-as-he-seeks-to-replace-netanyahus-government/article71681159.ece",
-      "summary": "isenkot, 66, a political novice who has vowed to bridge Israel's deep polarisation under Netanyahu, formally received a mandate from President Isaac Herzog, giving him 28 days to form a government despite his bloc lacking a clear majority",
-      "published_at": "Sun, 08 Nov 2026 23:01:58 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1mws2d/article71681167.ece/alternates/LANDSCAPE_1200/Israel_Elections_35248.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa05bc69cb4dccf768",
-      "title": "Trump vows comeback as bitter showdown with Congress looms",
-      "url": "https://www.thehindu.com/news/international/trump-vows-comeback-as-bitter-showdown-with-congress-looms/article71681120.ece",
-      "summary": "The devastating result leaves Trump politically hamstrung as he enters the remaining two-year 'lame duck' period of his White House tenure",
-      "published_at": "Sun, 08 Nov 2026 22:20:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ur2zln/article71681146.ece/alternates/LANDSCAPE_1200/Election_2_26_Climate_Policies_8_817.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "1fd903e62b936a57b2",
-      "title": "Eisenkot says Netanyahu's party welcome to join government under him as new Israeli PM",
-      "url": "https://www.thehindu.com/news/international/israel-gadi-eisenkot-netanyahus-party-welcome-to-join-government/article71681107.ece",
-      "summary": "Gadi Eisenkot has six weeks to form a government",
-      "published_at": "Sun, 08 Nov 2026 21:57:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6r7995/article71681117.ece/alternates/LANDSCAPE_1200/Israel_Elections_9_945.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "3e53f14d759097a391",
-      "title": "Turkey, Azerbaijan leaders vow unity after tensions",
-      "url": "https://www.thehindu.com/news/international/turkey-azerbaijan-leaders-vow-unity-after-tensions/article71681057.ece",
-      "summary": "The Turkic-speaking allies describe their relationship as \"one nation, two states\" and, despite the friction, remain closely bound by military and energy ties",
-      "published_at": "Sun, 08 Nov 2026 20:44:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5z4ez7/article71681079.ece/alternates/LANDSCAPE_1200/2026-11-08T133318Z_1975847592_RC2PJOADIRE7_RTRMADP_3_AZERBAIJAN-TURKEY.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "3dad2a6a0f28cd2cce",
-      "title": "Train collision in Egypt's Giza kills four, injures 88 others: Health Ministry",
-      "url": "https://www.thehindu.com/news/international/egypt-train-collision-giza-to-fayoum-crash-updates-november-8-2026/article71681077.ece",
-      "summary": "Authorities said they had launched an investigation into the cause of the crash, which occurred in Giza's Al-Ayyat area, the site of Egypt's worst-ever rail disaster",
-      "published_at": "Sun, 08 Nov 2026 20:41:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/viw209/article71681078.ece/alternates/LANDSCAPE_1200/Egypt_Train_Crash_948_8.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
           "International & Geopolitics"
         ]
       }
@@ -894,6 +892,53 @@
       }
     },
     {
+      "raw_id": "fb23a467706a4a1d49",
+      "title": "News from the world of Education: November 9, 2026",
+      "url": "https://www.thehindu.com/education/news-from-the-world-of-education-november-9-2026/article71681205.ece",
+      "summary": "Information on colleges, admissions, scholarships, events, MoUs, and more",
+      "published_at": "Mon, 09 Nov 2026 02:15:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/jpkfy9/article71681204.ece/alternates/LANDSCAPE_1200/28EPBS_Fillers.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "News from the world of Education: October 29, 2026",
+          "url": "https://www.thehindu.com/education/news-from-the-world-of-education-october-29-2026/article71638044.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
       "raw_id": "2dfc30b00ddb661d15",
       "title": "Karnataka: 5,000 government school teachers to be trained in AI",
       "url": "https://www.thehindu.com/news/cities/bangalore/karnataka-5000-government-school-teachers-to-be-trained-in-ai/article71670570.ece",
@@ -927,382 +972,349 @@
       }
     },
     {
-      "raw_id": "2c3b944df8f7b3cc56",
-      "title": "Google sued over suicide-related AI chats on school computer",
-      "url": "https://www.thehindu.com/sci-tech/technology/google-sued-over-suicide-related-ai-chats-on-school-computer/article71672701.ece",
-      "summary": "The teenager was not able to access Google's Gemini app, nor OpenAI's ChatGPT, because they were blocked by her school",
-      "published_at": "Fri, 06 Nov 2026 11:14:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/d3m4t/article71672707.ece/alternates/LANDSCAPE_1200/2026-11-04T081433Z_836288601_RC2FUHAGFFXG_RTRMADP_3_ALPHABET-SWISS-JOB-CUTS.JPG",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "156613678896daa4fa",
+      "title": "Manipur releases Rs 5.88 crore aid to 58,863 displaced persons",
+      "url": "https://eastmojo.com/manipur/2026/11/09/manipur-releases-rs-5-88-crore-aid-to-58863-displaced-persons/",
+      "summary": "File pic of Internally Displaced Persons in Manipur \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/01/IMG_8787.jpeg?fit=780%2C427&ssl=1\" /> IMPHAL: The Manipur government has released Rs 5.88 crore in festival assistance to 58,863 internally displaced persons (IDPs) ahead of Diwali and Ningol Chakouba. Each eligible beneficiary will receive Rs 1,000 under the special assistance scheme, with the amount disbursed through Direct Benefit Transfer (DBT) from the State Emergency Fund. The funds have been transferred […] The post Manipur releases Rs 5.88 crore aid to 58,863 displaced persons appeared first on EastMojo .",
+      "published_at": "Mon, 09 Nov 2026 05:25:46 +0000",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "b0c27db226940e8693",
-      "title": "Old Ramayana vs New Ramayana! 👀",
-      "url": "https://www.youtube.com/shorts/Qsr_Af5_OW0",
-      "summary": "",
-      "published_at": "2026-11-08T05:30:35+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
-      "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "38a807bacd2edade94",
-      "title": "Public Reacting to Diwali Shopping 🪔🛍️",
-      "url": "https://www.youtube.com/shorts/xliQGkfnKqw",
-      "summary": "",
-      "published_at": "2026-11-07T14:40:21+00:00",
+      "raw_id": "ec45d19f579ea3623c",
+      "title": "Lotha Nagas celebrate Tokhü Emong-Mini Hornbill Festival in Wokha",
+      "url": "https://eastmojo.com/nagaland/2026/11/07/lotha-nagas-celebrate-tokhu-emong-mini-hornbill-festival-in-wokha/",
+      "summary": "Wokha: The Tokhü Emong cum Mini Hornbill Festival was celebrated at Wokha Public Ground on November 7, with MLA Y. Mhonbemo Humtsoe attending the occasion as the guest. Addressing the gathering, Humtsoe emphasised the importance of viewing issues from different perspectives rather than judging them from a single point of view. He urged people to […] The post Lotha Nagas celebrate Tokhü Emong-Mini Hornbill Festival in Wokha appeared first on EastMojo .",
+      "published_at": "Sat, 07 Nov 2026 13:30:51 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "ce67a9e53b1f4dad7d",
-      "title": "Soan Papdi Same Day Return? 😂",
-      "url": "https://www.youtube.com/shorts/fh83VRYI1kY",
-      "summary": "",
-      "published_at": "2026-10-30T12:00:18+00:00",
+      "raw_id": "d5901f67ad70f5e8b3",
+      "title": "Aaranyak trains Mizoram farmers in sustainable integrated farming",
+      "url": "https://eastmojo.com/mizoram/2026/11/07/aaranyak-trains-mizoram-farmers-in-sustainable-integrated-farming/",
+      "summary": "Mamit: Aaranyak, in collaboration with Krishi Vigyan Kendra (KVK), Mamit, organised a two-day training programme on Integrated Farming Systems in Mizoram on November 3 and 4 to promote sustainable agricultural practices among farmers. Supported by IUCN-KfW, the residential programme at KVK Mamit in Lengpui brought together 12 participants, including seven men and five women, from […] The post Aaranyak trains Mizoram farmers in sustainable integrated farming appeared first on EastMojo .",
+      "published_at": "Sat, 07 Nov 2026 09:15:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "7bdcbda0d74972b5f9",
-      "title": "Jhaadu Ne Gold Ko Hara Diya? 😂",
-      "url": "https://www.youtube.com/shorts/KLRboDzAnsE",
-      "summary": "",
-      "published_at": "2026-10-30T10:00:13+00:00",
+      "raw_id": "0844f9949f9df70497",
+      "title": "Shillong exhibition revisits Kong Spillity’s resistance to uranium mining",
+      "url": "https://eastmojo.com/free-digest/2026/11/07/shillong-exhibition-revisits-kong-spillitys-resistance-to-uranium-mining/",
+      "summary": "Shillong: Tarun Bhartiya’s photographic exhibition, Em No Nahi, documenting the resistance against uranium mining led by Kong Spillity Lyngdoh Langrin, has returned to Shillong after its debut at the National Photo Exhibition in Ahmedabad in January 2025. The exhibition was inaugurated at the Williamson Sangma State Museum Gallery in IGP, where it will remain open […] The post Shillong exhibition revisits Kong Spillity’s resistance to uranium mining appeared first on EastMojo .",
+      "published_at": "Sat, 07 Nov 2026 08:46:47 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "5172b492e4e63be694",
-      "title": "Real Indian Movie Kaunsi? 🇮🇳",
-      "url": "https://www.youtube.com/shorts/T1t1fB1mAVA",
-      "summary": "",
-      "published_at": "2026-10-30T07:00:35+00:00",
+      "raw_id": "62879ce72ec44ee585",
+      "title": "EastMojo’s Kimi Colney receives jury appreciation at Kalyan Barooah Memorial Awards",
+      "url": "https://eastmojo.com/mizoram/2026/11/06/eastmojos-kimi-colney-receives-jury-appreciation-at-kalyan-barooah-memorial-awards/",
+      "summary": "Lalnunkimi Colney of EastMojo has received the jury’s appreciation in the Digital Media category at the 4th Kalyan Barooah Memorial Awards for Media 2026, instituted by the North East Media Forum (NEMF) in association with NGO My Home India. Colney is the first Mizo to win this award. The annual awards recognise outstanding contributions by […] The post EastMojo’s Kimi Colney receives jury appreciation at Kalyan Barooah Memorial Awards appeared first on EastMojo .",
+      "published_at": "Fri, 06 Nov 2026 11:36:47 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8a0836a9a37eb29d00",
-      "title": "@aayushsapra2  Explained Samosa Controversy 😭",
-      "url": "https://www.youtube.com/shorts/NKbq3Yxz9WY",
-      "summary": "",
-      "published_at": "2026-10-29T15:00:36+00:00",
+      "raw_id": "f7557f02a8e6321219",
+      "title": "Beyond relief, where is the rehabilitation policy for Assam’s flood victims?",
+      "url": "https://eastmojo.com/news/2026/11/06/beyond-relief-where-is-the-rehabilitation-policy-for-assams-flood-victims/",
+      "summary": "The ‘Chang Ghar’ house structure of Missing Community in one of the flood affected villages in Kadam Revenue Circle in Lakhimpur, Assam near to the river bank. \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/11/unnamed-8.jpg?fit=512%2C297&ssl=1\" /> Home, a place of comfort for all of us, is more than just concrete walls; it embodies the raw, tender and unfiltered experiences of one’s life. Every nook and corner has a story of hardship to tell, and the brickwork is coated with the sweat and struggles of the individual. It takes months and years […] The post Beyond relief, where is the rehabilitation policy for Assam’s flood victims? appeared first on EastMojo .",
+      "published_at": "Fri, 06 Nov 2026 10:30:00 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent regional digital publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "b3681934ddb9c9b1c2",
-      "title": "Sorry Bolke Bach Gaye? 😭",
-      "url": "https://www.youtube.com/shorts/1X3Ucaf2tCo",
-      "summary": "",
-      "published_at": "2026-10-29T12:00:03+00:00",
+      "raw_id": "1b2ccf9ff440b9d6b2",
+      "title": "Raipur: पटाखों की चिंगारी से भड़की आग, कटोरा तालाब में दुकानों के बाहर की सजावट जलकर खाक",
+      "url": "https://theruralpress.in/chhattisgarh/raipur-katora-pond-spark-from-fire-caught-shop-decoration-reduced-to-ashes/",
+      "summary": "Fire sparked by firecrackers: दिवाली की खुशियां मनाते-मनाते राजधानी रायपुर में अचानक अफरा-तफरी मच गई। यहां कटोरा तालाब इलाके में पटाखों की एक छोटी सी चिंगारी देखते ही देखते बड़ी आग में बदल गई। संत कंवरराम चौक के पास सड़क पर फोड़े जा रहे पटाखों की चिंगारी उड़कर दुकानों के बाहर लगे डेकोरेशन पर जा […]",
+      "published_at": "Mon, 09 Nov 2026 04:44:37 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "f15076cf48fdb42f1e",
-      "title": "College Life = Hairfall? 😭",
-      "url": "https://www.youtube.com/shorts/dy1ZrmZiIzQ",
-      "summary": "",
-      "published_at": "2026-10-29T10:00:07+00:00",
+      "raw_id": "a6684e68cc34c7af3e",
+      "title": "Gariyaband: दिवाली की रात भीषण सड़क हादसे में पत्रकार सहित परिवार के 4 लोगों की मौत",
+      "url": "https://theruralpress.in/trp-road-accident-news-accidents-in-chhattisgarh/gariyaband-diwali-night-road-accident-journalist-family-died-car-fell-in-river/",
+      "summary": "Major accident on Diwali night: दीपावली की रात गरियाबंद जिले में एक ऐसा भीषण सड़क हादसा हो गया, जिसने खुशियों के त्योहार को मातम में बदल दिया। दीपावली मनाकर रायपुर से घर लौट रहे पत्रकार शीतल साहू समेत एक ही परिवार के चार लोगों की दर्दनाक मौत हो गई। राजिम के टीला एनीकट के पास […]",
+      "published_at": "Mon, 09 Nov 2026 04:17:48 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "8a7020515bdfefccdb",
-      "title": "E85 Se Car Ka Kya Hoga? ⛽",
-      "url": "https://www.youtube.com/shorts/nP1dYWA2vZA",
-      "summary": "",
-      "published_at": "2026-10-29T07:45:29+00:00",
+      "raw_id": "c7eea23a0e21f7b61d",
+      "title": "रामायण ने 4 दिन में कमाए 499 करोड़, 500 करोड़ के आंकड़े से बस इतनी दूर",
+      "url": "https://theruralpress.in/entertainment/ranbir-kapoor-starrer-ramayana-perform-box-office-sunday-net-collection-of-%e2%82%b956-15-crore-earnings-india-reached-238-85-crore/",
+      "summary": "Ramayana Box Office Collection: रणबीर कपूर स्टारर फिल्म रामायण बॉक्स ऑफिस पर लगातार कमाई कर रही है। दिवाली के दिन रविवार (8 नवंबर) को फिल्म ने 56.15 करोड़ रुपये का नेट कलेक्शन किया। इसके साथ ही फिल्म की भारत में चार दिनों की नेट कमाई 238.85 करोड़ रुपये हो गई है। वहीं, ग्रॉस कलेक्शन 285.20 […]",
+      "published_at": "Mon, 09 Nov 2026 04:06:52 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "3499eb35b97c47051d",
-      "title": "₹500 Gym Playlist 😭",
-      "url": "https://www.youtube.com/shorts/yV52YPhiUgY",
-      "summary": "",
-      "published_at": "2026-10-28T17:00:39+00:00",
+      "raw_id": "c0748975e59550d8c0",
+      "title": "Jagadalpur: ज्वेलरी शॉप से पौने दो करोड़ का सोना पार, दीवाली में सराफा व्यापारी का निकला दिवाला",
+      "url": "https://theruralpress.in/crime/crime-news-gold-worth-rs-1-75-crore-stolen-from-a-jewellery-shop-in-jagdalpur/",
+      "summary": "Gold theft jewellery shop Jagdalpur: शहर के व्यस्त पैलेस रोड स्थित मोती ज्वेलरी में उठाईगिरी की बड़ी वारदात सामने आई है। इस दुकान से करीब 1200 ग्राम सोने से भरा बॉक्स गायब हो गया। इसकी कीमत लगभग पौने दो करोड़ रुपये बताई जा रही है। जानकारी के मुताबिक, दुकान में भीड़ का फायदा उठाकर महिलाओं […]",
+      "published_at": "Mon, 09 Nov 2026 03:40:55 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "c5254d09e70c559725",
-      "title": "Height Pe Kalesh? 😭",
-      "url": "https://www.youtube.com/shorts/4RtzLZOf3AE",
-      "summary": "",
-      "published_at": "2026-10-28T15:00:18+00:00",
+      "raw_id": "5608d854e61aa5543f",
+      "title": "अचानक बस्तर के करनपुर पहुंचे पीएम मोदी, जवानों के साथ मनाई दिवाली, किया ये ऐलान",
+      "url": "https://theruralpress.in/chhattisgarh/pm-narendra-modi-celebrates-diwali-with-jawans-bastar-karanpur-said-naxalism-end/",
+      "summary": "PM Narendra Modi Bastar Diwali 2026: प्रधानमंत्री नरेंद्र मोदी ने दिवाली 2026 का पर्व छत्तीसगढ़ के बस्तर में सुरक्षाबलों के जवानों के साथ मनाया। प्रधानमंत्री अचानक करनपुर स्थित CRPF कैंप पहुंचे, जहां जवानों को संबोधित करते हुए उन्होंने नक्सलवाद के खिलाफ मिली सफलता का श्रेय सुरक्षा बलों के साहस, त्याग और समर्पण को दिया। पीएम […]",
+      "published_at": "Sun, 08 Nov 2026 07:35:29 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }
     },
     {
-      "raw_id": "2f76bf964b41b98482",
-      "title": "What’s happening there?🤣",
-      "url": "https://www.youtube.com/shorts/-T3W45_6eNA",
-      "summary": "",
-      "published_at": "2026-10-28T12:25:18+00:00",
+      "raw_id": "b53c4cf0ea30c9319e",
+      "title": "Jashpur: बस और ट्रक की आमने-सामने हुई टक्कर, ट्रक चालक की मौके पर मौत, यात्री सुरक्षित",
+      "url": "https://theruralpress.in/trp-road-accident-news-accidents-in-chhattisgarh/head-on-collision-between-a-bus-and-a-truck-in-jashpur/",
+      "summary": "Bus-truck accident driver killed: दीपावली पर्व की सुबह जशपुर जिले में एक भीषण सड़क हादसा हो गया। कुनकुरी थाना क्षेत्र के राष्ट्रीय राजमार्ग-43 पर सलियाटोली हाउसिंग बोर्ड कॉलोनी के पास सुबह करीब 5 बजे तेज रफ्तार रॉयल बस और ट्रक के बीच आमने-सामने जोरदार भिड़ंत हो गई। टक्कर इतनी जबरदस्त थी कि ट्रक चालक की […]",
+      "published_at": "Sun, 08 Nov 2026 06:06:37 +0000",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "SSB Media House"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
       }

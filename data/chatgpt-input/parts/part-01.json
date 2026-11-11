@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-10T21:54:29.928959+00:00",
-  "input_count": 428,
+  "prepared_at": "2026-11-11T06:37:22.905407+00:00",
+  "input_count": 409,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 111,
+    "established_or_other": 89,
     "independent_social_majority_required": true
   },
   "part": 1,
@@ -47,35 +47,150 @@
       }
     },
     {
-      "raw_id": "b8ab2f4ca1449c1ac8",
-      "title": "Law and order in coma in Tamil Nadu, says Stalin",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/law-and-order-in-coma-in-tamil-nadu-says-stalin/article71687075.ece",
-      "summary": "He alleged miscreants had lost all fear of the government, which he claimed was led by a “joker”",
-      "published_at": "Tue, 10 Nov 2026 21:47:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fbsoys/article71687101.ece/alternates/LANDSCAPE_1200/2085_4_11_2026_21_17_6_5_DSC_0764.JPG",
+      "raw_id": "0e91500c30f4ec6004",
+      "title": "Telangana orders statewide probe into illegal human egg harvesting racket",
+      "url": "https://www.thenewsminute.com/telangana/telangana-orders-statewide-probe-into-illegal-human-egg-harvesting-racket",
+      "summary": "Telangana Health Minister C Damodar Rajanarasimha has ordered a detailed investigation into the alleged illegal harvesting and commercial sale of human eggs in the state, following the arrest of eight people in Hyderabad on October 30. Police also rescued 43 women during the operation. The Minister instructed health officials to identify those involved and initiate strict action against institutions and individuals violating the law. Subsequently, task force teams stepped up inspections of in-vitro fertilisation (IVF) centres across Telangana. Authorities have inspected 27 of the 44 registered assisted reproductive technology (ART) facilities in the state. The inspections revealed 13 violations across seven hospitals, prompting officials to issue show-cause notices to the managements. Checks at the remaining facilities are continuing. The health department is also examining documents seized by the police and seeking information from the National Assisted Reproductive Technology and Surrogacy Registry. A team of state officials visited the registry's office in New Delhi on November 6 to obtain details submitted by registered clinics and banks operating in Telangana. Investigators ar",
+      "published_at": "Wed, 11 Nov 2026 06:06:22 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "local"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 4
+          "Governance & Administration": 3,
+          "Environment, Health & Science": 2,
+          "Sports": 1
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "Environment, Health & Science",
+          "Governance & Administration",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "72c717ad0fb3a0c182",
+      "title": "Marico elevates Bony Rai as Head - Legal",
+      "url": "https://www.barandbench.com/law-firms/corporate/marico-elevates-bony-rai-as-head-legal",
+      "summary": "Marico Limited has elevated Bony Rai to the position of Head - Legal. Rai is a 2017 graduate of Nalanda Law College. He is a member of The Institute of Company Secretaries of India. Rai has been with Marico for the past six years, having joined as an Assistant Company Secretary in 2020. With over 13 years of experience, his expertise lies in corporate law, FMCG and Retail regulations, mergers & acquisitions, advisory and cross-border transactions, and corporate governance. As a legal counsel and company secretary, he navigates the complexities of FMCG regulations, retail operations, and international business structures, ensuring compliance while enabling growth. Aside from his time at Marico, Rai has previously been engaged at Reliance Industries and Onward Technologies. If you would like your Deals, Columns, Press Releases to be published on Bar & Bench, please fill in the form available here .",
+      "published_at": "Wed, 11 Nov 2026 11:15:41 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-11-10/cd52jeud/1000693109.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Economy & Employment": 2,
+          "International & Geopolitics": 2
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "c20d278b197ed882bc",
+      "title": "Possibility of crime no ground to restrict operating hours of licensed bars: Kerala High Court",
+      "url": "https://www.barandbench.com/news/litigation/possibility-of-crime-no-ground-to-restrict-operating-hours-of-licensed-bars-kerala-high-court",
+      "summary": "The Kerala High Court on Tuesday held that the Police cannot impose restrictions on the timings of DJ parties conducted by establishments with appropriate liquor licences (FL-3 permits) that allow their operation during extended hours [ Mahadevan v State of Kerala & ors ]. Justice Murali Purushothaman opined that the mere possibility of criminal activities is no ground to impose restrictions on the operation of such facilities. \" The mere possibility of criminal activities cannot, by itself, constitute sufficient justification for imposing restrictions under the Kerala Police Act on the extended operating hours of the FL-3 hotel permitted under the Foreign Liquor (Amendment) Rules, 2026\" the Court said. The Court held that while the Police have a responsibility to curb crime, it cannot restrict the activities of licenced bars by merely citing suspicions of criminal activities like drug use at such premises, unless rules restricting such bar timings are put in place by the State. \"If the police have reason to believe that criminal activities are taking place under the guise of DJ parties in hotels, it is the responsibility of the police to take stringent action in accordance with la",
+      "published_at": "Tue, 10 Nov 2026 14:09:06 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-07/pvel8czm/1000583975.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "5a72fa41a91af78d2c",
+      "title": "HC directs Tamil Nadu govt to file district-wise report on SC/ST Act implementation",
+      "url": "https://www.thenewsminute.com/tamil-nadu/hc-directs-tamil-nadu-govt-to-file-district-wise-report-on-scst-act-implementation",
+      "summary": "The Madurai Bench of the Madras High Court has directed the Tamil Nadu government and the Director General of Police (DGP) to file a comprehensive, district-wise statistical report on the implementation of the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act in the last five years. The report is to be submitted to the court on November 24. The court was hearing a plea filed by Kathir, the founder-director of the Madurai-based rights organisation, Evidence. Most notably, the High Court has demanded details of the total number of cases registered under the Act and the number of cases in which investigation has been completed in each district. Other significant vectors the court has ordered include the number of cases in which charge sheets have been filed; the number of cases in which charge sheets are yet to be filed; the number of cases pending trial before the respective courts; the number of cases disposed of during the relevant period; and the number of cases resulting in acquittal and conviction, respectively. The court has also ordered the state government and police to provide details of the number of cases in which the opinion of the Director of Prosecuti",
+      "published_at": "Wed, 11 Nov 2026 03:27:33 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 1,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice",
+          "States & Local"
         ]
       }
     },
@@ -224,6 +339,41 @@
       }
     },
     {
+      "raw_id": "cdcea66a5f378b2a1c",
+      "title": "U.S. House Oversight Committee criticises Trump administration over release of Epstein records",
+      "url": "https://www.thehindu.com/news/international/us-house-oversight-committee-criticises-trump-administration-over-release-of-epstein-records/article71688114.ece",
+      "summary": "The 137-page report, released by the GOP-controlled committee, comes nearly a year after Congress passed and President Trump signed the Epstein Files Transparency Act",
+      "published_at": "Wed, 11 Nov 2026 07:11:40 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4d8owr/article71688118.ece/alternates/LANDSCAPE_1200/New_Mexico_Epstein_Ranch_91848.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "485c7f23b5d6f07c2b",
       "title": "Bill in U.S. Congress to recognise Deepavali as federal holiday, 19 lawmakers back proposal",
       "url": "https://www.thehindu.com/news/international/bill-in-us-congress-to-recognise-deepavali-as-federal-holiday-19-lawmakers-back-proposal/article71685278.ece",
@@ -259,12 +409,12 @@
       }
     },
     {
-      "raw_id": "b5ec3e699d57686dfd",
-      "title": "Man arrested after crashing car into park across from White House",
-      "url": "https://www.thehindu.com/news/international/man-arrested-after-crashing-car-into-park-across-from-white-house/article71683882.ece",
-      "summary": "The driver of the vehicle was ‘quickly placed under arrest’ after he ‘became combative with law enforcement’, a U.S. Secret Service spokesperson said",
-      "published_at": "Mon, 09 Nov 2026 23:01:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9ngyeq/article71683886.ece/alternates/LANDSCAPE_1200/2026-11-09T172031Z_1486330751_RC2FKOAGZG6J_RTRMADP_3_USA-SECURITY-WHITE-HOUSE.JPG",
+      "raw_id": "46bc5b38607dbc9504",
+      "title": "U.S. Army member arrested in U.K. for alleged Russian links",
+      "url": "https://www.thehindu.com/news/international/us-army-member-arrested-in-uk-for-alleged-russian-links/article71687547.ece",
+      "summary": "The U.K. authorities said the investigation was not linked to other ongoing counterterrorism investigations",
+      "published_at": "Wed, 11 Nov 2026 05:05:05 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/hn7z2b/article71687745.ece/alternates/LANDSCAPE_1200/iStock-1323017775.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -290,144 +440,6 @@
         "candidate_categories": [
           "Governance & Administration",
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "dd21d88c23702c2b90",
-      "title": "Kerala PSC chairperson M.R. Baiju refuses to appear before Crime Branch again",
-      "url": "https://www.thehindu.com/news/national/kerala/kerala-psc-chairperson-mr-baiju-refuses-to-appear-before-crime-branch-again/article71686252.ece",
-      "summary": "He reiterates his stance that he will appear for questioning only after the Kerala High Court delivers its order on the petition challenging the Crime Branch investigation.",
-      "published_at": "Tue, 10 Nov 2026 22:18:15 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ur51cp/article71686321.ece/alternates/LANDSCAPE_1200/PSC%20Pattom.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "f15b7f664457ed8f99",
-      "title": "Juvenile traced to Srinagar for sending fake Delhi Police notices targeting IFF, SFLC X accounts; Crime Branch registers FIR",
-      "url": "https://www.thehindu.com/news/cities/Delhi/delhi-police-crime-branch-registers-fir-over-fake-notices-seeking-blocking-of-iff-sflc-x-accounts-probes-imposter/article71685928.ece",
-      "summary": "X had told the Delhi High Court that the takedown requests purportedly issued in the name of the Delhi Police were fraudulent; the force’s IFSO unit will assist in the investigation",
-      "published_at": "Tue, 10 Nov 2026 21:48:03 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5yrbm3/article71674511.ece/alternates/LANDSCAPE_1200/2025-12-05T112809Z_1720905449_RC2WPGALLC5O_RTRMADP_3_EU-X-TIKTOK-TECH.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "458ce3d13594308d47",
-      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
-      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
-      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "0aad0a7e24eddf94d9",
-      "title": "A Fundamental Right",
-      "url": "https://www.thehindu.com/features/education/a-fundamental-right/article60647223.ece",
-      "summary": "With its new law that makes education a fundamental right with effect from April 1, 2010, India joins a small group of countries with such a statutory provision. All children in the 6 to 14 age group can exercise the right under the Right of Children to Free and Compulsory Education Act, 2009. An estimated one crore children who do not go to school now are expected to benefit.",
-      "published_at": "Fri, 15 Nov 2024 16:35:57 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 8,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice",
-          "States & Local"
         ]
       }
     },
@@ -741,12 +753,12 @@
       }
     },
     {
-      "raw_id": "44611f5c6b05c29292",
-      "title": "Ladakh announces hill council elections, but fails to assuage protesting civil society groups",
-      "url": "https://www.thehindu.com/news/national/ladakh/schedule-for-eight-ladakh-hill-council-elections-announced-polling-on-december-4/article71685727.ece",
-      "summary": "Hill council seats increased to 100, with 36 reserved for women for the first time; civil society groups oppose unilateral decision to hold polls now despite concerns about delimitation, voting in winter",
-      "published_at": "Tue, 10 Nov 2026 22:38:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/i4sld6/article71685784.ece/alternates/LANDSCAPE_1200/iStock-173932687.jpg",
+      "raw_id": "588b2d212998fdaf91",
+      "title": "Why Ladakh polls announcement fails to cut ice with protesting civil society groups | Explained",
+      "url": "https://www.thehindu.com/news/national/ladakh/why-ladakh-polls-announcement-fails-to-cut-ice-with-protesting-civil-society-groups-explained/article71688368.ece",
+      "summary": "LAB and KDA are demanding postponement of hill council elections to April-May next year, citing unfavourable winter timing and lack of consultation",
+      "published_at": "Wed, 11 Nov 2026 11:32:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dw5os6/article71688465.ece/alternates/LANDSCAPE_1200/TH17-Peerzada-MG8HGM9SBQ.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -766,46 +778,11 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Politics & Elections": 4,
+          "Politics & Elections": 1,
           "Protests": 4
         },
         "candidate_categories": [
           "Politics & Elections",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "35547e8db06a3328ec",
-      "title": "Madras High Court restrains thermal power plant workers from going on strike",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/madras-high-court-restrains-thermal-power-plant-workers-from-going-on-strike/article71686540.ece",
-      "summary": "Justices S.M. Subramaniam and R. Rajesh Vivekananthan grant the interim injunction pursuant to a PIL petition filed against the proposed strike",
-      "published_at": "Tue, 10 Nov 2026 21:11:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5fek1g/article71687042.ece/alternates/LANDSCAPE_1200/IMG_IMG_High_Court_Build_2_1_P0EMN40M.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
           "Protests"
         ]
       }
@@ -842,6 +819,76 @@
         "candidate_categories": [
           "Protests",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "87105118468930909a",
+      "title": "Regret standing with BJP during protest by farmers, says Dushyant Chautala",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/regret-standing-with-bjp-during-protest-by-farmers-says-dushyant-chautala/article68691036.ece",
+      "summary": "JJP leader says it was a mistake that he did not understand farmers’ sentiments but that he does not regret allying with the BJP in 2019",
+      "published_at": "Sat, 28 Sep 2024 05:00:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cp8vh4/article68692172.ece/alternates/LANDSCAPE_1200/5331_27_9_2024_19_46_25_1_IMG_20240927_190506.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Protests": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Protests",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ef94131368a128e35c",
+      "title": "Karnataka Muslim group flags alleged disproportionate deletion of Muslim voters during SIR",
+      "url": "https://www.thenewsminute.com/karnataka/karnataka-muslim-group-flags-alleged-disproportionate-deletion-of-muslim-voters-during-sir",
+      "summary": "The Karnataka Rajya Muslim Okkoota (KRMO) has questioned the deletion of voters during the Special Intensive Revision (SIR) of electoral rolls. It has sought an explanation from the Election Commission of India (ECI), citing data that shows Muslims were disproportionately represented in certain deletion categories. In a statement on Monday, November 9, the organisation said an analysis of booth-level data published by the ECI, conducted by political research consultancy Sankalp, found that 27.59% of voters had been deleted across the 10 Assembly constituencies represented by Muslim MLAs. This was higher than the statewide deletion rate of 19.45%. The 10 constituencies had 9,62,359 Muslim voters on the 2025 electoral rolls. Of these, 2,46,759, or 25.64%, were deleted during the revision. The overall deletion rate in these constituencies was 27.59%, while the rate among voters from other communities was 28.79%. The analysis also found that more than 8.80 lakh Muslim voters were deleted across 64 constituencies where Muslims account for at least 15% of the electorate. Of the 38,82,598 Muslim voters on the 2025 rolls in these constituencies, 8,80,543, or 22.67%, were removed. The delet",
+      "published_at": "Wed, 11 Nov 2026 04:39:51 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/import/sites/default/files/Muslim_man_3x2.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 6,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Politics & Elections"
         ]
       }
     },
@@ -885,7 +932,7 @@
       "title": "Over 74 lakh voters missing from Tamil Nadu electoral rolls, says citizens’ collective",
       "url": "https://www.thehindu.com/news/national/tamil-nadu/over-74-lakh-voters-missing-from-tamil-nadu-electoral-rolls-says-citizens-collective/article71685695.ece",
       "summary": "The collective has announced a rally on Anna Salai on November 26, as part of a nationwide day of action against the Special Intensive Revision of electoral rolls",
-      "published_at": "Tue, 10 Nov 2026 23:45:20 +0530",
+      "published_at": "Wed, 11 Nov 2026 07:33:46 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/h18pfa/article71686959.ece/alternates/LANDSCAPE_1200/4871_10_11_2026_17_27_33_1_DSC_5508.JPG",
       "suggested_category": "",
       "priority_discovery": false,
@@ -980,39 +1027,6 @@
         "candidate_categories": [
           "Politics & Elections",
           "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9ea9417851287dcb82",
-      "title": "TDP-led NDA dominates Tirupati district in ZPTC/MPTC elections",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/tdp-led-nda-dominates-tirupati-district-in-zptcmptc-elctions/article71686572.ece",
-      "summary": "",
-      "published_at": "Tue, 10 Nov 2026 23:16:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7s5qro/article71686761.ece/alternates/LANDSCAPE_1200/10745_10_11_2026_19_39_16_1_IMG_20261110_WA0036.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
         ]
       }
     },
@@ -1161,7 +1175,7 @@
       "title": "Three polio workers abducted during vaccination campaign in northwestern Pakistan",
       "url": "https://www.thehindu.com/news/international/three-polio-workers-abducted-during-vaccination-campaign-in-northwestern-pakistan/article71685191.ece",
       "summary": "The gunmen took the three workers from Khyber Pakhtunkhwa’s Tank district to an undisclosed location after abducting them. The abducted workers were identified as Mir Janan, Ikram and Khanzala, says police",
-      "published_at": "Tue, 10 Nov 2026 12:15:19 +0530",
+      "published_at": "Wed, 11 Nov 2026 10:24:04 +0530",
       "image_url": "",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -1194,17 +1208,17 @@
       }
     },
     {
-      "raw_id": "bd6d6ab00f99dd84ba",
-      "title": "Usha loses SOM elections, IOA likely to get a new president",
-      "url": "https://www.thehindu.com/sport/athletics/article71683207.ece",
-      "summary": "",
-      "published_at": "Mon, 09 Nov 2026 20:10:04 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
+      "raw_id": "8f81081d7fb37b3225",
+      "title": "Trump ally Jim Jordan elected U.S. House Republican leader after midterm election rout",
+      "url": "https://www.thehindu.com/news/international/trump-ally-jim-jordan-elected-us-house-republican-leader-after-midterm-election-rout/article71688105.ece",
+      "summary": "The Ohio Congressman will replace House Speaker Mike Johnson, who announced he was stepping down from leadership after Republicans lost control of both chambers of Congress",
+      "published_at": "Wed, 11 Nov 2026 08:15:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/z31pou/article71688107.ece/alternates/LANDSCAPE_1200/House_Republicans_8819_.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1220,26 +1234,26 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Politics & Elections": 4,
-          "Sports": 8
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Politics & Elections",
-          "Sports"
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
     {
-      "raw_id": "0e5728e5d63435fe1d",
-      "title": "Japan’s Tashima rates FIFA election chances at 20%-30% in challenge to Infantino",
-      "url": "https://www.thehindu.com/sport/football/japans-tashima-rates-fifa-election-chances-at-20-30-in-challenge-to-infantino/article71680897.ece",
-      "summary": "‘I've been contacted by presidents and international department officials from eight countries, including some outside Asia,’ said Japan Football Association Honorary President Kozo Tashima",
-      "published_at": "Sun, 08 Nov 2026 17:06:40 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gt2wgz/article71680900.ece/alternates/LANDSCAPE_1200/2026-11-05T130135Z_1464987174_RC2TCX9KCPJU_RTRMADP_3_SOCCER-FIFA-TASHIMA.JPG",
-      "suggested_category": "Sports",
+      "raw_id": "0b53db644423ab9e24",
+      "title": "U.S. Senate Republicans vote to keep John Thune as leader after steep midterm election losses",
+      "url": "https://www.thehindu.com/news/international/us-senate-republicans-vote-to-keep-john-thune-as-leader-after-steep-midterm-election-losses/article71688101.ece",
+      "summary": "South Dakota Sen. John Thune has spent much of the last two years navigating President Trump, who has often been at odds with the Senate",
+      "published_at": "Wed, 11 Nov 2026 06:37:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/l4ndw4/article71688102.ece/alternates/LANDSCAPE_1200/Senate_Republicans__1927.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1255,13 +1269,11 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Politics & Elections": 4,
-          "Sports": 9,
-          "International & Geopolitics": 1
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
           "International & Geopolitics",
-          "Politics & Elections",
-          "Sports"
+          "Politics & Elections"
         ]
       }
     },
@@ -1336,6 +1348,43 @@
       }
     },
     {
+      "raw_id": "65cdc2678b710b61c5",
+      "title": "Cybercriminals siphon Rs 22.3 cr from Tamil Nadu rural healthcare funds",
+      "url": "https://www.thenewsminute.com/tamil-nadu/cybercriminals-siphon-rs-223-cr-from-tamil-nadu-rural-healthcare-funds",
+      "summary": "Cybercriminals allegedly siphoned off Rs 22.30 crore from a bank account maintained by Tamil Nadu’s Rural Development and Panchayat Raj Department. The money, allocated for rural healthcare infrastructure, was transferred through 46 unauthorised transactions using the department’s online banking system. The fraud came to light after KR Ramprasad, a Block Development Officer and Superintendent attached to the Directorate of Rural Development and Panchayat Raj, lodged a complaint with the Chennai Police Commissioner. According to the complaint, Rs 22,30,04,879 was transferred from the department’s Single Nodal Account with HDFC Bank’s CIT Nagar branch between October 12 and 30. The account, held in the name of the Director of Rural Development and Panchayat Raj, contained funds released by the Union and Tamil Nadu governments under the Fifteenth Finance Commission’s Health Sector Grants. The grants, covering the period from 2021-22 to 2025-26, are intended to strengthen primary healthcare infrastructure and services in rural areas through Rural Local Bodies. The department had authorised Block Development Officers of Block Panchayats to operate the account and make payments to contra",
+      "published_at": "Wed, 11 Nov 2026 04:07:47 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/cybercrime_750.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "States & Local": 1,
+          "Economy & Employment": 1,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "States & Local"
+        ]
+      }
+    },
+    {
       "raw_id": "546c40401f6160bbef",
       "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
       "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
@@ -1367,41 +1416,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "3982726c6c8d242857",
-      "title": "China says 2026 trade surplus surpassed $1 trillion in October",
-      "url": "https://www.thehindu.com/news/international/china-says-2026-trade-surplus-surpassed-1-trillion-in-october/article71685001.ece",
-      "summary": "Exports from the world's second-largest economy have surged in recent months, driven in part by soaring global demand for artificial intelligence-related products including computer chips, data centre servers and networking equipment",
-      "published_at": "Tue, 10 Nov 2026 10:36:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ofe5cj/article71685017.ece/alternates/LANDSCAPE_1200/AP11_06_2026_000219A.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 5,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
         ]
       }
     }

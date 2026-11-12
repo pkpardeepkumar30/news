@@ -1,188 +1,46 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-12T07:22:25.483983+00:00",
-  "input_count": 431,
+  "prepared_at": "2026-11-12T16:55:41.796226+00:00",
+  "input_count": 434,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 131,
-    "established_or_other": 69,
+    "independent_social": 120,
+    "established_or_other": 80,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "d365ced1eafca56e71",
-      "title": "Ola's extra pay for faster rides feature doesn't work: CCPA asks it to scrap practice, slaps ₹10 lakh penalty",
-      "url": "https://www.barandbench.com/news/litigation/olas-extra-pay-for-faster-rides-feature-doesnt-work-ccpa-asks-it-to-scrap-practice-slaps-10-lakh-penalty",
-      "summary": "The Central Consumer Protection Authority (CCPA) has imposed a penalty of ₹10 lakh on ANI Technologies Private Limited, which operates Ola, for misleading consumers into paying additional amounts to improve their chances of securing a ride. In an order dated November 10, the CCPA held that Ola's practice of prompting customers to pay extra before a driver accepted their booking amounted to a misleading advertisement, unfair trade practice and unfair contract under the Consumer Protection Act, 2019. Hence, it ordered the platform to stop the feature/ practice while also imposing a penalty on it. The order was passed by Chief Commissioner Nidhi Khare and Commissioner Anupam Mishra . The proceedings arose from a complaint received in May 2025 concerning Ola's advance tipping feature. While customers waited for a driver to accept their booking, the app displayed messages suggesting that paying an additional amount could improve their chances of securing a ride. One such prompt stated: \"Adding a tip might help increase the chances of getting a ride faster.\" Customers were initially offered pre-set amounts ranging from ₹10 to ₹40, which subsequently increased. The Authority found that th",
-      "published_at": "Wed, 11 Nov 2026 19:19:04 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-01/6a76ca91-dc10-443c-a892-5297dcc15d6e/13.jpg",
+      "raw_id": "0dd0f6ab084cc880c0",
+      "title": "Jagan questions Naidu’s 23-lakh jobs claim, cites power demand and tax revenue figures",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/jagan-questions-naidus-23-lakh-jobs-claim-cites-power-demand-and-tax-revenue-figures/article71694064.ece",
+      "summary": "Government is projecting an exaggerated growth narrative while economic indicators point to sluggish industrial activity, weak consumption and inadequate employment opportunities, alleges YSRCP chief",
+      "published_at": "Thu, 12 Nov 2026 21:43:02 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/irf271/article71694711.ece/alternates/LANDSCAPE_1200/Jagan-accuses-NGL4GOTJGD.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Economy & Employment": 10
         },
         "candidate_categories": [
           "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "6b8bbc31e716ef6d7b",
-      "title": "Former YSRCP MP Vijayasai Reddy launches new party in Andhra Pradesh",
-      "url": "https://www.thenewsminute.com/andhra-pradesh/former-ysrcp-mp-vijayasai-reddy-launches-new-party-in-andhra-pradesh",
-      "summary": "Former YSR Congress Party (YSRCP) MP V Vijayasai Reddy has returned to politics, launching the Parivarthana Rajaneethi Party (PRP) on Wednesday, November 11 at the A Convention Centre in Vijayawada. He said the party would challenge the dominance of two political families in Andhra Pradesh and create opportunities for younger leaders. Unveiling its white and saffron flag, featuring a Dharma Chakra at the centre, Vijayasai said the organisation would offer an alternative to the ruling Telugu Desam Party (TDP) and the Opposition YSRCP. Addressing the gathering, he said political leadership in the state should not remain confined to two families. He questioned why the Chief Minister, ministers and MLAs should come only from these families, referring to Chief Minister N Chandrababu Naidu and YSRCP president YS Jagan Mohan Reddy. He said people should have the freedom to question all political leaders, including himself, over wrongdoing. Vijayasai said the party would focus on identifying and nurturing young leaders rather than creating another individual political figure. He said he wanted a capable young person to become Chief Minister, regardless of caste or family background. Leader",
-      "published_at": "Thu, 12 Nov 2026 06:40:51 +0000",
-      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/YSRCP_MP_Vijaysai_Reddy_Facebook.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 3
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "6de5ef72ba46076d73",
-      "title": "Telangana to scrap intermediate colleges, bring class 11 and 12 under schools",
-      "url": "https://www.thenewsminute.com/telangana/telangana-to-scrap-intermediate-colleges-bring-class-11-and-12-under-schools",
-      "summary": "The Telangana government has announced that it will introduce a 10+2 grade education system in schools from the next academic year, effectively replacing the current system of treating the two years after matriculation as a separate ‘intermediate’ system. School education will be split into three main levels – primary (nursery to class 4), secondary education (classes 5 to 8), and senior secondary education (classes 9 to 12) – Chief Minister Revanth Reddy said on November 11 following a review meeting of the education department. Revanth Reddy also handles the education portfolio. The CM said that under the new system, students must be trained to have a command over language and communication skills by the time they complete class 12. He expressed concern over students discontinuing their education after class 10, with dropouts consisting predominantly of girls, and children from Dalit, tribal, and minority communities. He noted that dropout rates are significantly lower in government-run institutions such as Kendriya Vidyalayas, Navodaya Vidyalayas, and Kasturba Gandhi Balika Vidyalayas, which offer continuous education up to class 12. So far, students enrolled in Telangana state ",
-      "published_at": "Thu, 12 Nov 2026 06:33:23 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "a3200131dca56df0d9",
-      "title": "Revanth Reddy inaugurates restored Thammidikunta Lake in Hyderabad",
-      "url": "https://www.thenewsminute.com/telangana/revanth-reddy-inaugurates-restored-thammidikunta-lake-in-hyderabad",
-      "summary": "Telangana Chief Minister A Revanth Reddy on Wednesday, November 11, inaugurated the restored Thammidikunta Lake in Hyderabad’s Madhapur, following the removal of encroachments and waste. He also said Phase I of the Musi River rejuvenation project would begin soon, seeking support for the government’s plans. The lake, restored by the Hyderabad Disaster Response and Asset Protection Agency (HYDRAA), has been expanded to around 30 acres. More than 30,000 truckloads of silt, construction debris, plastic and other waste, including biomedical waste, were removed during the work. Its depth has increased from 0.6 metres to 4.6 metres, while its water storage capacity has risen eightfold to 370 million litres, according to HYDRAA Commissioner A V Ranganath. The restored lake has a 1.6-km walking track, an open gym, a children’s play area, landscaped gardens and seating facilities. HYDRAA also reconstructed three inlets and an outlet to improve rainwater flow and diverted sewage through a 1,200-mm pipeline to prevent wastewater from entering the lake. The agency said the work would improve water storage, groundwater recharge and flood resilience in the surrounding areas. Ranganath also cited",
-      "published_at": "Thu, 12 Nov 2026 03:49:19 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-12/5qdr08zv/Thammidikunta-Lake.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
         ]
       }
     },
@@ -222,12 +80,12 @@
       }
     },
     {
-      "raw_id": "e85a36f541354718a4",
-      "title": "Drone industry needs deeper localisation as import dependence poses risks: DFI",
-      "url": "https://www.thehindu.com/news/national/karnataka/drone-industry-needs-deeper-localisation-as-import-dependence-poses-risks-dfi/article71689910.ece",
-      "summary": "The dependence on foreign-made motors, batteries, flight controllers, communication systems and rare earth magnets leaves the sector vulnerable to supply disruptions and export restrictions, cautions Smit Shah, president, Drone Federation India",
-      "published_at": "Thu, 12 Nov 2026 10:50:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/eiy6jw/article71691141.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-11%20at%2020.06.15.JPEG",
+      "raw_id": "2a92ae99142a883e23",
+      "title": "Mysuru district police step up vigil on migrant workers amid drug concerns",
+      "url": "https://www.thehindu.com/news/national/karnataka/mysuru-district-police-step-up-vigil-on-migrant-workers-amid-drug-concerns/article71693411.ece",
+      "summary": "",
+      "published_at": "Thu, 12 Nov 2026 22:03:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/smne5k/article71694801.ece/alternates/LANDSCAPE_1200/SP%20PRESS%20MEET.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -255,17 +113,17 @@
       }
     },
     {
-      "raw_id": "dec02dd591b449ad30",
-      "title": "Special clean-up drive removes 150 tonnes of waste from K.R. Market",
-      "url": "https://www.thehindu.com/news/cities/bangalore/special-clean-up-drive-removes-150-tonnes-of-waste-from-kr-market/article71690163.ece",
-      "summary": "The drive, conducted from November 8 to 11, involved clearing large quantities of flower, fruit, vegetable, plastic and other festive waste generated in the market",
-      "published_at": "Thu, 12 Nov 2026 10:38:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/b5n09q/article71690926.ece/alternates/LANDSCAPE_1200/_DSC0778.JPG",
-      "suggested_category": "",
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -280,10 +138,154 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
+          "States & Local": 8,
           "Economy & Employment": 4
         },
         "candidate_categories": [
-          "Economy & Employment"
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "1e45ca909d0278c52d",
+      "title": "Education lifts people out of poverty, but doesn’t guarantee quality jobs: data",
+      "url": "https://www.thehindu.com/education/education-lifts-people-out-of-poverty-but-doesnt-guarantee-quality-jobs-data/article71682529.ece",
+      "summary": "New World Bank and PLFS data show that education remains the most important route out of poverty. Yet young graduates are ten times as likely to be unemployed as young people who cannot read.",
+      "published_at": "Mon, 09 Nov 2026 19:26:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wwq86y/article71682610.ece/alternates/LANDSCAPE_1200/DSC4672.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "ac4f5c23a086d56373",
+      "title": "Modi to visit Manila for ASEAN Summit; maritime security, trade on agenda",
+      "url": "https://www.thehindu.com/news/national/modi-to-visit-manila-for-asean-summit-maritime-security-trade-on-agenda/article71694308.ece",
+      "summary": "Modi is also set to join Australian Prime Minister Anthony Albanese, U.S. President Donald Trump, and Japanese Prime Minister Sanae Takaichi for the annual Quad summit in Manila. There is, however, no official word on the Quad summit.",
+      "published_at": "Thu, 12 Nov 2026 20:59:10 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cm9od4/article71694361.ece/alternates/LANDSCAPE_1200/PTI11_12_2026_000222B.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "5c1ae7819a6933a316",
+      "title": "Three polio workers abducted during vaccination campaign in northwestern Pakistan",
+      "url": "https://www.thehindu.com/news/international/three-polio-workers-abducted-during-vaccination-campaign-in-northwestern-pakistan/article71685191.ece",
+      "summary": "The gunmen took the three workers from Khyber Pakhtunkhwa’s Tank district to an undisclosed location after abducting them. The abducted workers were identified as Mir Janan, Ikram and Khanzala, says police",
+      "published_at": "Wed, 11 Nov 2026 10:24:04 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "Economy & Employment": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
@@ -314,6 +316,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Environment, Health & Science": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "c17eb5ab4358731960",
+      "title": "CPCB has an explanation for missing Diwali data. It doesn’t have a solution",
+      "url": "https://www.newslaundry.com/2026/11/12/cpcb-has-an-explanation-for-missing-diwali-data-it-doesnt-have-a-solution",
+      "summary": "Delhi-NCR’s Diwali was its most polluted in five years and, by official data, the fourth most polluted day of the year. But once again, it exposed gaps in pollution data and the government’s system to measure and publicise air toxicity. What created concern among researchers, journalists and environment and public health activists was the missing AQI data , particularly levels of the most polluting PM2.5 and PM10 particles. Many Central Pollution Control Board monitoring stations did not even show these numbers for several hours while other platforms and Delhi Pollution Control Committee’s monitors recorded severe toxicity. In fact, as many as 45 of Delhi’s 59 CPCB monitoring stations lacked hourly data for at least one pollutant at some point of time during Diwali night. For the same period, DPCC stations showed pollution levels as high as 60 times the normal limit. This impacted the credibility of the air pollution data released by the government the following day, as the average AQI was recorded lower than its actual value. Manoj Kumar, an analyst at the Centre for Research on Energy and Clean Air (CREA) , wrote on X : “From midnight on 8 November until 5 am on 9 November, 227 h",
+      "published_at": "Thu, 12 Nov 2026 09:48:33 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-11-12/tcwir6p7/NLvisualByMANJUL12112026.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -377,6 +412,39 @@
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "78f76246d61f969b7c",
+      "title": "Delhi Pollution: महंगे पटाखे, महंगी सांसें: आखिर किसकी कीमत पर मना रहे हैं त्योहार?",
+      "url": "https://khabarlahariya.org/delhi-pollution-expensive-firecrackers-costly-breaths-at-whose-expense-are-we-celebrating-these-festivals/",
+      "summary": "दिवाली के बाद दिल्ली ही नहीं, वाराणसी, लखनऊ और गोरखपुर जैसे शहरों की हवा भी प्रदूषण से भर गई। पटाखों से कई लोग घायल हुए और एक 10 साल के…",
+      "published_at": "Thu, 12 Nov 2026 11:10:24 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
@@ -554,6 +622,39 @@
       }
     },
     {
+      "raw_id": "24e2a659c3fb3bac56",
+      "title": "Why are Arunachal’s rural men facing a growing weight problem?",
+      "url": "https://eastmojo.com/arunachal-pradesh/2026/11/12/why-are-arunachals-rural-men-facing-a-growing-weight-problem/",
+      "summary": "In rural Arunachal Pradesh, 30.0% of men aged 15-49 are overweight or obese, according to the sixth National Family Health Survey (NFHS-6, 2023-24). Across rural India, the figure for men is 23.0%. That is a seven-percentage-point gap, and it should guide where the state prioritises its weight checks. The survey classifies adults with a body […] The post Why are Arunachal’s rural men facing a growing weight problem? appeared first on EastMojo .",
+      "published_at": "Thu, 12 Nov 2026 10:15:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
       "raw_id": "c4aef01c7f0fc54023",
       "title": "Nature’s tiny cleanup crew",
       "url": "https://india.mongabay.com/short-article/2026/11/natures-tiny-cleanup-crew/",
@@ -587,154 +688,20 @@
       }
     },
     {
-      "raw_id": "309f0a52d08df28062",
-      "title": "Kashmir musk deer face steep habitat losses under high emissions scenarios",
-      "url": "https://india.mongabay.com/2026/11/kashmir-musk-deer-face-steep-habitat-losses-under-high-emissions-scenarios/",
-      "summary": "The Kashmir musk deer is a small, solitary, antlerless mountain species native to the western Himalaya, with a range extending across parts of Afghanistan, India and Pakistan. Unlike other deer, male Kashmir musk deer lack antlers, but possess elongated upper canines used primarily for territorial defence and competition for mates during the breeding season. Classified […]",
-      "published_at": "10 Nov 2026 12:29:20 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/10105711/The-Kashmir-musk-deer-is-a-small-solitary-antlerless-mountain-species-native-to-the-western-Himalaya.-Photo-Credit-Mohsin-Javid-scaled-e1794288511499-768x512.jpg",
+      "raw_id": "007acfb8aa0739e436",
+      "title": "ICC Men’s Cricket World Cup 2027: मेन्स क्रिकेट वनडे (ODI) वर्ल्ड कप 2027 का शेड्यूल (schedule) जारी, 10 अक्टूबर को भारत-पाकिस्तान का मुकाबला",
+      "url": "https://khabarlahariya.org/icc-mens-cricket-world-cup-2027-schedule-for-the-mens-odi-world-cup-2027-released-india-vs-pakistan-match-set-for-october-10/",
+      "summary": "क्रिकेट प्रेमियों का इंतजार खत्म हो गया है। ICC मेन्स वनडे वर्ल्ड कप 2027 (Men’s Cricket World Cup 2027) का शेड्यूल जारी कर दिया गया है। टूर्नामेंट की शुरुआत 2…",
+      "published_at": "Mon, 09 Nov 2026 06:39:09 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "96d3914d37480c8228",
-      "title": "Great Nicobar’s leatherbacks carry a unique genetic record that a megaport could bury",
-      "url": "https://india.mongabay.com/2026/11/great-nicobars-leatherbacks-carry-a-unique-genetic-record-that-a-megaport-could-bury/",
-      "summary": "Last winter, female leatherbacks heaved themselves onto a beach bordering Galathea Bay on Great Nicobar Island to dig and lay eggs in 869 nests, according to data from the Andaman and Nicobar Forest Department obtained through the Right to Information Act. That is the highest number of leatherback nests recorded on any beach in the […]",
-      "published_at": "09 Nov 2026 15:30:35 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/09131217/leatherback-hatchlings-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "3136c26dda2d5a61aa",
-      "title": "Mammals of India [Interview]",
-      "url": "https://india.mongabay.com/video/2026/11/mammals-of-india-interview/",
-      "summary": "The Bombay Natural History Society (BNHS) recently published, in collaboration with Harper Collins Publishers India, a book titled Mammals of India. The book is authored by two well-respected wildlife researchers — A.J.T. Johnsingh and P.O. Nameer. Johnsingh died in 2024, before he could see the book through to its publication. Mongabay-India spoke with Nameer, Dean […]",
-      "published_at": "05 Nov 2026 17:16:00 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/05164924/vertical-f-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "a2d1b0379d2ae4ba91",
-      "title": "Calcutta High Court dismisses NGO's plea for enquiry into demolition of its book stall during Durga Puja",
-      "url": "https://www.barandbench.com/news/litigation/calcutta-high-court-dismisses-ngos-plea-for-enquiry-into-demolition-of-its-book-stall-during-durga-puja",
-      "summary": "The Calcutta High Court on Tuesday dismissed Association for Protection of Democratic Rights' (APDR's) plea seeking an impartial, time-bound enquiry into identifying and holding accountable the persons responsible for the demolition of their temporary book stall near Jadavpur 8B Bus Stand without any prior notice during Durga Puja [Association for Protection of Democratic Rights v. The State of West Bengal and Ors.]. Justice Rishad Medora dismissed the plea on the ground that since the book stall was erected without the appropriate permission, no fundamental right of the petitioner (ADPR) was infringed. However, he noted that that ADPR was free to opt for any other remedy it deemed appropriate in pursuit of its enquiry into the demolition of its stall. \"It does not appear that any fundamental right of the petitioner has been violated for it to approach this Court in its writ jurisdiction. Since no affidavit has been called for, the allegations made in the writ petition are deemed not to have been admitted by the respondents. The petitioner will be at liberty to pursue other remedies, if any, available to it in respect of the aforesaid demolition. The writ petition stands dismissed ",
-      "published_at": "Wed, 11 Nov 2026 08:10:33 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2022-02/7700e6ad-0eae-40b5-91cf-5a71f50f0be2/Books.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "20742b5a1868555f92",
-      "title": "CM Vijay meets TVK MLAs, asks them to focus on public grievances",
-      "url": "https://www.thenewsminute.com/tamil-nadu/cm-vijay-meets-tvk-mlas-asks-them-to-focus-on-public-grievances",
-      "summary": "Tamil Nadu Chief Minister C Joseph Vijay has warned two Tamilaga Vettri Kazhagam (TVK) legislators facing allegations of misconduct that action could follow if their conduct damages the party’s reputation. He also asked all party MLAs to avoid controversies and concentrate on public grievances. CM Vijay held a nearly three-hour meeting with TVK legislators at a resort near Mamallapuram in Chengalpattu district on Wednesday, November 11. The meeting was held six months after the party formed the government, following a series of controversies involving its elected representatives. The two legislators who CM Vijay met separately were Thuraiyur MLA and Deputy Speaker Ravishankar and Kallakurichi MLA Arul Vignesh. Ravishankar was recently filmed assaulting a person who had approached him with a complaint. Vignesh is accused of inappropriate behaviour towards Kallakurichi District Collector Padmaja. Sources told TNM that CM Vijay reprimanded both legislators and cautioned them that the party would take action if they brought disrepute to the government or TVK. The Chief Minister also met the other legislators in groups of 10. An MLA told TNM that CM Vijay exchanged Deepavali greetings w",
-      "published_at": "Thu, 12 Nov 2026 06:04:12 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-07/45vt4vsm/WhatsApp-Image-2026-08-07-at-8.38.50-AM.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -746,10 +713,377 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "States & Local": 1
+          "Sports": 4
         },
         "candidate_categories": [
-          "States & Local"
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "4a607dda651fb45b38",
+      "title": "Ronaldo: prolific goal-scorer and a bona fide match-winner",
+      "url": "https://www.thehindu.com/sport/football/prolific-goal-scorer-and-a-bona-fide-match-winner/article71687281.ece",
+      "summary": "The 41-year-old’s bitter fallout with Portugal coach Jorge Jesus pushed him into retirement from international football last week after a 23-year career. The manner of his exit and his dwindling impact in recent years shouldn’t detract from his status as the Iberian nation’s greatest footballer – he finishes with a record 234 appearances and 146 goals",
+      "published_at": "Wed, 11 Nov 2026 00:51:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/o11b6u/article71687278.ece/alternates/LANDSCAPE_1200/GettyImages-2296304100.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 13,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "4782505335c73e9365",
+      "title": "Michael Carrick sacked as Manchester United manager after club’s worst start to a Premier League season",
+      "url": "https://www.thehindu.com/sport/football/manchester-united-sack-michael-carrick-mauricio-pochettino-linked/article71693406.ece",
+      "summary": "Manchester United are linked with a move to sign U.S. men’s coach Mauricio Pochettino to replace Carrick",
+      "published_at": "Thu, 12 Nov 2026 16:46:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/86lzkv/article71693426.ece/alternates/LANDSCAPE_1200/2026-11-12T104008Z_629101867_RC2IGNA252QH_RTRMADP_3_SOCCER-ENGLAND-MUN.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "d7b767bd7aa33974f4",
+      "title": "SAFF Championship: Suhail Bhat penalty takes India into semifinals as toppers",
+      "url": "https://www.thehindu.com/sport/football/saff-championship-suhail-bhat-penalty-takes-india-into-semifinals-as-toppers/article71690405.ece",
+      "summary": "The defending champions finished the group stage with six points, ahead of Pakistan on three, while Maldives bowed out without a point",
+      "published_at": "Wed, 11 Nov 2026 20:54:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/blvuqo/article71690424.ece/alternates/LANDSCAPE_1200/Suhail%20Ahmad%20Bhat.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "4a4424ea8185e39adf",
+      "title": "WTC match-ups from 2027 to 2031 set to be proposed during ICC meet in Bali",
+      "url": "https://www.thehindu.com/sport/cricket/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet-in-bali/article71688543.ece",
+      "summary": "Running from November 11-15, the final set of meetings of 2026 will bring together ICC Board and Committee representatives from around the world",
+      "published_at": "Wed, 11 Nov 2026 12:00:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/osqngj/article71688567.ece/alternates/LANDSCAPE_1200/IMG_TH13JAY_2_1_5UFJ1176.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "29f06294f254192dcb",
+      "title": "India clinches 25m pistol team gold medal; Manu Bhaker, Esha Singh miss Olympic quota",
+      "url": "https://www.thehindu.com/sport/india-clinches-25m-pistol-team-gold-medal-manu-bhaker-esha-singh-miss-olympic-quota/article71688289.ece",
+      "summary": "India have so far secured just one Olympic quota place through men's 10m air pistol shooter Jaypal Malviya",
+      "published_at": "Wed, 11 Nov 2026 10:17:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9j6ys8/article71688318.ece/alternates/LANDSCAPE_1200/19_RVM_5619.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "b1a4da3624c8805735",
+      "title": "Savita makes way for Bansari in Indian women’s hockey squad for ACT",
+      "url": "https://www.thehindu.com/sport/hockey/savita-makes-way-for-bansari-in-indian-womens-hockey-squad-for-act/article71687374.ece",
+      "summary": "India will begin their campaign against Malaysia on the opening day of the competition",
+      "published_at": "Wed, 11 Nov 2026 01:34:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mneysn/article71687409.ece/alternates/LANDSCAPE_1200/PTI10_16_2026_000169B.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "2cf6350939378b12c9",
+      "title": "Carlsen heads the field as Total Chess World Championship Tour pilot begins",
+      "url": "https://www.thehindu.com/sport/carlsen-heads-the-field-as-total-chess-world-championship-tour-pilot-begins/article71687201.ece",
+      "summary": "The full tour is due to begin in 2027, with the top four in the standings qualifying for the Grand Final to play for the FIDE World Combined Championship",
+      "published_at": "Tue, 10 Nov 2026 22:30:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dijxs5/article71687258.ece/alternates/LANDSCAPE_1200/Magnus%20Carlsen.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "0da0d832230d72fe05",
+      "title": "Sehwag junior carries India into semifinals with match-winning 160 against UAE",
+      "url": "https://www.thehindu.com/sport/cricket/sehwag-junior-carries-india-into-semifinals-with-match-winning-160-against-uae/article71686797.ece",
+      "summary": "Aaryavir, son of the great Virender Sehwag, allowed India to post 309 for seven, a total which was beyond the grasp of the opposition; the UAE managed 239 all out in 50 overs",
+      "published_at": "Tue, 10 Nov 2026 20:36:24 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jl9tga/article71686814.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-07%20173840.png",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "5da827b07e532bc16b",
+      "title": "Aaryavir in focus as India face Afghanistan in U-19 Asia Cup semifinal",
+      "url": "https://www.thehindu.com/sport/cricket/aaryavir-in-focus-as-india-face-afghanistan-in-u-19-asia-cup-semifinal/article71691215.ece",
+      "summary": "Aaryavir is the tournament’s leading run-scorer after smashing 160 off 168 balls to guide India to a 70-run win over the UAE in their final Group A match",
+      "published_at": "Thu, 12 Nov 2026 00:55:52 +0530",
+      "image_url": "",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 10
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "5dbf0f2121fc3b8480",
+      "title": "Pant undergoing two-day simulation, likely to leave for New Zealand on November 12",
+      "url": "https://www.thehindu.com/sport/cricket/pant-undergoing-two-day-simulation-likely-to-leave-for-new-zealand-on-november-12/article71687380.ece",
+      "summary": "Pant is one of the few cricketers in this current set-up, who has the experience of playing Test cricket in New Zealand when the national team toured that nation in 2020",
+      "published_at": "Wed, 11 Nov 2026 01:48:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nlkwr4/article71687426.ece/alternates/LANDSCAPE_1200/th02-cri-pant-rGIQGOA663.3.jpg.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 10
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "484df77eb3417a0187",
+      "title": "IWL: Upbeat East Bengal eyes a historic third straight title",
+      "url": "https://www.thehindu.com/sport/football/iwl-upbeat-east-bengal-eyes-a-historic-third-straight-title/article71694934.ece",
+      "summary": "The Kolkata outfit takes on three-time former champion Gokulam Kerala FC in the opening match at the Kalyani Stadium on Friday",
+      "published_at": "Thu, 12 Nov 2026 21:24:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/cm1bzv/article71694944.ece/alternates/LANDSCAPE_1200/TH13IWL.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 9
+        },
+        "candidate_categories": [
+          "Sports"
         ]
       }
     },
@@ -1022,344 +1356,6 @@
         "candidate_categories": [
           "Society, Rights & Justice",
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1bc9d993aa59c66eda",
-      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
-      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
-      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "007acfb8aa0739e436",
-      "title": "ICC Men’s Cricket World Cup 2027: मेन्स क्रिकेट वनडे (ODI) वर्ल्ड कप 2027 का शेड्यूल (schedule) जारी, 10 अक्टूबर को भारत-पाकिस्तान का मुकाबला",
-      "url": "https://khabarlahariya.org/icc-mens-cricket-world-cup-2027-schedule-for-the-mens-odi-world-cup-2027-released-india-vs-pakistan-match-set-for-october-10/",
-      "summary": "क्रिकेट प्रेमियों का इंतजार खत्म हो गया है। ICC मेन्स वनडे वर्ल्ड कप 2027 (Men’s Cricket World Cup 2027) का शेड्यूल जारी कर दिया गया है। टूर्नामेंट की शुरुआत 2…",
-      "published_at": "Mon, 09 Nov 2026 06:39:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 4
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "17944a084b276d7fff",
-      "title": "Shardul Amarchand Mangaldas, Trilegal act on The Pant Project ₹109 crore Series B fundraise",
-      "url": "https://www.barandbench.com/law-firms/dealstreet/shardul-amarchand-mangaldas-trilegal-act-on-the-pant-project-109-crore-series-b-fundraise",
-      "summary": "Aanswr Fashion Private Limited, dba The Pant Project, has raised ₹109 crore from a Series B fundraise led by Mirae Asset Venture Opportunity Fund II, with participation from existing investors Sorin Investments, and marquee angels like Hyperscale Ventures, MGA Ventures, B2V Ventures and B&K Securities. Shardul Amarchand Mangaldas & Co advised The Pant Project on this fundraise. The transaction was led by Navruz Vakil (Partner). Navruz Vakil Trilegal advised lead investor Mirae on this fundraise. The transaction was led by Vishruta Kaul (Partner), with support from Aayush Sood (Counsel), Associates Harshit Meena and Akshat Jain. Vishruta Kaul Founded in 2020, The Pant Project is a Mumbai-based premium menswear brand. It will use the capital for product catalogue enhancement, retail expansion, technology, team and brand building, and aims to expand its network from over 20 stores to more than 150 stores in malls and high streets across Tier 1 and Tier 2 cities in India.",
-      "published_at": "Thu, 12 Nov 2026 11:05:23 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2026-11-11/ivtkoek5/ViewPoint-MIddle-Single-Image-copy.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "4a607dda651fb45b38",
-      "title": "Ronaldo: prolific goal-scorer and a bona fide match-winner",
-      "url": "https://www.thehindu.com/sport/football/prolific-goal-scorer-and-a-bona-fide-match-winner/article71687281.ece",
-      "summary": "The 41-year-old’s bitter fallout with Portugal coach Jorge Jesus pushed him into retirement from international football last week after a 23-year career. The manner of his exit and his dwindling impact in recent years shouldn’t detract from his status as the Iberian nation’s greatest footballer – he finishes with a record 234 appearances and 146 goals",
-      "published_at": "Wed, 11 Nov 2026 00:51:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/o11b6u/article71687278.ece/alternates/LANDSCAPE_1200/GettyImages-2296304100.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "d7b767bd7aa33974f4",
-      "title": "SAFF Championship: Suhail Bhat penalty takes India into semifinals as toppers",
-      "url": "https://www.thehindu.com/sport/football/saff-championship-suhail-bhat-penalty-takes-india-into-semifinals-as-toppers/article71690405.ece",
-      "summary": "The defending champions finished the group stage with six points, ahead of Pakistan on three, while Maldives bowed out without a point",
-      "published_at": "Wed, 11 Nov 2026 20:54:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/blvuqo/article71690424.ece/alternates/LANDSCAPE_1200/Suhail%20Ahmad%20Bhat.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "4a4424ea8185e39adf",
-      "title": "WTC match-ups from 2027 to 2031 set to be proposed during ICC meet in Bali",
-      "url": "https://www.thehindu.com/sport/cricket/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet-in-bali/article71688543.ece",
-      "summary": "Running from November 11-15, the final set of meetings of 2026 will bring together ICC Board and Committee representatives from around the world",
-      "published_at": "Wed, 11 Nov 2026 12:00:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/osqngj/article71688567.ece/alternates/LANDSCAPE_1200/IMG_TH13JAY_2_1_5UFJ1176.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "29f06294f254192dcb",
-      "title": "India clinches 25m pistol team gold medal; Manu Bhaker, Esha Singh miss Olympic quota",
-      "url": "https://www.thehindu.com/sport/india-clinches-25m-pistol-team-gold-medal-manu-bhaker-esha-singh-miss-olympic-quota/article71688289.ece",
-      "summary": "India have so far secured just one Olympic quota place through men's 10m air pistol shooter Jaypal Malviya",
-      "published_at": "Wed, 11 Nov 2026 10:17:53 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/9j6ys8/article71688318.ece/alternates/LANDSCAPE_1200/19_RVM_5619.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "b1a4da3624c8805735",
-      "title": "Savita makes way for Bansari in Indian women’s hockey squad for ACT",
-      "url": "https://www.thehindu.com/sport/hockey/savita-makes-way-for-bansari-in-indian-womens-hockey-squad-for-act/article71687374.ece",
-      "summary": "India will begin their campaign against Malaysia on the opening day of the competition",
-      "published_at": "Wed, 11 Nov 2026 01:34:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mneysn/article71687409.ece/alternates/LANDSCAPE_1200/PTI10_16_2026_000169B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "2cf6350939378b12c9",
-      "title": "Carlsen heads the field as Total Chess World Championship Tour pilot begins",
-      "url": "https://www.thehindu.com/sport/carlsen-heads-the-field-as-total-chess-world-championship-tour-pilot-begins/article71687201.ece",
-      "summary": "The full tour is due to begin in 2027, with the top four in the standings qualifying for the Grand Final to play for the FIDE World Combined Championship",
-      "published_at": "Tue, 10 Nov 2026 22:30:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dijxs5/article71687258.ece/alternates/LANDSCAPE_1200/Magnus%20Carlsen.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
         ]
       }
     }

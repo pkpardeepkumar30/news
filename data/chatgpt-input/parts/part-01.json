@@ -1,16 +1,444 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-12T16:55:41.796226+00:00",
-  "input_count": 434,
-  "supplied_count": 200,
+  "prepared_at": "2026-11-13T01:13:03.166525+00:00",
+  "input_count": 400,
+  "supplied_count": 199,
   "source_mix": {
-    "independent_social": 120,
-    "established_or_other": 80,
+    "independent_social": 100,
+    "established_or_other": 99,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "19a87de71403f06d15",
+      "title": "New draft rules could dilute regulations for animal testing",
+      "url": "https://india.mongabay.com/2026/11/new-draft-rules-could-ease-approvals-for-animal-testing-in-india/",
+      "summary": "The draft Prevention of Cruelty to Animals (Control and Supervision of Experiment, Breeding and Trading of Laboratory Animals) Rules, 2026 issued by the government on September 30, 2026 has drawn sharp criticism from animal rights groups across the country, including PETA, which said they could “significantly weaken existing animal protections.” The draft rules are open […]",
+      "published_at": "03 Nov 2026 14:48:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/03115037/pexels-pixabay-159483-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "0f29dfc9f5713aa557",
+      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
+      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
+      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
+      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1,
+          "Governance & Administration": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "34f17a96c9bab12501",
+      "title": "Bihar’s new regulations for government school teachers, non-teaching staff and students | Explained",
+      "url": "https://www.thehindu.com/news/national/bihar/why-bihar-education-department-has-imposed-new-regulations-for-government-school-teachers-non-teaching-staff-and-students-explained/article71672849.ece",
+      "summary": "Under the new regulations, the State Education Department has prohibited outsiders and unauthorised persons from visiting school premises without permission from authorities",
+      "published_at": "Fri, 06 Nov 2026 13:51:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/o4he3f/article71672918.ece/alternates/LANDSCAPE_1200/20260620125L.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 17
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9fcab79eb3640a1e8c",
+      "title": "Centre tells Supreme Court it may set up a panel to review UGC equity on campus regulations",
+      "url": "https://www.thehindu.com/news/national/centre-tells-supreme-court-about-setting-up-of-special-committee-to-re-examine-ugcs-2026-equity-regulations/article71670397.ece",
+      "summary": "The Centre said it was examining criticism about the Regulations, which had sparked protests by upper-caste student groups; the Court had stayed the regulations in January, stating that they were “too vague”",
+      "published_at": "Fri, 06 Nov 2026 00:02:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1pbon8/article71670441.ece/alternates/LANDSCAPE_1200/UGC%20PROTEST%20JANTAR%20MANTAR%20DELHI%202026_31_01_3.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Protests": 1,
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "705465fa62ddf06599",
+      "title": "Keralam Higher Education dept seeks explanation from Calicut University over pro-V-C’s appointment",
+      "url": "https://www.thehindu.com/news/national/kerala/keralam-higher-education-dept-seeks-explanation-from-calicut-university-over-pro-v-cs-appointment/article71668767.ece",
+      "summary": "Department has sought to know how P. Rasheed Ahammed, the PVC, was relieved of duties from his parent institution and permitted to assume charge on deputation without obtaining prior sanction from government",
+      "published_at": "Thu, 05 Nov 2026 19:59:08 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/kerala/4alxk6/article71668819.ece/alternates/LANDSCAPE_1200/CALICUT%20UNIVERSITY.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 16
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "d514e5440806ddc376",
+      "title": "Karnataka to write to Prime Minister asking for inclusion of enhanced quota in Ninth Schedule",
+      "url": "https://www.thehindu.com/news/national/karnataka/karnataka-to-write-to-prime-minister-asking-for-inclusion-of-enhanced-quota-in-ninth-schedule/article71695096.ece",
+      "summary": "After the High Court of Karnataka quashed the Karnataka Scheduled Castes and Scheduled Tribes (Reservation of Seats in Educational Institutions and of Appointments or Posts in the Services under the State) Act, 2022, the State government will write to Prime Minister Narendra Modi to include the enhanced reservation for SCs and STs in the 9th Schedule of the Constitution",
+      "published_at": "Fri, 13 Nov 2026 01:46:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sggw2n/article71695119.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-12%20at%203.41.51%20PM.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "a6cd34e313a7671913",
+      "title": "Restrictions on me arbitrary, vague: Sonam Wangchuk",
+      "url": "https://www.thehindu.com/news/national/ladakh/restrictions-on-me-arbitrary-vague-sonam-wangchuk/article71695290.ece",
+      "summary": "The Ladakh administration shifted the activist from a protest venue to his residence in Leh and has been allegedly restrained from leaving his residence",
+      "published_at": "Fri, 13 Nov 2026 01:16:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9c1r3y/article71695377.ece/alternates/LANDSCAPE_1200/20261022272L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "74440f802c02b552eb",
+      "title": "SFI activists booked for protesting against Minister at Maharaja’s College in Keralam’s Kochi granted anticipatory bail",
+      "url": "https://www.thehindu.com/news/national/kerala/sfi-activists-booked-for-protesting-against-minister-at-maharajas-college-in-keralams-kochi-granted-anticipatory-bail/article71695062.ece",
+      "summary": "The bail was granted on condition that they cooperate with the investigation and appear whenever asked by the investigation officer",
+      "published_at": "Fri, 13 Nov 2026 00:26:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bgohu2/article71695349.ece/alternates/LANDSCAPE_1200/Two-SFI-activisG3JGOG06G.4.jpg.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "458ce3d13594308d47",
+      "title": "What stopped Andhra Pradesh’s 34% BC quota in local bodies? | Explained",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/what-stopped-andhra-pradeshs-34-bc-quota-in-local-bodies-explained/article71589073.ece",
+      "summary": "The courts have held that Andhra Pradesh’s 34% BC quota in local bodies breaches the 50% ceiling without the empirical data the law requires",
+      "published_at": "Sun, 18 Oct 2026 02:37:43 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/pex9pe/article71589108.ece/alternates/LANDSCAPE_1200/HC.jpeg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "0aad0a7e24eddf94d9",
+      "title": "A Fundamental Right",
+      "url": "https://www.thehindu.com/features/education/a-fundamental-right/article60647223.ece",
+      "summary": "With its new law that makes education a fundamental right with effect from April 1, 2010, India joins a small group of countries with such a statutory provision. All children in the 6 to 14 age group can exercise the right under the Right of Children to Free and Compulsory Education Act, 2009. An estimated one crore children who do not go to school now are expected to benefit.",
+      "published_at": "Fri, 15 Nov 2024 16:35:57 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8,
+          "Society, Rights & Justice": 2
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "93fbdf2633aa9dd804",
+      "title": "Kerala PSC under the scanner: How allegations of examination irregularities have triggered multiple Crime Branch probes",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-psc-under-the-scanner-how-allegations-of-examination-irregularities-have-triggered-multiple-crime-branch-probes/article71659660.ece",
+      "summary": "What began with the discovery of unevaluated answers in a 2023 examination for senior posts in the State Planning Board has snowballed into a wider investigation by the Crime Branch",
+      "published_at": "Wed, 04 Nov 2026 12:16:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/vtthir/article71660289.ece/alternates/LANDSCAPE_1200/PSC%20Pattom.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "844631b96c5ef3aab9",
+      "title": "What dissent looked like at Jamia Millia Islamia: students recall",
+      "url": "https://www.thehindu.com/education/what-dissent-looked-like-at-jamia-millia-islamia-students-recall/article71656033.ece",
+      "summary": "For the students of Jamia, the protest call was nothing new; however, the administration’s reaction and use of force against students strengthened the agitation, resulting in the restoration of the union after 20 years",
+      "published_at": "Tue, 03 Nov 2026 12:18:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/mc68al/article71656343.ece/alternates/LANDSCAPE_1200/IMG_1484.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Protests": 2,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
     {
       "raw_id": "835675326855ec5e08",
       "title": "Left Groups Protest Workers' Repression in North India",
@@ -183,6 +611,39 @@
       }
     },
     {
+      "raw_id": "ede572b3056041ebbd",
+      "title": "Raipur: पटवारियों पर सख्ती जारी, रायपुर के 7 पटवारी निलंबित, 229 को नोटिस – काम पर नहीं लौटे तो होगी और कार्रवाई",
+      "url": "https://theruralpress.in/chhattisgarh/raipur-7-patwari-suspended-229-notice-strike/",
+      "summary": "Crackdown on Patwaris continues: पटवारियों की हड़ताल के बीच रायपुर जिला प्रशासन ने भी सख्ती शुरू कर दी है। काम पर वापस नहीं लौटने वाले जिले के सात पटवारियों को निलंबित कर दिया गया है, जबकि 229 पटवारियों को नोटिस जारी कर काम पर लौटने के निर्देश दिए गए हैं। प्रशासन का संदेश साफ है […]",
+      "published_at": "Thu, 12 Nov 2026 16:56:03 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Protests"
+        ]
+      }
+    },
+    {
       "raw_id": "c6a9a5ede085f4be19",
       "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
       "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
@@ -286,39 +747,6 @@
       }
     },
     {
-      "raw_id": "c5f6af825edd068b49",
-      "title": "Bagalkot sugarcane farmers continue protest seeking higher prices",
-      "url": "https://www.thehindu.com/news/national/karnataka/bagalkot-sugarcane-farmers-continue-protest-seeking-higher-prices/article71694703.ece",
-      "summary": "The growers who are protesting are demanding ₹5,500 per tonne of sugarcane in the district",
-      "published_at": "Thu, 12 Nov 2026 21:49:43 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/s0hbvj/article71694765.ece/alternates/LANDSCAPE_1200/20261107039L_AvRzb9b.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 5
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
       "raw_id": "b247e30db615e25053",
       "title": "Protesters clash with police in Spain after huge housing cost rallies",
       "url": "https://www.thehindu.com/news/international/protesters-clash-with-police-in-spain-after-huge-housing-cost-rallies/article71692238.ece",
@@ -356,187 +784,12 @@
       }
     },
     {
-      "raw_id": "4af48483eac87d8aab",
-      "title": "OBC associations call for protest at Ramlila Maidan demanding drop-down for all castes in 2027 Census",
-      "url": "https://www.thehindu.com/news/national/obc-associations-call-for-protest-at-ramlila-maidan-demanding-drop-down-for-all-castes-in-2027-census/article71694662.ece",
-      "summary": "The Centre will be enumerating caste through an open column for everyone apart from SCs and STs during the Population Enumeration phase of the 2027 Census, which yielded over 46 lakh caste names during 2011 SECC",
-      "published_at": "Thu, 12 Nov 2026 21:33:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3m04tu/article71694988.ece/alternates/LANDSCAPE_1200/20260902242L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "71d8d0af4c37fd3761",
-      "title": "Thousands protest 'encounter' killing",
-      "url": "https://www.thehindu.com/news/national/thousands-protest-ldquoencounterrdquo-killing/article61760360.ece",
+      "raw_id": "092123c585a6c7d395",
+      "title": "CPI(M) leader P. Rajeeve flays police action against protesters in Keralam’s Thiruvananthapuram",
+      "url": "https://www.thehindu.com/news/national/kerala/cpim-leader-p-rajeeve-flays-police-action-against-protesters-in-keralams-thiruvananthapuram/article71694561.ece",
       "summary": "",
-      "published_at": "Sat, 01 Aug 2026 19:49:28 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Protests",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "19a87de71403f06d15",
-      "title": "New draft rules could dilute regulations for animal testing",
-      "url": "https://india.mongabay.com/2026/11/new-draft-rules-could-ease-approvals-for-animal-testing-in-india/",
-      "summary": "The draft Prevention of Cruelty to Animals (Control and Supervision of Experiment, Breeding and Trading of Laboratory Animals) Rules, 2026 issued by the government on September 30, 2026 has drawn sharp criticism from animal rights groups across the country, including PETA, which said they could “significantly weaken existing animal protections.” The draft rules are open […]",
-      "published_at": "03 Nov 2026 14:48:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/03115037/pexels-pixabay-159483-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "8371dcd21b3b3e2e16",
-      "title": "From lectern to bench: Why law professors belong in India’s higher judiciary",
-      "url": "https://www.barandbench.com/columns/from-lectern-to-bench-why-law-professors-belong-in-indias-higher-judiciary",
-      "summary": "Teaching law is a lifelong apprenticeship and that is the premise of this blog: law professors, who live inside legal developments every day deserve a real place among those considered for the higher judiciary. The framers of our Constitution agreed. Article 124(3)(c) makes a citizen eligible for the Supreme Court if he or she is, in the opinion of the President, \"a distinguished jurist\". Yet, in more than 76 years, not a single jurist has entered the Court through this door. The High Courts have no such door at all, since Article 217(2) admits only those with 10 years of judicial office or 10 years at the Bar. The silence has now been broken from within the Court itself. On August 30, 2026, addressing the LL.M. convocation of National Law University, Delhi, Justice Ujjal Bhuyan called the clause one of the Constitution’s \"unused mandates\" . He dismissed the objection that scholars lack courtroom experience as shallow, pointing to academics who serve on constitutional courts in the United States, the United Kingdom, Canada and Kenya. So, does the world’s experience support the lectern-to-bench route, or warn against it? The record of professor-judges across the globe is richer and ",
-      "published_at": "Thu, 12 Nov 2026 18:53:34 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/2025-05-29/tqg9n6um/Moot-Court-Hall.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 3
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e0dbd60dfdb768bc2d",
-      "title": "NCLAT rejects appeals by Yes Bank co-founder Rana Kapoor’s wife against insolvency of four firms",
-      "url": "https://www.barandbench.com/news/litigation/nclat-rejects-appeals-by-yes-bank-co-founder-rana-kapoors-wife-against-insolvency-of-four-firms",
-      "summary": "The National Company Law Appellate Tribunal (NCLAT) recently dismissed four appeals filed by Yes Bank co-founder Rana Kapoor’s wife Bindu Kapoor against the initiation of insolvency proceedings against four companies where she was a director before suspension [Bindu Kapoor Vs Mamta Binani] A bench of Officiating Chairperson Justice Yogesh Khanna and Technical Members Barun Mitra and Ajai Das Mehrotra upheld the National Company Law Tribunal (NCLT), New Delhi’s April 7 order admitting insolvency petitions against Imagine Estate Private Limited, Imagine Home Private Limited, Imagine Residence Private Limited and Imagine Habitat Private Limited. “The impugned order suffers from no illegality and thus all above appeals are dismissed,” the NCLAT held in its November 6 judgment. The insolvency petitions were filed by JC Flowers Asset Reconstruction Private Limited, which had acquired the lender’s rights under the loan and security documents. The principal dispute concerned whether the four companies had merely provided assets as security for a ₹105 crore loan extended to Bliss House Private Limited or had also undertaken obligations as corporate guarantors. This distinction determined wh",
-      "published_at": "Thu, 12 Nov 2026 14:12:56 +0530",
-      "image_url": "https://cf-images.assettype.com/barandbench/import/2019/10/NCLAT-7.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "bar-and-bench",
-        "name": "Bar & Bench",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Legal news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 2
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "35b4f0bd92d94d0671",
-      "title": "IPS officers behind major investigations, policing reforms take charge of key posts in Telangana",
-      "url": "https://www.thehindu.com/news/national/telangana/ips-officers-behind-major-investigations-policing-reforms-take-charge-of-key-posts-in-telangana/article71694128.ece",
-      "summary": "The reshuffle brings officers associated with the Tollywood drugs investigation, the Disha case, the EAMCET paper leak probe, anti-Maoist operations and the creation of SHE Teams into key leadership positions across Telangana’s police establishment.",
-      "published_at": "Thu, 12 Nov 2026 22:07:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gxogqr/article71694865.ece/alternates/LANDSCAPE_1200/Muscular%20Dystrophy%20Awareness%20%2002.jpg",
+      "published_at": "Fri, 13 Nov 2026 00:30:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tnoyv6/article71695357.ece/alternates/LANDSCAPE_1200/Kerala-to-approGGDF78RBG.3.jpg.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -556,58 +809,25 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 5
+          "Protests": 4
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "Protests"
         ]
       }
     },
     {
-      "raw_id": "3fc3021e4f399d7bd4",
-      "title": "Christian community takes out silent march in Shivamogga, demand withdrawal of anti-conversion law",
-      "url": "https://www.thehindu.com/news/national/karnataka/christian-community-people-take-out-silent-march-in-shivamogga-demand-withdrawal-of-anti-conversion-law/article71694126.ece",
-      "summary": "",
-      "published_at": "Thu, 12 Nov 2026 21:31:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1kunjm/article71694613.ece/alternates/LANDSCAPE_1200/Christian%20protest%2001.jpg",
+      "raw_id": "08c4affe82810d7422",
+      "title": "Ladakh civil society group begins protest over Home Ministry failure to hold talks",
+      "url": "https://www.thehindu.com/news/national/ladakh/ladakh-civil-society-group-begins-protest-over-home-ministry-failure-to-hold-talks/article71694812.ece",
+      "summary": "It opposes holding of hill council elections at the peak of winter; climate activist Sonam Wangchuk put under house arrest and disallowed to join the protest",
+      "published_at": "Thu, 12 Nov 2026 23:04:16 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nxrke3/article71695221.ece/alternates/LANDSCAPE_1200/IMG_Voters_queue_up_outs_2_1_LLC8JS27.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
         "id": "the-hindu-national",
         "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -623,223 +843,13 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
           "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "34f17a96c9bab12501",
-      "title": "Bihar’s new regulations for government school teachers, non-teaching staff and students | Explained",
-      "url": "https://www.thehindu.com/news/national/bihar/why-bihar-education-department-has-imposed-new-regulations-for-government-school-teachers-non-teaching-staff-and-students-explained/article71672849.ece",
-      "summary": "Under the new regulations, the State Education Department has prohibited outsiders and unauthorised persons from visiting school premises without permission from authorities",
-      "published_at": "Fri, 06 Nov 2026 13:51:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/o4he3f/article71672918.ece/alternates/LANDSCAPE_1200/20260620125L.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 17
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9fcab79eb3640a1e8c",
-      "title": "Centre tells Supreme Court it may set up a panel to review UGC equity on campus regulations",
-      "url": "https://www.thehindu.com/news/national/centre-tells-supreme-court-about-setting-up-of-special-committee-to-re-examine-ugcs-2026-equity-regulations/article71670397.ece",
-      "summary": "The Centre said it was examining criticism about the Regulations, which had sparked protests by upper-caste student groups; the Court had stayed the regulations in January, stating that they were “too vague”",
-      "published_at": "Fri, 06 Nov 2026 00:02:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1pbon8/article71670441.ece/alternates/LANDSCAPE_1200/UGC%20PROTEST%20JANTAR%20MANTAR%20DELHI%202026_31_01_3.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Protests": 1,
-          "Society, Rights & Justice": 9
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "705465fa62ddf06599",
-      "title": "Keralam Higher Education dept seeks explanation from Calicut University over pro-V-C’s appointment",
-      "url": "https://www.thehindu.com/news/national/kerala/keralam-higher-education-dept-seeks-explanation-from-calicut-university-over-pro-v-cs-appointment/article71668767.ece",
-      "summary": "Department has sought to know how P. Rasheed Ahammed, the PVC, was relieved of duties from his parent institution and permitted to assume charge on deputation without obtaining prior sanction from government",
-      "published_at": "Thu, 05 Nov 2026 19:59:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/kerala/4alxk6/article71668819.ece/alternates/LANDSCAPE_1200/CALICUT%20UNIVERSITY.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 16
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "9e1dda32b7ca04be23",
-      "title": "YSRCP promises assistance to 18-month-old boy suffering from Spinal Muscular Atrophy",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ysrcp-promises-assistance-to-18-month-old-boy-suffering-from-spinal-muscular-atrophy/article71693478.ece",
-      "summary": "The boy suffers a rare genetic disorder that requires treatment costing nearly ₹1.5 crore; party spokesperson alleges boy’s parents had earlier approached Nara Lokesh and the Health Minister seeking assistance but were not given an appointment, subsequently approaching the YSCRP for help",
-      "published_at": "Thu, 12 Nov 2026 22:11:06 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
+          "Protests": 4,
           "Environment, Health & Science": 1
         },
         "candidate_categories": [
           "Environment, Health & Science",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "1d74a18a6fb105fd6e",
-      "title": "Vettucaud Church feast in Keralam to get under way on November 13",
-      "url": "https://www.thehindu.com/news/national/kerala/vettucaud-church-feast-in-keralam-to-get-under-way-on-november-13/article71694712.ece",
-      "summary": "Thiruvananthapuram district administration declares regional holiday on Friday afternoon on account of the festival",
-      "published_at": "Thu, 12 Nov 2026 21:43:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fimr4s/article71695043.ece/alternates/LANDSCAPE_1200/NH12Vettucaud003.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "States & Local": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "c254465425d7604bd2",
-      "title": "NIA to probe two terror cases in Punjab, U.P.",
-      "url": "https://www.thehindu.com/news/national/nia-to-probe-online-radicalisation-of-indian-youths-by-pakistan-based-gangster-shahzad-bhatti/article71692918.ece",
-      "summary": "During the investigation, it emerged that Pakistani gangster Bhatti, Jatt and radical Pakistani YouTubers, allegedly acting on instructions from the ISI, were attempting to radicalise Indian youths and entice them with financial incentives",
-      "published_at": "Thu, 12 Nov 2026 21:37:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/dti9o1/article71357064.ece/alternates/LANDSCAPE_1200/Shahzad%20Bhatti.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
+          "Politics & Elections",
+          "Protests"
         ]
       }
     },
@@ -984,12 +994,12 @@
       }
     },
     {
-      "raw_id": "4e310e372703f7d21a",
-      "title": "Manipur draft poll rolls published; women voters outnumber men by 55,437",
-      "url": "https://www.thehindu.com/news/national/manipur/manipur-draft-poll-rolls-published-women-voters-outnumber-men-by-55437/article71694232.ece",
-      "summary": "Officials said the claims and objections window will remain open till December 11, and the final rolls are scheduled for January 4, 2027.",
-      "published_at": "Thu, 12 Nov 2026 21:48:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/py7bs2/article71694762.ece/alternates/LANDSCAPE_1200/ELECTION%20COMMISSION%20%20DELHI%202026_22_04_5.jpg",
+      "raw_id": "60ce60d00567b1b122",
+      "title": "SIR: Draft electoral roll released in Vellore, nearby districts",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/sir-draft-electoral-roll-released-in-vellore-nearby-districts/article71693854.ece",
+      "summary": "",
+      "published_at": "Fri, 13 Nov 2026 01:01:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8z4q15/article71694663.ece/alternates/LANDSCAPE_1200/_DSC4709.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1017,11 +1027,44 @@
       }
     },
     {
-      "raw_id": "cceb068ee792bf3687",
-      "title": "ECI releases Keralam’s updated draft list of voters",
-      "url": "https://www.thehindu.com/news/national/kerala/eci-releases-keralams-updated-draft-list-of-voters/article71694549.ece",
+      "raw_id": "398ad8a9c7ddbcdeaa",
+      "title": "Integrated draft electoral rolls released in Cuddalore, Villupuram and Kallakurichi",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/integrated-draft-electoral-rolls-released-in-cuddalore-villupuram-and-kallakurichi/article71692628.ece",
       "summary": "",
-      "published_at": "Thu, 12 Nov 2026 21:38:13 +0530",
+      "published_at": "Fri, 13 Nov 2026 00:36:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/xlywgz/article71695365.ece/alternates/LANDSCAPE_1200/CUDDALORE-DRAFT-ROLL.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "f95fda3474a395100f",
+      "title": "Special camps for electoral roll revision on November 21, 22 and 29",
+      "url": "https://www.thehindu.com/news/national/special-camps-for-electoral-roll-revision-on-november-21-22-and-29/article71695162.ece",
+      "summary": "",
+      "published_at": "Fri, 13 Nov 2026 00:26:40 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1225,41 +1268,6 @@
       }
     },
     {
-      "raw_id": "f19787041b0d239e2b",
-      "title": "U.S. midterm election results 2026: List of key winners",
-      "url": "https://www.thehindu.com/news/international/us-mid-term-election-poll-results-2026-full-list-of-winners/article71663723.ece",
-      "summary": "All 435 seats in the House of Representatives, 35 of the 100 Senate seats, and governorships in 36 states went for election, with about 210 million people registered to vote",
-      "published_at": "Thu, 12 Nov 2026 07:28:48 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m8rym3/article71662642.ece/alternates/LANDSCAPE_1200/Election_2_26_America_Votes_Nebraska_97546.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
       "raw_id": "dd094391abf9cd69c4",
       "title": "South Africa’s proposed 20% online gambling tax heads for a February 2027 decision: What it means for players",
       "url": "https://eastmojo.com/em-buzz/2026/11/12/south-africas-proposed-20-online-gambling-tax-heads-for-a-february-2027-decision-what-it-means-for-players/",
@@ -1286,6 +1294,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "726b22023d1bfe4b38",
+      "title": "Inflation Rate: दो साल बाद 6% के पार पहुंची महंगाई, RBI की लिमिट टूटी, क्या अब बढ़ेगी आपकी EMI?",
+      "url": "https://theruralpress.in/business/india-retail-inflation-october-2026-rbi-rate-hike-emi-impact/",
+      "summary": "नई दिल्ली। देश में महंगाई ने एक बार फिर आम लोगों की चिंता बढ़ा दी है। अक्टूबर 2026 में खुदरा महंगाई दर बढ़कर 6.09% पर पहुंच गई है। करीब दो साल बाद महंगाई ने 6% का आंकड़ा पार किया है। इसके साथ ही यह भारतीय रिजर्व बैंक (RBI) की तय ऊपरी सीमा से भी आगे […]",
+      "published_at": "Thu, 12 Nov 2026 16:52:10 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
         },
         "candidate_categories": [
           "Economy & Employment"
@@ -1359,41 +1400,6 @@
         "candidate_categories": [
           "Economy & Employment",
           "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "bba905ed85d5b3e445",
-      "title": "El Niño link offers early warning of humid heat",
-      "url": "https://india.mongabay.com/2026/11/el-nino-link-offers-early-warning-of-humid-heat/",
-      "summary": "Manoj Borah is a welfare officer at a tea garden in Kamrup district in Assam. He says working outdoors in tea gardens and agricultural fields is becoming increasingly difficult. “While workers are used to daytime heat, the high temperature during the night is burning them out. It is difficult to rest at night, and this […]",
-      "published_at": "04 Nov 2026 16:32:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/04131558/AP26200486474284-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
         ]
       }
     }

@@ -1,16 +1,395 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-13T19:57:00.275950+00:00",
-  "input_count": 431,
-  "supplied_count": 200,
+  "prepared_at": "2026-11-14T00:59:10.202327+00:00",
+  "input_count": 399,
+  "supplied_count": 199,
   "source_mix": {
-    "independent_social": 117,
-    "established_or_other": 83,
+    "independent_social": 100,
+    "established_or_other": 99,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "bba905ed85d5b3e445",
+      "title": "El Niño link offers early warning of humid heat",
+      "url": "https://india.mongabay.com/2026/11/el-nino-link-offers-early-warning-of-humid-heat/",
+      "summary": "Manoj Borah is a welfare officer at a tea garden in Kamrup district in Assam. He says working outdoors in tea gardens and agricultural fields is becoming increasingly difficult. “While workers are used to daytime heat, the high temperature during the night is burning them out. It is difficult to rest at night, and this […]",
+      "published_at": "04 Nov 2026 16:32:47 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/04131558/AP26200486474284-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "181fa48996df756064",
+      "title": "BIM, Texas university to offer course on AI in Business from next year",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/bim-texas-university-to-offer-course-on-ai-in-business-from-next-year/article71698085.ece",
+      "summary": "",
+      "published_at": "Sat, 14 Nov 2026 00:44:59 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "0a81b842ce95a7fe30",
+      "title": "Take steps to control inflation, Anbumani Ramadoss tells State govt.",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/take-steps-to-control-inflation-anbumani-ramadoss-tells-state-govt/article71698789.ece",
+      "summary": "Poor and middle class families are facing severe hardship due to rising prices of essential food commodities, including rice, pulses and edible oils, says PMK leader",
+      "published_at": "Sat, 14 Nov 2026 00:21:32 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lbf1ha/article71699545.ece/alternates/LANDSCAPE_1200/DSC_2262.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "fe78ab8e545723a4e2",
+      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
+      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
+      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "66bf2f07638bb7a8d6",
+      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
+      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
+      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
+      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "746a82fc2cfcc40818",
+      "title": "How predictive analytics is reshaping everyday business decisions — what employers actually look for",
+      "url": "https://www.thehindu.com/education/how-predictive-analytics-is-reshaping-everyday-business-decisions-what-employers-actually-look-for/article71694757.ece",
+      "summary": "A major shift in the field is moving beyond merely forecasting an outcome to determining the right course of action. Rather than simply flagging customers likely to cancel a service, organisations now use those insights to build targeted retention strategies.",
+      "published_at": "Fri, 13 Nov 2026 00:19:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/zg3cxo/article71694852.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-12%20210330.png",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "1e45ca909d0278c52d",
+      "title": "Education lifts people out of poverty, but doesn’t guarantee quality jobs: data",
+      "url": "https://www.thehindu.com/education/education-lifts-people-out-of-poverty-but-doesnt-guarantee-quality-jobs-data/article71682529.ece",
+      "summary": "New World Bank and PLFS data show that education remains the most important route out of poverty. Yet young graduates are ten times as likely to be unemployed as young people who cannot read.",
+      "published_at": "Mon, 09 Nov 2026 19:26:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wwq86y/article71682610.ece/alternates/LANDSCAPE_1200/DSC4672.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4,
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "669bd3ad9289980330",
+      "title": "As wars reshape priorities, climate cooperation faces a test at the UN Climate Summit",
+      "url": "https://india.mongabay.com/2026/11/as-wars-reshape-priorities-climate-cooperation-faces-a-test-at-the-un-climate-summit/",
+      "summary": "When delegates from around the world gather in the Mediterranean resort town of Antalya in the Turkish Riviera for the annual, two-week United Nations climate summit (COP31) that begins on November 9, they meet at a time when wars and geopolitical rivalries are pushing governments to protect their immediate national interests even as rising temperatures, […]",
+      "published_at": "06 Nov 2026 12:23:58 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/06120734/signal-2026-11-06-12-03-39-562_002-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "78f76246d61f969b7c",
+      "title": "Delhi Pollution: महंगे पटाखे, महंगी सांसें: आखिर किसकी कीमत पर मना रहे हैं त्योहार?",
+      "url": "https://khabarlahariya.org/delhi-pollution-expensive-firecrackers-costly-breaths-at-whose-expense-are-we-celebrating-these-festivals/",
+      "summary": "दिवाली के बाद दिल्ली ही नहीं, वाराणसी, लखनऊ और गोरखपुर जैसे शहरों की हवा भी प्रदूषण से भर गई। पटाखों से कई लोग घायल हुए और एक 10 साल के…",
+      "published_at": "Thu, 12 Nov 2026 11:10:24 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "8e2d0691a75440e721",
+      "title": "Air pollution during Diwali & accidents: दिवाली और दिवाली के बाद दिल्ली का हाल, जाने दिवाली और प्रदूषण से जुड़ी घटनाओं के बारे में",
+      "url": "https://khabarlahariya.org/air-pollution-during-diwali-accidents-the-situation-in-delhi-during-and-after-diwali-learn-about-incidents-related-to-the-festival-and-pollution/",
+      "summary": "दिवाली की रात आसमान रंग-बिरंगी रोशनी से जगमगा उठा, लेकिन इस जश्न का धुआं अगले दिन लोगों के लिए परेशानी बन गया। पटाखों से निकले धुएं और बढ़ते प्रदूषण का…",
+      "published_at": "Tue, 10 Nov 2026 11:25:43 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
     {
       "raw_id": "f6d16abbc0a5eb6292",
       "title": "Delhi Pollution & Air Quality Index (AQI): सर्दियाँ शुरू होते ही बढ़ा दिल्ली में प्रदूषण, AQI पंहुचा बेहद ख़राब श्रेणी में",
@@ -276,45 +655,12 @@
       }
     },
     {
-      "raw_id": "dd094391abf9cd69c4",
-      "title": "South Africa’s proposed 20% online gambling tax heads for a February 2027 decision: What it means for players",
-      "url": "https://eastmojo.com/em-buzz/2026/11/12/south-africas-proposed-20-online-gambling-tax-heads-for-a-february-2027-decision-what-it-means-for-players/",
-      "summary": "South Africa’s online gambling market is heading into its most significant tax change in two decades. Finance Minister Enoch Godongwana confirmed in his Medium-Term Budget Policy Statement on 21 October 2026 that National Treasury is still working on a proposed national tax on online gambling, and that the final design will be announced in the […] The post South Africa’s proposed 20% online gambling tax heads for a February 2027 decision: What it means for players appeared first on EastMojo .",
-      "published_at": "Thu, 12 Nov 2026 11:52:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "81bde159ef5fa5b344",
-      "title": "Geopolitical shocks put energy security and clean energy transition in focus",
-      "url": "https://india.mongabay.com/2026/11/geopolitical-shocks-put-energy-security-and-clean-energy-transition-in-focus/",
-      "summary": "The wars disrupting global energy markets have exposed the strategic weakness of an economy built on fossil fuels. Countries dependent on imported oil and gas can find their growth, public finances and energy supplies hostage to conflicts thousands of kilometres away. A threatened shipping route or an interruption in supplies can quickly raise the cost […]",
-      "published_at": "13 Nov 2026 13:32:02 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/13123631/AP26316733211275-768x512.jpg",
+      "raw_id": "1e90c0fdfd13b164ac",
+      "title": "A native tarantula as a seasonal food",
+      "url": "https://india.mongabay.com/2026/11/a-native-tarantula-as-a-seasonal-food/",
+      "summary": "In the forest-fringe villages of Kamrup (rural) district, Assam, the emergence of a large, endemic tarantula signals the arrival of a seasonal food for the Rabha community. The Rabhas, also known as Ravas, are an Indigenous community that predominantly reside in Goalpara and Kamrup districts in western Assam, along with smaller settlements in other parts […]",
+      "published_at": "05 Nov 2026 13:18:17 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/05130838/Live-view-of-spider-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -334,760 +680,10 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 2,
-          "International & Geopolitics": 4
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "3f114918ebed868b5c",
-      "title": "‘We cannot hold peace talks at gunpoint’: Security build-up deepens distrust over dam",
-      "url": "https://india.mongabay.com/2026/11/we-cannot-hold-peace-talks-at-gunpoint-security-build-up-deepens-distrust-over-dam/",
-      "summary": "On the morning of October 23, men and women sat outside the closed shops of Yingkiong’s main market in Upper Siang district, Arunachal Pradesh, talking about ordinary things, even though life in the Siang valley has been anything but. The market was deserted on account of a bandh, following weeks of unrest over the Siang […]",
-      "published_at": "06 Nov 2026 13:19:12 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/06084117/20261023_120027-1-scaled-e1793934699708-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "bba905ed85d5b3e445",
-      "title": "El Niño link offers early warning of humid heat",
-      "url": "https://india.mongabay.com/2026/11/el-nino-link-offers-early-warning-of-humid-heat/",
-      "summary": "Manoj Borah is a welfare officer at a tea garden in Kamrup district in Assam. He says working outdoors in tea gardens and agricultural fields is becoming increasingly difficult. “While workers are used to daytime heat, the high temperature during the night is burning them out. It is difficult to rest at night, and this […]",
-      "published_at": "04 Nov 2026 16:32:47 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/04131558/AP26200486474284-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 1,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "181fa48996df756064",
-      "title": "BIM, Texas university to offer course on AI in Business from next year",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bim-texas-university-to-offer-course-on-ai-in-business-from-next-year/article71698085.ece",
-      "summary": "",
-      "published_at": "Sat, 14 Nov 2026 00:44:59 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "0a81b842ce95a7fe30",
-      "title": "Take steps to control inflation, Anbumani Ramadoss tells State govt.",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/take-steps-to-control-inflation-anbumani-ramadoss-tells-state-govt/article71698789.ece",
-      "summary": "Poor and middle class families are facing severe hardship due to rising prices of essential food commodities, including rice, pulses and edible oils, says PMK leader",
-      "published_at": "Sat, 14 Nov 2026 00:21:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lbf1ha/article71699545.ece/alternates/LANDSCAPE_1200/DSC_2262.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "002931ce4a7a2e428d",
-      "title": "Court rejects police plea to cancel bail of CPI(M) workers in ED officials’ attack case",
-      "url": "https://www.thehindu.com/news/national/kerala/court-rejects-police-plea-to-cancel-bail-of-cpim-workers-in-ed-officials-attack-case/article71698774.ece",
-      "summary": "The prosecution argued that the accused persons violated their bail conditions by allegedly participating in the Onam celebrations held at the Museum police station",
-      "published_at": "Fri, 13 Nov 2026 22:27:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "746a82fc2cfcc40818",
-      "title": "How predictive analytics is reshaping everyday business decisions — what employers actually look for",
-      "url": "https://www.thehindu.com/education/how-predictive-analytics-is-reshaping-everyday-business-decisions-what-employers-actually-look-for/article71694757.ece",
-      "summary": "A major shift in the field is moving beyond merely forecasting an outcome to determining the right course of action. Rather than simply flagging customers likely to cancel a service, organisations now use those insights to build targeted retention strategies.",
-      "published_at": "Fri, 13 Nov 2026 00:19:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/zg3cxo/article71694852.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-12%20210330.png",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "1e45ca909d0278c52d",
-      "title": "Education lifts people out of poverty, but doesn’t guarantee quality jobs: data",
-      "url": "https://www.thehindu.com/education/education-lifts-people-out-of-poverty-but-doesnt-guarantee-quality-jobs-data/article71682529.ece",
-      "summary": "New World Bank and PLFS data show that education remains the most important route out of poverty. Yet young graduates are ten times as likely to be unemployed as young people who cannot read.",
-      "published_at": "Mon, 09 Nov 2026 19:26:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wwq86y/article71682610.ece/alternates/LANDSCAPE_1200/DSC4672.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "007acfb8aa0739e436",
-      "title": "ICC Men’s Cricket World Cup 2027: मेन्स क्रिकेट वनडे (ODI) वर्ल्ड कप 2027 का शेड्यूल (schedule) जारी, 10 अक्टूबर को भारत-पाकिस्तान का मुकाबला",
-      "url": "https://khabarlahariya.org/icc-mens-cricket-world-cup-2027-schedule-for-the-mens-odi-world-cup-2027-released-india-vs-pakistan-match-set-for-october-10/",
-      "summary": "क्रिकेट प्रेमियों का इंतजार खत्म हो गया है। ICC मेन्स वनडे वर्ल्ड कप 2027 (Men’s Cricket World Cup 2027) का शेड्यूल जारी कर दिया गया है। टूर्नामेंट की शुरुआत 2…",
-      "published_at": "Mon, 09 Nov 2026 06:39:09 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 4
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "3fe7bd13af5564c93f",
-      "title": "Lalremsiami receives Arjuna Award, scripts history for Mizoram",
-      "url": "https://eastmojo.com/mizoram/2026/11/13/lalremsiami-receives-arjuna-award-scripts-history-for-mizoram/",
-      "summary": "Screenshot \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/11/IMG_6297.jpg?fit=780%2C440&ssl=1\" /> Aizawl: Indian women’s hockey player and Olympian Lalremsiami Hmar received the prestigious Arjuna Award 2025 on Friday, November 13. She is the first sportsperson from the state to receive the national sporting honour. The Ministry of Youth Affairs and Sports had announced her selection on August 18, 2026, among 17 sportspersons chosen for the award […] The post Lalremsiami receives Arjuna Award, scripts history for Mizoram appeared first on EastMojo .",
-      "published_at": "Fri, 13 Nov 2026 07:34:00 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Sports": 2
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "fda0f6bd1addddb896",
-      "title": "Mohit Yadav Wins Bronze at Commonwealth Karate Championship in Glasgow",
-      "url": "https://www.thehindu.com/sport/mohit-yadav-wins-bronze-at-commonwealth-karate-championship-in-glasgow/article71696759.ece",
-      "summary": "Mohit has been a regular member of the Indian team in the Team Kumite event for the last four years",
-      "published_at": "Fri, 13 Nov 2026 12:05:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/jydt63/article71696805.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-13%20at%2011.56.57.jpeg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "dff566350ea97febe4",
-      "title": "Kumamoto Masters Japan badminton: Lakshya Sen enters semifinals, Srikanth bows out",
-      "url": "https://www.thehindu.com/sport/kumamoto-masters-japan-super-500-badminton-tournament-on-november-13-2026/article71696590.ece",
-      "summary": "World No. 13 Lakshya, who needs to break into the top eight of the BWF World Tour rankings to qualify for the season-ending tournament in China, outwitted Japan's Yushi Tanaka 21-16, 21-15 in a 40-minute quarterfinal",
-      "published_at": "Fri, 13 Nov 2026 10:39:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6kw4sy/article71696605.ece/alternates/LANDSCAPE_1200/20260923108L.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "b6ee88ce6e80686fa1",
-      "title": "Ploughing through the red tape: Inside Ambati Rayudu’s mission to fix Hyderabad cricket",
-      "url": "https://www.thehindu.com/sport/cricket/ploughing-through-the-red-tape-inside-ambati-rayudus-mission-to-fix-hyderabad-cricket/article71699292.ece",
-      "summary": "In the six months since Ambati Rayudu promised to change the culture, the former India batter has been spotted pitch-side at dawn, at a soil vendor’s door in the rain and, by his own count, five to seven kilos lighter",
-      "published_at": "Fri, 13 Nov 2026 22:34:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6zn9ys/article71699228.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-06%20at%2017.50.12.jpeg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "165a5102611d9fcb00",
-      "title": "President Murmu gives away National Sports Awards; Lalremsiami first from Mizoram to receive Arjuna Award",
-      "url": "https://www.thehindu.com/sport/president-murmu-gives-away-national-sports-awards-lalremsiami-first-from-mizoram-to-receive-arjuna-award/article71697423.ece",
-      "summary": "In all, 17 Arjuna awardees were chosen; no Khel Ratna for first time since 2014; three coaches win Dronacharya award",
-      "published_at": "Fri, 13 Nov 2026 16:46:23 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qw5m27/article71697477.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000205B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "aae116a4e47b3ad0d3",
-      "title": "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
-      "url": "https://www.thehindu.com/sport/cricket/australia-cricket-captain-describes-khawajas-sandpapergate-claim-as-utter-nonsense/article71696379.ece",
-      "summary": "Australia captain Pat Cummins has rejected claims from ex-teammate Usman Khawaja about knowing of ball tampering plan in the 2018 Sandpapergate scandal",
-      "published_at": "Fri, 13 Nov 2026 14:25:50 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/v7gooo/article71696380.ece/alternates/LANDSCAPE_1200/2026-11-13T003005Z_680998989_UP1EMBD01E3D9_RTRMADP_3_CRICKET-SANDPAPERGATE.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "c7053908dd38b7b59e",
-      "title": "Nations League: Harry Kane scores for England on his record-breaking night; Italy beats France",
-      "url": "https://www.thehindu.com/sport/football/nations-league-harry-kane-scores-for-england-on-his-record-breaking-night-italy-beats-france/article71696544.ece",
-      "summary": "If England is to top the group, it will have to end Spain's 100% record in the competition and break the Spanish side’s unbeaten run that now stretches 43 matches after victory against Czech Republic",
-      "published_at": "Fri, 13 Nov 2026 10:18:35 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uxfjkn/article71696550.ece/alternates/LANDSCAPE_1200/APTOPIX_England_Croatia_Nations_League_Soccer__22_1.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "5616510dfbbfa0f010",
-      "title": "Saqib takes 7 wickets on debut before rain disrupts Pakistan-Sri Lanka first cricket Test",
-      "url": "https://www.thehindu.com/sport/cricket/saqib-takes-7-wickets-on-debut-before-rain-disrupts-pakistan-sri-lanka-first-cricket-test/article71695356.ece",
-      "summary": "Saqib’s dream figures of 7-130 on debut helped Sri Lanka collapse to 446 all out after resuming on a formidable 404-4",
-      "published_at": "Fri, 13 Nov 2026 01:31:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1muv2d/article71695385.ece/alternates/LANDSCAPE_1200/Pakistan_Sri_Lanka_Cricket_9_572.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "61aec1d599a9fb47c0",
-      "title": "Extra pace is ‘good’ but Nabi backing his domestic skills to succeed in international cricket",
-      "url": "https://www.thehindu.com/sport/cricket/extra-pace-is-good-but-nabi-backing-his-domestic-skills-to-succeed-in-international-cricket/article71695323.ece",
-      "summary": "Nabi has got the opportunity to bowl in the nets to the trio of Shubman Gill, Virat Kohli and Rohit Sharma on the tour of New Zealand; he bowled to them extensively on Thursday",
-      "published_at": "Fri, 13 Nov 2026 00:08:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dxqd3i/article71695328.ece/alternates/LANDSCAPE_1200/AP11_07_2026_000037B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12,
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "93b6cfc23736175a18",
-      "title": "Usha named as Ice Hockey Association of India representative",
-      "url": "https://www.thehindu.com/sport/usha-named-as-ice-hockey-association-of-india-representative/article71695197.ece",
-      "summary": "The decision means Usha, who has already written to the International Olympic Committee claiming alleged violations during the SOM elections, has clearly decided not to go down without a fight",
-      "published_at": "Thu, 12 Nov 2026 23:01:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6hp9cg/article71695191.ece/alternates/LANDSCAPE_1200/image%207.jpeg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Sports": 12,
-          "International & Geopolitics": 1
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "4782505335c73e9365",
-      "title": "Michael Carrick sacked as Manchester United manager after club’s worst start to a Premier League season",
-      "url": "https://www.thehindu.com/sport/football/manchester-united-sack-michael-carrick-mauricio-pochettino-linked/article71693406.ece",
-      "summary": "Manchester United are linked with a move to sign U.S. men’s coach Mauricio Pochettino to replace Carrick",
-      "published_at": "Thu, 12 Nov 2026 16:46:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/86lzkv/article71693426.ece/alternates/LANDSCAPE_1200/2026-11-12T104008Z_629101867_RC2IGNA252QH_RTRMADP_3_SOCCER-ENGLAND-MUN.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
+          "Environment, Health & Science"
         ]
       }
     },
@@ -1360,6 +956,402 @@
         "candidate_categories": [
           "Environment, Health & Science",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ce5e84ffc7c68f6982",
+      "title": "Watch | Maratha reservation stir | What are its implications of the OBC backlash?",
+      "url": "https://www.thehindu.com/videos/watch-maratha-reservation-stir-what-are-its-implications-of-the-obc-backlash/article67576436.ece",
+      "summary": "In this episode of Talking Politics, we discuss the implications of the OBC backlash over the Maratha reservation stir and its impact on the domestic politics of the state.",
+      "published_at": "Wed, 29 Jul 2026 12:07:39 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/957hu8/article67576418.ece/alternates/LANDSCAPE_1200/Nistula%20Thumb%202.png",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa2d94dc291e5880c2",
+      "title": "The controversy over the proposed Mekedatu water project",
+      "url": "https://www.thehindu.com/news/national/karnataka/the-controversy-over-the-proposed-mekedatu-water-project/article65252631.ece",
+      "summary": "Why is the drinking water project a source of confrontation? Why are both parties unable to come to a settlement?",
+      "published_at": "Fri, 19 Jun 2026 14:08:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yxu5f1/article65252955.ece/alternates/LANDSCAPE_1200/IMG_MEKEDATU_RESERVOIR_S_4_1_MI8RGJLQ.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "5a537d850bb260c224",
+      "title": "Headline numbers mask AGP’s steady slide despite 10 years in power",
+      "url": "https://www.thehindu.com/elections/assam-assembly/headline-numbers-mask-agps-steady-slide-despite-10-years-in-power/article70777121.ece",
+      "summary": "BJP’s junior ally in Assam gets the same number of seats to contest as last time, but a granular analysis reveals slipping ground",
+      "published_at": "Thu, 16 Apr 2026 15:09:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/utn8oa/article70777115.ece/alternates/LANDSCAPE_1200/20260323550L.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "cf4c55e5970c63b712",
+      "title": "A ‘ballerina’ from Eurosiberia finds a new stage in India",
+      "url": "https://www.thehindu.com/news/national/two-youngsters-from-chennai-witness-a-rare-dance-of-migration-by-a-french-ballerina-at-nemmeli-salt-pans/article70700788.ece",
+      "summary": "During winter, in India, Demoiselle Crane sightings largely happen in Gujarat and Rajasthan. On February 28, 2026, the first sighting of a Demoiselle Crane was reported from Chennai Metropolitan Area. The only other records of Demoiselle Crane sighting from Tamil Nadu comes from Vijayanarayanam Tank in Tirunelveli. Naman Bora and Amoggh Chatty found the vagrant bird feeding in the reeds at Nemmeli salt pans near Chennai; the former would return to the spot the next three days and find the bird tenaciously clinging to this feeding spot",
+      "published_at": "Thu, 05 Mar 2026 21:14:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yzpw8e/article70702560.ece/alternates/LANDSCAPE_1200/08dc%20%20Demoiselle%20Crane%20Naman.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "007acfb8aa0739e436",
+      "title": "ICC Men’s Cricket World Cup 2027: मेन्स क्रिकेट वनडे (ODI) वर्ल्ड कप 2027 का शेड्यूल (schedule) जारी, 10 अक्टूबर को भारत-पाकिस्तान का मुकाबला",
+      "url": "https://khabarlahariya.org/icc-mens-cricket-world-cup-2027-schedule-for-the-mens-odi-world-cup-2027-released-india-vs-pakistan-match-set-for-october-10/",
+      "summary": "क्रिकेट प्रेमियों का इंतजार खत्म हो गया है। ICC मेन्स वनडे वर्ल्ड कप 2027 (Men’s Cricket World Cup 2027) का शेड्यूल जारी कर दिया गया है। टूर्नामेंट की शुरुआत 2…",
+      "published_at": "Mon, 09 Nov 2026 06:39:09 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 4
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "3fe7bd13af5564c93f",
+      "title": "Lalremsiami receives Arjuna Award, scripts history for Mizoram",
+      "url": "https://eastmojo.com/mizoram/2026/11/13/lalremsiami-receives-arjuna-award-scripts-history-for-mizoram/",
+      "summary": "Screenshot \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2026/11/IMG_6297.jpg?fit=780%2C440&ssl=1\" /> Aizawl: Indian women’s hockey player and Olympian Lalremsiami Hmar received the prestigious Arjuna Award 2025 on Friday, November 13. She is the first sportsperson from the state to receive the national sporting honour. The Ministry of Youth Affairs and Sports had announced her selection on August 18, 2026, among 17 sportspersons chosen for the award […] The post Lalremsiami receives Arjuna Award, scripts history for Mizoram appeared first on EastMojo .",
+      "published_at": "Fri, 13 Nov 2026 07:34:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Sports": 2
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "fda0f6bd1addddb896",
+      "title": "Mohit Yadav Wins Bronze at Commonwealth Karate Championship in Glasgow",
+      "url": "https://www.thehindu.com/sport/mohit-yadav-wins-bronze-at-commonwealth-karate-championship-in-glasgow/article71696759.ece",
+      "summary": "Mohit has been a regular member of the Indian team in the Team Kumite event for the last four years",
+      "published_at": "Fri, 13 Nov 2026 12:05:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jydt63/article71696805.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-13%20at%2011.56.57.jpeg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 13
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "dff566350ea97febe4",
+      "title": "Kumamoto Masters Japan badminton: Lakshya Sen enters semifinals, Srikanth bows out",
+      "url": "https://www.thehindu.com/sport/kumamoto-masters-japan-super-500-badminton-tournament-on-november-13-2026/article71696590.ece",
+      "summary": "World No. 13 Lakshya, who needs to break into the top eight of the BWF World Tour rankings to qualify for the season-ending tournament in China, outwitted Japan's Yushi Tanaka 21-16, 21-15 in a 40-minute quarterfinal",
+      "published_at": "Fri, 13 Nov 2026 10:39:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/6kw4sy/article71696605.ece/alternates/LANDSCAPE_1200/20260923108L.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 13
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "b6ee88ce6e80686fa1",
+      "title": "Ploughing through the red tape: Inside Ambati Rayudu’s mission to fix Hyderabad cricket",
+      "url": "https://www.thehindu.com/sport/cricket/ploughing-through-the-red-tape-inside-ambati-rayudus-mission-to-fix-hyderabad-cricket/article71699292.ece",
+      "summary": "In the six months since Ambati Rayudu promised to change the culture, the former India batter has been spotted pitch-side at dawn, at a soil vendor’s door in the rain and, by his own count, five to seven kilos lighter",
+      "published_at": "Fri, 13 Nov 2026 22:34:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/6zn9ys/article71699228.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-06%20at%2017.50.12.jpeg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "165a5102611d9fcb00",
+      "title": "President Murmu gives away National Sports Awards; Lalremsiami first from Mizoram to receive Arjuna Award",
+      "url": "https://www.thehindu.com/sport/president-murmu-gives-away-national-sports-awards-lalremsiami-first-from-mizoram-to-receive-arjuna-award/article71697423.ece",
+      "summary": "In all, 17 Arjuna awardees were chosen; no Khel Ratna for first time since 2014; three coaches win Dronacharya award",
+      "published_at": "Fri, 13 Nov 2026 16:46:23 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qw5m27/article71697477.ece/alternates/LANDSCAPE_1200/PTI11_13_2026_000205B.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "aae116a4e47b3ad0d3",
+      "title": "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+      "url": "https://www.thehindu.com/sport/cricket/australia-cricket-captain-describes-khawajas-sandpapergate-claim-as-utter-nonsense/article71696379.ece",
+      "summary": "Australia captain Pat Cummins has rejected claims from ex-teammate Usman Khawaja about knowing of ball tampering plan in the 2018 Sandpapergate scandal",
+      "published_at": "Fri, 13 Nov 2026 14:25:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/v7gooo/article71696380.ece/alternates/LANDSCAPE_1200/2026-11-13T003005Z_680998989_UP1EMBD01E3D9_RTRMADP_3_CRICKET-SANDPAPERGATE.JPG",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "c7053908dd38b7b59e",
+      "title": "Nations League: Harry Kane scores for England on his record-breaking night; Italy beats France",
+      "url": "https://www.thehindu.com/sport/football/nations-league-harry-kane-scores-for-england-on-his-record-breaking-night-italy-beats-france/article71696544.ece",
+      "summary": "If England is to top the group, it will have to end Spain's 100% record in the competition and break the Spanish side’s unbeaten run that now stretches 43 matches after victory against Czech Republic",
+      "published_at": "Fri, 13 Nov 2026 10:18:35 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/uxfjkn/article71696550.ece/alternates/LANDSCAPE_1200/APTOPIX_England_Croatia_Nations_League_Soccer__22_1.jpg",
+      "suggested_category": "Sports",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Sports": 12
+        },
+        "candidate_categories": [
+          "Sports"
         ]
       }
     }

@@ -1,35 +1,64 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-18T07:40:29.818376+00:00",
-  "input_count": 1398,
+  "prepared_at": "2026-11-18T17:22:31.042453+00:00",
+  "input_count": 444,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 129,
-    "established_or_other": 71,
+    "independent_social": 130,
+    "established_or_other": 70,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "6d3f5bb3a37447c8b2",
-      "title": "KKR IPL 2027 Players Retention List: Full list of retained and released players of Kolkata Knight Riders",
-      "url": "https://indianexpress.com/article/sports/cricket/kkr-retained-released-players-ipl-2027-kolkata-knight-riders-full-list-10965877/",
-      "summary": "",
-      "published_at": "Tue, 17 Nov 2026 13:18:01 +0000",
-      "image_url": "https://images.indianexpress.com/2026/11/KKR-IPL.jpg",
+      "raw_id": "4b4dcdea08099bcb74",
+      "title": "Ayodhya new: अयोध्या में घर के ऊपर झुका बिजली का खंभा, हादसे के डर में जी रहे लोग",
+      "url": "https://khabarlahariya.org/ayodhya-news-electricity-pole-leans-over-a-house-in-ayodhya-residents-live-in-fear-of-an-accident/",
+      "summary": "अयोध्या के डॉ. राम मनोहर लोहिया वार्ड संख्या 41 के कश्मीरी टोला मोहल्ले में बिजली के खंभे जर्जर हालत में हैं। घरों को छूते बिजली के तारों से स्थानीय लोगों…",
+      "published_at": "Fri, 13 Nov 2026 07:35:43 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "dbb5659a21d2c87f64",
+      "title": "LSG retains 18 players, releases seven; ₹47.45 crore available for IPL 2027 auction",
+      "url": "https://www.thehindu.com/sport/cricket/ipl-2027-lsg-lucknow-super-giants-retention-list-players-retained-full-list/article71715075.ece",
+      "summary": "LSG has retained 18 players and released seven players ahead of the IPL 2027 auction.",
+      "published_at": "Wed, 18 Nov 2026 17:46:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nzw75h/article70866245.ece/alternates/LANDSCAPE_1200/2026-04-15T160009Z_328336853_UP1EM4F18G896_RTRMADP_3_CRICKET-IPL-RCB-LSG.JPG",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
+        "id": "the-hindu-sport",
+        "name": "The Hindu - Sport",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "Indian Express Group"
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 28,
-        "observed_report_count": 7,
+        "observed_report_count": 10,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "mainstream"
@@ -45,187 +74,107 @@
       },
       "related_reports": [
         {
-          "title": "RR IPL 2027 Players Retention List: Full list of retained and released players of Rajasthan Royals",
-          "url": "https://indianexpress.com/article/sports/cricket/rr-ipl-2027-players-retention-list-full-list-of-retained-and-released-players-of-rajasthan-royals-10966137/",
+          "title": "CSK retains 19 players, release 11; has ₹28.05 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/csk-retention-list-team-retains-19-players-releases-11-ipl-2027/article71714769.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "GT IPL 2027 Players Retention List: Full list of retained and released players of Gujarat Titans",
-          "url": "https://indianexpress.com/article/sports/cricket/gt-retained-released-players-ipl-2027-gujarat-titans-full-list-10965729/",
+          "title": "RCB retains 20 players, releases 6; has ₹14.15 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/ipl-2027-rcb-retention-list-retains-20-players-releases-6-full-list/article71714907.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "SRH IPL 2027 Players Retention List: Full list of retained and released players of Sunrisers Hyderabad",
-          "url": "https://indianexpress.com/article/sports/cricket/srh-retained-released-players-ipl-2027-sunrisers-hyderabad-full-list-10966132/",
+          "title": "SRH retains 18 players, releases 10; ₹40.15 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/ipl-2027-auction-retention-list-srh-sunrisers-hyderabad-players-released-retained-full-list/article71714956.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "PBKS IPL 2027 Players Retention List: Full list of retained and released players of Punjab Kings",
-          "url": "https://indianexpress.com/article/sports/cricket/pbks-retained-released-players-ipl-2027-punjab-kings-full-list-10965751/",
+          "title": "PBKS retains 19 players, releases seven players; ₹18.6 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/ipl-2027-auction-pbks-punjab-kings-retention-list-players-released-retained/article71715293.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "DC IPL 2027 Players Retention List: Full list of retained and released players of Delhi Capitals",
-          "url": "https://indianexpress.com/article/sports/cricket/dc-retained-released-players-ipl-2027-delhi-capitals-full-list-10966140/",
+          "title": "Rajasthan Royals retains 19 players, releases nine; ₹27.05 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/rajasthan-royals-retained-players-released-full-list-ipl-auction/article71715610.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "MI IPL 2027 Players Retention List: Full list of retained and released players of Mumbai Indians",
-          "url": "https://indianexpress.com/article/sports/cricket/mi-retained-released-players-ipl-2027-mumbai-indians-full-list-10966121/",
+          "title": "Mumbai Indian retains 16 players, releases 13; has ₹32.60 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/mumbai-indians-mi-retained-and-released-players-full-list-ipl-auction-2027-latest-news/article71715545.ece",
           "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "a22d201c752e6cda71",
-      "title": "Gold Rate Today, November 18: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-      "url": "https://indianexpress.com/article/india/gold-rate-today-november-18-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10967792/",
-      "summary": "",
-      "published_at": "Wed, 18 Nov 2026 05:27:49 +0000",
-      "image_url": "https://images.indianexpress.com/2026/11/gold-rate-1.png",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-india",
-        "name": "The Indian Express — India",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 24,
-        "observed_report_count": 4,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      },
-      "related_reports": [
-        {
-          "title": "Gold Rate Today, November 13: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-november-13-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10961212/",
-          "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "Gold Rate Today, November 14: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-november-14-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10962620/",
+          "title": "DC retains 16 players, releases 12; has ₹39.5 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/delhi-capitals-dc-retained-and-released-players-2027-ipl-auction-full-list-latest-news/article71714930.ece",
           "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
         },
         {
-          "title": "Gold Rate Today, November 17: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
-          "url": "https://indianexpress.com/article/india/gold-rate-today-november-17-check-18-22-and-24-carat-gold-prices-in-chennai-mumbai-delhi-kolkata-and-other-cities-10966191/",
+          "title": "Gujarat Titans retains 22 players, releases six; has ₹8.75 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/gujarat-titans-gt-retained-and-released-players-full-list-2027-ipl-auction-sports-latest-news/article71715025.ece",
           "source": {
-            "id": "indian-express-india",
-            "name": "The Indian Express — India",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
-            "ownership": "Indian Express Group"
+            "ownership": "The Hindu Group"
           },
           "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "7c488abb7b54f514be",
-      "title": "Career guidance for children: how to spot their strengths",
-      "url": "https://www.thehindu.com/videos/webinars/career-guidance-for-children-how-to-spot-their-strengths/article71714796.ece",
-      "summary": "Parents should create a safe, supportive environment where the child excels according to their skills and talents and explores various opportunities. As careers in the future are unpredictable, the focus should be on building strong foundational skills and willingness to learn throughout their life.",
-      "published_at": "Wed, 18 Nov 2026 12:59:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/g3wsh2/article71714792.ece/alternates/LANDSCAPE_1200/THG%20-%20Sustainable%20Business%201920%20x%201080%2012.png",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8,
-          "Environment, Health & Science": 1
         },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
         {
-          "title": "Career guidance for children: how to spot their strengths",
-          "url": "https://www.thehindu.com/education/career-guidance-for-children-how-to-spot-their-strengths/article71665268.ece",
+          "title": "KKR retains 17 players, releases 12; has ₹41.65 crore available for IPL 2027 auction",
+          "url": "https://www.thehindu.com/sport/cricket/kolkata-knight-riders-kkr-retained-and-released-players-full-list-ipl-auction-2027-latest-news/article71715189.ece",
           "source": {
-            "id": "the-hindu-education",
-            "name": "The Hindu - Education",
+            "id": "the-hindu-sport",
+            "name": "The Hindu - Sport",
             "type": "mainstream",
             "selection_group": "established",
             "ownership": "The Hindu Group"
@@ -280,371 +229,6 @@
           "social_attention": null
         }
       ]
-    },
-    {
-      "raw_id": "ab0d49bfb067820d4f",
-      "title": "NEET PG 2026 round 2 seat allotment result delayed",
-      "url": "https://indianexpress.com/article/education/neet-pg-counselling-2026-round-2-seat-allotment-result-declared-direct-link-check-mcc-nic-in-10964895/",
-      "summary": "",
-      "published_at": "Mon, 16 Nov 2026 06:55:25 +0000",
-      "image_url": "https://images.indianexpress.com/2026/11/NEET-PG-2026-Counselling.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 8
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "NEET PG 2026 Round 1 seat allotment result on October 24",
-          "url": "https://indianexpress.com/article/education/neet-pg-2026-round-1-seat-allotment-result-on-october-24-10933496/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "8e90a87df5ef801c64",
-      "title": "CBSE Class 10, 12 Practical Exams Date Sheet 2027: Check schedule for regular schools",
-      "url": "https://indianexpress.com/article/education/cbse-class-10-12-practical-exam-date-sheet-2027-marks-distribution-10953660/",
-      "summary": "",
-      "published_at": "Fri, 06 Nov 2026 12:34:13 +0000",
-      "image_url": "https://images.indianexpress.com/2026/09/ch1739366.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-education",
-        "name": "The Indian Express - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "CBSE Practical Exams Date Sheet 2027: Schedule announced for winter-bound schools",
-          "url": "https://indianexpress.com/article/education/cbse-class-10th-12th-practical-exam-date-sheet-2027-announced-winter-bound-schools-complete-schedule-10952535/",
-          "source": {
-            "id": "indian-express-education",
-            "name": "The Indian Express - Education",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "96e3aba7606a07a283",
-      "title": "India Vs New Zealand, 5th ODI: IND beat NZ by 22 runs in Mount Maunganui",
-      "url": "https://indianexpress.com/article/sports/cricket/ind-vs-nz-5th-odi-live-score-india-vs-new-zealand-cricket-match-today-bay-oval-mount-maunganui-10963413/",
-      "summary": "",
-      "published_at": "Sun, 15 Nov 2026 00:30:47 +0000",
-      "image_url": "https://images.indianexpress.com/2026/11/India-vs-New-Zealand_5th-ODI-copy.jpg.jpeg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "indian-express-sports",
-        "name": "The Indian Express - Sports",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "Indian Express Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "India vs New Zealand highlights, 4th ODI: NZ beat IND by 244 runs in Mount Maunganui",
-          "url": "https://indianexpress.com/article/sports/cricket/india-vs-new-zealand-4th-odi-live-score-rohit-sharma-virat-kohli-mount-maunganui-10960836/",
-          "source": {
-            "id": "indian-express-sports",
-            "name": "The Indian Express - Sports",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "Indian Express Group"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "e8cdd2916a2e378d46",
-      "title": "IPL 2027 MI Retention List: हार्दिक पंड्या बाहर, अर्शदीप की एंट्री, मुंबई इंडियंस की रिटेन और रिलीज खिलाड़ियों की लिस्ट",
-      "url": "https://www.jansatta.com/khel/ipl-2027-mumbai-indians-retained-released-players-list-rohit-sharma-tilak-varma-surya-kumar-yadav-jasprit-bumrah/4786840/",
-      "summary": "",
-      "published_at": "2026-11-17T16:15:00+05:30",
-      "image_url": "https://images.jansatta.com/2026/05/MI2026E-1.jpg",
-      "suggested_category": "Sports",
-      "requires_verification": true,
-      "priority_discovery": false,
-      "source": {
-        "id": "jansatta-hindi",
-        "name": "Jansatta (Hindi)",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Indian Express Pvt. Limited",
-        "language": "Hindi"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 2,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      },
-      "related_reports": [
-        {
-          "title": "IPL 2027 PBKS Retention List: हार्दिक पंड्या की एंट्री, पंजाब किंग्स के रिटेन और रिलीज खिलाड़ियों की लिस्ट",
-          "url": "https://www.jansatta.com/khel/ipl-2027-punjab-kings-retained-released-players-list-shreyas-iyer-hardik-pandya-prabhsimran-singh-priyansh-arya/4786859/",
-          "source": {
-            "id": "jansatta-hindi",
-            "name": "Jansatta (Hindi)",
-            "type": "mainstream",
-            "selection_group": "established",
-            "ownership": "The Indian Express Pvt. Limited",
-            "language": "Hindi"
-          },
-          "social_attention": null
-        }
-      ]
-    },
-    {
-      "raw_id": "4eaefde6f60b6d4891",
-      "title": "Banda News: एक महीने से टूटी हुई पाइपलाइन, पीडब्ल्यूडी विभाग और जल निगम के बीच फंसा मामला",
-      "url": "https://khabarlahariya.org/banda-news-pipeline-broken-for-a-month-issue-stuck-between-pwd-department-and-jal-nigam/",
-      "summary": "बांदा ज़िले के दोहतरा गाँव में एक महीने से टूटी हुई पाइपलाइन के कारण महिलाओं को दूर से चल कर पानी लाना पढ़ रहा है, जिसके कारण उनकी कठनाईयाँ बढ़…",
-      "published_at": "Sat, 14 Nov 2026 10:00:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "ffc451a98a5d25c8b4",
-      "title": "मध्य प्रदेश: जंगल से थोड़ी दूर, बचपन से थोड़ी दूर – रुबीना का अनुभव",
-      "url": "https://khabarlahariya.org/madhya-pradesh-a-short-distance-from-the-forest-a-short-distance-from-childhood-rubinas-experience/",
-      "summary": "रुबीना मध्य प्रदेश के पन्ना जिला के छोटे से गांव अमरावन की रहने वाली है। रुबीना का बचपन जंगल में बीता लेकिन 2015 में विस्थापन की वजह से उसे जंगल…",
-      "published_at": "Sat, 14 Nov 2026 08:10:34 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "fbc1577a73a66301e7",
-      "title": "Panna: फसल बचाने के लिए रातभर जागते हैं किसान, जानिए कैसे करते हैं जंगली जानवरों से बचाव",
-      "url": "https://khabarlahariya.org/panna-farmers-stay-awake-all-night-to-protect-their-crops-find-out-how-they-safeguard-them-from-wild-animals/",
-      "summary": "जंगल के किनारे खेती करने वाले किसानों की फसलों को जंगली जानवर नुकसान पहुंचाते हैं। ऐसे में किसान खेतों के चारों ओर लकड़ी की बाड़ लगाते हैं और रात में…",
-      "published_at": "Sat, 14 Nov 2026 05:30:26 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "22a6a4c64bc73af8d8",
-      "title": "Chhath Puja 2026: छठ में क्यों खास है मिट्टी का हाथी? कोसी भरने की अनोखी परंपरा",
-      "url": "https://khabarlahariya.org/chhath-puja-2026-why-is-the-earthen-elephant-significant-during-chhath-the-unique-tradition-of-kosi-bharna/",
-      "summary": "छठ महापर्व में डूबते और उगते सूरज को अर्घ्य देने की परंपरा तो आपने देखी होगी, लेकिन क्या आपने कभी कोसी भरने की रस्म में मिट्टी के इस हाथी को…",
-      "published_at": "Fri, 13 Nov 2026 11:37:05 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2bec5d3cfcb6b40ce5",
-      "title": "मध्य प्रदेश में कुपोषण की चिंता: पांच साल तक के 40.72% बच्चे लंबाई में कमी के शिकार, एक साल में बढ़े मामले",
-      "url": "https://khabarlahariya.org/concern-over-malnutrition-in-madhya-pradesh-40-72-of-children-under-five-suffer-from-stunted-growth-cases-have-increased-over-the-past-year/",
-      "summary": "बच्चों का बचपन उनकी सेहत और सही पोषण की नींव होता है, लेकिन मध्य प्रदेश में बड़ी संख्या में बच्चे इसी नींव की कमी से जूझ रहे हैं। मध्य प्रदेश…",
-      "published_at": "Fri, 13 Nov 2026 10:33:01 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "4b4dcdea08099bcb74",
-      "title": "Ayodhya new: अयोध्या में घर के ऊपर झुका बिजली का खंभा, हादसे के डर में जी रहे लोग",
-      "url": "https://khabarlahariya.org/ayodhya-news-electricity-pole-leans-over-a-house-in-ayodhya-residents-live-in-fear-of-an-accident/",
-      "summary": "अयोध्या के डॉ. राम मनोहर लोहिया वार्ड संख्या 41 के कश्मीरी टोला मोहल्ले में बिजली के खंभे जर्जर हालत में हैं। घरों को छूते बिजली के तारों से स्थानीय लोगों…",
-      "published_at": "Fri, 13 Nov 2026 07:35:43 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
     },
     {
       "raw_id": "0fc61c7d568c5bfad4",
@@ -1285,12 +869,215 @@
       }
     },
     {
-      "raw_id": "81f067d5a3a6bf0dce",
-      "title": "When does the 24-hour countdown begin after arrest? Supreme Court answers",
-      "url": "https://www.thehindu.com/news/national/when-does-the-24-hour-countdown-begin-after-arrest-supreme-court-answers/article71714859.ece",
-      "summary": "The Supreme Court ruled that the 24-hour custody limit under Article 22(2) of the Indian Constitution begins when a person’s liberty is curtailed during detention, not from the formal arrest",
-      "published_at": "Wed, 18 Nov 2026 12:58:05 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/2getz2/article71714914.ece/alternates/LANDSCAPE_1200/iStock-1643219687.jpg",
+      "raw_id": "4b836991fcfe81db15",
+      "title": "Chhattisgarh: दो घंटे देरी से पहुंची एंबुलेंस, सड़क भी खराब, 8 महीने की गर्भवती महिला की मौत",
+      "url": "https://khabarlahariya.org/chhattisgarh-ambulance-arrives-two-hours-late-poor-road-conditions-also-a-factor-8-month-pregnant-woman-dies/",
+      "summary": "छत्तीसगढ़ के जशपुर जिले के महनई गासेबन गांव से सामने आया है। यहां 31 अक्टूबर 2026 को एक गर्भवती महिला की मौत हो गई। दोपहर करीब 3 बजे महिला को…",
+      "published_at": "Wed, 04 Nov 2026 08:49:56 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "5aff3f8b24a7d65746",
+      "title": "Ayodhya: दिवाली पर कमाई की उम्मीद, लेकिन दुकानें बंद करने का फरमान",
+      "url": "https://khabarlahariya.org/ayodhya-hopes-for-earnings-during-diwali-but-an-order-to-keep-shops-closed/",
+      "summary": "अयोध्या धाम के श्री संत तुलसीदास घाट और साकेत क्षेत्र में दुकान लगाने वाले छोटे दुकानदारों को पुलिस प्रशासन की ओर से दुकानें बंद करने का निर्देश दिया गया है।…",
+      "published_at": "Wed, 04 Nov 2026 05:43:43 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "9411e954c6f938f672",
+      "title": "Banda: रानी दुर्गावती मेडिकल कॉलेज में मृत नवजात को कुत्तों ने नोचा, सुरक्षा व्यवस्था पर सवाल",
+      "url": "https://khabarlahariya.org/banda-dogs-maul-a-deceased-newborn-at-rani-durgavati-medical-college-questions-raised-over-security-arrangements/",
+      "summary": "उत्तर प्रदेश के बांदा जिले के रानी दुर्गावती मेडिकल कॉलेज परिसर से एक बेहद दुखद और चिंताजनक घटना सामने आई है। यहां एक मृत नवजात के शव को कुत्ता उठाकर…",
+      "published_at": "Tue, 03 Nov 2026 15:39:26 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7f99e49436118b8e08",
+      "title": "झारखंड में महिला के साथ पुलिस थाने में पुलिस कर्मी द्वारा रेप: आरोप",
+      "url": "https://khabarlahariya.org/allegation-woman-raped-by-a-police-officer-inside-a-police-station-in-jharkhand/",
+      "summary": "महिलाओं के साथ छेड़छाड़ घरेलू हिंसा या रेप (बलात्कार) जैसी घटनाएँ होने पर न्याय और शिकायत के लिए वे पुलिस थाने का दरवाज़ा खटखटाती हैं। क्या होगा जब जिस थाने…",
+      "published_at": "Tue, 03 Nov 2026 07:28:48 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "358d4731c10eab7794",
+      "title": "Muzaffarpur News: बिहार की संजू देवी ने सुजनी कढ़ाई को दिलाई अंतरराष्ट्रीय पहचान",
+      "url": "https://khabarlahariya.org/muzaffarpur-news-sanju-devi-from-bihar-has-brought-international-recognition-to-sujani-embroidery/",
+      "summary": "बिहार के मुजफ्फरपुर जिले के मणिपुर भुसरा गांव की संजू देवी पारंपरिक सुजनी कढ़ाई को देश-विदेश तक पहुंचा रही हैं। अपनी मां से सीखी इस कला को उन्होंने रोजगार का…",
+      "published_at": "Tue, 03 Nov 2026 04:45:30 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7525a77ac5aea1bdd8",
+      "title": "Is India Undoing its Foreign Policy? Asks N Ram",
+      "url": "https://www.newsclick.in/india-undoing-its-foreign-policy-asks-n-ram",
+      "summary": "Senior journalist N. Ram, former Editor-in-Chief of The Hindu, speaks on India’s foreign policy shift from non-alignment to alignment.",
+      "published_at": "Tue, 31 Mar 2026 12:14:10 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "308bffeae6934aee55",
+      "title": "Iran: Why Ground Attack is a Tough Call for Trump",
+      "url": "https://www.newsclick.in/iran-why-ground-attack-tough-call-trump",
+      "summary": "Why Trump played the false gamble of talks, even as Iran has presented five key demands.",
+      "published_at": "Fri, 27 Mar 2026 12:04:09 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "cd862d95cf5fdbd83f",
+      "title": "UDF govt. smacks of corruption and nepotism: Keralam BJP general secretary",
+      "url": "https://www.thehindu.com/news/national/kerala/udf-govt-smacks-of-corruption-and-nepotism-keralam-bjp-general-secretary/article71716171.ece",
+      "summary": "The UDF government has amply demonstrated that it lacked collective responsibility and coordination in the honeymoon period itself, he says",
+      "published_at": "Wed, 18 Nov 2026 22:39:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/3oi933/article71716904.ece/alternates/LANDSCAPE_1200/S%20Suresh.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1314,17 +1101,17 @@
       }
     },
     {
-      "raw_id": "46e9cd2f30c0df80d6",
-      "title": "Indian national missing after attacks on commercial vessel in Strait of Hormuz",
-      "url": "https://www.thehindu.com/news/national/indian-national-missing-after-attacks-on-commercial-vessel-in-strait-of-hormuz/article71714331.ece",
-      "summary": "MEA said that of the 24 Indian nationals on board MT Tara Gas, 21 have been safely evacuated",
-      "published_at": "Wed, 18 Nov 2026 06:37:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/xfjn7j/article71714333.ece/alternates/LANDSCAPE_1200/20261110278L.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "51796d1ef14471b26d",
+      "title": "Commonwealth meet focuses on women’s leadership, tech-driven challenges, destigmatising menopause",
+      "url": "https://www.thehindu.com/news/national/karnataka/commonwealth-meet-focuses-on-womens-leadership-tech-driven-challenges-destigmatising-menopause/article71717185.ece",
+      "summary": "",
+      "published_at": "Wed, 18 Nov 2026 22:39:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ascv7s/article71717223.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-18%20at%2016.43.46.JPEG",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1338,26 +1125,22 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
-      "raw_id": "a51f2873bf104e4741",
-      "title": "As the West hits pause on AI in schools, India rushes in without a debate",
-      "url": "https://www.thehindu.com/education/as-the-west-hits-pause-on-ai-in-schools-india-rushes-in-without-a-debate/article71707975.ece",
-      "summary": "AI is coming into India’s schools through procurement deals and not public debate. A school system built on a foreign company’s tools can be repriced, changed or switched off by someone else. Children’s learning data becomes an asset to be sold. It is the old dependency loop.",
-      "published_at": "Wed, 18 Nov 2026 12:37:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/906syv/article71711108.ece/alternates/LANDSCAPE_1200/iStock-2245349989.jpg",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "e4435aea7eedf97775",
+      "title": "West Bengal CM to take action in the missionary school dress code row, says State BJP head",
+      "url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-cm-to-take-action-in-the-missionary-school-dress-code-row-says-state-bjp-head/article71716230.ece",
+      "summary": "The State BJP president claimed that religious conversions by Christian groups are increasing in certain tribal areas of the State including Purba Bardhaman, Asansol and Kalimpong",
+      "published_at": "Wed, 18 Nov 2026 22:37:22 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4ozvbz/article71717324.ece/alternates/LANDSCAPE_1200/20261117275L.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1372,7 +1155,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 13
+          "Society, Rights & Justice": 4
         },
         "candidate_categories": [
           "Society, Rights & Justice"
@@ -1380,17 +1163,46 @@
       }
     },
     {
-      "raw_id": "620000696e45da54df",
-      "title": "CSK retains 19 players, release 11; has ₹28.05 crore available for IPL 2027 auction",
-      "url": "https://www.thehindu.com/sport/cricket/csk-retention-list-team-retains-19-players-releases-11-ipl-2027/article71714769.ece",
-      "summary": "Chennai Super Kings have retained 19 players and released 11 ahead of the IPL 2027 auction",
-      "published_at": "Wed, 18 Nov 2026 12:54:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-sports/tr2azp/article71713677.ece/alternates/LANDSCAPE_1200/TH18-DHONI-RETIGNJGQGSQ0.5.jpg.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "5fb1d27b6507cb4ab2",
+      "title": "LeT’s ‘last local recruit’ Lateef Bhat killed outside a Kulgam mosque",
+      "url": "https://www.thehindu.com/news/national/fresh-encounter-in-kulgam-lateef-bhat-november-18-2026/article71714380.ece",
+      "summary": "Bhat, who was behind the attack on a CRPF checkpost last month, was hiding in the mosque and turned down an offer to surrender, security forces say; Home Minister Amit Shah praises synergy of forces in operation",
+      "published_at": "Wed, 18 Nov 2026 22:36:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/s89o0q/article71714901.ece/alternates/LANDSCAPE_1200/Securityforces.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e7842a5288b29db36b",
+      "title": "Eknath Shinde tears Sonia Gandhi’s book over Savarkar references, seeks ban in Maharashtra",
+      "url": "https://www.thehindu.com/news/national/maharashtra/eknath-shinde-tears-sonia-gandhis-book-over-savarkar-references-seeks-ban-in-maharashtra/article71717132.ece",
+      "summary": "The party has demanded that publisher HarperCollins withdraw two pages from the memoir, while the Congress condemned the protest and Uddhav Sena leaders hit back at the Shinde faction",
+      "published_at": "Wed, 18 Nov 2026 22:31:49 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/hnnw5w/article71717293.ece/alternates/LANDSCAPE_1200/PTI10_26_2026_000466B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1405,11 +1217,98 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 8
+          "Protests": 1
         },
         "candidate_categories": [
-          "Sports"
+          "Protests"
         ]
+      }
+    },
+    {
+      "raw_id": "0bfcccffedc0fa1d6d",
+      "title": "SP leader Azam Khan released from Ghaziabad prison",
+      "url": "https://www.thehindu.com/news/national/sp-leader-azam-khan-released-from-ghaziabad-prison/article71717053.ece",
+      "summary": "Earlier, the SP leader’s advocates moved an application before the special Prevention of Money Laundering Act (PMLA) court in Ghaziabad, seeking his release in compliance with the High Court’s order",
+      "published_at": "Wed, 18 Nov 2026 22:30:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/g7p8jg/article71717228.ece/alternates/LANDSCAPE_1200/PTI11_18_2026_000274B.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6d52040ad0b3eba03e",
+      "title": "Model start-up parks on 1,000 acres near Bengaluru, Hubballi-Dharwad on the anvil: M.B. Patil",
+      "url": "https://www.thehindu.com/news/national/karnataka/model-start-up-parks-on-1000-acres-near-bengaluru-hubballi-dharwad-on-the-anvil-mb-patil/article71717067.ece",
+      "summary": "Mr. Patil said some start-up founders had pointed out that land prices in Bengaluru had risen sharply and making land available at affordable rates would greatly benefit them.",
+      "published_at": "Wed, 18 Nov 2026 22:27:45 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/pjrziz/article71717175.ece/alternates/LANDSCAPE_1200/DSC_2546A.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "27870420aabe78c448",
+      "title": "Kerala centre of Institution of Engineers adjudged best State Centre",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-centre-of-institution-of-engineers-adjudged-best-state-centre/article71716990.ece",
+      "summary": "",
+      "published_at": "Wed, 18 Nov 2026 22:27:40 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     }
   ]

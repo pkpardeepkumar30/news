@@ -1,45 +1,16 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-22T07:01:31.335275+00:00",
-  "input_count": 435,
+  "prepared_at": "2026-11-22T16:24:43.636025+00:00",
+  "input_count": 432,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 122,
-    "established_or_other": 78,
+    "independent_social": 117,
+    "established_or_other": 83,
     "independent_social_majority_required": true
   },
   "part": 5,
   "part_count": 5,
   "items": [
-    {
-      "raw_id": "a3d4d9344294788717",
-      "title": "Chhatarpur News: 10 साल पहले बदहाल था वार्ड, आज बदली तस्वीर! खबर लहरिया की रिपोर्टिंग का असर?",
-      "url": "https://khabarlahariya.org/chhatarpur-news-the-ward-was-in-a-dilapidated-state-10-years-ago-today-the-picture-has-changed-could-this-be-the-impact-of-khabar-lahariyas-reporting/",
-      "summary": "मध्य प्रदेश के छतरपुर जिले के वार्ड नंबर 15 में 10 साल पहले सड़क, पानी और बिजली की समस्याओं से लोग परेशान थे। सड़कें खुदी पड़ी थीं, घरों में पाइपलाइन…",
-      "published_at": "Mon, 16 Nov 2026 09:30:50 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
     {
       "raw_id": "767419cfb87a13a1e8",
       "title": "टाठी घाट: जंगल की खामोशी, पहाड़ों के बीच बहती मंदाकिनी और एक अलग दुनिया",
@@ -416,6 +387,53 @@
         "category_candidate_scores": {},
         "candidate_categories": []
       }
+    },
+    {
+      "raw_id": "046ace0dc6005935d6",
+      "title": "Scholarships: November 21, 2026",
+      "url": "https://www.thehindu.com/education/scholarships-november-21-2026/article71704659.ece",
+      "summary": "Information on financial aid for students",
+      "published_at": "Sat, 21 Nov 2026 12:32:50 +0530",
+      "image_url": "https://th-i.thgim.com/public/education/kz0bt4/article71704648.ece/alternates/LANDSCAPE_1200/30EPBS_Scholarships.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 9
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Scholarships: November 14, 2026",
+          "url": "https://www.thehindu.com/education/scholarships-november-14-2026/article71602612.ece",
+          "source": {
+            "id": "the-hindu-education",
+            "name": "The Hindu - Education",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "The Hindu Group"
+          },
+          "social_attention": null
+        }
+      ]
     },
     {
       "raw_id": "73fdaaf7a6b3484f59",
@@ -824,68 +842,6 @@
       }
     },
     {
-      "raw_id": "34a5d410bfcacffd05",
-      "title": "छत्तीसगढ़ के सरकारी मेडिकल कॉलेजों में 11 हेल्थ कोर्स के लिए एडमिशन शुरू, जाने कौन से कोर्स शमिल हैं?",
-      "url": "https://khabarlahariya.org/%e0%a4%9b%e0%a4%a4%e0%a5%8d%e0%a4%a4%e0%a5%80%e0%a4%b8%e0%a4%97%e0%a4%a2%e0%a4%bc-%e0%a4%95%e0%a5%87-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a5%80-%e0%a4%ae%e0%a5%87%e0%a4%a1%e0%a4%bf/",
-      "summary": "चिकित्सा के क्षेत्र में करियर बनाने की सोच रहे छात्रों के लिए एक खबर है। छत्तीसगढ़ के सरकारी मेडिकल कॉलेजों में शैक्षणिक सत्र 2026-27 के लिए 11 स्वास्थ्य पाठ्यक्रमों में…",
-      "published_at": "Fri, 06 Nov 2026 09:36:42 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "1b6ec4ee7f959d10ed",
-      "title": "TG SAFE  suspends licences of four Hyderabad eateries over food safety violations",
-      "url": "https://www.thenewsminute.com/telangana/tg-safe-suspends-licences-of-four-hyderabad-eateries-over-food-safety-violations",
-      "summary": "The Telangana Standards Authority for Food and Essential Drugs (TG SAFE) has suspended the Food Safety and Standards Authority of India (FSSAI) licences of four Hyderabad food establishments and ordered them to stop operations after inspections found serious hygiene violations. The action followed a special inspection drive by eight teams comprising food safety officers and police personnel. The checks were conducted at nine restaurants, hostels and other establishments in response to consumer complaints. The four establishments whose licences were suspended are Madhapur Bawarchi in Ayyappa Society, The Spice Kitchen in Kukatpally, Mataam Al Yamani Arabian Restaurant in Tolichowki and Annapurna Caterers in Chandanagar. TG SAFE said it would share their details with food delivery platforms, including Swiggy and Zomato, to facilitate their delisting until their licences are restored. Inspectors reported cockroach infestations and rat droppings, unhygienic kitchens, clogged drains, damaged flooring and improper separation of vegetarian and non-vegetarian food. They also found synthetic food colours, smoke-stained walls and missing medical examination records for food handlers. Al Kare",
-      "published_at": "Sun, 22 Nov 2026 05:13:39 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/8hxxw5ge/tg-safe.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
       "raw_id": "7525a77ac5aea1bdd8",
       "title": "Is India Undoing its Foreign Policy? Asks N Ram",
       "url": "https://www.newsclick.in/india-undoing-its-foreign-policy-asks-n-ram",
@@ -944,12 +900,12 @@
       }
     },
     {
-      "raw_id": "176b1aa5838a6b6dd1",
-      "title": "Fake MCD parking slips used to dupe motorists in Old Delhi; two rackets busted in 24 hours",
-      "url": "https://www.thehindu.com/news/cities/Delhi/fake-mcd-parking-slips-used-to-dupe-motorists-in-old-delhi-two-rackets-busted-in-24-hours/article71730789.ece",
-      "summary": "The accused were arrested near Red Fort and Chandni Chowk for collecting illegal parking fees using forged MCD receipts; police say the unrelated operations had been running for some time and are assessing the total amount collected.",
-      "published_at": "Sun, 22 Nov 2026 12:09:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/1xomvw/article71730781.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-22%20at%2011.48.36%20AM.jpeg",
+      "raw_id": "72a59087b8ddbf432b",
+      "title": "Nepal PM Balendra Shah arrives in Delhi for first official visit to India",
+      "url": "https://www.thehindu.com/news/national/nepal-pm-balendra-shah-arrives-in-delhi-for-first-official-visit-to-india/article71731829.ece",
+      "summary": "The PMs of India and Nepal are set to hold talks on Monday, with sources saying the discussion will give 'political direction' to bilateral relations for the coming years",
+      "published_at": "Sun, 22 Nov 2026 21:43:04 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5pzax2/article71732116.ece/alternates/LANDSCAPE_1200/20261122357L.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -973,12 +929,12 @@
       }
     },
     {
-      "raw_id": "822f90c73e1afd63ab",
-      "title": "Hemant Soren writes to CJI to urgently appoint Jharkhand HC Chief Justice successor",
-      "url": "https://www.thehindu.com/news/national/jharkhand/hemant-soren-writes-to-cji-to-urgently-appoint-jharkhand-hc-chief-justice-successor/article71730713.ece",
-      "summary": "Jharkhand CM asserted that the High Court of Jharkhand has repeatedly experienced short leadership tenures and interim Acting Chief Justice arrangements at the helm.",
-      "published_at": "Sun, 22 Nov 2026 11:58:18 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/e91bzm/article71730752.ece/alternates/LANDSCAPE_1200/PTI07_17_2026_000273B.jpg",
+      "raw_id": "af4648294705608491",
+      "title": "Nursing students walk to promote natural birthing awareness in Visakhapatnam",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/nursing-students-walk-to-promote-natural-birthing-awareness-in-visakhapatnam/article71731927.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:40:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ewlmjv/article71732150.ece/alternates/LANDSCAPE_1200/6726_22_11_2026_21_9_46_1_073NATURALBIRTHING.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1006,12 +962,12 @@
       }
     },
     {
-      "raw_id": "4d1cbbfc37fd5037b8",
-      "title": "NDA will win all panchayats in upcoming polls, says TDP leader Divakar Reddy in Tirupati",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/nda-will-win-all-panchayats-in-upcoming-polls-says-tdp-leader-divakar-reddy-in-tirupati/article71729008.ece",
-      "summary": "Andhra Pradesh is surging ahead on the path of development during the NDA’s tenure, says Divakar Reddy",
-      "published_at": "Sun, 22 Nov 2026 11:57:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/z3d8x6/article71729100.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_19_41_26_1_WHATSAPPIMAGE2026_11_21AT73719PM.JPEG",
+      "raw_id": "bc672f72e5ecf547dd",
+      "title": "Replace open power lines passing through oilpalm fields with AB lines: Minister",
+      "url": "https://www.thehindu.com/news/national/telangana/replace-open-power-lines-passing-through-oilpalm-fields-with-ab-lines-minister/article71731988.ece",
+      "summary": "Tummala Nageswara Rao says power lines are reducing the number of plans per acres by at least 8, causing income loss for lifetime of plants, 35 years",
+      "published_at": "Sun, 22 Nov 2026 21:38:00 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/telangana/nm9zta/article71731985.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-22%20at%203.40.25%20PM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1035,12 +991,12 @@
       }
     },
     {
-      "raw_id": "4a814a3edf2e6cdcc9",
-      "title": "PANI project to connect Andaman's eight islands through undersea cable network",
-      "url": "https://www.thehindu.com/news/national/andaman-and-nicobar-islands/pani-project-to-connect-andamans-eight-islands-through-undersea-cable-network/article71730740.ece",
-      "summary": "The project is expected to address mobile and internet connectivity challenges in remote islands and ensure more reliable communication, particularly during emergencies",
-      "published_at": "Sun, 22 Nov 2026 11:49:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ywnixs/article71730775.ece/alternates/LANDSCAPE_1200/iStock-1480901115.jpg",
+      "raw_id": "020a6549e590fc81fa",
+      "title": "GVMC new council to take oath on Monday",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/gvmc-new-council-to-take-oath-on-monday/article71731504.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:35:33 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/nrzpdp/article71732144.ece/alternates/LANDSCAPE_1200/080GVMC.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1064,12 +1020,41 @@
       }
     },
     {
-      "raw_id": "f53dccda71b1f0d68c",
-      "title": "Union Minister Rajiv Ranjan Singh reviews indigenous cattle research at SVVU in Tirupati",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/union-minister-rajiv-ranjan-singh-reviews-indigenous-cattle-research-at-svvu-in-tirupati/article71729080.ece",
-      "summary": "SVVU Vice-Chancellor highlights contributions of the institution to conservation, multiplication and genetic improvement of indigenous livestock breeds",
-      "published_at": "Sun, 22 Nov 2026 11:44:34 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/epic7g/article71729401.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_20_52_14_1_WHATSAPPIMAGE2026_11_21AT84930PM.JPEG",
+      "raw_id": "1b738dd33bf0091c35",
+      "title": "JSP gained strong ground in North Andhra: Minister",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/jsp-became-stronger-in-north-andhra-minister/article71731879.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:32:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/elx2vs/article71731996.ece/alternates/LANDSCAPE_1200/9774_22_11_2026_19_36_24_1_SCREENSHOT_20261122_193610.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4d711115a4ec098ff9",
+      "title": "Three medals for A.P. athletes at international taekwondo meet in Pune",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/ap-athletes-win-big-at-international-taekwondo-meet-in-pune/article71731951.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:31:33 +0530",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1089,20 +1074,22 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 5
+          "Sports": 4,
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "International & Geopolitics",
+          "Sports"
         ]
       }
     },
     {
-      "raw_id": "4e3f7e8c48af27b939",
-      "title": "Police complaint against WB LoP, police officers for fabrication of affidavits before ECI",
-      "url": "https://www.thehindu.com/news/national/west-bengal/police-complaint-against-wb-lop-police-officers-for-fabrication-of-affidavits-before-eci/article71729170.ece",
-      "summary": "The police complaint, was registered at city’s Kalighat Police station by Subhasish Chakraborty on behalf of Trinamool Congress; in the complaint, the loyalist of Mamata Banerjee has claimed that he has credible proofs that Nanoor police station officials conspired with Ritabrata Banerjee and Arup Roy to prepare false and fabricated affidavits",
-      "published_at": "Sun, 22 Nov 2026 11:31:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qoujpb/article71729455.ece/alternates/LANDSCAPE_1200/20260917409L.jpg",
+      "raw_id": "ef3d4a0fb04a0b451c",
+      "title": "Decks cleared for forfeiting copies of controversial book Basava Mantapa in Karnataka",
+      "url": "https://www.thehindu.com/news/national/karnataka/decks-cleared-for-forfeiting-copies-of-controversial-book-basava-mantapa-in-karnataka/article71732065.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:30:56 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/lkyvks/article71732112.ece/alternates/LANDSCAPE_1200/DSC_5256A.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -1126,11 +1113,73 @@
       }
     },
     {
-      "raw_id": "e886faec681bbcbc9a",
-      "title": "Minor girls abducted, raped in Bhadohi, UP, rescued; one girl remains missing",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/minor-girls-abducted-raped-in-bhadohi-up-rescued-one-girl-remains-missing/article71730709.ece",
-      "summary": "Out of the three minors, two girls have been rescued but the third girl, 16, and the suspect who allegedly abducted her, remain missing, police said",
-      "published_at": "Sun, 22 Nov 2026 11:26:10 +0530",
+      "raw_id": "fd4841ae1ba2991e1f",
+      "title": "BRS delegation plans to meet KRMB on A.P.’s tunnel project from Nagarjunasagar, Telangana water rights",
+      "url": "https://www.thehindu.com/news/national/telangana/brs-delegation-plans-to-meet-krmb-on-aps-tunnel-project-from-nagarjunasagar-telangana-water-rights/article71732054.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:30:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "9e959e2d0ecea5ebd4",
+      "title": "Samiti welcomes arrest of Ravi Hanj, seeks action against Vishweshwar Bhat",
+      "url": "https://www.thehindu.com/news/national/karnataka/protest-in-kalaburagi-seeking-action-against-ravi-hanj-vishweshwar-bhat/article71731723.ece",
+      "summary": "A memorandum submitted to the State govt. says that certain ideological groups have been consistently trying to undermine Basavanna’s legacy",
+      "published_at": "Sun, 22 Nov 2026 21:26:55 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ilef0f/article71731873.ece/alternates/LANDSCAPE_1200/10258_22_11_2026_19_20_30_1_KLB_PROTEST_BASAVA_TATTVA_SAMVIDHANA_RAKSHANA_SAMITI_1.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "38e0bb6d3acf4d1111",
+      "title": "Hyderabad Police issue alert over terror threat email; security checks conducted at key locations",
+      "url": "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-police-issue-alert-over-terror-threat-email-security-checks-conducted-at-key-locations/article71731583.ece",
+      "summary": "",
+      "published_at": "Sun, 22 Nov 2026 21:26:49 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1152,39 +1201,6 @@
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {},
         "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "1bf4ebe5ea19c0b332",
-      "title": "Over 100 children, 12 adults hospitalised after eating ‘chowmein’ at village fair in Madhya Pradesh",
-      "url": "https://www.thehindu.com/news/national/madhya-pradesh/over-100-children-12-adults-hospitalised-after-eating-chowmein-at-village-fair-in-madhya-pradesh/article71730680.ece",
-      "summary": "As many as 118 children were initially admitted to the community health centre in Kirnapur, of which 45 were shifted to the Balaghat district hospital for further treatment",
-      "published_at": "Sun, 22 Nov 2026 11:15:02 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 2
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
       }
     }
   ]

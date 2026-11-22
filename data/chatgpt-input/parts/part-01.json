@@ -1,16 +1,49 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-21T21:45:47.719399+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-11-22T07:01:31.335275+00:00",
+  "input_count": 435,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 122,
+    "established_or_other": 78,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "a057bdbbc5bb3bf5f3",
+      "title": "UP Police mistakenly give Owaisi guard of honour meant for Supreme Court judge",
+      "url": "https://www.thenewsminute.com/news/up-police-mistakenly-give-owaisi-guard-of-honour-meant-for-supreme-court-judge",
+      "summary": "In a hilarious goof-up, the police in Saharanpur, Uttar Pradesh, mistakenly accorded a guard of honour to AIMIM chief Asaduddin Owaisi on Saturday, November 21, after confusing his convoy with that of a Supreme Court judge expected at the Circuit House. The police contingent had assembled at the government premises to receive the judge when Owaisi arrived with a convoy carrying Azad Samaj Party (Kanshi Ram) chief Chandrashekhar Aazad. As soon as the AIMIM chief arrived at the Circuit House, a group of four police personnel in ceremonial attire stood at the entrance of the building to perform the gun salute. Owaisi stopped and received it before proceeding inside. The mix-up was noticed shortly afterwards and brought to the attention of senior police officials. The judge did not arrive at the Circuit House, an officiating Reserve Inspector told The Indian Express . Owaisi later said he did not know why the salute had been given to him. He said police personnel asked him to stand for the salute and he followed their instructions. Saharanpur Senior Superintendent of Police directed the Superintendent of Police (Rural) to investigate the incident. Police said action would be taken in a",
+      "published_at": "Sun, 22 Nov 2026 06:14:14 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/47n4hmo0/owaisi.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
     {
       "raw_id": "65e7505df9e8c855c9",
       "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
@@ -224,6 +257,72 @@
       }
     },
     {
+      "raw_id": "4ecd368a21272f57d0",
+      "title": "West Bengal government to appoint coordinators for all 209 wards in Kolkata: Union Minister Sukanta Majumdar",
+      "url": "https://www.thehindu.com/news/national/west-bengal/west-bengalgovernment-to-appoint-coordinators-for-all-209-wards-in-kolkataunion-minister-sukanta-majumdar/article71729005.ece",
+      "summary": "This announcement comes as the Kolkata Corporation election remains stalled by the Calcutta High Court; Mamata-Trinamool says why not hold elections and appoint elected representatives",
+      "published_at": "Sun, 22 Nov 2026 01:26:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sqvutk/article71729459.ece/alternates/LANDSCAPE_1200/20261031610L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "1c9d0fefb65e9a8752",
+      "title": "Police focus on 1,500 panchayats in Chittoor, Annamayya, Sri Sathya Sai districts ahead of polls",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/police-focus-on-1500-panchayats-in-chittoor-annamayya-sri-sathya-sai-districts-ahead-of-polls/article71728086.ece",
+      "summary": "The State Election Commission has announced three-phase polling on November 26, 29 and December 2",
+      "published_at": "Sun, 22 Nov 2026 12:09:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tvn9vj/article71728608.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_17_48_17_1_IMG_20261121_WA0095.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
       "raw_id": "6afec3b2a7f630ee7f",
       "title": "Ladakh records 70% turnout in first panchayat polls since Union Territory formation",
       "url": "https://www.thehindu.com/news/national/ladakh/ladakh-municipal-and-panchayat-elections/article71727478.ece",
@@ -255,39 +354,6 @@
         "candidate_categories": [
           "Politics & Elections",
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "da2188ca879349f143",
-      "title": "HPV vaccination: one crore doses administered in nine months",
-      "url": "https://www.thehindu.com/sci-tech/health/over-1-crore-hpv-vaccines-given-to-14-year-old-girls-in-nine-months-health-ministry/article71727507.ece",
-      "summary": "Nearly 87% of its annual target cohort of 14-year-old girls has been covered under the national cervical cancer prevention campaign. Uttar Pradesh leads with more than 29.33 lakh girls vaccinated, followed by Bihar (13.70 lakh) and Gujarat (7.75 lakh)",
-      "published_at": "Sat, 21 Nov 2026 21:23:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ep8j6x/article71727555.ece/alternates/LANDSCAPE_1200/Telangana-vacciGSHFRJN65.7.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
         ]
       }
     },
@@ -364,76 +430,6 @@
       }
     },
     {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "5135a5e751d0c122ea",
-      "title": "Those supporting terrorism will meet fate of Afzal Guru: Amit Shah",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/terrorism-wont-be-allowed-to-stage-comeback-it-has-been-buried-amit-shah-in-udhampur-rally/article68685621.ece",
-      "summary": "The Union Home Minister said, “Even generations after Rahul (Gandhi) would not be able to restore it (Article 370). Elections are being held here for the first time without Article 370 and a separate flag”",
-      "published_at": "Sat, 28 Sep 2024 02:30:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wex2nb/article68685658.ece/alternates/LANDSCAPE_1200/PTI09_26_2024_000103B.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "9c2378249381b1cc8e",
       "title": "India can cut fossil fuel import bill by 40% through faster electrification: Report",
       "url": "https://eastmojo.com/national-news/2026/11/20/india-can-cut-fossil-fuel-import-bill-by-40-through-faster-electrification-report/",
@@ -467,12 +463,12 @@
       }
     },
     {
-      "raw_id": "aa00b7f0277886cf9f",
-      "title": "Carnatic violinist HN Bhaskar charged with four sexual offences against minor in California",
-      "url": "https://www.thenewsminute.com/news/carnatic-violinist-hn-bhaskar-charged-with-four-sexual-offences-against-minor-in-california",
-      "summary": "Carnatic violinist HN Bhaskar is facing four felony charges in a criminal case filed before a California court. The charges relate to alleged sexual offences involving a minor between September 4 and 26, 2026. The case was filed on November 6 before the San Diego Superior Court. According to the court’s online records, Bhaskar faces two counts of oral copulation of a person under 18 and two counts of sexual penetration with a foreign object involving a victim under 18. The court records also show that a warrant was issued on November 6, the day the complaint was filed. The San Diego Superior Court confirmed to TNM that the complaint lists four charges and that the alleged offences took place “on or about and between September 4, 2026 and September 26, 2026.” The court said no date had been scheduled for Bhaskar’s arraignment and that he had not made any in-court appearances as of November 21. It could not confirm whether he was in custody. However, a source told TNM that Bhaskar is currently in custody at a jail in Boston, Massachusetts. The court's Public Affairs Office told TNM that this was possible and said he could also be awaiting an extradition hearing for his transfer to Ca",
-      "published_at": "Sat, 21 Nov 2026 17:44:51 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-21/jjd7deo7/HN-Bhaskar.jpg",
+      "raw_id": "94f92cb225baaa6d5f",
+      "title": "MLA Raja Singh asks Hindus to keep guns at home if Muslim population share rises",
+      "url": "https://www.thenewsminute.com/telangana/mla-raja-singh-asks-hindus-to-keep-guns-at-home-if-muslim-population-share-rises",
+      "summary": "Raja Singh, the controversial MLA from Telangana, has once again made inflammatory comments against Muslims, asking Hindus to keep licensed guns in their homes if India doesn’t bring in population regulation law restricting people from having more than two children. He made the remarks while referring to a recent Pew Research Center study projecting that Muslims’ population share would go up by five percentage points between 2020 and 2070. The video showing him holding a rifle and sitting amidst a group of men in Uttar Pradesh while advocating for ‘gun culture’ among Hindus was shared by the Goshamhal MLA himself, according to ANI. Raja Singh referred to recent news reports on a Pew Research Center study which projected that between 2020 and 2070, Muslims’ population share in India will go up from 15% to 20%, while that of Hindus will decrease from about 79% to 76%. “If their (Muslims’) population share rises, will Hindus be safe?” Raja Singh asked the people gathered around him. Though he resigned from the Bharatiya Janata Party (BJP) in 2025 objecting to the party’s choice in appointing the Telangana party president, he referred to the BJP as “our party”. He said, “In the coming ",
+      "published_at": "Sun, 22 Nov 2026 06:24:26 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/kqgtq4kf/RajaSinghGuns22112026.png",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -492,49 +488,45 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
+          "Governance & Administration": 2,
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Environment, Health & Science",
+          "Governance & Administration"
         ]
       }
     },
     {
-      "raw_id": "c904f01f9071914d83",
-      "title": "U.S. Senate approves bill to speed up permitting reviews, Democrats and environmental groups oppose",
-      "url": "https://www.thehindu.com/news/international/us-senate-approves-bill-to-speed-up-permitting-reviews-democrats-and-environmental-groups-oppose/article71723266.ece",
-      "summary": "The legislation’s sweeping changes would shorten the timeline to start big energy projects and make sure data centres pay for the energy they use",
-      "published_at": "Fri, 20 Nov 2026 12:04:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/eohg43/article71723366.ece/alternates/LANDSCAPE_1200/iStock-170619187.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "e7e0f8ce876bd60189",
+      "title": "A private odyssey: Belonging, without reckoning",
+      "url": "https://www.newslaundry.com/2026/11/22/a-private-odyssey-belonging-without-reckoning",
+      "summary": "Last summer, along Lake Como, close to the place where Benito Mussolini was captured and killed by the Resistance Group, I came across his framed photographs being sold publicly. Unlike Germans, many Italians have not had a sustained reckoning with their Fascist past, often deluding themselves into believing it to be an aberration. The summer spent in Italy returned to me while reading Congress leader Sonia Gandhi’s memoir Belonging: A Journey of Love . She records in vivid detail the kindness and generosity of her father Stefano Maino, who had served in the Italian army under the Fascist government. “Not for nothing was he known to his comrades as Maino il Leone – Maino the Lion – as much loved by his men as he was feared,” she writes. The daughterly love is understandable, but here’s a leader who acutely records the threats of right-wing politics in the country she adopted, but is reluctant to confront the one she was born in. The memoir is silent about any possible shadow of Mussolini’s military campaigns over Maino’s life. Saviour complex The autobiography is a genre in omission. It doesn’t carry the whole truth about the author. It’s a story of what they chose to reveal, what ",
+      "published_at": "Sun, 22 Nov 2026 05:30:00 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-11-22/byx3csrv/belonging-review.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 5,
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
+          "Governance & Administration": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics"
+          "Governance & Administration"
         ]
       }
     },
@@ -755,78 +747,78 @@
       }
     },
     {
+      "raw_id": "419823cff291859881",
+      "title": "14-year-old used AI chatbot to hack Agniveer ‘test’ website, wanted to earn money by selling it on dark web: Delhi police sources",
+      "url": "https://www.thehindu.com/news/cities/Delhi/14-year-old-hacker-held-for-trying-to-sell-private-data-of-4000-agniveers-on-dark-web-delhi-police/article71727963.ece",
+      "summary": "The Haryana teenager used an AI chatbot to identify valuable data and find a way into the test portal; preliminary investigation suggests only names and addresses were accessed, Delhi Police sources say",
+      "published_at": "Sun, 22 Nov 2026 09:00:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jgmydv/article71727992.ece/alternates/LANDSCAPE_1200/2026-11-19T090010Z_850449845_RC2L8OARPJ5S_RTRMADP_3_CYBERSECURITY-GERMANY.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "324f28e17c321ae5cc",
+      "title": "Kerala High Court’s remarks trigger fresh debate on Kochi’s night life",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-high-courts-remarks-trigger-fresh-debate-on-kochis-night-life/article71728981.ece",
+      "summary": "Court’s question on whether the police are opposed to nightlife altogether sparks debate over the city’s growing appetite for late-night events and gatherings and long-standing concerns raised by law enforcers",
+      "published_at": "Sun, 22 Nov 2026 01:20:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dbdy41/article71729457.ece/alternates/LANDSCAPE_1200/IMG_iStock-1201075450_2_1_G9C8SC61.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
       "raw_id": "38234608909ab2bb0b",
       "title": "BJP appoints Yuzvendra Chahal as special invitee to OBC Morcha executive committee",
       "url": "https://www.thehindu.com/news/national/bjp-appoints-yuzvendra-chahal-as-special-invitee-to-obc-morcha-executive-committee/article71729445.ece",
       "summary": "BJP national president Nitin Nabin on November 21, 2026, announced fresh appointments of national office-bearers, national executive members, and department heads for its OBC Morcha with immediate effect",
       "published_at": "Sun, 22 Nov 2026 00:58:56 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/o7g44c/article71729446.ece/alternates/LANDSCAPE_1200/PTI11_21_2026_000328B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "66ee6cf7f07d424b73",
-      "title": "‘Lathi haregi-Laptop jitega’: Akhilesh coins slogan aimed at youth, pushing development pitch",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/lathi-haregi-laptop-jitega-akhilesh-coins-slogan-aimed-at-youth-pushing-development-pitch/article71728726.ece",
-      "summary": "SP says slogan echoes the popular sentiment of GenZ in U.P., which is fed up with the BJP’s ‘bulldozer raj’ and the unscientific agenda of the RSS being imposed over the Constitution and the rule of law",
-      "published_at": "Sat, 21 Nov 2026 22:46:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ui5zm0/article71729364.ece/alternates/LANDSCAPE_1200/PTI11_21_2026_000208B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "016ad06dcd6bb3c160",
-      "title": "14-year-old used AI chatbot to hack Agniveer test website to earn money: Sources",
-      "url": "https://www.thehindu.com/news/national/haryana/14-year-old-used-ai-chatbot-to-hack-agniveer-test-website-to-earn-money-sources/article71728795.ece",
-      "summary": "The Haryana teenager used an AI chatbot to identify valuable data and find a way into the test portal; preliminary investigation suggests only names and addresses were accessed, Delhi Police sources say",
-      "published_at": "Sat, 21 Nov 2026 21:31:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fw59j/article71728789.ece/alternates/LANDSCAPE_1200/2026-11-19T115805Z_1895979850_RC2L8OASXN6C_RTRMADP_3_CYBERSECURITY-STOCKS.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -885,6 +877,45 @@
         "candidate_categories": [
           "Economy & Employment",
           "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2e936e852f15df2153",
+      "title": "UoH students launch protest seeking professor’s termination over casteist remarks",
+      "url": "https://www.thenewsminute.com/telangana/uoh-students-launch-protest-seeking-professors-termination-over-casteist-remarks",
+      "summary": "University of Hyderabad students have launched an indefinite protest demanding the termination of Dr Vijaya Ramdas Mandala, a faculty member in the History Department, over his alleged derogatory remarks about Dalit students in an email exchange. The remarks were allegedly made after a former student expressed hesitation regarding incorporating certain suggestions made by Vijaya Ramdas into his research because of ethical concerns. The incident took place in April but came to light only recently. The protest has been called by the Students’ Union, which comprises various student groups, including the Students’ Federation of India (SFI), the Ambedkar Students’ Association, the Dalit Students’ Union,and the Tribal Students’ Forum. Students have been staging a sit-in outside the Social Sciences building, demanding Vijaya Ramdas’s termination. “We will not call off the protest until Vijaya Ramdas is terminated,” PhD student Aditya Rao told TNM. “We had protested earlier too, but no concrete action was taken against him,” he added. The screenshots of an email exchange were shown to TNM by student activists. Through the emails, Vijaya Ramdas contacted Sandeep (name changed), who is a PhD",
+      "published_at": "Fri, 20 Nov 2026 14:59:57 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-20/15tit7j3/UoH.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 7,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -1090,39 +1121,6 @@
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "26c98503a4b2edfa3c",
-      "title": "Dadasaheb Phalke Awards 2026 Winners List: ‘धुरंधर’ की धूम, जीते 6 अवॉर्ड्स, टेलर स्विफ्ट के लिए खास सम्मान, देखें पूरी विनर लिस्ट",
-      "url": "https://theruralpress.in/entertainment/dadasaheb-phalke-awards-2026-winners-list-dhurandhar/",
-      "summary": "मुंबई। बॉलीवुड अभिनेता रणवीर सिंह की फिल्म ‘धुरंधर’ ने दादासाहेब फाल्के इंटरनेशनल फिल्म फेस्टिवल अवॉर्ड्स 2026 में शानदार प्रदर्शन किया है। फिल्म ने एक-दो नहीं, बल्कि कुल 6 पुरस्कार अपने नाम किए हैं। बेस्ट फिल्म, बेस्ट एक्टर और बेस्ट डायरेक्टर जैसी बड़ी कैटेगरी में ‘धुरंधर’ का दबदबा देखने को मिला। वहीं, रणवीर सिंह को बेस्ट […]",
-      "published_at": "Sat, 21 Nov 2026 14:53:17 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
           "Protests"
         ]
       }
@@ -1334,6 +1332,45 @@
       }
     },
     {
+      "raw_id": "d046f82d7b1843210b",
+      "title": "A Duck’s Tale: Arun Varghese on his quirky satire rooted in the backwaters of Kuttanad",
+      "url": "https://www.thenewsminute.com/flix/a-ducks-tale-arun-varghese-on-his-quirky-satire-rooted-in-the-backwaters-of-kuttanad",
+      "summary": "Ducks, wobbling about on land and water, are such a common sight in small towns of Kerala, especially in Kuttanad, that you don’t pause to take a second look when you hear their ceaseless quacking. So, when A Duck’s Tale , a Malayalam movie set to premiere at the International Film Festival of Kerala (IFFK) next month, begins with a flock of ducks swimming in the night, you don’t think much of it, beyond making a vague connection to the title. But Arun Varghese, who grew up in Kuttanad, manages to pick out a single duck from that flock and weave several stories around it, in his debut film. He has written and directed A Duck’s Tale with the production team that made the critically acclaimed Baakki Vannavar , released two years ago. Salmaanul, who played the quiet protagonist in Baakki Vannavar , turns into an expressive, frustrated young man in A Duck’s Tale , with both films putting him in the garb of an unemployed youth. “Yes, but in this case it is more because he is lazy, not trying hard, while Baakki Vannavar was more about the system,” Arun says in an interview with TNM. Malayalam film Baaki Vannavar explores unemployment through a gig worker's life He too, like the protagoni",
+      "published_at": "Sun, 22 Nov 2026 06:22:57 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/wrcxq03q/salmaanulducktale.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1,
+          "Sports": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Society, Rights & Justice",
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "3440d5197743f52545",
       "title": "Reverse policies, stop tax sops for rich: Trade unions, farm outfits to PM Modi",
       "url": "https://www.thehindu.com/news/national/reverse-policies-stop-tax-sops-for-rich-trade-unions-farm-outfits-to-pm-modi/article71728776.ece",
@@ -1363,41 +1400,6 @@
         },
         "candidate_categories": [
           "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
         ]
       }
     }

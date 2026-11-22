@@ -1,11 +1,11 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-21T21:45:47.719399+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-11-22T07:01:31.335275+00:00",
+  "input_count": 435,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 122,
+    "established_or_other": 78,
     "independent_social_majority_required": true
   },
   "part_count": 5,
@@ -17,6 +17,39 @@
     "data/chatgpt-input/parts/part-05.json"
   ],
   "items": [
+    {
+      "raw_id": "a057bdbbc5bb3bf5f3",
+      "title": "UP Police mistakenly give Owaisi guard of honour meant for Supreme Court judge",
+      "url": "https://www.thenewsminute.com/news/up-police-mistakenly-give-owaisi-guard-of-honour-meant-for-supreme-court-judge",
+      "summary": "In a hilarious goof-up, the police in Saharanpur, Uttar Pradesh, mistakenly accorded a guard of honour to AIMIM chief Asaduddin Owaisi on Saturday, November 21, after confusing his convoy with that of a Supreme Court judge expected at the Circuit House. The police contingent had assembled at the government premises to receive the judge when Owaisi arrived with a convoy carrying Azad Samaj Party (Kanshi Ram) chief Chandrashekhar Aazad. As soon as the AIMIM chief arrived at the Circuit House, a group of four police personnel in ceremonial attire stood at the entrance of the building to perform the gun salute. Owaisi stopped and received it before proceeding inside. The mix-up was noticed shortly afterwards and brought to the attention of senior police officials. The judge did not arrive at the Circuit House, an officiating Reserve Inspector told The Indian Express . Owaisi later said he did not know why the salute had been given to him. He said police personnel asked him to stand for the salute and he followed their instructions. Saharanpur Senior Superintendent of Police directed the Superintendent of Police (Rural) to investigate the incident. Police said action would be taken in a",
+      "published_at": "Sun, 22 Nov 2026 06:14:14 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/47n4hmo0/owaisi.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
     {
       "raw_id": "65e7505df9e8c855c9",
       "title": "People of Srinagar remain reluctant voters as district records 29.24% turnout",
@@ -230,6 +263,72 @@
       }
     },
     {
+      "raw_id": "4ecd368a21272f57d0",
+      "title": "West Bengal government to appoint coordinators for all 209 wards in Kolkata: Union Minister Sukanta Majumdar",
+      "url": "https://www.thehindu.com/news/national/west-bengal/west-bengalgovernment-to-appoint-coordinators-for-all-209-wards-in-kolkataunion-minister-sukanta-majumdar/article71729005.ece",
+      "summary": "This announcement comes as the Kolkata Corporation election remains stalled by the Calcutta High Court; Mamata-Trinamool says why not hold elections and appoint elected representatives",
+      "published_at": "Sun, 22 Nov 2026 01:26:20 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/sqvutk/article71729459.ece/alternates/LANDSCAPE_1200/20261031610L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 2
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "1c9d0fefb65e9a8752",
+      "title": "Police focus on 1,500 panchayats in Chittoor, Annamayya, Sri Sathya Sai districts ahead of polls",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/police-focus-on-1500-panchayats-in-chittoor-annamayya-sri-sathya-sai-districts-ahead-of-polls/article71728086.ece",
+      "summary": "The State Election Commission has announced three-phase polling on November 26, 29 and December 2",
+      "published_at": "Sun, 22 Nov 2026 12:09:36 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/tvn9vj/article71728608.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_17_48_17_1_IMG_20261121_WA0095.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
       "raw_id": "6afec3b2a7f630ee7f",
       "title": "Ladakh records 70% turnout in first panchayat polls since Union Territory formation",
       "url": "https://www.thehindu.com/news/national/ladakh/ladakh-municipal-and-panchayat-elections/article71727478.ece",
@@ -261,39 +360,6 @@
         "candidate_categories": [
           "Politics & Elections",
           "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "da2188ca879349f143",
-      "title": "HPV vaccination: one crore doses administered in nine months",
-      "url": "https://www.thehindu.com/sci-tech/health/over-1-crore-hpv-vaccines-given-to-14-year-old-girls-in-nine-months-health-ministry/article71727507.ece",
-      "summary": "Nearly 87% of its annual target cohort of 14-year-old girls has been covered under the national cervical cancer prevention campaign. Uttar Pradesh leads with more than 29.33 lakh girls vaccinated, followed by Bihar (13.70 lakh) and Gujarat (7.75 lakh)",
-      "published_at": "Sat, 21 Nov 2026 21:23:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ep8j6x/article71727555.ece/alternates/LANDSCAPE_1200/Telangana-vacciGSHFRJN65.7.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
         ]
       }
     },
@@ -370,76 +436,6 @@
       }
     },
     {
-      "raw_id": "cdf3a44208d11dc555",
-      "title": "Tamil Nadu goes to polls",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
-      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
-      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 9
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "5135a5e751d0c122ea",
-      "title": "Those supporting terrorism will meet fate of Afzal Guru: Amit Shah",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/terrorism-wont-be-allowed-to-stage-comeback-it-has-been-buried-amit-shah-in-udhampur-rally/article68685621.ece",
-      "summary": "The Union Home Minister said, “Even generations after Rahul (Gandhi) would not be able to restore it (Article 370). Elections are being held here for the first time without Article 370 and a separate flag”",
-      "published_at": "Sat, 28 Sep 2024 02:30:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wex2nb/article68685658.ece/alternates/LANDSCAPE_1200/PTI09_26_2024_000103B.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "9c2378249381b1cc8e",
       "title": "India can cut fossil fuel import bill by 40% through faster electrification: Report",
       "url": "https://eastmojo.com/national-news/2026/11/20/india-can-cut-fossil-fuel-import-bill-by-40-through-faster-electrification-report/",
@@ -473,12 +469,12 @@
       }
     },
     {
-      "raw_id": "aa00b7f0277886cf9f",
-      "title": "Carnatic violinist HN Bhaskar charged with four sexual offences against minor in California",
-      "url": "https://www.thenewsminute.com/news/carnatic-violinist-hn-bhaskar-charged-with-four-sexual-offences-against-minor-in-california",
-      "summary": "Carnatic violinist HN Bhaskar is facing four felony charges in a criminal case filed before a California court. The charges relate to alleged sexual offences involving a minor between September 4 and 26, 2026. The case was filed on November 6 before the San Diego Superior Court. According to the court’s online records, Bhaskar faces two counts of oral copulation of a person under 18 and two counts of sexual penetration with a foreign object involving a victim under 18. The court records also show that a warrant was issued on November 6, the day the complaint was filed. The San Diego Superior Court confirmed to TNM that the complaint lists four charges and that the alleged offences took place “on or about and between September 4, 2026 and September 26, 2026.” The court said no date had been scheduled for Bhaskar’s arraignment and that he had not made any in-court appearances as of November 21. It could not confirm whether he was in custody. However, a source told TNM that Bhaskar is currently in custody at a jail in Boston, Massachusetts. The court's Public Affairs Office told TNM that this was possible and said he could also be awaiting an extradition hearing for his transfer to Ca",
-      "published_at": "Sat, 21 Nov 2026 17:44:51 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-21/jjd7deo7/HN-Bhaskar.jpg",
+      "raw_id": "94f92cb225baaa6d5f",
+      "title": "MLA Raja Singh asks Hindus to keep guns at home if Muslim population share rises",
+      "url": "https://www.thenewsminute.com/telangana/mla-raja-singh-asks-hindus-to-keep-guns-at-home-if-muslim-population-share-rises",
+      "summary": "Raja Singh, the controversial MLA from Telangana, has once again made inflammatory comments against Muslims, asking Hindus to keep licensed guns in their homes if India doesn’t bring in population regulation law restricting people from having more than two children. He made the remarks while referring to a recent Pew Research Center study projecting that Muslims’ population share would go up by five percentage points between 2020 and 2070. The video showing him holding a rifle and sitting amidst a group of men in Uttar Pradesh while advocating for ‘gun culture’ among Hindus was shared by the Goshamhal MLA himself, according to ANI. Raja Singh referred to recent news reports on a Pew Research Center study which projected that between 2020 and 2070, Muslims’ population share in India will go up from 15% to 20%, while that of Hindus will decrease from about 79% to 76%. “If their (Muslims’) population share rises, will Hindus be safe?” Raja Singh asked the people gathered around him. Though he resigned from the Bharatiya Janata Party (BJP) in 2025 objecting to the party’s choice in appointing the Telangana party president, he referred to the BJP as “our party”. He said, “In the coming ",
+      "published_at": "Sun, 22 Nov 2026 06:24:26 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/kqgtq4kf/RajaSinghGuns22112026.png",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -498,49 +494,45 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Society, Rights & Justice": 1
+          "Governance & Administration": 2,
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
+          "Environment, Health & Science",
+          "Governance & Administration"
         ]
       }
     },
     {
-      "raw_id": "c904f01f9071914d83",
-      "title": "U.S. Senate approves bill to speed up permitting reviews, Democrats and environmental groups oppose",
-      "url": "https://www.thehindu.com/news/international/us-senate-approves-bill-to-speed-up-permitting-reviews-democrats-and-environmental-groups-oppose/article71723266.ece",
-      "summary": "The legislation’s sweeping changes would shorten the timeline to start big energy projects and make sure data centres pay for the energy they use",
-      "published_at": "Fri, 20 Nov 2026 12:04:26 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/eohg43/article71723366.ece/alternates/LANDSCAPE_1200/iStock-170619187.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "e7e0f8ce876bd60189",
+      "title": "A private odyssey: Belonging, without reckoning",
+      "url": "https://www.newslaundry.com/2026/11/22/a-private-odyssey-belonging-without-reckoning",
+      "summary": "Last summer, along Lake Como, close to the place where Benito Mussolini was captured and killed by the Resistance Group, I came across his framed photographs being sold publicly. Unlike Germans, many Italians have not had a sustained reckoning with their Fascist past, often deluding themselves into believing it to be an aberration. The summer spent in Italy returned to me while reading Congress leader Sonia Gandhi’s memoir Belonging: A Journey of Love . She records in vivid detail the kindness and generosity of her father Stefano Maino, who had served in the Italian army under the Fascist government. “Not for nothing was he known to his comrades as Maino il Leone – Maino the Lion – as much loved by his men as he was feared,” she writes. The daughterly love is understandable, but here’s a leader who acutely records the threats of right-wing politics in the country she adopted, but is reluctant to confront the one she was born in. The memoir is silent about any possible shadow of Mussolini’s military campaigns over Maino’s life. Saviour complex The autobiography is a genre in omission. It doesn’t carry the whole truth about the author. It’s a story of what they chose to reveal, what ",
+      "published_at": "Sun, 22 Nov 2026 05:30:00 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-11-22/byx3csrv/belonging-review.jpg",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Governance & Administration": 5,
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
+          "Governance & Administration": 1
         },
         "candidate_categories": [
-          "Environment, Health & Science",
-          "Governance & Administration",
-          "International & Geopolitics"
+          "Governance & Administration"
         ]
       }
     },
@@ -761,78 +753,78 @@
       }
     },
     {
+      "raw_id": "419823cff291859881",
+      "title": "14-year-old used AI chatbot to hack Agniveer ‘test’ website, wanted to earn money by selling it on dark web: Delhi police sources",
+      "url": "https://www.thehindu.com/news/cities/Delhi/14-year-old-hacker-held-for-trying-to-sell-private-data-of-4000-agniveers-on-dark-web-delhi-police/article71727963.ece",
+      "summary": "The Haryana teenager used an AI chatbot to identify valuable data and find a way into the test portal; preliminary investigation suggests only names and addresses were accessed, Delhi Police sources say",
+      "published_at": "Sun, 22 Nov 2026 09:00:26 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/jgmydv/article71727992.ece/alternates/LANDSCAPE_1200/2026-11-19T090010Z_850449845_RC2L8OARPJ5S_RTRMADP_3_CYBERSECURITY-GERMANY.JPG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "324f28e17c321ae5cc",
+      "title": "Kerala High Court’s remarks trigger fresh debate on Kochi’s night life",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-high-courts-remarks-trigger-fresh-debate-on-kochis-night-life/article71728981.ece",
+      "summary": "Court’s question on whether the police are opposed to nightlife altogether sparks debate over the city’s growing appetite for late-night events and gatherings and long-standing concerns raised by law enforcers",
+      "published_at": "Sun, 22 Nov 2026 01:20:12 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/dbdy41/article71729457.ece/alternates/LANDSCAPE_1200/IMG_iStock-1201075450_2_1_G9C8SC61.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
       "raw_id": "38234608909ab2bb0b",
       "title": "BJP appoints Yuzvendra Chahal as special invitee to OBC Morcha executive committee",
       "url": "https://www.thehindu.com/news/national/bjp-appoints-yuzvendra-chahal-as-special-invitee-to-obc-morcha-executive-committee/article71729445.ece",
       "summary": "BJP national president Nitin Nabin on November 21, 2026, announced fresh appointments of national office-bearers, national executive members, and department heads for its OBC Morcha with immediate effect",
       "published_at": "Sun, 22 Nov 2026 00:58:56 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/o7g44c/article71729446.ece/alternates/LANDSCAPE_1200/PTI11_21_2026_000328B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "66ee6cf7f07d424b73",
-      "title": "‘Lathi haregi-Laptop jitega’: Akhilesh coins slogan aimed at youth, pushing development pitch",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/lathi-haregi-laptop-jitega-akhilesh-coins-slogan-aimed-at-youth-pushing-development-pitch/article71728726.ece",
-      "summary": "SP says slogan echoes the popular sentiment of GenZ in U.P., which is fed up with the BJP’s ‘bulldozer raj’ and the unscientific agenda of the RSS being imposed over the Constitution and the rule of law",
-      "published_at": "Sat, 21 Nov 2026 22:46:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ui5zm0/article71729364.ece/alternates/LANDSCAPE_1200/PTI11_21_2026_000208B.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "016ad06dcd6bb3c160",
-      "title": "14-year-old used AI chatbot to hack Agniveer test website to earn money: Sources",
-      "url": "https://www.thehindu.com/news/national/haryana/14-year-old-used-ai-chatbot-to-hack-agniveer-test-website-to-earn-money-sources/article71728795.ece",
-      "summary": "The Haryana teenager used an AI chatbot to identify valuable data and find a way into the test portal; preliminary investigation suggests only names and addresses were accessed, Delhi Police sources say",
-      "published_at": "Sat, 21 Nov 2026 21:31:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/fw59j/article71728789.ece/alternates/LANDSCAPE_1200/2026-11-19T115805Z_1895979850_RC2L8OASXN6C_RTRMADP_3_CYBERSECURITY-STOCKS.JPG",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -891,6 +883,45 @@
         "candidate_categories": [
           "Economy & Employment",
           "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "2e936e852f15df2153",
+      "title": "UoH students launch protest seeking professor’s termination over casteist remarks",
+      "url": "https://www.thenewsminute.com/telangana/uoh-students-launch-protest-seeking-professors-termination-over-casteist-remarks",
+      "summary": "University of Hyderabad students have launched an indefinite protest demanding the termination of Dr Vijaya Ramdas Mandala, a faculty member in the History Department, over his alleged derogatory remarks about Dalit students in an email exchange. The remarks were allegedly made after a former student expressed hesitation regarding incorporating certain suggestions made by Vijaya Ramdas into his research because of ethical concerns. The incident took place in April but came to light only recently. The protest has been called by the Students’ Union, which comprises various student groups, including the Students’ Federation of India (SFI), the Ambedkar Students’ Association, the Dalit Students’ Union,and the Tribal Students’ Forum. Students have been staging a sit-in outside the Social Sciences building, demanding Vijaya Ramdas’s termination. “We will not call off the protest until Vijaya Ramdas is terminated,” PhD student Aditya Rao told TNM. “We had protested earlier too, but no concrete action was taken against him,” he added. The screenshots of an email exchange were shown to TNM by student activists. Through the emails, Vijaya Ramdas contacted Sandeep (name changed), who is a PhD",
+      "published_at": "Fri, 20 Nov 2026 14:59:57 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-20/15tit7j3/UoH.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 5,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 7,
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "Protests",
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -1096,39 +1127,6 @@
         },
         "candidate_categories": [
           "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "26c98503a4b2edfa3c",
-      "title": "Dadasaheb Phalke Awards 2026 Winners List: ‘धुरंधर’ की धूम, जीते 6 अवॉर्ड्स, टेलर स्विफ्ट के लिए खास सम्मान, देखें पूरी विनर लिस्ट",
-      "url": "https://theruralpress.in/entertainment/dadasaheb-phalke-awards-2026-winners-list-dhurandhar/",
-      "summary": "मुंबई। बॉलीवुड अभिनेता रणवीर सिंह की फिल्म ‘धुरंधर’ ने दादासाहेब फाल्के इंटरनेशनल फिल्म फेस्टिवल अवॉर्ड्स 2026 में शानदार प्रदर्शन किया है। फिल्म ने एक-दो नहीं, बल्कि कुल 6 पुरस्कार अपने नाम किए हैं। बेस्ट फिल्म, बेस्ट एक्टर और बेस्ट डायरेक्टर जैसी बड़ी कैटेगरी में ‘धुरंधर’ का दबदबा देखने को मिला। वहीं, रणवीर सिंह को बेस्ट […]",
-      "published_at": "Sat, 21 Nov 2026 14:53:17 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
           "Protests"
         ]
       }
@@ -1340,6 +1338,45 @@
       }
     },
     {
+      "raw_id": "d046f82d7b1843210b",
+      "title": "A Duck’s Tale: Arun Varghese on his quirky satire rooted in the backwaters of Kuttanad",
+      "url": "https://www.thenewsminute.com/flix/a-ducks-tale-arun-varghese-on-his-quirky-satire-rooted-in-the-backwaters-of-kuttanad",
+      "summary": "Ducks, wobbling about on land and water, are such a common sight in small towns of Kerala, especially in Kuttanad, that you don’t pause to take a second look when you hear their ceaseless quacking. So, when A Duck’s Tale , a Malayalam movie set to premiere at the International Film Festival of Kerala (IFFK) next month, begins with a flock of ducks swimming in the night, you don’t think much of it, beyond making a vague connection to the title. But Arun Varghese, who grew up in Kuttanad, manages to pick out a single duck from that flock and weave several stories around it, in his debut film. He has written and directed A Duck’s Tale with the production team that made the critically acclaimed Baakki Vannavar , released two years ago. Salmaanul, who played the quiet protagonist in Baakki Vannavar , turns into an expressive, frustrated young man in A Duck’s Tale , with both films putting him in the garb of an unemployed youth. “Yes, but in this case it is more because he is lazy, not trying hard, while Baakki Vannavar was more about the system,” Arun says in an interview with TNM. Malayalam film Baaki Vannavar explores unemployment through a gig worker's life He too, like the protagoni",
+      "published_at": "Sun, 22 Nov 2026 06:22:57 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/wrcxq03q/salmaanulducktale.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1,
+          "Sports": 1,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "International & Geopolitics",
+          "Society, Rights & Justice",
+          "Sports"
+        ]
+      }
+    },
+    {
       "raw_id": "3440d5197743f52545",
       "title": "Reverse policies, stop tax sops for rich: Trade unions, farm outfits to PM Modi",
       "url": "https://www.thehindu.com/news/national/reverse-policies-stop-tax-sops-for-rich-trade-unions-farm-outfits-to-pm-modi/article71728776.ece",
@@ -1439,6 +1476,39 @@
         "candidate_categories": [
           "Economy & Employment",
           "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "ddc94ff44712225d4d",
+      "title": "BJP leader demands halt to water supply to industries amid scarcity in Latur",
+      "url": "https://www.thehindu.com/news/national/maharashtra/bjp-leader-demands-halt-to-water-supply-to-industries-amid-scarcity-in-latur/article71730649.ece",
+      "summary": "Shivajirao Patil Kavhekar demanded that drinking water needs of rural and urban areas be given top priority and industrial supply be stopped immediately",
+      "published_at": "Sun, 22 Nov 2026 10:33:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5iq3fn/article71730654.ece/alternates/LANDSCAPE_1200/shivarijao.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -1618,82 +1688,6 @@
       }
     },
     {
-      "raw_id": "ea70c0c6791d171d39",
-      "title": "Italian workers, students protest over wages and public services",
-      "url": "https://www.thehindu.com/news/international/italian-workers-students-protest-over-wages-and-public-services/article71725539.ece",
-      "summary": "Parliament is examining Meloni's €26 billion ($30 billion) budget for 2027, which CGIL says does not go far enough to support incomes and public services",
-      "published_at": "Fri, 20 Nov 2026 22:24:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gx3wj6/article71725561.ece/alternates/LANDSCAPE_1200/Italy_Protest_35271.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "3e9c70ef62236e38b9",
-      "title": "Economic losses from Indonesia fires could reach $30 billion, research shows",
-      "url": "https://www.thehindu.com/news/international/economic-losses-from-indonesia-fires-could-reach-30-billion-research-shows/article71724140.ece",
-      "summary": "Wildfires have burned through 7.1 million acres so far in 2026, according to the Nusantara Atlas deforestation monitor, an area 18 times the size of London",
-      "published_at": "Fri, 20 Nov 2026 16:42:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2mnc4t/article71724150.ece/alternates/LANDSCAPE_1200/2026-11-19T030008Z_1070645042_RC29QNAMPA73_RTRMADP_3_ASIA-WEATHER-INDONESIA-FIRES.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
       "raw_id": "3f60a7a88ab59e01a7",
       "title": "Northeast forest guards trained to protect India’s only ape",
       "url": "https://eastmojo.com/national-news/2026/11/20/northeast-forest-guards-trained-to-protect-indias-only-ape/",
@@ -1723,6 +1717,41 @@
         },
         "candidate_categories": [
           "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "5380b21e5ea73552a0",
+      "title": "Unmasking misogyny: How a Malayalam YouTube channel weaponises science against women",
+      "url": "https://www.thenewsminute.com/kerala/unmasking-misogyny-how-a-malayalam-youtube-channel-weaponises-science-against-women",
+      "summary": "In July 2026, during a debate on 24 News’ Thammil Thammil about whether women should face restrictions on what they wear, a woman panellist posed a question that cut to the heart of the argument: If women’s clothes provoke sexual assault, what explains the rape of children and elderly women? Muhammed Ameer, an ‘educator’ and one of the prominent faces of the Malayalam digital platform Unmasking Anomalies (UA), had an answer. “Consider”, he said, “the amount of sexual imagery men are exposed to every day, from hoardings and advertisements to models.” A man sees a sexually exposed woman and becomes sexually frustrated. Just as someone who cannot shout back at a boss might take their anger out on someone at home, he argued, sexual frustration can be taken out on a different target. This, Ameer said, was “frustration-aggression theory”. When another panellist objected that this did not explain why women should change what they wear, Ameer was emphatic. “This is a psychological theory,” he asserted. “It’s not me saying this.” It is an effective way to make an argument, enough to make the person sitting across from you in a debate pause and reconsider what they can immediately challenge.",
+      "published_at": "Fri, 20 Nov 2026 11:42:20 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-20/lxg0jz8y/unmasking-anomalies-1.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Sports"
         ]
       }
     },
@@ -2057,35 +2086,37 @@
       }
     },
     {
-      "raw_id": "ac928c66fe3bbf94a9",
-      "title": "The secretive salamanders of the Himalayas",
-      "url": "https://india.mongabay.com/short-article/2026/11/the-secretive-salamanders-of-the-himalayas/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Every monsoon in Darjeeling, the Himalayan salamander emerges from the forest floor to breed in small ponds known locally as pokhris. Males and females engage in a delicate courtship dance, after which fertilised eggs are laid on half-submerged vegetation. The larvae hatch into the water […]",
-      "published_at": "18 Nov 2026 14:47:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/18123158/salamander-1-768x512.jpg",
-      "suggested_category": "",
+      "raw_id": "cdf3a44208d11dc555",
+      "title": "Tamil Nadu goes to polls",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
+      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
+      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 2
+          "Politics & Elections": 1,
+          "States & Local": 9
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
@@ -2461,41 +2492,6 @@
       }
     },
     {
-      "raw_id": "1bc9d993aa59c66eda",
-      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
-      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
-      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -2628,11 +2624,44 @@
       }
     },
     {
+      "raw_id": "e18dc90f66a3e0e710",
+      "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
+      "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
+      "summary": "“Our position is clear: as long as Iran's demands are not met, the discussion on the Strait of Hormuz and its opening is pointless,” Foreign Minister Abbas Araghchi said",
+      "published_at": "Sun, 22 Nov 2026 09:59:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r1sf3e/article71730504.ece/alternates/LANDSCAPE_1200/Strait_of_Hormuz_Swimmer_31874.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "8cab7859d1f88791ea",
       "title": "The Rohingya | Vindication for a persecuted people",
       "url": "https://www.thehindu.com/news/international/the-rohingya-vindication-for-a-persecuted-people/article71729370.ece",
       "summary": "The International Court of Justice’s ruling that Myanmar committed genocide during its 2017 ‘clearance operations’ offers a measure of justice for the ethnic and religious minority, but the court has no means of enforcing its judgment",
-      "published_at": "Sat, 21 Nov 2026 23:50:18 +0530",
+      "published_at": "Sun, 22 Nov 2026 09:34:37 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/a15j58/article71729365.ece/alternates/LANDSCAPE_1200/2026-11-19T101513Z_1144479296_RC2WQOADW602_RTRMADP_3_MYANMAR-ROHINGYA-WORLD-COURT.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -2797,45 +2826,12 @@
       }
     },
     {
-      "raw_id": "f2d674ec693c675e2e",
-      "title": "U.S., China, Russia hold historic summit in Shenzhen",
-      "url": "https://www.thehindu.com/news/international/china-russia-us-trilateral-summit-xi-putin-trump-call-for-cooperation-to-confront-global-security-challenges/article71720102.ece",
-      "summary": "The three heads of state — Xi Jinping, Vladimir Putin and Donald Trump — had an in-depth exchange of views on the current international situation and committed to maintaining strategic stability and international security",
-      "published_at": "Fri, 20 Nov 2026 09:39:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/si7mam/article71720107.ece/alternates/LANDSCAPE_1200/China_APEC_25343.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "e59371860692ca6214",
-      "title": "11 killed in burst of violence in northern Mexico after capture of cartel leader Meza Flores",
-      "url": "https://www.thehindu.com/news/international/11-killed-in-burst-of-violence-in-northern-mexico-after-capture-of-cartel-leader-meza-flores/article71729468.ece",
-      "summary": "Flores climbed the cartel ranks to lead the Beltrán-Leyva cartel and later became the leader of his own group, the Meza-Flores Transnational Criminal Organisation",
-      "published_at": "Sun, 22 Nov 2026 02:19:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/qonacv/article71729469.ece/alternates/LANDSCAPE_1200/2026-11-21T180941Z_1794048376_RC2ASOAVVQPP_RTRMADP_3_MEXICO-CHAPOISIDRO.JPG",
+      "raw_id": "ad54f9c9860c7883d1",
+      "title": "India, Bulgaria discuss bilateral ties, IMEC, Black Sea situation",
+      "url": "https://www.thehindu.com/news/national/india-bulgaria-discuss-bilateral-ties-imec-black-sea-situation/article71729472.ece",
+      "summary": "‘Our teams have drawn up a detailed roadmap of cooperation, so we will be approving that today, and I think that will give a very clear pathway to our activities ahead,’ said S. Jaishankar",
+      "published_at": "Sun, 22 Nov 2026 02:58:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1wrhxb/article71729473.ece/alternates/LANDSCAPE_1200/20261121509L.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -2863,12 +2859,12 @@
       }
     },
     {
-      "raw_id": "d018b828e7f0eaac44",
-      "title": "The Shenzhen trilateral | The unlikely trio",
-      "url": "https://www.thehindu.com/news/international/the-shenzhen-trilateral-the-unlikely-trio/article71729376.ece",
-      "summary": "Leaders of the U.S., Russia and China agreed to begin talks on nuclear risk reduction but offered no details on institutionalising the dialogue process",
-      "published_at": "Sat, 21 Nov 2026 23:50:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/yv50er/article71729373.ece/alternates/LANDSCAPE_1200/2026-11-19T084350Z_1105585625_RC2WQOAQOPC3_RTRMADP_3_APEC-SUMMIT-TRUMP.JPG",
+      "raw_id": "1b92d45ccc7d120687",
+      "title": "COP31: Turkiye's final draft doesn't mention the words ‘fossil fuels’ that cause global warming",
+      "url": "https://www.thehindu.com/news/international/cop31-turkiyes-final-draft-doesnt-mention-the-words-fossil-fuels-that-cause-global-warming/article71730648.ece",
+      "summary": "COP31 President Murat Kurum gave negotiators only about three hours to make objections or ask for changes before the wording goes before the conference plenary",
+      "published_at": "Sun, 22 Nov 2026 12:21:27 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/olqbso/article71730664.ece/alternates/LANDSCAPE_1200/Climate_COP31_Turkey_57147.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
@@ -3259,12 +3255,12 @@
       }
     },
     {
-      "raw_id": "f69b6bef6b93fbc849",
-      "title": "Sandpapergate scandal: Pat Cummins will struggle to captain team without refuting Bancroft’s words, says Healy",
-      "url": "https://www.thehindu.com/sport/cricket/sandpapergate-scandal-pat-cummins-will-struggle-to-captain-team-without-refuting-bancrofts-words-says-healy/article71719046.ece",
-      "summary": "Bancroft, one of the central figures of the 2018 'sandpapergate' scandal, on Tuesday (November 17, 2026) asserted that the entire team knew about the conspiracy but he ended up taking \"the bullet\" for everyone",
-      "published_at": "Thu, 19 Nov 2026 16:04:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/f4li2l/article71719102.ece/alternates/LANDSCAPE_1200/2026-11-13T090515Z_167469238_RC2MMOAB8BRN_RTRMADP_3_CRICKET-ODI-AUS-ENG.JPG",
+      "raw_id": "520cf927b6850b3cfb",
+      "title": "Satwik-Chirag pair exits Hong Kong Open; Lakshya also bows out",
+      "url": "https://www.thehindu.com/sport/satwik-chirag-pair-exits-hong-kong-open-lakshya-also-bows-out/article71728549.ece",
+      "summary": "Satwik and Chirag, the world No. 6 pair, suffered an 18-21, 19-21 loss in a fast-paced match against Malaysia’s eighth-seeded pair of Man Wei Chong and Tee Kai Wun",
+      "published_at": "Sat, 21 Nov 2026 19:14:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/uy3vsd/article71728586.ece/alternates/LANDSCAPE_1200/2026-09-23T075640Z_1515308498_UP1EM9N0M2F2A_RTRMADP_3_GAMES-ASIA.JPG",
       "suggested_category": "Sports",
       "priority_discovery": false,
       "source": {
@@ -3284,7 +3280,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 12
+          "Sports": 9
         },
         "candidate_categories": [
           "Sports"
@@ -3372,39 +3368,6 @@
         "type": "local",
         "selection_group": "independent_social",
         "ownership": "Independent regional digital publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "53cb46dc3ea00a4067",
-      "title": "Bilaspur: सड़क हादसे में घायल कारोबारी को मिलेगा एक करोड़ से अधिक का मुआवजा, 8 साल की लंबी लड़ाई के बाद मिला ‘न्याय’",
-      "url": "https://theruralpress.in/chhattisgarh/bilaspur-road-accident-compensation-1-crore-businessman-motor-claim-tribunal/",
-      "summary": "Justice served after 8 years: 3 दिसंबर 2018 की शाम। समय करीब साढ़े 6 बजे। बिलासपुर के कारोबारी ओमप्रकाश दुबे अपनी दुकान ‘ओम मेटल स्टोर्स’ से काम निपटाकर भतीजी के साथ बाइक पर घर लौट रहे थे। रोज की तरह सामान्य शाम थी। लेकिन चकरभाठा थाना क्षेत्र में राम मंदिर के पास सामने से आ […]",
-      "published_at": "Sat, 21 Nov 2026 14:11:28 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -3655,12 +3618,12 @@
       }
     },
     {
-      "raw_id": "76c11b452b67f0e201",
-      "title": "Millions of students take NEET, yet hundreds of medical seats go vacant",
-      "url": "https://www.thehindu.com/education/millions-of-students-take-neet-yet-hundreds-of-medical-seats-go-vacant/article71707087.ece",
-      "summary": "Under the 2026 Float and Freeze option, candidates can carry forward their allotments without completing admission formalities, and even if their seats remain unchanged in Round 3, they can choose not to join; this flexibility has had significant implications in seat utilisation",
-      "published_at": "Fri, 20 Nov 2026 19:16:08 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mwr86h/article71707171.ece/alternates/LANDSCAPE_1200/TH16-Maitri-11.GJAG8T9N4.3.jpg.jpg",
+      "raw_id": "7933d7284b6db630ab",
+      "title": "Why India’s Public Policy schools need to rethink how they teach",
+      "url": "https://www.thehindu.com/education/why-indias-public-policy-schools-need-to-rethink-how-they-teach/article71707249.ece",
+      "summary": "What is required is a robust ecosystem of Indian policy cases and not reliance on Western examples",
+      "published_at": "Sat, 21 Nov 2026 20:56:08 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/yexxw1/article71707250.ece/alternates/LANDSCAPE_1200/Imran.jpg",
       "suggested_category": "Society, Rights & Justice",
       "priority_discovery": false,
       "source": {
@@ -3680,11 +3643,42 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 12,
-          "Environment, Health & Science": 4
+          "Society, Rights & Justice": 12
         },
         "candidate_categories": [
-          "Environment, Health & Science",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "622bb70ad0db350792",
+      "title": "Why Engineering students need to know what to do when the machine doesn’t work",
+      "url": "https://www.thehindu.com/education/why-engineering-students-need-to-know-what-to-do-when-the-machine-doesnt-work/article71708787.ece",
+      "summary": "Learning to diagnose and set right failures may be the most important experiment missing from Engineering labs",
+      "published_at": "Sat, 21 Nov 2026 20:54:58 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/arqq7o/article71714595.ece/alternates/LANDSCAPE_1200/STEM.jpg",
+      "suggested_category": "Society, Rights & Justice",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-education",
+        "name": "The Hindu - Education",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 12
+        },
+        "candidate_categories": [
           "Society, Rights & Justice"
         ]
       }
@@ -4216,214 +4210,272 @@
       }
     },
     {
+      "raw_id": "41e2e4cc34d03ecd55",
+      "title": "Bijapur: 74 हजार पौधे कहां गए? बीजापुर में 16.73 करोड़ के पौधरोपण पर विधायक ने उठाए गंभीर सवाल",
+      "url": "https://theruralpress.in/scam/corruption-in-the-name-of-planting-saplings/",
+      "summary": "Corruption in tree plantation: VB-G RAM G (मनरेगा) योजना के तहत जिले में 74 हजार पौधों के रोपण के नाम पर 16 करोड़ 73 लाख रुपये के कथित भ्रष्टाचार का मामला सामने आया है। बीजापुर जिला मुख्यालय में आयोजित प्रेसवार्ता में विधायक विक्रम मंडावी ने जिला पंचायत के अधिकारियों पर गंभीर आरोप लगाते हुए पूरे […]",
+      "published_at": "Sun, 22 Nov 2026 06:17:39 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "6deeb624a147db636e",
+      "title": "भविष्य के नवोन्मेषकों को प्रोत्साहित करना: कलिंगा विश्वविद्यालय द्वारा विज्ञान कार्यशील मॉडल प्रतियोगिता 5.0 का आयोजन",
+      "url": "https://theruralpress.in/chhattisgarh/kalinga-university-science-working-model-competition-5-0-winners-anand-mela-2026/",
+      "summary": "शिक्षा का वास्तविक महत्व केवल ज्ञान अर्जित करने में ही नहीं, बल्कि प्रश्न पूछने, विश्लेषण करने तथा उस ज्ञान को वास्तविक जीवन की परिस्थितियों में लागू करने की क्षमता विकसित करने में निहित है। वैज्ञानिक सोच तर्क, प्रयोग और नई संभावनाओं की खोज के माध्यम से इस प्रक्रिया को और अधिक सशक्त बनाती है। इसी […]",
+      "published_at": "Sun, 22 Nov 2026 06:17:27 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b417f8a8f235534343",
+      "title": "बंजारी चौक से टाटीबंध तक रोज फंसने वालों के लिए बड़ी राहत, हर 1.3 किमी पर बनेगा ओवरब्रिज, इन 7 चौराहों से खत्म होगा जानलेवा जाम",
+      "url": "https://theruralpress.in/chhattisgarh/raipur-ring-road-2-seven-new-overbridges-worth-450-crore-banjari-chowk-to-tatibandh-traffic-update/",
+      "summary": "Raipur Ring Road Overbridge: राजधानी की सड़कों पर बढ़ते ट्रैफिक दबाव और लगातार हो रहे हादसों के बीच रिंग रोड-2 से गुजरने वाले लाखों वाहन चालकों के लिए बड़ी राहत की खबर है। लोक निर्माण विभाग (PWD) ने बंजारी चौक से टाटीबंध तक करीब 9 किलोमीटर के हिस्से में 450 करोड़ रुपए की लागत से […]",
+      "published_at": "Sun, 22 Nov 2026 06:00:55 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "7740adc53fb8f5a07b",
+      "title": "Raipur: बच्ची की मौत का मामला हत्या का निकला, पोस्ट मॉर्टम से हुआ खुलासा, कैसे हुई मौत ?",
+      "url": "https://theruralpress.in/crime/raipur-railway-station-girls-death-post-mortem-reveals-murder-father-arrested-crime-news/",
+      "summary": "The girl was murdered: रेलवे स्टेशन परिसर में 2 साल की बच्ची की संदिग्ध परिस्थितियों में हुई मौत का मामला अब हत्या का निकला है। पोस्टमार्टम की शॉर्ट रिपोर्ट आने के बाद जीआरपी ने बच्ची के पिता के खिलाफ हत्या का अपराध दर्ज कर उसे अभिरक्षा में ले लिया है। 19 नवंबर को रेलवे स्टेशन […]",
+      "published_at": "Sun, 22 Nov 2026 05:40:05 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e17b71fd519fea15dd",
+      "title": "कोटा-उदयपुर हाईवे-52 पर खड़े ट्रक में घुसी क्रूजर, दो बच्चों समेत 9 की मौत और 7 घायल",
+      "url": "https://theruralpress.in/national/cruiser-vehicle-collided-parked-truck-kota-udaipur-highway-9-deaths-pilgrims-returning-from-khatu-shyamji-sp-tejaswani-gautam-confirmed-the-incident/",
+      "summary": "Kota Road Accident: कोटा-उदयपुर नेशनल हाईवे-52 पर भीषण सड़क हादसे में 9 लोगों की मौत हो गई। जिसमें 2 बच्चे भी शामिल है। 7 लोग घायल है। नाता थाना क्षेत्र में शंभूपुरा गांव के पास यह हादसा हुआ। शनिवार देर रात 1 बजे तेज रफ्तार क्रूजर सड़क किनारे ट्रक में पीछे से घुस गई। हादसा […]",
+      "published_at": "Sun, 22 Nov 2026 05:31:51 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "786822326cd51baf13",
+      "title": "Raipur: एयरपोर्ट पर अब नहीं चलेगी टैक्सी वालों की मनमानी, पुलिस ने दी आखिरी चेतावनी!",
+      "url": "https://theruralpress.in/chhattisgarh/mana-airport-ola-uber-rapido-taxi-fare-police-action-raipur/",
+      "summary": "Police instructions to taxi operators: माना एयरपोर्ट पर संचालित ओला, उबर, रैपिडो और अन्य टैक्सी ऑपरेटरों को यात्रियों से शालीन व्यवहार करने और निर्धारित किराया लेने की हिदायत दी गई है। रायपुर ग्रामीण पुलिस ने टैक्सी ऑपरेटरों की बैठक लेकर स्पष्ट चेतावनी दी है कि किराये और बुकिंग को लेकर विवाद या यात्रियों से दुर्व्यवहार […]",
+      "published_at": "Sun, 22 Nov 2026 04:47:47 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "b33384773982ba5632",
+      "title": "देव दीपावली से एक दिन पहले मनाई जाती है वैकुंठ चतुर्दशी, काशी में हरि-हर मिलन की खास परंपरा",
+      "url": "https://theruralpress.in/religion-spirituality/vaikuntha-chaturdashi-2026-date-time-november-2026nishita-kaal-puja-muhurathari-hara-milan-kartik-shukla-chaturdashi-in-kashi/",
+      "summary": "Vaikuntha Chaturdashi 2026: हिंदू धर्म में विशेष धार्मिक महत्व रखने वाली वैकुंठ चतुर्दशी इस साल सोमवार, 23 नवंबर 2026 को मनाई जाएगी। हर साल कार्तिक मास के शुक्ल पक्ष की चतुर्दशी तिथि को देव दीपावली से एक दिन पहले आने वाले इस पर्व पर भगवान विष्णु और भगवान शिव दोनों की पूजा की जाती है, […]",
+      "published_at": "Sun, 22 Nov 2026 04:36:17 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "f4779fb00f33e161c7",
+      "title": "धनकुबेर निकला CGST का सुपरिटेंडेंट, पकड़ा गया था 10 लाख की रिश्वत लेते, आवास पर तलाशी हुई तो…",
+      "url": "https://theruralpress.in/national/cgst-superintendent-corruption-1-86-crore-panchkula-cbi-raid-panchkula/",
+      "summary": "Panchkula: एक सरकारी अधिकारी की ईमानदारी की तनख्वाह से घर चलता है, बच्चों की पढ़ाई होती है, एक छोटा सा मकान बनता है। लेकिन जब उसी अधिकारी के घर से करोड़ों की नकदी, विदेशी मुद्रा, सोने की ईंटें और चांदी निकलती है, तो एक ही सवाल हर आम आदमी के मन में उठता है — […]",
+      "published_at": "Sun, 22 Nov 2026 03:41:10 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "3d3d3b41d40a7e8738",
+      "title": "Aaj Ka Rashifal: आज इन 3 राशियों की बढ़ेगी परेशानी! रहें सतर्क, पढ़े अपना राशिफल",
+      "url": "https://theruralpress.in/religion-spirituality/aaj-ka-rashifal-22-november-sunday-horoscope-taurus-virgo-libra-zodiac-signs-love-career-money-health-predictions/",
+      "summary": "Aaj Ka Rashifal 22 November 2026: रविवार का दिन सूर्य देव की पूजा और आराधना के लिए विशेष माना जाता है। धार्मिक मान्यताओं के अनुसार रविवार को सूर्य देव की उपासना करने से मान-सम्मान, आत्मविश्वास और सकारात्मकता बढ़ती है। ज्योतिषीय गणनाओं के अनुसार इस दिन कुछ राशि वालों को धन, करियर और रिश्तों में अच्छे […]",
+      "published_at": "Sun, 22 Nov 2026 00:30:00 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-rural-press",
+        "name": "The Rural Press",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "SSB Media House"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
       "raw_id": "af0c48cc7c47aa9c78",
       "title": "Hemang Joshi Raipur Visit: युवा मोर्चा अध्यक्ष हेमांग जोशी कल पहुंचेंगे रायपुर, CM साय और दोनों डिप्टी CM भी होंगे शामिल, जानें पूरा कार्यक्रम",
       "url": "https://theruralpress.in/chhattisgarh/hemang-joshi-raipur-visit-cm-sai-bjym-meeting-full-schedule-2026/",
       "summary": "रायपुर। भारतीय जनता युवा मोर्चा (BJYM) के राष्ट्रीय अध्यक्ष डॉ. हेमांग जोशी 22 नवंबर को दो दिवसीय दौरे पर छत्तीसगढ़ पहुंचेंगे। अपने प्रवास के दौरान वे रायपुर में युवा मोर्चा की प्रदेश कार्यसमिति बैठक में शामिल होने के साथ खिलाड़ियों, युवतियों, युवा उद्यमियों और सामाजिक कार्यकर्ताओं से संवाद करेंगे। इसके अलावा नक्सल प्रभावित क्षेत्रों के […]",
       "published_at": "Sat, 21 Nov 2026 16:38:34 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2e60b5ef81392eb844",
-      "title": "PWD Secretary Chhattisgarh: छत्तीसगढ़ में PWD सचिव का एक्शन, सरगुजा संभाग के सड़क की जांच शुरु, ठेकेदार होंगे ब्लैकलिस्ट, बैंक गारंटी भी होगी जब्त",
-      "url": "https://theruralpress.in/chhattisgarh/pwd-secretary-action-sarguja-road-contractors-blacklist-chhattisgarh/",
-      "summary": "अंबिकापुर। छत्तीसगढ़ में खराब सड़कों और निर्माण कार्यों की धीमी रफ्तार को लेकर लोक निर्माण विभाग (PWD) ने सख्ती दिखाई है। विभाग के सचिव मुकेश कुमार बंसल ने सरगुजा संभाग के चार जिलों का लगातार दो दिनों तक दौरा कर सड़कों, पुल-पुलियों, कॉलेज भवनों और अस्पताल निर्माण कार्यों का निरीक्षण किया। इस दौरान उन्होंने स्पष्ट […]",
-      "published_at": "Sat, 21 Nov 2026 16:18:47 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "9ecfc2a18c3a993bd1",
-      "title": "Operation Sindoor China Pakistan: ऑपरेशन सिंदूर में चीन ने की थी पाकिस्तान की मदद! अमेरिकी रिपोर्ट में बड़ा खुलासा, पढ़ें पूरी रिपोर्ट",
-      "url": "https://theruralpress.in/international/operation-sindoor-china-pakistan-us-report-india-strategy/",
-      "summary": "वाशिंगटन। भारत और चीन के बीच रणनीतिक प्रतिस्पर्धा को लेकर अमेरिकी कांग्रेस के एक उच्चस्तरीय पैनल की रिपोर्ट में कई अहम दावे किए गए हैं। रिपोर्ट के मुताबिक, चीन ने मई 2025 में हुए ऑपरेशन सिंदूर के दौरान पाकिस्तान को सैन्य और तकनीकी मदद दी थी। इसके साथ ही बीजिंग ने भारत की बढ़ती आर्थिक […]",
-      "published_at": "Sat, 21 Nov 2026 16:00:22 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "cb835bd1cc19a36666",
-      "title": "Lalit Chandrakar BJP OBC Morcha: दुर्ग ग्रामीण विधायक ललित चंद्राकर बने BJP OBC मोर्चा के राष्ट्रीय महामंत्री, देखें किसे मिली कौन-सी जिम्मेदारी",
-      "url": "https://theruralpress.in/chhattisgarh/lalit-chandrakar-bjp-obc-morcha-national-general-secretary-list/",
-      "summary": "नई दिल्ली। छत्तीसगढ़ के बीजेपी संगठन के लिहाज से एक अहम खबर सामने आई है। दुर्ग ग्रामीण विधायक ललित चंद्राकर को भाजपा ओबीसी मोर्चा का राष्ट्रीय मंत्री बनाया गया। इसके लिए दुर्ग ग्रामीण विधायक व नव नियुक्त ओबीसी मोर्चा के राष्ट्रीय महामंत्री ललित चंद्राकर को मुख्यमंत्री विष्णुदेव साय व भाजपा प्रदेश अध्यक्ष किरण देव ने […]",
-      "published_at": "Sat, 21 Nov 2026 15:39:41 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "2ee75e26b0dd394b03",
-      "title": "Bilaspur: “यह हलफनामा किसने दिया?” RTE पर हाईकोर्ट में सरकार की किरकिरी, अब सचिव को देना होगा जवाब",
-      "url": "https://theruralpress.in/chhattisgarh/rte-admission-high-court-chhattisgarh-affidavit-secretary/",
-      "summary": "High Court expresses over RTE matter: RTE के तहत निजी स्कूलों में 25% आरक्षित सीटों पर दाखिले और रिक्तियों के मामले में छत्तीसगढ़ हाईकोर्ट ने राज्य सरकार की ओर से पेश शपथपत्र पर कड़ी आपत्ति जताई है। कोर्ट का कहना था कि यह हलफनामा राज्य सरकार की ओर से अधिकृत अधिकारी के बजाय लोक शिक्षण […]",
-      "published_at": "Sat, 21 Nov 2026 15:36:31 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "a05612249fd141d330",
-      "title": "भिलाई से शुरू हुआ था खेल, अब बिलासपुर में खुला करोड़ों के सट्टे का साम्राज्य, सौरभ चंद्राकर के बाद आया रोहरा बंधुओं का नाम",
-      "url": "https://theruralpress.in/mahadev-app-case/bilaspur-online-cricket-satta-25-crore-rohra-brothers-dubai-hawala/",
-      "summary": "बिलासपुर। छत्तीसगढ़ में ऑनलाइन सट्टे की कहानी नई नहीं है। कभी भिलाई से यह खेल शुरू हुआ था। एक छोटे से कमरे से शुरू किया गया सट्टा देखते-देखते महादेव ऐप बन गया। नाम आया सौरभ चंद्राकर का। फिर कहानी दुबई तक पहुंच गई, लग्जरी लाइफ, महंगी शादियां, करोड़ों का साम्राज्य।पुलिस ने उस नेटवर्क को तोड़ा, […]",
-      "published_at": "Sat, 21 Nov 2026 15:14:56 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "1965a266a014759660",
-      "title": "Durg Cyber Fraud: 5 से 15 हजार रुपये के लालच में साइबर ठगों को बेच दिए बैंक खाते, दुर्ग में म्यूल अकाउंट वाले 9 आरोपी गिरफ्तार",
-      "url": "https://theruralpress.in/chhattisgarh/durg-cyber-fraud-9-bank-account-holders-police-action-chhattisgarh/",
-      "summary": "दुर्ग। छत्तीसगढ़ के दुर्ग जिले में साइबर ठगी के पैसों का लेन-देन करने वाले एक नेटवर्क का खुलासा हुआ है। पुलिस ने कमीशन के लालच में अपने बैंक खाते साइबर अपराधियों को उपलब्ध कराने वाले 9 खाताधारकों के खिलाफ कार्रवाई की है। इन लोगों ने महज 5 हजार से 15 हजार रुपये के बदले अपने […]",
-      "published_at": "Sat, 21 Nov 2026 15:11:53 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "37a0d00f556d63e84f",
-      "title": "EPFO New Rules 2026: अब PF से निकाल सकेंगे 90% पैसा, नौकरी छोड़ने के 2 महीने बाद मिलेगा फाइनल सेटलमेंट, जानें EPFO के 8 बड़े बदलाव",
-      "url": "https://theruralpress.in/business/epfo-new-rules-pf-withdrawal-90-percent-settlement-retirement/",
-      "summary": "नई दिल्ली। कर्मचारी भविष्य निधि संगठन (EPFO) ने नौकरीपेशा लोगों और पेंशनभोगियों के लिए कई अहम बदलावों को मंजूरी दी है। इन फैसलों का सीधा असर करोड़ों पीएफ खाताधारकों पर पड़ सकता है। नए प्रावधानों के तहत अब पात्र कर्मचारी अपने पीएफ खाते से 90% तक रकम निकाल सकेंगे। वहीं, नौकरी छोड़ने के बाद फाइनल […]",
-      "published_at": "Sat, 21 Nov 2026 14:32:42 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -4569,6 +4621,39 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {},
         "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "ac928c66fe3bbf94a9",
+      "title": "The secretive salamanders of the Himalayas",
+      "url": "https://india.mongabay.com/short-article/2026/11/the-secretive-salamanders-of-the-himalayas/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Every monsoon in Darjeeling, the Himalayan salamander emerges from the forest floor to breed in small ponds known locally as pokhris. Males and females engage in a delicate courtship dance, after which fertilised eggs are laid on half-submerged vegetation. The larvae hatch into the water […]",
+      "published_at": "18 Nov 2026 14:47:58 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/18123158/salamander-1-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
       }
     },
     {
@@ -5976,6 +6061,39 @@
       }
     },
     {
+      "raw_id": "1b6ec4ee7f959d10ed",
+      "title": "TG SAFE  suspends licences of four Hyderabad eateries over food safety violations",
+      "url": "https://www.thenewsminute.com/telangana/tg-safe-suspends-licences-of-four-hyderabad-eateries-over-food-safety-violations",
+      "summary": "The Telangana Standards Authority for Food and Essential Drugs (TG SAFE) has suspended the Food Safety and Standards Authority of India (FSSAI) licences of four Hyderabad food establishments and ordered them to stop operations after inspections found serious hygiene violations. The action followed a special inspection drive by eight teams comprising food safety officers and police personnel. The checks were conducted at nine restaurants, hostels and other establishments in response to consumer complaints. The four establishments whose licences were suspended are Madhapur Bawarchi in Ayyappa Society, The Spice Kitchen in Kukatpally, Mataam Al Yamani Arabian Restaurant in Tolichowki and Annapurna Caterers in Chandanagar. TG SAFE said it would share their details with food delivery platforms, including Swiggy and Zomato, to facilitate their delisting until their licences are restored. Inspectors reported cockroach infestations and rat droppings, unhygienic kitchens, clogged drains, damaged flooring and improper separation of vegetarian and non-vegetarian food. They also found synthetic food colours, smoke-stained walls and missing medical examination records for food handlers. Al Kare",
+      "published_at": "Sun, 22 Nov 2026 05:13:39 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-22/8hxxw5ge/tg-safe.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
       "raw_id": "7525a77ac5aea1bdd8",
       "title": "Is India Undoing its Foreign Policy? Asks N Ram",
       "url": "https://www.newsclick.in/india-undoing-its-foreign-policy-asks-n-ram",
@@ -6034,12 +6152,12 @@
       }
     },
     {
-      "raw_id": "3c061c1d5dffc751b0",
-      "title": "Amid cold wave, students’ indefinite strike against J&K recruitment board scam gathers steam",
-      "url": "https://www.thehindu.com/news/national/amid-cold-wave-students-indefinite-strike-against-jk-recruitment-board-scam-gathers-steam/article71729167.ece",
-      "summary": "‘Students and Aga sahib were removed from the site against their will; the demand stands: a fair probe into the alleged FAA rigging; this fight isn’t over,’ said a protester",
-      "published_at": "Sun, 22 Nov 2026 01:19:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/g6r47s/article71729177.ece/alternates/LANDSCAPE_1200/20261121210L.jpg",
+      "raw_id": "176b1aa5838a6b6dd1",
+      "title": "Fake MCD parking slips used to dupe motorists in Old Delhi; two rackets busted in 24 hours",
+      "url": "https://www.thehindu.com/news/cities/Delhi/fake-mcd-parking-slips-used-to-dupe-motorists-in-old-delhi-two-rackets-busted-in-24-hours/article71730789.ece",
+      "summary": "The accused were arrested near Red Fort and Chandni Chowk for collecting illegal parking fees using forged MCD receipts; police say the unrelated operations had been running for some time and are assessing the total amount collected.",
+      "published_at": "Sun, 22 Nov 2026 12:09:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/1xomvw/article71730781.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-22%20at%2011.48.36%20AM.jpeg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6058,23 +6176,17 @@
         ],
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Protests",
-          "Society, Rights & Justice"
-        ]
+        "category_candidate_scores": {},
+        "candidate_categories": []
       }
     },
     {
-      "raw_id": "c05cd46a258996dc07",
-      "title": "Vasan urges political parties to fight for Cauvery water rights",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/vasan-urges-political-parties-to-fight-for-cauvery-water-rights/article71728246.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:14:42 +0530",
-      "image_url": "",
+      "raw_id": "822f90c73e1afd63ab",
+      "title": "Hemant Soren writes to CJI to urgently appoint Jharkhand HC Chief Justice successor",
+      "url": "https://www.thehindu.com/news/national/jharkhand/hemant-soren-writes-to-cji-to-urgently-appoint-jharkhand-hc-chief-justice-successor/article71730713.ece",
+      "summary": "Jharkhand CM asserted that the High Court of Jharkhand has repeatedly experienced short leadership tenures and interim Acting Chief Justice arrangements at the helm.",
+      "published_at": "Sun, 22 Nov 2026 11:58:18 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/e91bzm/article71730752.ece/alternates/LANDSCAPE_1200/PTI07_17_2026_000273B.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -6102,11 +6214,160 @@
       }
     },
     {
-      "raw_id": "581bba24e0694236da",
-      "title": "Municipal staff transfers to move online by Tamil Nadu govt., with vacancies displayed on portal",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/municipal-staff-transfers-to-move-online-by-tamil-nadu-government-with-vacancies-displayed-on-portal/article71727871.ece",
-      "summary": "According to the guidelines, general transfers will ordinarily be conducted between April 1 and May 31 every year. Applications will be received through the online portal between March 1 and 31. Employees who have completed three years of service in a post or station will be eligible for transfer during this period, subject to the availability of vacancies.",
-      "published_at": "Sun, 22 Nov 2026 01:14:13 +0530",
+      "raw_id": "4d1cbbfc37fd5037b8",
+      "title": "NDA will win all panchayats in upcoming polls, says TDP leader Divakar Reddy in Tirupati",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/nda-will-win-all-panchayats-in-upcoming-polls-says-tdp-leader-divakar-reddy-in-tirupati/article71729008.ece",
+      "summary": "Andhra Pradesh is surging ahead on the path of development during the NDA’s tenure, says Divakar Reddy",
+      "published_at": "Sun, 22 Nov 2026 11:57:11 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/z3d8x6/article71729100.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_19_41_26_1_WHATSAPPIMAGE2026_11_21AT73719PM.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "4a814a3edf2e6cdcc9",
+      "title": "PANI project to connect Andaman's eight islands through undersea cable network",
+      "url": "https://www.thehindu.com/news/national/andaman-and-nicobar-islands/pani-project-to-connect-andamans-eight-islands-through-undersea-cable-network/article71730740.ece",
+      "summary": "The project is expected to address mobile and internet connectivity challenges in remote islands and ensure more reliable communication, particularly during emergencies",
+      "published_at": "Sun, 22 Nov 2026 11:49:41 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/ywnixs/article71730775.ece/alternates/LANDSCAPE_1200/iStock-1480901115.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "f53dccda71b1f0d68c",
+      "title": "Union Minister Rajiv Ranjan Singh reviews indigenous cattle research at SVVU in Tirupati",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/union-minister-rajiv-ranjan-singh-reviews-indigenous-cattle-research-at-svvu-in-tirupati/article71729080.ece",
+      "summary": "SVVU Vice-Chancellor highlights contributions of the institution to conservation, multiplication and genetic improvement of indigenous livestock breeds",
+      "published_at": "Sun, 22 Nov 2026 11:44:34 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/epic7g/article71729401.ece/alternates/LANDSCAPE_1200/10215_21_11_2026_20_52_14_1_WHATSAPPIMAGE2026_11_21AT84930PM.JPEG",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "4e3f7e8c48af27b939",
+      "title": "Police complaint against WB LoP, police officers for fabrication of affidavits before ECI",
+      "url": "https://www.thehindu.com/news/national/west-bengal/police-complaint-against-wb-lop-police-officers-for-fabrication-of-affidavits-before-eci/article71729170.ece",
+      "summary": "The police complaint, was registered at city’s Kalighat Police station by Subhasish Chakraborty on behalf of Trinamool Congress; in the complaint, the loyalist of Mamata Banerjee has claimed that he has credible proofs that Nanoor police station officials conspired with Ritabrata Banerjee and Arup Roy to prepare false and fabricated affidavits",
+      "published_at": "Sun, 22 Nov 2026 11:31:44 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qoujpb/article71729455.ece/alternates/LANDSCAPE_1200/20260917409L.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "e886faec681bbcbc9a",
+      "title": "Minor girls abducted, raped in Bhadohi, UP, rescued; one girl remains missing",
+      "url": "https://www.thehindu.com/news/national/uttar-pradesh/minor-girls-abducted-raped-in-bhadohi-up-rescued-one-girl-remains-missing/article71730709.ece",
+      "summary": "Out of the three minors, two girls have been rescued but the third girl, 16, and the suspect who allegedly abducted her, remain missing, police said",
+      "published_at": "Sun, 22 Nov 2026 11:26:10 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {},
+        "candidate_categories": []
+      }
+    },
+    {
+      "raw_id": "1bf4ebe5ea19c0b332",
+      "title": "Over 100 children, 12 adults hospitalised after eating ‘chowmein’ at village fair in Madhya Pradesh",
+      "url": "https://www.thehindu.com/news/national/madhya-pradesh/over-100-children-12-adults-hospitalised-after-eating-chowmein-at-village-fair-in-madhya-pradesh/article71730680.ece",
+      "summary": "As many as 118 children were initially admitted to the community health centre in Kirnapur, of which 45 were shifted to the Balaghat district hospital for further treatment",
+      "published_at": "Sun, 22 Nov 2026 11:15:02 +0530",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -6127,280 +6388,11 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
-          "States & Local"
+          "Environment, Health & Science"
         ]
-      }
-    },
-    {
-      "raw_id": "7d8bba42448668d9e9",
-      "title": "AIPC Tamil Nadu to support MSMEs through professional network",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/aipc-tamil-nadu-to-support-msmes-through-professional-network/article71728876.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:12:58 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "24a44147dce334813b",
-      "title": "Gandhi is the core ideological enemy of the Sangh Parivar: Ramachandra Guha",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/gandhi-is-the-core-ideological-enemy-of-the-sangh-parivar-ramachandra-guha/article71729385.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:12:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5f35to/article71729428.ece/alternates/LANDSCAPE_1200/2501_21_11_2026_19_45_48_3_GANDHI_3.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "5640ac73c5652d3048",
-      "title": "T.N. may see solar energy installations slowing down, say energy generators",
-      "url": "https://www.thehindu.com/news/cities/Coimbatore/tn-may-see-solar-energy-installations-slowing-down-say-energy-generators/article71728600.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:12:20 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "6453bdcc9f7faee8c6",
-      "title": "Raja Ravi Varma Gallery of Oleographs and Chromo Lithographs inaugurated in Chennai",
-      "url": "https://www.thehindu.com/news/cities/chennai/raja-ravi-varma-gallery-of-oleographs-and-chromo-lithographs-inaugurated-in-chennai/article71729335.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:12:07 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6geo70/article71729374.ece/alternates/LANDSCAPE_1200/_DSC6829.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "4b67fbbe6fb64e32b8",
-      "title": "BJP, Hindu Munnani, RSS trying to create communal tension in T.N., says Tagore",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/bjp-hindu-munnani-rss-trying-to-create-communal-tensionin-tn-says-tagore/article71728506.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:09:34 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "567136a7fd255bcf33",
-      "title": "Chennai International Book Fair 2027 to be held from January 16 to 18",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/chennai-international-book-fair-2027-to-be-held-from-january-16-to-18/article71728191.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:08:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/pqvbhn/article71728416.ece/alternates/LANDSCAPE_1200/BVR_5210.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 4
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "62103cbcb6ba65b1f0",
-      "title": "T.N. govt. gave no advance notice on Justice Kurian panel’s dissolution: member",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/tn-govt-gave-no-advance-notice-on-justice-kurian-panels-dissolution-member/article71728899.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 01:06:40 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Society, Rights & Justice": 4
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "f1b304ef419132b38f",
-      "title": "Woman held for murder in Ranipet",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/woman-held-for-murder-in-ranipet/article71728386.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 00:44:24 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
-      }
-    },
-    {
-      "raw_id": "8dd6acf1e17cd81170",
-      "title": "Commuter injured after portion of roof falls on him at bus terminus in Cheyyar",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/commuter-injured-after-portion-of-roof-falls-on-him-at-bus-terminus-in-cheyyar/article71728384.ece",
-      "summary": "",
-      "published_at": "Sun, 22 Nov 2026 00:43:29 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/yluscw/article71728502.ece/alternates/LANDSCAPE_1200/plaster.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {},
-        "candidate_categories": []
       }
     }
   ]

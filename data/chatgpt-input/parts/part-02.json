@@ -1,16 +1,51 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-21T21:45:47.719399+00:00",
-  "input_count": 430,
+  "prepared_at": "2026-11-22T07:01:31.335275+00:00",
+  "input_count": 435,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 116,
-    "established_or_other": 84,
+    "independent_social": 122,
+    "established_or_other": 78,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
+    {
+      "raw_id": "546c40401f6160bbef",
+      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
+      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
+      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
+      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Economy & Employment": 5
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "States & Local"
+        ]
+      }
+    },
     {
       "raw_id": "3fcdc6a791cfd0a88b",
       "title": "‘Look at India, they have low interest rates’: Trump says U.S. could achieve 14–15% economic growth",
@@ -43,6 +78,39 @@
         "candidate_categories": [
           "Economy & Employment",
           "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "ddc94ff44712225d4d",
+      "title": "BJP leader demands halt to water supply to industries amid scarcity in Latur",
+      "url": "https://www.thehindu.com/news/national/maharashtra/bjp-leader-demands-halt-to-water-supply-to-industries-amid-scarcity-in-latur/article71730649.ece",
+      "summary": "Shivajirao Patil Kavhekar demanded that drinking water needs of rural and urban areas be given top priority and industrial supply be stopped immediately",
+      "published_at": "Sun, 22 Nov 2026 10:33:46 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/5iq3fn/article71730654.ece/alternates/LANDSCAPE_1200/shivarijao.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 4
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -222,82 +290,6 @@
       }
     },
     {
-      "raw_id": "ea70c0c6791d171d39",
-      "title": "Italian workers, students protest over wages and public services",
-      "url": "https://www.thehindu.com/news/international/italian-workers-students-protest-over-wages-and-public-services/article71725539.ece",
-      "summary": "Parliament is examining Meloni's €26 billion ($30 billion) budget for 2027, which CGIL says does not go far enough to support incomes and public services",
-      "published_at": "Fri, 20 Nov 2026 22:24:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/gx3wj6/article71725561.ece/alternates/LANDSCAPE_1200/Italy_Protest_35271.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Protests": 4,
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics",
-          "Protests",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "3e9c70ef62236e38b9",
-      "title": "Economic losses from Indonesia fires could reach $30 billion, research shows",
-      "url": "https://www.thehindu.com/news/international/economic-losses-from-indonesia-fires-could-reach-30-billion-research-shows/article71724140.ece",
-      "summary": "Wildfires have burned through 7.1 million acres so far in 2026, according to the Nusantara Atlas deforestation monitor, an area 18 times the size of London",
-      "published_at": "Fri, 20 Nov 2026 16:42:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2mnc4t/article71724150.ece/alternates/LANDSCAPE_1200/2026-11-19T030008Z_1070645042_RC29QNAMPA73_RTRMADP_3_ASIA-WEATHER-INDONESIA-FIRES.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Environment, Health & Science": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Environment, Health & Science",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
       "raw_id": "3f60a7a88ab59e01a7",
       "title": "Northeast forest guards trained to protect India’s only ape",
       "url": "https://eastmojo.com/national-news/2026/11/20/northeast-forest-guards-trained-to-protect-indias-only-ape/",
@@ -327,6 +319,41 @@
         },
         "candidate_categories": [
           "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "5380b21e5ea73552a0",
+      "title": "Unmasking misogyny: How a Malayalam YouTube channel weaponises science against women",
+      "url": "https://www.thenewsminute.com/kerala/unmasking-misogyny-how-a-malayalam-youtube-channel-weaponises-science-against-women",
+      "summary": "In July 2026, during a debate on 24 News’ Thammil Thammil about whether women should face restrictions on what they wear, a woman panellist posed a question that cut to the heart of the argument: If women’s clothes provoke sexual assault, what explains the rape of children and elderly women? Muhammed Ameer, an ‘educator’ and one of the prominent faces of the Malayalam digital platform Unmasking Anomalies (UA), had an answer. “Consider”, he said, “the amount of sexual imagery men are exposed to every day, from hoardings and advertisements to models.” A man sees a sexually exposed woman and becomes sexually frustrated. Just as someone who cannot shout back at a boss might take their anger out on someone at home, he argued, sexual frustration can be taken out on a different target. This, Ameer said, was “frustration-aggression theory”. When another panellist objected that this did not explain why women should change what they wear, Ameer was emphatic. “This is a psychological theory,” he asserted. “It’s not me saying this.” It is an effective way to make an argument, enough to make the person sitting across from you in a debate pause and reconsider what they can immediately challenge.",
+      "published_at": "Fri, 20 Nov 2026 11:42:20 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-20/lxg0jz8y/unmasking-anomalies-1.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 5,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "Sports"
         ]
       }
     },
@@ -661,35 +688,37 @@
       }
     },
     {
-      "raw_id": "ac928c66fe3bbf94a9",
-      "title": "The secretive salamanders of the Himalayas",
-      "url": "https://india.mongabay.com/short-article/2026/11/the-secretive-salamanders-of-the-himalayas/",
-      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Every monsoon in Darjeeling, the Himalayan salamander emerges from the forest floor to breed in small ponds known locally as pokhris. Males and females engage in a delicate courtship dance, after which fertilised eggs are laid on half-submerged vegetation. The larvae hatch into the water […]",
-      "published_at": "18 Nov 2026 14:47:58 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/18123158/salamander-1-768x512.jpg",
-      "suggested_category": "",
+      "raw_id": "cdf3a44208d11dc555",
+      "title": "Tamil Nadu goes to polls",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-goes-to-polls/article60648165.ece",
+      "summary": "Six months after the State Assembly elections, Tamil Nadu queues up once again to elect representatives to local bodies. Images from the first phase of polls that began on Monday.",
+      "published_at": "Fri, 15 Nov 2024 16:33:11 +0530",
+      "image_url": "",
+      "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 2
+          "Politics & Elections": 1,
+          "States & Local": 9
         },
         "candidate_categories": [
-          "Environment, Health & Science"
+          "Politics & Elections",
+          "States & Local"
         ]
       }
     },
@@ -1065,41 +1094,6 @@
       }
     },
     {
-      "raw_id": "1bc9d993aa59c66eda",
-      "title": "Former Andhra Pradesh Deputy CM Alla Nani dies of cardiac arrest in Visakhapatnam; he was 56",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/former-andhra-pradesh-deputy-chief-minister-alla-nani-dies-of-cardiac-arrest-at-56/article71467339.ece",
-      "summary": "The Eluru leader was Health Minister through the pandemic in the Y.S. Jagan Mohan Reddy government, lost his seat in 2024, quit the YSRCP that August and joined the TDP in February 2025",
-      "published_at": "Tue, 15 Sep 2026 17:13:11 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/andhra-pradesh/o7hckw/article71467478.ece/alternates/LANDSCAPE_1200/Alla.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Environment, Health & Science": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "States & Local"
-        ]
-      }
-    },
-    {
       "raw_id": "2bab6870c3bc3b5c46",
       "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
       "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
@@ -1232,11 +1226,44 @@
       }
     },
     {
+      "raw_id": "e18dc90f66a3e0e710",
+      "title": "Bahrain says Iran struck industrial site as tankers hit in Hormuz",
+      "url": "https://www.thehindu.com/news/international/bahrain-says-iran-struck-industrial-site-as-tankers-hit-in-hormuz/article71730497.ece",
+      "summary": "“Our position is clear: as long as Iran's demands are not met, the discussion on the Strait of Hormuz and its opening is pointless,” Foreign Minister Abbas Araghchi said",
+      "published_at": "Sun, 22 Nov 2026 09:59:25 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/r1sf3e/article71730504.ece/alternates/LANDSCAPE_1200/Strait_of_Hormuz_Swimmer_31874.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
       "raw_id": "8cab7859d1f88791ea",
       "title": "The Rohingya | Vindication for a persecuted people",
       "url": "https://www.thehindu.com/news/international/the-rohingya-vindication-for-a-persecuted-people/article71729370.ece",
       "summary": "The International Court of Justice’s ruling that Myanmar committed genocide during its 2017 ‘clearance operations’ offers a measure of justice for the ethnic and religious minority, but the court has no means of enforcing its judgment",
-      "published_at": "Sat, 21 Nov 2026 23:50:18 +0530",
+      "published_at": "Sun, 22 Nov 2026 09:34:37 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/a15j58/article71729365.ece/alternates/LANDSCAPE_1200/2026-11-19T101513Z_1144479296_RC2WQOADW602_RTRMADP_3_MYANMAR-ROHINGYA-WORLD-COURT.JPG",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
@@ -1306,39 +1333,6 @@
       "summary": "The diplomatic deadlock comes amid continuing tensions between Washington and Tehran, with both countries yet to reach an understanding on the future of Iran's nuclear programme",
       "published_at": "Sat, 21 Nov 2026 16:08:24 +0530",
       "image_url": "https://th-i.thgim.com/public/incoming/l14si8/article71727972.ece/alternates/LANDSCAPE_1200/Iran-Saudi-AraGI5GH5S9N.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "International & Geopolitics": 9
-        },
-        "candidate_categories": [
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "f7e262961bfe2f00aa",
-      "title": "Replace Russian junk with American weapons system: U.S. lawmaker to India",
-      "url": "https://www.thehindu.com/news/international/replace-russian-junk-with-american-weapons-system-us-lawmaker-to-india/article71719665.ece",
-      "summary": "Michael Baumgartner made the remarks on Capitol Hill in the presence of Namgya Khampa, the Deputy Chief of Mission at the Indian Embassy in Washington",
-      "published_at": "Fri, 20 Nov 2026 16:51:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mb45my/article71719896.ece/alternates/LANDSCAPE_1200/clyN3j7D.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {

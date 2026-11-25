@@ -1,66 +1,33 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-24T15:00:32.587655+00:00",
-  "input_count": 445,
+  "prepared_at": "2026-11-25T00:48:09.949397+00:00",
+  "input_count": 1388,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 131,
-    "established_or_other": 69,
+    "independent_social": 115,
+    "established_or_other": 85,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
+      "raw_id": "02f66630b0703802a0",
+      "title": "Stock Market Today: शेयर बाजार में आज गिरावट, सेंसेक्स 370 अंक फिसला, निफ्टी 25750 से नीचे",
+      "url": "https://www.jansatta.com/business/stock-market-today-sensex-slips-370-points-nifty-falls-below-25750-news-in-hindi/4795826/",
+      "summary": "",
+      "published_at": "2026-11-23T10:10:47+05:30",
+      "image_url": "https://images.jansatta.com/2026/09/share-market-4-1.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -72,22 +39,20 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
+          "Economy & Employment": 12
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "fba45dad3a94eae056",
-      "title": "Telangana tops country in number of works under VB-G RAM G, ranks third in employment generation",
-      "url": "https://www.thehindu.com/news/national/telangana/telangana-tops-country-in-number-of-works-under-vb-g-ram-g-ranks-third-in-employment-generation/article71738501.ece",
-      "summary": "State accounts for nearly 18% of works undertaken nationwide, generates 5.53 lakh persondays of employment on November 23 alone",
-      "published_at": "Tue, 24 Nov 2026 19:42:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2bpqey/article71738494.ece/alternates/LANDSCAPE_1200/Farm%20pond1.jpg",
+      "raw_id": "60cc87ca5c2a5bd2ea",
+      "title": "VIT organises national workshop on economic strategies for sustainable industries",
+      "url": "https://www.thehindu.com/news/national/tamil-nadu/vit-organises-national-workshop-on-economic-strategies-for-sustainable-industries/article71738666.ece",
+      "summary": "",
+      "published_at": "Wed, 25 Nov 2026 01:01:17 +0530",
+      "image_url": "https://th-i.thgim.com/public/news/national/tamil-nadu/of41uu/article71739264.ece/alternates/LANDSCAPE_1200/VIT-32.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
@@ -107,7 +72,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Economy & Employment": 8
         },
         "candidate_categories": [
           "Economy & Employment"
@@ -115,20 +80,22 @@
       }
     },
     {
-      "raw_id": "710ef3f2dd27b6e940",
-      "title": "SIPB clears investment proposals worth ₹88,625 cr., potential to create 54,419 jobs",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/sipb-clears-investment-proposals-worth-88625-crore-with-potential-to-create-54419-jobs/article71738644.ece",
-      "summary": "Kia India, Adani Enterprises and Balewadi Techpark among major investors; Visakhapatnam region to get IT investments",
-      "published_at": "Tue, 24 Nov 2026 19:24:30 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2e8r1i/article71738844.ece/alternates/LANDSCAPE_1200/4842_11_3_2022_12_26_54_1_11KIAGASLEAK.JPG",
-      "suggested_category": "",
+      "raw_id": "451a9f4d0a2ef03a5e",
+      "title": "आरबीआई एमपीसी बैठक: अल नीनो की चिंता के बीच क्यों बढ़ सकता है रेपो रेट? अर्थशास्त्रियों ने बताई वजह",
+      "url": "https://www.jansatta.com/business/rbi-mpc-meeting-why-might-the-repo-rate-rise-amid-concerns-over-el-nino-economists-explain-the-reason/4798096/",
+      "summary": "",
+      "published_at": "2026-11-24T18:45:25+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/rbi-2.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -140,7 +107,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Economy & Employment": 8
         },
         "candidate_categories": [
           "Economy & Employment"
@@ -148,20 +115,22 @@
       }
     },
     {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
+      "raw_id": "a09f515e7c8e4d8b6f",
+      "title": "8वें वेतन आयोग अपडेट: कब आ सकती है रिपोर्ट और कितनी बढ़ सकती है केंद्रीय कर्मचारियों की सैलरी?",
+      "url": "https://www.jansatta.com/business/major-update-on-the-8th-pay-commission-when-will-the-report-be-submitted-and-by-how-much-will-employees-salaries-increase/4797999/",
+      "summary": "",
+      "published_at": "2026-11-24T18:03:12+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/8th-pay-commission-25.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -173,30 +142,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "d952068e28f194c8da",
+      "title": "स्टीव जॉब्स, सेम ऑल्टमैन से जेन्सेन हुआंग तक, अमेरिकी टेक फाउंडर्स का कभी खत्म न होने वाला दबदबा",
+      "url": "https://www.jansatta.com/business/from-steve-jobs-and-sam-altman-to-jensen-huang-the-enduring-dominance-of-american-tech-founders/4797804/",
+      "summary": "",
+      "published_at": "2026-11-24T16:53:25+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/Steve-Jobs-Sam-Altman-Jensen-Huang.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -208,30 +177,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "746a82fc2cfcc40818",
-      "title": "How predictive analytics is reshaping everyday business decisions — what employers actually look for",
-      "url": "https://www.thehindu.com/education/how-predictive-analytics-is-reshaping-everyday-business-decisions-what-employers-actually-look-for/article71694757.ece",
-      "summary": "A major shift in the field is moving beyond merely forecasting an outcome to determining the right course of action. Rather than simply flagging customers likely to cancel a service, organisations now use those insights to build targeted retention strategies.",
-      "published_at": "Fri, 13 Nov 2026 00:19:00 +0530",
-      "image_url": "https://th-i.thgim.com/public/education/zg3cxo/article71694852.ece/alternates/LANDSCAPE_1200/Screenshot%202026-11-12%20210330.png",
-      "suggested_category": "Society, Rights & Justice",
+      "raw_id": "11400c40a06e1b2e11",
+      "title": "SGB 2021-22 Series I: निवेशकों की हुई बल्ले-बल्ले, 167% तक का मिला रिटर्न; जानें प्रीमैच्योर रिडेम्पशन कीमत और तारीख",
+      "url": "https://www.jansatta.com/business/sgb-2021-22-series-i-investors-hit-the-jackpot-with-returns-of-up-to-167-percent-check-the-premature-redemption-price-and-date/4797691/",
+      "summary": "",
+      "published_at": "2026-11-24T16:02:12+05:30",
+      "image_url": "https://images.jansatta.com/2026/09/Gold-Bonds.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -243,30 +212,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 8
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "65dc8eaa6fea19d151",
-      "title": "India, Canada ‘very close’ to concluding trade pact negotiations: Official",
-      "url": "https://www.thehindu.com/news/national/india-canada-very-close-to-concluding-trade-pact-negotiations-official/article71737579.ece",
-      "summary": "The engagements are important as both sides aim to conclude the talks by the end of this year",
-      "published_at": "Tue, 24 Nov 2026 14:12:32 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/mi2g43/article71737608.ece/alternates/LANDSCAPE_1200/AP06_16_2026_000446B.jpg",
-      "suggested_category": "International & Geopolitics",
+      "raw_id": "6c9b0d576747c62618",
+      "title": "RBI के नए नियमों से ऑनलाइन पेमेंट होंगे सुरक्षित, खाते से पैसे भेजने की लिमिट भी खुद तय कर सकेंगे ग्राहक",
+      "url": "https://www.jansatta.com/business/new-rbi-rules-will-make-online-payments-more-secure-and-customers-will-also-be-able-to-set-their-own-limits-for-transferring-money-from-their-accounts/4797470/",
+      "summary": "",
+      "published_at": "2026-11-24T13:16:59+05:30",
+      "image_url": "https://images.jansatta.com/2026/09/RBI-1.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -278,443 +247,45 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "International & Geopolitics": 8
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "International & Geopolitics"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "ce76e6f857b11b9f1d",
-      "title": "Why deforestation science gets shifting cultivation wrong [Commentary]",
-      "url": "https://india.mongabay.com/2026/11/why-deforestation-science-gets-shifting-cultivation-wrong-commentary/",
-      "summary": "Estimating deforestation — the permanent conversion of forest to another land use — is only as reliable as our ability to distinguish one land use from another. If we get that wrong, we misjudge not only how much forest is being lost but also what is driving the loss. Consider shifting cultivation, also known as […]",
-      "published_at": "23 Nov 2026 11:26:34 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/23081616/Amit_MI-03-768x512.jpg",
-      "suggested_category": "",
+      "raw_id": "8af1e870ee7ce9ec9c",
+      "title": "ग्लोबल मार्केट रैली: एनवीडिया के हुआंग की वापसी से नैस्डैक 6%, कोस्पी 6% और निक्केई 3% उछला",
+      "url": "https://www.jansatta.com/business/global-market-rally-nvidia-huang-sparks-surge-nasdaq-up-6-percent-kospi-7-percent-and-nikkei-3-percent/4797393/",
+      "summary": "",
+      "published_at": "2026-11-24T12:16:21+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/Global-market-rally.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
-        "dynamic_rank_score": 20,
+        "dynamic_rank_score": 16,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "independent"
+          "mainstream"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
+        "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Environment, Health & Science": 5
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "5380b21e5ea73552a0",
-      "title": "Unmasking misogyny: How a Malayalam YouTube channel weaponises science against women",
-      "url": "https://www.thenewsminute.com/kerala/unmasking-misogyny-how-a-malayalam-youtube-channel-weaponises-science-against-women",
-      "summary": "In July 2026, during a debate on 24 News’ Thammil Thammil about whether women should face restrictions on what they wear, a woman panellist posed a question that cut to the heart of the argument: If women’s clothes provoke sexual assault, what explains the rape of children and elderly women? Muhammed Ameer, an ‘educator’ and one of the prominent faces of the Malayalam digital platform Unmasking Anomalies (UA), had an answer. “Consider”, he said, “the amount of sexual imagery men are exposed to every day, from hoardings and advertisements to models.” A man sees a sexually exposed woman and becomes sexually frustrated. Just as someone who cannot shout back at a boss might take their anger out on someone at home, he argued, sexual frustration can be taken out on a different target. This, Ameer said, was “frustration-aggression theory”. When another panellist objected that this did not explain why women should change what they wear, Ameer was emphatic. “This is a psychological theory,” he asserted. “It’s not me saying this.” It is an effective way to make an argument, enough to make the person sitting across from you in a debate pause and reconsider what they can immediately challenge.",
-      "published_at": "Fri, 20 Nov 2026 11:42:20 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-20/lxg0jz8y/unmasking-anomalies-1.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 5,
-          "Sports": 1
-        },
-        "candidate_categories": [
-          "Environment, Health & Science",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "3d2fe44b014aa526f2",
-      "title": "India thought it eliminated kala-azar. The disease now gets reported from a non-endemic state",
-      "url": "https://india.mongabay.com/2026/11/india-thought-it-eliminated-kala-azar-the-disease-now-gets-reported-from-a-non-endemic-state/",
-      "summary": "Thirty kilometres from Pauri, the nearest hill town, the road gives out. It ends at a solar farm, narrows into rubble and eventually becomes a stony footpath that winds downhill for about 20 minutes to Chair Talla, a village in Uttarakhand situated at an altitude of 1,100 metres. Nine years ago, Chair Talla recorded what […]",
-      "published_at": "24 Nov 2026 15:57:18 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/24141834/IMG20260427133710-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "bebb9b4b6aebf11ed7",
-      "title": "Fossil fuel divide fractures consensus at climate talks in Antalya",
-      "url": "https://india.mongabay.com/2026/11/fossil-fuel-divide-fractures-consensus-at-climate-talks-in-antalya/",
-      "summary": "The UN climate summit in Antalya in Türkiye ended in a deadlock after nations could not agree even to reaffirm a transition away from fossil fuels. Three days earlier, leaders of China, Russia and the U.S. declared that their countries planned to increase production and supply of refined petroleum products. One meeting was a climate […]",
-      "published_at": "23 Nov 2026 16:01:46 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/23155529/55666926641_83a05485aa_k-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "c31909d3c04cd12b89",
-      "title": "The world struggles to pay for the growing human cost of climate change",
-      "url": "https://india.mongabay.com/2026/11/the-world-struggles-to-pay-for-the-growing-human-cost-of-climate-change/",
-      "summary": "In 2022, floodwater engulfed the farm and home of Abdul Khalique Laghari, a farmer from Pakistan’s Sindh province. The water rose six to eight feet in some places. The crops were destroyed, houses were inundated and the land was left damaged. Four years later, farmers in the region are still struggling to cultivate it. “Our […]",
-      "published_at": "19 Nov 2026 14:25:21 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/19131224/AP26235530827690-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "ced2e83163ae8ec7b5",
-      "title": "Institutional campuses could expand India’s conservation network, but challenges remain",
-      "url": "https://india.mongabay.com/2026/11/institutional-campuses-could-expand-indias-conservation-network-but-challenges-remain/",
-      "summary": "At the 2022 United Nations Biodiversity Conference (COP15), world governments, including India, adopted the historic Kunming-Montreal Global Biodiversity Framework, whereby signatories agreed to protect and conserve at least 30% of the world’s land, coastal areas, and oceans by 2030. According to a recent analysis, India’s protected area network covers roughly 28% of its geographical area […]",
-      "published_at": "17 Nov 2026 15:50:20 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/17140518/18965172263_336f0219b2_k-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "2440bec31206f91481",
-      "title": "Motherhood changes how sloth bears use forests in central India",
-      "url": "https://india.mongabay.com/2026/11/motherhood-changes-how-sloth-bears-use-forests-in-central-india/",
-      "summary": "Sloth bear mothers go weeks without food or water while nursing their young in caves or rocky crevices, eventually emerging from their maternal dens with cubs clinging to their backs. But how reproduction shapes their behavioural patterns remains poorly understood. A new study finds differences in how female sloth bears with offspring and lone adults […]",
-      "published_at": "17 Nov 2026 12:49:33 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/17102013/Image-2_Lone-Adult-Male-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "befd81a13ab302b392",
-      "title": "Türkiye climate summit’s finance gap threatens its promise of action",
-      "url": "https://india.mongabay.com/2026/11/turkiye-climate-summits-finance-gap-threatens-its-promise-of-action/",
-      "summary": "Halfway through the annual United Nations climate summit being held in Türkiye’s Antalya, nearly 200 governments face the familiar question of where is the money to turn their promises into action? The meeting was billed as a turning point, a chance to move beyond pledges and start delivering results. However, as ministers prepare to take […]",
-      "published_at": "16 Nov 2026 16:11:11 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/16150113/AP24305652930016-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "866e26cea471199e12",
-      "title": "Climate movement takes its fight beyond emissions at Türkiye summit",
-      "url": "https://india.mongabay.com/2026/11/climate-movement-takes-its-fight-beyond-emissions-at-turkiye-summit/",
-      "summary": "A grey, rain-soaked day in Antalya in Türkiye burst into a riot of colour, music and slogans on November 14, when civil society called for a global day of action, held alongside COP31, the ongoing UN climate conference. Bright flags, hand-painted banners, giant street installations and costumed performers filled the city centre as thousands of […]",
-      "published_at": "16 Nov 2026 12:15:46 +0000",
-      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/16111909/Photo-4-768x512.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "mongabay-india",
-        "name": "Mongabay India",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Nonprofit environmental journalism publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "1642d0c18765198bb6",
-      "title": "Panna Forest: जंगल की बदलती तस्वीर और साथ रहने की पुरानी यादें – रामवती का अनुभव",
-      "url": "https://khabarlahariya.org/panna-forest-the-changing-face-of-the-forest-and-old-memories-of-coexistence/",
-      "summary": "रामवती खरवार जिला पन्ना ब्लॉक अजयगढ़ के ग्राम सिन्हाई की रहने वाली है। जब वह अपने गांव में रहती थीं, तब उनकी मुलाकात नानिया आदिवासी नाम की एक बुजुर्ग महिला…",
-      "published_at": "Sun, 22 Nov 2026 07:48:34 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "f950d680f6c2c8980c",
-      "title": "Panna Forest: जंगल के साये में बचपन, हर कदम पर खतरा!",
-      "url": "https://khabarlahariya.org/panna-forest-a-childhood-in-the-forests-shadow-danger-at-every-step/",
-      "summary": "गाँव सनेहरा जंगल के बेहद करीब बसा है। यहां बच्चों की दुनिया घर और स्कूल तक सीमित नहीं, बल्कि खेतों और जंगल के आसपास भी फैली है। घर से खेत…",
-      "published_at": "Fri, 20 Nov 2026 10:00:08 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "78f76246d61f969b7c",
-      "title": "Delhi Pollution: महंगे पटाखे, महंगी सांसें: आखिर किसकी कीमत पर मना रहे हैं त्योहार?",
-      "url": "https://khabarlahariya.org/delhi-pollution-expensive-firecrackers-costly-breaths-at-whose-expense-are-we-celebrating-these-festivals/",
-      "summary": "दिवाली के बाद दिल्ली ही नहीं, वाराणसी, लखनऊ और गोरखपुर जैसे शहरों की हवा भी प्रदूषण से भर गई। पटाखों से कई लोग घायल हुए और एक 10 साल के…",
-      "published_at": "Thu, 12 Nov 2026 11:10:24 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "17fb72f8702896c3f7",
-      "title": "Thiruparankundram Deepam lit at customary spot despite court orders",
-      "url": "https://www.thenewsminute.com/tamil-nadu/thiruparankundram-deepam-lit-at-customary-spot-despite-court-orders",
-      "summary": "Despite the Madras High Court directing the Tamil Nadu government to implement the Supreme Court's order to light the Karthigai Deepam at a stone pillar near the Sikkandhar Dargah atop Thiruparankundram hill, the lamp was lit at the customary location near the Uchipillaiyar Temple on Tuesday, November 24, in keeping with a century-old practice. A bench of Justices GR Swaminathan and Sumathi of the Madurai Bench of the Madras High Court, while hearing the matter on Tuesday, said the lamp must be lit at the stone pillar atop the hill in accordance with the Supreme Court's November 20 order, which had permitted the lighting as a “one-time arrangement”. “The authorities concerned are duty-bound to implement the Supreme Court's order. Even if advice contrary to the Supreme Court's order is given by any other authority, the District Collector should ignore it,” the judges said. They added that the filing of a review petition could not be cited as a reason for non-compliance. The judges also pointed out that the Supreme Court had stated in several orders that review petitions should not be filed with the intention of preventing the implementation of its directions. They directed the state",
-      "published_at": "Tue, 24 Nov 2026 12:59:29 +0000",
-      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-24/yjc3qphg/WhatsApp-Image-2026-11-24-at-6.19.42-PM.jpeg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-news-minute",
-        "name": "The News Minute",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent regional digital newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "States & Local": 2
-        },
-        "candidate_categories": [
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
@@ -1090,44 +661,310 @@
       }
     },
     {
-      "raw_id": "b95c1907c2424ea649",
-      "title": "Dhoni Ke Saath Match Khela? 😳",
-      "url": "https://www.youtube.com/shorts/wYi2A6aYCAI",
-      "summary": "",
-      "published_at": "2026-11-19T16:00:00+00:00",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": true,
+      "raw_id": "5afd734520ae05a25b",
+      "title": "APPSC Group 1 notification 2026 out: 163 posts, apply from October 6 to 27; 729 other vacancies notified too",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/appsc-group-1-notification-2026-out-163-posts-apply-from-october-6-to-27-729-other-vacancies-notified-too/article71466673.ece",
+      "summary": "Applications for Group-I open October 6 to 27; statistical and tribal welfare posts October 13 to November 2; Legislature, Endowments, probation and industrial promotion posts October 16 to November 5",
+      "published_at": "Wed, 16 Sep 2026 16:31:53 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/qzl197/article71357011.ece/alternates/LANDSCAPE_1200/vjkvg-group_2.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "States & Local": 8,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "ce76e6f857b11b9f1d",
+      "title": "Why deforestation science gets shifting cultivation wrong [Commentary]",
+      "url": "https://india.mongabay.com/2026/11/why-deforestation-science-gets-shifting-cultivation-wrong-commentary/",
+      "summary": "Estimating deforestation — the permanent conversion of forest to another land use — is only as reliable as our ability to distinguish one land use from another. If we get that wrong, we misjudge not only how much forest is being lost but also what is driving the loss. Consider shifting cultivation, also known as […]",
+      "published_at": "23 Nov 2026 11:26:34 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/23081616/Amit_MI-03-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 4
+          "Environment, Health & Science": 5
         },
         "candidate_categories": [
-          "Sports"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "007acfb8aa0739e436",
-      "title": "ICC Men’s Cricket World Cup 2027: मेन्स क्रिकेट वनडे (ODI) वर्ल्ड कप 2027 का शेड्यूल (schedule) जारी, 10 अक्टूबर को भारत-पाकिस्तान का मुकाबला",
-      "url": "https://khabarlahariya.org/icc-mens-cricket-world-cup-2027-schedule-for-the-mens-odi-world-cup-2027-released-india-vs-pakistan-match-set-for-october-10/",
-      "summary": "क्रिकेट प्रेमियों का इंतजार खत्म हो गया है। ICC मेन्स वनडे वर्ल्ड कप 2027 (Men’s Cricket World Cup 2027) का शेड्यूल जारी कर दिया गया है। टूर्नामेंट की शुरुआत 2…",
-      "published_at": "Mon, 09 Nov 2026 06:39:09 +0000",
+      "raw_id": "3d2fe44b014aa526f2",
+      "title": "India thought it eliminated kala-azar. The disease now gets reported from a non-endemic state",
+      "url": "https://india.mongabay.com/2026/11/india-thought-it-eliminated-kala-azar-the-disease-now-gets-reported-from-a-non-endemic-state/",
+      "summary": "Thirty kilometres from Pauri, the nearest hill town, the road gives out. It ends at a solar farm, narrows into rubble and eventually becomes a stony footpath that winds downhill for about 20 minutes to Chair Talla, a village in Uttarakhand situated at an altitude of 1,100 metres. Nine years ago, Chair Talla recorded what […]",
+      "published_at": "24 Nov 2026 15:57:18 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/24141834/IMG20260427133710-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "bebb9b4b6aebf11ed7",
+      "title": "Fossil fuel divide fractures consensus at climate talks in Antalya",
+      "url": "https://india.mongabay.com/2026/11/fossil-fuel-divide-fractures-consensus-at-climate-talks-in-antalya/",
+      "summary": "The UN climate summit in Antalya in Türkiye ended in a deadlock after nations could not agree even to reaffirm a transition away from fossil fuels. Three days earlier, leaders of China, Russia and the U.S. declared that their countries planned to increase production and supply of refined petroleum products. One meeting was a climate […]",
+      "published_at": "23 Nov 2026 16:01:46 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/23155529/55666926641_83a05485aa_k-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "c31909d3c04cd12b89",
+      "title": "The world struggles to pay for the growing human cost of climate change",
+      "url": "https://india.mongabay.com/2026/11/the-world-struggles-to-pay-for-the-growing-human-cost-of-climate-change/",
+      "summary": "In 2022, floodwater engulfed the farm and home of Abdul Khalique Laghari, a farmer from Pakistan’s Sindh province. The water rose six to eight feet in some places. The crops were destroyed, houses were inundated and the land was left damaged. Four years later, farmers in the region are still struggling to cultivate it. “Our […]",
+      "published_at": "19 Nov 2026 14:25:21 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/19131224/AP26235530827690-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "ced2e83163ae8ec7b5",
+      "title": "Institutional campuses could expand India’s conservation network, but challenges remain",
+      "url": "https://india.mongabay.com/2026/11/institutional-campuses-could-expand-indias-conservation-network-but-challenges-remain/",
+      "summary": "At the 2022 United Nations Biodiversity Conference (COP15), world governments, including India, adopted the historic Kunming-Montreal Global Biodiversity Framework, whereby signatories agreed to protect and conserve at least 30% of the world’s land, coastal areas, and oceans by 2030. According to a recent analysis, India’s protected area network covers roughly 28% of its geographical area […]",
+      "published_at": "17 Nov 2026 15:50:20 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/17140518/18965172263_336f0219b2_k-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "2440bec31206f91481",
+      "title": "Motherhood changes how sloth bears use forests in central India",
+      "url": "https://india.mongabay.com/2026/11/motherhood-changes-how-sloth-bears-use-forests-in-central-india/",
+      "summary": "Sloth bear mothers go weeks without food or water while nursing their young in caves or rocky crevices, eventually emerging from their maternal dens with cubs clinging to their backs. But how reproduction shapes their behavioural patterns remains poorly understood. A new study finds differences in how female sloth bears with offspring and lone adults […]",
+      "published_at": "17 Nov 2026 12:49:33 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/17102013/Image-2_Lone-Adult-Male-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "befd81a13ab302b392",
+      "title": "Türkiye climate summit’s finance gap threatens its promise of action",
+      "url": "https://india.mongabay.com/2026/11/turkiye-climate-summits-finance-gap-threatens-its-promise-of-action/",
+      "summary": "Halfway through the annual United Nations climate summit being held in Türkiye’s Antalya, nearly 200 governments face the familiar question of where is the money to turn their promises into action? The meeting was billed as a turning point, a chance to move beyond pledges and start delivering results. However, as ministers prepare to take […]",
+      "published_at": "16 Nov 2026 16:11:11 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/16150113/AP24305652930016-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "866e26cea471199e12",
+      "title": "Climate movement takes its fight beyond emissions at Türkiye summit",
+      "url": "https://india.mongabay.com/2026/11/climate-movement-takes-its-fight-beyond-emissions-at-turkiye-summit/",
+      "summary": "A grey, rain-soaked day in Antalya in Türkiye burst into a riot of colour, music and slogans on November 14, when civil society called for a global day of action, held alongside COP31, the ongoing UN climate conference. Bright flags, hand-painted banners, giant street installations and costumed performers filled the city centre as thousands of […]",
+      "published_at": "16 Nov 2026 12:15:46 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/16111909/Photo-4-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "1642d0c18765198bb6",
+      "title": "Panna Forest: जंगल की बदलती तस्वीर और साथ रहने की पुरानी यादें – रामवती का अनुभव",
+      "url": "https://khabarlahariya.org/panna-forest-the-changing-face-of-the-forest-and-old-memories-of-coexistence/",
+      "summary": "रामवती खरवार जिला पन्ना ब्लॉक अजयगढ़ के ग्राम सिन्हाई की रहने वाली है। जब वह अपने गांव में रहती थीं, तब उनकी मुलाकात नानिया आदिवासी नाम की एक बुजुर्ग महिला…",
+      "published_at": "Sun, 22 Nov 2026 07:48:34 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -1148,28 +985,28 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 4
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Sports"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "1968740b37d69b17e2",
-      "title": "Kshitij`26 Reveals Festival Dates with a Carnival and Jamming Session",
-      "url": "https://theruralpress.in/uncategorized/kshitij26-reveals-festival-dates-with-a-carnival-and-jamming-session/",
-      "summary": "Kshitij26, the flagship inter-collegiate cultural festival of Mithibai College, brought the college campus to life on 23rd November with an exciting carnival, the much-awaited festival date reveal, and a lively jamming session. The celebrations brought together students and the team of Kshitij26, building excitement for the upcoming edition of thefestival. The highlight of the evening […]",
-      "published_at": "Tue, 24 Nov 2026 08:26:16 +0000",
+      "raw_id": "f950d680f6c2c8980c",
+      "title": "Panna Forest: जंगल के साये में बचपन, हर कदम पर खतरा!",
+      "url": "https://khabarlahariya.org/panna-forest-a-childhood-in-the-forests-shadow-danger-at-every-step/",
+      "summary": "गाँव सनेहरा जंगल के बेहद करीब बसा है। यहां बच्चों की दुनिया घर और स्कूल तक सीमित नहीं, बल्कि खेतों और जंगल के आसपास भी फैली है। घर से खेत…",
+      "published_at": "Fri, 20 Nov 2026 10:00:08 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
         "type": "local",
         "selection_group": "independent_social",
-        "ownership": "SSB Media House"
+        "ownership": "Independent rural and regional newsroom"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1181,30 +1018,94 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Society, Rights & Justice": 1,
-          "Sports": 1
+          "Environment, Health & Science": 4
         },
         "candidate_categories": [
-          "Society, Rights & Justice",
-          "Sports"
+          "Environment, Health & Science"
         ]
       }
     },
     {
-      "raw_id": "293f890183ae3a7190",
-      "title": "Jensen Huang is back as CEO. The ethical questions aren’t over",
-      "url": "https://www.newslaundry.com/2026/11/24/jensen-huang-is-back-as-ceo-the-ethical-questions-arent-over",
-      "summary": "In about two weeks, Jensen Huang admitted to an affair, resigned from Nvidia, and got his job back. On November 8, he told employees in a memo that he had been unfaithful to his wife. The woman involved, Alice Huang, is a former executive at Megaspeed whom US officials believed was working for Chinese intelligence. Then the New York Times reported a relationship with Kimberly Powell, a vice president who reported directly to him, and Reuters reported one with a second employee. He resigned on November 12. On November 23, the board voted unanimously to bring him back. Much of the coverage treats all this as one scandal. It is really three separate questions. Was it wrong to cheat on his wife? Was it wrong to get involved with people who work under him? And did his relationship with Alice Huang put US national security at risk? The first is a private matter; Nvidia’s own rules should judge the second, and the third is the one the public has a real stake in. The marriage is private. The secrecy isn’t Jensen is 63 and married. Whatever happened in that marriage is for Jensen and his wife to deal with. But there is one caveat. An affair someone is trying to hide is a pressure point, and",
-      "published_at": "Tue, 24 Nov 2026 11:01:34 +0000",
-      "image_url": "https://cf-images.assettype.com/newslaundry/2026-11-24/daigt49i/AI-Jensen-Huang.png",
+      "raw_id": "78f76246d61f969b7c",
+      "title": "Delhi Pollution: महंगे पटाखे, महंगी सांसें: आखिर किसकी कीमत पर मना रहे हैं त्योहार?",
+      "url": "https://khabarlahariya.org/delhi-pollution-expensive-firecrackers-costly-breaths-at-whose-expense-are-we-celebrating-these-festivals/",
+      "summary": "दिवाली के बाद दिल्ली ही नहीं, वाराणसी, लखनऊ और गोरखपुर जैसे शहरों की हवा भी प्रदूषण से भर गई। पटाखों से कई लोग घायल हुए और एक 10 साल के…",
+      "published_at": "Thu, 12 Nov 2026 11:10:24 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "newslaundry",
-        "name": "Newslaundry",
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "8e2d0691a75440e721",
+      "title": "Air pollution during Diwali & accidents: दिवाली और दिवाली के बाद दिल्ली का हाल, जाने दिवाली और प्रदूषण से जुड़ी घटनाओं के बारे में",
+      "url": "https://khabarlahariya.org/air-pollution-during-diwali-accidents-the-situation-in-delhi-during-and-after-diwali-learn-about-incidents-related-to-the-festival-and-pollution/",
+      "summary": "दिवाली की रात आसमान रंग-बिरंगी रोशनी से जगमगा उठा, लेकिन इस जश्न का धुआं अगले दिन लोगों के लिए परेशानी बन गया। पटाखों से निकले धुएं और बढ़ते प्रदूषण का…",
+      "published_at": "Tue, 10 Nov 2026 11:25:43 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 4
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newsclick",
+        "name": "Newsclick",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Reader-supported independent media company"
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
@@ -1216,25 +1117,157 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 1
+          "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "b9e0986c919beabc26",
-      "title": "World Chess Championship: Gukesh faces stern test against in-form Sindarov",
-      "url": "https://www.thehindu.com/sport/world-chess-championship-gukesh-faces-stern-test-against-in-form-sindarov/article71723391.ece",
-      "summary": "While Gukesh secured his place in the title contest by defeating China's Ding Liren in the 2024 World Championship match, Sindarov has arrived after an impressive run that included victories in the World Cup and the Candidates tournament",
-      "published_at": "Tue, 24 Nov 2026 13:00:41 +0530",
-      "image_url": "https://th-i.thgim.com/public/books/c16hi1/article71723400.ece/alternates/LANDSCAPE_1200/Gukesh-Sindarov.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
+      "image_url": "",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "406cbc67a4fd9b097f",
+      "title": "Manipur resumes Imphal-Silchar flight after one-year gap",
+      "url": "https://eastmojo.com/manipur/2026/11/24/manipur-resumes-imphal-silchar-flight-after-one-year-gap/",
+      "summary": "Imphal: Manipur Chief Minister Yumnam Khemchand Singh on Tuesday flagged off the Imphal-Silchar-Imphal Alliance Air service under the Manipur State Viability Gap Funding (VGF) Scheme at Imphal International Airport. The flight service has resumed after a year under a joint initiative of the Central and state governments, the Chief Minister said. Silchar, in Assam’s Cachar […] The post Manipur resumes Imphal-Silchar flight after one-year gap appeared first on EastMojo .",
+      "published_at": "Tue, 24 Nov 2026 09:26:35 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "2757a233f1cd249013",
+      "title": "Manipuri film ‘Fireflies in the Dark’ selected for KIFF 2026",
+      "url": "https://eastmojo.com/manipur/2026/11/24/manipuri-film-fireflies-in-the-dark-selected-for-kiff-2026/",
+      "summary": "Manipuri feature film Enoong Ngallamdai (Fireflies in the Dark), which explores the human cost of the ethnic conflict in Manipur, has been selected for the official programme of the Kolkata International Film Festival (KIFF) 2026. Directed by Yogesh Lohan, the 85-minute film is set against the backdrop of the violence that erupted in Manipur in […] The post Manipuri film ‘Fireflies in the Dark’ selected for KIFF 2026 appeared first on EastMojo .",
+      "published_at": "Tue, 24 Nov 2026 08:43:30 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "411d6358939c66c1c5",
+      "title": "Mizoram documentary ‘Chalo India with Eric Ji’ screened at IFFI",
+      "url": "https://eastmojo.com/mizoram/2026/11/24/mizoram-documentary-chalo-india-with-eric-ji-screened-at-iffi/",
+      "summary": "Panaji: A documentary showcasing Mizoram’s scenic beauty, culture and traditions, titled Chalo India with Eric Ji – Mizoram, was screened at the ongoing 57th International Film Festival of India (IFFI). The documentary’s creator, Rajdeep Choudhary, said he wanted to showcase Mizoram to the world, as the state held a special place in his heart. His […] The post Mizoram documentary ‘Chalo India with Eric Ji’ screened at IFFI appeared first on EastMojo .",
+      "published_at": "Tue, 24 Nov 2026 08:37:08 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "70de12145ebe1e545d",
+      "title": "Brazil, India are building strategic ties for a changing world, says Brazil’s Foreign Minister",
+      "url": "https://www.thehindu.com/news/national/brazil-india-are-building-strategic-ties-for-a-changing-world-says-brazils-foreign-minister/article71459802.ece",
+      "summary": "On whether BRICS seeks to replace the U.S. dollar, the Brazilian envoy says the possible use of local currencies for settling part of bilateral trade is something many countries already do, and that governments do not tell companies which currency they must use",
+      "published_at": "Tue, 24 Nov 2026 19:20:48 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/4fcgei/article71459888.ece/alternates/LANDSCAPE_1200/20260911447L.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1249,25 +1282,27 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 14
+          "Economy & Employment": 1,
+          "International & Geopolitics": 12
         },
         "candidate_categories": [
-          "Sports"
+          "Economy & Employment",
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "1994a3a0f63264bc96",
-      "title": "World Chess Championship: Worry less, enjoy chess more, Anand’s message to Gukesh",
-      "url": "https://www.thehindu.com/sport/world-chess-championship-worry-less-enjoy-chess-more-anands-message-to-gukesh/article71723034.ece",
-      "summary": "At 20, Gukesh and Sindarov are the youngest participants in a world championship match in chess history",
-      "published_at": "Tue, 24 Nov 2026 13:01:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/2jxxxp/article71723037.ece/alternates/LANDSCAPE_1200/IMG_55550448029_b201c581_2_1_8EGJP1M9.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "ac962d12d2b410a1ad",
+      "title": "Tajikistan becomes fourth country to withdraw from International Criminal Court",
+      "url": "https://www.thehindu.com/news/international/tajikistan-becomes-fourth-country-to-withdraw-from-international-criminal-court/article71735286.ece",
+      "summary": "Burkina Faso, Mali and Niger announced their exits the previous year, ‌denouncing the Court as an instrument of \"neocolonial ​repression\"",
+      "published_at": "Mon, 23 Nov 2026 21:02:25 +0530",
+      "image_url": "",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1282,28 +1317,28 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 13
+          "International & Geopolitics": 12
         },
         "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "51fa9650098b6d54f5",
-      "title": "World chess championship: Gukesh to open title defence with black",
-      "url": "https://www.thehindu.com/sport/world-chess-championship-gukesh-to-open-title-defence-with-black/article71732334.ece",
-      "summary": "The first game of the best-of-14 match against Sindarov will be played on Tuesday",
-      "published_at": "Tue, 24 Nov 2026 12:59:56 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/rptu81/article71732339.ece/alternates/LANDSCAPE_1200/55667477473_de90464058_o.jpg",
-      "suggested_category": "Sports",
+      "raw_id": "45d5f3ea2deea13a3f",
+      "title": "Xi, Putin slam Western protectionism and sanctions as Trump arrives in China for high-stakes talks",
+      "url": "https://indianexpress.com/article/world/apec-summit-shenzhen-xi-jinping-putin-trump-trilateral-meeting-trade-sanctions-10968448/",
+      "summary": "",
+      "published_at": "Wed, 18 Nov 2026 12:13:23 +0000",
+      "image_url": "https://images.indianexpress.com/2026/11/putin-xi-1.jpg",
+      "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -1315,43 +1350,10 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 13
+          "International & Geopolitics": 12
         },
         "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ef2624fc2e8c88c221",
-      "title": "World chess championship:  A fascinating duel between two brilliant young minds",
-      "url": "https://www.thehindu.com/sport/world-chess-championship-onus-on-gukesh-to-raise-his-game-as-sindarov-starts-favourite/article71735655.ece",
-      "summary": "Gukesh has to reproduce the kind of chess that made him a force in the couple of years leading up to the last Worlds; Sindarov has been almost unstoppable of late; it will be the youngest title showdown in the history of the tournament",
-      "published_at": "Tue, 24 Nov 2026 12:42:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/cjzvum/article71735658.ece/alternates/LANDSCAPE_1200/TH24-CHESS.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     }

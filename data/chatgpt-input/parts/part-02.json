@@ -1,31 +1,68 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-28T00:09:01.487081+00:00",
-  "input_count": 427,
+  "prepared_at": "2026-11-28T08:00:13.534771+00:00",
+  "input_count": 1408,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 134,
+    "established_or_other": 66,
     "independent_social_majority_required": true
   },
   "part": 2,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "fe78ab8e545723a4e2",
-      "title": "Andhra Pradesh raises age limit for government jobs to 44 years till 2027: how APPSC compares with Telangana, Kerala and UPSC",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-pradesh-raises-age-limit-for-government-jobs-to-44-years-till-2027-how-appsc-compares-with-telangana-kerala-and-upsc/article71471544.ece",
-      "summary": "Relaxation for non-uniform posts runs till September 30, 2027; a separate order extends the two-year concession for uniformed services by a year",
-      "published_at": "Wed, 16 Sep 2026 15:40:25 +0530",
+      "raw_id": "b2f50b85febcb0d457",
+      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
+      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
+      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
+      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
       "image_url": "",
-      "suggested_category": "States & Local",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "4d82d8cb3ef61ec3db",
+      "title": "Stock Market Today: शेयर बाजार में आज गिरावट, Sensex 250 अंक लुढ़का; Nifty 25900 के नीचे",
+      "url": "https://www.jansatta.com/business/stock-market-today-27-november-2026-sensex-250-points-down-nifty-open-in-red-news-in-hindi/4801347/",
+      "summary": "",
+      "published_at": "2026-11-27T09:54:27+05:30",
+      "image_url": "https://images.jansatta.com/2026/09/share-market-4-1.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -37,100 +74,28 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
+          "Economy & Employment": 12
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "66bf2f07638bb7a8d6",
-      "title": "Comfort fit for conservancy workers: how three Indian cities are getting the ‘measurements’ right",
-      "url": "https://www.thehindu.com/news/national/comfort-fit-for-conservancy-workers-how-three-indian-cities-are-getting-the-measurements-right/article70705975.ece",
-      "summary": "What does it take to design gloves, masks and uniform that factor in the various challenges faced by workers on the waste beat? Indore, Bengaluru and Pune have an answer",
-      "published_at": "Thu, 05 Mar 2026 12:00:55 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/657p6z/article70705998.ece/alternates/LANDSCAPE_1200/indore1.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "1e45ca909d0278c52d",
-      "title": "Education lifts people out of poverty, but doesn’t guarantee quality jobs: data",
-      "url": "https://www.thehindu.com/education/education-lifts-people-out-of-poverty-but-doesnt-guarantee-quality-jobs-data/article71682529.ece",
-      "summary": "New World Bank and PLFS data show that education remains the most important route out of poverty. Yet young graduates are ten times as likely to be unemployed as young people who cannot read.",
-      "published_at": "Thu, 26 Nov 2026 13:07:52 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wwq86y/article71682610.ece/alternates/LANDSCAPE_1200/DSC4672.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Economy & Employment": 4,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "67673d3b7874e6ad7a",
-      "title": "Experts say new U.S. tariffs do not pose substantial threat, India should not rush into trade deal",
-      "url": "https://www.thehindu.com/business/Economy/experts-say-new-us-tariffs-do-not-pose-substantial-threat-india-should-not-rush-into-trade-deal/article71746007.ece",
-      "summary": "The latest proposal by the USTR takes the tariff framework on India back to what it was at the start of trade deal negotiations",
-      "published_at": "Thu, 26 Nov 2026 21:13:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/6u4w3z/article71747681.ece/alternates/LANDSCAPE_1200/iStock-1089423548%201.jpg",
+      "raw_id": "8685fd37abd33d83c2",
+      "title": "China’s Huawei convicted of stealing trade secrets and deceiving banks over Iran business",
+      "url": "https://indianexpress.com/article/world/us-jury-convicts-huawei-trade-secrets-iran-acquits-racketeering-10977363/",
+      "summary": "",
+      "published_at": "Wed, 25 Nov 2026 02:24:22 +0000",
+      "image_url": "https://images.indianexpress.com/2026/11/Photo-2026-11-25T075126.904.jpg",
       "suggested_category": "International & Geopolitics",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "Indian Express Group"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -142,7 +107,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 4,
+          "Economy & Employment": 8,
           "International & Geopolitics": 8
         },
         "candidate_categories": [
@@ -152,20 +117,22 @@
       }
     },
     {
-      "raw_id": "bcc2b1e802f60cfc07",
-      "title": "Uttar Pradesh Khadi Mahotsav begins in Lucknow",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/uttar-pradesh-khadi-mahotsav-begins-in-lucknow/article71752403.ece",
-      "summary": "‘Based on the theme ‘Culture in Threads, Progress through Khadi’, a total of 150 stalls have been set up at the festival by Khadi and Village Industries entrepreneurs and artisans from various districts of the State,’ said Rakesh Sachan",
-      "published_at": "Sat, 28 Nov 2026 02:54:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p396ho/article71752402.ece/alternates/LANDSCAPE_1200/20261127472L.jpg",
-      "suggested_category": "",
+      "raw_id": "83e68ab765747575c5",
+      "title": "सोने-चांदी की गिरती कीमतों में खरीदारी का मौका? फंड हाउस की क्या है रणनीति | Explained",
+      "url": "https://www.jansatta.com/business/an-opportunity-to-buy-amid-falling-gold-and-silver-prices-what-is-the-fund-houses-strategy-explained/4802223/",
+      "summary": "",
+      "published_at": "2026-11-27T18:24:52+05:30",
+      "image_url": "https://images.jansatta.com/2026/10/GOLD-1.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -177,7 +144,7 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Economy & Employment": 1
+          "Economy & Employment": 8
         },
         "candidate_categories": [
           "Economy & Employment"
@@ -185,20 +152,22 @@
       }
     },
     {
-      "raw_id": "47e87507b5c8ce38f4",
-      "title": "IndiGo to begin flight services from Tamil Nadu to Navi Mumbai airport from December 29",
-      "url": "https://www.thehindu.com/news/national/tamil-nadu/indigo-to-begin-flight-services-from-tamil-nadu-to-navi-mumbai-airport-from-december-29-2025/article70445969.ece",
-      "summary": "An aviation source said the 186-seat all-economy class Airbus A320 services will be linked to the first phase of the Navi Mumbai airport’s operational hours, from 8 a.m. to 8 p.m.",
-      "published_at": "Mon, 29 Dec 2025 14:39:46 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/3t1200/article70447387.ece/alternates/LANDSCAPE_1200/PTI12_25_2025_000227A.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "b46860ee9358a8083b",
+      "title": "बजट 2027: पहली बार Gen Z भी बजट चर्चा में शामिल, कृषि, एआई और एमएसएमई पर दिए सुझाव",
+      "url": "https://www.jansatta.com/business/ahead-of-the-2027-28-budget-fm-nirmala-sitharaman-holds-discussions-with-representatives-from-13-sectors-receives-several-suggestions/4802091/",
+      "summary": "",
+      "published_at": "2026-11-27T17:38:06+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/Finance-Minister-Nirmala-Sitharaman.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -210,30 +179,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "74005d24725e081452",
-      "title": "75 years of Vishnuvardhan: Dream roles and unfulfilled projects of the Kannada actor",
-      "url": "https://www.thehindu.com/entertainment/movies/vishnuvardhan-75th-birth-anniversary-vishnuvardhan-memorial-kannada-actor-sandalwood-dream-roles-projects/article70062572.ece",
-      "summary": "Remembering versatile Kannada actor Vishnuvardhan on his 75th birth anniversary, young filmmakers talk about his untapped potential in the industry",
-      "published_at": "Thu, 18 Sep 2025 19:20:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kg2dtn/article70064297.ece/alternates/LANDSCAPE_1200/Vishnuvardhan_04.jpg",
-      "suggested_category": "States & Local",
+      "raw_id": "4ff292c343697801b8",
+      "title": "TVS परिवार की संपत्ति का पूरा हिसाब-किताब: कौन चलाता है हजारों करोड़ का कारोबार? जानें अब क्यों छिड़ा संग्राम",
+      "url": "https://www.jansatta.com/business/tvs-family-dispute-assets-listed-companies-business-breakdown-news-in-hindi/4801832/",
+      "summary": "",
+      "published_at": "2026-11-27T15:46:47+05:30",
+      "image_url": "https://images.jansatta.com/2026/11/TVS-Motor-Chairman-Emeritus-Venu-Srinivasan.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -245,30 +214,30 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
         ]
       }
     },
     {
-      "raw_id": "1eee1ed0da65378f2c",
-      "title": "Thiru Onam eve shopping fervour, Uthrada Pachil, peaks in Kerala on Thursday",
-      "url": "https://www.thehindu.com/news/national/kerala/thiru-onam-eve-shopping-fervour-uthrada-pachil-peaks-in-kerala-on-thursday/article70011048.ece",
-      "summary": "Brisk sales in markets, malls and textile shops; prices of groceries remain low, but coconut oil stays high",
-      "published_at": "Thu, 04 Sep 2025 12:33:24 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/dhoqjp/article70011114.ece/alternates/LANDSCAPE_1200/80691_14_9_2024_17_36_3_1_FLOWERMARKET.JPG",
-      "suggested_category": "States & Local",
+      "raw_id": "b963f1263025782cae",
+      "title": "टाटा विवाद में नया मोड़, SDTT ने वेणु श्रीनिवासन और विजय सिंह के खिलाफ दाखिल की कैविएट",
+      "url": "https://www.jansatta.com/business/new-twist-in-tata-dispute-sdtt-files-a-caveat-against-venu-srinivasan-and-vijay-singh/4801622/",
+      "summary": "",
+      "published_at": "2026-11-27T13:01:19+05:30",
+      "image_url": "https://images.jansatta.com/2026/10/Tata-Sons-1-1.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
         "type": "mainstream",
         "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
       },
       "selection_signals": {
         "dynamic_rank_score": 16,
@@ -280,12 +249,45 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 1
+          "Economy & Employment": 8
         },
         "candidate_categories": [
-          "Economy & Employment",
-          "States & Local"
+          "Economy & Employment"
+        ]
+      }
+    },
+    {
+      "raw_id": "dd15e50ef20aa128f1",
+      "title": "SAP में 10 हजार से ज्यादा नौकरियों पर खतरा, AI के लिए कंपनी बदल रही अपना कामकाज",
+      "url": "https://www.jansatta.com/business/over-10000-jobs-at-sap-at-risk-as-company-shifts-its-operations-for-ai/4801515/",
+      "summary": "",
+      "published_at": "2026-11-27T11:34:10+05:30",
+      "image_url": "https://images.jansatta.com/2026/09/layoffs.jpg",
+      "suggested_category": "Economy & Employment",
+      "requires_verification": true,
+      "priority_discovery": false,
+      "source": {
+        "id": "jansatta-hindi",
+        "name": "Jansatta (Hindi)",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Indian Express Pvt. Limited",
+        "language": "Hindi"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Economy & Employment": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment"
         ]
       }
     },
@@ -349,39 +351,6 @@
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
           "Environment, Health & Science": 5
-        },
-        "candidate_categories": [
-          "Environment, Health & Science"
-        ]
-      }
-    },
-    {
-      "raw_id": "568233744dd6c9497b",
-      "title": "Bilaspur Medical PG Admission Fraud: मेडिकल PG में सीट दिलाने के नाम पर 2.75 करोड़ की ठगी, फर्जी अलॉटमेंट लेटर भी भेजा, पढ़ें पूरी खबर",
-      "url": "https://theruralpress.in/chhattisgarh/bilaspur-medical-pg-admission-fraud-two-doctors-cheated/",
-      "summary": "बिलासपुर। छत्तीसगढ़ के बिलासपुर में मेडिकल PG (MD) में दाखिला दिलाने के नाम पर दो डॉक्टरों से करीब 2 करोड़ 75 लाख रुपये की ठगी का मामला सामने आया है। आरोपियों ने डॉक्टरों को एमडी रेडियोलॉजी और मेडिसिन में सीट दिलाने का झांसा दिया। भरोसे में लेने के लिए फर्जी अलॉटमेंट लेटर और एडमिशन ऑर्डर […]",
-      "published_at": "Fri, 27 Nov 2026 15:10:10 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Environment, Health & Science": 4
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -620,32 +589,32 @@
       }
     },
     {
-      "raw_id": "78f76246d61f969b7c",
-      "title": "Delhi Pollution: महंगे पटाखे, महंगी सांसें: आखिर किसकी कीमत पर मना रहे हैं त्योहार?",
-      "url": "https://khabarlahariya.org/delhi-pollution-expensive-firecrackers-costly-breaths-at-whose-expense-are-we-celebrating-these-festivals/",
-      "summary": "दिवाली के बाद दिल्ली ही नहीं, वाराणसी, लखनऊ और गोरखपुर जैसे शहरों की हवा भी प्रदूषण से भर गई। पटाखों से कई लोग घायल हुए और एक 10 साल के…",
-      "published_at": "Thu, 12 Nov 2026 11:10:24 +0000",
-      "image_url": "",
+      "raw_id": "ac928c66fe3bbf94a9",
+      "title": "The secretive salamanders of the Himalayas",
+      "url": "https://india.mongabay.com/short-article/2026/11/the-secretive-salamanders-of-the-himalayas/",
+      "summary": "Species File: Exploring India’s biodiversity, one species at a time. Every monsoon in Darjeeling, the Himalayan salamander emerges from the forest floor to breed in small ponds known locally as pokhris. Males and females engage in a delicate courtship dance, after which fertilised eggs are laid on half-submerged vegetation. The larvae hatch into the water […]",
+      "published_at": "18 Nov 2026 14:47:58 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/18123158/salamander-1-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 4
+          "Environment, Health & Science": 2
         },
         "candidate_categories": [
           "Environment, Health & Science"
@@ -653,37 +622,70 @@
       }
     },
     {
-      "raw_id": "0ef64a127e1774d583",
-      "title": "Northeast gets first region-specific antivenom for pit viper bites",
-      "url": "https://eastmojo.com/meghalaya/2026/11/26/northeast-gets-first-region-specific-antivenom-for-pit-viper-bites/",
-      "summary": "File pic of a Zayuan Pit Viper. For representation only \" data-large-file=\"https://i0.wp.com/eastmojo.com/wp-content/uploads/2024/06/Zayuan-Pit-Viper.jpg?fit=780%2C521&ssl=1\" /> Guwahati: Researchers have developed India’s first region-specific antivenom targeting two medically significant pit viper species found in Northeast India, potentially addressing a major gap in snakebite treatment. The antivenom was developed by a team led by Ashis K. Mukherjee, director of the Institute of Advanced Study in Science and Technology (IASST), Guwahati. It has demonstrated […] The post Northeast gets first region-specific antivenom for pit viper bites appeared first on EastMojo .",
-      "published_at": "Thu, 26 Nov 2026 10:00:00 +0000",
-      "image_url": "",
+      "raw_id": "c97591a39803a20317",
+      "title": "No land to call their own, migrants and elephants share Teesta’s shifting sandbars",
+      "url": "https://india.mongabay.com/video/2026/11/migrants-and-elephants-share-shifting-sandbars/",
+      "summary": "On the shifting sandbars of the Teesta in West Bengal, migrant farmers cultivate seasonal crops that are increasingly attracting elephants from nearby forests. The elephants feed on these crops, bringing people and wildlife into close contact. As the Teesta changes course, floods and erosion reshape the sandbars, forcing farmers to move their fields and adapt […]",
+      "published_at": "17 Nov 2026 18:01:23 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/17160215/featured-elephant-final-768x512.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "eastmojo",
-        "name": "EastMojo",
-        "type": "local",
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent regional digital publication"
+        "ownership": "Nonprofit environmental journalism publication"
       },
       "selection_signals": {
         "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "local"
+          "independent"
         ],
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Environment, Health & Science": 2,
-          "Sports": 1
+          "Environment, Health & Science": 2
+        },
+        "candidate_categories": [
+          "Environment, Health & Science"
+        ]
+      }
+    },
+    {
+      "raw_id": "ba74466cd6b402bfc0",
+      "title": "Translocated tigress’ miscarriage and injuries raise welfare concerns",
+      "url": "https://india.mongabay.com/2026/11/translocated-tigress-miscarriage-and-injuries-raise-welfare-concerns/",
+      "summary": "T138 was a healthy three-year-old tigress roaming the forests of Bihar’s Valmiki Tiger Reserve until she was selected for a reintroduction programme at Buxa Tiger Reserve (BTR) in West Bengal, about 760 km away. Buxa had been without a resident tiger population for decades, following depletion due to poaching and habitat degradation. Following her translocation […]",
+      "published_at": "26 Nov 2026 17:19:01 +0000",
+      "image_url": "https://imgs.mongabay.com/wp-content/uploads/sites/30/2026/11/26161435/Tigress_with_cubs_in_Kanha_Tiger_reserve-e1795692293358-768x512.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "mongabay-india",
+        "name": "Mongabay India",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Nonprofit environmental journalism publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Society, Rights & Justice": 4,
+          "Environment, Health & Science": 1
         },
         "candidate_categories": [
           "Environment, Health & Science",
-          "Sports"
+          "Society, Rights & Justice"
         ]
       }
     },
@@ -751,6 +753,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "bf3f4eadc12dd60298",
+      "title": "Naidu in Delhi for NDA meeting after Union Cabinet clears delimitation Bill with 50% rise in seats for all States",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/naidu-in-delhi-for-nda-meeting-after-union-cabinet-clears-delimitation-bill-with-50-rise-in-seats-for-all-states/article71750067.ece",
+      "summary": "Chandrababu Naidu joins NDA leaders in Delhi ahead of Parliament’s special sitting, as the Union Cabinet’s Bill keeps the present ratio of seats among States until 2051",
+      "published_at": "Fri, 27 Nov 2026 16:41:47 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/wjdzi9/article71745075.ece/alternates/LANDSCAPE_1200/Cyclone-Akvan-tGEIGQBD9L.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -883,6 +920,41 @@
           "States & Local": 8
         },
         "candidate_categories": [
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "fa8e42f076658ec080",
+      "title": "Andhra’s proposed Investment Protection Act seeks to shield investors from policy U-turns",
+      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhras-proposed-investment-protection-act-seeks-to-shield-investors-from-policy-u-turns/article71707378.ece",
+      "summary": "The proposed law aims to shield investments from policy reversals by successive governments, such as the ‘three capitals’ plan and the review of power purchase agreements",
+      "published_at": "Mon, 16 Nov 2026 17:42:31 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/h6f2m9/article71365406.ece/alternates/LANDSCAPE_1200/_GNR5130.JPG",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Governance & Administration",
           "States & Local"
         ]
       }
@@ -1022,318 +1094,116 @@
       }
     },
     {
-      "raw_id": "375c7b06292deffa75",
-      "title": "Hope flows anew with revival of Andhra’s Veligonda project",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/hope-flows-anew-with-revival-of-andhras-veligonda-project/article71479450.ece",
-      "summary": "Conceived as a long-term response to the nearly four-decade fight of the people against chronic drought, depleted water resources, and fluoride contamination in parts of the region, the project aims to create a large irrigation network spanning four districts and 30 mandals, while extending drinking water facilities to drought-prone populations.",
-      "published_at": "Sun, 20 Sep 2026 11:58:20 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/uy5isz/article71481936.ece/alternates/LANDSCAPE_1200/10215_18_9_2026_15_12_50_1_DSC_5155.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "6b060528c9f6aa9001",
-      "title": "Protected on paper: how private schoolteachers fall through the cracks in three Southern States",
-      "url": "https://www.thehindu.com/education/protected-on-paper-how-private-schoolteachers-fall-through-the-cracks-in-three-southern-states/article71473761.ece",
-      "summary": "Salaries for teachers in mid-tier private schools often range between ₹8,000 and ₹15,000 a month, rarely crossing ₹25,000",
-      "published_at": "Thu, 17 Sep 2026 00:52:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/bixfxp/article71474134.ece/alternates/LANDSCAPE_1200/iStock-1344985960.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Society, Rights & Justice": 1
-        },
-        "candidate_categories": [
-          "Society, Rights & Justice",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "b95c1907c2424ea649",
-      "title": "Dhoni Ke Saath Match Khela? 😳",
-      "url": "https://www.youtube.com/shorts/wYi2A6aYCAI",
-      "summary": "",
-      "published_at": "2026-11-19T16:00:00+00:00",
+      "raw_id": "2bab6870c3bc3b5c46",
+      "title": "Israel Hell-Bent on Stalling US-Iran Ceasefire Bid",
+      "url": "https://www.newsclick.in/israel-hell-bent-stalling-us-iran-ceasefire-bid",
+      "summary": "Israel's attacks on Iran and Lebanon continue unabated, voices against it grow louder worldwide.",
+      "published_at": "Fri, 10 Apr 2026 12:22:51 +0530",
       "image_url": "",
       "suggested_category": "",
-      "priority_discovery": true,
+      "priority_discovery": false,
       "source": {
-        "id": "sarthak-goswami-youtube",
-        "name": "Sarthak Goswami",
+        "id": "newsclick",
+        "name": "Newsclick",
         "type": "independent",
         "selection_group": "independent_social",
-        "ownership": "Independent journalist and digital video publisher"
+        "ownership": "Independent digital news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 28,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
           "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "includes local or independent reporting; comes from a configured priority discovery profile",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Sports": 4
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "fcc9234a9b8d71f960",
-      "title": "Kyrgios, Bublik, Svitolina and Pliskova to headline World Tennis League in Bengaluru",
-      "url": "https://www.thehindu.com/sport/tennis/kyrgios-bublik-svitolina-and-pliskova-to-headline-world-tennis-league-in-bengaluru/article71745951.ece",
-      "summary": "The league will open on December 17, while the championship final is scheduled for December 20",
-      "published_at": "Thu, 26 Nov 2026 15:38:16 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5usji5/article71745967.ece/alternates/LANDSCAPE_1200/2305281234.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 17
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "a1f559c8a9aeebcaca",
-      "title": "Clashes at Besiktas match against Israeli club spark diplomatic row",
-      "url": "https://www.thehindu.com/sport/football/clashes-at-besiktas-match-against-israeli-club-spark-diplomatic-row/article71748326.ece",
-      "summary": "Turkish football fans clashed with police in Batumi, temporarily halting the match, which had been moved from Istanbul over security concerns",
-      "published_at": "Fri, 27 Nov 2026 04:27:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/7q9kcx/article71748327.ece/alternates/LANDSCAPE_1200/Georgia_Europa_League_Socccer_89547.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13,
           "International & Geopolitics": 4
         },
         "candidate_categories": [
-          "International & Geopolitics",
-          "Sports"
+          "International & Geopolitics"
         ]
       }
     },
     {
-      "raw_id": "fbd47e82a10bad2a19",
-      "title": "Syed Mushtaq Ali Trophy: The Tomar-Lomror show powers Rajasthan through to Super League at Bengal’s expense",
-      "url": "https://www.thehindu.com/sport/cricket/the-tomar-lomror-show-powers-rajasthan-through-at-bengals-expense-in-the-syed-mushtaq-ali-trophy-t20-cricket/article71746493.ece",
-      "summary": "The duo’s 119-run partnership takes their team home in just 16.4 overs; Karnataka eases to an eight-wicket win against the already qualified Baroda",
-      "published_at": "Thu, 26 Nov 2026 20:02:25 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/km0pa1/article71746466.ece/alternates/LANDSCAPE_1200/17_Vijay_Hazare_Trophy_09_01_Vadodara.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "00058508f866be560d",
-      "title": "World Chess Championship: Gukesh, Sindarov sign peace treaty in quick time",
-      "url": "https://www.thehindu.com/sport/world-chess-championship-gukesh-sindarov-sign-peace-treaty-in-quick-time/article71744029.ece",
-      "summary": "It is all-square in the youngest World title match in history; it is D. Gukesh 1, Javokhir Sindarov 1",
-      "published_at": "Thu, 26 Nov 2026 08:19:39 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/lpx6c4/article71744062.ece/alternates/LANDSCAPE_1200/PTI11_25_2026_RPT006B.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 13
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "39da458df232ff8919",
-      "title": "‘Unbelievable catch’: Pakistan motorbike passenger becomes cricket sensation",
-      "url": "https://www.thehindu.com/sport/cricket/unbelievable-catch-pakistan-motorbike-passenger-becomes-cricket-sensation/article71745859.ece",
-      "summary": "Batsman Abrar Lala struck a looping six, sending the ball towards the road adjoining the cricket ground in Pakistan’s picturesque Swat Valley, where Khan plucked it out of the air with one hand",
-      "published_at": "Thu, 26 Nov 2026 14:54:14 +0530",
-      "image_url": "https://th-i.thgim.com/public/sport/cricket/ttjivc/article71745869.ece/alternates/LANDSCAPE_1200/catch.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "b6b04071d7e0d99bbd",
-      "title": "Syed Mushtaq Ali Trophy: Shreyas Iyer to join Mumbai for Super League",
-      "url": "https://www.thehindu.com/sport/cricket/shreyas-iyer-to-join-mumbai-for-super-league/article71751690.ece",
-      "summary": "",
-      "published_at": "Fri, 27 Nov 2026 22:27:44 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/ui91lj/article71751710.ece/alternates/LANDSCAPE_1200/11908_8_1_2026_19_8_48_2_DSC_5600.JPG",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Sports": 12
-        },
-        "candidate_categories": [
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "faef831356bfbd77e8",
-      "title": "World chess championship: Gukesh and Sindarov seem to be well prepared, I expect intensity to pick up now",
-      "url": "https://www.thehindu.com/sport/gukesh-and-sindarov-seem-to-be-well-prepared-i-expect-intensity-to-pick-up-now/article71751292.ece",
-      "summary": "",
-      "published_at": "Fri, 27 Nov 2026 19:40:30 +0530",
+      "raw_id": "e633d0ec8ee953cdc3",
+      "title": "Cuba is Not a Piece of Cake, Says Ambassador on US Threat",
+      "url": "https://www.newsclick.in/cuba-not-piece-cake-says-ambassador-us-threat",
+      "summary": "The Cuban Ambassador lashes out on the US–Israel War, the Iran crisis and the politics of Western blockades that generates untold human suffering.",
+      "published_at": "Wed, 01 Apr 2026 12:20:54 +0530",
       "image_url": "",
-      "suggested_category": "Sports",
+      "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
+        "id": "newsclick",
+        "name": "Newsclick",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Independent digital news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "International & Geopolitics": 4
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "45d5f3ea2deea13a3f",
+      "title": "Xi, Putin slam Western protectionism and sanctions as Trump arrives in China for high-stakes talks",
+      "url": "https://indianexpress.com/article/world/apec-summit-shenzhen-xi-jinping-putin-trump-trilateral-meeting-trade-sanctions-10968448/",
+      "summary": "",
+      "published_at": "Wed, 18 Nov 2026 12:13:23 +0000",
+      "image_url": "https://images.indianexpress.com/2026/11/putin-xi-1.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 12
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "c66c2110670fdac610",
+      "title": "Nepal flash floods: Kathmandu begins process to declare 213 missing Indians presumed dead",
+      "url": "https://www.thehindu.com/news/national/nepal-flash-floods-kathmandu-begins-process-to-declare-213-indians-missing-presumed-dead/article71745222.ece",
+      "summary": "Inviting objections or concerns, the Embassy said concerned family members could contact it via eoikathmandufloodsupport@gmail.com or +9779851316807",
+      "published_at": "Thu, 26 Nov 2026 10:34:14 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/8no50h/article71745251.ece/alternates/LANDSCAPE_1200/2026-11-24T070027Z_1630143282_RC24UOAFRLCF_RTRMADP_3_NEPAL-FLOODS.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -1348,10 +1218,172 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Sports": 12
+          "International & Geopolitics": 9
         },
         "candidate_categories": [
-          "Sports"
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "b92c4ee36dad572421",
+      "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+      "url": "https://www.thehindu.com/news/international/north-koreas-kim-vows-to-build-more-nuclear-weapons-after-ignoring-trumps-overture/article71745171.ece",
+      "summary": "North Korea didn't say where the nuclear materials production factories that Kim Jong Un visited this week are located; U.S President Trump reiterated his eagerness to restore diplomacy with Mr. Kim as he visited China last week for the APEC summit",
+      "published_at": "Thu, 26 Nov 2026 10:05:38 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/z2dsgx/article71745197.ece/alternates/LANDSCAPE_1200/2026-11-26T011630Z_1118755875_RC2BVOAH3DNL_RTRMADP_3_NORTHKOREA-NUCLEAR.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 9
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "5808bd740a7e3e0a9f",
+      "title": "Fuel tanker crash ignites massive fire on highway surrounding Cairo, killing at least 31 people",
+      "url": "https://www.thehindu.com/news/international/fuel-tanker-crash-ignites-massive-fire-on-highway-surrounding-cairo/article71744262.ece",
+      "summary": "The blaze on Ring Road, a key artery that encircles the Egyptian capital, also injured at least 25 people and left more than two dozen cars and motorcycles charred, the Public Prosecutor’s office said in a statement",
+      "published_at": "Thu, 26 Nov 2026 11:56:42 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/9rbidm/article71744263.ece/alternates/LANDSCAPE_1200/2026-11-25T214116Z_1731871822_RC29VOAKM2R4_RTRMADP_3_EGYPT-ACCIDENT-UGC.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 32,
+        "observed_report_count": 2,
+        "distinct_source_count": 2,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "2 distinct source desks report a similar event",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Fuel tanker crash ignites a massive fire on a highway surrounding Cairo, killing at least 31 people",
+          "url": "https://indianexpress.com/article/world/cairo-highway-fire-fuel-tanker-crash-10978836/",
+          "source": {
+            "id": "indian-express-world",
+            "name": "The Indian Express - World",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "4d026217f1a88db8b6",
+      "title": "Inside the Elon Musk-backed petition seeking Jensen Huang’s return to Nvidia",
+      "url": "https://indianexpress.com/article/world/jensen-huang-nvidia-ceo-petition-elon-musk-standwithjensen-10965474/",
+      "summary": "",
+      "published_at": "Mon, 16 Nov 2026 13:42:35 +0000",
+      "image_url": "https://images.indianexpress.com/2026/11/Jensen-Huang_20261116123548.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "indian-express-world",
+        "name": "The Indian Express - World",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "Indian Express Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 2,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics"
+        ]
+      },
+      "related_reports": [
+        {
+          "title": "Elon Musk backs petition seeking Jensen Huang’s return as Nvidia CEO",
+          "url": "https://indianexpress.com/article/world/elon-musk-signs-petition-in-support-of-nvidia-chief-jensen-huang10962919-10962919/",
+          "source": {
+            "id": "indian-express-world",
+            "name": "The Indian Express - World",
+            "type": "mainstream",
+            "selection_group": "established",
+            "ownership": "Indian Express Group"
+          },
+          "social_attention": null
+        }
+      ]
+    },
+    {
+      "raw_id": "9aff1c2091fb21aa2b",
+      "title": "Is stubble burning in Punjab affecting Sri Lanka’s air quality?",
+      "url": "https://www.thehindu.com/sci-tech/science/is-stubble-burning-in-punjab-affecting-sri-lankas-air-quality/article71750848.ece",
+      "summary": "Pollution from northern India and the wider region travels over the Bay of Bengal to Sri Lanka during the northeast monsoon, and crop burning is part of that mix",
+      "published_at": "Sat, 28 Nov 2026 10:37:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/bbam3p/article71751050.ece/alternates/LANDSCAPE_1200/2026-11-26T033403Z_1416849372_RC26POASTFAT_RTRMADP_3_ASIA-WEATHER-INDIA-POLLUTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Environment, Health & Science": 1,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "Environment, Health & Science",
+          "International & Geopolitics"
         ]
       }
     }

@@ -1,44 +1,151 @@
 {
   "task": "Review every supplied part, discover the most consequential events from the supplied evidence, cluster related reports, assign the best-fit broad news category dynamically and produce up to 150 processed stories using schema/processed-news.schema.json. The final portfolio must contain at least five well-supported stories in every category. Treat social attention as a discovery signal rather than verification. More than half of the final stories must originate with independent, local or social discovery, using the first source in each story as the discovery source; established outlets may account for no more than half.",
-  "prepared_at": "2026-11-28T00:09:01.487081+00:00",
-  "input_count": 427,
+  "prepared_at": "2026-11-28T08:00:13.534771+00:00",
+  "input_count": 1408,
   "supplied_count": 200,
   "source_mix": {
-    "independent_social": 115,
-    "established_or_other": 85,
+    "independent_social": 134,
+    "established_or_other": 66,
     "independent_social_majority_required": true
   },
   "part": 1,
   "part_count": 5,
   "items": [
     {
-      "raw_id": "3046ccd732b29a4c99",
-      "title": "Congress reaches out to DMK, other Opposition parties to stall passage of delimitation Bill",
-      "url": "https://www.thehindu.com/news/national/congress-reaches-out-to-dmk-other-opposition-parties-to-stall-passage-of-delimitation-bill/article71751727.ece",
-      "summary": "The party may urge CMs of southern States to hold press conferences, and is likely to hold a nationwide campaign against ‘divisive’ delimitation exercise",
-      "published_at": "Sat, 28 Nov 2026 00:24:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/oh6x0/article71752274.ece/alternates/LANDSCAPE_1200/20261127321L.jpg",
+      "raw_id": "3590ef96bcf9a9079e",
+      "title": "Supreme Court declines to entertain plea to reduce minimum age to contest elections",
+      "url": "https://www.barandbench.com/news/supreme-court-declines-to-entertain-plea-to-reduce-minimum-age-to-contest-elections",
+      "summary": "The Supreme Court on Saturday refused to entertain a petition seeking a reduction in the minimum age required to contest Parliamentary and State legislature elections [ Nalla Suresh Reddy vs Union of India ]. A Bench of Justices Vikram Nath and Aparesh Kumar Singh expressed that it was not appropriate for the Supreme Court to intervene in the matter, prompting the petitioner to withdraw the plea. Justice Vikram Nath and Justice Aparesh Kumar Singh During the hearing, the petitioner's counsel told the Bench that the plea raised a \"vital issue\" concerning the disparity between the voting age and the minimum age for a person to contest elections. He pointed out that the minimum age to contest elections continues to stand at 25 years for the Lok Sabha and State Legislative Assemblies, and 30 years for the Rajya Sabha and State Legislative Councils. On the other hand, the 61st Constitutional Amendment had lowered the voting age from 21 to 18 years. The petitioner called for a similar reduction in the minimum age for a person to contest elections as well. However, the top court was not inclined to interfere. \"This is not an appropriate petition,\" it said. Sensing the Court's reluctance, ",
+      "published_at": "Sat, 28 Nov 2026 12:07:46 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2021-01/47f6c197-325e-4776-86e5-354fbb11fee1/Election__1_.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4
+          "Politics & Elections": 4,
+          "States & Local": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "Society, Rights & Justice",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "8b1fe49741cb1b5397",
+      "title": "UP Election 2027/Samajwadi Party Manifesto: समाजवादी पार्टी का PDA घोषणा पत्र जारी, जानिए अखिलेश यादव के नए और पुराने वादे।",
+      "url": "https://khabarlahariya.org/up-election-2027-samajwadi-party-manifesto-samajwadi-party-releases-its-pda-manifesto-take-a-look-at-akhilesh-yadavs-new-and-existing-promises/",
+      "summary": "उत्तर प्रदेश में विधानसभा चुनाव के लिए सभी राजनीतिक पार्टियाँ तैयारी में लगी हुई हैं। इसी के साथ ही विधानसभा चुनाव 2027 के लिए समाजवादी पार्टी द्वारा घोषणा पत्र जारी…",
+      "published_at": "Fri, 27 Nov 2026 09:04:17 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 4
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "994705a40d4df94385",
+      "title": "SC rejects PIL over Italian socialist leader Giacomo Filibeck’s vote fraud remarks",
+      "url": "https://www.thenewsminute.com/telangana/sc-rejects-pil-over-italian-socialist-leader-giacomo-filibecks-vote-fraud-remarks",
+      "summary": "Follow TNM ’ s WhatsApp channel for news updates and story links. The Supreme Court on Friday, November 27, refused to entertain a Public Interest Litigation (PIL) seeking action against Italian politician Giacomo Filibeck over his ‘Vote Chor, Gaddi Chhod’ (Vote thief, leave the throne) slogan at the Bharat Summit in Hyderabad, asking the petitioner to approach the Union government instead. The PIL was filed by one Zahid Ali. A bench of Justices Vikram Nath and Aparesh Kumar Singh said the petitioner was free to submit a representation seeking regulations on speeches made by foreign nationals on Indian soil. “You are free to make representations. Who is stopping you?” the bench remarked, questioning the need to invoke Article 32 of the Constitution. “You can file a complaint. Why Article 32 petition?” it added. Article 32 of the Indian Constitution guarantees right to constitutional remedies and allows any person whose fundamental rights are violated to seek relief. The PIL sought intervention over Filibeck’s remarks, alleging that he had interfered in India’s domestic political affairs by criticising the government and expressing support for the Opposition. It also sought the remo",
+      "published_at": "Sat, 28 Nov 2026 06:34:09 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2025-12-29/0p37bnke/20251006157F.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "Governance & Administration": 3,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Politics & Elections",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "0d1a229a21c134f977",
+      "title": "Andhra CM Chandrababu backs delimitation, says opposing it would obstruct women’s quota",
+      "url": "https://www.thenewsminute.com/andhra-pradesh/andhra-cm-chandrababu-backs-delimitation-says-opposing-it-would-obstruct-womens-quota",
+      "summary": "Andhra Pradesh Chief Minister N Chandrababu Naidu has renewed his support for the Bharatiya Janata Party (BJP)-led Union government’s plan to reintroduce the Delimitation Bill, citing women’s reservation. The previous Bill was defeated in Parliament after the Opposition objected to tying the women’s quota to delimitation. The CM appealed to Opposition parties not to oppose the proposal, saying that doing so would obstruct greater representation for women. Speaking to reporters in New Delhi alongside Union Minister HD Kumaraswamy, Naidu supported a proposed 50% increase in seats in every state. He argued that if delimitation were based only on population figures, southern states could be disadvantaged because they had curbed population growth more successfully. “If delimitation is undertaken based on the 1971, 2011 and 2026 Census figures, southern states could face difficulties. In the past, southern states successfully implemented population control measures. I too worked extensively on family planning in undivided Andhra Pradesh. We achieved population control through a focused campaign and succeeded in reducing the fertility rate.” “However, the situation has changed now. We are",
+      "published_at": "Sat, 28 Nov 2026 05:47:26 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 2,
+          "Governance & Administration": 2
         },
         "candidate_categories": [
           "Governance & Administration",
@@ -47,17 +154,83 @@
       }
     },
     {
-      "raw_id": "b982b317b535102357",
-      "title": "Mamata-led Trinamool Congress questions legality of rebel MPs voting on delimitation bill amid pending defection case",
-      "url": "https://www.thehindu.com/news/national/mamata-led-trinamool-congress-questions-legality-of-rebel-mps-voting-on-delimitation-bill-amid-pending-defection-case/article71751909.ece",
-      "summary": "Party asks whether 20 MPs who switched to the NDA-backed NCPI can participate in voting before the Speaker decides on disqualification petitions",
-      "published_at": "Fri, 27 Nov 2026 23:14:57 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5pwr5/article71752114.ece/alternates/LANDSCAPE_1200/INDIA%20BLOC%20RALLY%20DELHI%2038.JPG",
+      "raw_id": "8b310d4e0ed26609c1",
+      "title": "L Adani Mao elected United Naga Council president",
+      "url": "https://eastmojo.com/manipur/2026/11/27/l-adani-mao-elected-united-naga-council-president/",
+      "summary": "Senapati: L Adani Mao from Senapati district was elected president of the United Naga Council (UNC), the apex body of the Naga people in Manipur, for the 2026-2030 tenure on Friday. Three candidates contested the presidential election, held at SM Sha Complex in Senapati district headquarters. A native of Punanamei village, Adani Mao will succeed […] The post L Adani Mao elected United Naga Council president appeared first on EastMojo .",
+      "published_at": "Fri, 27 Nov 2026 11:01:36 +0000",
+      "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
+        "id": "eastmojo",
+        "name": "EastMojo",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "e6b3179a06a0c8edc5",
+      "title": "The Kavita Show: हुनर बनाम डिग्री, क्या सिर्फ हुनर से मिलेगी रोजगार की गारंटी?",
+      "url": "https://khabarlahariya.org/the-kavita-show-talent-vs-degree-can-talent-alone-guarantee-employment/",
+      "summary": "https://tests.khabarlahariya.in/up-elections-2027-combo-reporting/ इस QR कोड को स्कैन कीजिए और उत्तर प्रदेश चुनाव 2027 में जमीनी रिपोर्टिंग के लिए खबर लहरिया को सहयोग कीजिए! प्रधानमंत्री नरेंद्र मोदी ने 21 नवंबर को लखनऊ…",
+      "published_at": "Fri, 27 Nov 2026 12:20:57 +0000",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "khabar-lahariya",
+        "name": "Khabar Lahariya",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent rural and regional newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Politics & Elections": 1
+        },
+        "candidate_categories": [
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "228f789fa8273dad3e",
+      "title": "Serbia sets Presidential election for December 27 after students won Parliamentary vote",
+      "url": "https://www.thehindu.com/news/international/serbia-sets-presidential-election-for-december-27-after-students-won-parliamentary-vote/article71746565.ece",
+      "summary": "The Presidential vote will be held after a student movement defeated Mr. Vucic's right-wing Serbian Progressive Party in an early Parliamentary ballot on October 25",
+      "published_at": "Thu, 26 Nov 2026 19:25:13 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/55sn4o/article71746714.ece/alternates/LANDSCAPE_1200/2026-11-17T171014Z_1047750035_RC2KPOA4CJUG_RTRMADP_3_SERBIA-PARLIAMENT.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
         "type": "mainstream",
         "selection_group": "established",
         "ownership": "The Hindu Group"
@@ -72,20 +245,24 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 4
+          "Politics & Elections": 5,
+          "Society, Rights & Justice": 4,
+          "International & Geopolitics": 8
         },
         "candidate_categories": [
-          "Governance & Administration"
+          "International & Geopolitics",
+          "Politics & Elections",
+          "Society, Rights & Justice"
         ]
       }
     },
     {
-      "raw_id": "bf3f4eadc12dd60298",
-      "title": "Naidu in Delhi for NDA meeting after Union Cabinet clears delimitation Bill with 50% rise in seats for all States",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/naidu-in-delhi-for-nda-meeting-after-union-cabinet-clears-delimitation-bill-with-50-rise-in-seats-for-all-states/article71750067.ece",
-      "summary": "Chandrababu Naidu joins NDA leaders in Delhi ahead of Parliament’s special sitting, as the Union Cabinet’s Bill keeps the present ratio of seats among States until 2051",
-      "published_at": "Fri, 27 Nov 2026 16:41:47 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/wjdzi9/article71745075.ece/alternates/LANDSCAPE_1200/Cyclone-Akvan-tGEIGQBD9L.3.jpg.jpg",
+      "raw_id": "e409896708ec8a2ed1",
+      "title": "Data | How election fund was spent during 2021 State polls",
+      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
+      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
+      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
+      "image_url": "",
       "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
@@ -105,298 +282,22 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 4,
+          "Politics & Elections": 4,
           "States & Local": 8
         },
         "candidate_categories": [
-          "Governance & Administration",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "0f29dfc9f5713aa557",
-      "title": "Women Reservation Bill: In 20 States & UTs less than 10% MLAs are female | Data",
-      "url": "https://www.thehindu.com/data/women-reservation-bill-in-20-states-uts-less-than-10-mlas-are-female-data/article67338512.ece",
-      "summary": "Share of women parliamentarians has never exceeded 15% in the past general elections",
-      "published_at": "Thu, 16 Apr 2026 14:19:09 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/15d1co/article67338517.ece/alternates/LANDSCAPE_1200/women%20reservation%20bill.jpeg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 1,
-          "Governance & Administration": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
           "Politics & Elections",
           "States & Local"
         ]
       }
     },
     {
-      "raw_id": "420765b7408a5448f1",
-      "title": "Are UGC regulations becoming a barrier for foreign university campuses in India?",
-      "url": "https://www.thehindu.com/education/are-ugc-regulations-becoming-a-barrier-for-foreign-university-campuses-in-india/article71742739.ece",
-      "summary": "The UGC may cancel approval if activities are “against the interest of India” and may impose “any other conditions” from time to time. Interpretation of the Regulations rests with the Commission itself.",
-      "published_at": "Wed, 25 Nov 2026 19:26:10 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/bpmpuc/article71742873.ece/alternates/LANDSCAPE_1200/iStock-83454998.jpg",
-      "suggested_category": "Society, Rights & Justice",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-education",
-        "name": "The Hindu - Education",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "Society, Rights & Justice": 12
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "f234cce94b14df9060",
-      "title": "Canada’s top court rules on Quebec secularism law in landmark case",
-      "url": "https://www.thehindu.com/news/international/canadas-top-court-rules-on-quebec-secularism-law-in-landmark-case/article71749545.ece",
-      "summary": "The law has been the subject of intense legal debate since it was first passed by Quebec's government in 2019",
-      "published_at": "Fri, 27 Nov 2026 14:22:12 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/5hpl9i/article71749572.ece/alternates/LANDSCAPE_1200/suprme%20court%20canada.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "a65aafda56041c0f7a",
-      "title": "Australia’s Digital Duty of Care law: Why Big Tech is under pressure",
-      "url": "https://www.thehindu.com/sci-tech/technology/australias-digital-duty-of-care-law-why-big-tech-is-under-pressure/article71745512.ece",
-      "summary": "The law places a legal duty on online services to protect users from serious harm; but the conservative opposition and the United States say the law could lead to censorship of lawful speech",
-      "published_at": "Thu, 26 Nov 2026 12:22:42 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/m97eme/article71745521.ece/alternates/LANDSCAPE_1200/Australia-passeGUGGRKR61.3.jpg.jpg",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "Governance & Administration",
-          "International & Geopolitics"
-        ]
-      }
-    },
-    {
-      "raw_id": "fb1b6ddb82316b0adb",
-      "title": "Centre proposes freeze on Lok Sabha seat proportions for States until 2051",
-      "url": "https://www.thehindu.com/news/national/centre-proposes-freeze-on-lok-sabha-seat-proportions-for-states-until-2051/article71752150.ece",
-      "summary": "The new Constitutional Amendment Bill, accompanied by a fresh Delimitation Bill, proposes to increase the number of Lok Sabha seats in each State by 50%; they also bring into force the 33% reservation for women in the Lok Sabha",
-      "published_at": "Sat, 28 Nov 2026 04:08:22 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/zarshs/article71747086.ece/alternates/LANDSCAPE_1200/Uncertainty-oveGDHGRKK49.4.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "f7a3c1b17e318e0dad",
-      "title": "Senior advocate Syed Faisal Qadri appointed as J&K’s Advocate General after two year gap",
-      "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/senior-advocate-syed-faisal-qadri-appointed-as-jks-advocate-general-after-two-year-gap/article71751519.ece",
-      "summary": "Mr. Faisal is a designated senior advocate with over 20 years of practice; the Omar Abdullah government in April had proposed the names for the post while the appointment came after the J&K High Court heard a PIL plea on November 5 regarding the vacant post",
-      "published_at": "Sat, 28 Nov 2026 01:51:31 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/2le48w/article71751675.ece/alternates/LANDSCAPE_1200/faisal%20qadri.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "0a0b1a103a2a3dacd9",
-      "title": "Lok Sabha seat freeze is no longer linked to population stabilisation",
-      "url": "https://www.thehindu.com/news/national/lok-sabha-seat-freeze-is-no-longer-linked-to-population-stabilisation/article71752281.ece",
-      "summary": "The distribution of seats based on 1971 Census continued for 50 years for the reason that a readjustment would adversely affect the proportion of States that stabilised population. Population stability was a stated objective of the government. That link between population stability and Lok Sabha share has been removed in the 132nd Constitutional Amendment Bill",
-      "published_at": "Sat, 28 Nov 2026 01:39:17 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/hwf3bx/article67730690.ece/alternates/LANDSCAPE_1200/NKV-NewParliament.JPG",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1
-        },
-        "candidate_categories": [
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "7cfea3503009dffd3f",
-      "title": "Tell us about your past, tell us how many youths got jobs, asks U.P. CM Yogi to Samajwadi Party",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/tell-us-about-your-past-tell-us-how-many-youths-got-jobs-asks-up-cm-yogi-to-samajwadi-party/article71752384.ece",
-      "summary": "Our government has made more than twice as many appointments as were made during the seven terms of SP and BSP governments combined, says CM Yogi",
-      "published_at": "Sat, 28 Nov 2026 01:13:58 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/8ir9o/article71752379.ece/alternates/LANDSCAPE_1200/20261127307L.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Governance & Administration": 1,
-          "Economy & Employment": 4
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Governance & Administration"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa8e42f076658ec080",
-      "title": "Andhra’s proposed Investment Protection Act seeks to shield investors from policy U-turns",
-      "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhras-proposed-investment-protection-act-seeks-to-shield-investors-from-policy-u-turns/article71707378.ece",
-      "summary": "The proposed law aims to shield investments from policy reversals by successive governments, such as the ‘three capitals’ plan and the review of power purchase agreements",
-      "published_at": "Mon, 16 Nov 2026 17:42:31 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/h6f2m9/article71365406.ece/alternates/LANDSCAPE_1200/_GNR5130.JPG",
+      "raw_id": "fa728bba3d7642bfb5",
+      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
+      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
+      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
+      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
+      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
       "suggested_category": "States & Local",
       "priority_discovery": false,
       "source": {
@@ -416,12 +317,117 @@
         "social_attention_score": 0,
         "rationale": "retained through source-balanced review",
         "category_candidate_scores": {
-          "Governance & Administration": 1,
+          "Politics & Elections": 4,
           "States & Local": 8
         },
         "candidate_categories": [
-          "Governance & Administration",
+          "Politics & Elections",
           "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "7777f732d192431acd",
+      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
+      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
+      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
+      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
+      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
+      "suggested_category": "States & Local",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-states",
+        "name": "The Hindu - States",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "States & Local": 8
+        },
+        "candidate_categories": [
+          "Politics & Elections",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "3c9b3fae9b8a68d078",
+      "title": "Taiwan votes in local elections as China sends warplanes, lambastes Taipei candidate",
+      "url": "https://www.thehindu.com/news/international/taiwan-votes-in-key-local-elections-as-china-looks-on/article71753506.ece",
+      "summary": "The main race to watch is for the Taipei mayorship, where Chiang ‌has faced a stiff challenge from Shen, an academic-turned-lawmaker and an expert on China’s information warfare",
+      "published_at": "Sat, 28 Nov 2026 10:01:57 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/mupmcb/article71753509.ece/alternates/LANDSCAPE_1200/Taiwan_Election_73887.jpg",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
+        ]
+      }
+    },
+    {
+      "raw_id": "d34017efcb3dabb403",
+      "title": "Bangladesh’s Opposition party blasts Australian media reports over leader’s visit",
+      "url": "https://www.thehindu.com/news/international/bangladeshs-opposition-party-blasts-australian-media-reports-over-leaders-visit/article71749303.ece",
+      "summary": "The party said the legal notice sent to The Australian newspaper pointed out ‘seven defamatory imputations and demands corrections, retraction of the report, an apology and the preservation of relevant documents’",
+      "published_at": "Fri, 27 Nov 2026 13:06:06 +0530",
+      "image_url": "https://th-i.thgim.com/public/incoming/p1w87p/article71749308.ece/alternates/LANDSCAPE_1200/2026-02-12T180327Z_2056020255_RC2HKJA0BJZC_RTRMADP_3_BANGLADESH-ELECTION.JPG",
+      "suggested_category": "International & Geopolitics",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-international",
+        "name": "The Hindu - International",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Politics & Elections": 4,
+          "International & Geopolitics": 8
+        },
+        "candidate_categories": [
+          "International & Geopolitics",
+          "Politics & Elections"
         ]
       }
     },
@@ -667,6 +673,78 @@
       }
     },
     {
+      "raw_id": "0b1efad82fbae7e634",
+      "title": "Hafta letters: Violent roads, Modi’s ‘chalein?’ moment, and racial abuse",
+      "url": "https://www.newslaundry.com/2026/11/28/hafta-letters-violent-roads-modis-chalein-moment-and-racial-abuse",
+      "summary": "Farqul In Hafta 616, Abhinandan talked about a Palestinian player’s racial abuse of an Indian player. I think we can also view it as how the rest of the world is perceiving us as our leaders get closer to Israel, Israeli soldiers take detox vacations in India, Indian companies arm the IDF, and Indian minorities face hatred. I am not defending the Palestinian player. Just giving another perspective to how others are seeing us because of our current political leadership. *** Rafa Hi NL, I watched a YouTube video which showed Manisha Pande whenever it mentioned Navika Kumar. Either the AI has goofed up or the maker has actually mistaken Manisha for Navika. I have a song recommendation to play at the end. The political protest anthem “Kaisa Ghabraya Saheb”, by Aditi Sharma. *** Charlie In 606, Abhinandan brought up Thar drivers. I think it’s okay to stereotype them because owning a Thar isn’t a protected characteristic like religion, caste, etc. As someone who drives in NCR, I see a lot of drivers who fit their vehicles with blindingly bright LED headlights which they use to bully other drivers out of their way. This is intentionally violent behaviour towards other people on the road, ",
+      "published_at": "Sat, 28 Nov 2026 05:47:59 +0000",
+      "image_url": "https://cf-images.assettype.com/newslaundry/2026-11-28/05a3lar1/dhulai-1-2.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "newslaundry",
+        "name": "Newslaundry",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Reader-supported independent media company"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Society, Rights & Justice": 2,
+          "Sports": 1
+        },
+        "candidate_categories": [
+          "Protests",
+          "Society, Rights & Justice",
+          "Sports"
+        ]
+      }
+    },
+    {
+      "raw_id": "307bd35a002684d39c",
+      "title": "Buying data, inheriting liability: Cyber and data due diligence in Indian M&A",
+      "url": "https://www.barandbench.com/law-firms/leading-questions/buying-data-inheriting-liability-cyber-and-data-due-diligence-in-indian-ma",
+      "summary": "When a company acquires a business, it acquires that business's data, along with any failure in how that data was collected, secured or shared. That exposure is no longer theoretical. IBM's 2026 study put the average cost of a data breach in India at ₹25.5 crore ( IBM India, 2026 ). From May 13, 2027, the substantive provisions of the Digital Personal Data Protection Act, 2023 (DPDP Act) will add penalties of up to ₹250 crore. My argument is that data must be diligenced as a liability, not only valued as an asset. Transactions signed today will close, or be integrated, under the new regime. Question: Why has data become a core diligence issue in Indian transactions now? Answer: Three developments have converged. First, the DPDP Act's substantive obligations, including security safeguards and breach intimation, are scheduled to take effect on May 13, 2027 ( Mondaq, Aug 2026 ), giving a target's compliance gaps a statutory price. Second, the regime reaches back into existing databases. Under Section 5(2), where consent was obtained before the Act commenced, the Data Fiduciary must issue a fresh notice as soon as reasonably practicable ( Fox Mandal ). Legacy customer data brings remed",
+      "published_at": "Sat, 28 Nov 2026 10:19:25 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-11-28/v59f6je2/Viewpoint-7-copy-2.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
       "raw_id": "5d5629cd0d7b441f45",
       "title": "India A vs UAE, Asia Cup Rising Stars 2026: वैभव सूर्यवंशी ने फिर बनाया रिकॉर्ड, 52 गेंदों में दोहरा शतक लगाकर सबको चौंकाया",
       "url": "https://khabarlahariya.org/india-a-vs-uae-asia-cup-rising-stars-2026-vaibhav-suryavanshi-sets-another-record-stuns-everyone-by-smashing-a-double-century-off-just-52-balls/",
@@ -733,6 +811,467 @@
       }
     },
     {
+      "raw_id": "0979dfdb058362e3d7",
+      "title": "Modi's questions to corporate India expose the gaps in his economic model | Let Me Explain 182 | Pooja Prasanna",
+      "url": "https://www.thenewsminute.com/videos/let-me-explain/modis-questions-to-corporate-india-expose-the-gaps-in-his-economic-model-let-me-explain-182-pooja-prasanna",
+      "summary": "For years, Narendra Modi and his government have sold Indians a particular economic promise: make businesses richer, encourage investment, cut corporate taxes, and the benefits will eventually reach everyone else. More jobs, better salaries, higher incomes. That's the promise of trickle-down economics. And last week, the Prime Minister had some rather pointed questions for India's corporate bosses. Where are the jobs? Why haven't salaries gone up? After all the tax cuts and incentives, what exactly have you done for the people who work for you? These are perfectly legitimate questions. But they also raise an uncomfortable political question for Modi himself. If corporate India hasn't delivered on the promise of trickle-down economics, who is accountable? The companies that received the tax breaks? Or the government that designed this economic model, and repeatedly told Indians that the benefits would follow? Across the country, young people are protesting over unemployment, recruitment delays and examination paper leaks. And the PM’s speech now shows he is cognizant of this unrest, he knows it can't be ignored. So, is Modi right about corporate India's greed? And what does his publ",
+      "published_at": "Sat, 28 Nov 2026 07:03:35 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-28/xj2cw9m9/WhatsApp-Image-2026-11-28-at-11.19.38-AM.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Protests": 1,
+          "Economy & Employment": 8
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "95162b40eff5a9abe4",
+      "title": "DMK to back Union government’s delimitation Bill",
+      "url": "https://www.thenewsminute.com/tamil-nadu/dmk-to-back-union-governments-delimitation-bill",
+      "summary": "The Dravida Munnetra Kazhagam (DMK) has decided to support the Union government’s proposed Delimitation Bill in Parliament. The party passed the resolution at a meeting of its Members of Parliament chaired by DMK president MK Stalin. The party has 22 MPs in the Lok Sabha and eight in the Rajya Sabha. The draft Bill, released by the Union government on Friday, November 27, addresses most of the key demands raised by the DMK. It proposes a 50% increase in the number of Lok Sabha seats allocated to every state, delimitation of constituencies based on the latest Census, and a freeze on further delimitation until 2051. The Bill is scheduled to be tabled in the Lok Sabha on November 30, during a special sitting of Parliament. The proposed changes come amid sustained opposition from several southern states, which have argued that delimitation based on population could penalise states that have successfully implemented family-planning measures and brought down population growth. Their concern has been that states with higher population growth could gain a greater share of parliamentary seats, reducing the relative political influence of southern states. The proposed legislation is also lin",
+      "published_at": "Sat, 28 Nov 2026 05:58:43 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-28/s9y4opdb/delimitation.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 5,
+          "Protests": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests"
+        ]
+      }
+    },
+    {
+      "raw_id": "1f2635253db6f0fe84",
+      "title": "‘DMK has fallen into BJP’s trap’: Shashi Tharoor on support for Delimitation Bill",
+      "url": "https://www.thenewsminute.com/tamil-nadu/dmk-has-fallen-into-bjps-trap-shashi-tharoor-on-support-for-delimitation-bill",
+      "summary": "Congress MP Shashi Tharoor has criticised its former ally, the DMK party, over reports that it may support the BJP-led Union government’s proposed Delimitation Bill, saying the party risks abandoning its longstanding defence of state rights. “I think the DMK has been a very strong voice in the past for the rights of states. In fact, the DMK was in power till this year, and they won't allow the Jawahar Navodaya Vidyalayas to come to Tamil Nadu because they refused to allow Delhi to teach Hindi in Tamil Nadu. Now, such a party to surrender on the specious grounds that the increase is proportionate without looking at the larger agenda of the BJP behind it is, I think, an abdication of responsibility to the people in whose name they claim to speak,” the Congress MP said. Explaining the Delimitation proposal, he said, \"This proportional increase argument is a very specious one. Let's say you're a Managing Director of a company and you are paying yourself Rs 2 lakh and your driver has a salary of 20,000, a proportion of 10 to 1. You announce a 50% increase for everybody. Your salary goes up to Rs 3 lakh; your driver goes up to 30,000. Are you not very much better off? Proportion is still",
+      "published_at": "Sat, 28 Nov 2026 06:53:47 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/Shashi-tharoor-040819-1200-PTI_0.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "d5a1268ef6b2aa8129",
+      "title": "Siddaramaiah questions delimitation formula as Kumaraswamy backs Union govt’s Bill",
+      "url": "https://www.thenewsminute.com/karnataka/siddaramaiah-questions-delimitation-formula-as-kumaraswamy-backs-union-govts-bill",
+      "summary": "Former Karnataka chief minister Siddaramaiah has urged Prime Minister Narendra Modi to explain how the proposed delimitation of constituencies would affect Karnataka and other southern states that have effectively implemented population stabilisation measures. The Union Cabinet on Friday, November 27, cleared the Constitution (One Hundred and Thirty-Second Amendment) Bill linked to expanding the strength of Lok Sabha and state Legislative Assemblies, as well as implementing 33% reservation for women in the Lok Sabha and state Legislative Assemblies. The Bharatiya Janata Party (BJP) led National Democratic Alliance (NDA) government is set to introduce the Bill in the Lok Sabha on Monday, November 30, during a special sitting. In a post on social media on November 27, Siddaramaiah said the proposed 50% increase in Lok Sabha seats would widen the gap in parliamentary representation between Karnataka and Uttar Pradesh. “Under this proposal, Karnataka’s representation will increase from 28 to 42 seats, while Uttar Pradesh’s will increase from 80 to 120. The numerical gap will widen from 52 to 78 seats,” he said. He added that Karnataka’s representation was not merely about the number of",
+      "published_at": "Sat, 28 Nov 2026 06:15:59 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2024-02/078c405e-18f7-4bfc-a005-2715fdb86a75/siddaramaiah.jpeg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 4,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "c90b50ff6aade902cd",
+      "title": "From Innovation to Incorporation: UAE Holding Companies as the Legal Infrastructure for AI Scale-Ups",
+      "url": "https://www.barandbench.com/law-firms/view-point/from-innovation-to-incorporation-uae-holding-companies-as-the-legal-infrastructure-for-ai-scale-ups",
+      "summary": "Introduction: The Convergence of AI, Law, and Global Structure Working at an AI company operating in India and looking outward to the world, I often find myself confronting a duality: the rapid evolution of AI technologies on one side and the slow moving machinery of law and compliance on the other. In this tension lies the lawyer’s strategic imperative to build structures that are legally resilient yet commercially agile. One such structure is the UAE-based holding company. Over the past few years, I have observed a pattern among growth-stage startups, especially in AI and Deep tech: they are incorporating holding companies in jurisdictions like the Dubai International Financial Centre (DIFC), Abu Dhabi Global Market (ADGM), and select free zones such as DMCC. This article outlines why such a holding structure makes sense, the legal architecture involved, and what nuances counsel must watch for. Why UAE? A Real-World Advantage for AI Firms A. Strategic Location and Business Environment The UAE is strategically positioned between East and West, serving as a commercial hub for both European and Asian markets. With advanced infrastructure, stable governance, and world-class financial",
+      "published_at": "Fri, 12 Sep 2025 14:51:15 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2025-09-12/pgf5kbsu/ViewPoint-MIddle-Single-Image.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 3,
+          "Economy & Employment": 6,
+          "Environment, Health & Science": 2,
+          "International & Geopolitics": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Environment, Health & Science",
+          "Governance & Administration",
+          "International & Geopolitics"
+        ]
+      }
+    },
+    {
+      "raw_id": "d14ed1ad2c828063c0",
+      "title": "Back 50% seat hike or face population-based delimitation, BJP tells DMK, party agrees",
+      "url": "https://www.thenewsminute.com/tamil-nadu/back-50-seat-hike-or-face-population-based-delimitation-bjp-tells-dmk-party-agrees",
+      "summary": "The Bharatiya Janata Party (BJP) is learnt to have told the Dravida Munnetra Kazhagam (DMK) that it would be in the best interest of southern states, including Tamil Nadu, to support the proposed delimitation Bill in Parliament. The southern party passed a resolution supporting the legislation at a meeting of its MPs chaired by party chief MK Stalin in Chennai on Saturday, November 28. A DMK source told TNM that the 50% uniform increase in the seats of all states, which the draft Bill proposes, has been presented as the lesser of two evils to the southern state. The government needs a two-thirds majority of those present and voting in order to pass the Bill in Lok Sabha. The votes of the 22 DMK MPs will prove crucial. Draft delimitation Bill released: 50% increase in seats, 850-seat Lok Sabha, freeze till 2051 If the Bill does not pass Parliament, the government told the DMK that it will go ahead with population-based delimitation according to the 2027 Census figures. Such delimitation gets legal sanction from the Constitution (84th Amendment) Act of 2002. Recognising the demographic asymmetries that stemmed from differing population growth rates across different states, the 84th a",
+      "published_at": "Sat, 28 Nov 2026 06:45:36 +0000",
+      "image_url": "https://cf-images.assettype.com/thenewsminute/2025-04-11/afr8nkfa/stalinmodi11042025.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 3,
+          "States & Local": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "States & Local"
+        ]
+      }
+    },
+    {
+      "raw_id": "9ba28b4593bd31e275",
+      "title": "Delimitation debate: What the Justice Kurian Joseph Committee constituted by DMK said",
+      "url": "https://www.thenewsminute.com/news/delimitation-debate-what-the-justice-kurian-joseph-committee-constituted-by-dmk-said",
+      "summary": "The draft delimitation Bill released by the Union government on Friday, November 27, addresses most of the key new demands put forward by the Dravida Munnetra Kazhagam (DMK). It proposes 50% increase in the seat shares of all states in the Lok Sabha, delimitation of constituencies based on the latest census, and a freeze on further delimitation till 2051. The Bill is set to be tabled in the Lok Sabha on November 30, during a special sitting of the Parliament. Draft delimitation Bill released: 50% increase in seats, 850-seat Lok Sabha, freeze till 2051 The party had opposed a previous Constitution Amendment tabled in April 2026, arguing that a delimitation exercise based on population could disadvantage southern states that had successfully implemented population-control measures. Party chief MK Stalin, who was then the chief minister of Tamil Nadu, had even burned a copy of the Bill in protest. The DMK’s stance on delimitation softened in the months that followed, after the Tamilaga Vettri Kazhagam (TVK) defeated it in the Assembly polls. Interestingly, it was the former DMK government led by MK Stalin that constituted a High Level Committee on Union-State Relations under retired S",
+      "published_at": "Sat, 28 Nov 2026 04:44:51 +0000",
+      "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/justice_kurian_joseph-smiling-750.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-news-minute",
+        "name": "The News Minute",
+        "type": "local",
+        "selection_group": "independent_social",
+        "ownership": "Independent regional digital newsroom"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "local"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 3,
+          "Protests": 1,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Protests",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "fda038dd2302c8c82d",
+      "title": "Bar gave me a place, Bench gave me a purpose: Supreme Court Justice Satish Chandra Sharma on retirement eve",
+      "url": "https://www.barandbench.com/news/bar-gave-me-a-place-bench-gave-me-a-purpose-supreme-court-justice-satish-chandra-sharma-on-retirement-eve",
+      "summary": "Supreme Court Justice Satish Chandra Sharma on Saturday reflected on his 42-year journey in the legal profession while sitting on a special ceremonial Bench to mark his retirement from judicial service. The ceremonial Bench comprised Chief Justice of India (CJI) Surya Kant , Justice Joymalya Bagchi , Justice V Mohana and Justice Sharma. Justice Sharma recalled the beginning his legal career at the Bar in Jabalpur 42 years ago as a first-generation lawyer. “I came to the Bar at Jabalpur 42 years ago as a first-generation lawyer with the same dreams, aspirations and determination as I see in the young members of the Bar present here today. I was armed with the values instilled in me by my parents and a hope that hard work won't go unnoticed,” he said. Justice Sharma also noted that all four judges on the ceremonial Bench were first-generation lawyers. “When I say I am a first-generation lawyer, it's a coincidence that all four of us are first-generation judges,” he said. Being designated a Senior Advocate by the Madhya Pradesh High Court after years of toil was a special moment in his life, he added. “The Bar at Jabalpur gave me a place and a chance to prove myself. The Bench gave me",
+      "published_at": "Sat, 28 Nov 2026 13:03:50 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-04/f379a4b8-a76d-42a5-a115-98ed923f7c65/BOMBAY__WEB_PAGE_1600x900.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "349f00c5fe6f257129",
+      "title": "Punjab & Haryana High Court quashes Centre’s complaint against Amazon over sale of toys without ISI mark",
+      "url": "https://www.barandbench.com/news/punjab-haryana-high-court-quashes-centres-complaint-against-amazon-over-sale-of-toys-without-isi-mark",
+      "summary": "The Punjab and Haryana High Court recently quashed a complaint filed by the Union government against Amazon over storage of toys lacking the ISI mark, the quality certification mark issued by the Bureau of Indian Standards [Amazon Seller Services Pvt. Ltd. and another v Union of India] Justice NS Shekhawat said that the registration of the proceedings against the intermediary had led to miscarriage of justice as Amazon is only a marketplace E-commerce entity, which had merely acted as a third-party facilitator for buyers and sellers. The Court also ruled that Amazon as an intermediary is protected from liability under the Information Technology Act. It further noted that the government authorities had failed to array the sellers, who had stored their goods at Amazon's Fulfillment Centre, as accused in the case. \"Even otherwise, under the provisions of the Toys (Quality Control) Order, 2020, the liability under the Act to ensure the compliance of various provisions of the BIS Act is upon the person who manufactures, imports, distributes, sells, hires, leases, stores or exhibits for sale any goods,\" the Court held. Justice NS Shekhawat Amazon moved the High Court in 2023 after a Ludh",
+      "published_at": "Sat, 28 Nov 2026 12:10:59 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2020-11/7f4259f6-287a-4973-a178-5133929c48d5/Amazon_Warehouse.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "918e34d67367205159",
+      "title": "CLAT: Fairness first",
+      "url": "https://www.barandbench.com/columns/columns-law-schools/clat-fairness-first",
+      "summary": "The difficulty of an entrance examination is the examiner’s prerogative; its fairness is the candidate’s right. CLAT may be as demanding as the Consortium of National Law Universities considers appropriate. It cannot afford uncertainty about correct answers, doubt about the security of its paper, or preventable opportunities for cheating. Warnings from the official mocks The Consortium conducted two official CLAT 2027 mocks in November 2026. The first was exceptionally demanding. Difficulty itself was not the problem: in several questions, however, the officially preferred choice appeared less defensible than an alternative. The second mock exposed a more fundamental defect. An independent question-by-question review of its 120 questions found approximately 106 in which two options were defensible, with another borderline item. This is a documented analytical assessment, not a judicial or Consortium finding, and the count is open to independent scrutiny. In a Legal Reasoning question on certiorari, two choices both said in substance that a court should not reassess facts merely because it prefers another conclusion. In Logical Reasoning, alternatives describing overcrowded transpor",
+      "published_at": "Sat, 28 Nov 2026 11:50:13 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2026-07-21/9zr0vnv3/1000594004.png",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Economy & Employment": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
+      "raw_id": "6b71951e9c6ee11ee9",
+      "title": "Is the Tribunal Reforms Act, 2026 calling for a seventh round of Madras Bar Association litigation?",
+      "url": "https://www.barandbench.com/columns/the-missing-chair-is-the-tribunal-reforms-act-2026-calling-for-a-seventh-round-of-madras-bar-association-litigation",
+      "summary": "It is beyond doubt that tribunals today decide some of the most important disputes in India, covering areas such as taxation, insolvency, company law, service matters and telecommunications. In many of these disputes, the government is itself a party. This makes one question central to every round of the Madras Bar Association’s (MBA) litigation over the last 15 years: who gets to choose the people who decide these disputes and should the government have the final say in it? The Tribunal Reforms Act, 2026 , which came into force on August 25, 2026, appears to address the Supreme Court of India’s concerns. It establishes the National Tribunals Commission (NTC), as directed by the Court, and follows its directions on tenure and the number of candidates to be recommended for each post. However, it removes one safety-net that the Supreme Court has sought since 1987 and expressly required since 2010: a Supreme Court judge nominated by the Chief Justice of India (CJI) as the chairperson of the selection committees for most tribunals. This omission could lead to a seventh round of MBA litigation. Six rounds, one constant Appointments to tribunals are made on the recommendation of a search",
+      "published_at": "Fri, 27 Nov 2026 20:38:09 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/import/2017/08/Tribunals-e1502352340810.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 2,
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1
+        },
+        "candidate_categories": [
+          "Economy & Employment",
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "3d71f4f60041d2b9d6",
+      "title": "Judges do not deserve praise for merely doing their duty: Jharkhand High Court Justice MS Sonak at farewell",
+      "url": "https://www.barandbench.com/news/judges-do-not-deserve-praise-for-merely-doing-their-duty-jharkhand-high-court-justice-ms-sonak-at-farewell",
+      "summary": "Judges do not deserve praise for merely doing their duty and should be willing to accept criticism, Jharkhand High Court Chief Justice Mahesh Sharadchandra Sonak said on Friday. Justice Sonak was speaking at an event held to mark his retirement from judicial service. He was elevated as an Additional Judge of the Bombay High Court in June 2013 and served there for nearly 13 years before taking over as Chief Justice of the Jharkhand High Court in January 2026. In his farewell address, he expressed his discomfort with the practice of praising judges for performing their judicial duties. \"I am not very comfortable with the general idea of praising the judges for doing their judicial duties. No one deserves praise for doing what he or she ought to do. Just as Oliver Wendell Holmes once bemoaned that the trouble with most of us is that we would rather be ruined by praise than be saved by criticism,\" said Justice Sonak. Justice MS Sonak I am not very comfortable with the general idea of praising the judges for doing their judicial duties. He went on to note that judges were not infallible. \"Behind every verdict is a judge wrestling with imperfection. As judges, we are human, not infallibl",
+      "published_at": "Sat, 28 Nov 2026 10:40:18 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2024-03/84f827db-e9e7-413f-96db-930ccb250a58/BOMBAY__WEB_PAGE_1600x900tr.jpg",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 20,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "independent"
+        ],
+        "social_attention_score": 0,
+        "rationale": "includes local or independent reporting",
+        "category_candidate_scores": {
+          "Governance & Administration": 1,
+          "Society, Rights & Justice": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration",
+          "Society, Rights & Justice"
+        ]
+      }
+    },
+    {
+      "raw_id": "38a445b802fb061550",
+      "title": "Delimitation Bill LIVE: INDIA bloc meets ahead of special Parliament session; DMK announces support for Centre's proposal",
+      "url": "https://www.thehindu.com/news/national/delimitation-bill-special-parliament-session-india-bloc-meeting-opposition-bjp-live-updates-november-28-2026/article71753535.ece",
+      "summary": "Opposition leaders to discuss a joint response ahead of special session; parties warn the move could distort representation, weaken federalism and politically benefit the BJP",
+      "published_at": "Sat, 28 Nov 2026 13:17:07 +0530",
+      "image_url": "",
+      "suggested_category": "",
+      "priority_discovery": false,
+      "source": {
+        "id": "the-hindu-national",
+        "name": "The Hindu — National",
+        "type": "mainstream",
+        "selection_group": "established",
+        "ownership": "The Hindu Group"
+      },
+      "selection_signals": {
+        "dynamic_rank_score": 16,
+        "observed_report_count": 1,
+        "distinct_source_count": 1,
+        "distinct_source_types": [
+          "mainstream"
+        ],
+        "social_attention_score": 0,
+        "rationale": "retained through source-balanced review",
+        "category_candidate_scores": {
+          "Governance & Administration": 4
+        },
+        "candidate_categories": [
+          "Governance & Administration"
+        ]
+      }
+    },
+    {
       "raw_id": "c6a9a5ede085f4be19",
       "title": "Farmers, Workers to Intensify Struggle, ‘Jail Bharo’ on Aug 10",
       "url": "https://www.newsclick.in/farmers-workers-intensify-struggle-jail-bharo-aug-10",
@@ -768,112 +1307,11 @@
       }
     },
     {
-      "raw_id": "5fb97b29f24e2289f6",
-      "title": "Parliament March: A Sea of Youth Took to Delhi Streets!",
-      "url": "https://www.newsclick.in/parliament-march-sea-youth-took-delhi-streets",
-      "summary": "After facing lathi-charge and teargas, the protesters declared that their struggle would continue until their demands were met and Pradhan resigned.",
-      "published_at": "Tue, 21 Jul 2026 12:43:00 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1
-        },
-        "candidate_categories": [
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "b2f50b85febcb0d457",
-      "title": "Noida: ‘How Can We Run a Household in Rs 10K?’",
-      "url": "https://www.newsclick.in/noida-how-can-we-run-household-rs-10k",
-      "summary": "In this ground report, Newsclick tries to find out why the workers in Noida in UP are protesting and what led to the violence.",
-      "published_at": "Tue, 14 Apr 2026 12:20:19 +0530",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "newsclick",
-        "name": "Newsclick",
-        "type": "independent",
-        "selection_group": "independent_social",
-        "ownership": "Independent digital news publication"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "independent"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Protests": 1,
-          "Economy & Employment": 1
-        },
-        "candidate_categories": [
-          "Economy & Employment",
-          "Protests"
-        ]
-      }
-    },
-    {
-      "raw_id": "8b1fe49741cb1b5397",
-      "title": "UP Election 2027/Samajwadi Party Manifesto: समाजवादी पार्टी का PDA घोषणा पत्र जारी, जानिए अखिलेश यादव के नए और पुराने वादे।",
-      "url": "https://khabarlahariya.org/up-election-2027-samajwadi-party-manifesto-samajwadi-party-releases-its-pda-manifesto-take-a-look-at-akhilesh-yadavs-new-and-existing-promises/",
-      "summary": "उत्तर प्रदेश में विधानसभा चुनाव के लिए सभी राजनीतिक पार्टियाँ तैयारी में लगी हुई हैं। इसी के साथ ही विधानसभा चुनाव 2027 के लिए समाजवादी पार्टी द्वारा घोषणा पत्र जारी…",
-      "published_at": "Fri, 27 Nov 2026 09:04:17 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 4
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "8b310d4e0ed26609c1",
-      "title": "L Adani Mao elected United Naga Council president",
-      "url": "https://eastmojo.com/manipur/2026/11/27/l-adani-mao-elected-united-naga-council-president/",
-      "summary": "Senapati: L Adani Mao from Senapati district was elected president of the United Naga Council (UNC), the apex body of the Naga people in Manipur, for the 2026-2030 tenure on Friday. Three candidates contested the presidential election, held at SM Sha Complex in Senapati district headquarters. A native of Punanamei village, Adani Mao will succeed […] The post L Adani Mao elected United Naga Council president appeared first on EastMojo .",
-      "published_at": "Fri, 27 Nov 2026 11:01:36 +0000",
+      "raw_id": "b39c695aa8fb3bc233",
+      "title": "Mizoram opens ₹2-crore pineapple processing centre in Sialhawk",
+      "url": "https://eastmojo.com/mizoram/2026/11/28/mizoram-opens-%e2%82%b92-crore-pineapple-processing-centre-in-sialhawk/",
+      "summary": "Sialhawk: Mizoram Chief Minister Lalduhoma on Friday inaugurated a ₹2-crore Pineapple Processing Centre at Sialhawk to add value to locally grown pineapples and boost farmers’ income. Addressing the gathering, the Chief Minister said the government aims to contribute one per cent of India’s GDP by 2047 and is exploring ways to increase farmers’ earnings through […] The post Mizoram opens ₹2-crore pineapple processing centre in Sialhawk appeared first on EastMojo .",
+      "published_at": "Sat, 28 Nov 2026 06:40:00 +0000",
       "image_url": "",
       "suggested_category": "",
       "priority_discovery": false,
@@ -894,388 +1332,7 @@
         "social_attention_score": 0,
         "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "b9f2c67215bdfc96c8",
-      "title": "Prayagraj: 258 वोट से जीते, मगर हलफनामे ने हरा दिया! BJP विधायक ओम कुमार का निर्वाचन रद्द",
-      "url": "https://theruralpress.in/politics/bjp-mla-om-kumar-election-cancelled-form-26-affidavit-nahtaur/",
-      "summary": "BJP MLA Om Kumar’s election annulled: उत्तर प्रदेश की सियासत में 2027 के विधानसभा चुनाव से पहले बड़ा घटनाक्रम सामने आया है। बिजनौर की नहटौर विधानसभा सीट से बीजेपी विधायक ओम कुमार का निर्वाचन इलाहाबाद हाईकोर्ट ने निरस्त कर दिया है। वर्ष 2022 के विधानसभा चुनाव में ओम कुमार ने राष्ट्रीय लोकदल (RLD) के प्रत्याशी […]",
-      "published_at": "Fri, 27 Nov 2026 14:54:01 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "e6b3179a06a0c8edc5",
-      "title": "The Kavita Show: हुनर बनाम डिग्री, क्या सिर्फ हुनर से मिलेगी रोजगार की गारंटी?",
-      "url": "https://khabarlahariya.org/the-kavita-show-talent-vs-degree-can-talent-alone-guarantee-employment/",
-      "summary": "https://tests.khabarlahariya.in/up-elections-2027-combo-reporting/ इस QR कोड को स्कैन कीजिए और उत्तर प्रदेश चुनाव 2027 में जमीनी रिपोर्टिंग के लिए खबर लहरिया को सहयोग कीजिए! प्रधानमंत्री नरेंद्र मोदी ने 21 नवंबर को लखनऊ…",
-      "published_at": "Fri, 27 Nov 2026 12:20:57 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "khabar-lahariya",
-        "name": "Khabar Lahariya",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "Independent rural and regional newsroom"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Politics & Elections": 1
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "d3dbdf53ca2689868c",
-      "title": "BJP, poll body conspiring to add fake voters in U.P., says Akhilesh",
-      "url": "https://www.thehindu.com/news/national/uttar-pradesh/who-is-lying-akhilesh-questions-up-cm-ceo-over-conflicting-missing-voter-figures/article71750331.ece",
-      "summary": "Akhilesh Yadav said delimitation would be the BJP’s biggest mistake; he said the BJP, in collaboration with the Election Commission, has added 2,84,000 fake votes to the voter list",
-      "published_at": "Fri, 27 Nov 2026 23:38:37 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/b2w12j/article71750365.ece/alternates/LANDSCAPE_1200/Nearby_Shape-wiGORGRRM50.3.jpg.jpg",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5
-        },
-        "candidate_categories": [
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "228f789fa8273dad3e",
-      "title": "Serbia sets Presidential election for December 27 after students won Parliamentary vote",
-      "url": "https://www.thehindu.com/news/international/serbia-sets-presidential-election-for-december-27-after-students-won-parliamentary-vote/article71746565.ece",
-      "summary": "The Presidential vote will be held after a student movement defeated Mr. Vucic's right-wing Serbian Progressive Party in an early Parliamentary ballot on October 25",
-      "published_at": "Thu, 26 Nov 2026 19:25:13 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/55sn4o/article71746714.ece/alternates/LANDSCAPE_1200/2026-11-17T171014Z_1047750035_RC2KPOA4CJUG_RTRMADP_3_SERBIA-PARLIAMENT.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 5,
-          "Society, Rights & Justice": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections",
-          "Society, Rights & Justice"
-        ]
-      }
-    },
-    {
-      "raw_id": "e409896708ec8a2ed1",
-      "title": "Data | How election fund was spent during 2021 State polls",
-      "url": "https://www.thehindu.com/data/data-how-election-fund-was-spent-during-2021-state-polls/article65033242.ece",
-      "summary": "The AIADMK spent the highest share in spreading the party’s propaganda (99.5%) and relied only on media and advertisements",
-      "published_at": "Thu, 27 Mar 2025 17:36:08 +0530",
-      "image_url": "",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "fa728bba3d7642bfb5",
-      "title": "Haryana Assembly polls: Parties chase Dalits; voters chase papers",
-      "url": "https://www.thehindu.com/elections/haryana-assembly/haryana-assembly-polls-parties-chase-dalits-voters-chase-papers/article68690132.ece",
-      "summary": "All parties are wooing Dalit voters, who constitute 21% of the Haryana electorate; Congress banks on call for change; BJP intensifies its attack; BSP, ASP, in alliance with local outfits, vie for a piece of the same pie",
-      "published_at": "Sat, 28 Sep 2024 14:29:59 +0530",
-      "image_url": "https://th-i.thgim.com/public/elections/haryana-assembly/2x6y9i/article68691204.ece/alternates/LANDSCAPE_1200/DALIT%20VOTERS%20HARYANA%20SOBHANA%20SABIKA%209.JPG",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "7777f732d192431acd",
-      "title": "Jammu & Kashmir elections: History in making, says CEC Rajiv Kumar",
-      "url": "https://www.thehindu.com/elections/jammu-and-kashmir-assembly/jammu-kashmir-elections-history-in-making-says-cec-rajiv-kumar/article68681479.ece",
-      "summary": "\"It is a festival of democracy. Voting is taking place in areas where it did not take place earlier.... There were calls for disruption and boycott in the past.... It is a standing ovation for democracy,\" the CEC said",
-      "published_at": "Fri, 27 Sep 2024 19:01:01 +0530",
-      "image_url": "https://th-i.thgim.com/public/todays-paper/tp-national/i7951y/article68534650.ece/alternates/LANDSCAPE_1200/TH16-SREEPARNA-GEOD75ANA.3.jpg.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "States & Local": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "States & Local"
-        ]
-      }
-    },
-    {
-      "raw_id": "d34017efcb3dabb403",
-      "title": "Bangladesh’s Opposition party blasts Australian media reports over leader’s visit",
-      "url": "https://www.thehindu.com/news/international/bangladeshs-opposition-party-blasts-australian-media-reports-over-leaders-visit/article71749303.ece",
-      "summary": "The party said the legal notice sent to The Australian newspaper pointed out ‘seven defamatory imputations and demands corrections, retraction of the report, an apology and the preservation of relevant documents’",
-      "published_at": "Fri, 27 Nov 2026 13:06:06 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/p1w87p/article71749308.ece/alternates/LANDSCAPE_1200/2026-02-12T180327Z_2056020255_RC2HKJA0BJZC_RTRMADP_3_BANGLADESH-ELECTION.JPG",
-      "suggested_category": "International & Geopolitics",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-international",
-        "name": "The Hindu - International",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "International & Geopolitics": 8
-        },
-        "candidate_categories": [
-          "International & Geopolitics",
-          "Politics & Elections"
-        ]
-      }
-    },
-    {
-      "raw_id": "3f6ac023f56efd771f",
-      "title": "Tamil Nadu’s SMAT campaign exposes reluctance to move beyond familiar personnel and approaches",
-      "url": "https://www.thehindu.com/sport/cricket/tamil-nadus-smat-campaign-exposes-reluctance-to-move-beyond-familiar-personnel-and-approaches/article71749790.ece",
-      "summary": "The most successful team in the tournament, with three titles, suffered its fifth successive group-stage exit, winning three of its seven matches and finishing sixth in Group B",
-      "published_at": "Fri, 27 Nov 2026 13:47:21 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/kuyte8/article71749785.ece/alternates/LANDSCAPE_1200/TH27-PRASANNA-SG6SGRPVJM.3.jpg.jpg",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Sports": 10
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "758247d97d416e36a8",
-      "title": "Setback for AITA as Delhi HC clears elections but keeps results on hold",
-      "url": "https://www.thehindu.com/sport/setback-for-aita-as-delhi-hc-clears-elections-but-keeps-results-on-hold/article71746275.ece",
-      "summary": "The bench headed by acting Chief Justice Nitin Wasudeo Sambre also made it clear that no policy rulings or major financial decisions can be taken by the AITA until the case is heard again",
-      "published_at": "Thu, 26 Nov 2026 22:06:09 +0530",
-      "image_url": "",
-      "suggested_category": "Sports",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-sport",
-        "name": "The Hindu - Sport",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "Politics & Elections": 4,
-          "Society, Rights & Justice": 1,
-          "Sports": 8
-        },
-        "candidate_categories": [
-          "Politics & Elections",
-          "Society, Rights & Justice",
-          "Sports"
-        ]
-      }
-    },
-    {
-      "raw_id": "ecdbae78a360cd740a",
-      "title": "India-US Trade Deal : भारत-अमेरिका ट्रेड डील पर बड़ा अपडेट, 25% से घटकर 17% हो सकता है टैरिफ",
-      "url": "https://theruralpress.in/business/india-us-trade-deal-tariff-cut-17-percent-piyush-goyal/",
-      "summary": "नई दिल्ली। भारत और अमेरिका के बीच लंबे समय से अटकी द्विपक्षीय व्यापार समझौते (Trade Deal) को लेकर बड़ी खबर सामने आई है। केंद्रीय वाणिज्य एवं उद्योग मंत्री पीयूष गोयल ने कहा है कि दोनों देशों के बीच ट्रेड डील अब अंतिम चरण में पहुंच चुकी है। गोयल ने कहा, समझौते को लेकर जिन प्रक्रियागत […]",
-      "published_at": "Fri, 27 Nov 2026 15:56:43 +0000",
-      "image_url": "",
-      "suggested_category": "",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-rural-press",
-        "name": "The Rural Press",
-        "type": "local",
-        "selection_group": "independent_social",
-        "ownership": "SSB Media House"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 20,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "local"
-        ],
-        "social_attention_score": 0,
-        "rationale": "includes local or independent reporting",
-        "category_candidate_scores": {
-          "Economy & Employment": 4
+          "Economy & Employment": 1
         },
         "candidate_categories": [
           "Economy & Employment"
@@ -1318,70 +1375,39 @@
       }
     },
     {
-      "raw_id": "e1888a782a57d33c75",
-      "title": "25 workers, including nine children, rescued from bonded labour in Hanumakonda",
-      "url": "https://www.thehindu.com/news/national/telangana/25-workers-including-nine-children-rescued-from-bonded-labour-in-hanumakonda/article71751874.ece",
-      "summary": "Officials say some workers were so isolated from the outside world that they struggled to recall their names, ages and even the current date, year or day of the week during preliminary interaction",
-      "published_at": "Fri, 27 Nov 2026 23:25:49 +0530",
-      "image_url": "https://th-i.thgim.com/public/news/national/telangana/of0v44/article71751853.ece/alternates/LANDSCAPE_1200/WhatsApp%20Image%202026-11-27%20at%208.22.34%20PM.jpeg",
+      "raw_id": "0a4a8cfc836beb035a",
+      "title": "Delhi High Court bars Bajaj Finance from using AI-facial recognition cameras to profile visitors without consent",
+      "url": "https://www.barandbench.com/news/delhi-high-court-bars-bajaj-finance-from-using-ai-facial-recognition-cameras-to-profile-visitors-without-consent",
+      "summary": "The Delhi High Court on Friday restrained Bajaj Finance, Bajaj Finance Securities and Bajaj Housing Finance from using artificial intelligence (AI)-enabled facial recognition cameras at its branches and authorised dealer stores to allegedly capture and profile customers and others who visited their offices/ dealerships. Justice Jasmeet Singh said that the company can continue to use the technology for Know Your Customer (KYC) verification but cannot use the tech to capture images of any and every person walking into their store, without their consent. The Court added that Bajaj cannot share the data collected through these cameras with any other entity. “For the said reasons, the respondent Nos. 2 to 4 [Bajaj Finance, Bajaj Finance Securities and Bajaj Housing Finance], their agents, employees, representatives and any persons acting on their behalf are restrained from collecting and using the information collected by way of these facial recognition cameras for purpose other than KYC. Furthermore, the respondent Nos. 2 to 4 are specifically restrained from sharing the said data with any other entity, including group entities,” the Court ordered. Justice Jasmeet Singh The Court obser",
+      "published_at": "Sat, 28 Nov 2026 09:29:08 +0530",
+      "image_url": "https://cf-images.assettype.com/barandbench/2022-01/d9b62d33-af83-4c84-8deb-5646589abace/SUPREME_COURT_OF_INDIA__WEB_PAGE_1600x900___Copy.jpg",
       "suggested_category": "",
       "priority_discovery": false,
       "source": {
-        "id": "the-hindu-national",
-        "name": "The Hindu — National",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
+        "id": "bar-and-bench",
+        "name": "Bar & Bench",
+        "type": "independent",
+        "selection_group": "independent_social",
+        "ownership": "Legal news publication"
       },
       "selection_signals": {
-        "dynamic_rank_score": 16,
+        "dynamic_rank_score": 20,
         "observed_report_count": 1,
         "distinct_source_count": 1,
         "distinct_source_types": [
-          "mainstream"
+          "independent"
         ],
         "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
+        "rationale": "includes local or independent reporting",
         "category_candidate_scores": {
-          "Economy & Employment": 8
-        },
-        "candidate_categories": [
-          "Economy & Employment"
-        ]
-      }
-    },
-    {
-      "raw_id": "546c40401f6160bbef",
-      "title": "Special squads formed to expose single digit lottery trade in Kozhikode",
-      "url": "https://www.thehindu.com/news/national/kerala/special-squads-formed-to-expose-single-digit-lottery-trade-in-kozhikode/article70127605.ece",
-      "summary": "Action comes in the wake of confidential complaints submitted by the Lottery department furnishing the details of suspected tax evasion and financial loss",
-      "published_at": "Sun, 05 Oct 2025 15:29:54 +0530",
-      "image_url": "https://th-i.thgim.com/public/incoming/r8b02a/article70127717.ece/alternates/LANDSCAPE_1200/Lottery%20img.jpg",
-      "suggested_category": "States & Local",
-      "priority_discovery": false,
-      "source": {
-        "id": "the-hindu-states",
-        "name": "The Hindu - States",
-        "type": "mainstream",
-        "selection_group": "established",
-        "ownership": "The Hindu Group"
-      },
-      "selection_signals": {
-        "dynamic_rank_score": 16,
-        "observed_report_count": 1,
-        "distinct_source_count": 1,
-        "distinct_source_types": [
-          "mainstream"
-        ],
-        "social_attention_score": 0,
-        "rationale": "retained through source-balanced review",
-        "category_candidate_scores": {
-          "States & Local": 8,
-          "Economy & Employment": 5
+          "Economy & Employment": 1,
+          "Society, Rights & Justice": 1,
+          "Sports": 1
         },
         "candidate_categories": [
           "Economy & Employment",
-          "States & Local"
+          "Society, Rights & Justice",
+          "Sports"
         ]
       }
     }
